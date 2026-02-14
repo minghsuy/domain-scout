@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+SPEC.md
+*-threat-model.md
+*_report.md
