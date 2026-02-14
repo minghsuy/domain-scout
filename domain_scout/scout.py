@@ -1,0 +1,596 @@
+"""Main orchestrator: ties together CT log search, RDAP, DNS, and entity matching."""
+
+from __future__ import annotations
+
+import asyncio
+import time
+from typing import Any
+
+import httpx
+import structlog
+
+from domain_scout.config import ScoutConfig
+from domain_scout.matching.entity_match import (
+    domain_from_company_name,
+    org_name_similarity,
+)
+from domain_scout.models import DiscoveredDomain, EntityInput, ScoutResult
+from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
+from domain_scout.sources.dns_utils import DNSChecker
+from domain_scout.sources.rdap import RDAPLookup
+
+log = structlog.get_logger()
+
+
+class Scout:
+    """Discover internet domains associated with a business entity."""
+
+    def __init__(self, config: ScoutConfig | None = None) -> None:
+        self.config = config or ScoutConfig()
+        self._ct = CTLogSource(self.config)
+        self._dns = DNSChecker(self.config)
+        self._rdap = RDAPLookup(self.config)
+
+    def discover(
+        self,
+        company_name: str,
+        location: str | None = None,
+        seed_domain: str | None = None,
+        industry: str | None = None,
+    ) -> ScoutResult:
+        """Synchronous entry point. Runs the async pipeline."""
+        entity = EntityInput(
+            company_name=company_name,
+            location=location,
+            seed_domain=seed_domain,
+            industry=industry,
+        )
+        return asyncio.run(self._discover(entity))
+
+    async def discover_async(self, entity: EntityInput) -> ScoutResult:
+        """Async entry point."""
+        return await self._discover(entity)
+
+    async def _discover(self, entity: EntityInput) -> ScoutResult:
+        t0 = time.monotonic()
+        total_budget = float(self.config.total_timeout)
+        errors: list[str] = []
+        timed_out = False
+
+        # Accumulator: domain -> evidence dict
+        domain_evidence: dict[str, _DomainAccum] = {}
+
+        def _remaining() -> float:
+            return max(0.0, total_budget - (time.monotonic() - t0))
+
+        def _collect(results: list[Any]) -> None:
+            for result in results:
+                if isinstance(result, BaseException):
+                    errors.append(str(result))
+                    continue
+                for domain, accum in result:
+                    if domain in domain_evidence:
+                        domain_evidence[domain].merge(accum)
+                    else:
+                        domain_evidence[domain] = accum
+
+        # Phase 1: Seed validation + independent strategies run in parallel.
+        # Strategies A (org search) and C (domain guess) don't need seed results.
+        seed_assessment = "not_provided"
+        seed_org_name: str | None = None
+
+        independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
+
+        # Strategy A: org name search (independent of seed)
+        independent_tasks.append(
+            asyncio.create_task(
+                self._strategy_org_search(entity.company_name, errors),
+                name="org_search",
+            )
+        )
+
+        # Strategy C: domain guessing (independent of seed)
+        independent_tasks.append(
+            asyncio.create_task(
+                self._strategy_domain_guess(entity.company_name, entity.location, errors),
+                name="domain_guess",
+            )
+        )
+
+        # Seed validation runs concurrently with A and C
+        seed_task: asyncio.Task[tuple[str, str | None]] | None = None
+        if entity.seed_domain:
+            seed_task = asyncio.create_task(
+                self._validate_seed(entity.seed_domain, entity.company_name, errors),
+                name="seed_validation",
+            )
+
+        # Wait for seed validation (capped at 15s) while A/C also run
+        if seed_task is not None:
+            try:
+                seed_assessment, seed_org_name = await asyncio.wait_for(
+                    seed_task, timeout=min(15.0, _remaining())
+                )
+            except TimeoutError:
+                errors.append("Seed validation timed out")
+                seed_assessment = "timeout"
+                seed_task.cancel()
+            else:
+                log.info(
+                    "scout.seed_validated",
+                    seed=entity.seed_domain,
+                    assessment=seed_assessment,
+                    seed_org=seed_org_name,
+                )
+
+        # Phase 2: Seed-dependent strategies (B + optional second org search)
+        dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
+
+        if seed_org_name and org_name_similarity(seed_org_name, entity.company_name) < 0.95:
+            dependent_tasks.append(
+                asyncio.create_task(
+                    self._strategy_org_search(seed_org_name, errors),
+                    name="org_search_seed",
+                )
+            )
+
+        if entity.seed_domain:
+            dependent_tasks.append(
+                asyncio.create_task(
+                    self._strategy_seed_expansion(
+                        entity.seed_domain, entity.company_name, errors
+                    ),
+                    name="seed_expansion",
+                )
+            )
+
+        # Gather all strategy results under the remaining time budget (minus 10s reserve)
+        all_strategy_tasks = independent_tasks + dependent_tasks
+        strategy_budget = _remaining() - 10.0
+        try:
+            results = await asyncio.wait_for(
+                asyncio.gather(*all_strategy_tasks, return_exceptions=True),
+                timeout=max(1.0, strategy_budget),
+            )
+            _collect(results)
+        except TimeoutError:
+            timed_out = True
+            errors.append("Strategy phase timed out")
+            # Collect any completed results
+            for task in all_strategy_tasks:
+                if task.done() and not task.cancelled():
+                    exc = task.exception()
+                    if exc:
+                        errors.append(str(exc))
+                    else:
+                        _collect([task.result()])
+                elif not task.done():
+                    task.cancel()
+
+        # Step 3: DNS resolution for all discovered domains
+        all_domains = list(domain_evidence.keys())
+        if all_domains and _remaining() > 2.0:
+            try:
+                resolve_map = await asyncio.wait_for(
+                    self._dns.bulk_resolve(all_domains),
+                    timeout=_remaining() - 2.0,
+                )
+                for domain, resolves in resolve_map.items():
+                    domain_evidence[domain].resolves = resolves
+            except TimeoutError:
+                timed_out = True
+                errors.append("DNS resolution timed out")
+
+        # Step 3b: GeoDNS rescue for non-resolving domains (deep mode)
+        if self.config.deep_mode and _remaining() > 3.0:
+            failed_domains = [
+                d for d, acc in domain_evidence.items() if not acc.resolves
+            ]
+            if failed_domains:
+                log.info("scout.geodns_rescue", count=len(failed_domains))
+                try:
+                    async with httpx.AsyncClient(timeout=15.0) as client:
+                        geodns_map = await asyncio.wait_for(
+                            self._dns.bulk_geodns_resolve(failed_domains, client),
+                            timeout=max(1.0, _remaining() - 3.0),
+                        )
+                    for domain, did_resolve in geodns_map.items():
+                        if not did_resolve:
+                            continue
+                        accum = domain_evidence[domain]
+                        accum.resolves = True
+                        accum.sources.add("geodns")
+                        accum.evidence.append(
+                            "Resolved via Shodan GeoDNS (global)"
+                        )
+                        log.info("scout.geodns_rescued", domain=domain)
+                except TimeoutError:
+                    timed_out = True
+                    errors.append("GeoDNS resolution timed out")
+
+        # Step 4: confidence scoring and infrastructure comparison
+        confirmed_domains: list[str] = []
+        for domain, accum in domain_evidence.items():
+            accum.confidence = self._score_confidence(
+                accum, entity.company_name, entity.seed_domain
+            )
+            if accum.confidence >= self.config.seed_confirm_threshold:
+                confirmed_domains.append(domain)
+
+        # Infrastructure sharing boost (compare against seed or highest-confidence domain)
+        reference = entity.seed_domain
+        if not reference and confirmed_domains:
+            reference = confirmed_domains[0]
+        if reference and len(domain_evidence) <= 50 and _remaining() > 1.0:
+            await self._infra_boost(reference, domain_evidence)
+
+        # Build output
+        domains = self._build_output(domain_evidence, entity.seed_domain)
+
+        elapsed = time.monotonic() - t0
+        metadata: dict[str, Any] = {
+            "elapsed_seconds": round(elapsed, 2),
+            "domains_found": len(domains),
+            "errors": errors,
+        }
+        if timed_out:
+            metadata["timed_out"] = True
+        return ScoutResult(
+            entity=entity,
+            domains=domains,
+            seed_domain_assessment=seed_assessment,
+            search_metadata=metadata,
+        )
+
+    # --- Step 1: Seed validation ---
+
+    async def _validate_seed(
+        self, seed: str, company_name: str, errors: list[str]
+    ) -> tuple[str, str | None]:
+        """Returns (assessment, org_name_from_cert)."""
+        resolves = await self._dns.resolves(seed)
+
+        rdap_org: str | None = None
+        try:
+            rdap_org = await self._rdap.get_registrant_org(seed)
+        except Exception as exc:
+            errors.append(f"RDAP lookup failed for {seed}: {exc}")
+
+        # Also check CT for the org name on certs
+        ct_records = await self._ct.search_by_domain(seed)
+        cert_orgs: set[str] = set()
+        for rec in ct_records:
+            org = rec.get("org_name")
+            if (
+                isinstance(org, str)
+                and org
+                # Skip DV certs where O= is just the domain itself
+                and not org.lstrip("*.").endswith(("." + seed, seed))
+            ):
+                cert_orgs.add(org)
+
+        # Pick best org name from any source
+        best_org: str | None = None
+        best_score = 0.0
+        for org in [rdap_org, *cert_orgs]:
+            if org:
+                score = org_name_similarity(org, company_name)
+                if score > best_score:
+                    best_score = score
+                    best_org = org
+
+        # If the seed domain slug itself closely matches the company name, that's signal too
+        seed_slug = extract_base_domain(seed)
+        if seed_slug:
+            # e.g., "paloaltonetworks" from "paloaltonetworks.com" vs "Palo Alto Networks"
+            slug_part = seed_slug.split(".")[0]
+            slug_score = org_name_similarity(slug_part, company_name)
+            if slug_score > best_score:
+                best_score = slug_score
+
+        if best_score >= self.config.seed_confirm_threshold:
+            return "confirmed", best_org
+        if resolves:
+            return "suspicious", best_org
+        return "invalid", best_org
+
+    # --- Step 2A: Organization name search ---
+
+    async def _strategy_org_search(
+        self, org_name: str, errors: list[str]
+    ) -> list[tuple[str, _DomainAccum]]:
+        results: list[tuple[str, _DomainAccum]] = []
+        try:
+            records = await self._ct.search_by_org(org_name)
+        except Exception as exc:
+            errors.append(f"CT org search failed: {exc}")
+            return results
+
+        for rec in records:
+            cert_org = rec.get("org_name")
+            if not isinstance(cert_org, str) or not cert_org:
+                continue
+            # Only keep certs where the org matches our target
+            similarity = org_name_similarity(cert_org, org_name)
+            if similarity < self.config.org_match_threshold:
+                continue
+
+            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            cn = rec.get("common_name", "")
+            all_names = list(set(sans) | ({cn} if isinstance(cn, str) and cn else set()))
+
+            for name in all_names:
+                if not is_valid_domain(name):
+                    continue
+                base = extract_base_domain(name)
+                if not base:
+                    continue
+                accum = _DomainAccum()
+                accum.sources.add("ct_org_match")
+                accum.evidence.append(
+                    f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+                )
+                accum.cert_org_names.add(cert_org)
+                nb = rec.get("not_before")
+                na = rec.get("not_after")
+                if nb:
+                    accum.update_times(nb, na)  # type: ignore[arg-type]
+                results.append((base, accum))
+
+        return results
+
+    # --- Step 2B: Seed domain expansion ---
+
+    async def _strategy_seed_expansion(
+        self, seed_domain: str, company_name: str, errors: list[str]
+    ) -> list[tuple[str, _DomainAccum]]:
+        results: list[tuple[str, _DomainAccum]] = []
+        try:
+            records = await self._ct.search_by_domain(seed_domain)
+        except Exception as exc:
+            errors.append(f"CT seed expansion failed: {exc}")
+            return results
+
+        seed_base = extract_base_domain(seed_domain)
+
+        for rec in records:
+            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            cn = rec.get("common_name", "")
+            cert_org = rec.get("org_name")
+            all_names = list(set(sans) | ({cn} if isinstance(cn, str) and cn else set()))
+
+            # Detect CDN/multi-tenant certs: many unrelated base domains + org mismatch
+            unique_bases = {
+                extract_base_domain(s) for s in sans if is_valid_domain(s)
+            } - {None}
+            org_sim = (
+                org_name_similarity(cert_org, company_name)
+                if isinstance(cert_org, str) and cert_org
+                else 0.0
+            )
+            is_cdn_cert = len(unique_bases) > 10 and org_sim < self.config.org_match_threshold
+
+            for name in all_names:
+                if not is_valid_domain(name):
+                    continue
+                base = extract_base_domain(name)
+                if not base:
+                    continue
+
+                accum = _DomainAccum()
+
+                # Is this a SAN on a cert that also covers the seed domain?
+                has_seed_san = any(
+                    extract_base_domain(s) == seed_base for s in sans if is_valid_domain(s)
+                )
+
+                if base == seed_base:
+                    accum.sources.add("ct_seed_subdomain")
+                    accum.evidence.append(f"Subdomain of seed domain {seed_domain}")
+                elif has_seed_san:
+                    # Skip non-seed SANs on CDN certs — Strategy A handles org-matched domains
+                    if is_cdn_cert:
+                        continue
+                    accum.sources.add("ct_san_expansion")
+                    accum.evidence.append(
+                        f"Found on same cert as seed domain {seed_domain}"
+                    )
+                else:
+                    accum.sources.add("ct_seed_related")
+                    accum.evidence.append(
+                        f"Found in CT search for {seed_domain}"
+                    )
+
+                if isinstance(cert_org, str) and cert_org:
+                    accum.cert_org_names.add(cert_org)
+                    sim = org_name_similarity(cert_org, company_name)
+                    if sim >= self.config.org_match_threshold:
+                        accum.sources.add("ct_org_match")
+                        accum.evidence.append(
+                            f"Cert org '{cert_org}' matches target (score={sim:.2f})"
+                        )
+
+                nb = rec.get("not_before")
+                na = rec.get("not_after")
+                if nb:
+                    accum.update_times(nb, na)  # type: ignore[arg-type]
+                results.append((base, accum))
+
+        return results
+
+    # --- Step 2C: Domain guessing ---
+
+    async def _strategy_domain_guess(
+        self, company_name: str, location: str | None, errors: list[str]
+    ) -> list[tuple[str, _DomainAccum]]:
+        slugs = domain_from_company_name(company_name)
+        # Also try with location keywords
+        if location:
+            loc_words = [w.lower().strip(",. ") for w in location.split() if len(w) > 2]
+            for slug in list(slugs):
+                for lw in loc_words[:2]:
+                    slugs.append(slug + lw)
+
+        candidates: list[str] = []
+        for slug in slugs:
+            for tld in self.config.guess_tlds:
+                candidates.append(slug + tld)
+
+        # DNS resolve all candidates
+        resolve_map = await self._dns.bulk_resolve(candidates)
+
+        # Return resolving candidates at low confidence (Strategy A handles CT matching)
+        results: list[tuple[str, _DomainAccum]] = []
+        for domain, does_resolve in resolve_map.items():
+            if not does_resolve:
+                continue
+            base = extract_base_domain(domain)
+            if not base:
+                continue
+            accum = _DomainAccum()
+            accum.sources.add("dns_guess")
+            accum.evidence.append("Guessed from company name, resolves in DNS")
+            accum.resolves = True
+            results.append((base, accum))
+
+        return results
+
+    # --- Step 3: Confidence scoring ---
+
+    def _score_confidence(
+        self, accum: _DomainAccum, company_name: str, seed_domain: str | None
+    ) -> float:
+        score = 0.0
+
+        if "ct_org_match" in accum.sources:
+            score = max(score, 0.85)
+        if "ct_san_expansion" in accum.sources:
+            score = max(score, 0.80)
+        if "ct_seed_subdomain" in accum.sources:
+            score = max(score, 0.75)
+        if "ct_seed_related" in accum.sources:
+            score = max(score, 0.40)
+        if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
+            score = max(score, 0.30)
+        if "rdap_match" in accum.sources:
+            score = max(score, 0.70)
+
+        # Boost for multiple independent sources
+        if len(accum.sources) >= 3:
+            score = min(1.0, score + 0.10)
+        elif len(accum.sources) >= 2:
+            score = min(1.0, score + 0.05)
+
+        # Boost if resolves
+        if accum.resolves:
+            score = min(1.0, score + 0.05)
+
+        # Best org name similarity across cert_org_names
+        best_sim = 0.0
+        for cert_org in accum.cert_org_names:
+            sim = org_name_similarity(cert_org, company_name)
+            best_sim = max(best_sim, sim)
+        if best_sim > 0.9:
+            score = min(1.0, score + 0.05)
+
+        return round(score, 2)
+
+    async def _infra_boost(
+        self, reference: str, evidence: dict[str, _DomainAccum]
+    ) -> None:
+        """Small confidence boost for domains sharing infra with a reference domain."""
+        # Select top candidates by confidence, capped
+        candidates = [
+            (domain, accum)
+            for domain, accum in evidence.items()
+            if domain != reference and accum.confidence >= 0.3
+        ]
+        candidates.sort(key=lambda x: x[1].confidence, reverse=True)
+        candidates = candidates[: self.config.infra_check_max]
+
+        async def _check(domain: str, accum: _DomainAccum) -> None:
+            try:
+                shared = await self._dns.shares_infrastructure(reference, domain)
+                if shared:
+                    accum.sources.add("shared_infra")
+                    accum.evidence.append(f"Shares infrastructure with {reference}")
+                    accum.confidence = min(1.0, accum.confidence + 0.05)
+            except Exception:
+                pass
+
+        try:
+            await asyncio.wait_for(
+                asyncio.gather(*[_check(d, a) for d, a in candidates]),
+                timeout=10.0,
+            )
+        except TimeoutError:
+            log.warning("scout.infra_boost_timeout", checked=len(candidates))
+
+    # --- Step 4: Build output ---
+
+    def _build_output(
+        self, evidence: dict[str, _DomainAccum], seed_domain: str | None
+    ) -> list[DiscoveredDomain]:
+        domains: list[DiscoveredDomain] = []
+        seed_base = extract_base_domain(seed_domain) if seed_domain else None
+
+        for domain, accum in evidence.items():
+            if accum.confidence < self.config.inclusion_threshold:
+                continue
+            if not accum.resolves and domain != seed_base:
+                continue
+            domains.append(
+                DiscoveredDomain(
+                    domain=domain,
+                    confidence=accum.confidence,
+                    sources=sorted(accum.sources),
+                    evidence=accum.evidence,
+                    cert_org_names=sorted(accum.cert_org_names),
+                    first_seen=accum.first_seen,
+                    last_seen=accum.last_seen,
+                    resolves=accum.resolves,
+                    is_seed=(domain == seed_base),
+                )
+            )
+
+        domains.sort(key=lambda d: d.confidence, reverse=True)
+        return domains
+
+
+class _DomainAccum:
+    """Mutable accumulator for evidence about a single domain."""
+
+    __slots__ = (
+        "sources",
+        "evidence",
+        "cert_org_names",
+        "first_seen",
+        "last_seen",
+        "resolves",
+        "confidence",
+    )
+
+    def __init__(self) -> None:
+        self.sources: set[str] = set()
+        self.evidence: list[str] = []
+        self.cert_org_names: set[str] = set()
+        self.first_seen: Any = None
+        self.last_seen: Any = None
+        self.resolves: bool = False
+        self.confidence: float = 0.0
+
+    def merge(self, other: _DomainAccum) -> None:
+        self.sources |= other.sources
+        self.evidence.extend(other.evidence)
+        self.cert_org_names |= other.cert_org_names
+        if other.first_seen and (self.first_seen is None or other.first_seen < self.first_seen):
+            self.first_seen = other.first_seen
+        if other.last_seen and (self.last_seen is None or other.last_seen > self.last_seen):
+            self.last_seen = other.last_seen
+        self.resolves = self.resolves or other.resolves
+
+    def update_times(self, not_before: Any, not_after: Any) -> None:
+        if not_before and (self.first_seen is None or not_before < self.first_seen):
+            self.first_seen = not_before
+        if not_after and (self.last_seen is None or not_after > self.last_seen):
+            self.last_seen = not_after
