@@ -3,13 +3,16 @@
 from __future__ import annotations
 
 import logging
-from typing import Annotated
+from typing import TYPE_CHECKING, Annotated
 
 import structlog
 import typer
 
 from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout
+
+if TYPE_CHECKING:
+    from domain_scout.models import ScoutResult
 
 app = typer.Typer(
     name="domain-scout",
@@ -37,7 +40,7 @@ def scout(
         str | None, typer.Option("--location", "-l", help="City, state, country")
     ] = None,
     seed: Annotated[
-        str | None, typer.Option("--seed", "-s", help="Seed domain (may be incorrect)")
+        list[str] | None, typer.Option("--seed", "-s", help="Seed domain(s), repeatable")
     ] = None,
     industry: Annotated[
         str | None, typer.Option("--industry", "-i", help="Industry hint")
@@ -59,8 +62,11 @@ def scout(
     """Discover domains associated with a company."""
     _configure_logging(verbose)
 
+    seeds = seed or []
     if deep:
         timeout = max(timeout, 180)
+    if len(seeds) >= 3:
+        timeout = max(timeout, 150)
     config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
     s = Scout(config=config)
 
@@ -68,7 +74,7 @@ def scout(
         result = s.discover(
             company_name=name,
             location=location,
-            seed_domain=seed,
+            seed_domain=seeds,
             industry=industry,
         )
     except KeyboardInterrupt:
@@ -81,21 +87,23 @@ def scout(
         _print_table(result)
 
 
-def _print_table(result: object) -> None:
+def _print_table(result: ScoutResult) -> None:
     """Pretty-print results as a table to stderr/stdout."""
-    from domain_scout.models import ScoutResult
-
-    if not isinstance(result, ScoutResult):
-        return
-
     typer.echo(f"\n  Entity: {result.entity.company_name}", err=True)
     if result.entity.location:
         typer.echo(f"  Location: {result.entity.location}", err=True)
     if result.entity.seed_domain:
-        typer.echo(
-            f"  Seed domain: {result.entity.seed_domain} ({result.seed_domain_assessment})",
-            err=True,
-        )
+        for sd in result.entity.seed_domain:
+            assessment = result.seed_domain_assessment.get(sd, "unknown")
+            typer.echo(f"  Seed domain: {sd} ({assessment})", err=True)
+    if result.seed_cross_verification:
+        seen_pairs: set[tuple[str, str]] = set()
+        for s, others in result.seed_cross_verification.items():
+            for o in others:
+                pair = tuple(sorted([s, o]))
+                if pair not in seen_pairs:
+                    seen_pairs.add(pair)  # type: ignore[arg-type]
+                    typer.echo(f"  Cross-verified: {pair[0]} <-> {pair[1]} (shared cert)", err=True)
     typer.echo(err=True)
 
     if not result.domains:
@@ -122,7 +130,7 @@ def _print_table(result: object) -> None:
         err=True,
     )
 
-    errs = meta.get("errors", [])
+    errs: list[str] = meta.get("errors", [])  # type: ignore[assignment]
     if errs:
         typer.echo(f"  Warnings: {len(errs)}", err=True)
 

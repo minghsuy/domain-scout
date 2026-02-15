@@ -12,7 +12,7 @@ class EntityInput(BaseModel):
 
     company_name: str
     location: str | None = None
-    seed_domain: str | None = None
+    seed_domain: list[str] = Field(default_factory=list)
     industry: str | None = None
 
 
@@ -28,6 +28,7 @@ class DiscoveredDomain(BaseModel):
     last_seen: datetime | None = None
     resolves: bool = False
     is_seed: bool = False
+    seed_sources: list[str] = Field(default_factory=list)
 
 
 class ScoutResult(BaseModel):
@@ -35,7 +36,8 @@ class ScoutResult(BaseModel):
 
     entity: EntityInput
     domains: list[DiscoveredDomain] = Field(default_factory=list)
-    seed_domain_assessment: str | None = None  # confirmed | suspicious | invalid | not_provided
+    seed_domain_assessment: dict[str, str] = Field(default_factory=dict)
+    seed_cross_verification: dict[str, list[str]] = Field(default_factory=dict)
     search_metadata: dict[str, object] = Field(default_factory=dict)
 
 

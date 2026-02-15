@@ -39,12 +39,22 @@ Output:
   ...
 ```
 
+## Multiple seed domains
+
+When an entity owns multiple domains that don't share certificates, a single seed only discovers part of the picture. Use `--seed` multiple times for cross-verification:
+
+```bash
+domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+```
+
+Domains independently discovered from 2+ seeds receive a `cross_seed_verified` confidence boost (0.90 base score), providing a strong convergence signal.
+
 ## CLI options
 
 | Flag | Short | Description | Default |
 |------|-------|-------------|---------|
 | `--name` | `-n` | Company name (required) | — |
-| `--seed` | `-s` | Seed domain (optional, may be incorrect) | — |
+| `--seed` | `-s` | Seed domain (repeatable) | — |
 | `--location` | `-l` | City, state, country | — |
 | `--industry` | `-i` | Industry hint | — |
 | `--deep` | `-d` | Enable GeoDNS global resolution | `false` |

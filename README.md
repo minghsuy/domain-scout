@@ -21,6 +21,9 @@ domain-scout --name "Guidewire Software" --location "San Mateo, CA"
 # With seed domain
 domain-scout --name "Palo Alto Networks" --location "Santa Clara, CA" --seed "paloaltonetworks.com"
 
+# Multiple seeds — cross-verification boosts confidence for domains found by both
+domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+
 # Deep mode — GeoDNS global resolution for non-resolving domains
 domain-scout --name "Walmart" --seed "walmart.com" --deep
 
@@ -39,7 +42,7 @@ from domain_scout import Scout
 result = Scout().discover(
     company_name="Palo Alto Networks",
     location="Santa Clara, CA",
-    seed_domain="paloaltonetworks.com",
+    seed_domain=["paloaltonetworks.com"],
 )
 
 for domain in result.domains:
@@ -56,7 +59,7 @@ async def main():
     scout = Scout()
     result = await scout.discover_async(EntityInput(
         company_name="Palo Alto Networks",
-        seed_domain="paloaltonetworks.com",
+        seed_domain=["paloaltonetworks.com"],
     ))
     return result
 
@@ -69,7 +72,8 @@ result = asyncio.run(main())
 2. **CT org search** — Queries crt.sh Postgres for certificates where the Subject Organization matches the company name
 3. **Seed expansion** — Finds all SANs on certs covering the seed domain, revealing related domains (e.g., acquired companies)
 4. **Domain guessing** — Generates candidates from the company name + common TLDs, resolves them, verifies via CT
-5. **Confidence scoring** — Scores each domain 0–1 based on org match, SAN co-occurrence, DNS resolution, and shared infrastructure
+5. **Cross-seed verification** — With multiple seeds, domains found independently by 2+ seeds get a confidence boost
+6. **Confidence scoring** — Scores each domain 0–1 based on org match, SAN co-occurrence, DNS resolution, cross-seed verification, and shared infrastructure
 
 ### Data sources
 
