@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import re
+from datetime import datetime
 from typing import TYPE_CHECKING
 
 import httpx
@@ -39,6 +40,18 @@ _QUERY_ORG_FROM_CERT = """
     FROM certificate c
     WHERE c.id = %(cert_id)s
 """
+
+
+def _parse_dt(value: object) -> datetime | None:
+    """Parse a datetime string from the crt.sh JSON API."""
+    if isinstance(value, datetime):
+        return value
+    if not isinstance(value, str) or not value:
+        return None
+    try:
+        return datetime.fromisoformat(value)
+    except ValueError:
+        return None
 
 
 def _extract_org_from_subject(subject: str) -> str | None:
@@ -210,8 +223,8 @@ class CTLogSource:
                     "common_name": entry.get("common_name", ""),
                     "subject": entry.get("name_value", ""),
                     "org_name": entry.get("issuer_name", ""),
-                    "not_before": entry.get("not_before"),
-                    "not_after": entry.get("not_after"),
+                    "not_before": _parse_dt(entry.get("not_before")),
+                    "not_after": _parse_dt(entry.get("not_after")),
                     "san_dns_names": [],
                 }
             name_value = entry.get("name_value", "")
