@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from datetime import UTC, datetime
 
+import pytest
+
 from domain_scout.config import ScoutConfig
 from domain_scout.models import EvidenceRecord, RunMetadata
 
@@ -44,6 +46,10 @@ class TestDiscoveryProfiles:
         # Default and strict do not
         assert ScoutConfig().include_non_resolving is False
         assert ScoutConfig.from_profile("strict").include_non_resolving is False
+
+    def test_invalid_profile_raises(self) -> None:
+        with pytest.raises(ValueError, match="Unknown profile"):
+            ScoutConfig.from_profile("aggressive")  # type: ignore[arg-type]
 
 
 # --- RunMetadata ---

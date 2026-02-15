@@ -78,11 +78,13 @@ class ScoutConfig:
 
     def to_dict(self) -> dict[str, object]:
         """Serialize config to a plain dict for audit snapshots."""
-        return {k: v for k, v in dataclasses.asdict(self).items()}
+        return dataclasses.asdict(self)
 
     @classmethod
     def from_profile(cls, profile: ProfileName, **overrides: object) -> ScoutConfig:
         """Create a config from a named profile with optional overrides."""
-        base: dict[str, object] = dict(_PROFILES.get(profile, {}))
+        if profile not in _PROFILES:
+            raise ValueError(f"Unknown profile: {profile!r}. Choose from: {', '.join(_PROFILES)}")
+        base: dict[str, object] = dict(_PROFILES[profile])
         base.update(overrides)
         return cls(**base)  # type: ignore[arg-type]
