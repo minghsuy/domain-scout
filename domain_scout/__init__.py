@@ -1,6 +1,28 @@
 """domain-scout: Discover internet domains associated with a business entity."""
 
-from domain_scout.models import DiscoveredDomain, EntityInput, ScoutResult
+from importlib.metadata import version as _pkg_version
+
+from domain_scout._logging import configure_logging
+from domain_scout.models import (
+    DiscoveredDomain,
+    EntityInput,
+    EvidenceRecord,
+    RunMetadata,
+    ScoutResult,
+)
 from domain_scout.scout import Scout
 
-__all__ = ["Scout", "EntityInput", "DiscoveredDomain", "ScoutResult"]
+configure_logging()
+
+__version__ = _pkg_version("domain-scout")
+
+__all__ = [
+    "Scout",
+    "EntityInput",
+    "DiscoveredDomain",
+    "EvidenceRecord",
+    "RunMetadata",
+    "ScoutResult",
+    "__version__",
+    "configure_logging",
+]

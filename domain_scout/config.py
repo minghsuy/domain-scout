@@ -2,7 +2,26 @@
 
 from __future__ import annotations
 
+import dataclasses
 from dataclasses import dataclass, field
+from typing import Literal
+
+ProfileName = Literal["broad", "balanced", "strict"]
+
+_PROFILES: dict[str, dict[str, object]] = {
+    "broad": {
+        "org_match_threshold": 0.50,
+        "inclusion_threshold": 0.40,
+        "seed_confirm_threshold": 0.45,
+        "include_non_resolving": True,
+    },
+    "balanced": {},  # all defaults
+    "strict": {
+        "org_match_threshold": 0.80,
+        "inclusion_threshold": 0.75,
+        "seed_confirm_threshold": 0.75,
+    },
+}
 
 
 @dataclass(frozen=True)
@@ -53,3 +72,17 @@ class ScoutConfig:
     geodns_base_url: str = "https://geonet.shodan.io/api/geodns"
     geodns_concurrency: int = 3
     geodns_delay: float = 0.5  # seconds between requests per concurrent slot
+
+    # --- Output filtering ---
+    include_non_resolving: bool = False
+
+    def to_dict(self) -> dict[str, object]:
+        """Serialize config to a plain dict for audit snapshots."""
+        return {k: v for k, v in dataclasses.asdict(self).items()}
+
+    @classmethod
+    def from_profile(cls, profile: ProfileName, **overrides: object) -> ScoutConfig:
+        """Create a config from a named profile with optional overrides."""
+        base: dict[str, object] = dict(_PROFILES.get(profile, {}))
+        base.update(overrides)
+        return cls(**base)  # type: ignore[arg-type]

@@ -5,9 +5,9 @@ from __future__ import annotations
 import logging
 from typing import TYPE_CHECKING, Annotated
 
-import structlog
 import typer
 
+from domain_scout._logging import configure_logging
 from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout
 
@@ -21,18 +21,6 @@ app = typer.Typer(
 )
 
 
-def _configure_logging(verbose: bool) -> None:
-    level = logging.DEBUG if verbose else logging.INFO
-    structlog.configure(
-        wrapper_class=structlog.make_filtering_bound_logger(level),
-        processors=[
-            structlog.processors.add_log_level,
-            structlog.processors.TimeStamper(fmt="iso"),
-            structlog.dev.ConsoleRenderer(),
-        ],
-    )
-
-
 @app.command()
 def scout(
     name: Annotated[str, typer.Option("--name", "-n", help="Company name to search for")],
@@ -42,9 +30,7 @@ def scout(
     seed: Annotated[
         list[str] | None, typer.Option("--seed", "-s", help="Seed domain(s), repeatable")
     ] = None,
-    industry: Annotated[
-        str | None, typer.Option("--industry", "-i", help="Industry hint")
-    ] = None,
+    industry: Annotated[str | None, typer.Option("--industry", "-i", help="Industry hint")] = None,
     deep: Annotated[
         bool,
         typer.Option("--deep", "-d", help="GeoDNS global resolution"),
@@ -52,22 +38,25 @@ def scout(
     output: Annotated[
         str, typer.Option("--output", "-o", help="Output format: table or json")
     ] = "table",
-    timeout: Annotated[
-        int, typer.Option("--timeout", help="Total timeout in seconds")
-    ] = 120,
-    verbose: Annotated[
-        bool, typer.Option("--verbose", "-v", help="Verbose logging")
-    ] = False,
+    timeout: Annotated[int, typer.Option("--timeout", help="Total timeout in seconds")] = 120,
+    profile: Annotated[
+        str | None,
+        typer.Option("--profile", "-p", help="Discovery profile: broad, balanced, strict"),
+    ] = None,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
-    _configure_logging(verbose)
+    configure_logging(level=logging.DEBUG if verbose else logging.INFO)
 
     seeds = seed or []
     if deep:
         timeout = max(timeout, 180)
     if len(seeds) >= 3:
         timeout = max(timeout, 150)
-    config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
+    if profile:
+        config = ScoutConfig.from_profile(profile, total_timeout=timeout, deep_mode=deep)  # type: ignore[arg-type]
+    else:
+        config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
     s = Scout(config=config)
 
     try:
@@ -123,16 +112,15 @@ def _print_table(result: ScoutResult) -> None:
             err=True,
         )
 
-    meta = result.search_metadata
     typer.echo(err=True)
     typer.echo(
-        f"  Found {meta.get('domains_found', 0)} domains in {meta.get('elapsed_seconds', '?')}s",
+        f"  Found {result.run_metadata.domains_found} domains"
+        f" in {result.run_metadata.elapsed_seconds}s",
         err=True,
     )
 
-    errs: list[str] = meta.get("errors", [])  # type: ignore[assignment]
-    if errs:
-        typer.echo(f"  Warnings: {len(errs)}", err=True)
+    if result.run_metadata.errors:
+        typer.echo(f"  Warnings: {len(result.run_metadata.errors)}", err=True)
 
 
 if __name__ == "__main__":

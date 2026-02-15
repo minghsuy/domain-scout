@@ -1,6 +1,6 @@
 [project]
 name = "domain-scout"
-version = "0.1.0"
+version = "0.2.0"
 description = "Discover internet domains associated with a business entity via CT logs, RDAP, and DNS"
 requires-python = ">=3.12"
 license = "MIT"

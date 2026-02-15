@@ -2,14 +2,27 @@
 
 from __future__ import annotations
 
+from datetime import UTC, datetime
 from unittest.mock import AsyncMock, patch
 
 from domain_scout.config import ScoutConfig
-from domain_scout.models import DiscoveredDomain, EntityInput, ScoutResult
+from domain_scout.models import (
+    DiscoveredDomain,
+    EntityInput,
+    EvidenceRecord,
+    RunMetadata,
+    ScoutResult,
+)
 from domain_scout.scout import Scout, _DomainAccum, _extract_contributing_seeds
 
 # Shared stub result for backward compat tests
-_STUB_RESULT = ScoutResult(entity=EntityInput(company_name="Test"))
+_STUB_META = RunMetadata(
+    tool_version="0.0.0-test",
+    timestamp=datetime.now(UTC),
+    elapsed_seconds=0.0,
+    domains_found=0,
+)
+_STUB_RESULT = ScoutResult(entity=EntityInput(company_name="Test"), run_metadata=_STUB_META)
 
 # --- Unit tests for cross-seed detection ---
 
@@ -34,7 +47,7 @@ class TestApplyCrossSeedBoost:
 
         Scout._apply_cross_seed_boost(evidence, ["walmart.com", "samsclub.com"])
         assert "cross_seed_verified" in a.sources
-        assert any("Cross-verified" in e for e in a.evidence)
+        assert any(e.source_type == "cross_seed_verified" for e in a.evidence)
 
     def test_boost_mixed_source_types(self) -> None:
         a = _DomainAccum()
@@ -216,6 +229,7 @@ class TestModelChanges:
         r = ScoutResult(
             entity=EntityInput(company_name="Test", seed_domain=["a.com"]),
             seed_domain_assessment={"a.com": "confirmed"},
+            run_metadata=_STUB_META,
         )
         assert r.seed_domain_assessment["a.com"] == "confirmed"
 
@@ -223,6 +237,7 @@ class TestModelChanges:
         r = ScoutResult(
             entity=EntityInput(company_name="Test", seed_domain=["a.com", "b.com"]),
             seed_cross_verification={"a.com": ["b.com"]},
+            run_metadata=_STUB_META,
         )
         assert r.seed_cross_verification["a.com"] == ["b.com"]
 
@@ -251,14 +266,26 @@ class TestSimulatedScenarios:
         # walmartlabs.com found via walmart.com seed expansion
         a1 = _DomainAccum()
         a1.sources.add("ct_san_expansion:walmart.com")
-        a1.evidence.append("Found on same cert as seed domain walmart.com")
+        a1.evidence.append(
+            EvidenceRecord(
+                source_type="ct_san_expansion",
+                description="Found on same cert as seed domain walmart.com",
+                seed_domain="walmart.com",
+            )
+        )
         a1.resolves = True
         evidence["walmartlabs.com"] = a1
 
         # walmartlabs.com also found via samsclub.com seed expansion
         a2 = _DomainAccum()
         a2.sources.add("ct_san_expansion:samsclub.com")
-        a2.evidence.append("Found on same cert as seed domain samsclub.com")
+        a2.evidence.append(
+            EvidenceRecord(
+                source_type="ct_san_expansion",
+                description="Found on same cert as seed domain samsclub.com",
+                seed_domain="samsclub.com",
+            )
+        )
         evidence["walmartlabs.com"].merge(a2)
 
         # Apply cross-seed boost
@@ -490,9 +517,10 @@ class TestLookAlikeDifferentEntities:
         Scout._apply_cross_seed_boost(evidence, ["delta.com", "deltafaucet.com"])
         assert "cross_seed_verified" not in a.sources
         # 0.40 (ct_seed_related) + 0.05 (2 sources) + 0.05 (resolves) = 0.50
-        assert self.scout._score_confidence(
-            a, "Delta Air Lines", ["delta.com", "deltafaucet.com"]
-        ) == 0.50
+        assert (
+            self.scout._score_confidence(a, "Delta Air Lines", ["delta.com", "deltafaucet.com"])
+            == 0.50
+        )
 
     def test_completely_isolated_seeds(self) -> None:
         """Zero cert overlap between unrelated seeds -- no cross-verification."""
@@ -570,10 +598,15 @@ class TestCrossVerificationEdgeCases:
     def test_all_boosts_cap_at_one(self) -> None:
         """Every possible boost stacked still caps at exactly 1.0."""
         a = _DomainAccum()
-        a.sources.update({
-            "cross_seed_verified", "ct_org_match", "rdap_match",
-            "ct_san_expansion:walmart.com", "ct_san_expansion:samsclub.com",
-        })
+        a.sources.update(
+            {
+                "cross_seed_verified",
+                "ct_org_match",
+                "rdap_match",
+                "ct_san_expansion:walmart.com",
+                "ct_san_expansion:samsclub.com",
+            }
+        )
         a.cert_org_names.add("Walmart Inc.")
         a.resolves = True
 
@@ -612,8 +645,11 @@ class TestCrossVerificationEdgeCases:
         sources = {
             "ct_san_expansion:walmart.com",
             "ct_seed_related:samsclub.com",
-            "ct_org_match", "dns_guess", "cross_seed_verified",
-            "rdap_match", "shared_infra",
+            "ct_org_match",
+            "dns_guess",
+            "cross_seed_verified",
+            "rdap_match",
+            "shared_infra",
         }
         assert _extract_contributing_seeds(sources) == {"walmart.com", "samsclub.com"}
 
@@ -630,10 +666,13 @@ class TestBuildOutputEdgeCases:
     def test_non_resolving_cross_verified_excluded(self) -> None:
         """Non-resolving non-seed domain excluded even with high confidence."""
         a = _DomainAccum()
-        a.sources.update({
-            "ct_san_expansion:a.com", "ct_san_expansion:b.com",
-            "cross_seed_verified",
-        })
+        a.sources.update(
+            {
+                "ct_san_expansion:a.com",
+                "ct_san_expansion:b.com",
+                "cross_seed_verified",
+            }
+        )
         a.resolves = False
         a.confidence = 1.0
         evidence = {"dead-domain.com": a}

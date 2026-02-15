@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import asyncio
 import time
+from datetime import UTC, datetime
+from importlib.metadata import version as _pkg_version
 from typing import Any
 
 import httpx
@@ -14,7 +16,13 @@ from domain_scout.matching.entity_match import (
     domain_from_company_name,
     org_name_similarity,
 )
-from domain_scout.models import DiscoveredDomain, EntityInput, ScoutResult
+from domain_scout.models import (
+    DiscoveredDomain,
+    EntityInput,
+    EvidenceRecord,
+    RunMetadata,
+    ScoutResult,
+)
 from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
 from domain_scout.sources.dns_utils import DNSChecker
 from domain_scout.sources.rdap import RDAPLookup
@@ -225,9 +233,7 @@ class Scout:
 
         # Step 3b: GeoDNS rescue for non-resolving domains (deep mode)
         if self.config.deep_mode and _remaining() > 3.0:
-            failed_domains = [
-                d for d, acc in domain_evidence.items() if not acc.resolves
-            ]
+            failed_domains = [d for d, acc in domain_evidence.items() if not acc.resolves]
             if failed_domains:
                 log.info("scout.geodns_rescue", count=len(failed_domains))
                 try:
@@ -243,7 +249,10 @@ class Scout:
                         accum.resolves = True
                         accum.sources.add("geodns")
                         accum.evidence.append(
-                            "Resolved via Shodan GeoDNS (global)"
+                            EvidenceRecord(
+                                source_type="geodns",
+                                description="Resolved via Shodan GeoDNS (global)",
+                            )
                         )
                         log.info("scout.geodns_rescued", domain=domain)
                 except TimeoutError:
@@ -253,9 +262,7 @@ class Scout:
         # Step 4: confidence scoring and infrastructure comparison
         confirmed_domains: list[str] = []
         for domain, accum in domain_evidence.items():
-            accum.confidence = self._score_confidence(
-                accum, entity.company_name, seeds
-            )
+            accum.confidence = self._score_confidence(accum, entity.company_name, seeds)
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
 
@@ -282,21 +289,22 @@ class Scout:
         domains = self._build_output(domain_evidence, seeds)
 
         elapsed = time.monotonic() - t0
-        metadata: dict[str, Any] = {
-            "elapsed_seconds": round(elapsed, 2),
-            "domains_found": len(domains),
-            "errors": errors,
-        }
-        if timed_out:
-            metadata["timed_out"] = True
-        if len(seeds) > 1:
-            metadata["seed_count"] = len(seeds)
+        run_meta = RunMetadata(
+            tool_version=_pkg_version("domain-scout"),
+            timestamp=datetime.now(UTC),
+            elapsed_seconds=round(elapsed, 2),
+            domains_found=len(domains),
+            timed_out=timed_out,
+            seed_count=len(seeds),
+            errors=errors,
+            config=self.config.to_dict(),
+        )
         return ScoutResult(
             entity=entity,
             domains=domains,
             seed_domain_assessment=seed_assessments,
             seed_cross_verification=seed_cross_verification,
-            search_metadata=metadata,
+            run_metadata=run_meta,
         )
 
     # --- Step 1: Seed validation ---
@@ -408,8 +416,15 @@ class Scout:
                     continue
                 accum = _DomainAccum()
                 accum.sources.add("ct_org_match")
+                desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
                 accum.evidence.append(
-                    f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+                    EvidenceRecord(
+                        source_type="ct_org_match",
+                        description=desc,
+                        cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                        cert_org=cert_org,
+                        similarity_score=round(similarity, 4),
+                    )
                 )
                 accum.cert_org_names.add(cert_org)
                 nb = rec.get("not_before")
@@ -441,9 +456,7 @@ class Scout:
             all_names = _collect_cert_names(sans, cn)
 
             # Detect CDN/multi-tenant certs: many unrelated base domains + org mismatch
-            unique_bases = {
-                extract_base_domain(s) for s in sans if is_valid_domain(s)
-            } - {None}
+            unique_bases = {extract_base_domain(s) for s in sans if is_valid_domain(s)} - {None}
             org_sim = (
                 org_name_similarity(cert_org, company_name)
                 if isinstance(cert_org, str) and cert_org
@@ -467,19 +480,33 @@ class Scout:
 
                 if base == seed_base:
                     accum.sources.add(f"ct_seed_subdomain:{seed_domain}")
-                    accum.evidence.append(f"Subdomain of seed domain {seed_domain}")
+                    accum.evidence.append(
+                        EvidenceRecord(
+                            source_type="ct_seed_subdomain",
+                            description=f"Subdomain of seed domain {seed_domain}",
+                            seed_domain=seed_domain,
+                        )
+                    )
                 elif has_seed_san:
                     # Skip non-seed SANs on CDN certs — Strategy A handles org-matched domains
                     if is_cdn_cert:
                         continue
                     accum.sources.add(f"ct_san_expansion:{seed_domain}")
                     accum.evidence.append(
-                        f"Found on same cert as seed domain {seed_domain}"
+                        EvidenceRecord(
+                            source_type="ct_san_expansion",
+                            description=f"Found on same cert as seed domain {seed_domain}",
+                            seed_domain=seed_domain,
+                        )
                     )
                 else:
                     accum.sources.add(f"ct_seed_related:{seed_domain}")
                     accum.evidence.append(
-                        f"Found in CT search for {seed_domain}"
+                        EvidenceRecord(
+                            source_type="ct_seed_related",
+                            description=f"Found in CT search for {seed_domain}",
+                            seed_domain=seed_domain,
+                        )
                     )
 
                 if isinstance(cert_org, str) and cert_org:
@@ -487,8 +514,15 @@ class Scout:
                     sim = org_name_similarity(cert_org, company_name)
                     if sim >= self.config.org_match_threshold:
                         accum.sources.add("ct_org_match")
+                        desc = f"Cert org '{cert_org}' matches target (score={sim:.2f})"
                         accum.evidence.append(
-                            f"Cert org '{cert_org}' matches target (score={sim:.2f})"
+                            EvidenceRecord(
+                                source_type="ct_org_match",
+                                description=desc,
+                                cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                                cert_org=cert_org,
+                                similarity_score=round(sim, 4),
+                            )
                         )
 
                 nb = rec.get("not_before")
@@ -530,7 +564,12 @@ class Scout:
                 continue
             accum = _DomainAccum()
             accum.sources.add("dns_guess")
-            accum.evidence.append("Guessed from company name, resolves in DNS")
+            accum.evidence.append(
+                EvidenceRecord(
+                    source_type="dns_guess",
+                    description="Guessed from company name, resolves in DNS",
+                )
+            )
             accum.resolves = True
             results.append((base, accum))
 
@@ -539,9 +578,7 @@ class Scout:
     # --- Cross-seed detection ---
 
     @staticmethod
-    def _apply_cross_seed_boost(
-        domain_evidence: dict[str, _DomainAccum], seeds: list[str]
-    ) -> None:
+    def _apply_cross_seed_boost(domain_evidence: dict[str, _DomainAccum], seeds: list[str]) -> None:
         """Add cross_seed_verified source to domains found from 2+ independent seeds.
 
         Requires at least one strong source (ct_san_expansion or ct_seed_subdomain).
@@ -551,15 +588,16 @@ class Scout:
         for accum in domain_evidence.values():
             contributing_seeds = _extract_contributing_seeds(accum.sources)
             if len(contributing_seeds) >= 2:
-                has_strong = any(
-                    s.startswith(strong_prefixes) for s in accum.sources
-                )
+                has_strong = any(s.startswith(strong_prefixes) for s in accum.sources)
                 if not has_strong:
                     continue
                 seeds_str = ", ".join(sorted(contributing_seeds))
                 accum.sources.add("cross_seed_verified")
                 accum.evidence.append(
-                    f"Cross-verified: found from seeds {seeds_str}"
+                    EvidenceRecord(
+                        source_type="cross_seed_verified",
+                        description=f"Cross-verified: found from seeds {seeds_str}",
+                    )
                 )
 
     # --- Step 3: Confidence scoring ---
@@ -604,9 +642,7 @@ class Scout:
 
         return round(score, 2)
 
-    async def _infra_boost(
-        self, reference: str, evidence: dict[str, _DomainAccum]
-    ) -> None:
+    async def _infra_boost(self, reference: str, evidence: dict[str, _DomainAccum]) -> None:
         """Small confidence boost for domains sharing infra with a reference domain."""
         # Select top candidates by confidence, capped
         candidates = [
@@ -622,7 +658,12 @@ class Scout:
                 shared = await self._dns.shares_infrastructure(reference, domain)
                 if shared:
                     accum.sources.add("shared_infra")
-                    accum.evidence.append(f"Shares infrastructure with {reference}")
+                    accum.evidence.append(
+                        EvidenceRecord(
+                            source_type="shared_infra",
+                            description=f"Shares infrastructure with {reference}",
+                        )
+                    )
                     accum.confidence = min(1.0, accum.confidence + 0.05)
             except Exception:
                 pass
@@ -641,24 +682,35 @@ class Scout:
         self, evidence: dict[str, _DomainAccum], seed_domains: list[str]
     ) -> list[DiscoveredDomain]:
         domains: list[DiscoveredDomain] = []
-        seed_bases = {
-            extract_base_domain(sd) for sd in seed_domains
-        } - {None}
+        seed_bases = {extract_base_domain(sd) for sd in seed_domains} - {None}
 
         for domain, accum in evidence.items():
             if accum.confidence < self.config.inclusion_threshold:
                 continue
-            if not accum.resolves and domain not in seed_bases:
+            if (
+                not accum.resolves
+                and domain not in seed_bases
+                and not self.config.include_non_resolving
+            ):
                 continue
 
             contributing_seeds = sorted(_extract_contributing_seeds(accum.sources))
+
+            # Deduplicate evidence records
+            seen: set[tuple[str, str | None, int | None]] = set()
+            deduped: list[EvidenceRecord] = []
+            for ev in accum.evidence:
+                key = (ev.source_type, ev.seed_domain, ev.cert_id)
+                if key not in seen:
+                    seen.add(key)
+                    deduped.append(ev)
 
             domains.append(
                 DiscoveredDomain(
                     domain=domain,
                     confidence=accum.confidence,
                     sources=sorted(accum.sources),
-                    evidence=accum.evidence,
+                    evidence=deduped,
                     cert_org_names=sorted(accum.cert_org_names),
                     first_seen=accum.first_seen,
                     last_seen=accum.last_seen,
@@ -685,7 +737,7 @@ def _extract_contributing_seeds(sources: set[str]) -> set[str]:
     for src in sources:
         for prefix in _SEED_SOURCE_PREFIXES:
             if src.startswith(prefix):
-                seeds.add(src[len(prefix):])
+                seeds.add(src[len(prefix) :])
     return seeds
 
 
@@ -712,7 +764,7 @@ class _DomainAccum:
 
     def __init__(self) -> None:
         self.sources: set[str] = set()
-        self.evidence: list[str] = []
+        self.evidence: list[EvidenceRecord] = []
         self.cert_org_names: set[str] = set()
         self.first_seen: Any = None
         self.last_seen: Any = None
