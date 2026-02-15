@@ -35,14 +35,21 @@ class Scout:
         self,
         company_name: str,
         location: str | None = None,
-        seed_domain: str | None = None,
+        seed_domain: str | None | list[str] = None,
         industry: str | None = None,
     ) -> ScoutResult:
         """Synchronous entry point. Runs the async pipeline."""
+        # Coerce seed_domain to list for backward compat
+        if seed_domain is None:
+            seeds: list[str] = []
+        elif isinstance(seed_domain, str):
+            seeds = [seed_domain]
+        else:
+            seeds = list(seed_domain)
         entity = EntityInput(
             company_name=company_name,
             location=location,
-            seed_domain=seed_domain,
+            seed_domain=seeds,
             industry=industry,
         )
         return asyncio.run(self._discover(entity))
@@ -56,6 +63,7 @@ class Scout:
         total_budget = float(self.config.total_timeout)
         errors: list[str] = []
         timed_out = False
+        seeds = entity.seed_domain  # list[str]
 
         # Accumulator: domain -> evidence dict
         domain_evidence: dict[str, _DomainAccum] = {}
@@ -76,8 +84,9 @@ class Scout:
 
         # Phase 1: Seed validation + independent strategies run in parallel.
         # Strategies A (org search) and C (domain guess) don't need seed results.
-        seed_assessment = "not_provided"
-        seed_org_name: str | None = None
+        seed_assessments: dict[str, str] = {}
+        seed_org_names: dict[str, str | None] = {}
+        seed_cross_verification: dict[str, list[str]] = {}
 
         independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
@@ -97,50 +106,79 @@ class Scout:
             )
         )
 
-        # Seed validation runs concurrently with A and C
-        seed_task: asyncio.Task[tuple[str, str | None]] | None = None
-        if entity.seed_domain:
-            seed_task = asyncio.create_task(
-                self._validate_seed(entity.seed_domain, entity.company_name, errors),
-                name="seed_validation",
+        # Parallel seed validation for all seeds
+        seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
+        for sd in seeds:
+            seed_tasks[sd] = asyncio.create_task(
+                self._validate_seed(sd, entity.company_name, seeds, errors),
+                name=f"seed_validation:{sd}",
             )
 
-        # Wait for seed validation (capped at 15s) while A/C also run
-        if seed_task is not None:
+        # Wait for all seed validations (capped at 15s) while A/C also run
+        if seed_tasks:
             try:
-                seed_assessment, seed_org_name = await asyncio.wait_for(
-                    seed_task, timeout=min(15.0, _remaining())
+                seed_results = await asyncio.wait_for(
+                    asyncio.gather(*seed_tasks.values(), return_exceptions=True),
+                    timeout=min(15.0, _remaining()),
                 )
+                for sd, result in zip(seed_tasks.keys(), seed_results, strict=True):
+                    if isinstance(result, BaseException):
+                        errors.append(f"Seed validation failed for {sd}: {result}")
+                        seed_assessments[sd] = "error"
+                    else:
+                        seed_assessments[sd] = result["assessment"]
+                        seed_org_names[sd] = result["org_name"]
+                        if result.get("co_hosted_seeds"):
+                            seed_cross_verification[sd] = result["co_hosted_seeds"]
+                        log.info(
+                            "scout.seed_validated",
+                            seed=sd,
+                            assessment=result["assessment"],
+                            seed_org=result["org_name"],
+                            co_hosted=result.get("co_hosted_seeds", []),
+                        )
             except TimeoutError:
                 errors.append("Seed validation timed out")
-                seed_assessment = "timeout"
-                seed_task.cancel()
-            else:
-                log.info(
-                    "scout.seed_validated",
-                    seed=entity.seed_domain,
-                    assessment=seed_assessment,
-                    seed_org=seed_org_name,
-                )
+                for sd, stask in seed_tasks.items():
+                    if not stask.done():
+                        stask.cancel()
+                        seed_assessments.setdefault(sd, "timeout")
+                    elif not stask.cancelled():
+                        exc = stask.exception()
+                        if exc:
+                            seed_assessments.setdefault(sd, "error")
+                        else:
+                            r = stask.result()
+                            seed_assessments.setdefault(sd, r["assessment"])
+                            seed_org_names.setdefault(sd, r["org_name"])
+                            if r.get("co_hosted_seeds"):
+                                seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
 
         # Phase 2: Seed-dependent strategies (B + optional second org search)
         dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
-        if seed_org_name and org_name_similarity(seed_org_name, entity.company_name) < 0.95:
-            dependent_tasks.append(
-                asyncio.create_task(
-                    self._strategy_org_search(seed_org_name, errors),
-                    name="org_search_seed",
+        # Extra org searches from seed-derived org names
+        seen_org_searches: set[str] = set()
+        for sd, org_name in seed_org_names.items():
+            if (
+                org_name
+                and org_name not in seen_org_searches
+                and org_name_similarity(org_name, entity.company_name) < 0.95
+            ):
+                seen_org_searches.add(org_name)
+                dependent_tasks.append(
+                    asyncio.create_task(
+                        self._strategy_org_search(org_name, errors),
+                        name=f"org_search_seed:{sd}",
+                    )
                 )
-            )
 
-        if entity.seed_domain:
+        # Strategy B per seed (parallel) — tagged with seed name
+        for sd in seeds:
             dependent_tasks.append(
                 asyncio.create_task(
-                    self._strategy_seed_expansion(
-                        entity.seed_domain, entity.company_name, errors
-                    ),
-                    name="seed_expansion",
+                    self._strategy_seed_expansion(sd, entity.company_name, errors),
+                    name=f"seed_expansion:{sd}",
                 )
             )
 
@@ -166,6 +204,10 @@ class Scout:
                         _collect([task.result()])
                 elif not task.done():
                     task.cancel()
+
+        # Cross-seed detection: if a domain has seed-tagged sources from 2+ seeds
+        if len(seeds) > 1:
+            self._apply_cross_seed_boost(domain_evidence, seeds)
 
         # Step 3: DNS resolution for all discovered domains
         all_domains = list(domain_evidence.keys())
@@ -212,20 +254,32 @@ class Scout:
         confirmed_domains: list[str] = []
         for domain, accum in domain_evidence.items():
             accum.confidence = self._score_confidence(
-                accum, entity.company_name, entity.seed_domain
+                accum, entity.company_name, seeds
             )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
 
-        # Infrastructure sharing boost (compare against seed or highest-confidence domain)
-        reference = entity.seed_domain
+        # Infrastructure sharing boost (compare against highest-confidence seed)
+        reference: str | None = None
+        if seeds:
+            # Pick highest-confidence confirmed seed
+            best_seed_conf = -1.0
+            for sd in seeds:
+                sd_base = extract_base_domain(sd)
+                if sd_base and sd_base in domain_evidence:
+                    conf = domain_evidence[sd_base].confidence
+                    if conf > best_seed_conf:
+                        best_seed_conf = conf
+                        reference = sd_base
+            if reference is None:
+                reference = extract_base_domain(seeds[0])
         if not reference and confirmed_domains:
             reference = confirmed_domains[0]
         if reference and len(domain_evidence) <= 50 and _remaining() > 1.0:
             await self._infra_boost(reference, domain_evidence)
 
         # Build output
-        domains = self._build_output(domain_evidence, entity.seed_domain)
+        domains = self._build_output(domain_evidence, seeds)
 
         elapsed = time.monotonic() - t0
         metadata: dict[str, Any] = {
@@ -235,19 +289,22 @@ class Scout:
         }
         if timed_out:
             metadata["timed_out"] = True
+        if len(seeds) > 1:
+            metadata["seed_count"] = len(seeds)
         return ScoutResult(
             entity=entity,
             domains=domains,
-            seed_domain_assessment=seed_assessment,
+            seed_domain_assessment=seed_assessments,
+            seed_cross_verification=seed_cross_verification,
             search_metadata=metadata,
         )
 
     # --- Step 1: Seed validation ---
 
     async def _validate_seed(
-        self, seed: str, company_name: str, errors: list[str]
-    ) -> tuple[str, str | None]:
-        """Returns (assessment, org_name_from_cert)."""
+        self, seed: str, company_name: str, all_seeds: list[str], errors: list[str]
+    ) -> dict[str, Any]:
+        """Returns dict with assessment, org_name, and co_hosted_seeds."""
         resolves = await self._dns.resolves(seed)
 
         rdap_org: str | None = None
@@ -259,6 +316,15 @@ class Scout:
         # Also check CT for the org name on certs
         ct_records = await self._ct.search_by_domain(seed)
         cert_orgs: set[str] = set()
+        # Build reverse lookup: base domain -> original seed domain (excluding current seed)
+        co_hosted_seeds: list[str] = []
+        base_to_seed: dict[str, str] = {}
+        for s in all_seeds:
+            if s != seed:
+                base = extract_base_domain(s)
+                if base:
+                    base_to_seed[base] = s
+
         for rec in ct_records:
             org = rec.get("org_name")
             if (
@@ -268,6 +334,13 @@ class Scout:
                 and not org.lstrip("*.").endswith(("." + seed, seed))
             ):
                 cert_orgs.add(org)
+            # Check if other seeds share this cert
+            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            san_bases = {b for s in sans if is_valid_domain(s) and (b := extract_base_domain(s))}
+            for matched_base in san_bases & base_to_seed.keys():
+                other_seed = base_to_seed[matched_base]
+                if other_seed not in co_hosted_seeds:
+                    co_hosted_seeds.append(other_seed)
 
         # Pick best org name from any source
         best_org: str | None = None
@@ -289,10 +362,18 @@ class Scout:
                 best_score = slug_score
 
         if best_score >= self.config.seed_confirm_threshold:
-            return "confirmed", best_org
-        if resolves:
-            return "suspicious", best_org
-        return "invalid", best_org
+            assessment = "confirmed"
+        elif resolves:
+            assessment = "suspicious"
+        else:
+            assessment = "invalid"
+
+        return {
+            "seed": seed,
+            "assessment": assessment,
+            "org_name": best_org,
+            "co_hosted_seeds": co_hosted_seeds,
+        }
 
     # --- Step 2A: Organization name search ---
 
@@ -317,7 +398,7 @@ class Scout:
 
             sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
             cn = rec.get("common_name", "")
-            all_names = list(set(sans) | ({cn} if isinstance(cn, str) and cn else set()))
+            all_names = _collect_cert_names(sans, cn)
 
             for name in all_names:
                 if not is_valid_domain(name):
@@ -334,7 +415,7 @@ class Scout:
                 nb = rec.get("not_before")
                 na = rec.get("not_after")
                 if nb:
-                    accum.update_times(nb, na)  # type: ignore[arg-type]
+                    accum.update_times(nb, na)
                 results.append((base, accum))
 
         return results
@@ -357,7 +438,7 @@ class Scout:
             sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
             cn = rec.get("common_name", "")
             cert_org = rec.get("org_name")
-            all_names = list(set(sans) | ({cn} if isinstance(cn, str) and cn else set()))
+            all_names = _collect_cert_names(sans, cn)
 
             # Detect CDN/multi-tenant certs: many unrelated base domains + org mismatch
             unique_bases = {
@@ -385,18 +466,18 @@ class Scout:
                 )
 
                 if base == seed_base:
-                    accum.sources.add("ct_seed_subdomain")
+                    accum.sources.add(f"ct_seed_subdomain:{seed_domain}")
                     accum.evidence.append(f"Subdomain of seed domain {seed_domain}")
                 elif has_seed_san:
                     # Skip non-seed SANs on CDN certs — Strategy A handles org-matched domains
                     if is_cdn_cert:
                         continue
-                    accum.sources.add("ct_san_expansion")
+                    accum.sources.add(f"ct_san_expansion:{seed_domain}")
                     accum.evidence.append(
                         f"Found on same cert as seed domain {seed_domain}"
                     )
                 else:
-                    accum.sources.add("ct_seed_related")
+                    accum.sources.add(f"ct_seed_related:{seed_domain}")
                     accum.evidence.append(
                         f"Found in CT search for {seed_domain}"
                     )
@@ -413,7 +494,7 @@ class Scout:
                 nb = rec.get("not_before")
                 na = rec.get("not_after")
                 if nb:
-                    accum.update_times(nb, na)  # type: ignore[arg-type]
+                    accum.update_times(nb, na)
                 results.append((base, accum))
 
         return results
@@ -455,25 +536,53 @@ class Scout:
 
         return results
 
+    # --- Cross-seed detection ---
+
+    @staticmethod
+    def _apply_cross_seed_boost(
+        domain_evidence: dict[str, _DomainAccum], seeds: list[str]
+    ) -> None:
+        """Add cross_seed_verified source to domains found from 2+ independent seeds.
+
+        Requires at least one strong source (ct_san_expansion or ct_seed_subdomain).
+        Two ct_seed_related from different seeds is too weak to cross-verify.
+        """
+        strong_prefixes = ("ct_san_expansion:", "ct_seed_subdomain:")
+        for accum in domain_evidence.values():
+            contributing_seeds = _extract_contributing_seeds(accum.sources)
+            if len(contributing_seeds) >= 2:
+                has_strong = any(
+                    s.startswith(strong_prefixes) for s in accum.sources
+                )
+                if not has_strong:
+                    continue
+                seeds_str = ", ".join(sorted(contributing_seeds))
+                accum.sources.add("cross_seed_verified")
+                accum.evidence.append(
+                    f"Cross-verified: found from seeds {seeds_str}"
+                )
+
     # --- Step 3: Confidence scoring ---
 
     def _score_confidence(
-        self, accum: _DomainAccum, company_name: str, seed_domain: str | None
+        self, accum: _DomainAccum, company_name: str, seed_domains: list[str]
     ) -> float:
         score = 0.0
 
+        if "cross_seed_verified" in accum.sources:
+            score = max(score, 0.90)
         if "ct_org_match" in accum.sources:
             score = max(score, 0.85)
-        if "ct_san_expansion" in accum.sources:
+        if any(s.startswith("ct_san_expansion:") for s in accum.sources):
             score = max(score, 0.80)
-        if "ct_seed_subdomain" in accum.sources:
+        if any(s.startswith("ct_seed_subdomain:") for s in accum.sources):
             score = max(score, 0.75)
-        if "ct_seed_related" in accum.sources:
+        if "rdap_match" in accum.sources:
+            score = max(score, 0.70)
+        if any(s.startswith("ct_seed_related:") for s in accum.sources):
             score = max(score, 0.40)
         if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
             score = max(score, 0.30)
-        if "rdap_match" in accum.sources:
-            score = max(score, 0.70)
 
         # Boost for multiple independent sources
         if len(accum.sources) >= 3:
@@ -529,16 +638,21 @@ class Scout:
     # --- Step 4: Build output ---
 
     def _build_output(
-        self, evidence: dict[str, _DomainAccum], seed_domain: str | None
+        self, evidence: dict[str, _DomainAccum], seed_domains: list[str]
     ) -> list[DiscoveredDomain]:
         domains: list[DiscoveredDomain] = []
-        seed_base = extract_base_domain(seed_domain) if seed_domain else None
+        seed_bases = {
+            extract_base_domain(sd) for sd in seed_domains
+        } - {None}
 
         for domain, accum in evidence.items():
             if accum.confidence < self.config.inclusion_threshold:
                 continue
-            if not accum.resolves and domain != seed_base:
+            if not accum.resolves and domain not in seed_bases:
                 continue
+
+            contributing_seeds = sorted(_extract_contributing_seeds(accum.sources))
+
             domains.append(
                 DiscoveredDomain(
                     domain=domain,
@@ -549,12 +663,38 @@ class Scout:
                     first_seen=accum.first_seen,
                     last_seen=accum.last_seen,
                     resolves=accum.resolves,
-                    is_seed=(domain == seed_base),
+                    is_seed=(domain in seed_bases),
+                    seed_sources=contributing_seeds,
                 )
             )
 
         domains.sort(key=lambda d: d.confidence, reverse=True)
         return domains
+
+
+_SEED_SOURCE_PREFIXES = (
+    "ct_san_expansion:",
+    "ct_seed_subdomain:",
+    "ct_seed_related:",
+)
+
+
+def _extract_contributing_seeds(sources: set[str]) -> set[str]:
+    """Extract the set of seed domains that contributed to a source set."""
+    seeds: set[str] = set()
+    for src in sources:
+        for prefix in _SEED_SOURCE_PREFIXES:
+            if src.startswith(prefix):
+                seeds.add(src[len(prefix):])
+    return seeds
+
+
+def _collect_cert_names(sans: list[str], cn: Any) -> list[str]:
+    """Deduplicate SAN list with common name into a single name list."""
+    names = set(sans)
+    if isinstance(cn, str) and cn:
+        names.add(cn)
+    return list(names)
 
 
 class _DomainAccum:

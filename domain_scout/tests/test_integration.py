@@ -49,10 +49,11 @@ async def test_full_scout_run() -> None:
         entity=EntityInput(
             company_name="Palo Alto Networks",
             location="Santa Clara, CA",
-            seed_domain="paloaltonetworks.com",
+            seed_domain=["paloaltonetworks.com"],
         )
     )
-    assert result.seed_domain_assessment in ("confirmed", "suspicious", "invalid")
+    assessment = result.seed_domain_assessment.get("paloaltonetworks.com", "")
+    assert assessment in ("confirmed", "suspicious", "invalid")
     assert result.search_metadata.get("elapsed_seconds", 0) > 0
     # Should find at least the seed domain
     domains = [d.domain for d in result.domains]

@@ -5,7 +5,7 @@ domain-scout runs a multi-phase async pipeline that cross-references several pub
 ## Pipeline overview
 
 ```
-Input: company name + optional seed domain
+Input: company name + optional seed domain(s)
           │
           ├─ Phase 1 (parallel)
           │   ├─ Seed validation (DNS + RDAP + CT)
@@ -75,6 +75,7 @@ Each discovered domain receives a confidence score from 0.0 to 1.0:
 
 | Signal | Score |
 |--------|-------|
+| Cross-seed verified (found from 2+ seeds) | 0.90 |
 | CT org match (O= field matches company) | 0.85 |
 | SAN co-occurrence (on same cert as seed) | 0.80 |
 | Seed subdomain | 0.75 |

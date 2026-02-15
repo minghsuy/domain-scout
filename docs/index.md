@@ -24,6 +24,9 @@ uv sync
 # Run
 domain-scout --name "Walmart" --seed "walmart.com"
 
+# Multiple seeds for cross-verification
+domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+
 # Deep mode for global resolution
 domain-scout --name "Walmart" --seed "walmart.com" --deep
 ```
@@ -32,6 +35,7 @@ domain-scout --name "Walmart" --seed "walmart.com" --deep
 
 - [Getting Started](getting-started.md) — Installation, first run, CLI options
 - [How It Works](architecture.md) — Pipeline architecture, data sources, scoring
+- [Multi-Seed Discovery](multi-seed.md) — Cross-verification with multiple seed domains
 - [Deep Mode](deep-mode.md) — GeoDNS global resolution for regional domains
 - [Examples](examples.md) — Real-world results for Walmart, Generali, and more
 - [API Reference](api.md) — Using domain-scout as a Python library

@@ -70,7 +70,23 @@ The `.it` seed finds 16 additional Czech/Italian/Slovak domains (e.g., `ceskapoj
 
 The `.com` seed finds 14 additional investment-related domains (e.g., `generali-invest.de`, `generali-investments.lu`, `generali.co.uk`) from certificates covering `generali.com`.
 
-**Takeaway:** For multinational organizations, the seed domain closest to the company's primary operations yields the best SAN expansion coverage. When in doubt, try multiple runs with different seeds.
+**Takeaway:** For multinational organizations, use multiple seeds to get the full picture:
+
+```bash
+domain-scout --name "Generali" --seed generali.it --seed generali.com
+```
+
+This finds the union of both seed sets (73+ unique domains) with cross-verified overlap domains scored at 0.90+ confidence.
+
+## Multi-seed cross-verification
+
+When using multiple seeds, domains discovered independently from 2+ seeds receive a `cross_seed_verified` source with a 0.90 base score:
+
+```bash
+domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+```
+
+If both seeds independently discover `walmartlabs.com` through separate CT searches, that convergence is a strong ownership signal. The seeds themselves may also share certificates, proving common ownership.
 
 ## How to read the output
 
@@ -78,8 +94,10 @@ The `.com` seed finds 14 additional investment-related domains (e.g., `generali-
 - **Resolves** — whether the domain resolves in DNS (`yes`/`no`)
 - **Sources** — which discovery strategies found this domain:
   - `ct_org_match` — Certificate org name matches target
-  - `ct_san_expansion` — Found on same cert as seed domain
-  - `ct_seed_subdomain` — Subdomain of seed
+  - `ct_san_expansion:{seed}` — Found on same cert as a seed domain
+  - `ct_seed_subdomain:{seed}` — Subdomain of a seed
+  - `ct_seed_related:{seed}` — Found in CT search for a seed
+  - `cross_seed_verified` — Independently found from 2+ seeds (multi-seed only)
   - `dns_guess` — Guessed from company name, resolves
   - `shared_infra` — Shares nameservers or IP range with seed
   - `geodns` — Resolved via Shodan GeoDNS (deep mode)

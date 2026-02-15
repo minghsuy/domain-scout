@@ -28,7 +28,13 @@ After Phase 3 (DNS resolution), deep mode:
 domain-scout --name "Walmart" --seed "walmart.com" --deep
 ```
 
-The `--deep` flag automatically bumps the timeout to at least 180s (from the default 120s) to account for the additional HTTP round-trips.
+Multi-seed and deep mode combine well for comprehensive discovery:
+
+```bash
+domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com --deep
+```
+
+The `--deep` flag automatically bumps the timeout to at least 180s (from the default 120s) to account for the additional HTTP round-trips. Using 3+ seeds bumps to at least 150s.
 
 ## Rate limiting
 
