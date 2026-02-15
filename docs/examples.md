@@ -54,7 +54,23 @@ domain-scout --name "Generali" --seed "generali.it"
 | `generali-uae.com` | 0.95 | UAE |
 | `dialog-versicherung.de` | 0.90 | Germany (Dialog brand) |
 
-Demonstrates strong ccTLD coverage through RDAP (via `rdap.org` universal bootstrap) and CT org matching.
+Demonstrates strong ccTLD coverage through CT org matching across 15+ countries.
+
+## Seed domain matters
+
+The choice of seed domain affects which domains are discovered through SAN expansion (Strategy B). Comparing `generali.it` vs `generali.com` as seed:
+
+| | `--seed generali.it` | `--seed generali.com` |
+|---|---|---|
+| **Total domains** | 59 | 57 |
+| **In common** | 43 | 43 |
+| **Unique to this seed** | 16 | 14 |
+
+The `.it` seed finds 16 additional Czech/Italian/Slovak domains (e.g., `ceskapojistovna.cz`, `vubgenerali.sk`, `generali.at`) because those appear as SANs on certificates covering `generali.it`.
+
+The `.com` seed finds 14 additional investment-related domains (e.g., `generali-invest.de`, `generali-investments.lu`, `generali.co.uk`) from certificates covering `generali.com`.
+
+**Takeaway:** For multinational organizations, the seed domain closest to the company's primary operations yields the best SAN expansion coverage. When in doubt, try multiple runs with different seeds.
 
 ## How to read the output
 
