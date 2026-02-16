@@ -100,6 +100,44 @@ class TestNormalize:
     def test_international_preserved(self) -> None:
         assert normalize_org_name("International Paper") == "international paper"
 
+    # --- Positional suffix anchoring ---
+
+    def test_group_preserved_at_start(self) -> None:
+        assert normalize_org_name("Group Nine Media") == "group nine media"
+
+    def test_sa_preserved_at_start(self) -> None:
+        assert normalize_org_name("SA Power Networks") == "sa power networks"
+
+    def test_ab_preserved_at_start(self) -> None:
+        assert normalize_org_name("AB InBev") == "ab inbev"
+
+    def test_se_preserved_at_start(self) -> None:
+        assert normalize_org_name("SE Health") == "se health"
+
+    def test_ag_preserved_at_start(self) -> None:
+        assert normalize_org_name("AG Insurance") == "ag insurance"
+
+    def test_nv_preserved_at_start(self) -> None:
+        assert normalize_org_name("NV Energy") == "nv energy"
+
+    # --- Trailing chain stripping ---
+
+    def test_trailing_chain(self) -> None:
+        assert normalize_org_name("Acme Holdings Group") == "acme"
+
+    def test_trailing_chain_with_unambiguous(self) -> None:
+        assert normalize_org_name("Acme Group Holdings AG Inc") == "acme"
+
+    # --- Dotted vs dotless SA/NV/Co ---
+
+    def test_sa_dotted_stripped_everywhere(self) -> None:
+        """S.A. with dot is unambiguous — stripped at any position."""
+        assert normalize_org_name("S.A. Utilities Inc") == "utilities"
+
+    def test_co_dotted_stripped(self) -> None:
+        """Co. with dot is unambiguous — stripped at any position."""
+        assert normalize_org_name("Samsung Electronics Co.") == "samsung electronics"
+
     # --- Abbreviation expansion ---
 
     def test_abbrev_intl(self) -> None:

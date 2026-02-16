@@ -35,7 +35,7 @@ _ABBREVIATIONS: dict[str, str] = {
     "sys": "systems",
 }
 
-# Legal suffixes to strip before comparison
+# Legal suffixes to strip before comparison (unambiguous — safe at any position)
 _LEGAL_SUFFIXES = [
     r"\bInc\.?",
     r"\bIncorporated\b",
@@ -52,28 +52,30 @@ _LEGAL_SUFFIXES = [
     r"\bPLC\b",
     r"\bP\.L\.C\.?\b",
     r"\bGmbH\b",
-    r"\bAG\b",
-    r"\bS\.?A\.?\b",
+    r"\bS\.A\.?\b",         # requires dot — plain "SA" handled by trailing
     r"\bS\.?r\.?l\.?\b",
     r"\bS\.?p\.?A\.?\b",
-    r"\bSE\b",
-    r"\bN\.?V\.?\b",
-    r"\bAB\b",
+    r"\bN\.V\.?\b",         # requires dot — plain "NV" handled by trailing
     r"\bOyj?\b",
     r"\bASA\b",
     r"\bK\.?K\.?\b",
     r"\bBerhad\b",
     r"\bBhd\.?\b",
     r"\bPJSC\b",
-    r"\bCo\.?\b",
+    r"\bCo\.",              # requires dot — dotless "Co" handled by trailing
     r"\bCompany\b",
-    r"\bGroup\b",
-    r"\bHoldings?\b",
-    r"\b&\b",
     r"\band\b",
 ]
 
 _SUFFIX_PATTERN = re.compile("|".join(_LEGAL_SUFFIXES), re.IGNORECASE)
+
+# Ambiguous suffixes — only stripped at the END of a name.
+# These tokens are meaningful words at the start/middle of company names
+# (e.g., "Group Nine Media", "SA Power Networks", "AB InBev", "NV Energy")
+# but are legal suffixes when trailing (e.g., "Siemens AG", "Volvo AB").
+_TRAILING_SUFFIX_PATTERN = re.compile(
+    r"\s+(?:group|holdings?|co|ag|sa|se|nv|ab)$"
+)
 
 
 def _extract_dba_name(name: str) -> str | None:
@@ -109,6 +111,12 @@ def normalize_org_name(name: str) -> str:
     name = re.sub(r"[^\w\s\-]", " ", name)
     # Collapse whitespace
     name = re.sub(r"\s+", " ", name).strip().lower()
+    # Strip trailing ambiguous suffixes (only meaningful at end of name)
+    while True:
+        stripped = _TRAILING_SUFFIX_PATTERN.sub("", name)
+        if stripped == name:
+            break
+        name = stripped
     # Strip leading "the"
     name = re.sub(r"^the\s+", "", name)
     # Expand common abbreviations
