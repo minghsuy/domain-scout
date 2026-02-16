@@ -57,7 +57,8 @@ domain_scout/
 - Evidence is structured (`EvidenceRecord` with `source_type`, `cert_id`, `similarity_score`) — not plain strings
 - `RunMetadata` captures tool version, timestamp, config snapshot for audit reproducibility
 - Discovery profiles: `--profile broad|balanced|strict` via `ScoutConfig.from_profile()`
-- Org-name matching: acronym detection (CamelCase-aware), abbreviation expansion, DBA dual-match, brand aliases, conglomerate guard
+- Org-name matching: acronym detection (CamelCase-aware), abbreviation expansion, DBA dual-match, brand aliases, conglomerate guard, positional suffix anchoring
+- Positional suffix anchoring: ambiguous suffixes (Group, Holdings, Co, AG, SA, SE, NV, AB) only stripped from end of name; dotted forms (S.A., N.V., Co.) stripped at any position
 - Input length capped at 500 chars to prevent O(n*m) DoS from adversarial cert org fields
 
 ## Conventions
@@ -70,6 +71,6 @@ domain_scout/
 
 ## Testing
 
-- **166 unit tests** + 3 integration tests (deselected by default)
+- **176 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

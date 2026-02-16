@@ -61,7 +61,7 @@ Searches CT logs for certificates where the Subject Organization (O=) field matc
 
 **Org-name normalization** handles real-world variations:
 
-- **Legal suffixes** stripped before comparison: Inc, LLC, Ltd, GmbH, S.p.A., K.K., Bhd, and 20+ others
+- **Legal suffixes** stripped before comparison: Inc, LLC, Ltd, GmbH, S.p.A., K.K., Bhd, and 20+ others. Ambiguous suffixes (Group, Holdings, Co, AG, SA, SE, NV, AB) are only stripped from the end of a name to preserve names like "Group Nine Media", "SA Power Networks", and "AB InBev"
 - **Abbreviation expansion**: Intl→International, Tech→Technology, Mgmt→Management, etc.
 - **DBA/subsidiary clauses** stripped: "ACME LLC DBA ACME CLOUD" matches both "Acme" and "Acme Cloud"
 - **Acronym detection**: IBM matches "International Business Machines", HP matches "Hewlett Packard"
