@@ -59,6 +59,15 @@ Shodan's free GeoDNS API (`geonet.shodan.io`) resolves domains from ~5 global lo
 
 Searches CT logs for certificates where the Subject Organization (O=) field matches the target company name. Uses fuzzy matching (rapidfuzz) with a configurable threshold (default: 0.65).
 
+**Org-name normalization** handles real-world variations:
+
+- **Legal suffixes** stripped before comparison: Inc, LLC, Ltd, GmbH, S.p.A., K.K., Bhd, and 20+ others
+- **Abbreviation expansion**: Intl→International, Tech→Technology, Mgmt→Management, etc.
+- **DBA/subsidiary clauses** stripped: "ACME LLC DBA ACME CLOUD" matches both "Acme" and "Acme Cloud"
+- **Acronym detection**: IBM matches "International Business Machines", HP matches "Hewlett Packard"
+- **Brand aliases**: hardcoded mappings for names that differ completely (Foxconn↔Hon Hai, Petrobras↔Petroleo Brasileiro)
+- **Conglomerate guard**: penalizes matches between sibling entities sharing a brand prefix (Samsung Electronics ≠ Samsung SDI)
+
 ### Strategy B: Seed domain expansion
 
 If a seed domain is provided, finds all certificates that cover the seed domain and extracts other domains from their SANs. This reveals related domains — like when Walmart's cert also covers `samsclub.com`, `bodegaaurrera.com.mx`, and `asda.com`.

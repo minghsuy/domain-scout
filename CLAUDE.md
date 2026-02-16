@@ -32,12 +32,13 @@ domain_scout/
 ├── scout.py            # Main orchestrator (Scout class)
 ├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, EvidenceRecord, RunMetadata, ScoutResult, CertRecord
 ├── config.py           # ScoutConfig dataclass (all tunables + discovery profiles)
+├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback)
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
 │   └── dns_utils.py    # DNS resolution checker
 ├── matching/
-│   └── entity_match.py # Org-name similarity scoring (rapidfuzz)
+│   └── entity_match.py # Org-name similarity scoring (rapidfuzz, acronyms, brand aliases)
 └── tests/
     ├── test_ct.py
     ├── test_matching.py
@@ -56,6 +57,8 @@ domain_scout/
 - Evidence is structured (`EvidenceRecord` with `source_type`, `cert_id`, `similarity_score`) — not plain strings
 - `RunMetadata` captures tool version, timestamp, config snapshot for audit reproducibility
 - Discovery profiles: `--profile broad|balanced|strict` via `ScoutConfig.from_profile()`
+- Org-name matching: acronym detection (CamelCase-aware), abbreviation expansion, DBA dual-match, brand aliases, conglomerate guard
+- Input length capped at 500 chars to prevent O(n*m) DoS from adversarial cert org fields
 
 ## Conventions
 
@@ -67,6 +70,6 @@ domain_scout/
 
 ## Testing
 
-- **102 unit tests** + 3 integration tests (deselected by default)
+- **166 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

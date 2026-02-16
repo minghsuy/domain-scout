@@ -89,11 +89,12 @@ def _extract_dba_name(name: str) -> str | None:
 def normalize_org_name(name: str) -> str:
     """Normalize a company/org name for comparison.
 
-    - Strips legal suffixes (Inc, LLC, Ltd, etc.)
-    - Lowercases
-    - Normalizes unicode
-    - Collapses whitespace
+    - Normalizes unicode (strips accents)
+    - Strips DBA/subsidiary clauses
+    - Strips legal suffixes (Inc, LLC, Ltd, GmbH, S.p.A., etc.)
+    - Lowercases and collapses whitespace
     - Removes leading "The"
+    - Expands abbreviations (intl→international, tech→technology, etc.)
     """
     name = _strip_accents(name)
     # Strip DBA / subsidiary clauses before suffix removal
@@ -249,6 +250,7 @@ def org_name_similarity(name_a: str, name_b: str) -> float:
     - Weighted rapidfuzz (ratio / token-sort / token-set / partial)
     - Acronym detection with CamelCase splitting and stop-word removal
     - Brand-alias lookup for names that differ completely
+    - DBA dual-match (compares both legal and operating names)
     """
     # Guard against pathologically long inputs (e.g., adversarial cert org
     # fields). rapidfuzz has O(n*m) complexity; cap at 500 chars.
