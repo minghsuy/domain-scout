@@ -126,12 +126,14 @@ def normalize_org_name(name: str) -> str:
 
 
 # Hard legal suffixes — stripped in one acronym-detection pass so that
-# acronyms like UHG (UnitedHealth Group) match after removing "Incorporated"
+# acronyms like UHG (UnitedHealth Group) match after removing "Incorporated".
+# Kept in sync with _LEGAL_SUFFIXES: ambiguous tokens (AG, SE, AB) excluded,
+# SA/NV require dot.  Co\.? kept as-is (\b after literal dot fails in regex).
 _HARD_LEGAL_SUFFIXES = re.compile(
     r"(?i)\b(?:Inc\.?|Incorporated|Corp\.?|Corporation|LLC|L\.L\.C\.?"
     r"|Ltd\.?|Limited|LLP|L\.L\.P\.?|LP|L\.P\.?|PLC|P\.L\.C\.?"
-    r"|GmbH|AG|S\.?A\.?|S\.?r\.?l\.?|S\.?p\.?A\.?"
-    r"|SE|N\.?V\.?|AB|Oyj?|ASA|K\.?K\.?|Berhad|Bhd\.?|PJSC"
+    r"|GmbH|S\.A\.?|S\.?r\.?l\.?|S\.?p\.?A\.?"
+    r"|N\.V\.?|Oyj?|ASA|K\.?K\.?|Berhad|Bhd\.?|PJSC"
     r"|Co\.?|Company)\b"
 )
 
