@@ -1,5 +1,7 @@
 # domain-scout
 
+[![CI](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml/badge.svg)](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml)
+
 Discover internet domains associated with a business entity using Certificate Transparency logs, RDAP, and DNS.
 
 Useful for security teams, asset inventories, and M&A due diligence — where seed domains can be wrong, misspelled, or belong to a parent company.
