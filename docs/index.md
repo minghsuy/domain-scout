@@ -27,6 +27,9 @@ domain-scout --name "Walmart" --seed "walmart.com"
 # Multiple seeds for cross-verification
 domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
 
+# Discovery profiles (broad/balanced/strict)
+domain-scout --name "Walmart" --seed walmart.com --profile strict
+
 # Deep mode for global resolution
 domain-scout --name "Walmart" --seed "walmart.com" --deep
 ```

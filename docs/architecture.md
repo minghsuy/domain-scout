@@ -93,7 +93,17 @@ Each discovered domain receives a confidence score from 0.0 to 1.0:
 | Org name similarity > 0.9 | +0.05 |
 | Shares infrastructure with seed | +0.05 |
 
-Domains below the inclusion threshold (default: 0.60) are filtered out. Non-resolving domains are also filtered unless they are the seed domain itself.
+Domains below the inclusion threshold (default: 0.60) are filtered out. Non-resolving domains are also filtered unless they are the seed domain itself (or `include_non_resolving` is set, as in the `broad` profile).
+
+**Discovery profiles** adjust these thresholds as presets:
+
+| Profile | `org_match_threshold` | `inclusion_threshold` | `seed_confirm_threshold` | `include_non_resolving` |
+|---------|----------------------|----------------------|--------------------------|------------------------|
+| `broad` | 0.50 | 0.40 | 0.45 | yes |
+| `balanced` (default) | 0.65 | 0.60 | 0.60 | no |
+| `strict` | 0.80 | 0.75 | 0.75 | no |
+
+Use `--profile broad` for maximum recall or `--profile strict` for high-precision results.
 
 ## Timeout budget
 
