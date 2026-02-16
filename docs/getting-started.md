@@ -58,6 +58,7 @@ Domains independently discovered from 2+ seeds receive a `cross_seed_verified` c
 | `--location` | `-l` | City, state, country | — |
 | `--industry` | `-i` | Industry hint | — |
 | `--deep` | `-d` | Enable GeoDNS global resolution | `false` |
+| `--profile` | `-p` | Discovery profile: `broad`, `balanced`, `strict` | `balanced` |
 | `--output` | `-o` | Output format: `table` or `json` | `table` |
 | `--timeout` | | Total timeout in seconds | `120` |
 | `--verbose` | `-v` | Verbose logging | `false` |
@@ -68,7 +69,7 @@ Domains independently discovered from 2+ seeds receive a `cross_seed_verified` c
 domain-scout --name "Acme Corp" --seed "acme.com" --output json > results.json
 ```
 
-The JSON output includes full metadata: confidence scores, evidence trails, certificate org names, first/last seen dates, and DNS resolution status for each domain.
+The JSON output is a self-contained audit artifact. Each domain includes structured `evidence` records (source type, cert ID, org name, similarity score) and the top-level `run_metadata` captures tool version, timestamp, and the full config snapshot used. See [API Reference](api.md) for the complete schema.
 
 ## Development
 

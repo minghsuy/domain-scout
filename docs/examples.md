@@ -101,3 +101,5 @@ If both seeds independently discover `walmartlabs.com` through separate CT searc
   - `dns_guess` — Guessed from company name, resolves
   - `shared_infra` — Shares nameservers or IP range with seed
   - `geodns` — Resolved via Shodan GeoDNS (deep mode)
+- **Evidence** (JSON output) — each domain carries structured `EvidenceRecord` entries with `source_type`, `cert_id` (links to `https://crt.sh/?id=N`), `cert_org`, `similarity_score`, and `seed_domain`. See [API Reference](api.md#evidencerecord) for the full schema.
+- **Run metadata** (JSON output) — the top-level `run_metadata` captures `tool_version`, `timestamp`, `elapsed_seconds`, and a full `config` snapshot for audit reproducibility.

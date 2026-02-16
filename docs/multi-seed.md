@@ -102,25 +102,16 @@ CDN domains on multi-tenant certs are filtered by the CDN detection filter (10+ 
 
 ## Data model changes
 
-### `EntityInput.seed_domain`: `str | None` -> `list[str]`
-
-Default: `[]`. The `discover()` method accepts `str | None | list[str]` for backward compatibility and coerces to list internally.
-
-### `ScoutResult.seed_domain_assessment`: `str | None` -> `dict[str, str]`
-
-Maps each seed domain to its assessment (`confirmed`, `suspicious`, `invalid`, `timeout`, `error`).
-
-### `ScoutResult.seed_cross_verification`: `dict[str, list[str]]` (new)
-
-Maps each seed to the list of other seeds that share certificates with it.
-
-### `DiscoveredDomain.seed_sources`: `list[str]` (new)
-
-Which seed domains contributed to discovering this domain.
+- **`EntityInput.seed_domain`**: `str | None` -> `list[str]`. Default: `[]`. The `discover()` method accepts `str | None | list[str]` for backward compatibility and coerces to list internally.
+- **`ScoutResult.seed_domain_assessment`**: `str | None` -> `dict[str, str]`. Maps each seed domain to its assessment (`confirmed`, `suspicious`, `invalid`, `timeout`, `error`).
+- **`ScoutResult.seed_cross_verification`**: `dict[str, list[str]]` (new). Maps each seed to the list of other seeds that share certificates with it.
+- **`DiscoveredDomain.seed_sources`**: `list[str]` (new). Which seed domains contributed to discovering this domain.
+- **`DiscoveredDomain.evidence`**: `list[str]` -> `list[EvidenceRecord]` (v0.2.0). Each evidence entry is now a structured record with `source_type`, `cert_id`, `cert_org`, `similarity_score`, and `seed_domain`. See [API Reference](api.md#evidencerecord).
+- **`ScoutResult.run_metadata`**: replaces `search_metadata: dict` (v0.2.0). Typed `RunMetadata` with `schema_version`, `tool_version`, `timestamp`, and config snapshot. See [API Reference](api.md#runmetadata).
 
 ## Test coverage
 
-49 unit tests covering:
+103 unit tests covering:
 
 - **Cross-seed detection** (6 tests): single seed, two seeds, mixed types, same-seed-different-types, three seeds, non-seed sources
 - **Scoring** (6 tests): cross_seed_verified base, tagged source parity with old untagged, no-seeds compat, combined scoring

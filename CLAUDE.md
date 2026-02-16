@@ -30,8 +30,8 @@ make check         # format + lint + test
 domain_scout/
 ├── cli.py              # Typer CLI (entry point: domain_scout.cli:app)
 ├── scout.py            # Main orchestrator (Scout class)
-├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, ScoutResult, CertRecord
-├── config.py           # ScoutConfig dataclass (all tunables)
+├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, EvidenceRecord, RunMetadata, ScoutResult, CertRecord
+├── config.py           # ScoutConfig dataclass (all tunables + discovery profiles)
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback)
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
@@ -42,6 +42,7 @@ domain_scout/
     ├── test_ct.py
     ├── test_matching.py
     ├── test_multi_seed.py
+    ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -52,6 +53,9 @@ domain_scout/
 - .it ccTLD doesn't support RDAP at all (404 is expected, not a bug)
 - psycopg2-binary runs via `run_in_executor` (sync driver in async code)
 - Multi-seed: `--seed` is repeatable, runs parallel CT expansions per seed, cross-seed verification boosts confidence
+- Evidence is structured (`EvidenceRecord` with `source_type`, `cert_id`, `similarity_score`) — not plain strings
+- `RunMetadata` captures tool version, timestamp, config snapshot for audit reproducibility
+- Discovery profiles: `--profile broad|balanced|strict` via `ScoutConfig.from_profile()`
 
 ## Conventions
 
@@ -63,6 +67,6 @@ domain_scout/
 
 ## Testing
 
-- **89 unit tests** + 3 integration tests (deselected by default)
+- **102 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

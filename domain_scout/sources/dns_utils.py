@@ -96,10 +96,7 @@ class DNSChecker:
                 return False
             resp.raise_for_status()
             data = resp.json()
-            return any(
-                isinstance(entry, dict) and entry.get("answers")
-                for entry in data
-            )
+            return any(isinstance(entry, dict) and entry.get("answers") for entry in data)
         except (httpx.HTTPError, ValueError):
             log.debug("geodns.error", domain=domain)
         return False

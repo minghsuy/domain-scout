@@ -54,7 +54,7 @@ async def test_full_scout_run() -> None:
     )
     assessment = result.seed_domain_assessment.get("paloaltonetworks.com", "")
     assert assessment in ("confirmed", "suspicious", "invalid")
-    assert result.search_metadata.get("elapsed_seconds", 0) > 0
+    assert result.run_metadata.elapsed_seconds > 0
     # Should find at least the seed domain
     domains = [d.domain for d in result.domains]
     assert "paloaltonetworks.com" in domains or len(domains) > 0
