@@ -52,17 +52,17 @@ _LEGAL_SUFFIXES = [
     r"\bPLC\b",
     r"\bP\.L\.C\.?\b",
     r"\bGmbH\b",
-    r"\bS\.A\.?\b",         # requires dot — plain "SA" handled by trailing
+    r"\bS\.A\.?\b",  # requires dot — plain "SA" handled by trailing
     r"\bS\.?r\.?l\.?\b",
     r"\bS\.?p\.?A\.?\b",
-    r"\bN\.V\.?\b",         # requires dot — plain "NV" handled by trailing
+    r"\bN\.V\.?\b",  # requires dot — plain "NV" handled by trailing
     r"\bOyj?\b",
     r"\bASA\b",
     r"\bK\.?K\.?\b",
     r"\bBerhad\b",
     r"\bBhd\.?\b",
     r"\bPJSC\b",
-    r"\bCo\.",              # requires dot — dotless "Co" handled by trailing
+    r"\bCo\.",  # requires dot — dotless "Co" handled by trailing
     r"\bCompany\b",
     r"\band\b",
 ]
@@ -73,9 +73,7 @@ _SUFFIX_PATTERN = re.compile("|".join(_LEGAL_SUFFIXES), re.IGNORECASE)
 # These tokens are meaningful words at the start/middle of company names
 # (e.g., "Group Nine Media", "SA Power Networks", "AB InBev", "NV Energy")
 # but are legal suffixes when trailing (e.g., "Siemens AG", "Volvo AB").
-_TRAILING_SUFFIX_PATTERN = re.compile(
-    r"\s+(?:group|holdings?|co|ag|sa|se|nv|ab)$"
-)
+_TRAILING_SUFFIX_PATTERN = re.compile(r"\s+(?:group|holdings?|co|ag|sa|se|nv|ab)$")
 
 
 def _extract_dba_name(name: str) -> str | None:
