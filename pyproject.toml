@@ -42,6 +42,7 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["domain_scout"]
+exclude = ["domain_scout/tests"]
 
 [tool.ruff]
 target-version = "py312"

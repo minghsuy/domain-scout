@@ -290,7 +290,7 @@ class Scout:
 
         elapsed = time.monotonic() - t0
         run_meta = RunMetadata(
-            tool_version=_pkg_version("domain-scout"),
+            tool_version=_pkg_version("domain-scout-ct"),
             timestamp=datetime.now(UTC),
             elapsed_seconds=round(elapsed, 2),
             domains_found=len(domains),

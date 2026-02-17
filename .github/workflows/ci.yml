@@ -16,6 +16,7 @@ jobs:
           python-version: "3.12"
       - run: uv sync --all-groups
       - run: uv run ruff check domain_scout/
+      - run: uv run ruff format --check domain_scout/
 
   typecheck:
     runs-on: ubuntu-latest
