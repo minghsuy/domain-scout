@@ -179,8 +179,8 @@ class CTLogSource:
                     "san_dns_names": [],
                 }
             if san and _is_valid_domain(san):
-                sans_list: list[str] = certs[cert_id]["san_dns_names"]  # type: ignore[assignment]
-                if san not in sans_list:
+                sans_list = certs[cert_id]["san_dns_names"]
+                if isinstance(sans_list, list) and san not in sans_list:
                     sans_list.append(san)
 
         log.info("ct.pg_query", term=search_term, certs_found=len(certs))
