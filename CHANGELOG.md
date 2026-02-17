@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - Unreleased
+
+### Added
+- **REST API** — `domain-scout serve` starts a FastAPI server with `/scan`, `/health`, and `/ready` endpoints
+- **DuckDB query cache** — `--cache` flag caches CT and RDAP results locally (4h and 24h TTL respectively)
+- **Cache CLI** — `domain-scout cache stats` and `domain-scout cache clear` commands
+- **Dockerfile** — multi-stage build with non-root user and cache volume
+- **Makefile targets** — `make docker-build` and `make docker-run`
+- 39 new unit tests (215 total)
+
+### Changed
+- `Scout.__init__` accepts optional `cache` parameter for transparent caching
+- FastAPI, uvicorn, duckdb moved to optional extras (`[api]`, `[cache]`, `[all]`)
+
 ## [0.2.2] - 2026-02-17
 
 ### Fixed

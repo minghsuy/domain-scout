@@ -71,6 +71,8 @@ def _extract_base_domain(name: str) -> str | None:
     name = name.lower().strip().rstrip(".")
     if name.startswith("*."):
         name = name[2:]
+    if re.match(r"^\d+\.\d+\.\d+\.\d+$", name):
+        return None
     parts = name.split(".")
     if len(parts) < 2:
         return None
@@ -221,8 +223,8 @@ class CTLogSource:
                 certs[cert_id] = {
                     "cert_id": cert_id,
                     "common_name": entry.get("common_name", ""),
-                    "subject": entry.get("name_value", ""),
-                    "org_name": entry.get("issuer_name", ""),
+                    "subject": "",  # JSON API doesn't provide X.509 subject DN
+                    "org_name": None,  # JSON API doesn't provide subject organization
                     "not_before": _parse_dt(entry.get("not_before")),
                     "not_after": _parse_dt(entry.get("not_after")),
                     "san_dns_names": [],

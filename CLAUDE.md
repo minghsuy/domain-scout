@@ -71,6 +71,6 @@ domain_scout/
 
 ## Testing
 
-- **176 unit tests** + 3 integration tests (deselected by default)
+- **234 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

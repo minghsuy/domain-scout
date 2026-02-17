@@ -10,13 +10,16 @@ Useful for security teams, asset inventories, and M&A due diligence — where se
 ## Install
 
 ```bash
-pip install domain-scout-ct
+pip install domain-scout-ct            # core library + CLI
+pip install domain-scout-ct[api]       # + REST API server
+pip install domain-scout-ct[cache]     # + DuckDB query cache
+pip install domain-scout-ct[all]       # everything
 ```
 
 For development:
 
 ```bash
-uv sync --all-groups
+uv sync --all-groups --all-extras
 ```
 
 ## Usage
@@ -41,6 +44,53 @@ domain-scout --name "Acme Corp" --output json > results.json
 
 # Verbose logging
 domain-scout --name "Cloudflare" --seed "cloudflare.com" -v
+```
+
+### REST API
+
+```bash
+# Start the API server (cache enabled by default)
+domain-scout serve --port 8080
+
+# Health check
+curl http://localhost:8080/health
+
+# Run a scan
+curl -X POST http://localhost:8080/scan \
+  -H "Content-Type: application/json" \
+  -d '{"entity": {"company_name": "Walmart", "seed_domain": ["walmart.com"]}}'
+
+# Readiness check (probes crt.sh connectivity)
+curl http://localhost:8080/ready
+```
+
+### Docker
+
+```bash
+# Build
+docker build -t domain-scout-ct .
+
+# Run API server
+docker run -p 8080:8080 domain-scout-ct
+
+# Run CLI scan
+docker run domain-scout-ct scout --name "Walmart" --seed walmart.com
+
+# Persist cache across runs
+docker run -p 8080:8080 -v scout-cache:/data/cache domain-scout-ct
+```
+
+### Cache
+
+```bash
+# Enable cache for CLI scans
+domain-scout scout --name "Walmart" --seed walmart.com --cache
+
+# View cache statistics
+domain-scout cache stats
+
+# Clear cache
+domain-scout cache clear
 ```
 
 ### Library

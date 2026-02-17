@@ -135,7 +135,7 @@ class TestScoreConfidenceMultiSeed:
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"])
-        # 0.90 base + 0.10 (4 sources) = 1.00
+        # 0.90 base + min(0.10, 0.10) boost cap = 1.00
         assert score == 1.0
 
 
@@ -295,7 +295,7 @@ class TestSimulatedScenarios:
         score = self.scout._score_confidence(
             evidence["walmartlabs.com"], "Walmart", ["walmart.com", "samsclub.com"]
         )
-        # 0.90 (cross_seed) + 0.10 (3+ sources) + 0.05 (resolves) = 1.0
+        # 0.90 (cross_seed) + min(0.15, 0.10) boost cap = 1.0
         assert score == 1.0
 
     def test_generali_overlap(self) -> None:
@@ -316,7 +316,7 @@ class TestSimulatedScenarios:
         score = self.scout._score_confidence(
             evidence["generali.de"], "Generali", ["generali.it", "generali.com"]
         )
-        # cross_seed 0.90 base, with 4+ sources, resolves, org similarity
+        # cross_seed 0.90 base + min(0.20, 0.10) boost cap = 1.0
         assert score == 1.0
 
     def test_ma_sold_subsidiary_no_false_cross(self) -> None:
@@ -516,7 +516,7 @@ class TestLookAlikeDifferentEntities:
 
         Scout._apply_cross_seed_boost(evidence, ["delta.com", "deltafaucet.com"])
         assert "cross_seed_verified" not in a.sources
-        # 0.40 (ct_seed_related) + 0.05 (2 sources) + 0.05 (resolves) = 0.50
+        # 0.40 (ct_seed_related) + min(0.10, 0.10) boost cap = 0.50
         assert (
             self.scout._score_confidence(a, "Delta Air Lines", ["delta.com", "deltafaucet.com"])
             == 0.50
@@ -602,7 +602,6 @@ class TestCrossVerificationEdgeCases:
             {
                 "cross_seed_verified",
                 "ct_org_match",
-                "rdap_match",
                 "ct_san_expansion:walmart.com",
                 "ct_san_expansion:samsclub.com",
             }
@@ -648,7 +647,6 @@ class TestCrossVerificationEdgeCases:
             "ct_org_match",
             "dns_guess",
             "cross_seed_verified",
-            "rdap_match",
             "shared_infra",
         }
         assert _extract_contributing_seeds(sources) == {"walmart.com", "samsclub.com"}

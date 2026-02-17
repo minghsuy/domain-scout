@@ -6,10 +6,13 @@ import asyncio
 import time
 from datetime import UTC, datetime
 from importlib.metadata import version as _pkg_version
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import httpx
 import structlog
+
+if TYPE_CHECKING:
+    from domain_scout.cache import CTSource, DuckDBCache, RDAPSource
 
 from domain_scout.config import ScoutConfig
 from domain_scout.matching.entity_match import (
@@ -33,11 +36,23 @@ log = structlog.get_logger()
 class Scout:
     """Discover internet domains associated with a business entity."""
 
-    def __init__(self, config: ScoutConfig | None = None) -> None:
+    def __init__(
+        self,
+        config: ScoutConfig | None = None,
+        cache: DuckDBCache | None = None,
+    ) -> None:
         self.config = config or ScoutConfig()
-        self._ct = CTLogSource(self.config)
+        ct_inner = CTLogSource(self.config)
+        rdap_inner = RDAPLookup(self.config)
+        if cache is not None:
+            from domain_scout.cache import CachedCTLogSource, CachedRDAPLookup
+
+            self._ct: CTSource | CTLogSource = CachedCTLogSource(ct_inner, cache)
+            self._rdap: RDAPSource | RDAPLookup = CachedRDAPLookup(rdap_inner, cache)
+        else:
+            self._ct = ct_inner
+            self._rdap = rdap_inner
         self._dns = DNSChecker(self.config)
-        self._rdap = RDAPLookup(self.config)
 
     def discover(
         self,
@@ -68,7 +83,7 @@ class Scout:
 
     async def _discover(self, entity: EntityInput) -> ScoutResult:
         t0 = time.monotonic()
-        total_budget = float(self.config.total_timeout)
+        total_budget = self.config.total_timeout
         errors: list[str] = []
         timed_out = False
         seeds = entity.seed_domain  # list[str]
@@ -343,7 +358,7 @@ class Scout:
             ):
                 cert_orgs.add(org)
             # Check if other seeds share this cert
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            sans = _extract_sans(rec)
             san_bases = {b for s in sans if is_valid_domain(s) and (b := extract_base_domain(s))}
             for matched_base in san_bases & base_to_seed.keys():
                 other_seed = base_to_seed[matched_base]
@@ -404,7 +419,7 @@ class Scout:
             if similarity < self.config.org_match_threshold:
                 continue
 
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            sans = _extract_sans(rec)
             cn = rec.get("common_name", "")
             all_names = _collect_cert_names(sans, cn)
 
@@ -421,7 +436,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="ct_org_match",
                         description=desc,
-                        cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                        cert_id=_int_or_none(rec.get("cert_id")),
                         cert_org=cert_org,
                         similarity_score=round(similarity, 4),
                     )
@@ -450,7 +465,7 @@ class Scout:
         seed_base = extract_base_domain(seed_domain)
 
         for rec in records:
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            sans = _extract_sans(rec)
             cn = rec.get("common_name", "")
             cert_org = rec.get("org_name")
             all_names = _collect_cert_names(sans, cn)
@@ -519,7 +534,7 @@ class Scout:
                             EvidenceRecord(
                                 source_type="ct_org_match",
                                 description=desc,
-                                cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                                cert_id=_int_or_none(rec.get("cert_id")),
                                 cert_org=cert_org,
                                 similarity_score=round(sim, 4),
                             )
@@ -615,30 +630,30 @@ class Scout:
             score = max(score, 0.80)
         if any(s.startswith("ct_seed_subdomain:") for s in accum.sources):
             score = max(score, 0.75)
-        if "rdap_match" in accum.sources:
-            score = max(score, 0.70)
         if any(s.startswith("ct_seed_related:") for s in accum.sources):
             score = max(score, 0.40)
         if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
             score = max(score, 0.30)
 
-        # Boost for multiple independent sources
+        # Collect all applicable boosts, then apply with a cap
+        boost = 0.0
         if len(accum.sources) >= 3:
-            score = min(1.0, score + 0.10)
+            boost += 0.10
         elif len(accum.sources) >= 2:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
 
-        # Boost if resolves
         if accum.resolves:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
 
-        # Best org name similarity across cert_org_names
         best_sim = 0.0
         for cert_org in accum.cert_org_names:
             sim = org_name_similarity(cert_org, company_name)
             best_sim = max(best_sim, sim)
         if best_sim > 0.9:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
+
+        # Cap total boost at +0.10 to prevent all domains scoring 1.00
+        score = min(1.0, score + min(boost, 0.10))
 
         return round(score, 2)
 
@@ -664,7 +679,10 @@ class Scout:
                             description=f"Shares infrastructure with {reference}",
                         )
                     )
-                    accum.confidence = min(1.0, accum.confidence + 0.05)
+                    # Cap so infra boost can't exceed the +0.10 total boost limit.
+                    # Only cross_seed_verified (0.90 base) should reach 1.00.
+                    max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
+                    accum.confidence = min(max_conf, accum.confidence + 0.05)
             except Exception:
                 pass
 
@@ -712,8 +730,8 @@ class Scout:
                     sources=sorted(accum.sources),
                     evidence=deduped,
                     cert_org_names=sorted(accum.cert_org_names),
-                    first_seen=accum.first_seen,
-                    last_seen=accum.last_seen,
+                    first_seen=_parse_time(accum.first_seen),
+                    last_seen=_parse_time(accum.last_seen),
                     resolves=accum.resolves,
                     is_seed=(domain in seed_bases),
                     seed_sources=contributing_seeds,
@@ -741,12 +759,51 @@ def _extract_contributing_seeds(sources: set[str]) -> set[str]:
     return seeds
 
 
+def _int_or_none(val: object) -> int | None:
+    """Safely extract an int from a dict value, or None."""
+    return val if isinstance(val, int) else None
+
+
 def _collect_cert_names(sans: list[str], cn: Any) -> list[str]:
     """Deduplicate SAN list with common name into a single name list."""
     names = set(sans)
     if isinstance(cn, str) and cn:
         names.add(cn)
     return list(names)
+
+
+def _extract_sans(rec: dict[str, object]) -> list[str]:
+    """Extract SAN DNS names from a cert record."""
+    raw = rec.get("san_dns_names")
+    sans: list[str] = raw if isinstance(raw, list) else []
+    return sans
+
+
+def _normalize_time(val: object) -> str | None:
+    """Normalize a datetime or string to ISO string for consistent comparison.
+
+    CT Postgres returns datetime objects, JSON API and cache return strings.
+    Normalizing to ISO strings prevents TypeError on mixed-type comparison.
+    """
+    if val is None:
+        return None
+    if isinstance(val, datetime):
+        return val.isoformat()
+    if isinstance(val, str):
+        if not val:
+            return None
+        try:
+            return datetime.fromisoformat(val).isoformat()
+        except ValueError:
+            return val
+    return str(val)
+
+
+def _parse_time(val: str | None) -> datetime | None:
+    """Parse an ISO 8601 string back to datetime for Pydantic output."""
+    if val is None:
+        return None
+    return datetime.fromisoformat(val)
 
 
 class _DomainAccum:
@@ -766,8 +823,8 @@ class _DomainAccum:
         self.sources: set[str] = set()
         self.evidence: list[EvidenceRecord] = []
         self.cert_org_names: set[str] = set()
-        self.first_seen: Any = None
-        self.last_seen: Any = None
+        self.first_seen: str | None = None
+        self.last_seen: str | None = None
         self.resolves: bool = False
         self.confidence: float = 0.0
 
@@ -775,14 +832,18 @@ class _DomainAccum:
         self.sources |= other.sources
         self.evidence.extend(other.evidence)
         self.cert_org_names |= other.cert_org_names
-        if other.first_seen and (self.first_seen is None or other.first_seen < self.first_seen):
-            self.first_seen = other.first_seen
-        if other.last_seen and (self.last_seen is None or other.last_seen > self.last_seen):
-            self.last_seen = other.last_seen
+        o_first = _normalize_time(other.first_seen)
+        if o_first and (self.first_seen is None or o_first < self.first_seen):
+            self.first_seen = o_first
+        o_last = _normalize_time(other.last_seen)
+        if o_last and (self.last_seen is None or o_last > self.last_seen):
+            self.last_seen = o_last
         self.resolves = self.resolves or other.resolves
 
-    def update_times(self, not_before: Any, not_after: Any) -> None:
-        if not_before and (self.first_seen is None or not_before < self.first_seen):
-            self.first_seen = not_before
-        if not_after and (self.last_seen is None or not_after > self.last_seen):
-            self.last_seen = not_after
+    def update_times(self, not_before: object, not_after: object) -> None:
+        nb = _normalize_time(not_before)
+        na = _normalize_time(not_after)
+        if nb and (self.first_seen is None or nb < self.first_seen):
+            self.first_seen = nb
+        if na and (self.last_seen is None or na > self.last_seen):
+            self.last_seen = na
