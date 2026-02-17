@@ -2,10 +2,11 @@
 FROM python:3.12-slim AS builder
 COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 WORKDIR /app
-COPY pyproject.toml uv.lock ./
-RUN uv sync --no-dev --frozen --all-extras --no-editable
+COPY pyproject.toml uv.lock README.md LICENSE ./
+# Install dependencies only (cached layer — invalidated only when deps change)
+RUN uv sync --no-dev --frozen --all-extras --no-editable --no-install-project
+# Copy source and build the project
 COPY domain_scout/ domain_scout/
-COPY README.md LICENSE ./
 RUN uv sync --no-dev --frozen --all-extras --no-editable
 
 # Runtime stage
@@ -22,7 +23,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-  CMD wget -q --spider http://localhost:8080/health || exit 1
+  CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8080/health')" || exit 1
 USER scout
 ENTRYPOINT ["domain-scout"]
 CMD ["serve", "--host", "0.0.0.0", "--port", "8080"]
