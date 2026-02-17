@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.3.0] - Unreleased
+## [0.3.0] - 2026-02-17
 
 ### Added
 - **REST API** — `domain-scout serve` starts a FastAPI server with `/scan`, `/health`, and `/ready` endpoints
@@ -13,7 +13,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Cache CLI** — `domain-scout cache stats` and `domain-scout cache clear` commands
 - **Dockerfile** — multi-stage build with non-root user and cache volume
 - **Makefile targets** — `make docker-build` and `make docker-run`
-- 39 new unit tests (215 total)
+- **Acceptance tests** — Walmart fixture tests with source-level mocks exercise full scoring pipeline
+- **Property-based tests** — hypothesis tests for matching symmetry, normalization idempotency, score range, IPv4 rejection, cache round-trip
+- 58 new unit tests (234 total)
+
+### Fixed
+- JSON fallback was setting `org_name` to CA issuer name (e.g. "DigiCert"), causing false positives when company name matched a CA — now `None`
+- Confidence boost stacking was uncapped — three boosts (+0.10/+0.05/+0.05) pushed `ct_org_match` (0.85) to 1.00. Total boost now capped at +0.10
+- Infrastructure boost bypassed the cap — `shared_infra` added +0.05 after scoring, pushing 0.95→1.00. Now capped at 0.95 for non-cross-seed domains
+- `_normalize_time` format inconsistency — cache returned space-separated datetimes (`2025-01-01 00:00:00`), live CT returned T-separated (`2025-01-01T00:00:00`). Mixed comparison broke silently
+- `extract_base_domain` processed IPv4 addresses — `8.8.8.8` returned `"8.8"` instead of `None`
+- Removed `rdap_match` dead code in confidence scoring (source was never set anywhere)
 
 ### Changed
 - `Scout.__init__` accepts optional `cache` parameter for transparent caching
