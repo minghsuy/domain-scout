@@ -1,4 +1,4 @@
-.PHONY: install test lint format check
+.PHONY: install test lint format check build clean
 
 install:
 	uv sync --all-groups
@@ -18,3 +18,9 @@ format:
 	uv run ruff format domain_scout/
 
 check: format lint test
+
+build:
+	uv build
+
+clean:
+	rm -rf dist/ build/ *.egg-info
