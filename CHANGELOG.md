@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.2.2] - 2026-02-17
+
+### Fixed
+- Package metadata lookup in `scout.py` used old name "domain-scout" instead of "domain-scout-ct" (runtime crash on fresh installs)
+- Added `py.typed` marker file (required for "Typing :: Typed" classifier)
+- CI now checks code formatting (`ruff format --check`)
+- Tests excluded from wheel distribution (smaller package)
+
 ## [0.2.1] - 2026-02-17
 
 ### Added
