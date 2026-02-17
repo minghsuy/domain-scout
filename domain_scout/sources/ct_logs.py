@@ -231,8 +231,8 @@ class CTLogSource:
             for name in name_value.split("\n"):
                 name = name.strip()
                 if name and _is_valid_domain(name):
-                    sans_list = certs[cert_id]["san_dns_names"]  # type: ignore[assignment]
-                    if name not in sans_list:
+                    sans_list = certs[cert_id]["san_dns_names"]
+                    if isinstance(sans_list, list) and name not in sans_list:
                         sans_list.append(name)
 
         log.info("ct.json_query", term=search_term, certs_found=len(certs))

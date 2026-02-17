@@ -18,7 +18,12 @@ async def test_crtsh_postgres_search() -> None:
     assert len(records) > 0
 
     # At least some certs should have SANs
-    total_sans = sum(len(r.get("san_dns_names", [])) for r in records)
+    total_sans = sum(
+        len(sans)
+        for r in records
+        for sans in [r.get("san_dns_names", [])]
+        if isinstance(sans, list)
+    )
     assert total_sans > 0
 
 

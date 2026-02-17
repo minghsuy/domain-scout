@@ -59,15 +59,23 @@ class RDAPLookup:
     @staticmethod
     def _find_entity(data: dict[str, object], role: str) -> dict[str, object] | None:
         """Walk the entities tree to find one with the given role."""
-        entities: list[dict[str, object]] = data.get("entities", [])  # type: ignore[assignment]
+        raw_entities = data.get("entities", [])
+        entities = raw_entities if isinstance(raw_entities, list) else []
         for entity in entities:
-            roles: list[str] = entity.get("roles", [])  # type: ignore[assignment]
+            if not isinstance(entity, dict):
+                continue
+            raw_roles = entity.get("roles", [])
+            roles = raw_roles if isinstance(raw_roles, list) else []
             if role in roles:
                 return entity
             # Check nested entities
-            nested: list[dict[str, object]] = entity.get("entities", [])  # type: ignore[assignment]
+            raw_nested = entity.get("entities", [])
+            nested = raw_nested if isinstance(raw_nested, list) else []
             for child in nested:
-                child_roles: list[str] = child.get("roles", [])  # type: ignore[assignment]
+                if not isinstance(child, dict):
+                    continue
+                raw_child_roles = child.get("roles", [])
+                child_roles = raw_child_roles if isinstance(raw_child_roles, list) else []
                 if role in child_roles:
                     return child
         return None
@@ -75,13 +83,17 @@ class RDAPLookup:
     @classmethod
     def _extract_from_vcard(cls, data: dict[str, object], field: str) -> str | None:
         """Extract a field from jCard (vcardArray) in an RDAP entity."""
-        vcard_array: list[object] | None = data.get("vcardArray")  # type: ignore[assignment]
-        if not vcard_array or len(vcard_array) < 2:  # type: ignore[arg-type]
+        raw_vcard = data.get("vcardArray")
+        if not isinstance(raw_vcard, list) or len(raw_vcard) < 2:
             return None
-        entries: list[list[object]] = vcard_array[1]  # type: ignore[index,assignment]
-        for entry in entries:
-            if len(entry) >= 4 and entry[0] == field:  # type: ignore[index]
-                val = entry[3]  # type: ignore[index]
+        raw_entries = raw_vcard[1]
+        if not isinstance(raw_entries, list):
+            return None
+        for entry in raw_entries:
+            if not isinstance(entry, list) or len(entry) < 4:
+                continue
+            if entry[0] == field:
+                val = entry[3]
                 if isinstance(val, str) and val.strip():
                     return val.strip()
         return None
@@ -97,8 +109,11 @@ class RDAPLookup:
             if fn:
                 return fn
         # Fallback: check top-level entities for org
-        for entity in data.get("entities", []):  # type: ignore[union-attr]
-            org = cls._extract_from_vcard(entity, "org")  # type: ignore[arg-type]
+        raw_entities = data.get("entities", [])
+        for entity in raw_entities if isinstance(raw_entities, list) else []:
+            if not isinstance(entity, dict):
+                continue
+            org = cls._extract_from_vcard(entity, "org")
             if org:
                 return org
         return None

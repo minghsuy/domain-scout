@@ -27,7 +27,6 @@ jobs:
           python-version: "3.12"
       - run: uv sync --all-groups
       - run: uv run mypy domain_scout/ --ignore-missing-imports
-        continue-on-error: true
 
   test:
     runs-on: ubuntu-latest
