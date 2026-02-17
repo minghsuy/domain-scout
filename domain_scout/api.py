@@ -124,18 +124,40 @@ def create_app(
         # Acquire semaphore with timeout — return 429 if all slots busy
         try:
             async with asyncio.timeout(_SEMAPHORE_TIMEOUT):
-                async with app.state.semaphore:
-                    scout = Scout(config=config, cache=app.state.cache)
-                    result = await scout.discover_async(req.entity)
+                await app.state.semaphore.acquire()
         except TimeoutError as exc:
             raise HTTPException(
                 status_code=429, detail="Too many concurrent scans, try again later"
             ) from exc
+
+        try:
+            scout = Scout(config=config, cache=app.state.cache)
+            result = await scout.discover_async(req.entity)
         except Exception as exc:
             log.error("scan.failed", error=str(exc), entity=req.entity.company_name)
             raise HTTPException(status_code=500, detail="Internal scan error") from exc
+        finally:
+            app.state.semaphore.release()
 
         return result
+
+    @app.get("/cache/stats")
+    async def cache_stats() -> dict[str, Any]:
+        """Return cache statistics."""
+        if app.state.cache is None:
+            return {"enabled": False}
+        loop = asyncio.get_running_loop()
+        stats = await loop.run_in_executor(None, app.state.cache.stats)
+        return {"enabled": True, **stats}
+
+    @app.post("/cache/clear")
+    async def cache_clear() -> dict[str, str]:
+        """Clear all cached entries."""
+        if app.state.cache is None:
+            raise HTTPException(status_code=400, detail="Cache is not enabled")
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(None, app.state.cache.clear)
+        return {"status": "cleared"}
 
     return app
 

@@ -10,7 +10,7 @@ from pydantic import BaseModel, Field
 class EntityInput(BaseModel):
     """Describes the business entity to search for."""
 
-    company_name: str
+    company_name: str = Field(min_length=1, max_length=200)
     location: str | None = None
     seed_domain: list[str] = Field(default_factory=list)
     industry: str | None = None

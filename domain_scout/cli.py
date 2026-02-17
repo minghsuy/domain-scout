@@ -151,8 +151,18 @@ def cache_stats(
         )
         raise typer.Exit(1) from None
 
-    with DuckDBCache(cache_dir=cache_dir) as cache:
-        stats = cache.stats()
+    try:
+        with DuckDBCache(cache_dir=cache_dir) as cache:
+            stats = cache.stats()
+    except Exception as exc:
+        if "lock" in str(exc).lower():
+            typer.echo(
+                "Error: cache database is locked by another process (API server running?).\n"
+                "Use the /cache/stats API endpoint instead, or stop the server first.",
+                err=True,
+            )
+            raise typer.Exit(1) from None
+        raise
 
     typer.echo(f"  Cache directory: {stats['cache_dir']}")
     typer.echo(f"  CT entries:      {stats['ct_entries']}")
@@ -177,8 +187,18 @@ def cache_clear(
         )
         raise typer.Exit(1) from None
 
-    with DuckDBCache(cache_dir=cache_dir) as cache:
-        cache.clear()
+    try:
+        with DuckDBCache(cache_dir=cache_dir) as cache:
+            cache.clear()
+    except Exception as exc:
+        if "lock" in str(exc).lower():
+            typer.echo(
+                "Error: cache database is locked by another process (API server running?).\n"
+                "Use the /cache/clear API endpoint instead, or stop the server first.",
+                err=True,
+            )
+            raise typer.Exit(1) from None
+        raise
     typer.echo("  Cache cleared.")
 
 
