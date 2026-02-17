@@ -1,6 +1,7 @@
 # domain-scout
 
 [![CI](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml/badge.svg)](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/domain-scout-ct)](https://pypi.org/project/domain-scout-ct/)
 
 Discover internet domains associated with a business entity using Certificate Transparency logs, RDAP, and DNS.
 
@@ -9,7 +10,13 @@ Useful for security teams, asset inventories, and M&A due diligence — where se
 ## Install
 
 ```bash
-uv sync
+pip install domain-scout-ct
+```
+
+For development:
+
+```bash
+uv sync --all-groups
 ```
 
 ## Usage
