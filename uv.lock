@@ -73,8 +73,8 @@ wheels = [
 ]
 
 [[package]]
-name = "domain-scout"
-version = "0.2.0"
+name = "domain-scout-ct"
+version = "0.2.1"
 source = { editable = "." }
 dependencies = [
     { name = "dnspython" },

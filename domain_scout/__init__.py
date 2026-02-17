@@ -14,7 +14,7 @@ from domain_scout.scout import Scout
 
 configure_logging()
 
-__version__ = _pkg_version("domain-scout")
+__version__ = _pkg_version("domain-scout-ct")
 
 __all__ = [
     "Scout",
