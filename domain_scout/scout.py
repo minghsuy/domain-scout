@@ -6,10 +6,13 @@ import asyncio
 import time
 from datetime import UTC, datetime
 from importlib.metadata import version as _pkg_version
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import httpx
 import structlog
+
+if TYPE_CHECKING:
+    from domain_scout.cache import CTSource, DuckDBCache, RDAPSource
 
 from domain_scout.config import ScoutConfig
 from domain_scout.matching.entity_match import (
@@ -33,11 +36,23 @@ log = structlog.get_logger()
 class Scout:
     """Discover internet domains associated with a business entity."""
 
-    def __init__(self, config: ScoutConfig | None = None) -> None:
+    def __init__(
+        self,
+        config: ScoutConfig | None = None,
+        cache: DuckDBCache | None = None,
+    ) -> None:
         self.config = config or ScoutConfig()
-        self._ct = CTLogSource(self.config)
+        ct_inner = CTLogSource(self.config)
+        rdap_inner = RDAPLookup(self.config)
+        if cache is not None:
+            from domain_scout.cache import CachedCTLogSource, CachedRDAPLookup
+
+            self._ct: CTSource | CTLogSource = CachedCTLogSource(ct_inner, cache)
+            self._rdap: RDAPSource | RDAPLookup = CachedRDAPLookup(rdap_inner, cache)
+        else:
+            self._ct = ct_inner
+            self._rdap = rdap_inner
         self._dns = DNSChecker(self.config)
-        self._rdap = RDAPLookup(self.config)
 
     def discover(
         self,
@@ -343,7 +358,8 @@ class Scout:
             ):
                 cert_orgs.add(org)
             # Check if other seeds share this cert
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            _raw_sans = rec.get("san_dns_names")
+            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
             san_bases = {b for s in sans if is_valid_domain(s) and (b := extract_base_domain(s))}
             for matched_base in san_bases & base_to_seed.keys():
                 other_seed = base_to_seed[matched_base]
@@ -404,7 +420,8 @@ class Scout:
             if similarity < self.config.org_match_threshold:
                 continue
 
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            _raw_sans = rec.get("san_dns_names")
+            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
             cn = rec.get("common_name", "")
             all_names = _collect_cert_names(sans, cn)
 
@@ -421,7 +438,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="ct_org_match",
                         description=desc,
-                        cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                        cert_id=_int_or_none(rec.get("cert_id")),
                         cert_org=cert_org,
                         similarity_score=round(similarity, 4),
                     )
@@ -450,7 +467,8 @@ class Scout:
         seed_base = extract_base_domain(seed_domain)
 
         for rec in records:
-            sans: list[str] = rec.get("san_dns_names", [])  # type: ignore[assignment]
+            _raw_sans = rec.get("san_dns_names")
+            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
             cn = rec.get("common_name", "")
             cert_org = rec.get("org_name")
             all_names = _collect_cert_names(sans, cn)
@@ -519,7 +537,7 @@ class Scout:
                             EvidenceRecord(
                                 source_type="ct_org_match",
                                 description=desc,
-                                cert_id=rec.get("cert_id"),  # type: ignore[arg-type]
+                                cert_id=_int_or_none(rec.get("cert_id")),
                                 cert_org=cert_org,
                                 similarity_score=round(sim, 4),
                             )
@@ -739,6 +757,11 @@ def _extract_contributing_seeds(sources: set[str]) -> set[str]:
             if src.startswith(prefix):
                 seeds.add(src[len(prefix) :])
     return seeds
+
+
+def _int_or_none(val: object) -> int | None:
+    """Safely extract an int from a dict value, or None."""
+    return val if isinstance(val, int) else None
 
 
 def _collect_cert_names(sans: list[str], cn: Any) -> list[str]:

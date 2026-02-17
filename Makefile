@@ -1,7 +1,7 @@
-.PHONY: install test lint format check build clean
+.PHONY: install test lint format check build clean docker-build docker-run
 
 install:
-	uv sync --all-groups
+	uv sync --all-groups --all-extras
 
 test:
 	uv run pytest domain_scout/tests -m "not integration" -v
@@ -24,3 +24,9 @@ build:
 
 clean:
 	rm -rf dist/ build/ *.egg-info
+
+docker-build:
+	docker build -t domain-scout-ct .
+
+docker-run:
+	docker run -p 8080:8080 domain-scout-ct

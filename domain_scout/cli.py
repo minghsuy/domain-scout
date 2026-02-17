@@ -20,6 +20,9 @@ app = typer.Typer(
     no_args_is_help=True,
 )
 
+cache_app = typer.Typer(help="Manage the query cache.")
+app.add_typer(cache_app, name="cache")
+
 
 @app.command()
 def scout(
@@ -43,6 +46,10 @@ def scout(
         str | None,
         typer.Option("--profile", "-p", help="Discovery profile: broad, balanced, strict"),
     ] = None,
+    use_cache: Annotated[
+        bool, typer.Option("--cache/--no-cache", help="Enable query cache")
+    ] = False,
+    cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
@@ -57,9 +64,15 @@ def scout(
         config = ScoutConfig.from_profile(profile, total_timeout=timeout, deep_mode=deep)  # type: ignore[arg-type]
     else:
         config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
-    s = Scout(config=config)
+
+    cache = None
+    if use_cache:
+        from domain_scout.cache import DuckDBCache
+
+        cache = DuckDBCache(cache_dir=cache_dir)
 
     try:
+        s = Scout(config=config, cache=cache)
         result = s.discover(
             company_name=name,
             location=location,
@@ -69,11 +82,92 @@ def scout(
     except KeyboardInterrupt:
         typer.echo("\nAborted.", err=True)
         raise typer.Exit(1) from None
+    finally:
+        if cache:
+            cache.close()
 
     if output == "json":
         typer.echo(result.model_dump_json(indent=2))
     else:
         _print_table(result)
+
+
+@app.command()
+def serve(
+    host: Annotated[str, typer.Option("--host", help="Bind address")] = "127.0.0.1",
+    port: Annotated[int, typer.Option("--port", help="Bind port")] = 8080,
+    workers: Annotated[int, typer.Option("--workers", help="Uvicorn workers")] = 1,
+    max_concurrent: Annotated[
+        int, typer.Option("--max-concurrent", help="Max concurrent scans")
+    ] = 3,
+    no_cache: Annotated[bool, typer.Option("--no-cache", help="Disable query cache")] = False,
+    cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Debug logging")] = False,
+) -> None:
+    """Start the REST API server."""
+    import os
+
+    import uvicorn
+
+    configure_logging(level=logging.DEBUG if verbose else logging.INFO)
+
+    # DuckDB is embedded single-writer — force workers=1 when cache is enabled
+    if workers > 1 and not no_cache:
+        typer.echo(
+            "  Warning: --workers > 1 requires --no-cache (DuckDB is single-writer). "
+            "Disabling cache.",
+            err=True,
+        )
+        no_cache = True
+
+    # Pass config to app via env vars (picked up by get_app factory)
+    os.environ["DOMAIN_SCOUT_MAX_CONCURRENT"] = str(max_concurrent)
+    if no_cache:
+        os.environ["DOMAIN_SCOUT_CACHE"] = "false"
+    if cache_dir:
+        os.environ["DOMAIN_SCOUT_CACHE_DIR"] = cache_dir
+
+    uvicorn.run(
+        "domain_scout.api:get_app",
+        host=host,
+        port=port,
+        workers=workers,
+        factory=True,
+        log_level="debug" if verbose else "info",
+    )
+
+
+@cache_app.command("stats")
+def cache_stats(
+    cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
+) -> None:
+    """Show cache statistics."""
+    from domain_scout.cache import DuckDBCache
+
+    cache = DuckDBCache(cache_dir=cache_dir)
+    stats = cache.stats()
+    cache.close()
+
+    typer.echo(f"  Cache directory: {stats['cache_dir']}")
+    typer.echo(f"  CT entries:      {stats['ct_entries']}")
+    typer.echo(f"  RDAP entries:    {stats['rdap_entries']}")
+    if stats["ct_oldest_age_seconds"] is not None:
+        typer.echo(f"  CT oldest:       {stats['ct_oldest_age_seconds']}s ago")
+    if stats["rdap_oldest_age_seconds"] is not None:
+        typer.echo(f"  RDAP oldest:     {stats['rdap_oldest_age_seconds']}s ago")
+
+
+@cache_app.command("clear")
+def cache_clear(
+    cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
+) -> None:
+    """Clear all cached entries."""
+    from domain_scout.cache import DuckDBCache
+
+    cache = DuckDBCache(cache_dir=cache_dir)
+    cache.clear()
+    cache.close()
+    typer.echo("  Cache cleared.")
 
 
 def _print_table(result: ScoutResult) -> None:
@@ -86,12 +180,12 @@ def _print_table(result: ScoutResult) -> None:
             assessment = result.seed_domain_assessment.get(sd, "unknown")
             typer.echo(f"  Seed domain: {sd} ({assessment})", err=True)
     if result.seed_cross_verification:
-        seen_pairs: set[tuple[str, str]] = set()
+        seen_pairs: set[tuple[str, ...]] = set()
         for s, others in result.seed_cross_verification.items():
             for o in others:
                 pair = tuple(sorted([s, o]))
                 if pair not in seen_pairs:
-                    seen_pairs.add(pair)  # type: ignore[arg-type]
+                    seen_pairs.add(pair)
                     typer.echo(f"  Cross-verified: {pair[0]} <-> {pair[1]} (shared cert)", err=True)
     typer.echo(err=True)
 
