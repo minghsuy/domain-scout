@@ -3,10 +3,13 @@
 from __future__ import annotations
 
 import time
+from datetime import datetime
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock
 
 import pytest
+from hypothesis import given
+from hypothesis import strategies as st
 
 from domain_scout.cache import (
     _VACUUM_INTERVAL,
@@ -15,6 +18,7 @@ from domain_scout.cache import (
     DuckDBCache,
     _cache_key,
 )
+from domain_scout.scout import _normalize_time, _parse_time
 
 if TYPE_CHECKING:
     from collections.abc import Generator
@@ -274,3 +278,71 @@ class TestCachedRDAPLookup:
         cache.close()
         result = await wrapper.get_registrant_org("fail-write.com")
         assert result == "Write-Fail Corp"
+
+
+class TestCacheSerializationRoundtrip:
+    """Contract tests: cache serialization preserves data integrity."""
+
+    def test_datetime_roundtrip_format(self, cache: DuckDBCache) -> None:
+        """datetime→cache→normalize produces consistent T-separator format."""
+        dt = datetime(2025, 6, 15, 12, 30, 0)
+        data: list[dict[str, object]] = [{"not_before": dt}]
+        cache.put_ct("rt_test", data)
+        result = cache.get_ct("rt_test")
+        assert result is not None
+        cached_str = result[0]["not_before"]
+        assert isinstance(cached_str, str)
+        normalized = _normalize_time(cached_str)
+        assert normalized is not None
+        assert "T" in normalized
+
+    def test_normalize_time_space_separator_fixed(self) -> None:
+        """Space separator (from json default=str) is converted to T separator."""
+        space_fmt = "2025-01-01 00:00:00"
+        result = _normalize_time(space_fmt)
+        assert result is not None
+        assert "T" in result
+        assert " " not in result
+
+    def test_normalize_time_t_separator_unchanged(self) -> None:
+        """T separator is passed through unchanged."""
+        t_fmt = "2025-01-01T00:00:00"
+        result = _normalize_time(t_fmt)
+        assert result == t_fmt
+
+    def test_parse_time_recovers_datetime(self) -> None:
+        """normalize→parse round-trip recovers the original datetime."""
+        original = datetime(2025, 3, 15, 8, 30, 0)
+        normalized = _normalize_time(original)
+        assert normalized is not None
+        recovered = _parse_time(normalized)
+        assert recovered == original
+
+    def test_comparison_consistency(self) -> None:
+        """Timestamps from different sources compare correctly after normalization."""
+        # Simulate cache format (space separator from json default=str)
+        cache_format = "2025-01-01 00:00:00"
+        # Simulate live CT format (datetime object)
+        live_format = datetime(2025, 1, 1, 0, 0, 0)
+
+        norm_cache = _normalize_time(cache_format)
+        norm_live = _normalize_time(live_format)
+
+        assert norm_cache == norm_live
+
+
+class TestNormalizeTimeProperties:
+    """Property-based tests for _normalize_time."""
+
+    @given(
+        dt=st.datetimes(
+            min_value=datetime(2000, 1, 1),
+            max_value=datetime(2030, 12, 31),
+        )
+    )
+    def test_normalize_roundtrip(self, dt: datetime) -> None:
+        """For any datetime, normalize→parse recovers the original."""
+        normalized = _normalize_time(dt)
+        assert normalized is not None
+        recovered = _parse_time(normalized)
+        assert recovered == dt

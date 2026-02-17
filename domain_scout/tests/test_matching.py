@@ -2,6 +2,9 @@
 
 from __future__ import annotations
 
+from hypothesis import given
+from hypothesis import strategies as st
+
 from domain_scout.matching.entity_match import (
     _BRAND_ALIAS_PAIRS,
     _extract_initials_from_word,
@@ -468,3 +471,48 @@ class TestDomainFromCompanyName:
 
     def test_suffix_only(self) -> None:
         assert domain_from_company_name("Inc.") == []
+
+
+class TestPropertyBased:
+    """Property-based tests for matching invariants."""
+
+    # Alphabet of letters, digits, and spaces for realistic company names
+    _COMPANY_CHARS = st.sampled_from(
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 "
+    )
+
+    @given(
+        a=st.text(min_size=1, max_size=50, alphabet=_COMPANY_CHARS),
+        b=st.text(min_size=1, max_size=50, alphabet=_COMPANY_CHARS),
+    )
+    def test_similarity_symmetric(self, a: str, b: str) -> None:
+        """similarity(a, b) == similarity(b, a)."""
+        assert org_name_similarity(a, b) == org_name_similarity(b, a)
+
+    @given(name=st.text(min_size=0, max_size=100))
+    def test_normalize_idempotent(self, name: str) -> None:
+        """normalize(normalize(x)) == normalize(x)."""
+        once = normalize_org_name(name)
+        twice = normalize_org_name(once)
+        assert once == twice
+
+    @given(
+        a=st.text(min_size=0, max_size=50),
+        b=st.text(min_size=0, max_size=50),
+    )
+    def test_similarity_range(self, a: str, b: str) -> None:
+        """Score always in [0.0, 1.0]."""
+        score = org_name_similarity(a, b)
+        assert 0.0 <= score <= 1.0
+
+    _LETTER_CHARS = st.sampled_from("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+
+    @given(name=st.text(min_size=1, max_size=50, alphabet=_LETTER_CHARS))
+    def test_self_similarity(self, name: str) -> None:
+        """Name compared to itself scores 1.0 (or 0.0 if empty after normalization)."""
+        score = org_name_similarity(name, name)
+        normalized = normalize_org_name(name)
+        if normalized:
+            assert score == 1.0
+        else:
+            assert score == 0.0

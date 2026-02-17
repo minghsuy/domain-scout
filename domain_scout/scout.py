@@ -630,30 +630,30 @@ class Scout:
             score = max(score, 0.80)
         if any(s.startswith("ct_seed_subdomain:") for s in accum.sources):
             score = max(score, 0.75)
-        if "rdap_match" in accum.sources:
-            score = max(score, 0.70)
         if any(s.startswith("ct_seed_related:") for s in accum.sources):
             score = max(score, 0.40)
         if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
             score = max(score, 0.30)
 
-        # Boost for multiple independent sources
+        # Collect all applicable boosts, then apply with a cap
+        boost = 0.0
         if len(accum.sources) >= 3:
-            score = min(1.0, score + 0.10)
+            boost += 0.10
         elif len(accum.sources) >= 2:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
 
-        # Boost if resolves
         if accum.resolves:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
 
-        # Best org name similarity across cert_org_names
         best_sim = 0.0
         for cert_org in accum.cert_org_names:
             sim = org_name_similarity(cert_org, company_name)
             best_sim = max(best_sim, sim)
         if best_sim > 0.9:
-            score = min(1.0, score + 0.05)
+            boost += 0.05
+
+        # Cap total boost at +0.10 to prevent all domains scoring 1.00
+        score = min(1.0, score + min(boost, 0.10))
 
         return round(score, 2)
 
@@ -787,7 +787,12 @@ def _normalize_time(val: object) -> str | None:
     if isinstance(val, datetime):
         return val.isoformat()
     if isinstance(val, str):
-        return val
+        if not val:
+            return None
+        try:
+            return datetime.fromisoformat(val).isoformat()
+        except ValueError:
+            return val
     return str(val)
 
 
