@@ -142,11 +142,17 @@ def cache_stats(
     cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
 ) -> None:
     """Show cache statistics."""
-    from domain_scout.cache import DuckDBCache
+    try:
+        from domain_scout.cache import DuckDBCache
+    except ImportError:
+        typer.echo(
+            "Error: duckdb is not installed. Install with: pip install domain-scout-ct[cache]",
+            err=True,
+        )
+        raise typer.Exit(1) from None
 
-    cache = DuckDBCache(cache_dir=cache_dir)
-    stats = cache.stats()
-    cache.close()
+    with DuckDBCache(cache_dir=cache_dir) as cache:
+        stats = cache.stats()
 
     typer.echo(f"  Cache directory: {stats['cache_dir']}")
     typer.echo(f"  CT entries:      {stats['ct_entries']}")
@@ -162,11 +168,17 @@ def cache_clear(
     cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
 ) -> None:
     """Clear all cached entries."""
-    from domain_scout.cache import DuckDBCache
+    try:
+        from domain_scout.cache import DuckDBCache
+    except ImportError:
+        typer.echo(
+            "Error: duckdb is not installed. Install with: pip install domain-scout-ct[cache]",
+            err=True,
+        )
+        raise typer.Exit(1) from None
 
-    cache = DuckDBCache(cache_dir=cache_dir)
-    cache.clear()
-    cache.close()
+    with DuckDBCache(cache_dir=cache_dir) as cache:
+        cache.clear()
     typer.echo("  Cache cleared.")
 
 

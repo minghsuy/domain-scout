@@ -7,7 +7,10 @@ import os
 import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
-from typing import Any
+from typing import TYPE_CHECKING, Any
+
+if TYPE_CHECKING:
+    from collections.abc import AsyncIterator
 
 import httpx
 import structlog
@@ -52,7 +55,7 @@ def create_app(
     """Create and configure the FastAPI application."""
 
     @asynccontextmanager
-    async def lifespan(app: FastAPI) -> Any:  # noqa: ANN401
+    async def lifespan(app: FastAPI) -> AsyncIterator[None]:
         yield
         if app.state.cache is not None:
             app.state.cache.close()
@@ -105,6 +108,7 @@ def create_app(
         """Run a domain discovery scan."""
         overrides: dict[str, Any] = {}
         if req.timeout is not None:
+            # Pydantic le=300 already caps, min() is defense-in-depth
             overrides["total_timeout"] = min(req.timeout, _MAX_SCAN_TIMEOUT)
         if req.deep:
             overrides["deep_mode"] = True
@@ -137,8 +141,16 @@ def create_app(
 
 
 def get_app() -> FastAPI:
-    """Factory for default app (used by uvicorn import string)."""
+    """Factory for default app (used by uvicorn import string).
+
+    Note: DuckDB is single-writer. The CLI ``serve`` command disables cache
+    when ``--workers > 1``.  If you call ``uvicorn domain_scout.api:get_app``
+    directly with multiple workers, set ``DOMAIN_SCOUT_CACHE=false``.
+    """
     max_concurrent = int(os.environ.get("DOMAIN_SCOUT_MAX_CONCURRENT", "3"))
+    if max_concurrent < 1:
+        log.warning("get_app.invalid_max_concurrent", value=max_concurrent)
+        max_concurrent = 1
     cache_enabled = os.environ.get("DOMAIN_SCOUT_CACHE", "true").lower() != "false"
 
     cache_dir = os.environ.get("DOMAIN_SCOUT_CACHE_DIR")

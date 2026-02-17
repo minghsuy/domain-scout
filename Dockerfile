@@ -22,7 +22,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 EXPOSE 8080
 HEALTHCHECK --interval=30s --timeout=5s --retries=3 \
-  CMD python -c "import httpx; httpx.get('http://localhost:8080/health').raise_for_status()"
+  CMD wget -q --spider http://localhost:8080/health || exit 1
 USER scout
 ENTRYPOINT ["domain-scout"]
 CMD ["serve", "--host", "0.0.0.0", "--port", "8080"]

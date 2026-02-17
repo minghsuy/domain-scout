@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from datetime import UTC, datetime
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
@@ -12,7 +13,7 @@ if TYPE_CHECKING:
     from collections.abc import Iterator
 from fastapi.testclient import TestClient
 
-from domain_scout.api import ScanRequest, create_app
+from domain_scout.api import ScanRequest, create_app, get_app
 from domain_scout.models import EntityInput, RunMetadata, ScoutResult
 
 
@@ -48,6 +49,22 @@ def mock_discover() -> Iterator[AsyncMock]:
         yield mocked
 
 
+def _mock_httpx_client(
+    *, status_code: int = 200, side_effect: Exception | None = None
+) -> AsyncMock:
+    """Build a mock httpx.AsyncClient for /ready endpoint tests."""
+    mock_client = AsyncMock()
+    if side_effect:
+        mock_client.get = AsyncMock(side_effect=side_effect)
+    else:
+        mock_resp = MagicMock()
+        mock_resp.status_code = status_code
+        mock_client.get = AsyncMock(return_value=mock_resp)
+    mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+    mock_client.__aexit__ = AsyncMock(return_value=None)
+    return mock_client
+
+
 class TestHealth:
     def test_health(self, client: TestClient) -> None:
         resp = client.get("/health")
@@ -60,15 +77,7 @@ class TestHealth:
 class TestReady:
     def test_ready_ok(self, client: TestClient) -> None:
         """Ready endpoint returns 'ready' when crt.sh probe succeeds."""
-        mock_resp = MagicMock()
-        mock_resp.status_code = 200
-
-        mock_client = AsyncMock()
-        mock_client.get = AsyncMock(return_value=mock_resp)
-        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
-        mock_client.__aexit__ = AsyncMock(return_value=None)
-
-        with patch("domain_scout.api.httpx.AsyncClient", return_value=mock_client):
+        with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
             resp = client.get("/ready")
         assert resp.status_code == 200
         data = resp.json()
@@ -78,12 +87,8 @@ class TestReady:
 
     def test_ready_degraded(self, client: TestClient) -> None:
         """Ready endpoint returns 'degraded' when crt.sh probe fails."""
-        mock_client = AsyncMock()
-        mock_client.get = AsyncMock(side_effect=ConnectionError("refused"))
-        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
-        mock_client.__aexit__ = AsyncMock(return_value=None)
-
-        with patch("domain_scout.api.httpx.AsyncClient", return_value=mock_client):
+        mock = _mock_httpx_client(side_effect=ConnectionError("refused"))
+        with patch("domain_scout.api.httpx.AsyncClient", return_value=mock):
             resp = client.get("/ready")
         assert resp.status_code == 200
         data = resp.json()
@@ -192,6 +197,16 @@ class TestScan:
             )
         assert resp.status_code == 429
         assert "Too many concurrent scans" in resp.json()["detail"]
+
+
+class TestGetApp:
+    def test_get_app_default(self) -> None:
+        """get_app() returns a working FastAPI app with default config."""
+        with patch.dict(os.environ, {"DOMAIN_SCOUT_CACHE": "false"}):
+            app = get_app()
+        test_client = TestClient(app)
+        resp = test_client.get("/health")
+        assert resp.status_code == 200
 
 
 class TestScanRequest:

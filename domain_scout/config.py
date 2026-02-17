@@ -76,10 +76,6 @@ class ScoutConfig:
     # --- Output filtering ---
     include_non_resolving: bool = False
 
-    # --- Cache ---
-    cache_enabled: bool = False
-    cache_dir: str | None = None
-
     def to_dict(self) -> dict[str, object]:
         """Serialize config to a plain dict for audit snapshots."""
         return dataclasses.asdict(self)

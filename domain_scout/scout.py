@@ -83,7 +83,7 @@ class Scout:
 
     async def _discover(self, entity: EntityInput) -> ScoutResult:
         t0 = time.monotonic()
-        total_budget = float(self.config.total_timeout)
+        total_budget = self.config.total_timeout
         errors: list[str] = []
         timed_out = False
         seeds = entity.seed_domain  # list[str]
@@ -358,8 +358,7 @@ class Scout:
             ):
                 cert_orgs.add(org)
             # Check if other seeds share this cert
-            _raw_sans = rec.get("san_dns_names")
-            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
+            sans = _extract_sans(rec)
             san_bases = {b for s in sans if is_valid_domain(s) and (b := extract_base_domain(s))}
             for matched_base in san_bases & base_to_seed.keys():
                 other_seed = base_to_seed[matched_base]
@@ -420,8 +419,7 @@ class Scout:
             if similarity < self.config.org_match_threshold:
                 continue
 
-            _raw_sans = rec.get("san_dns_names")
-            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
+            sans = _extract_sans(rec)
             cn = rec.get("common_name", "")
             all_names = _collect_cert_names(sans, cn)
 
@@ -467,8 +465,7 @@ class Scout:
         seed_base = extract_base_domain(seed_domain)
 
         for rec in records:
-            _raw_sans = rec.get("san_dns_names")
-            sans: list[str] = _raw_sans if isinstance(_raw_sans, list) else []
+            sans = _extract_sans(rec)
             cn = rec.get("common_name", "")
             cert_org = rec.get("org_name")
             all_names = _collect_cert_names(sans, cn)
@@ -730,8 +727,8 @@ class Scout:
                     sources=sorted(accum.sources),
                     evidence=deduped,
                     cert_org_names=sorted(accum.cert_org_names),
-                    first_seen=accum.first_seen,
-                    last_seen=accum.last_seen,
+                    first_seen=_parse_time(accum.first_seen),
+                    last_seen=_parse_time(accum.last_seen),
                     resolves=accum.resolves,
                     is_seed=(domain in seed_bases),
                     seed_sources=contributing_seeds,
@@ -772,6 +769,35 @@ def _collect_cert_names(sans: list[str], cn: Any) -> list[str]:
     return list(names)
 
 
+def _extract_sans(rec: dict[str, object]) -> list[str]:
+    """Extract SAN DNS names from a cert record."""
+    raw = rec.get("san_dns_names")
+    sans: list[str] = raw if isinstance(raw, list) else []
+    return sans
+
+
+def _normalize_time(val: object) -> str | None:
+    """Normalize a datetime or string to ISO string for consistent comparison.
+
+    CT Postgres returns datetime objects, JSON API and cache return strings.
+    Normalizing to ISO strings prevents TypeError on mixed-type comparison.
+    """
+    if val is None:
+        return None
+    if isinstance(val, datetime):
+        return val.isoformat()
+    if isinstance(val, str):
+        return val
+    return str(val)
+
+
+def _parse_time(val: str | None) -> datetime | None:
+    """Parse an ISO 8601 string back to datetime for Pydantic output."""
+    if val is None:
+        return None
+    return datetime.fromisoformat(val)
+
+
 class _DomainAccum:
     """Mutable accumulator for evidence about a single domain."""
 
@@ -789,8 +815,8 @@ class _DomainAccum:
         self.sources: set[str] = set()
         self.evidence: list[EvidenceRecord] = []
         self.cert_org_names: set[str] = set()
-        self.first_seen: Any = None
-        self.last_seen: Any = None
+        self.first_seen: str | None = None
+        self.last_seen: str | None = None
         self.resolves: bool = False
         self.confidence: float = 0.0
 
@@ -798,14 +824,18 @@ class _DomainAccum:
         self.sources |= other.sources
         self.evidence.extend(other.evidence)
         self.cert_org_names |= other.cert_org_names
-        if other.first_seen and (self.first_seen is None or other.first_seen < self.first_seen):
-            self.first_seen = other.first_seen
-        if other.last_seen and (self.last_seen is None or other.last_seen > self.last_seen):
-            self.last_seen = other.last_seen
+        o_first = _normalize_time(other.first_seen)
+        if o_first and (self.first_seen is None or o_first < self.first_seen):
+            self.first_seen = o_first
+        o_last = _normalize_time(other.last_seen)
+        if o_last and (self.last_seen is None or o_last > self.last_seen):
+            self.last_seen = o_last
         self.resolves = self.resolves or other.resolves
 
-    def update_times(self, not_before: Any, not_after: Any) -> None:
-        if not_before and (self.first_seen is None or not_before < self.first_seen):
-            self.first_seen = not_before
-        if not_after and (self.last_seen is None or not_after > self.last_seen):
-            self.last_seen = not_after
+    def update_times(self, not_before: object, not_after: object) -> None:
+        nb = _normalize_time(not_before)
+        na = _normalize_time(not_after)
+        if nb and (self.first_seen is None or nb < self.first_seen):
+            self.first_seen = nb
+        if na and (self.last_seen is None or na > self.last_seen):
+            self.last_seen = na

@@ -71,21 +71,16 @@ class DuckDBCache:
         self.close()
 
     def _init_tables(self) -> None:
-        assert self._conn is not None
-        self._conn.execute("""
-            CREATE TABLE IF NOT EXISTS ct_cache (
-                cache_key VARCHAR PRIMARY KEY,
-                result_json VARCHAR NOT NULL,
-                created_at DOUBLE NOT NULL
-            )
-        """)
-        self._conn.execute("""
-            CREATE TABLE IF NOT EXISTS rdap_cache (
-                cache_key VARCHAR PRIMARY KEY,
-                result_json VARCHAR NOT NULL,
-                created_at DOUBLE NOT NULL
-            )
-        """)
+        if self._conn is None:
+            return
+        for table in _VALID_TABLES:
+            self._conn.execute(f"""
+                CREATE TABLE IF NOT EXISTS {table} (
+                    cache_key VARCHAR PRIMARY KEY,
+                    result_json VARCHAR NOT NULL,
+                    created_at DOUBLE NOT NULL
+                )
+            """)
 
     def get_ct(self, query: str) -> list[dict[str, object]] | None:
         """Get cached CT results, or None on miss/expired."""
@@ -176,15 +171,15 @@ class DuckDBCache:
                     "rdap_oldest_age_seconds": None,
                 }
             now = time.time()
-            ct_row = self._conn.execute("SELECT COUNT(*) FROM ct_cache").fetchone()
-            rdap_row = self._conn.execute("SELECT COUNT(*) FROM rdap_cache").fetchone()
-            ct_oldest = self._conn.execute("SELECT MIN(created_at) FROM ct_cache").fetchone()
-            rdap_oldest = self._conn.execute("SELECT MIN(created_at) FROM rdap_cache").fetchone()
+            ct_row = self._conn.execute("SELECT COUNT(*), MIN(created_at) FROM ct_cache").fetchone()
+            rdap_row = self._conn.execute(
+                "SELECT COUNT(*), MIN(created_at) FROM rdap_cache"
+            ).fetchone()
 
         ct_n = ct_row[0] if ct_row else 0
+        ct_ts = ct_row[1] if ct_row else None
         rdap_n = rdap_row[0] if rdap_row else 0
-        ct_ts = ct_oldest[0] if ct_oldest else None
-        rdap_ts = rdap_oldest[0] if rdap_oldest else None
+        rdap_ts = rdap_row[1] if rdap_row else None
 
         return {
             "cache_dir": str(self._dir),
@@ -238,8 +233,8 @@ class CachedCTLogSource:
         result = await self._inner.search_by_domain(domain)
         try:
             await loop.run_in_executor(None, self._cache.put_ct, f"domain:{domain}", result)
-        except Exception:
-            log.warning("cache.write_failed", query=f"domain:{domain}")
+        except Exception as exc:
+            log.warning("cache.write_failed", query=f"domain:{domain}", error=str(exc))
         return result
 
     async def search_by_org(
@@ -254,8 +249,8 @@ class CachedCTLogSource:
         result = await self._inner.search_by_org(org_name, verify_org=verify_org)
         try:
             await loop.run_in_executor(None, self._cache.put_ct, key, result)
-        except Exception:
-            log.warning("cache.write_failed", query=key)
+        except Exception as exc:
+            log.warning("cache.write_failed", query=key, error=str(exc))
         return result
 
     async def get_cert_org(self, cert_id: int) -> str | None:
@@ -278,8 +273,8 @@ class CachedRDAPLookup:
         result = await self._inner.get_registrant_org(domain)
         try:
             await loop.run_in_executor(None, self._cache.put_rdap, f"org:{domain}", {"org": result})
-        except Exception:
-            log.warning("cache.write_failed", query=f"org:{domain}")
+        except Exception as exc:
+            log.warning("cache.write_failed", query=f"org:{domain}", error=str(exc))
         return result
 
     async def get_registrant_info(self, domain: str) -> dict[str, str | None]:
@@ -291,6 +286,6 @@ class CachedRDAPLookup:
         result = await self._inner.get_registrant_info(domain)
         try:
             await loop.run_in_executor(None, self._cache.put_rdap, f"info:{domain}", result)
-        except Exception:
-            log.warning("cache.write_failed", query=f"info:{domain}")
+        except Exception as exc:
+            log.warning("cache.write_failed", query=f"info:{domain}", error=str(exc))
         return result
