@@ -67,7 +67,7 @@ domain_scout/
 - SPEC.md is gitignored (contains internal context)
 - Security reports (*-threat-model.md, *_report.md) are gitignored
 - License: MIT
-- mypy has ~13-16 pre-existing errors in untouched files — don't fix unrelated type errors
+- mypy must pass clean (0 errors) — CI enforces this
 
 ## Testing
 

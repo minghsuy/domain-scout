@@ -15,6 +15,11 @@ log = structlog.get_logger()
 _RDAP_BOOTSTRAP = "https://rdap.org/domain/"
 
 
+def _safe_list(value: object) -> list[object]:
+    """Return value if it is a list, otherwise an empty list."""
+    return value if isinstance(value, list) else []
+
+
 class RDAPLookup:
     """Look up domain registration data via RDAP."""
 
@@ -59,29 +64,29 @@ class RDAPLookup:
     @staticmethod
     def _find_entity(data: dict[str, object], role: str) -> dict[str, object] | None:
         """Walk the entities tree to find one with the given role."""
-        entities: list[dict[str, object]] = data.get("entities", [])  # type: ignore[assignment]
-        for entity in entities:
-            roles: list[str] = entity.get("roles", [])  # type: ignore[assignment]
-            if role in roles:
+        for entity in _safe_list(data.get("entities", [])):
+            if not isinstance(entity, dict):
+                continue
+            if role in _safe_list(entity.get("roles", [])):
                 return entity
-            # Check nested entities
-            nested: list[dict[str, object]] = entity.get("entities", [])  # type: ignore[assignment]
-            for child in nested:
-                child_roles: list[str] = child.get("roles", [])  # type: ignore[assignment]
-                if role in child_roles:
+            for child in _safe_list(entity.get("entities", [])):
+                if not isinstance(child, dict):
+                    continue
+                if role in _safe_list(child.get("roles", [])):
                     return child
         return None
 
     @classmethod
     def _extract_from_vcard(cls, data: dict[str, object], field: str) -> str | None:
         """Extract a field from jCard (vcardArray) in an RDAP entity."""
-        vcard_array: list[object] | None = data.get("vcardArray")  # type: ignore[assignment]
-        if not vcard_array or len(vcard_array) < 2:  # type: ignore[arg-type]
+        raw_vcard = data.get("vcardArray")
+        if not isinstance(raw_vcard, list) or len(raw_vcard) < 2:
             return None
-        entries: list[list[object]] = vcard_array[1]  # type: ignore[index,assignment]
-        for entry in entries:
-            if len(entry) >= 4 and entry[0] == field:  # type: ignore[index]
-                val = entry[3]  # type: ignore[index]
+        for entry in _safe_list(raw_vcard[1]):
+            if not isinstance(entry, list) or len(entry) < 4:
+                continue
+            if entry[0] == field:
+                val = entry[3]
                 if isinstance(val, str) and val.strip():
                     return val.strip()
         return None
@@ -97,8 +102,10 @@ class RDAPLookup:
             if fn:
                 return fn
         # Fallback: check top-level entities for org
-        for entity in data.get("entities", []):  # type: ignore[union-attr]
-            org = cls._extract_from_vcard(entity, "org")  # type: ignore[arg-type]
+        for entity in _safe_list(data.get("entities", [])):
+            if not isinstance(entity, dict):
+                continue
+            org = cls._extract_from_vcard(entity, "org")
             if org:
                 return org
         return None
