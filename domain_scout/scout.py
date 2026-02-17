@@ -679,7 +679,10 @@ class Scout:
                             description=f"Shares infrastructure with {reference}",
                         )
                     )
-                    accum.confidence = min(1.0, accum.confidence + 0.05)
+                    # Cap so infra boost can't exceed the +0.10 total boost limit.
+                    # Only cross_seed_verified (0.90 base) should reach 1.00.
+                    max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
+                    accum.confidence = min(max_conf, accum.confidence + 0.05)
             except Exception:
                 pass
 
