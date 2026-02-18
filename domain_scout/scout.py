@@ -274,6 +274,16 @@ class Scout:
                     timed_out = True
                     errors.append("GeoDNS resolution timed out")
 
+        # Step 3c: RDAP corroboration on top resolving candidates
+        if _remaining() > 5.0:
+            try:
+                await asyncio.wait_for(
+                    self._rdap_corroborate(domain_evidence, entity.company_name),
+                    timeout=min(15.0, _remaining() - 3.0),
+                )
+            except TimeoutError:
+                errors.append("RDAP corroboration timed out")
+
         # Step 4: confidence scoring and infrastructure comparison
         confirmed_domains: list[str] = []
         for domain, accum in domain_evidence.items():
@@ -620,6 +630,7 @@ class Scout:
     def _score_confidence(
         self, accum: _DomainAccum, company_name: str, seed_domains: list[str]
     ) -> float:
+        # Phase 1: base score from source type (unchanged)
         score = 0.0
 
         if "cross_seed_verified" in accum.sources:
@@ -635,25 +646,32 @@ class Scout:
         if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
             score = max(score, 0.30)
 
-        # Collect all applicable boosts, then apply with a cap
-        boost = 0.0
-        if len(accum.sources) >= 3:
-            boost += 0.10
-        elif len(accum.sources) >= 2:
-            boost += 0.05
+        # Phase 2: corroboration level adjustment
+        # dns_guess bypasses corroboration — it already implies resolution
+        if score <= 0.30:
+            return round(score, 2)
 
-        if accum.resolves:
-            boost += 0.05
+        has_resolves = accum.resolves
+        has_rdap = "rdap_registrant_match" in accum.sources
 
-        best_sim = 0.0
-        for cert_org in accum.cert_org_names:
-            sim = org_name_similarity(cert_org, company_name)
-            best_sim = max(best_sim, sim)
-        if best_sim > 0.9:
-            boost += 0.05
+        best_sim = max(
+            (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
+            default=0.0,
+        )
+        has_high_sim = best_sim > 0.9
 
-        # Cap total boost at +0.10 to prevent all domains scoring 1.00
-        score = min(1.0, score + min(boost, 0.10))
+        has_multi_source = len(accum.sources) >= 3
+
+        if has_resolves and (has_rdap or has_high_sim) and has_multi_source:
+            adjustment = 0.10  # Level 3: strong corroboration
+        elif has_resolves and (has_rdap or has_high_sim or has_multi_source):
+            adjustment = 0.05  # Level 2: moderate corroboration
+        elif has_resolves:
+            adjustment = 0.00  # Level 1: resolves only
+        else:
+            adjustment = -0.05  # Level 0: no resolution
+
+        score = min(1.0, max(0.0, score + adjustment))
 
         return round(score, 2)
 
@@ -682,7 +700,7 @@ class Scout:
                     # Cap so infra boost can't exceed the +0.10 total boost limit.
                     # Only cross_seed_verified (0.90 base) should reach 1.00.
                     max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
-                    accum.confidence = min(max_conf, accum.confidence + 0.05)
+                    accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
             except Exception:
                 pass
 
@@ -693,6 +711,55 @@ class Scout:
             )
         except TimeoutError:
             log.warning("scout.infra_boost_timeout", checked=len(candidates))
+
+    # --- RDAP corroboration ---
+
+    async def _rdap_corroborate(
+        self, domain_evidence: dict[str, _DomainAccum], company_name: str
+    ) -> None:
+        """Query RDAP on top resolving candidates and add corroborating evidence."""
+        # Select resolving candidates without existing rdap_registrant_match
+        candidates = [
+            (domain, accum)
+            for domain, accum in domain_evidence.items()
+            if accum.resolves and "rdap_registrant_match" not in accum.sources
+        ]
+        # Sort by source count (descending) as a proxy for importance
+        candidates.sort(key=lambda x: len(x[1].sources), reverse=True)
+        candidates = candidates[: self.config.rdap_corroborate_max]
+
+        if not candidates:
+            return
+
+        async def _check(domain: str, accum: _DomainAccum) -> None:
+            try:
+                rdap_org = await self._rdap.get_registrant_org(domain)
+                if not rdap_org:
+                    return
+                sim = org_name_similarity(rdap_org, company_name)
+                if sim >= self.config.org_match_threshold:
+                    accum.sources.add("rdap_registrant_match")
+                    accum.rdap_org = rdap_org
+                    accum.evidence.append(
+                        EvidenceRecord(
+                            source_type="rdap_registrant_match",
+                            description=(
+                                f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
+                            ),
+                            rdap_org=rdap_org,
+                            similarity_score=round(sim, 4),
+                        )
+                    )
+            except Exception as exc:
+                log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
+
+        try:
+            await asyncio.wait_for(
+                asyncio.gather(*[_check(d, a) for d, a in candidates]),
+                timeout=15.0,
+            )
+        except TimeoutError:
+            log.warning("scout.rdap_corroborate_timeout", checked=len(candidates))
 
     # --- Step 4: Build output ---
 
@@ -733,6 +800,7 @@ class Scout:
                     first_seen=_parse_time(accum.first_seen),
                     last_seen=_parse_time(accum.last_seen),
                     resolves=accum.resolves,
+                    rdap_org=accum.rdap_org,
                     is_seed=(domain in seed_bases),
                     seed_sources=contributing_seeds,
                 )
@@ -816,6 +884,7 @@ class _DomainAccum:
         "first_seen",
         "last_seen",
         "resolves",
+        "rdap_org",
         "confidence",
     )
 
@@ -826,6 +895,7 @@ class _DomainAccum:
         self.first_seen: str | None = None
         self.last_seen: str | None = None
         self.resolves: bool = False
+        self.rdap_org: str | None = None
         self.confidence: float = 0.0
 
     def merge(self, other: _DomainAccum) -> None:
@@ -839,6 +909,8 @@ class _DomainAccum:
         if o_last and (self.last_seen is None or o_last > self.last_seen):
             self.last_seen = o_last
         self.resolves = self.resolves or other.resolves
+        if self.rdap_org is None and other.rdap_org is not None:
+            self.rdap_org = other.rdap_org
 
     def update_times(self, not_before: object, not_after: object) -> None:
         nb = _normalize_time(not_before)

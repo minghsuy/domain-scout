@@ -25,6 +25,7 @@ class EvidenceRecord(BaseModel):
     cert_id: int | None = None
     cert_org: str | None = None
     similarity_score: float | None = None
+    rdap_org: str | None = None
 
 
 class DiscoveredDomain(BaseModel):
@@ -38,6 +39,7 @@ class DiscoveredDomain(BaseModel):
     first_seen: datetime | None = None
     last_seen: datetime | None = None
     resolves: bool = False
+    rdap_org: str | None = None
     is_seed: bool = False
     seed_sources: list[str] = Field(default_factory=list)
 
