@@ -193,3 +193,23 @@ class TestWalmartAcceptance:
             assert domain_scores[key_domain] >= 0.80, (
                 f"{key_domain} scored {domain_scores[key_domain]}, expected >= 0.80"
             )
+
+    @pytest.mark.asyncio
+    async def test_walmart_rdap_corroboration(self) -> None:
+        """Key resolving domains should have rdap_registrant_match in sources."""
+        scout = _make_scout()
+        entity = EntityInput(
+            company_name="Walmart",
+            seed_domain=["walmart.com", "samsclub.com"],
+        )
+        result = await scout.discover_async(entity)
+
+        domain_map = {d.domain: d for d in result.domains}
+
+        # Cross-seed verified domains with RDAP corroboration should have the source
+        for key_domain in ["samsclub.com", "wal-mart.com"]:
+            assert key_domain in domain_map, f"Missing {key_domain}"
+            assert "rdap_registrant_match" in domain_map[key_domain].sources, (
+                f"{key_domain} missing rdap_registrant_match, "
+                f"sources={domain_map[key_domain].sources}"
+            )

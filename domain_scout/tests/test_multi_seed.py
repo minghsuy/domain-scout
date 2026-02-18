@@ -5,6 +5,8 @@ from __future__ import annotations
 from datetime import UTC, datetime
 from unittest.mock import AsyncMock, patch
 
+import pytest
+
 from domain_scout.config import ScoutConfig
 from domain_scout.models import (
     DiscoveredDomain,
@@ -100,33 +102,35 @@ class TestScoreConfidenceMultiSeed:
         a.sources.add("cross_seed_verified")
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
+        a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"])
-        assert score >= 0.90
+        # 0.90 base + 0.05 (Level 2: resolves + multi_source) = 0.95
+        assert score == 0.95
 
-    def test_tagged_san_expansion_scores_same(self) -> None:
-        """ct_san_expansion:seed should score the same as the old ct_san_expansion."""
+    def test_tagged_san_expansion_no_resolves(self) -> None:
+        """ct_san_expansion:seed without resolution gets -0.05 penalty."""
         a = _DomainAccum()
         a.sources.add("ct_san_expansion:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
-        assert score == 0.80
+        assert score == 0.75
 
-    def test_tagged_seed_subdomain_scores_same(self) -> None:
+    def test_tagged_seed_subdomain_no_resolves(self) -> None:
         a = _DomainAccum()
         a.sources.add("ct_seed_subdomain:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
-        assert score == 0.75
+        assert score == 0.70
 
-    def test_tagged_seed_related_scores_same(self) -> None:
+    def test_tagged_seed_related_no_resolves(self) -> None:
         a = _DomainAccum()
         a.sources.add("ct_seed_related:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
-        assert score == 0.40
+        assert score == 0.35
 
-    def test_no_seeds_still_works(self) -> None:
+    def test_no_seeds_no_resolves(self) -> None:
         a = _DomainAccum()
         a.sources.add("ct_org_match")
         score = self.scout._score_confidence(a, "Walmart", [])
-        assert score == 0.85
+        assert score == 0.80
 
     def test_cross_seed_with_org_match_takes_highest(self) -> None:
         a = _DomainAccum()
@@ -134,8 +138,10 @@ class TestScoreConfidenceMultiSeed:
         a.sources.add("ct_org_match")
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
+        a.cert_org_names.add("Walmart Inc.")
+        a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"])
-        # 0.90 base + min(0.10, 0.10) boost cap = 1.00
+        # 0.90 base + 0.10 (Level 3: resolves + high_sim + multi_source) = 1.00
         assert score == 1.0
 
 
@@ -295,8 +301,8 @@ class TestSimulatedScenarios:
         score = self.scout._score_confidence(
             evidence["walmartlabs.com"], "Walmart", ["walmart.com", "samsclub.com"]
         )
-        # 0.90 (cross_seed) + min(0.15, 0.10) boost cap = 1.0
-        assert score == 1.0
+        # 0.90 (cross_seed) + 0.05 (Level 2: resolves + multi_source) = 0.95
+        assert score == 0.95
 
     def test_generali_overlap(self) -> None:
         """Simulate: generali.it and generali.com both find generali.de."""
@@ -316,7 +322,7 @@ class TestSimulatedScenarios:
         score = self.scout._score_confidence(
             evidence["generali.de"], "Generali", ["generali.it", "generali.com"]
         )
-        # cross_seed 0.90 base + min(0.20, 0.10) boost cap = 1.0
+        # cross_seed 0.90 base + 0.10 (Level 3: resolves + high_sim + multi_source) = 1.0
         assert score == 1.0
 
     def test_ma_sold_subsidiary_no_false_cross(self) -> None:
@@ -339,7 +345,7 @@ class TestSimulatedScenarios:
         score = self.scout._score_confidence(
             evidence["asda.com"], "Walmart", ["walmart.com", "samsclub.com"]
         )
-        assert score == 0.85  # 0.80 + 0.05 resolves
+        assert score == 0.80  # 0.80 + 0.00 (resolves alone is neutral)
 
     def test_cdn_false_positive_not_cross_verified(self) -> None:
         """CDN domain from ct_seed_related only (no strong sources) is not cross-verified."""
@@ -356,8 +362,8 @@ class TestSimulatedScenarios:
         Scout._apply_cross_seed_boost(evidence, ["walmart.com", "samsclub.com"])
 
         # No strong source (ct_san_expansion/ct_seed_subdomain), so no cross-verify.
-        # Score stays at 0.40 (ct_seed_related) + 0.05 (2 sources) + 0.05 (resolves)
-        # = 0.50, below inclusion threshold.
+        # Score: 0.40 (ct_seed_related) + 0.00 (Level 1: resolves only) = 0.40,
+        # below inclusion threshold.
         assert "cross_seed_verified" not in evidence["cloudflare.com"].sources
 
     def test_unrelated_domains_not_boosted(self) -> None:
@@ -392,7 +398,7 @@ class TestPostMergerAcquisition:
 
         Scout._apply_cross_seed_boost(evidence, ["walmart.com", "samsclub.com"])
         assert "cross_seed_verified" not in a.sources
-        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 0.85
+        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 0.80
 
     def test_divested_entity_historical_certs(self) -> None:
         """Divested subsidiary with mismatched org gets no cross-verify or org boost."""
@@ -404,7 +410,7 @@ class TestPostMergerAcquisition:
 
         Scout._apply_cross_seed_boost(evidence, ["walmart.com", "samsclub.com"])
         assert "cross_seed_verified" not in a.sources
-        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 0.85
+        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 0.80
 
     def test_acquired_brand_different_source_types(self) -> None:
         """Cross-verification fires across different source types (SAN + subdomain)."""
@@ -416,7 +422,7 @@ class TestPostMergerAcquisition:
 
         Scout._apply_cross_seed_boost(evidence, ["companya.com", "companyb.com"])
         assert "cross_seed_verified" in a.sources
-        assert self.scout._score_confidence(a, "CompanyA", ["companya.com", "companyb.com"]) == 1.0
+        assert self.scout._score_confidence(a, "CompanyA", ["companya.com", "companyb.com"]) == 0.95
 
 
 # --- Post-Spin-Off scenarios ---
@@ -438,7 +444,7 @@ class TestPostSpinOff:
 
         Scout._apply_cross_seed_boost(evidence, ["hp.com", "hpe.com"])
         assert "cross_seed_verified" in a.sources
-        assert self.scout._score_confidence(a, "HP Inc", ["hp.com", "hpe.com"]) == 1.0
+        assert self.scout._score_confidence(a, "HP Inc", ["hp.com", "hpe.com"]) == 0.95
 
     def test_spinoff_child_domain_not_on_parent_certs(self) -> None:
         """Domain only from one post-split seed gets no cross-verify."""
@@ -449,7 +455,7 @@ class TestPostSpinOff:
 
         Scout._apply_cross_seed_boost(evidence, ["ebay.com", "paypal.com"])
         assert "cross_seed_verified" not in a.sources
-        assert self.scout._score_confidence(a, "eBay", ["ebay.com", "paypal.com"]) == 0.80
+        assert self.scout._score_confidence(a, "eBay", ["ebay.com", "paypal.com"]) == 0.75
 
     def test_spinoff_transition_cert_non_resolving(self) -> None:
         """Cross-verified but non-resolving non-seed domain is excluded from output."""
@@ -475,7 +481,7 @@ class TestPostSpinOff:
 
         Scout._apply_cross_seed_boost(evidence, ["hp.com", "hpe.com"])
         assert "cross_seed_verified" not in a.sources
-        assert self.scout._score_confidence(a, "HP Inc", ["hp.com", "hpe.com"]) == 0.85
+        assert self.scout._score_confidence(a, "HP Inc", ["hp.com", "hpe.com"]) == 0.80
 
 
 # --- Look-alike but different entities ---
@@ -516,10 +522,10 @@ class TestLookAlikeDifferentEntities:
 
         Scout._apply_cross_seed_boost(evidence, ["delta.com", "deltafaucet.com"])
         assert "cross_seed_verified" not in a.sources
-        # 0.40 (ct_seed_related) + min(0.10, 0.10) boost cap = 0.50
+        # 0.40 (ct_seed_related) + 0.00 (resolves only = Level 1) = 0.40
         assert (
             self.scout._score_confidence(a, "Delta Air Lines", ["delta.com", "deltafaucet.com"])
-            == 0.50
+            == 0.40
         )
 
     def test_completely_isolated_seeds(self) -> None:
@@ -539,8 +545,8 @@ class TestLookAlikeDifferentEntities:
         assert "cross_seed_verified" not in a1.sources
         assert "cross_seed_verified" not in a2.sources
 
-        assert self.scout._score_confidence(a1, "Apple Inc", seeds) == 0.85
-        assert self.scout._score_confidence(a2, "Apple Inc", seeds) == 0.80
+        assert self.scout._score_confidence(a1, "Apple Inc", seeds) == 0.80
+        assert self.scout._score_confidence(a2, "Apple Inc", seeds) == 0.75
 
 
 # --- Cross-verification edge cases ---
@@ -569,7 +575,7 @@ class TestCrossVerificationEdgeCases:
 
         Scout._apply_cross_seed_boost(evidence, seeds)
         assert "cross_seed_verified" in a.sources
-        assert self.scout._score_confidence(a, "TestCo", seeds) == 1.0
+        assert self.scout._score_confidence(a, "TestCo", seeds) == 0.95
 
     def test_duplicate_seed_no_cross_verify(self) -> None:
         """Same seed listed twice contributes only 1 unique seed -- no cross-verify."""
@@ -637,7 +643,7 @@ class TestCrossVerificationEdgeCases:
 
         Scout._apply_cross_seed_boost(evidence, ["walmart.com", "samsclub.com"])
         assert "cross_seed_verified" in a.sources
-        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 1.0
+        assert self.scout._score_confidence(a, "Walmart", ["walmart.com", "samsclub.com"]) == 0.95
 
     def test_extract_contributing_seeds_filters_non_tagged(self) -> None:
         """_extract_contributing_seeds ignores non-seed-tagged sources."""
@@ -710,3 +716,179 @@ class TestBuildOutputEdgeCases:
 
         domains = self.scout._build_output(evidence, ["a.com", "b.com"])
         assert [d.domain for d in domains] == ["high.com", "mid.com", "low.com"]
+
+
+# --- Corroboration level tests ---
+
+
+class TestCorroborationLevels:
+    """Test the corroboration level scoring model."""
+
+    def setup_method(self) -> None:
+        self.scout = Scout(config=ScoutConfig())
+
+    def test_level3_resolves_rdap_high_sim(self) -> None:
+        """Level 3: resolves + rdap_match + high_sim → +0.10."""
+        a = _DomainAccum()
+        a.sources.update({"ct_org_match", "rdap_registrant_match", "ct_san_expansion:a.com"})
+        a.cert_org_names.add("Walmart Inc.")
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", ["a.com"])
+        assert score == 0.95  # 0.85 + 0.10
+
+    def test_level3_resolves_rdap_multi_source(self) -> None:
+        """Level 3: resolves + rdap_match + multi_source → +0.10."""
+        a = _DomainAccum()
+        a.sources.update({"ct_org_match", "rdap_registrant_match", "ct_san_expansion:a.com"})
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", ["a.com"])
+        assert score == 0.95  # 0.85 + 0.10
+
+    def test_level2_resolves_rdap(self) -> None:
+        """Level 2: resolves + rdap_match (no multi_source) → +0.05."""
+        a = _DomainAccum()
+        a.sources.update({"ct_org_match", "rdap_registrant_match"})
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", [])
+        assert score == 0.90  # 0.85 + 0.05
+
+    def test_level2_resolves_high_sim(self) -> None:
+        """Level 2: resolves + high_sim (no rdap) → +0.05."""
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.cert_org_names.add("Walmart Inc.")
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", [])
+        assert score == 0.90  # 0.85 + 0.05
+
+    def test_level2_resolves_multi_source(self) -> None:
+        """Level 2: resolves + multi_source (no rdap, no high_sim) → +0.05."""
+        a = _DomainAccum()
+        a.sources.update({"ct_org_match", "ct_san_expansion:a.com", "ct_seed_subdomain:a.com"})
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", ["a.com"])
+        assert score == 0.90  # 0.85 + 0.05
+
+    def test_level1_resolves_only(self) -> None:
+        """Level 1: resolves only → +0.00."""
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", [])
+        assert score == 0.85  # 0.85 + 0.00
+
+    def test_level0_no_resolves(self) -> None:
+        """Level 0: no resolution → -0.05."""
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = False
+        score = self.scout._score_confidence(a, "Walmart", [])
+        assert score == 0.80  # 0.85 - 0.05
+
+    def test_cross_seed_rdap_resolves_reaches_one(self) -> None:
+        """Cross-seed + rdap + resolves → 1.0."""
+        a = _DomainAccum()
+        a.sources.update(
+            {
+                "cross_seed_verified",
+                "ct_san_expansion:a.com",
+                "ct_san_expansion:b.com",
+                "rdap_registrant_match",
+            }
+        )
+        a.resolves = True
+        score = self.scout._score_confidence(a, "TestCo", ["a.com", "b.com"])
+        # 0.90 + 0.10 (Level 3: resolves + rdap + multi_source) = 1.0
+        assert score == 1.0
+
+    def test_dns_guess_stays_at_030(self) -> None:
+        """dns_guess stays at 0.30 regardless of corroboration."""
+        a = _DomainAccum()
+        a.sources.add("dns_guess")
+        a.resolves = True
+        score = self.scout._score_confidence(a, "Walmart", [])
+        assert score == 0.30
+
+
+# --- RDAP corroboration pipeline tests ---
+
+
+class TestRDAPCorroboration:
+    """Test the _rdap_corroborate pipeline step."""
+
+    def setup_method(self) -> None:
+        self.scout = Scout(config=ScoutConfig())
+        self.scout._rdap.get_registrant_org = AsyncMock(return_value="Walmart Inc.")  # type: ignore[method-assign]
+
+    @pytest.mark.asyncio
+    async def test_adds_rdap_source_on_match(self) -> None:
+        """RDAP corroboration adds rdap_registrant_match when org matches."""
+        evidence: dict[str, _DomainAccum] = {}
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = True
+        evidence["walmart.com"] = a
+
+        await self.scout._rdap_corroborate(evidence, "Walmart")
+        assert "rdap_registrant_match" in a.sources
+        assert a.rdap_org == "Walmart Inc."
+        assert any(e.source_type == "rdap_registrant_match" for e in a.evidence)
+
+    @pytest.mark.asyncio
+    async def test_skips_non_resolving(self) -> None:
+        """Non-resolving domains are skipped."""
+        evidence: dict[str, _DomainAccum] = {}
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = False
+        evidence["dead.com"] = a
+
+        await self.scout._rdap_corroborate(evidence, "Walmart")
+        assert "rdap_registrant_match" not in a.sources
+
+    @pytest.mark.asyncio
+    async def test_below_threshold_no_source(self) -> None:
+        """RDAP org below org_match_threshold doesn't add source."""
+        self.scout._rdap.get_registrant_org = AsyncMock(return_value="Totally Different Corp")  # type: ignore[method-assign]
+        evidence: dict[str, _DomainAccum] = {}
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = True
+        evidence["unrelated.com"] = a
+
+        await self.scout._rdap_corroborate(evidence, "Walmart")
+        assert "rdap_registrant_match" not in a.sources
+
+    @pytest.mark.asyncio
+    async def test_exception_handled_gracefully(self) -> None:
+        """Exception during RDAP corroboration doesn't crash."""
+        self.scout._rdap.get_registrant_org = AsyncMock(  # type: ignore[method-assign]
+            side_effect=Exception("RDAP service down")
+        )
+        evidence: dict[str, _DomainAccum] = {}
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = True
+        evidence["walmart.com"] = a
+
+        # Should not raise
+        await self.scout._rdap_corroborate(evidence, "Walmart")
+        # Source should NOT be added when RDAP fails
+        assert "rdap_registrant_match" not in a.sources
+
+    @pytest.mark.asyncio
+    async def test_respects_max_limit(self) -> None:
+        """Only checks up to rdap_corroborate_max domains."""
+        config = ScoutConfig(rdap_corroborate_max=3)
+        self.scout = Scout(config=config)
+        self.scout._rdap.get_registrant_org = AsyncMock(return_value="Walmart Inc.")  # type: ignore[method-assign]
+
+        evidence: dict[str, _DomainAccum] = {}
+        for i in range(10):
+            a = _DomainAccum()
+            a.sources.add("ct_org_match")
+            a.resolves = True
+            evidence[f"domain{i}.com"] = a
+
+        await self.scout._rdap_corroborate(evidence, "Walmart")
+        assert self.scout._rdap.get_registrant_org.call_count == 3

@@ -14,12 +14,14 @@ _PROFILES: dict[str, dict[str, object]] = {
         "inclusion_threshold": 0.40,
         "seed_confirm_threshold": 0.45,
         "include_non_resolving": True,
+        "rdap_corroborate_max": 15,
     },
     "balanced": {},  # all defaults
     "strict": {
         "org_match_threshold": 0.80,
         "inclusion_threshold": 0.75,
         "seed_confirm_threshold": 0.75,
+        "rdap_corroborate_max": 20,
     },
 }
 
@@ -63,6 +65,9 @@ class ScoutConfig:
 
     # --- Infrastructure checks ---
     infra_check_max: int = 10
+
+    # --- RDAP corroboration ---
+    rdap_corroborate_max: int = 10
 
     # --- DNS ---
     dns_nameservers: list[str] = field(default_factory=lambda: ["8.8.8.8", "1.1.1.1"])
