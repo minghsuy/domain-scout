@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+from pathlib import Path  # noqa: TC003 — Typer needs runtime import
 from typing import TYPE_CHECKING, Annotated
 
 import typer
@@ -12,7 +13,7 @@ from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout
 
 if TYPE_CHECKING:
-    from domain_scout.models import ScoutResult
+    from domain_scout.models import DeltaReport, ScoutResult
 
 app = typer.Typer(
     name="domain-scout",
@@ -135,6 +136,87 @@ def serve(
         factory=True,
         log_level="debug" if verbose else "info",
     )
+
+
+@app.command()
+def diff(
+    baseline: Annotated[Path, typer.Argument(help="Baseline ScoutResult JSON file")],
+    current: Annotated[Path, typer.Argument(help="Current ScoutResult JSON file")],
+    output: Annotated[
+        str, typer.Option("--output", "-o", help="Output format: table or json")
+    ] = "table",
+) -> None:
+    """Show what changed between two scan results."""
+    from domain_scout.delta import compute_delta
+
+    baseline_result = _load_result(baseline, "Baseline")
+    current_result = _load_result(current, "Current")
+    report = compute_delta(baseline_result, current_result)
+
+    if output == "json":
+        typer.echo(report.model_dump_json(indent=2))
+    else:
+        _print_delta_table(report)
+
+
+def _load_result(path: Path, label: str) -> ScoutResult:
+    """Load and validate a ScoutResult JSON file, or exit with an error."""
+    from domain_scout.models import ScoutResult
+
+    if not path.is_file():
+        typer.echo(f"Error: {label} file not found: {path}", err=True)
+        raise typer.Exit(1)
+    try:
+        return ScoutResult.model_validate_json(path.read_text())
+    except Exception as exc:
+        typer.echo(f"Error: invalid {label.lower()} JSON: {exc}", err=True)
+        raise typer.Exit(1) from None
+
+
+def _print_delta_table(report: DeltaReport) -> None:
+    """Pretty-print a delta report as a table."""
+    # Warnings to stderr
+    for w in report.warnings:
+        typer.echo(f"  Warning [{w.code}]: {w.message}", err=True)
+    if report.warnings:
+        typer.echo(err=True)
+
+    # Summary
+    s = report.summary
+    typer.echo(
+        f"  Summary: {s.added} added, {s.removed} removed, "
+        f"{s.changed} changed, {s.unchanged} unchanged",
+        err=True,
+    )
+    typer.echo(
+        f"  Baseline: {s.baseline_total} domains | Current: {s.current_total} domains",
+        err=True,
+    )
+    typer.echo(err=True)
+
+    if report.added:
+        typer.echo("  + Added:", err=True)
+        for d in report.added:
+            typer.echo(f"    + {d.domain:<40} {d.confidence:>5.2f}", err=True)
+        typer.echo(err=True)
+
+    if report.removed:
+        typer.echo("  - Removed:", err=True)
+        for d in report.removed:
+            typer.echo(f"    - {d.domain:<40} {d.confidence:>5.2f}", err=True)
+        typer.echo(err=True)
+
+    if report.changed:
+        typer.echo("  ~ Changed:", err=True)
+        for c in report.changed:
+            b, cur = c.baseline_confidence, c.current_confidence
+            typer.echo(f"    ~ {c.domain:<40} {b:>5.2f} -> {cur:>5.2f}", err=True)
+            for ch in c.changes:
+                typer.echo(f"      {ch.field}: {ch.old} -> {ch.new}", err=True)
+        typer.echo(err=True)
+
+    if not report.added and not report.removed and not report.changed:
+        typer.echo("  No changes detected.", err=True)
 
 
 @cache_app.command("stats")

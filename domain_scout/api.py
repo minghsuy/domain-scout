@@ -19,7 +19,8 @@ from pydantic import BaseModel, Field
 
 from domain_scout.cache import DuckDBCache
 from domain_scout.config import ProfileName, ScoutConfig
-from domain_scout.models import EntityInput, ScoutResult
+from domain_scout.delta import compute_delta
+from domain_scout.models import DeltaReport, EntityInput, ScoutResult
 from domain_scout.scout import Scout
 
 log = structlog.get_logger()
@@ -45,6 +46,13 @@ class ScanRequest(BaseModel):
         default=None, ge=5, le=300, description="Override total_timeout (seconds)"
     )
     deep: bool = Field(default=False, description="Enable GeoDNS deep mode")
+
+
+class DiffRequest(BaseModel):
+    """Request body for /diff endpoint."""
+
+    baseline: ScoutResult
+    current: ScoutResult
 
 
 def create_app(
@@ -158,6 +166,11 @@ def create_app(
         loop = asyncio.get_running_loop()
         await loop.run_in_executor(None, app.state.cache.clear)
         return {"status": "cleared"}
+
+    @app.post("/diff", response_model=DeltaReport)
+    async def diff_endpoint(req: DiffRequest) -> DeltaReport:
+        """Compute delta between two scan results."""
+        return compute_delta(req.baseline, req.current)
 
     return app
 

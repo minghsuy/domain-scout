@@ -12,3 +12,5 @@ build/
 SPEC.md
 *-threat-model.md
 *_report.md
+baselines/
+.hypothesis/

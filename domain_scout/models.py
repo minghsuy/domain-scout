@@ -68,6 +68,56 @@ class ScoutResult(BaseModel):
     run_metadata: RunMetadata
 
 
+# --- Delta reporting models ---
+
+
+class DomainChange(BaseModel):
+    """A single field-level change on a domain."""
+
+    field: str
+    old: object
+    new: object
+
+
+class ChangedDomain(BaseModel):
+    """A domain present in both scans with meaningful differences."""
+
+    domain: str
+    changes: list[DomainChange]
+    baseline_confidence: float
+    current_confidence: float
+
+
+class DeltaWarning(BaseModel):
+    """Warning about conditions affecting delta interpretation."""
+
+    code: str
+    message: str
+
+
+class DeltaSummary(BaseModel):
+    """Aggregate counts for a delta report."""
+
+    added: int
+    removed: int
+    changed: int
+    unchanged: int
+    baseline_total: int
+    current_total: int
+
+
+class DeltaReport(BaseModel):
+    """Complete delta between two ScoutResult runs."""
+
+    added: list[DiscoveredDomain] = Field(default_factory=list)
+    removed: list[DiscoveredDomain] = Field(default_factory=list)
+    changed: list[ChangedDomain] = Field(default_factory=list)
+    summary: DeltaSummary
+    warnings: list[DeltaWarning] = Field(default_factory=list)
+    baseline_metadata: RunMetadata
+    current_metadata: RunMetadata
+
+
 # --- Intermediate models (not part of public API) ---
 
 
