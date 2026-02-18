@@ -167,7 +167,12 @@ def _load_result(path: Path, label: str) -> ScoutResult:
         typer.echo(f"Error: {label} file not found: {path}", err=True)
         raise typer.Exit(1)
     try:
-        return ScoutResult.model_validate_json(path.read_text())
+        data = path.read_bytes()
+    except OSError as exc:
+        typer.echo(f"Error: could not read {label.lower()} file: {exc}", err=True)
+        raise typer.Exit(1) from None
+    try:
+        return ScoutResult.model_validate_json(data)
     except Exception as exc:
         typer.echo(f"Error: invalid {label.lower()} JSON: {exc}", err=True)
         raise typer.Exit(1) from None

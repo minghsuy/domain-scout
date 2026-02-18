@@ -30,7 +30,8 @@ make check         # format + lint + test
 domain_scout/
 ├── cli.py              # Typer CLI (entry point: domain_scout.cli:app)
 ├── scout.py            # Main orchestrator (Scout class)
-├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, EvidenceRecord, RunMetadata, ScoutResult, CertRecord
+├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, EvidenceRecord, RunMetadata, ScoutResult, delta models, CertRecord
+├── delta.py            # Delta reporting: compute_delta between two ScoutResult runs
 ├── config.py           # ScoutConfig dataclass (all tunables + discovery profiles)
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── sources/
@@ -45,6 +46,7 @@ domain_scout/
     ├── test_multi_seed.py
     ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
     ├── test_acceptance.py   # Walmart fixture tests with source-level mocks
+    ├── test_delta.py        # delta reporting, CLI diff, API /diff
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -74,6 +76,6 @@ domain_scout/
 
 ## Testing
 
-- **249 unit tests** + 3 integration tests (deselected by default)
+- **283 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

@@ -167,6 +167,8 @@ def create_app(
         await loop.run_in_executor(None, app.state.cache.clear)
         return {"status": "cleared"}
 
+    # No semaphore needed: compute_delta is pure CPU, no network I/O,
+    # sub-millisecond for typical result sizes (<100 domains).
     @app.post("/diff", response_model=DeltaReport)
     async def diff_endpoint(req: DiffRequest) -> DeltaReport:
         """Compute delta between two scan results."""

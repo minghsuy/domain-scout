@@ -136,6 +136,86 @@ class EntityInput(BaseModel):
     industry: str | None = None              # optional
 ```
 
+## Delta reporting
+
+Compare two scan results to see what changed:
+
+```python
+from domain_scout import compute_delta, Scout
+
+baseline = Scout().discover(company_name="Acme Corp", seed_domain="acme.com")
+# ... time passes ...
+current = Scout().discover(company_name="Acme Corp", seed_domain="acme.com")
+
+report = compute_delta(baseline, current)
+print(f"Added: {report.summary.added}, Removed: {report.summary.removed}")
+for d in report.added:
+    print(f"  + {d.domain}")
+for d in report.removed:
+    print(f"  - {d.domain}")
+for c in report.changed:
+    print(f"  ~ {c.domain}: {[ch.field for ch in c.changes]}")
+```
+
+Or via CLI:
+
+```bash
+domain-scout diff baseline.json current.json            # table output
+domain-scout diff baseline.json current.json -o json    # JSON output
+```
+
+### DeltaReport
+
+```python
+class DeltaReport(BaseModel):
+    added: list[DiscoveredDomain]        # domains in current but not baseline
+    removed: list[DiscoveredDomain]      # domains in baseline but not current
+    changed: list[ChangedDomain]         # domains in both with meaningful differences
+    summary: DeltaSummary                # aggregate counts
+    warnings: list[DeltaWarning]         # context warnings (different seeds, config, etc.)
+    baseline_metadata: RunMetadata       # metadata from the baseline scan
+    current_metadata: RunMetadata        # metadata from the current scan
+```
+
+### ChangedDomain
+
+```python
+class ChangedDomain(BaseModel):
+    domain: str                          # e.g. "samsclub.com"
+    changes: list[DomainChange]          # field-level changes
+    baseline_confidence: float           # confidence in baseline
+    current_confidence: float            # confidence in current
+```
+
+### DomainChange
+
+```python
+class DomainChange(BaseModel):
+    field: str                           # "confidence", "resolves", "sources", or "rdap_org"
+    old: float | bool | str | list[str] | None
+    new: float | bool | str | list[str] | None
+```
+
+### DeltaSummary
+
+```python
+class DeltaSummary(BaseModel):
+    added: int
+    removed: int
+    changed: int
+    unchanged: int
+    baseline_total: int
+    current_total: int
+```
+
+### DeltaWarning
+
+```python
+class DeltaWarning(BaseModel):
+    code: str                            # e.g. "seeds_changed", "config_changed"
+    message: str                         # human-readable explanation
+```
+
 ## JSON output
 
 Use `model_dump_json()` for serialization:

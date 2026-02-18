@@ -75,8 +75,8 @@ class DomainChange(BaseModel):
     """A single field-level change on a domain."""
 
     field: str
-    old: object
-    new: object
+    old: float | bool | str | list[str] | None
+    new: float | bool | str | list[str] | None
 
 
 class ChangedDomain(BaseModel):
