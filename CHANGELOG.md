@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.1] - 2026-02-17
+
+### Added
+- **RDAP corroboration phase** — queries RDAP registrant org on top discovered domains and adds `rdap_registrant_match` source when org matches. Configurable via `rdap_corroborate_max` (default 10, broad=15, strict=20)
+- `rdap_org` field on `EvidenceRecord` and `DiscoveredDomain` (optional, backward-compatible)
+- 15 new unit tests (249 total) covering corroboration levels and RDAP corroboration edge cases
+
+### Changed
+- **Corroboration-level scoring model** replaces additive boost system:
+  - Level 3 (+0.10): resolves + (RDAP match or high org similarity) + multi-source
+  - Level 2 (+0.05): resolves + (RDAP match or high similarity or multi-source)
+  - Level 1 (±0.00): resolves only — DNS resolution is now neutral, not a free boost
+  - Level 0 (−0.05): no resolution — CT-only evidence is penalized
+- Most non-resolving domain scores shift −0.05; RDAP-confirmed domains gain +0.05 to +0.10
+- `inclusion_threshold` defaults unaffected — lowest CT score (0.35) was already below threshold
+
+### Fixed
+- Float precision in `_infra_boost` — `0.80 + 0.05` produced `0.8500000000000001`, now uses `round(..., 2)`
+
 ## [0.3.0] - 2026-02-17
 
 ### Added

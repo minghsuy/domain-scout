@@ -132,7 +132,8 @@ result = asyncio.run(main())
 3. **Seed expansion** — Finds all SANs on certs covering the seed domain, revealing related domains (e.g., acquired companies)
 4. **Domain guessing** — Generates candidates from the company name + common TLDs, resolves them, verifies via CT
 5. **Cross-seed verification** — With multiple seeds, domains found independently by 2+ seeds get a confidence boost
-6. **Confidence scoring** — Scores each domain 0–1 based on org match, SAN co-occurrence, DNS resolution, cross-seed verification, and shared infrastructure
+6. **RDAP corroboration** — Queries RDAP registrant org on top discovered domains, confirming ownership matches the target company
+7. **Confidence scoring** — Corroboration-level model scores each domain 0–1 based on the combination of evidence: CT org match, SAN co-occurrence, DNS resolution, RDAP registrant match, cross-seed verification, and shared infrastructure
 
 ### Data sources
 

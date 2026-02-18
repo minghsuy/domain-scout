@@ -44,6 +44,7 @@ domain_scout/
     ├── test_matching.py
     ├── test_multi_seed.py
     ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
+    ├── test_acceptance.py   # Walmart fixture tests with source-level mocks
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -60,6 +61,8 @@ domain_scout/
 - Org-name matching: acronym detection (CamelCase-aware), abbreviation expansion, DBA dual-match, brand aliases, conglomerate guard, positional suffix anchoring
 - Positional suffix anchoring: ambiguous suffixes (Group, Holdings, Co, AG, SA, SE, NV, AB) only stripped from end of name; dotted forms (S.A., N.V., Co.) stripped at any position
 - Input length capped at 500 chars to prevent O(n*m) DoS from adversarial cert org fields
+- Corroboration-level scoring: Level 3 (+0.10) resolves+RDAP+multi-source, Level 2 (+0.05) resolves+(RDAP or high sim or multi-source), Level 1 (±0.00) resolves only, Level 0 (−0.05) no resolution
+- RDAP corroboration phase runs on top N resolving candidates, adds `rdap_registrant_match` source
 
 ## Conventions
 
@@ -71,6 +74,6 @@ domain_scout/
 
 ## Testing
 
-- **234 unit tests** + 3 integration tests (deselected by default)
+- **249 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
