@@ -49,7 +49,16 @@ class RDAPLookup:
             "country": self._extract_country(data),
         }
 
+    def _validate_domain(self, domain: str) -> None:
+        """Validate domain to prevent SSRF and path traversal."""
+        if not domain or len(domain) > 253:
+            raise ValueError(f"Invalid domain length: {domain!r}")
+        # Prevent path traversal and URL control characters
+        if ".." in domain or any(c in domain for c in "/?#:@"):
+            raise ValueError(f"Invalid domain characters: {domain!r}")
+
     async def _query(self, domain: str) -> dict[str, object]:
+        self._validate_domain(domain)
         url = f"{_RDAP_BOOTSTRAP}{domain}"
         async with httpx.AsyncClient(
             timeout=self._cfg.http_timeout,
