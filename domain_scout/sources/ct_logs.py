@@ -56,10 +56,52 @@ def _parse_dt(value: object) -> datetime | None:
 
 
 def _extract_org_from_subject(subject: str) -> str | None:
-    """Parse O=... from an X.509 subject string."""
-    m = re.search(r"O=([^,]+)", subject)
-    if m:
-        return m.group(1).strip().strip('"')
+    """Parse O=... from an X.509 subject string.
+
+    Handles quoted strings with commas and escaped characters.
+    """
+    parts: list[str] = []
+    current: list[str] = []
+    in_quote = False
+    escape = False
+
+    # Split by comma, respecting quotes
+    for char in subject:
+        if escape:
+            current.append(char)
+            escape = False
+        elif char == "\\":
+            current.append(char)
+            escape = True
+        elif char == '"':
+            in_quote = not in_quote
+            current.append(char)
+        elif char == "," and not in_quote:
+            parts.append("".join(current).strip())
+            current = []
+        else:
+            current.append(char)
+    parts.append("".join(current).strip())
+
+    for part in parts:
+        # Split on first = (key=value)
+        idx = part.find("=")
+        if idx == -1:
+            continue
+
+        key = part[:idx].strip().upper()
+        val = part[idx + 1 :].strip()
+
+        if key == "O":
+            # If quoted
+            if val.startswith('"') and val.endswith('"'):
+                inner = val[1:-1]
+                # In quoted string, \" is literal ", \\ is literal \
+                return inner.replace(r'\"', '"').replace(r"\\", "\\")
+
+            # Unquoted: unescape \, and \\
+            return val.replace(r"\,", ",").replace(r"\\", "\\")
+
     return None
 
 
