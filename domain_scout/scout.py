@@ -91,6 +91,9 @@ class Scout:
         # Accumulator: domain -> evidence dict
         domain_evidence: dict[str, _DomainAccum] = {}
 
+        # Request-scoped CT cache: domain -> list of records
+        ct_mem_cache: dict[str, list[dict[str, Any]]] = {}
+
         def _remaining() -> float:
             return max(0.0, total_budget - (time.monotonic() - t0))
 
@@ -133,7 +136,7 @@ class Scout:
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
         for sd in seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, entity.company_name, seeds, errors),
+                self._validate_seed(sd, entity.company_name, seeds, errors, ct_mem_cache),
                 name=f"seed_validation:{sd}",
             )
 
@@ -202,7 +205,7 @@ class Scout:
         for sd in seeds:
             dependent_tasks.append(
                 asyncio.create_task(
-                    self._strategy_seed_expansion(sd, entity.company_name, errors),
+                    self._strategy_seed_expansion(sd, entity.company_name, errors, ct_mem_cache),
                     name=f"seed_expansion:{sd}",
                 )
             )
@@ -337,7 +340,12 @@ class Scout:
     # --- Step 1: Seed validation ---
 
     async def _validate_seed(
-        self, seed: str, company_name: str, all_seeds: list[str], errors: list[str]
+        self,
+        seed: str,
+        company_name: str,
+        all_seeds: list[str],
+        errors: list[str],
+        ct_cache: dict[str, list[dict[str, Any]]] | None = None,
     ) -> dict[str, Any]:
         """Returns dict with assessment, org_name, and co_hosted_seeds."""
         resolves = await self._dns.resolves(seed)
@@ -349,7 +357,14 @@ class Scout:
             errors.append(f"RDAP lookup failed for {seed}: {exc}")
 
         # Also check CT for the org name on certs
-        ct_records = await self._ct.search_by_domain(seed)
+        ct_records: list[dict[str, Any]] = []
+        if ct_cache is not None and seed in ct_cache:
+            ct_records = ct_cache[seed]
+        else:
+            ct_records = await self._ct.search_by_domain(seed)
+            if ct_cache is not None:
+                ct_cache[seed] = ct_records
+
         cert_orgs: set[str] = set()
         # Build reverse lookup: base domain -> original seed domain (excluding current seed)
         co_hosted_seeds: list[str] = []
@@ -465,11 +480,20 @@ class Scout:
     # --- Step 2B: Seed domain expansion ---
 
     async def _strategy_seed_expansion(
-        self, seed_domain: str, company_name: str, errors: list[str]
+        self,
+        seed_domain: str,
+        company_name: str,
+        errors: list[str],
+        ct_cache: dict[str, list[dict[str, Any]]] | None = None,
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
         try:
-            records = await self._ct.search_by_domain(seed_domain)
+            if ct_cache is not None and seed_domain in ct_cache:
+                records = ct_cache[seed_domain]
+            else:
+                records = await self._ct.search_by_domain(seed_domain)
+                if ct_cache is not None:
+                    ct_cache[seed_domain] = records
         except Exception as exc:
             errors.append(f"CT seed expansion failed: {exc}")
             return results
