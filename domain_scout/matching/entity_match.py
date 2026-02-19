@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 import unicodedata
+from functools import lru_cache
 
 from rapidfuzz import fuzz
 
@@ -86,6 +87,7 @@ def _extract_dba_name(name: str) -> str | None:
     return None
 
 
+@lru_cache
 def normalize_org_name(name: str) -> str:
     """Normalize a company/org name for comparison.
 
