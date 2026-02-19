@@ -8,7 +8,7 @@ import json
 import threading
 import time
 from pathlib import Path
-from typing import TYPE_CHECKING, Protocol, runtime_checkable
+from typing import TYPE_CHECKING, Any, Awaitable, Callable, Protocol, TypeVar, cast, runtime_checkable
 
 import structlog
 
@@ -217,6 +217,42 @@ class RDAPSource(Protocol):
     async def get_registrant_info(self, domain: str) -> dict[str, str | None]: ...
 
 
+T = TypeVar("T")
+R = TypeVar("R")
+
+
+async def _perform_cached_lookup(
+    cache_key: str,
+    cache_getter: Callable[[str], T | None],
+    cache_setter: Callable[[str, T], None],
+    log_hit_msg: str,
+    fetch_func: Callable[[], Awaitable[R]],
+    transform_read: Callable[[T], R] | None = None,
+    transform_write: Callable[[R], T] | None = None,
+) -> R:
+    """Helper to perform cached lookup with optional data transformation."""
+    loop = asyncio.get_running_loop()
+    cached = await loop.run_in_executor(None, cache_getter, cache_key)
+    if cached is not None:
+        log.debug(log_hit_msg, query=cache_key)
+        if transform_read:
+            return transform_read(cached)
+        return cast(R, cached)
+
+    result = await fetch_func()
+
+    to_cache = result
+    if transform_write:
+        to_cache = transform_write(result)
+
+    try:
+        await loop.run_in_executor(None, cache_setter, cache_key, cast(T, to_cache))
+    except Exception as exc:
+        log.warning("cache.write_failed", query=cache_key, error=str(exc))
+
+    return result
+
+
 class CachedCTLogSource:
     """Transparent caching wrapper around CTLogSource."""
 
@@ -225,33 +261,26 @@ class CachedCTLogSource:
         self._cache = cache
 
     async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
-        loop = asyncio.get_running_loop()
-        cached = await loop.run_in_executor(None, self._cache.get_ct, f"domain:{domain}")
-        if cached is not None:
-            log.debug("cache.ct_hit", query=f"domain:{domain}")
-            return cached
-        result = await self._inner.search_by_domain(domain)
-        try:
-            await loop.run_in_executor(None, self._cache.put_ct, f"domain:{domain}", result)
-        except Exception as exc:
-            log.warning("cache.write_failed", query=f"domain:{domain}", error=str(exc))
-        return result
+        return await _perform_cached_lookup(
+            cache_key=f"domain:{domain}",
+            cache_getter=self._cache.get_ct,
+            cache_setter=self._cache.put_ct,
+            log_hit_msg="cache.ct_hit",
+            fetch_func=lambda: self._inner.search_by_domain(domain),
+        )
 
     async def search_by_org(
         self, org_name: str, *, verify_org: bool = True
     ) -> list[dict[str, object]]:
-        key = f"org:{org_name}:verify={verify_org}"
-        loop = asyncio.get_running_loop()
-        cached = await loop.run_in_executor(None, self._cache.get_ct, key)
-        if cached is not None:
-            log.debug("cache.ct_hit", query=key)
-            return cached
-        result = await self._inner.search_by_org(org_name, verify_org=verify_org)
-        try:
-            await loop.run_in_executor(None, self._cache.put_ct, key, result)
-        except Exception as exc:
-            log.warning("cache.write_failed", query=key, error=str(exc))
-        return result
+        return await _perform_cached_lookup(
+            cache_key=f"org:{org_name}:verify={verify_org}",
+            cache_getter=self._cache.get_ct,
+            cache_setter=self._cache.put_ct,
+            log_hit_msg="cache.ct_hit",
+            fetch_func=lambda: self._inner.search_by_org(
+                org_name, verify_org=verify_org
+            ),
+        )
 
     async def get_cert_org(self, cert_id: int) -> str | None:
         return await self._inner.get_cert_org(cert_id)
@@ -265,27 +294,21 @@ class CachedRDAPLookup:
         self._cache = cache
 
     async def get_registrant_org(self, domain: str) -> str | None:
-        loop = asyncio.get_running_loop()
-        cached = await loop.run_in_executor(None, self._cache.get_rdap, f"org:{domain}")
-        if cached is not None:
-            log.debug("cache.rdap_hit", query=f"org:{domain}")
-            return cached.get("org")
-        result = await self._inner.get_registrant_org(domain)
-        try:
-            await loop.run_in_executor(None, self._cache.put_rdap, f"org:{domain}", {"org": result})
-        except Exception as exc:
-            log.warning("cache.write_failed", query=f"org:{domain}", error=str(exc))
-        return result
+        return await _perform_cached_lookup(
+            cache_key=f"org:{domain}",
+            cache_getter=self._cache.get_rdap,
+            cache_setter=self._cache.put_rdap,
+            log_hit_msg="cache.rdap_hit",
+            fetch_func=lambda: self._inner.get_registrant_org(domain),
+            transform_read=lambda x: x.get("org"),
+            transform_write=lambda x: {"org": x},
+        )
 
     async def get_registrant_info(self, domain: str) -> dict[str, str | None]:
-        loop = asyncio.get_running_loop()
-        cached = await loop.run_in_executor(None, self._cache.get_rdap, f"info:{domain}")
-        if cached is not None:
-            log.debug("cache.rdap_hit", query=f"info:{domain}")
-            return cached
-        result = await self._inner.get_registrant_info(domain)
-        try:
-            await loop.run_in_executor(None, self._cache.put_rdap, f"info:{domain}", result)
-        except Exception as exc:
-            log.warning("cache.write_failed", query=f"info:{domain}", error=str(exc))
-        return result
+        return await _perform_cached_lookup(
+            cache_key=f"info:{domain}",
+            cache_getter=self._cache.get_rdap,
+            cache_setter=self._cache.put_rdap,
+            log_hit_msg="cache.rdap_hit",
+            fetch_func=lambda: self._inner.get_registrant_info(domain),
+        )
