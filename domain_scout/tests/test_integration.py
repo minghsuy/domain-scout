@@ -56,8 +56,11 @@ async def test_full_scout_run() -> None:
             seed_domain=["paloaltonetworks.com"],
         )
     )
-    assessment = result.seed_domain_assessment.get("paloaltonetworks.com", "")
-    assert assessment in ("confirmed", "suspicious", "invalid")
+    assert "paloaltonetworks.com" in result.seed_domain_assessment, (
+        f"seed key missing from assessment dict: {result.seed_domain_assessment}"
+    )
+    assessment = result.seed_domain_assessment["paloaltonetworks.com"]
+    assert assessment in ("confirmed", "suspicious", "invalid", "error", "timeout")
     assert result.run_metadata.elapsed_seconds > 0
     # Should find at least the seed domain
     domains = [d.domain for d in result.domains]

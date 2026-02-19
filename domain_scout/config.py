@@ -78,6 +78,10 @@ class ScoutConfig:
     geodns_concurrency: int = 3
     geodns_delay: float = 0.5  # seconds between requests per concurrent slot
 
+    # --- Circuit breaker (crt.sh Postgres) ---
+    cb_failure_threshold: int = 3
+    cb_recovery_timeout: float = 30.0
+
     # --- Output filtering ---
     include_non_resolving: bool = False
 
