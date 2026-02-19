@@ -37,7 +37,7 @@ domain_scout/
 ├── cache.py            # DuckDB TTL cache for CT/RDAP queries
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── sources/
-│   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback)
+│   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback) + circuit breaker
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
 │   └── dns_utils.py    # DNS resolution checker
 ├── matching/
@@ -69,6 +69,7 @@ domain_scout/
 - Input length capped at 500 chars to prevent O(n*m) DoS from adversarial cert org fields
 - Corroboration-level scoring: Level 3 (+0.10) resolves+RDAP+multi-source, Level 2 (+0.05) resolves+(RDAP or high sim or multi-source), Level 1 (±0.00) resolves only, Level 0 (−0.05) no resolution
 - RDAP corroboration phase runs on top N resolving candidates, adds `rdap_registrant_match` source
+- Circuit breaker for crt.sh Postgres: shared `_CircuitBreaker` class variable on `CTLogSource`, skips Postgres after `cb_failure_threshold` consecutive failures, probes after `cb_recovery_timeout` seconds
 
 ## Conventions
 
@@ -80,6 +81,6 @@ domain_scout/
 
 ## Testing
 
-- **283 unit tests** + 3 integration tests (deselected by default)
+- **293 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
