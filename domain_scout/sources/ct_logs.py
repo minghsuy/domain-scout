@@ -13,6 +13,13 @@ import psycopg2
 import psycopg2.extras
 import structlog
 
+from domain_scout._metrics import (
+    CT_FALLBACKS_TOTAL,
+    CT_QUERIES_TOTAL,
+    inc,
+    set_cb_state,
+)
+
 if TYPE_CHECKING:
     from domain_scout.config import ScoutConfig
 
@@ -125,6 +132,7 @@ class _CircuitBreaker:
         if self._state == "open":
             if time.monotonic() - self._opened_at >= self._recovery_timeout:
                 self._state = "half_open"
+                set_cb_state(self._state)
                 log.info("ct.circuit_half_open")
                 return True
             return False
@@ -136,6 +144,7 @@ class _CircuitBreaker:
             log.info("ct.circuit_closed")
         self._state = "closed"
         self._failure_count = 0
+        set_cb_state(self._state)
 
     def record_failure(self) -> None:
         self._failure_count += 1
@@ -151,6 +160,7 @@ class _CircuitBreaker:
             return
         self._state = "open"
         self._opened_at = time.monotonic()
+        set_cb_state(self._state)
 
     def reset(self) -> None:
         """Reset to initial closed state (for testing)."""
@@ -262,6 +272,7 @@ class CTLogSource:
                     sans_list.append(san)
 
         log.info("ct.pg_query", term=search_term, certs_found=len(certs))
+        inc(CT_QUERIES_TOTAL, backend="postgres", status="ok")
         return list(certs.values())
 
     async def _pg_get_org(self, cert_id: int) -> str | None:
@@ -314,6 +325,7 @@ class CTLogSource:
                         sans_list.append(name)
 
         log.info("ct.json_query", term=search_term, certs_found=len(certs))
+        inc(CT_QUERIES_TOTAL, backend="json", status="ok")
         return list(certs.values())
 
     # --- Combined with retry/fallback ---
@@ -334,6 +346,7 @@ class CTLogSource:
                 return result
             except Exception as exc:
                 last_err = exc
+                inc(CT_QUERIES_TOTAL, backend="postgres", status="error")
                 log.warning(
                     "ct.pg_retry",
                     attempt=attempt,
@@ -353,11 +366,13 @@ class CTLogSource:
         last_pg_error: Exception | None,
     ) -> list[dict[str, object]]:
         """Fall back to JSON API after Postgres failure or circuit breaker skip."""
+        inc(CT_FALLBACKS_TOTAL)
         if last_pg_error is not None:
             log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
         try:
             return await self._json_query(search_term)
         except Exception as exc:
+            inc(CT_QUERIES_TOTAL, backend="json", status="error")
             log.error(
                 "ct.all_sources_failed",
                 pg_error=str(last_pg_error) if last_pg_error else "circuit_breaker_skip",

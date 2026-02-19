@@ -7,6 +7,8 @@ from typing import TYPE_CHECKING
 import httpx
 import structlog
 
+from domain_scout._metrics import SOURCE_ERRORS_TOTAL, inc
+
 if TYPE_CHECKING:
     from domain_scout.config import ScoutConfig
 
@@ -32,6 +34,7 @@ class RDAPLookup:
             data = await self._query(domain)
             return self._extract_org(data)
         except Exception as exc:
+            inc(SOURCE_ERRORS_TOTAL, source="rdap")
             log.warning("rdap.lookup_failed", domain=domain, error=str(exc))
             return None
 
@@ -40,6 +43,7 @@ class RDAPLookup:
         try:
             data = await self._query(domain)
         except Exception as exc:
+            inc(SOURCE_ERRORS_TOTAL, source="rdap")
             log.warning("rdap.lookup_failed", domain=domain, error=str(exc))
             return {"org": None, "name": None, "country": None}
 

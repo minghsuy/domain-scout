@@ -11,6 +11,15 @@ from typing import TYPE_CHECKING, Any
 import httpx
 import structlog
 
+from domain_scout._metrics import (
+    DOMAINS_FOUND,
+    SCAN_DURATION_SECONDS,
+    SCANS_TOTAL,
+    SOURCE_ERRORS_TOTAL,
+    inc,
+    observe,
+)
+
 if TYPE_CHECKING:
     from domain_scout.cache import CTSource, DuckDBCache, RDAPSource
 
@@ -316,6 +325,13 @@ class Scout:
         domains = self._build_output(domain_evidence, seeds)
 
         elapsed = time.monotonic() - t0
+
+        # Record metrics
+        status = "timeout" if timed_out else ("error" if errors else "ok")
+        inc(SCANS_TOTAL, status=status)
+        observe(SCAN_DURATION_SECONDS, elapsed)
+        observe(DOMAINS_FOUND, float(len(domains)))
+
         run_meta = RunMetadata(
             tool_version=_pkg_version("domain-scout-ct"),
             timestamp=datetime.now(UTC),
@@ -419,6 +435,7 @@ class Scout:
         try:
             records = await self._ct.search_by_org(org_name)
         except Exception as exc:
+            inc(SOURCE_ERRORS_TOTAL, source="ct")
             errors.append(f"CT org search failed: {exc}")
             return results
 
@@ -471,6 +488,7 @@ class Scout:
         try:
             records = await self._ct.search_by_domain(seed_domain)
         except Exception as exc:
+            inc(SOURCE_ERRORS_TOTAL, source="ct")
             errors.append(f"CT seed expansion failed: {exc}")
             return results
 
