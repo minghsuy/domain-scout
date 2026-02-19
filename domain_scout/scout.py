@@ -362,7 +362,6 @@ class Scout:
         try:
             rdap_org = await self._rdap.get_registrant_org(seed)
         except Exception as exc:
-            inc(SOURCE_ERRORS_TOTAL, source="rdap")
             errors.append(f"RDAP lookup failed for {seed}: {exc}")
 
         # Also check CT for the org name on certs

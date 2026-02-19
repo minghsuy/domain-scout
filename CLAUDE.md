@@ -36,6 +36,7 @@ domain_scout/
 ├── api.py              # FastAPI REST API (/scan, /diff, /health, /ready, /cache/*)
 ├── cache.py            # DuckDB TTL cache for CT/RDAP queries
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
+├── _metrics.py         # Prometheus metrics (optional, no-ops without prometheus-client)
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback) + circuit breaker
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
@@ -51,6 +52,7 @@ domain_scout/
     ├── test_delta.py        # delta reporting, CLI diff, API /diff
     ├── test_api.py          # REST API endpoint tests
     ├── test_cache.py        # DuckDB cache tests
+    ├── test_metrics.py      # Prometheus metrics tests
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -81,6 +83,6 @@ domain_scout/
 
 ## Testing
 
-- **293 unit tests** + 3 integration tests (deselected by default)
+- **305 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

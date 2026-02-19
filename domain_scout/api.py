@@ -17,7 +17,7 @@ import structlog
 from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel, Field
 
-from domain_scout._metrics import _ENABLED, CONTENT_TYPE_LATEST, generate_latest
+from domain_scout._metrics import CONTENT_TYPE_LATEST, generate_latest
 from domain_scout.cache import DuckDBCache
 from domain_scout.config import ProfileName, ScoutConfig
 from domain_scout.delta import compute_delta
@@ -175,11 +175,11 @@ def create_app(
         """Compute delta between two scan results."""
         return compute_delta(req.baseline, req.current)
 
-    if _ENABLED:
-
-        @app.get("/metrics", include_in_schema=False)
-        async def metrics() -> Response:
-            return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
+    @app.get("/metrics", include_in_schema=False)
+    async def metrics() -> Response:
+        body = generate_latest()
+        media = CONTENT_TYPE_LATEST or "text/plain; charset=utf-8"
+        return Response(content=body, media_type=media)
 
     return app
 

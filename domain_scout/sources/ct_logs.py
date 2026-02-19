@@ -372,6 +372,7 @@ class CTLogSource:
         try:
             return await self._json_query(search_term)
         except Exception as exc:
+            inc(CT_QUERIES_TOTAL, backend="json", status="error")
             log.error(
                 "ct.all_sources_failed",
                 pg_error=str(last_pg_error) if last_pg_error else "circuit_breaker_skip",

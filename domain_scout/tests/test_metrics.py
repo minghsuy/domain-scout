@@ -9,6 +9,7 @@ from domain_scout._metrics import (
     _ENABLED,
     CT_CIRCUIT_BREAKER_STATE,
     CT_FALLBACKS_TOTAL,
+    CT_QUERIES_TOTAL,
     DOMAINS_FOUND,
     SCAN_DURATION_SECONDS,
     SCANS_TOTAL,
@@ -44,6 +45,7 @@ class TestMetricsEnabled:
         assert SCANS_TOTAL is not None
         assert SCAN_DURATION_SECONDS is not None
         assert DOMAINS_FOUND is not None
+        assert CT_QUERIES_TOTAL is not None
         assert CT_FALLBACKS_TOTAL is not None
         assert CT_CIRCUIT_BREAKER_STATE is not None
         assert SOURCE_ERRORS_TOTAL is not None
