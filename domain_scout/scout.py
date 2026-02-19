@@ -166,7 +166,9 @@ class Scout:
                     if not stask.done():
                         stask.cancel()
                         seed_assessments.setdefault(sd, "timeout")
-                    elif not stask.cancelled():
+                    elif stask.cancelled():
+                        seed_assessments.setdefault(sd, "timeout")
+                    else:
                         exc = stask.exception()
                         if exc:
                             seed_assessments.setdefault(sd, "error")
