@@ -63,7 +63,7 @@ def _extract_org_from_subject(subject: str) -> str | None:
     return None
 
 
-def _extract_base_domain(name: str) -> str | None:
+def extract_base_domain(name: str) -> str | None:
     """Extract the registrable base domain from a DNS name.
 
     Handles wildcards and subdomains by keeping the last two labels
@@ -83,7 +83,7 @@ def _extract_base_domain(name: str) -> str | None:
     return ".".join(parts[-2:])
 
 
-def _is_valid_domain(name: str) -> bool:
+def is_valid_domain(name: str) -> bool:
     """Reject obviously invalid entries."""
     name = name.strip().lower()
     if not name or name == "*":
@@ -256,7 +256,7 @@ class CTLogSource:
                     "not_after": na,
                     "san_dns_names": [],
                 }
-            if san and _is_valid_domain(san):
+            if san and is_valid_domain(san):
                 sans_list = certs[cert_id]["san_dns_names"]
                 if isinstance(sans_list, list) and san not in sans_list:
                     sans_list.append(san)
@@ -308,7 +308,7 @@ class CTLogSource:
             name_value = entry.get("name_value", "")
             for name in name_value.split("\n"):
                 name = name.strip()
-                if name and _is_valid_domain(name):
+                if name and is_valid_domain(name):
                     sans_list = certs[cert_id]["san_dns_names"]
                     if isinstance(sans_list, list) and name not in sans_list:
                         sans_list.append(name)
@@ -366,11 +366,3 @@ class CTLogSource:
             return []
 
 
-def extract_base_domain(name: str) -> str | None:
-    """Public wrapper for base domain extraction."""
-    return _extract_base_domain(name)
-
-
-def is_valid_domain(name: str) -> bool:
-    """Public wrapper for domain validation."""
-    return _is_valid_domain(name)
