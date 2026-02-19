@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import dataclasses
 import os
 import time
 from contextlib import asynccontextmanager
@@ -31,7 +32,7 @@ _VERSION = _pkg_version("domain-scout-ct")
 _SEMAPHORE_TIMEOUT = 10.0
 
 # Maximum scan timeout (seconds) — cap user-supplied values
-_MAX_SCAN_TIMEOUT = 300
+_MAX_SCAN_TIMEOUT = 60
 
 # Readiness probe cache — avoid hammering crt.sh on every /ready call
 _READY_CACHE_TTL = 60.0
@@ -43,7 +44,7 @@ class ScanRequest(BaseModel):
     entity: EntityInput
     profile: ProfileName | None = Field(default=None, description="broad | balanced | strict")
     timeout: int | None = Field(
-        default=None, ge=5, le=300, description="Override total_timeout (seconds)"
+        default=None, ge=5, le=60, description="Override total_timeout (seconds)"
     )
     deep: bool = Field(default=False, description="Enable GeoDNS deep mode")
 
@@ -116,7 +117,7 @@ def create_app(
         """Run a domain discovery scan."""
         overrides: dict[str, Any] = {}
         if req.timeout is not None:
-            # Pydantic le=300 already caps, min() is defense-in-depth
+            # Pydantic le=60 already caps, min() is defense-in-depth
             overrides["total_timeout"] = min(req.timeout, _MAX_SCAN_TIMEOUT)
         if req.deep:
             overrides["deep_mode"] = True
@@ -126,6 +127,10 @@ def create_app(
                 config = ScoutConfig.from_profile(req.profile, **overrides)
             else:
                 config = ScoutConfig(**overrides)
+
+            # Enforce hard cap on timeout, even if profile/default is higher
+            if config.total_timeout > _MAX_SCAN_TIMEOUT:
+                config = dataclasses.replace(config, total_timeout=_MAX_SCAN_TIMEOUT)
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
 
