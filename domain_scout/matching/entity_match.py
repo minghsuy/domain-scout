@@ -16,7 +16,7 @@ def _strip_accents(text: str) -> str:
 
 # DBA / subsidiary clauses to strip before suffix removal
 _DBA_PATTERN = re.compile(
-    r"(?i)(?:,?\s+d/?b/?a\s+|,?\s+doing\s+business\s+as\s+|,?\s+trading\s+as\s+|,?\s+t/?a\s+)"
+    r"(?i)(?:,?\s+d/?b/?a\s+|,?\s+doing\s+business\s+as\s+|,?\s+trading\s+as\s+|,?\s+t/a\s+)"
 )
 _SUBSIDIARY_PATTERN = re.compile(r"(?i),?\s+a\s+(?:subsidiary|division|unit|branch)\s+of\s+.*$")
 
