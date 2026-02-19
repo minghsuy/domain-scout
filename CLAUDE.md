@@ -30,9 +30,11 @@ make check         # format + lint + test
 domain_scout/
 ├── cli.py              # Typer CLI (entry point: domain_scout.cli:app)
 ├── scout.py            # Main orchestrator (Scout class)
-├── models.py           # Pydantic models: EntityInput, DiscoveredDomain, EvidenceRecord, RunMetadata, ScoutResult, delta models, CertRecord
+├── models.py           # Pydantic models (EntityInput, DiscoveredDomain, ScoutResult, delta models, etc.)
 ├── delta.py            # Delta reporting: compute_delta between two ScoutResult runs
 ├── config.py           # ScoutConfig dataclass (all tunables + discovery profiles)
+├── api.py              # FastAPI REST API (/scan, /diff, /health, /ready, /cache/*)
+├── cache.py            # DuckDB TTL cache for CT/RDAP queries
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback)
@@ -47,6 +49,8 @@ domain_scout/
     ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
     ├── test_acceptance.py   # Walmart fixture tests with source-level mocks
     ├── test_delta.py        # delta reporting, CLI diff, API /diff
+    ├── test_api.py          # REST API endpoint tests
+    ├── test_cache.py        # DuckDB cache tests
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
