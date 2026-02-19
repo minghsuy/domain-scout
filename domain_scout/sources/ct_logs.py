@@ -102,7 +102,9 @@ class _CircuitBreaker:
     """Simple circuit breaker for crt.sh Postgres connections.
 
     States: closed (normal) → open (skip Postgres) → half_open (probe).
-    Shared across CTLogSource instances via class variable.
+    Shared across CTLogSource instances via class variable.  The breaker
+    is initialized once from the first CTLogSource instance's config;
+    subsequent instances reuse the same breaker (and its thresholds).
     """
 
     def __init__(self, failure_threshold: int, recovery_timeout: float) -> None:
@@ -126,7 +128,7 @@ class _CircuitBreaker:
                 log.info("ct.circuit_half_open")
                 return True
             return False
-        # half_open: allow exactly one probe
+        # half_open: allow one probe
         return True
 
     def record_success(self) -> None:
@@ -138,17 +140,17 @@ class _CircuitBreaker:
     def record_failure(self) -> None:
         self._failure_count += 1
         if self._state == "half_open":
-            self._state = "open"
-            self._opened_at = time.monotonic()
             log.warning("ct.circuit_open", reason="half_open probe failed")
         elif self._failure_count >= self._failure_threshold:
-            self._state = "open"
-            self._opened_at = time.monotonic()
             log.warning(
                 "ct.circuit_open",
                 failure_count=self._failure_count,
                 threshold=self._failure_threshold,
             )
+        else:
+            return
+        self._state = "open"
+        self._opened_at = time.monotonic()
 
     def reset(self) -> None:
         """Reset to initial closed state (for testing)."""
@@ -171,6 +173,12 @@ class CTLogSource:
                 config.cb_failure_threshold,
                 config.cb_recovery_timeout,
             )
+
+    @property
+    def _active_breaker(self) -> _CircuitBreaker:
+        if self._breaker is None:
+            raise RuntimeError("CTLogSource used before breaker initialization")
+        return self._breaker
 
     # --- Public API ---
 
@@ -312,8 +320,7 @@ class CTLogSource:
 
     async def _pg_query_with_fallback(self, search_term: str) -> list[dict[str, object]]:
         """Try Postgres with retries, fall back to JSON API."""
-        assert self._breaker is not None  # noqa: S101
-        breaker = self._breaker
+        breaker = self._active_breaker
 
         if not breaker.should_allow():
             log.warning("ct.circuit_breaker_skip_pg", state=breaker.state)
@@ -346,13 +353,14 @@ class CTLogSource:
         last_pg_error: Exception | None,
     ) -> list[dict[str, object]]:
         """Fall back to JSON API after Postgres failure or circuit breaker skip."""
-        log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
+        if last_pg_error is not None:
+            log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
         try:
             return await self._json_query(search_term)
         except Exception as exc:
             log.error(
                 "ct.all_sources_failed",
-                pg_error=str(last_pg_error),
+                pg_error=str(last_pg_error) if last_pg_error else "circuit_breaker_skip",
                 json_error=str(exc),
             )
             return []

@@ -22,6 +22,20 @@ from domain_scout.sources.ct_logs import (
 )
 
 
+def _make_httpx_mock(json_payload: list[dict[str, object]]) -> AsyncMock:
+    """Build a mock httpx.AsyncClient returning the given JSON response."""
+    mock_response = MagicMock()
+    mock_response.status_code = 200
+    mock_response.raise_for_status = MagicMock()
+    mock_response.json.return_value = json_payload
+
+    mock_client = AsyncMock()
+    mock_client.get.return_value = mock_response
+    mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+    mock_client.__aexit__ = AsyncMock(return_value=False)
+    return mock_client
+
+
 class TestExtractBaseDomain:
     def test_simple(self) -> None:
         assert extract_base_domain("www.example.com") == "example.com"
@@ -83,34 +97,31 @@ class TestIsValidDomain:
 class TestJsonQueryFields:
     """Verify JSON fallback sets correct field values."""
 
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        """Reset the shared breaker to avoid test-ordering issues."""
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = None
+
     @pytest.mark.asyncio
     async def test_json_org_name_is_none(self) -> None:
         """JSON API doesn't provide subject organization — org_name must be None."""
-        from unittest.mock import MagicMock
-
-        from domain_scout.config import ScoutConfig
-
         config = ScoutConfig()
         ct = CTLogSource(config)
 
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.raise_for_status = MagicMock()
-        mock_response.json.return_value = [
-            {
-                "id": 12345,
-                "common_name": "example.com",
-                "name_value": "example.com\nwww.example.com",
-                "issuer_name": "DigiCert Inc",
-                "not_before": "2024-01-01T00:00:00",
-                "not_after": "2025-01-01T00:00:00",
-            }
-        ]
-
-        mock_client = AsyncMock()
-        mock_client.get.return_value = mock_response
-        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
-        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_client = _make_httpx_mock(
+            [
+                {
+                    "id": 12345,
+                    "common_name": "example.com",
+                    "name_value": "example.com\nwww.example.com",
+                    "issuer_name": "DigiCert Inc",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
 
         with patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_client):
             results = await ct._json_query("example.com")
@@ -122,31 +133,21 @@ class TestJsonQueryFields:
     @pytest.mark.asyncio
     async def test_json_sans_parsed_from_name_value(self) -> None:
         """SANs should be parsed from name_value (newline-separated)."""
-        from unittest.mock import MagicMock
-
-        from domain_scout.config import ScoutConfig
-
         config = ScoutConfig()
         ct = CTLogSource(config)
 
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.raise_for_status = MagicMock()
-        mock_response.json.return_value = [
-            {
-                "id": 99999,
-                "common_name": "test.example.com",
-                "name_value": "test.example.com\nwww.example.com\napi.example.com",
-                "issuer_name": "Let's Encrypt",
-                "not_before": "2024-06-01T00:00:00",
-                "not_after": "2024-09-01T00:00:00",
-            }
-        ]
-
-        mock_client = AsyncMock()
-        mock_client.get.return_value = mock_response
-        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
-        mock_client.__aexit__ = AsyncMock(return_value=False)
+        mock_client = _make_httpx_mock(
+            [
+                {
+                    "id": 99999,
+                    "common_name": "test.example.com",
+                    "name_value": "test.example.com\nwww.example.com\napi.example.com",
+                    "issuer_name": "Let's Encrypt",
+                    "not_before": "2024-06-01T00:00:00",
+                    "not_after": "2024-09-01T00:00:00",
+                }
+            ]
+        )
 
         with patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_client):
             results = await ct._json_query("example.com")
@@ -237,7 +238,7 @@ class TestCircuitBreaker:
         assert cb.should_allow() is True
 
 
-class TestCircuitBreakerIntegration:
+class TestCircuitBreakerWiring:
     """Test circuit breaker wired into CTLogSource._pg_query_with_fallback."""
 
     @pytest.fixture(autouse=True)
@@ -246,26 +247,6 @@ class TestCircuitBreakerIntegration:
         CTLogSource._breaker = None
         yield
         CTLogSource._breaker = None
-
-    def _make_json_mock(self) -> AsyncMock:
-        """Create a mock httpx client returning a single cert."""
-        mock_response = MagicMock()
-        mock_response.status_code = 200
-        mock_response.raise_for_status = MagicMock()
-        mock_response.json.return_value = [
-            {
-                "id": 1,
-                "common_name": "example.com",
-                "name_value": "example.com",
-                "not_before": "2024-01-01T00:00:00",
-                "not_after": "2025-01-01T00:00:00",
-            }
-        ]
-        mock_client = AsyncMock()
-        mock_client.get.return_value = mock_response
-        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
-        mock_client.__aexit__ = AsyncMock(return_value=False)
-        return mock_client
 
     @pytest.mark.asyncio
     async def test_breaker_trips_after_threshold_skips_pg(self) -> None:
@@ -276,7 +257,17 @@ class TestCircuitBreakerIntegration:
             burst_delay=0.0,
         )
         ct = CTLogSource(config)
-        mock_json = self._make_json_mock()
+        mock_json = _make_httpx_mock(
+            [
+                {
+                    "id": 1,
+                    "common_name": "example.com",
+                    "name_value": "example.com",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
 
         pg_call_count = 0
 
@@ -310,7 +301,17 @@ class TestCircuitBreakerIntegration:
             burst_delay=0.0,
         )
         ct = CTLogSource(config)
-        mock_json = self._make_json_mock()
+        mock_json = _make_httpx_mock(
+            [
+                {
+                    "id": 1,
+                    "common_name": "example.com",
+                    "name_value": "example.com",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
 
         call_count = 0
 
@@ -351,33 +352,45 @@ class TestCircuitBreakerIntegration:
         )
         ct1 = CTLogSource(config)
         ct2 = CTLogSource(config)
-        mock_json = self._make_json_mock()
+        mock_json = _make_httpx_mock(
+            [
+                {
+                    "id": 1,
+                    "common_name": "example.com",
+                    "name_value": "example.com",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
 
         async def failing_pg(term: str) -> list[dict[str, object]]:
             raise ConnectionError("pg down")
 
+        # Trip the breaker via ct1
         with (
             patch.object(ct1, "_pg_query", side_effect=failing_pg),
-            patch.object(ct2, "_pg_query", side_effect=failing_pg),
             patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
         ):
-            # Trip via ct1
             await ct1._pg_query_with_fallback("test")
             assert CTLogSource._breaker is not None
             assert CTLogSource._breaker.state == "open"
 
-            # ct2 should also see the open breaker (shared class variable)
-            pg_called = False
+        # ct2 should also see the open breaker (shared class variable)
+        pg_called = False
 
-            async def spy_pg(term: str) -> list[dict[str, object]]:
-                nonlocal pg_called
-                pg_called = True
-                raise ConnectionError("should not be called")
+        async def spy_pg(term: str) -> list[dict[str, object]]:
+            nonlocal pg_called
+            pg_called = True
+            raise ConnectionError("should not be called")
 
-            with patch.object(ct2, "_pg_query", side_effect=spy_pg):
-                await ct2._pg_query_with_fallback("test")
+        with (
+            patch.object(ct2, "_pg_query", side_effect=spy_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            await ct2._pg_query_with_fallback("test")
 
-            assert not pg_called  # breaker prevented the call
+        assert not pg_called  # breaker prevented the call
 
 
 class TestPropertyBased:
