@@ -393,6 +393,71 @@ class TestCircuitBreakerWiring:
         assert not pg_called  # breaker prevented the call
 
 
+class TestJsonFallbackCount:
+    """Test json_fallback_count increments on CTLogSource."""
+
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = None
+
+    @pytest.mark.asyncio
+    async def test_count_increments_on_pg_failure(self) -> None:
+        """json_fallback_count increments when PG fails and JSON fallback is used."""
+        config = ScoutConfig(postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        assert ct.json_fallback_count == 0
+
+        mock_json = _make_httpx_mock([{"id": 1, "common_name": "x.com", "name_value": "x.com"}])
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            await ct._pg_query_with_fallback("test")
+            assert ct.json_fallback_count == 1
+            await ct._pg_query_with_fallback("test2")
+            assert ct.json_fallback_count == 2
+
+    @pytest.mark.asyncio
+    async def test_count_increments_on_breaker_skip(self) -> None:
+        """json_fallback_count increments when circuit breaker skips PG."""
+        config = ScoutConfig(cb_failure_threshold=1, postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        mock_json = _make_httpx_mock([{"id": 1, "common_name": "x.com", "name_value": "x.com"}])
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            # Trip the breaker
+            await ct._pg_query_with_fallback("test")
+            assert ct.json_fallback_count == 1
+            # Breaker is open, skips PG
+            await ct._pg_query_with_fallback("test2")
+            assert ct.json_fallback_count == 2
+
+    @pytest.mark.asyncio
+    async def test_no_increment_on_pg_success(self) -> None:
+        """json_fallback_count stays 0 when PG succeeds."""
+        config = ScoutConfig()
+        ct = CTLogSource(config)
+
+        async def ok_pg(term: str) -> list[dict[str, object]]:
+            return [{"cert_id": 1, "common_name": "ok.com", "san_dns_names": []}]
+
+        with patch.object(ct, "_pg_query", side_effect=ok_pg):
+            await ct._pg_query_with_fallback("test")
+            assert ct.json_fallback_count == 0
+
+
 class TestPropertyBased:
     """Property-based tests using hypothesis."""
 

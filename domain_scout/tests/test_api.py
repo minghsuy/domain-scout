@@ -15,6 +15,7 @@ from fastapi.testclient import TestClient
 
 from domain_scout.api import ScanRequest, create_app, get_app
 from domain_scout.models import EntityInput, RunMetadata, ScoutResult
+from domain_scout.sources.ct_logs import CTLogSource
 
 
 @pytest.fixture
@@ -75,6 +76,13 @@ class TestHealth:
 
 
 class TestReady:
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        old = CTLogSource._breaker
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = old
+
     def test_ready_ok(self, client: TestClient) -> None:
         """Ready endpoint returns 'ready' when crt.sh probe succeeds."""
         with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
@@ -84,6 +92,7 @@ class TestReady:
         assert data["status"] == "ready"
         assert "version" in data
         assert data["details"]["crt_sh"] == "ok"
+        assert data["details"]["crt_sh_postgres_circuit_breaker"] == "unknown"
 
     def test_ready_degraded(self, client: TestClient) -> None:
         """Ready endpoint returns 'degraded' when crt.sh probe fails."""
@@ -94,6 +103,33 @@ class TestReady:
         data = resp.json()
         assert data["status"] == "degraded"
         assert data["details"]["crt_sh"] == "unreachable"
+
+    def test_ready_breaker_open_degraded(self, client: TestClient) -> None:
+        """Ready endpoint returns 'degraded' when circuit breaker is open."""
+        from domain_scout.sources.ct_logs import _CircuitBreaker
+
+        breaker = _CircuitBreaker(failure_threshold=1, recovery_timeout=60.0)
+        breaker.record_failure()
+        assert breaker.state == "open"
+        CTLogSource._breaker = breaker
+
+        with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
+            resp = client.get("/ready")
+        data = resp.json()
+        assert data["status"] == "degraded"
+        assert data["details"]["crt_sh_postgres_circuit_breaker"] == "open"
+
+    def test_ready_breaker_closed(self, client: TestClient) -> None:
+        """Ready endpoint shows closed breaker state."""
+        from domain_scout.sources.ct_logs import _CircuitBreaker
+
+        CTLogSource._breaker = _CircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+
+        with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
+            resp = client.get("/ready")
+        data = resp.json()
+        assert data["status"] == "ready"
+        assert data["details"]["crt_sh_postgres_circuit_breaker"] == "closed"
 
 
 class TestScan:

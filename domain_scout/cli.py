@@ -333,7 +333,10 @@ def _print_table(result: ScoutResult) -> None:
     )
 
     if result.run_metadata.errors:
-        typer.echo(f"  Warnings: {len(result.run_metadata.errors)}", err=True)
+        typer.echo(f"  Errors: {len(result.run_metadata.errors)}", err=True)
+    if result.run_metadata.warnings:
+        for w in result.run_metadata.warnings:
+            typer.echo(f"  Warning: {w}", err=True)
 
 
 if __name__ == "__main__":

@@ -55,6 +55,7 @@ class RunMetadata(BaseModel):
     timed_out: bool = False
     seed_count: int = 0
     errors: list[str] = Field(default_factory=list)
+    warnings: list[str] = Field(default_factory=list)
     config: dict[str, object] = Field(default_factory=dict)
 
 

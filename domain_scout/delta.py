@@ -149,4 +149,23 @@ def _check_warnings(baseline: ScoutResult, current: ScoutResult) -> list[DeltaWa
             )
         )
 
+    b_fb = _has_ct_fallback(baseline)
+    c_fb = _has_ct_fallback(current)
+    if b_fb != c_fb:
+        warnings.append(
+            DeltaWarning(
+                code="ct_fallback_asymmetry",
+                message=(
+                    "CT Postgres was unavailable in one scan but not the other — "
+                    "domain differences may reflect data-source availability, "
+                    "not real changes"
+                ),
+            )
+        )
+
     return warnings
+
+
+def _has_ct_fallback(result: ScoutResult) -> bool:
+    """Check if a scan used the JSON fallback."""
+    return any("JSON fallback" in w for w in result.run_metadata.warnings)

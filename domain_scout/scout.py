@@ -43,6 +43,7 @@ class Scout:
     ) -> None:
         self.config = config or ScoutConfig()
         ct_inner = CTLogSource(self.config)
+        self._ct_inner = ct_inner
         rdap_inner = RDAPLookup(self.config)
         if cache is not None:
             from domain_scout.cache import CachedCTLogSource, CachedRDAPLookup
@@ -315,6 +316,16 @@ class Scout:
         # Build output
         domains = self._build_output(domain_evidence, seeds)
 
+        # Collect warnings (fallback observability)
+        warnings: list[str] = []
+        fb = self._ct_inner.json_fallback_count
+        if fb > 0:
+            q = "query" if fb == 1 else "queries"
+            warnings.append(
+                f"CT Postgres unavailable, used JSON fallback for {fb} {q}"
+                " (org-name matching degraded)"
+            )
+
         elapsed = time.monotonic() - t0
         run_meta = RunMetadata(
             tool_version=_pkg_version("domain-scout-ct"),
@@ -324,6 +335,7 @@ class Scout:
             timed_out=timed_out,
             seed_count=len(seeds),
             errors=errors,
+            warnings=warnings,
             config=self.config.to_dict(),
         )
         return ScoutResult(

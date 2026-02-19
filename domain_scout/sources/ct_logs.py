@@ -167,6 +167,7 @@ class CTLogSource:
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
         self._semaphore = asyncio.Semaphore(config.max_concurrent_queries)
+        self.json_fallback_count: int = 0
         # Lazily init shared breaker with first instance's config
         if CTLogSource._breaker is None:
             CTLogSource._breaker = _CircuitBreaker(
@@ -353,6 +354,7 @@ class CTLogSource:
         last_pg_error: Exception | None,
     ) -> list[dict[str, object]]:
         """Fall back to JSON API after Postgres failure or circuit breaker skip."""
+        self.json_fallback_count += 1
         if last_pg_error is not None:
             log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
         try:

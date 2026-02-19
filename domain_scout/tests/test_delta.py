@@ -51,6 +51,7 @@ def _make_result(
     timed_out: bool = False,
     config: dict[str, object] | None = None,
     schema_version: str = "1.0",
+    warnings: list[str] | None = None,
 ) -> ScoutResult:
     return ScoutResult(
         entity=EntityInput(
@@ -65,6 +66,7 @@ def _make_result(
             elapsed_seconds=5.0,
             domains_found=len(domains) if domains else 0,
             timed_out=timed_out,
+            warnings=warnings or [],
             config=config or {"total_timeout": 120},
         ),
     )
@@ -289,6 +291,44 @@ class TestDeltaWarnings:
         )
         codes = [w.code for w in result.warnings]
         assert "schema_version_mismatch" in codes
+
+    def test_ct_fallback_asymmetry_baseline_only(self) -> None:
+        fb_warn = [
+            "CT Postgres unavailable, used JSON fallback for 2 queries (org-name matching degraded)"
+        ]
+        result = compute_delta(
+            _make_result(warnings=fb_warn),
+            _make_result(),
+        )
+        codes = [w.code for w in result.warnings]
+        assert "ct_fallback_asymmetry" in codes
+
+    def test_ct_fallback_asymmetry_current_only(self) -> None:
+        fb_warn = [
+            "CT Postgres unavailable, used JSON fallback for 1 query (org-name matching degraded)"
+        ]
+        result = compute_delta(
+            _make_result(),
+            _make_result(warnings=fb_warn),
+        )
+        codes = [w.code for w in result.warnings]
+        assert "ct_fallback_asymmetry" in codes
+
+    def test_ct_fallback_asymmetry_both_no_warning(self) -> None:
+        fb_warn = [
+            "CT Postgres unavailable, used JSON fallback for 1 query (org-name matching degraded)"
+        ]
+        result = compute_delta(
+            _make_result(warnings=fb_warn),
+            _make_result(warnings=fb_warn),
+        )
+        codes = [w.code for w in result.warnings]
+        assert "ct_fallback_asymmetry" not in codes
+
+    def test_ct_fallback_asymmetry_neither_no_warning(self) -> None:
+        result = compute_delta(_make_result(), _make_result())
+        codes = [w.code for w in result.warnings]
+        assert "ct_fallback_asymmetry" not in codes
 
 
 # --- TestDeltaSerialization ---

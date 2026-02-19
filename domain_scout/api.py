@@ -22,6 +22,7 @@ from domain_scout.config import ProfileName, ScoutConfig
 from domain_scout.delta import compute_delta
 from domain_scout.models import DeltaReport, EntityInput, ScoutResult
 from domain_scout.scout import Scout
+from domain_scout.sources.ct_logs import CTLogSource
 
 log = structlog.get_logger()
 
@@ -101,11 +102,19 @@ def create_app(
             log.warning("ready.crt_sh_error", error=str(exc))
             crt_sh = "unreachable"
 
+        breaker = CTLogSource._breaker
+        cb_state = breaker.state if breaker is not None else "unknown"
+
         status = "ready" if crt_sh == "ok" else "degraded"
+        if cb_state == "open":
+            status = "degraded"
         result: dict[str, Any] = {
             "status": status,
             "version": _VERSION,
-            "details": {"crt_sh": crt_sh},
+            "details": {
+                "crt_sh": crt_sh,
+                "crt_sh_postgres_circuit_breaker": cb_state,
+            },
         }
         app.state.ready_cache = result
         app.state.ready_cache_ts = now
