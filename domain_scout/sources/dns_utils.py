@@ -26,6 +26,7 @@ class DNSChecker:
         self._resolver = dns.asyncresolver.Resolver()
         self._resolver.nameservers = config.dns_nameservers
         self._resolver.lifetime = config.dns_timeout
+        self._ns_cache: dict[str, list[str]] = {}
 
     async def resolves(self, domain: str) -> bool:
         """Check whether a domain resolves to any A or AAAA record."""
@@ -51,11 +52,17 @@ class DNSChecker:
 
     async def get_nameservers(self, domain: str) -> list[str]:
         """Return NS records for a domain."""
+        if domain in self._ns_cache:
+            return self._ns_cache[domain]
+
         try:
             answer = await self._resolver.resolve(domain, dns.rdatatype.NS)
-            return sorted(rr.to_text().rstrip(".").lower() for rr in answer)
+            result = sorted(rr.to_text().rstrip(".").lower() for rr in answer)
         except (dns.exception.DNSException, ValueError):
-            return []
+            result = []
+
+        self._ns_cache[domain] = result
+        return result
 
     async def shares_infrastructure(self, domain_a: str, domain_b: str) -> bool:
         """Check if two domains share nameservers or IP ranges."""
