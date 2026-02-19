@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import re
+import time
 from datetime import datetime
 from typing import TYPE_CHECKING
 
@@ -97,12 +98,79 @@ def _is_valid_domain(name: str) -> bool:
     return "." in clean
 
 
+class _CircuitBreaker:
+    """Simple circuit breaker for crt.sh Postgres connections.
+
+    States: closed (normal) → open (skip Postgres) → half_open (probe).
+    Shared across CTLogSource instances via class variable.
+    """
+
+    def __init__(self, failure_threshold: int, recovery_timeout: float) -> None:
+        self._failure_threshold = failure_threshold
+        self._recovery_timeout = recovery_timeout
+        self._state: str = "closed"
+        self._failure_count: int = 0
+        self._opened_at: float = 0.0
+
+    @property
+    def state(self) -> str:
+        return self._state
+
+    def should_allow(self) -> bool:
+        """Return True if a Postgres query should be attempted."""
+        if self._state == "closed":
+            return True
+        if self._state == "open":
+            if time.monotonic() - self._opened_at >= self._recovery_timeout:
+                self._state = "half_open"
+                log.info("ct.circuit_half_open")
+                return True
+            return False
+        # half_open: allow exactly one probe
+        return True
+
+    def record_success(self) -> None:
+        if self._state == "half_open":
+            log.info("ct.circuit_closed")
+        self._state = "closed"
+        self._failure_count = 0
+
+    def record_failure(self) -> None:
+        self._failure_count += 1
+        if self._state == "half_open":
+            self._state = "open"
+            self._opened_at = time.monotonic()
+            log.warning("ct.circuit_open", reason="half_open probe failed")
+        elif self._failure_count >= self._failure_threshold:
+            self._state = "open"
+            self._opened_at = time.monotonic()
+            log.warning(
+                "ct.circuit_open",
+                failure_count=self._failure_count,
+                threshold=self._failure_threshold,
+            )
+
+    def reset(self) -> None:
+        """Reset to initial closed state (for testing)."""
+        self._state = "closed"
+        self._failure_count = 0
+        self._opened_at = 0.0
+
+
 class CTLogSource:
     """Query crt.sh for certificate transparency data."""
+
+    _breaker: _CircuitBreaker | None = None
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
         self._semaphore = asyncio.Semaphore(config.max_concurrent_queries)
+        # Lazily init shared breaker with first instance's config
+        if CTLogSource._breaker is None:
+            CTLogSource._breaker = _CircuitBreaker(
+                config.cb_failure_threshold,
+                config.cb_recovery_timeout,
+            )
 
     # --- Public API ---
 
@@ -244,10 +312,19 @@ class CTLogSource:
 
     async def _pg_query_with_fallback(self, search_term: str) -> list[dict[str, object]]:
         """Try Postgres with retries, fall back to JSON API."""
+        assert self._breaker is not None  # noqa: S101
+        breaker = self._breaker
+
+        if not breaker.should_allow():
+            log.warning("ct.circuit_breaker_skip_pg", state=breaker.state)
+            return await self._json_fallback(search_term, last_pg_error=None)
+
         last_err: Exception | None = None
         for attempt in range(1, self._cfg.postgres_max_retries + 1):
             try:
-                return await self._pg_query(search_term)
+                result = await self._pg_query(search_term)
+                breaker.record_success()
+                return result
             except Exception as exc:
                 last_err = exc
                 log.warning(
@@ -259,11 +336,25 @@ class CTLogSource:
                 if attempt < self._cfg.postgres_max_retries:
                     await asyncio.sleep(self._cfg.burst_delay * attempt)
 
-        log.warning("ct.pg_failed_falling_back_to_json", error=str(last_err))
+        breaker.record_failure()
+        return await self._json_fallback(search_term, last_pg_error=last_err)
+
+    async def _json_fallback(
+        self,
+        search_term: str,
+        *,
+        last_pg_error: Exception | None,
+    ) -> list[dict[str, object]]:
+        """Fall back to JSON API after Postgres failure or circuit breaker skip."""
+        log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
         try:
             return await self._json_query(search_term)
         except Exception as exc:
-            log.error("ct.all_sources_failed", pg_error=str(last_err), json_error=str(exc))
+            log.error(
+                "ct.all_sources_failed",
+                pg_error=str(last_pg_error),
+                json_error=str(exc),
+            )
             return []
 
 

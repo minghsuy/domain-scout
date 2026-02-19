@@ -2,13 +2,24 @@
 
 from __future__ import annotations
 
-from unittest.mock import AsyncMock, patch
+import time
+from typing import TYPE_CHECKING
+from unittest.mock import AsyncMock, MagicMock, patch
+
+if TYPE_CHECKING:
+    from collections.abc import Iterator
 
 import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
-from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
+from domain_scout.config import ScoutConfig
+from domain_scout.sources.ct_logs import (
+    CTLogSource,
+    _CircuitBreaker,
+    extract_base_domain,
+    is_valid_domain,
+)
 
 
 class TestExtractBaseDomain:
@@ -146,6 +157,227 @@ class TestJsonQueryFields:
         assert "test.example.com" in sans
         assert "www.example.com" in sans
         assert "api.example.com" in sans
+
+
+class TestCircuitBreaker:
+    """Unit tests for the _CircuitBreaker class."""
+
+    def test_closed_allows(self) -> None:
+        cb = _CircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        assert cb.state == "closed"
+        assert cb.should_allow() is True
+
+    def test_closed_to_open_after_threshold(self) -> None:
+        """N consecutive failures trip the breaker to open."""
+        cb = _CircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        cb.record_failure()
+        cb.record_failure()
+        assert cb.state == "closed"
+        cb.record_failure()
+        assert cb.state == "open"
+        assert cb.should_allow() is False
+
+    def test_open_to_half_open_after_timeout(self) -> None:
+        """After recovery_timeout, breaker transitions to half_open."""
+        cb = _CircuitBreaker(failure_threshold=1, recovery_timeout=10.0)
+        cb.record_failure()
+        assert cb.state == "open"
+
+        with patch.object(time, "monotonic", return_value=time.monotonic() + 11.0):
+            assert cb.should_allow() is True
+            assert cb.state == "half_open"
+
+    def test_half_open_to_closed_on_success(self) -> None:
+        """Successful probe in half_open resets to closed."""
+        cb = _CircuitBreaker(failure_threshold=1, recovery_timeout=0.0)
+        cb.record_failure()
+        assert cb.state == "open"
+
+        # Immediately allow (recovery_timeout=0)
+        assert cb.should_allow() is True
+        assert cb.state == "half_open"
+
+        cb.record_success()
+        assert cb.state == "closed"
+        assert cb.should_allow() is True
+
+    def test_half_open_to_open_on_failure(self) -> None:
+        """Failed probe in half_open sends back to open."""
+        cb = _CircuitBreaker(failure_threshold=1, recovery_timeout=0.0)
+        cb.record_failure()
+        assert cb.state == "open"
+
+        assert cb.should_allow() is True
+        assert cb.state == "half_open"
+
+        cb.record_failure()
+        assert cb.state == "open"
+
+    def test_success_resets_failure_count(self) -> None:
+        """A success resets the counter so it takes full threshold again to trip."""
+        cb = _CircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        cb.record_failure()
+        cb.record_failure()
+        cb.record_success()  # reset
+        assert cb.state == "closed"
+
+        # Need 3 more failures to trip
+        cb.record_failure()
+        cb.record_failure()
+        assert cb.state == "closed"
+        cb.record_failure()
+        assert cb.state == "open"
+
+    def test_reset(self) -> None:
+        cb = _CircuitBreaker(failure_threshold=1, recovery_timeout=30.0)
+        cb.record_failure()
+        assert cb.state == "open"
+        cb.reset()
+        assert cb.state == "closed"
+        assert cb.should_allow() is True
+
+
+class TestCircuitBreakerIntegration:
+    """Test circuit breaker wired into CTLogSource._pg_query_with_fallback."""
+
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        """Reset the shared class-variable breaker before each test."""
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = None
+
+    def _make_json_mock(self) -> AsyncMock:
+        """Create a mock httpx client returning a single cert."""
+        mock_response = MagicMock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status = MagicMock()
+        mock_response.json.return_value = [
+            {
+                "id": 1,
+                "common_name": "example.com",
+                "name_value": "example.com",
+                "not_before": "2024-01-01T00:00:00",
+                "not_after": "2025-01-01T00:00:00",
+            }
+        ]
+        mock_client = AsyncMock()
+        mock_client.get.return_value = mock_response
+        mock_client.__aenter__ = AsyncMock(return_value=mock_client)
+        mock_client.__aexit__ = AsyncMock(return_value=False)
+        return mock_client
+
+    @pytest.mark.asyncio
+    async def test_breaker_trips_after_threshold_skips_pg(self) -> None:
+        """After cb_failure_threshold PG failures, subsequent calls skip PG entirely."""
+        config = ScoutConfig(
+            cb_failure_threshold=2,
+            postgres_max_retries=1,
+            burst_delay=0.0,
+        )
+        ct = CTLogSource(config)
+        mock_json = self._make_json_mock()
+
+        pg_call_count = 0
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            nonlocal pg_call_count
+            pg_call_count += 1
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            # Call 1: PG fails, breaker records 1 failure
+            await ct._pg_query_with_fallback("test")
+            assert pg_call_count == 1
+            # Call 2: PG fails, breaker records 2 failures → trips open
+            await ct._pg_query_with_fallback("test")
+            assert pg_call_count == 2
+
+            # Call 3: breaker is open, should skip PG entirely
+            await ct._pg_query_with_fallback("test")
+            assert pg_call_count == 2  # no new PG attempt
+
+    @pytest.mark.asyncio
+    async def test_breaker_recovery_probe_succeeds(self) -> None:
+        """After recovery timeout, a successful probe resets the breaker."""
+        config = ScoutConfig(
+            cb_failure_threshold=1,
+            cb_recovery_timeout=5.0,
+            postgres_max_retries=1,
+            burst_delay=0.0,
+        )
+        ct = CTLogSource(config)
+        mock_json = self._make_json_mock()
+
+        call_count = 0
+
+        async def pg_query(term: str) -> list[dict[str, object]]:
+            nonlocal call_count
+            call_count += 1
+            if call_count == 1:
+                raise ConnectionError("pg down")
+            return [{"cert_id": 42, "common_name": "ok.com", "san_dns_names": []}]
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=pg_query),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            # Trip the breaker
+            await ct._pg_query_with_fallback("test")
+            assert CTLogSource._breaker is not None
+            assert CTLogSource._breaker.state == "open"
+
+            # Advance past recovery timeout
+            with patch.object(
+                time,
+                "monotonic",
+                return_value=time.monotonic() + 6.0,
+            ):
+                result = await ct._pg_query_with_fallback("test")
+
+            assert CTLogSource._breaker.state == "closed"
+            assert result[0]["cert_id"] == 42
+
+    @pytest.mark.asyncio
+    async def test_shared_breaker_across_instances(self) -> None:
+        """Two CTLogSource instances share the same breaker state."""
+        config = ScoutConfig(
+            cb_failure_threshold=1,
+            postgres_max_retries=1,
+            burst_delay=0.0,
+        )
+        ct1 = CTLogSource(config)
+        ct2 = CTLogSource(config)
+        mock_json = self._make_json_mock()
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct1, "_pg_query", side_effect=failing_pg),
+            patch.object(ct2, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            # Trip via ct1
+            await ct1._pg_query_with_fallback("test")
+            assert CTLogSource._breaker is not None
+            assert CTLogSource._breaker.state == "open"
+
+            # ct2 should also see the open breaker (shared class variable)
+            pg_called = False
+
+            async def spy_pg(term: str) -> list[dict[str, object]]:
+                nonlocal pg_called
+                pg_called = True
+                raise ConnectionError("should not be called")
+
+            with patch.object(ct2, "_pg_query", side_effect=spy_pg):
+                await ct2._pg_query_with_fallback("test")
+
+            assert not pg_called  # breaker prevented the call
 
 
 class TestPropertyBased:
