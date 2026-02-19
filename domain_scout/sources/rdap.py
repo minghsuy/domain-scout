@@ -77,7 +77,7 @@ class RDAPLookup:
         return None
 
     @classmethod
-    def _extract_from_vcard(cls, data: dict[str, object], field: str) -> str | None:
+    def _extract_from_vcard(cls, data: dict[str, object], field: str) -> object | None:
         """Extract a field from jCard (vcardArray) in an RDAP entity."""
         raw_vcard = data.get("vcardArray")
         if not isinstance(raw_vcard, list) or len(raw_vcard) < 2:
@@ -87,8 +87,10 @@ class RDAPLookup:
                 continue
             if entry[0] == field:
                 val = entry[3]
-                if isinstance(val, str) and val.strip():
-                    return val.strip()
+                if isinstance(val, str):
+                    s = val.strip()
+                    return s if s else None
+                return val
         return None
 
     @classmethod
@@ -96,17 +98,17 @@ class RDAPLookup:
         registrant = cls._find_entity(data, "registrant")
         if registrant:
             org = cls._extract_from_vcard(registrant, "org")
-            if org:
+            if isinstance(org, str):
                 return org
             fn = cls._extract_from_vcard(registrant, "fn")
-            if fn:
+            if isinstance(fn, str):
                 return fn
         # Fallback: check top-level entities for org
         for entity in _safe_list(data.get("entities", [])):
             if not isinstance(entity, dict):
                 continue
             org = cls._extract_from_vcard(entity, "org")
-            if org:
+            if isinstance(org, str):
                 return org
         return None
 
@@ -114,7 +116,9 @@ class RDAPLookup:
     def _extract_name(cls, data: dict[str, object]) -> str | None:
         registrant = cls._find_entity(data, "registrant")
         if registrant:
-            return cls._extract_from_vcard(registrant, "fn")
+            fn = cls._extract_from_vcard(registrant, "fn")
+            if isinstance(fn, str):
+                return fn
         return None
 
     @classmethod
