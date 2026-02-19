@@ -199,6 +199,15 @@ class TestScan:
         assert "Too many concurrent scans" in resp.json()["detail"]
 
 
+class TestMetricsEndpoint:
+    def test_metrics_returns_200(self, client: TestClient) -> None:
+        """The /metrics endpoint returns Prometheus text format."""
+        resp = client.get("/metrics")
+        assert resp.status_code == 200
+        assert "text/plain" in resp.headers.get("content-type", "")
+        assert "domain_scout_scans_total" in resp.text
+
+
 class TestGetApp:
     def test_get_app_default(self) -> None:
         """get_app() returns a working FastAPI app with default config."""
