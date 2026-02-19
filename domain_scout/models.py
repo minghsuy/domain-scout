@@ -2,9 +2,10 @@
 
 from __future__ import annotations
 
+import re
 from datetime import datetime  # noqa: TC003 — Pydantic needs runtime import
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 class EntityInput(BaseModel):
@@ -14,6 +15,14 @@ class EntityInput(BaseModel):
     location: str | None = None
     seed_domain: list[str] = Field(default_factory=list)
     industry: str | None = None
+
+    @field_validator("company_name")
+    @classmethod
+    def validate_company_name(cls, v: str) -> str:
+        # Allow alphanumeric, spaces, and common company punctuation (.,&'()/-)
+        if not re.match(r"^[\w .,&'()/-]+$", v):
+            raise ValueError("Company name contains invalid characters")
+        return v
 
 
 class EvidenceRecord(BaseModel):
