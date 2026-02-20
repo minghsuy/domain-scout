@@ -17,6 +17,7 @@ from domain_scout.config import ScoutConfig
 from domain_scout.sources.ct_logs import (
     CTLogSource,
     _CircuitBreaker,
+    _extract_org_from_subject,
     extract_base_domain,
     is_valid_domain,
 )
@@ -34,6 +35,46 @@ def _make_httpx_mock(json_payload: list[dict[str, object]]) -> AsyncMock:
     mock_client.__aenter__ = AsyncMock(return_value=mock_client)
     mock_client.__aexit__ = AsyncMock(return_value=False)
     return mock_client
+
+
+class TestExtractOrgFromSubject:
+    def test_simple(self) -> None:
+        assert _extract_org_from_subject("O=Foo") == "Foo"
+
+    def test_with_other_attributes(self) -> None:
+        assert (
+            _extract_org_from_subject("C=US, O=Example Inc, CN=example.com") == "Example Inc"
+        )
+
+    def test_quoted_comma(self) -> None:
+        assert (
+            _extract_org_from_subject('C=US, O="Example, Inc.", CN=example.com')
+            == "Example, Inc."
+        )
+
+    def test_escaped_quotes(self) -> None:
+        assert (
+            _extract_org_from_subject(r'O="Org with \"quotes\""') == 'Org with "quotes"'
+        )
+
+    def test_escaped_comma_unquoted(self) -> None:
+        assert _extract_org_from_subject(r"O=ACME\, Inc., C=US") == "ACME, Inc."
+
+    def test_spaces_around_equals(self) -> None:
+        assert _extract_org_from_subject("O = Spaced Org, C=US") == "Spaced Org"
+
+    def test_multiple_attributes(self) -> None:
+        assert _extract_org_from_subject("CN=example.com, O=MyOrg") == "MyOrg"
+
+    def test_edge_case_o_in_value(self) -> None:
+        # "O=" appears inside the common name, should not confuse the parser
+        assert _extract_org_from_subject('CN="O=Fake", O=RealOrg') == "RealOrg"
+
+    def test_not_found(self) -> None:
+        assert _extract_org_from_subject("CN=example.com") is None
+
+    def test_empty(self) -> None:
+        assert _extract_org_from_subject("") is None
 
 
 class TestExtractBaseDomain:
