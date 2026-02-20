@@ -13,6 +13,7 @@ from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout
 
 if TYPE_CHECKING:
+    from domain_scout.cache import DuckDBCache
     from domain_scout.models import DeltaReport, ScoutResult
 
 app = typer.Typer(
@@ -68,9 +69,7 @@ def scout(
 
     cache = None
     if use_cache:
-        from domain_scout.cache import DuckDBCache
-
-        cache = DuckDBCache(cache_dir=cache_dir)
+        cache = _get_cache_or_exit(cache_dir)
 
     try:
         s = Scout(config=config, cache=cache)
@@ -159,6 +158,20 @@ def diff(
         _print_delta_table(report)
 
 
+def _get_cache_or_exit(cache_dir: str | Path | None = None) -> DuckDBCache:
+    """Import and instantiate DuckDBCache, or exit with a friendly error."""
+    try:
+        from domain_scout.cache import DuckDBCache
+
+        return DuckDBCache(cache_dir=cache_dir)
+    except ImportError:
+        typer.echo(
+            "Error: duckdb is not installed. Install with: pip install domain-scout-ct[cache]",
+            err=True,
+        )
+        raise typer.Exit(1) from None
+
+
 def _load_result(path: Path, label: str) -> ScoutResult:
     """Load and validate a ScoutResult JSON file, or exit with an error."""
     from domain_scout.models import ScoutResult
@@ -230,16 +243,7 @@ def cache_stats(
 ) -> None:
     """Show cache statistics."""
     try:
-        from domain_scout.cache import DuckDBCache
-    except ImportError:
-        typer.echo(
-            "Error: duckdb is not installed. Install with: pip install domain-scout-ct[cache]",
-            err=True,
-        )
-        raise typer.Exit(1) from None
-
-    try:
-        with DuckDBCache(cache_dir=cache_dir) as cache:
+        with _get_cache_or_exit(cache_dir) as cache:
             stats = cache.stats()
     except Exception as exc:
         if "lock" in str(exc).lower():
@@ -266,16 +270,7 @@ def cache_clear(
 ) -> None:
     """Clear all cached entries."""
     try:
-        from domain_scout.cache import DuckDBCache
-    except ImportError:
-        typer.echo(
-            "Error: duckdb is not installed. Install with: pip install domain-scout-ct[cache]",
-            err=True,
-        )
-        raise typer.Exit(1) from None
-
-    try:
-        with DuckDBCache(cache_dir=cache_dir) as cache:
+        with _get_cache_or_exit(cache_dir) as cache:
             cache.clear()
     except Exception as exc:
         if "lock" in str(exc).lower():
