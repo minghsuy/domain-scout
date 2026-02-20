@@ -264,12 +264,13 @@ class CTLogSource:
                     "org_name": _extract_org_from_subject(subject or ""),
                     "not_before": nb,
                     "not_after": na,
-                    "san_dns_names": [],
+                    "san_dns_names": set(),
                 }
             if san and _is_valid_domain(san):
-                sans_list = certs[cert_id]["san_dns_names"]
-                if isinstance(sans_list, list) and san not in sans_list:
-                    sans_list.append(san)
+                certs[cert_id]["san_dns_names"].add(san)
+
+        for cert in certs.values():
+            cert["san_dns_names"] = list(cert["san_dns_names"])
 
         log.info("ct.pg_query", term=search_term, certs_found=len(certs))
         inc(CT_QUERIES_TOTAL, backend="postgres", status="ok")
@@ -314,15 +315,16 @@ class CTLogSource:
                     "org_name": None,  # JSON API doesn't provide subject organization
                     "not_before": _parse_dt(entry.get("not_before")),
                     "not_after": _parse_dt(entry.get("not_after")),
-                    "san_dns_names": [],
+                    "san_dns_names": set(),
                 }
             name_value = entry.get("name_value", "")
             for name in name_value.split("\n"):
                 name = name.strip()
                 if name and _is_valid_domain(name):
-                    sans_list = certs[cert_id]["san_dns_names"]
-                    if isinstance(sans_list, list) and name not in sans_list:
-                        sans_list.append(name)
+                    certs[cert_id]["san_dns_names"].add(name)
+
+        for cert in certs.values():
+            cert["san_dns_names"] = list(cert["san_dns_names"])
 
         log.info("ct.json_query", term=search_term, certs_found=len(certs))
         inc(CT_QUERIES_TOTAL, backend="json", status="ok")
