@@ -4,8 +4,12 @@ from __future__ import annotations
 
 import json
 import os
-from pathlib import Path
-from unittest.mock import MagicMock, patch
+from typing import TYPE_CHECKING
+from unittest.mock import patch
+
+if TYPE_CHECKING:
+    from collections.abc import Iterator
+    from pathlib import Path
 
 import pytest
 from typer.testing import CliRunner
@@ -26,7 +30,7 @@ def runner() -> CliRunner:
 
 
 @pytest.fixture(autouse=True)
-def mock_configure_logging():
+def mock_configure_logging() -> Iterator[None]:
     """Prevent CLI from reconfiguring structlog with closed streams."""
     with patch("domain_scout.cli.configure_logging"):
         yield
@@ -51,8 +55,8 @@ def _mock_result() -> ScoutResult:
 class TestScoutCommand:
     def test_scout_basic(self, runner: CliRunner) -> None:
         """Test basic scout command invocation."""
-        with patch("domain_scout.cli.Scout") as MockScout:
-            instance = MockScout.return_value
+        with patch("domain_scout.cli.Scout") as mock_scout_cls:
+            instance = mock_scout_cls.return_value
             instance.discover.return_value = _mock_result()
 
             result = runner.invoke(app, ["scout", "--name", "TestCorp"])
@@ -68,8 +72,8 @@ class TestScoutCommand:
 
     def test_scout_full_options(self, runner: CliRunner) -> None:
         """Test scout command with all options."""
-        with patch("domain_scout.cli.Scout") as MockScout:
-            instance = MockScout.return_value
+        with patch("domain_scout.cli.Scout") as mock_scout_cls:
+            instance = mock_scout_cls.return_value
             instance.discover.return_value = _mock_result()
 
             result = runner.invoke(
@@ -100,9 +104,9 @@ class TestScoutCommand:
             assert kwargs["industry"] == "Tech"
 
             # Verify config creation logic indirectly via Scout constructor args
-            # MockScout constructor called with config
-            assert MockScout.call_count == 1
-            config = MockScout.call_args.kwargs.get("config")
+            # mock_scout_cls constructor called with config
+            assert mock_scout_cls.call_count == 1
+            config = mock_scout_cls.call_args.kwargs.get("config")
             assert config is not None
             assert config.deep_mode is True
             # deep mode bumps timeout to at least 180
@@ -110,13 +114,11 @@ class TestScoutCommand:
 
     def test_scout_json_output(self, runner: CliRunner) -> None:
         """Test scout command with JSON output."""
-        with patch("domain_scout.cli.Scout") as MockScout:
-            instance = MockScout.return_value
+        with patch("domain_scout.cli.Scout") as mock_scout_cls:
+            instance = mock_scout_cls.return_value
             instance.discover.return_value = _mock_result()
 
-            result = runner.invoke(
-                app, ["scout", "--name", "TestCorp", "--output", "json"]
-            )
+            result = runner.invoke(app, ["scout", "--name", "TestCorp", "--output", "json"])
 
             assert result.exit_code == 0
             data = json.loads(result.stdout)
@@ -124,8 +126,8 @@ class TestScoutCommand:
 
     def test_scout_keyboard_interrupt(self, runner: CliRunner) -> None:
         """Test handling of KeyboardInterrupt."""
-        with patch("domain_scout.cli.Scout") as MockScout:
-            instance = MockScout.return_value
+        with patch("domain_scout.cli.Scout") as mock_scout_cls:
+            instance = mock_scout_cls.return_value
             instance.discover.side_effect = KeyboardInterrupt()
 
             result = runner.invoke(app, ["scout", "--name", "TestCorp"])
@@ -136,10 +138,10 @@ class TestScoutCommand:
     def test_scout_with_cache(self, runner: CliRunner) -> None:
         """Test scout command with cache enabled."""
         with (
-            patch("domain_scout.cli.Scout") as MockScout,
-            patch("domain_scout.cache.DuckDBCache") as MockCache,
+            patch("domain_scout.cli.Scout") as mock_scout_cls,
+            patch("domain_scout.cache.DuckDBCache") as mock_cache_cls,
         ):
-            instance = MockScout.return_value
+            instance = mock_scout_cls.return_value
             instance.discover.return_value = _mock_result()
 
             result = runner.invoke(
@@ -155,12 +157,12 @@ class TestScoutCommand:
             )
 
             assert result.exit_code == 0
-            MockCache.assert_called_once_with(cache_dir="/tmp/cache")
+            mock_cache_cls.assert_called_once_with(cache_dir="/tmp/cache")
             # Verify cache passed to Scout
-            scout_kwargs = MockScout.call_args.kwargs
-            assert scout_kwargs["cache"] == MockCache.return_value
+            scout_kwargs = mock_scout_cls.call_args.kwargs
+            assert scout_kwargs["cache"] == mock_cache_cls.return_value
             # Verify cache closed
-            MockCache.return_value.close.assert_called_once()
+            mock_cache_cls.return_value.close.assert_called_once()
 
 
 class TestServeCommand:
@@ -200,7 +202,7 @@ class TestServeCommand:
     def test_serve_workers_warning(self, runner: CliRunner) -> None:
         """Test warning when workers > 1 without no-cache."""
         with (
-            patch("uvicorn.run") as mock_run,
+            patch("uvicorn.run"),
             patch.dict(os.environ, {}, clear=False),
         ):
             result = runner.invoke(app, ["serve", "--workers", "2"])
@@ -266,7 +268,9 @@ class TestDiffCommand:
         )
 
         with patch("domain_scout.delta.compute_delta", return_value=mock_report):
-            result = runner.invoke(app, ["diff", str(base_file), str(curr_file), "--output", "json"])
+            result = runner.invoke(
+                app, ["diff", str(base_file), str(curr_file), "--output", "json"]
+            )
 
             assert result.exit_code == 0
             data = json.loads(result.stdout)
@@ -285,8 +289,8 @@ class TestCacheCommand:
         # Use patch.dict to ensure duckdb is available in modules if it's already imported
         # But import check is inside the function.
         # We need to mock DuckDBCache class.
-        with patch("domain_scout.cache.DuckDBCache") as MockCache:
-            mock_instance = MockCache.return_value
+        with patch("domain_scout.cache.DuckDBCache") as mock_cache_cls:
+            mock_instance = mock_cache_cls.return_value
             mock_instance.__enter__.return_value = mock_instance
             mock_instance.stats.return_value = {
                 "cache_dir": "/tmp",
@@ -305,8 +309,8 @@ class TestCacheCommand:
 
     def test_cache_clear(self, runner: CliRunner) -> None:
         """Test cache clear command."""
-        with patch("domain_scout.cache.DuckDBCache") as MockCache:
-            mock_instance = MockCache.return_value
+        with patch("domain_scout.cache.DuckDBCache") as mock_cache_cls:
+            mock_instance = mock_cache_cls.return_value
             mock_instance.__enter__.return_value = mock_instance
 
             result = runner.invoke(app, ["cache", "clear"])
@@ -317,98 +321,16 @@ class TestCacheCommand:
 
     def test_cache_missing_duckdb(self, runner: CliRunner) -> None:
         """Test cache command when duckdb is missing."""
-        # This is tricky because `domain_scout.cli` imports `DuckDBCache` inside functions.
-        # We need to mock `domain_scout.cache` import to fail.
-        # However, `domain_scout.cli` tries to import `DuckDBCache` from `domain_scout.cache`.
-        # If `domain_scout.cache` handles ImportError internally and sets duckdb=None,
-        # then importing `DuckDBCache` still works but `DuckDBCache` instantiation raises ImportError.
-
-        # Let's check `domain_scout/cli.py` again.
-        # try: from domain_scout.cache import DuckDBCache; except ImportError: ...
-
-        # And `domain_scout/cache.py` has `try: import duckdb; except ImportError: duckdb = None`.
-        # And `DuckDBCache.__init__` raises ImportError if `duckdb is None`.
-
-        # So `domain_scout.cache` can always be imported.
-        # But `cli.py` does:
-        # try:
-        #     from domain_scout.cache import DuckDBCache
-        # except ImportError:
-        #     typer.echo(...)
-
-        # Wait, if `domain_scout.cache` is importable, `from domain_scout.cache import DuckDBCache` works.
-        # The ImportError inside `cli.py` is caught if `domain_scout.cache` itself fails to import, or if `DuckDBCache` is not in it.
-        # Actually `DuckDBCache` is defined in `domain_scout.cache` regardless of `duckdb` presence.
-        # So the `except ImportError` in `cli.py` catches nothing unless `domain_scout.cache` is missing or broken.
-
-        # Let's re-read `cli.py`.
-        #     try:
-        #         from domain_scout.cache import DuckDBCache
-        #     except ImportError:
-        #         typer.echo("Error: duckdb is not installed...", err=True)
-
-        # Since `domain_scout.cache` is part of the package, the import should succeed unless `duckdb` is a hard dependency at module level (it's not).
-        # So the `try...except ImportError` block in `cli.py` might be unreachable unless `domain_scout.cache` behaves differently?
-        # Ah, maybe the intent was `DuckDBCache` is only available if `duckdb` is installed?
-        # But `domain_scout/cache.py` defines `DuckDBCache` class anyway.
-
-        # Maybe I should simulate `ImportError` by patching `sys.modules` or using `side_effect` on import?
-        # `patch.dict('sys.modules', {'domain_scout.cache': None})`?
-
-        # Actually, let's verify if `cli.py` logic is correct.
-        # If `duckdb` is not installed, `domain_scout.cache` imports fine, `DuckDBCache` is defined.
-        # So `from domain_scout.cache import DuckDBCache` succeeds.
-        # Then we enter `with DuckDBCache(...)` which calls `__init__`.
-        # `__init__` raises `ImportError` if `duckdb` is None.
-        # But `cli.py` wraps the import in try/except, NOT the instantiation (wait, no).
-
-        # `cli.py`:
-        # try:
-        #     from domain_scout.cache import DuckDBCache
-        # except ImportError:
-        #     ... raise Exit(1)
-
-        # try:
-        #     with DuckDBCache(...) as cache:
-        #         ...
-
-        # So if `duckdb` is missing, `__init__` raises `ImportError`.
-        # The second `try...except` block catches `Exception`.
-
-        # Wait, `DuckDBCache.__init__` raises `ImportError`.
-        # The second `try` block:
-        # try:
-        #     with DuckDBCache(...) as cache:
-        #         stats = cache.stats()
-        # except Exception as exc:
-        #     if "lock" in str(exc)...
-        #     raise
-
-        # So `ImportError` from `__init__` would be caught by `except Exception`, not match "lock", and raise.
-        # So the CLI would crash with traceback instead of nice message?
-
-        # If I want to test the `try: import ... except ImportError` block, I need to make the import fail.
-        # To do that, I can use `sys.modules`.
-
+        # Simulate missing domain_scout.cache by patching sys.modules
         with patch.dict("sys.modules", {"domain_scout.cache": None}):
-            # We need to make sure `from domain_scout.cache` fails.
-            # If I set it to None, it raises ModuleNotFoundError.
-            # But the code catches ImportError (which ModuleNotFoundError inherits from).
-
-            # However, since `domain_scout.cli` is already imported, it might have cached lookups?
-            # No, the import is inside the function.
-
-            # But `pytest` might have already imported `domain_scout.cache` via other tests.
-            # Using `patch.dict` on `sys.modules` works for subsequent imports.
-
             result = runner.invoke(app, ["cache", "stats"])
             assert result.exit_code == 1
             assert "Error: duckdb is not installed" in result.stderr
 
     def test_cache_locked(self, runner: CliRunner) -> None:
         """Test cache command when database is locked."""
-        with patch("domain_scout.cache.DuckDBCache") as MockCache:
-            mock_instance = MockCache.return_value
+        with patch("domain_scout.cache.DuckDBCache") as mock_cache_cls:
+            mock_instance = mock_cache_cls.return_value
             mock_instance.__enter__.side_effect = RuntimeError("Database lock error")
 
             result = runner.invoke(app, ["cache", "stats"])

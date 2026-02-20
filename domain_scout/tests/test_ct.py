@@ -42,20 +42,15 @@ class TestExtractOrgFromSubject:
         assert _extract_org_from_subject("O=Foo") == "Foo"
 
     def test_with_other_attributes(self) -> None:
-        assert (
-            _extract_org_from_subject("C=US, O=Example Inc, CN=example.com") == "Example Inc"
-        )
+        assert _extract_org_from_subject("C=US, O=Example Inc, CN=example.com") == "Example Inc"
 
     def test_quoted_comma(self) -> None:
         assert (
-            _extract_org_from_subject('C=US, O="Example, Inc.", CN=example.com')
-            == "Example, Inc."
+            _extract_org_from_subject('C=US, O="Example, Inc.", CN=example.com') == "Example, Inc."
         )
 
     def test_escaped_quotes(self) -> None:
-        assert (
-            _extract_org_from_subject(r'O="Org with \"quotes\""') == 'Org with "quotes"'
-        )
+        assert _extract_org_from_subject(r'O="Org with \"quotes\""') == 'Org with "quotes"'
 
     def test_escaped_comma_unquoted(self) -> None:
         assert _extract_org_from_subject(r"O=ACME\, Inc., C=US") == "ACME, Inc."
