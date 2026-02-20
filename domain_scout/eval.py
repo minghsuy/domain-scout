@@ -46,6 +46,7 @@ class MetricsAtK(BaseModel):
     """Precision, recall, NDCG, and FP count at a specific k."""
 
     k: int
+    hits: int
     precision: float
     recall: float
     ndcg: float
@@ -110,6 +111,7 @@ def compute_metrics(
         results.append(
             MetricsAtK(
                 k=k,
+                hits=hits,
                 precision=round(precision, 3),
                 recall=round(recall, 3),
                 ndcg=round(ndcg, 3),
@@ -284,12 +286,13 @@ def format_table(report: EvalReport) -> str:
         )
 
         # Table header
-        lines.append(f"  {'k':>5}  {'Precision':>9}  {'Recall':>8}  {'FPs':>3}  {'NDCG':>5}")
-        lines.append(f"  {'─' * 5}  {'─' * 9}  {'─' * 8}  {'─' * 3}  {'─' * 5}")
+        lines.append(f"  {'k':>5}  {'Precision':>9}  {'Found':>9}  {'FPs':>3}  {'NDCG':>5}")
+        lines.append(f"  {'─' * 5}  {'─' * 9}  {'─' * 9}  {'─' * 3}  {'─' * 5}")
 
         for m in entity.metrics:
+            found_str = f"{m.hits}/{entity.owned_count}"
             lines.append(
-                f"  {m.k:>5}  {m.precision:>9.3f}  {m.recall:>8.3f}  {m.false_positives:>3}  "
+                f"  {m.k:>5}  {m.precision:>9.3f}  {found_str:>9}  {m.false_positives:>3}  "
                 f"{m.ndcg:>5.3f}"
             )
 

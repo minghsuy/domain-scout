@@ -44,6 +44,7 @@ class TestComputeMetrics:
         assert len(results) == 1
         m = results[0]
         assert m.k == 5
+        assert m.hits == 5
         assert m.precision == 1.0
         assert m.recall == 1.0
         assert m.ndcg == 1.0
@@ -372,7 +373,14 @@ class TestFormatTable:
                     owned_count=3,
                     not_owned_count=1,
                     metrics=[
-                        MetricsAtK(k=5, precision=0.8, recall=1.0, ndcg=0.95, false_positives=1)
+                        MetricsAtK(
+                            k=5,
+                            hits=3,
+                            precision=0.8,
+                            recall=1.0,
+                            ndcg=0.95,
+                            false_positives=1,
+                        )
                     ],
                     false_positive_domains=["bad.com"],
                 )
@@ -382,6 +390,7 @@ class TestFormatTable:
         assert "baseline" in table
         assert "test" in table
         assert "0.800" in table
+        assert "3/3" in table
         assert "FP domains (all ranks): bad.com" in table
 
     def test_empty_report(self) -> None:
@@ -408,7 +417,14 @@ class TestEvalReportJson:
                     owned_count=2,
                     not_owned_count=0,
                     metrics=[
-                        MetricsAtK(k=5, precision=1.0, recall=1.0, ndcg=1.0, false_positives=0)
+                        MetricsAtK(
+                            k=5,
+                            hits=2,
+                            precision=1.0,
+                            recall=1.0,
+                            ndcg=1.0,
+                            false_positives=0,
+                        )
                     ],
                 )
             ],
