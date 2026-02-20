@@ -7,7 +7,7 @@ domain-scout — Discover internet domains associated with a business entity via
 ## Quick Commands
 
 ```bash
-make install       # uv sync --all-groups
+make install       # uv sync --all-groups --all-extras
 make test          # unit tests only (excludes integration)
 make test-integration  # hits real external services (crt.sh, RDAP, DNS)
 make lint          # ruff check + mypy --strict

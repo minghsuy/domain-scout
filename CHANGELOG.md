@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-02-20
+
+### Added
+- **Evaluation harness** (`domain_scout.eval`) — measure precision@k, recall@k, NDCG@k against labeled ground truth
+- 22 labeled ground truth entries across 7 sectors (finance, healthcare, retail, energy, automotive, media, technology)
+- 22 pre-recorded baseline JSON files for reproducible scoring without network access
+- `make eval` target runs baseline evaluation
+- `eval` optional extra for pyyaml dependency (`pip install domain-scout-ct[eval]`)
+- CLI entry point: `python -m domain_scout.eval [--mode baseline|live] [--output table|json] [--label ID]`
+- 21 new unit tests + 1 integration test (379 unit, 4 integration total)
+
 ## [0.4.0] - 2026-02-20
 
 ### Added
