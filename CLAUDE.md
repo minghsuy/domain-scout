@@ -53,6 +53,10 @@ domain_scout/
     ├── test_api.py          # REST API endpoint tests
     ├── test_cache.py        # DuckDB cache tests
     ├── test_metrics.py      # Prometheus metrics tests
+    ├── test_cli.py          # CLI command tests (scout, serve, diff, cache)
+    ├── test_dns_utils.py    # DNS checker unit tests
+    ├── test_rdap.py         # RDAP lookup parsing tests
+    ├── test_config.py       # ScoutConfig validation and profiles
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -83,6 +87,6 @@ domain_scout/
 
 ## Testing
 
-- **305 unit tests** + 3 integration tests (deselected by default)
+- **358 unit tests** + 3 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

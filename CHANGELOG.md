@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-02-20
+
+### Added
+- **Prometheus metrics** — optional `prometheus-client` dependency with 7 metrics: `scans_total`, `scan_duration_seconds`, `domains_found`, `ct_queries_total`, `ct_fallbacks_total`, `ct_circuit_breaker_state`, `source_errors_total`
+- `/metrics` endpoint on the REST API (Prometheus scrape target)
+- No-op metric stubs when `prometheus-client` is not installed (zero overhead)
+- **CLI tests** — full coverage for `scout`, `serve`, `diff`, and `cache` commands
+- **DNS checker tests** — resolution, nameserver, infrastructure sharing, GeoDNS
+- **RDAP parsing tests** — registrant org/name/country extraction, vCard edge cases
+- **ScoutConfig tests** — validation, profiles, deep mode overrides
+- 53 new unit tests (358 total)
+
+### Changed
+- CT log SAN aggregation uses separate `set` tracking for O(1) deduplication
+- X.509 subject parser extracted as standalone function with proper quote/escape handling
+- Redundant wrapper functions removed from `ct_logs.py`
+- RDAP vCard extraction returns typed `object | None` with proper `isinstance` guards
+- CT JSON fallback now emits `ct_queries_total{backend=json,status=error}` counter on failure
+
+### Fixed
+- RDAP error counter was unreachable in `scout.py` — moved to `rdap.py` where exceptions are caught
+- Circuit breaker state gauge now updates on all transitions (closed/open/half_open)
+- CLI `_get_cache_or_exit` helper DRYs import/instantiate pattern
+
 ## [0.3.1] - 2026-02-17
 
 ### Added
