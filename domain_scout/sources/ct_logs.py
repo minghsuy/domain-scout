@@ -255,6 +255,7 @@ class CTLogSource:
         # Aggregate: rows are (id, cn, subject, not_before, not_after, single_san)
         # Multiple rows per cert (one per SAN). Group by cert id.
         certs: dict[int, dict[str, object]] = {}
+        san_sets: dict[int, set[str]] = {}
         for cert_id, cn, subject, nb, na, san in rows:
             if cert_id not in certs:
                 certs[cert_id] = {
@@ -264,13 +265,14 @@ class CTLogSource:
                     "org_name": _extract_org_from_subject(subject or ""),
                     "not_before": nb,
                     "not_after": na,
-                    "san_dns_names": set(),
+                    "san_dns_names": [],
                 }
+                san_sets[cert_id] = set()
             if san and _is_valid_domain(san):
-                certs[cert_id]["san_dns_names"].add(san)
+                san_sets[cert_id].add(san)
 
-        for cert in certs.values():
-            cert["san_dns_names"] = list(cert["san_dns_names"])
+        for cid, cert in certs.items():
+            cert["san_dns_names"] = sorted(san_sets[cid])
 
         log.info("ct.pg_query", term=search_term, certs_found=len(certs))
         inc(CT_QUERIES_TOTAL, backend="postgres", status="ok")
@@ -305,6 +307,7 @@ class CTLogSource:
                 data = resp.json()
 
         certs: dict[int, dict[str, object]] = {}
+        san_sets: dict[int, set[str]] = {}
         for entry in data:
             cert_id = entry.get("id", 0)
             if cert_id not in certs:
@@ -315,16 +318,17 @@ class CTLogSource:
                     "org_name": None,  # JSON API doesn't provide subject organization
                     "not_before": _parse_dt(entry.get("not_before")),
                     "not_after": _parse_dt(entry.get("not_after")),
-                    "san_dns_names": set(),
+                    "san_dns_names": [],
                 }
+                san_sets[cert_id] = set()
             name_value = entry.get("name_value", "")
             for name in name_value.split("\n"):
                 name = name.strip()
                 if name and _is_valid_domain(name):
-                    certs[cert_id]["san_dns_names"].add(name)
+                    san_sets[cert_id].add(name)
 
-        for cert in certs.values():
-            cert["san_dns_names"] = list(cert["san_dns_names"])
+        for cid, cert in certs.items():
+            cert["san_dns_names"] = sorted(san_sets[cid])
 
         log.info("ct.json_query", term=search_term, certs_found=len(certs))
         inc(CT_QUERIES_TOTAL, backend="json", status="ok")
