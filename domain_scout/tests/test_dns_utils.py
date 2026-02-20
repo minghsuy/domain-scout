@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-import asyncio
+from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import dns.asyncresolver
@@ -24,18 +24,14 @@ class TestDNSChecker:
     @pytest.mark.asyncio
     async def test_resolves_success(self, checker: DNSChecker) -> None:
         """resolves() should return True if A or AAAA records exist."""
-        # Mock _resolver.resolve to return something
-        checker._resolver.resolve = AsyncMock()
-
-        # Test success
-        assert await checker.resolves("example.com") is True
-        checker._resolver.resolve.assert_called()
+        with patch.object(checker._resolver, "resolve", new_callable=AsyncMock):
+            assert await checker.resolves("example.com") is True
 
     @pytest.mark.asyncio
     async def test_resolves_failure(self, checker: DNSChecker) -> None:
         """resolves() should return False if no records found."""
-        checker._resolver.resolve = AsyncMock(side_effect=dns.exception.DNSException)
-        assert await checker.resolves("example.com") is False
+        with patch.object(checker._resolver, "resolve", side_effect=dns.exception.DNSException):
+            assert await checker.resolves("example.com") is False
 
     @pytest.mark.asyncio
     async def test_get_ips(self, checker: DNSChecker) -> None:
@@ -46,16 +42,15 @@ class TestDNSChecker:
         mock_answer_aaaa = [MagicMock()]
         mock_answer_aaaa[0].to_text.return_value = "2001:db8::1"
 
-        async def side_effect(domain, rdtype):
+        async def side_effect(domain: str, rdtype: Any) -> list[MagicMock]:
             if rdtype == dns.rdatatype.A:
                 return mock_answer_a
-            elif rdtype == dns.rdatatype.AAAA:
+            if rdtype == dns.rdatatype.AAAA:
                 return mock_answer_aaaa
             raise dns.exception.DNSException
 
-        checker._resolver.resolve = AsyncMock(side_effect=side_effect)
-
-        ips = await checker.get_ips("example.com")
+        with patch.object(checker._resolver, "resolve", side_effect=side_effect):
+            ips = await checker.get_ips("example.com")
         assert "1.2.3.4" in ips
         assert "2001:db8::1" in ips
 
@@ -66,9 +61,10 @@ class TestDNSChecker:
         mock_answer[0].to_text.return_value = "ns1.example.com."
         mock_answer[1].to_text.return_value = "ns2.example.com."
 
-        checker._resolver.resolve = AsyncMock(return_value=mock_answer)
-
-        ns = await checker.get_nameservers("example.com")
+        with patch.object(
+            checker._resolver, "resolve", new_callable=AsyncMock, return_value=mock_answer
+        ):
+            ns = await checker.get_nameservers("example.com")
         assert ns == ["ns1.example.com", "ns2.example.com"]
 
     @pytest.mark.asyncio
@@ -76,8 +72,8 @@ class TestDNSChecker:
         """shares_infrastructure() returns True if nameservers overlap."""
         with patch.object(checker, "get_nameservers") as mock_ns:
             mock_ns.side_effect = [
-                ["ns1.example.com", "ns2.example.com"], # domain_a
-                ["ns2.example.com", "ns3.example.com"], # domain_b
+                ["ns1.example.com", "ns2.example.com"],  # domain_a
+                ["ns2.example.com", "ns3.example.com"],  # domain_b
             ]
             # We don't need get_ips if NS check passes
             assert await checker.shares_infrastructure("a.com", "b.com") is True
@@ -85,22 +81,26 @@ class TestDNSChecker:
     @pytest.mark.asyncio
     async def test_shares_infrastructure_ips(self, checker: DNSChecker) -> None:
         """shares_infrastructure() returns True if IP prefixes overlap."""
-        with patch.object(checker, "get_nameservers", return_value=[]), \
-             patch.object(checker, "get_ips") as mock_ips:
+        with (
+            patch.object(checker, "get_nameservers", return_value=[]),
+            patch.object(checker, "get_ips") as mock_ips,
+        ):
             mock_ips.side_effect = [
-                ["192.168.1.10"], # domain_a
-                ["192.168.1.20"], # domain_b (same /24)
+                ["192.168.1.10"],  # domain_a
+                ["192.168.1.20"],  # domain_b (same /24)
             ]
             assert await checker.shares_infrastructure("a.com", "b.com") is True
 
     @pytest.mark.asyncio
     async def test_shares_infrastructure_none(self, checker: DNSChecker) -> None:
         """shares_infrastructure() returns False if nothing overlaps."""
-        with patch.object(checker, "get_nameservers", return_value=[]), \
-             patch.object(checker, "get_ips") as mock_ips:
+        with (
+            patch.object(checker, "get_nameservers", return_value=[]),
+            patch.object(checker, "get_ips") as mock_ips,
+        ):
             mock_ips.side_effect = [
-                ["192.168.1.10"], # domain_a
-                ["10.0.0.1"],     # domain_b (different /24)
+                ["192.168.1.10"],  # domain_a
+                ["10.0.0.1"],  # domain_b (different /24)
             ]
             assert await checker.shares_infrastructure("a.com", "b.com") is False
 
