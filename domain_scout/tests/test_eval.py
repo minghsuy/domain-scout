@@ -5,6 +5,7 @@ from __future__ import annotations
 import textwrap
 from datetime import UTC, datetime
 from pathlib import Path
+from unittest.mock import AsyncMock, patch
 
 import pytest
 
@@ -16,6 +17,7 @@ from domain_scout.eval import (
     collect_false_positives,
     compute_metrics,
     evaluate_baseline,
+    evaluate_live,
     format_table,
     load_ground_truth,
 )
@@ -312,6 +314,47 @@ def _make_baselines_dir() -> Path:
 
 
 # ---------------------------------------------------------------------------
+# evaluate_live tests
+# ---------------------------------------------------------------------------
+
+
+class TestEvaluateLive:
+    @pytest.mark.asyncio
+    async def test_with_mock_scout(self) -> None:
+        """evaluate_live runs Scout.discover_async and computes metrics."""
+        gt = [
+            GroundTruthEntry(
+                label_id="mock-entity",
+                company_name="MockCo",
+                seeds=["mock.com"],
+                owned_domains=["mock.com", "mock.net"],
+                not_owned=["evil.com"],
+            )
+        ]
+
+        mock_result = _make_scout_result(
+            ["mock.com", "evil.com", "mock.net"],
+            company_name="MockCo",
+            seeds=["mock.com"],
+        )
+
+        with patch("domain_scout.scout.Scout") as mock_scout_cls:
+            mock_scout = mock_scout_cls.return_value
+            mock_scout.discover_async = AsyncMock(return_value=mock_result)
+
+            report = await evaluate_live(gt, k_values=(3,))
+
+        assert report.mode == "live"
+        assert len(report.entities) == 1
+        entity = report.entities[0]
+        assert entity.label_id == "mock-entity"
+        assert entity.discovered_count == 3
+        assert entity.metrics[0].precision == pytest.approx(0.667, abs=0.001)
+        assert entity.metrics[0].false_positives == 1
+        assert "evil.com" in entity.false_positive_domains
+
+
+# ---------------------------------------------------------------------------
 # format_table tests
 # ---------------------------------------------------------------------------
 
@@ -339,7 +382,7 @@ class TestFormatTable:
         assert "baseline" in table
         assert "test" in table
         assert "0.800" in table
-        assert "bad.com" in table
+        assert "FP domains (all ranks): bad.com" in table
 
     def test_empty_report(self) -> None:
         report = EvalReport(mode="baseline", entities=[])

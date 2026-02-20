@@ -124,7 +124,7 @@ def _dcg_at_k(ranked: list[str], relevant: set[str], k: int) -> float:
     dcg = 0.0
     for i, domain in enumerate(ranked[:k]):
         if domain in relevant:
-            dcg += 1.0 / math.log2(i + 2)  # i+2 because log2(1) = 0
+            dcg += 1.0 / math.log2(i + 2)  # standard DCG: log2(rank+1), rank is 1-based
     return dcg
 
 
@@ -153,12 +153,11 @@ def load_ground_truth(path: Path | None = None) -> list[GroundTruthEntry]:
     """Load and validate ground truth labels from YAML."""
     try:
         import yaml
-    except ImportError:
-        print(
-            "ERROR: pyyaml is required for the eval harness. Install with: uv sync --all-groups",
-            file=sys.stderr,
-        )
-        sys.exit(1)
+    except ImportError as exc:
+        raise ImportError(
+            "pyyaml is required for the eval harness. "
+            "Install with: pip install domain-scout-ct[eval]"
+        ) from exc
 
     gt_path = path or _GROUND_TRUTH_PATH
     with open(gt_path) as f:
@@ -295,7 +294,7 @@ def format_table(report: EvalReport) -> str:
             )
 
         if entity.false_positive_domains:
-            lines.append(f"  FP domains: {', '.join(entity.false_positive_domains)}")
+            lines.append(f"  FP domains (all ranks): {', '.join(entity.false_positive_domains)}")
 
     lines.append("")
     return "\n".join(lines)

@@ -37,7 +37,7 @@ domain_scout/
 ├── api.py              # FastAPI REST API (/scan, /diff, /health, /ready, /cache/*)
 ├── cache.py            # DuckDB TTL cache for CT/RDAP queries
 ├── eval.py             # Evaluation harness: precision/recall against labeled ground truth
-├── eval_ground_truth.yaml  # Labeled (company, domain, is_owned) triples for eval
+├── eval_ground_truth.yaml  # Ground truth: owned_domains and not_owned lists per entity
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── _metrics.py         # Prometheus metrics (optional, no-ops without prometheus-client)
 ├── sources/
@@ -91,6 +91,6 @@ domain_scout/
 
 ## Testing
 
-- **378 unit tests** + 4 integration tests (deselected by default)
+- **379 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
