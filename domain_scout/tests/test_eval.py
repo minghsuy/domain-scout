@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import textwrap
+from datetime import UTC, datetime
 from pathlib import Path
 
 import pytest
@@ -216,7 +217,7 @@ def _make_scout_result(
         ],
         run_metadata=RunMetadata(
             tool_version="0.4.0",
-            timestamp="2026-01-01T00:00:00",  # type: ignore[arg-type]
+            timestamp=datetime(2026, 1, 1, tzinfo=UTC),
             elapsed_seconds=1.0,
             domains_found=len(domains),
         ),
@@ -282,6 +283,7 @@ class TestEvaluateBaseline:
         report = evaluate_baseline(gt, baselines_dir=tmp_path)
         assert len(report.entities) == 0
 
+    @pytest.mark.integration
     def test_real_baselines(self) -> None:
         """Evaluate against real baselines if they exist."""
         if not _make_baselines_dir().exists():

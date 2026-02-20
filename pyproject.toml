@@ -32,7 +32,8 @@ dependencies = [
 api = ["fastapi>=0.115.0", "uvicorn[standard]>=0.32.0"]
 cache = ["duckdb>=1.0.0"]
 metrics = ["prometheus-client>=0.21.0"]
-all = ["domain-scout-ct[api,cache,metrics]"]
+eval = ["pyyaml>=6.0"]
+all = ["domain-scout-ct[api,cache,metrics,eval]"]
 
 [project.urls]
 Repository = "https://github.com/minghsuy/domain-scout"
