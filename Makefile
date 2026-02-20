@@ -1,4 +1,4 @@
-.PHONY: install test lint format check build clean docker-build docker-run
+.PHONY: install test lint format check build clean docker-build docker-run eval
 
 install:
 	uv sync --all-groups --all-extras
@@ -16,6 +16,9 @@ lint:
 format:
 	uv run ruff check --fix domain_scout/
 	uv run ruff format domain_scout/
+
+eval:
+	uv run python -m domain_scout.eval --mode baseline
 
 check: format lint test
 

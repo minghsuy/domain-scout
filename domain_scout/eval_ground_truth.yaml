@@ -1,0 +1,545 @@
+# Ground truth labels for domain-scout evaluation harness.
+# Each entry maps a (company, seeds) pair to known-owned and known-not-owned domains.
+# "owned" means the domain is legitimately operated by / affiliated with the company.
+# "not_owned" means the domain appeared in results but is a false positive (CDN, shared cert, etc.).
+# Domains not in either list are treated as "unknown" — conservative precision counts them against.
+#
+# Sources: CT log cert_events data (ct-entity-resolution, 2026-02-19/20, ~1.7M rows),
+# cross-referenced with public corporate subsidiary records and WHOIS/RDAP.
+
+# ---------------------------------------------------------------------------
+# Technology
+# ---------------------------------------------------------------------------
+
+- label_id: panw-20260217
+  company_name: "Palo Alto Networks"
+  seeds: ["paloaltonetworks.com"]
+  owned_domains:
+    - paloaltonetworks.com
+    - prismacloud.io
+    - paloaltonetworks.jp
+    - paloaltonetworks.es
+    - paloaltonetworks.ca
+    - securityroundtable.org
+    - paloaltonetworks.tw
+    - paloaltonetworks.com.mx
+    - cortex.ai
+    - paloaltonetworks.lat
+    - paloaltonetworks.co.kr
+    - paloaltonetworks.co.uk
+    - paloaltonetworks.fr
+    - prisma.security
+    - paloaltonetworks.com.au
+    - paloaltonetworks.in
+    - paloaltonetworks.sg
+    - paloaltonetworks.nl
+    - paloaltonetworks.com.br
+    - paloaltonetworks.de
+    - paloaltonetworks.cn
+    - paloaltonetworks.it
+    - bridgecrew.cloud
+    - prismaaccess.cn
+    - zingbox.com
+    - panclouddev.com
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Retail
+# ---------------------------------------------------------------------------
+
+- label_id: walmart-seed1
+  company_name: "Walmart"
+  seeds: ["walmart.com"]
+  owned_domains:
+    - walmart.com
+    - wal-mart.com
+    - bodegaaurrera.com.mx
+    - walmart.com.mx
+    - sams.com.mx
+    - george.com
+    - walmartlabs.com
+    - game.co.za
+    - makro.co.za
+    - asda.com
+    - b.wal.co
+    - bestprice.in
+    - dw.wmt.co
+    - samsclub.com
+    - toyou.co.uk
+    - asdapriceguarantee.co.uk
+    - walmart.ca
+  not_owned: []
+
+- label_id: walmart-seed2
+  company_name: "Walmart"
+  seeds: ["walmart.com", "samsclub.com"]
+  owned_domains:
+    - walmart.com
+    - samsclub.com
+    - wal-mart.com
+    - asda.com
+    - walmartluminate.com
+    - walmart.com.mx
+    - walmart.ca
+    - walmartconnect.ca
+    - walmarthealth.com
+    - bodegaaurrera.com.mx
+    - sams.com.mx
+    - walmartlabs.com
+    - makro.co.za
+    - b.wal.co
+    - bestprice.in
+    - dw.wmt.co
+    - george.com
+    - toyou.co.uk
+    - game.co.za
+    - asdapriceguarantee.co.uk
+    - samsclubsng.com
+    - sams.com
+    - walmartbenefits.com
+  not_owned:
+    - hubspot.com        # shared CDN cert — not Walmart-owned
+    - exacttarget.com    # Salesforce Marketing Cloud — shared cert, not Walmart
+
+- label_id: nike-20260220
+  company_name: "Nike"
+  seeds: ["nike.com"]
+  owned_domains:
+    - nike.com
+    - niketeamsports.com
+    - nikecloud.com       # Nike's internal cloud platform
+  not_owned: []
+
+- label_id: homedepot-20260220
+  company_name: "Home Depot"
+  seeds: ["homedepot.com"]
+  owned_domains:
+    - homedepot.com
+    - homedepot.ca
+    - homedepot.com.mx
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Finance — challenging sector for entity matching (generic names, many subsidiaries)
+# ---------------------------------------------------------------------------
+
+- label_id: jpmorgan-20260220
+  company_name: "JPMorgan Chase"
+  seeds: ["jpmorgan.com"]
+  owned_domains:
+    # Core brands
+    - jpmorgan.com
+    - chase.com
+    - jpmchase.net            # internal infrastructure
+    - jpmchase.com
+    - jpmorganchase.com
+    - jpmorgan.co.uk
+    - jpmorgan.net
+    # Payments
+    - paymentech.com          # Chase Paymentech
+    - chasepaymentech.com
+    # Commercial card
+    - jpmorgancc.com
+    # Content / CDN
+    - jpmacontent.com
+    # Acquisitions
+    - globalshares.com        # acquired 2023 — equity plan platform
+    - highbridge.com          # Highbridge Capital Management
+    - highbridgetcfltd.co.uk  # Highbridge fund entity
+    - highbridgemsfltd.co.uk  # Highbridge Multi-Strategy Fund
+    - instamedtest.com        # InstaMed — healthcare payments (acquired 2019)
+    # Equity administration platform (JPM hosts equity plans for other companies)
+    - equity-admin.com
+    - equity-gateway.com
+    - acctmanagement.com
+    # Asset management
+    - jpmam.com
+    - jpmorganfunds.com
+    - jpmorganaccessfunds.com
+    - jpmorganetfs.com
+    - jpmorgansmartretirement.com
+    - jpmorganinstitutional.com
+    - jpmgloballiquidity.com
+    - sixcirclesfunds.com     # JPM investment product line
+    - thekoreafund.com        # JPM managed closed-end fund
+    - securitycapital.com     # JPM Security Capital Group
+    # Private banking
+    - jpmprivatebank.com
+    - jpmprivatefolio.com
+    # Money market
+    - morganmoney.io
+    # 529 plans
+    - jpmorgan529.com
+    - nyadvisor529.com
+    - ny529advisor.com
+    - advisorguided529.com
+    # Marketing
+    - chaseonlinesweepstakes.com
+    - uncoveretfs.com
+    - etfguides.co.uk
+    # Regional asset management (ccTLD variants)
+    - jpmam.com.br
+    - jpmorganam.com.hk
+    - jpmorganam.com.tw
+    - jpmorganam.com.au
+    - jpmorganam.com.sg
+    - jpmorganam.com.br
+    - jpmorganam.co.kr
+    - jpmorganam.lu
+    - jpmorganam.dk
+    - jpmorganam.fi
+    - jpmorganam.fr
+    - jpmorganam.se
+    - jpmorganam.no
+    - jpmorganam.at
+    - jpmorganam.es
+    - jpmorganassetmanagement.fr
+    - jpmorganassetmanagement.de
+    - jpmorganassetmanagement.ch
+    - jpmorganassetmanagement.es
+    - jpmorganassetmanagement.it
+    - jpmorganassetmanagement.be
+    - jpmorganassetmanagement.at
+    - jpmam.es
+    - jpmam.se
+    - jpmam.dk
+    - jpmam.fi
+    - jpmam.fr
+    - jpmam.it
+    - jpmam.pt
+    - jpmam.no
+    - jpmam.lu
+    - jpmam.at
+  not_owned:
+    # Client equity plans hosted on JPM's platform — NOT JPM-owned domains
+    - cargillequity.com                        # Cargill's equity plan
+    - artisanpartnersequity.com                # Artisan Partners' equity plan
+    - ulequityplans.com                        # Unilever's equity plan
+    - interxionequitybasedincentiveplans.com   # Interxion's equity plan
+    - acucelastockplans.com                    # Acucela's stock plan
+    - russellltip.com                          # Russell's LTIP
+
+- label_id: wellsfargo-20260220
+  company_name: "Wells Fargo"
+  seeds: ["wellsfargo.com"]
+  owned_domains:
+    - wellsfargo.com
+    - fccaccessonline.com     # First Clearing Corp — Wells Fargo financial advisor platform (185 subdomains)
+    - accesswca.com           # Wells Clearing Account portal
+    - cdfconnect.com          # Wells Fargo CDF Connect
+    - leaseconnect.com        # Wells Fargo leasing platform
+    - myleasingsource.com     # Wells Fargo equipment leasing
+    - financeaccess.com       # Wells Fargo financial services
+    - currencyteller.com      # Wells Fargo foreign exchange
+    - onlinemyaccounts.com    # Wells Fargo account portal
+    - getmyaccounts.com       # Wells Fargo account access
+    - myonlineresourcecenter.com  # Wells Fargo resource center
+  not_owned: []
+
+- label_id: morganstanley-20260220
+  company_name: "Morgan Stanley"
+  seeds: ["morganstanley.com"]
+  owned_domains:
+    - morganstanley.com
+    - ms.com
+    - morganstanleyfa.com     # Financial Advisors portal
+    - morganstanleypwa.com    # Private Wealth Advisors
+    - morganstanleygc.com     # Graystone Consulting (MS division)
+    - msgraystone.com         # Graystone Consulting
+    - morganstanleybranch.com
+    - morganstanley.com.au
+    - morganstanley.ca
+    - shareworks.com          # Morgan Stanley at Work (acquired Solium/Shareworks 2019)
+  not_owned: []
+
+- label_id: goldmansachs-20260220
+  company_name: "Goldman Sachs"
+  seeds: ["gs.com"]
+  owned_domains:
+    - gs.com
+    - goldman.com
+    - marcus.com              # Marcus by Goldman Sachs — consumer banking
+    - nextcapital.com         # NextCapital — acquired by Goldman Sachs
+  not_owned: []
+
+- label_id: amex-20260220
+  company_name: "American Express"
+  seeds: ["americanexpress.com"]
+  owned_domains:
+    - americanexpress.com
+    - pocket-concierge.jp     # acquired by Amex — restaurant booking Japan
+    - departures-international.com  # Departures magazine — Amex luxury publication
+  not_owned: []
+
+- label_id: bankofamerica-20260220
+  company_name: "Bank of America"
+  seeds: ["bankofamerica.com"]
+  owned_domains:
+    - bankofamerica.com
+    - bofa.com
+    - ml.com                  # Merrill Lynch — acquired 2009
+    - merrill.com             # Merrill (rebranded from Merrill Lynch)
+    - bofaml.com              # Bank of America Merrill Lynch (institutional brand)
+    - applyonlinenow.com      # BofA credit card application portal
+    - mynewcard.com           # BofA credit card onboarding
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Healthcare — tests subsidiary discovery and generic-name matching
+# ---------------------------------------------------------------------------
+
+- label_id: unitedhealth-20260220
+  company_name: "UnitedHealth Group"
+  seeds: ["uhg.com"]
+  owned_domains:
+    # Core brands
+    - uhg.com                 # parent company
+    - uhc.com                 # UnitedHealthcare — insurance arm
+    - optum.com               # Optum — health services arm (506 subdomains in CT data)
+    - optumrx.com             # OptumRx — pharmacy benefit management
+    - optumid.com             # Optum identity platform
+    - optuminsightplatform.com
+    # Acquisitions
+    - vivifyhealth.com        # remote patient monitoring — acquired by Optum
+    - aikyam.com              # healthcare analytics — acquired by Optum
+    # Provider tools
+    - providerexpress.com     # Optum provider portal
+    - onehealthcareid.com     # UHG unified healthcare ID
+    - myuhccsrewards.com      # UHC member rewards
+    - yourdentalplan.com      # UHC dental plans
+    - listenhearlivewell.com  # UHC hearing health awareness
+    # UHC Hearing (subsidiary — acquired HearUSA/hearing network)
+    - uhchearing.com
+    - uhchearingportal.com
+    - epichearing.com
+    - relatehearing.com
+    - aarphearingsolutions.com   # AARP-branded UHC hearing partnership
+    - aarphearingsolutions.org
+    - aarphearingsolutions.net
+    - aarpuhchearingsolutions.com
+    - earprofessionals.com
+    - earprofessionalsgroup.com
+    - earprofessionalsnetwork.com
+    - hearprofessionalsgroup.com
+    - hearprofessionalsnetwork.com
+    # Insurance subsidiary
+    - excelsiorinsurance.com  # Excelsior Insurance Company — UHG subsidiary
+    - suppsportal.com         # UHG supplemental benefits portal
+  not_owned: []
+
+- label_id: pfizer-20260220
+  company_name: "Pfizer"
+  seeds: ["pfizer.com"]
+  owned_domains:
+    - pfizer.com
+    - pfizer.it
+  not_owned: []
+
+- label_id: merck-20260220
+  company_name: "Merck"
+  seeds: ["merck.com"]
+  owned_domains:
+    - merck.com
+    - homeagain.com           # HomeAgain pet microchip — Merck Animal Health
+    - msdchina.com.cn         # Merck Sharp & Dohme China
+    - programavemser.com.br   # Merck Brazil patient program
+  not_owned: []
+
+- label_id: jnj-20260220
+  company_name: "Johnson & Johnson"
+  seeds: ["jnj.com"]
+  owned_domains:
+    - jnj.com
+    - jnj.com.cn
+  not_owned: []
+
+- label_id: abbvie-20260220
+  company_name: "AbbVie"
+  seeds: ["abbvie.com"]
+  owned_domains:
+    - abbvie.com
+    - abbvienet.com           # AbbVie internal network
+    - abbviecareandme.ie      # AbbVie patient support program — Ireland
+    - allergan.com            # Allergan — acquired by AbbVie 2020 ($63B)
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Automotive
+# ---------------------------------------------------------------------------
+
+- label_id: ford-20260220
+  company_name: "Ford Motor Company"
+  seeds: ["ford.com"]
+  owned_domains:
+    - ford.com
+    - dealerconnection.com    # Ford dealer portal
+    - ford.com.cn
+    - ford.cn
+  not_owned: []
+
+- label_id: tesla-20260220
+  company_name: "Tesla"
+  seeds: ["tesla.com"]
+  owned_domains:
+    - tesla.com
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Energy — tests brand/subsidiary discovery (BP owns Castrol, Aral, Amoco; Chevron owns Texaco, Caltex)
+# ---------------------------------------------------------------------------
+
+- label_id: chevron-20260220
+  company_name: "Chevron"
+  seeds: ["chevron.com"]
+  owned_domains:
+    - chevron.com
+    - chevron.net
+    # Texaco (merged with Chevron 2001)
+    - texaco.com
+    - texacolubricants.com
+    - texacodelo.com
+    - chevrontexacorewards.com
+    # Lubricant brands
+    - chevronlubricants.com
+    - chevronlubricants.ca
+    - havoline.com            # Havoline motor oil brand
+    - havoline.com.mx
+    - chevrondelo.com         # Delo heavy-duty lubricant
+    - deloperformance.com
+    - chevronbaseoils.com
+    - chevronprocessoils.com
+    - chevronindustrial.com
+    - chevronisoclean.com
+    - chevronmarineproducts.com
+    # Caltex (Chevron brand in Asia-Pacific)
+    - caltexlubricants.com
+    # Oronite (chemical subsidiary)
+    - oronite.com
+    # Techron (fuel additive brand)
+    - chevronwithtechron.com
+    - techronworks.com
+    - techronclean.com
+    - techroncleans.com
+    # Joint ventures
+    - chevronalbakri.com
+    # Marketing
+    - delotractorrestorationcompetition.com
+  not_owned:
+    - hess.com                # Hess Corporation — separate company, appeared on shared cert
+
+- label_id: bp-20260220
+  company_name: "BP"
+  seeds: ["bp.com"]
+  owned_domains:
+    # Core BP
+    - bp.com
+    - bpglobal.com
+    - bpamerica.com
+    - bpenergy.com
+    - bp.com.au
+    - bp.de
+    - bp.pl
+    - bp.co.nz
+    - bp.co.za
+    - bp.com.cn
+    - bp.at
+    - bp.pt
+    - bp.nl
+    - bp.energy
+    - bp.jobs
+    # Amoco (merged with BP 1998)
+    - amoco.com
+    # Castrol (major BP subsidiary — lubricants)
+    - castrol.com
+    - castrol.co.uk
+    - castrol.de
+    - castrol.fr
+    - castrol.com.br
+    - castrol.com.cn
+    - castrol.com.au
+    - castrol.co.za
+    - castrol.co.in
+    - castrol.co.nz
+    - castrol.ca
+    - castrol.in
+    - castrol.it
+    - castrol.nl
+    - castrol.pl
+    - castrol.es
+    - castrol.at
+    - castrol.ch
+    - castrol.be
+    - castrol.cz
+    - castrol.no
+    - castrol.ro
+    - castrol.se
+    - castrol.eu
+    - castrol.us
+    - castrol.uk
+    - bpcastrol.com
+    - castrolusa.com
+    - castroloil.com
+    - castrolprofessional.com
+    - castrolmoto.com
+    - castrolracing.com
+    # Castrol marketing
+    - castrolfootball.com
+    - castrolfootkhana.com
+    - castrolfsrewards.com
+    - castroltradebarometer.com
+    - castrolenginewarranty.com
+    # Aral (German fuel station brand — BP subsidiary)
+    - aral.de
+    - aral.com
+    - aral-pulse.de
+    - aral-cardkomfort.de
+    # BP Pulse (EV charging)
+    - bppulse.com
+    - bppulse.co.uk
+    - bppulse.nl
+    - bppulse.pl
+    # Other BP brands
+    - airbp.com               # aviation fuels
+    - bplubricants.com
+    - bpbiofuels.com
+    - bprewards.co.za
+    - bpsa.co.za              # BP South Africa
+    - bpme.pl                 # BP Poland loyalty
+    - wildbeancafe.com        # BP convenience store brand
+    - xconvenience.com.au     # BP Australia convenience
+    - freebees.nl             # BP Netherlands loyalty
+    - mybpshares.com
+  not_owned: []
+
+# ---------------------------------------------------------------------------
+# Media
+# ---------------------------------------------------------------------------
+
+- label_id: disney-20260220
+  company_name: "Walt Disney"
+  seeds: ["disney.com"]
+  owned_domains:
+    - disney.com
+    - hulu.com                # Disney-owned streaming service (acquired 2019)
+    - shopdisney.com
+    - marvelstudios.com       # Marvel — acquired by Disney 2009
+    - frozenthemusical.com
+    - twdctech.com            # The Walt Disney Company Technology
+    - matterhorn.app          # Disney internal platform
+  not_owned: []
+
+- label_id: comcast-20260220
+  company_name: "Comcast"
+  seeds: ["comcast.com"]
+  owned_domains:
+    - comcast.com
+    - comcast.net
+    - xfinity.com             # Comcast consumer brand
+    - fandango.com            # movie ticketing — owned by Comcast/NBCUniversal
+    - masergy.com             # acquired by Comcast Business 2021
+    - usj.co.jp               # Universal Studios Japan — NBCUniversal/Comcast
+    - usjc.co.jp              # USJ Corp entity
+    - xcal.tv                 # Comcast internal platform
+    - ucdp.net                # Comcast internal infrastructure
+    - vipertv.net             # Comcast internal
+  not_owned: []

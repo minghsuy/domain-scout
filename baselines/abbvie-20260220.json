@@ -1,0 +1,1471 @@
+{
+  "entity": {
+    "company_name": "AbbVie",
+    "location": null,
+    "seed_domain": [
+      "abbvie.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "abbvie.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:abbvie.com",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8455846167,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8455875413,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479854878,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8493368675,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8501626074,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8501630043,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8534076956,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8534076922,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8568357814,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8612657288,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668855990,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8670286388,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8676080087,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697940043,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697979074,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714078411,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722395588,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc.",
+        "Cloudflare, Inc."
+      ],
+      "first_seen": "2023-01-20T00:00:00",
+      "last_seen": "2024-03-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "nothingiseverything.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487670310,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487820268,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8537062855,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nsclc-researchstudies.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488837284,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hidradenitissuppurativa.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8513224288,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8513253474,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "abbviecareduodopa.com.au",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8537453924,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8537471508,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8647344456,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-01-30T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "juvederm.co.il",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8544985364,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allergan.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8568315968,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-03-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "miestudiodetembloresencial.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8598348116,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-02-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "humirapartenaires.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8598473283,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8607850931,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-03-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pcyc.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8607241969,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "agnsnt.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614212996,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with abbvie.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-09T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "visaoemdia.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623869369,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653754639,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allerganmi.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623869369,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "masquebelleza.com.ar",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623869369,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "enxaquecacronica.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623869369,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653754639,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "alemdabeleza.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623869369,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653754639,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "creoninfo.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "treatmentsupport.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "durystasavingsprogram.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "linzess.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "lupronped.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "ubrelvyhcp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "vraylar.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "abbvieaccess.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "linzesshcp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "botoxcervicaldystonia.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "vraylarhcp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "refreshbrand.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "botoxone.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "ozurdex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "hcv.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AbbVie Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770655343,
+          "cert_org": "AbbVie Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AbbVie Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    },
+    {
+      "domain": "cloudflaressl.com",
+      "confidence": 0.8,
+      "sources": [
+        "ct_san_expansion:abbvie.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain abbvie.com",
+          "seed_domain": "abbvie.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cloudflare, Inc."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "abbvie.com"
+      ]
+    }
+  ],
+  "seed_domain_assessment": {
+    "abbvie.com": "confirmed"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T10:01:17.176184Z",
+    "elapsed_seconds": 44.81,
+    "domains_found": 32,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

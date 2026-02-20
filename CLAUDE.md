@@ -13,6 +13,7 @@ make test-integration  # hits real external services (crt.sh, RDAP, DNS)
 make lint          # ruff check + mypy --strict
 make format        # ruff fix + ruff format
 make check         # format + lint + test
+make eval          # run evaluation harness against baselines
 ```
 
 ## Tech Stack
@@ -35,6 +36,8 @@ domain_scout/
 ├── config.py           # ScoutConfig dataclass (all tunables + discovery profiles)
 ├── api.py              # FastAPI REST API (/scan, /diff, /health, /ready, /cache/*)
 ├── cache.py            # DuckDB TTL cache for CT/RDAP queries
+├── eval.py             # Evaluation harness: precision/recall against labeled ground truth
+├── eval_ground_truth.yaml  # Ground truth: owned_domains and not_owned lists per entity
 ├── _logging.py         # structlog configuration (WARNING+stderr defaults)
 ├── _metrics.py         # Prometheus metrics (optional, no-ops without prometheus-client)
 ├── sources/
@@ -57,6 +60,7 @@ domain_scout/
     ├── test_dns_utils.py    # DNS checker unit tests
     ├── test_rdap.py         # RDAP lookup parsing tests
     ├── test_config.py       # ScoutConfig validation and profiles
+    ├── test_eval.py         # Evaluation harness unit tests
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -87,6 +91,6 @@ domain_scout/
 
 ## Testing
 
-- **358 unit tests** + 3 integration tests (deselected by default)
+- **379 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
