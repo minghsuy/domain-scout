@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
@@ -10,7 +11,7 @@ from domain_scout.config import ScoutConfig
 from domain_scout.sources.rdap import RDAPLookup
 
 
-def _make_httpx_mock(json_payload: dict[str, object] | None = None, status_code: int = 200) -> AsyncMock:
+def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncMock:
     """Build a mock httpx.AsyncClient returning the given JSON response."""
     mock_response = MagicMock()
     mock_response.status_code = status_code
@@ -46,11 +47,8 @@ class TestRDAPLookup:
                     "roles": ["registrant"],
                     "vcardArray": [
                         "vcard",
-                        [
-                            ["version", {}, "text", "4.0"],
-                            ["org", {}, "text", "Example Corp"]
-                        ]
-                    ]
+                        [["version", {}, "text", "4.0"], ["org", {}, "text", "Example Corp"]],
+                    ],
                 }
             ]
         }
@@ -74,11 +72,8 @@ class TestRDAPLookup:
                     "roles": ["registrant"],
                     "vcardArray": [
                         "vcard",
-                        [
-                            ["version", {}, "text", "4.0"],
-                            ["fn", {}, "text", "John Doe"]
-                        ]
-                    ]
+                        [["version", {}, "text", "4.0"], ["fn", {}, "text", "John Doe"]],
+                    ],
                 }
             ]
         }
@@ -99,14 +94,11 @@ class TestRDAPLookup:
         mock_data = {
             "entities": [
                 {
-                    "roles": ["registrar"], # Not registrant
+                    "roles": ["registrar"],  # Not registrant
                     "vcardArray": [
                         "vcard",
-                        [
-                            ["version", {}, "text", "4.0"],
-                            ["org", {}, "text", "Top Level Corp"]
-                        ]
-                    ]
+                        [["version", {}, "text", "4.0"], ["org", {}, "text", "Top Level Corp"]],
+                    ],
                 }
             ]
         }
@@ -135,11 +127,11 @@ class TestRDAPLookup:
                                 "vcard",
                                 [
                                     ["version", {}, "text", "4.0"],
-                                    ["org", {}, "text", "Nested Corp"]
-                                ]
-                            ]
+                                    ["org", {}, "text", "Nested Corp"],
+                                ],
+                            ],
                         }
-                    ]
+                    ],
                 }
             ]
         }
@@ -180,9 +172,9 @@ class TestRDAPLookup:
                             ["version", {}, "text", "4.0"],
                             ["org", {}, "text", "Example Corp"],
                             ["fn", {}, "text", "John Doe"],
-                            ["adr", {}, "text", ["", "", "", "", "", "", "US"]]
-                        ]
-                    ]
+                            ["adr", {}, "text", ["", "", "", "", "", "", "US"]],
+                        ],
+                    ],
                 }
             ]
         }
@@ -216,63 +208,46 @@ class TestRDAPLookup:
         # Using class method directly since logic is stateless
 
         # Missing vcardArray
-        data_missing = {"entities": [{"roles": ["registrant"]}]}
+        data_missing: dict[str, object] = {"entities": [{"roles": ["registrant"]}]}
         assert RDAPLookup._extract_org(data_missing) is None
 
         # Malformed vcardArray (not a list)
-        data_malformed = {"entities": [{"roles": ["registrant"], "vcardArray": "invalid"}]}
+        data_malformed: dict[str, object] = {
+            "entities": [{"roles": ["registrant"], "vcardArray": "invalid"}]
+        }
         assert RDAPLookup._extract_org(data_malformed) is None
 
         # Malformed vcardArray (too short)
-        data_short = {"entities": [{"roles": ["registrant"], "vcardArray": ["vcard"]}]}
+        data_short: dict[str, object] = {
+            "entities": [{"roles": ["registrant"], "vcardArray": ["vcard"]}]
+        }
         assert RDAPLookup._extract_org(data_short) is None
 
     def test_extract_country_malformed_adr(self) -> None:
         """Test extraction of country with malformed address."""
         # Malformed adr (not a list)
-        data_malformed = {
+        data_malformed: dict[str, object] = {
             "entities": [
-                {
-                    "roles": ["registrant"],
-                    "vcardArray": [
-                        "vcard",
-                        [
-                            ["adr", {}, "text", "invalid"]
-                        ]
-                    ]
-                }
+                {"roles": ["registrant"], "vcardArray": ["vcard", [["adr", {}, "text", "invalid"]]]}
             ]
         }
         assert RDAPLookup._extract_country(data_malformed) is None
 
         # Malformed adr (list too short)
-        data_short = {
+        data_short: dict[str, object] = {
             "entities": [
-                {
-                    "roles": ["registrant"],
-                    "vcardArray": [
-                        "vcard",
-                        [
-                            ["adr", {}, "text", ["US"]]
-                        ]
-                    ]
-                }
+                {"roles": ["registrant"], "vcardArray": ["vcard", [["adr", {}, "text", ["US"]]]]}
             ]
         }
         assert RDAPLookup._extract_country(data_short) is None
 
     def test_extract_name_no_registrant(self) -> None:
         """Test extract_name when no registrant entity is found."""
-        data = {
+        data: dict[str, object] = {
             "entities": [
                 {
                     "roles": ["registrar"],
-                    "vcardArray": [
-                        "vcard",
-                        [
-                            ["fn", {}, "text", "Registrar Name"]
-                        ]
-                    ]
+                    "vcardArray": ["vcard", [["fn", {}, "text", "Registrar Name"]]],
                 }
             ]
         }

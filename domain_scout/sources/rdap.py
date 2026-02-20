@@ -90,7 +90,7 @@ class RDAPLookup:
             if not isinstance(entry, list) or len(entry) < 4:
                 continue
             if entry[0] == field:
-                val = entry[3]
+                val: object = entry[3]
                 if isinstance(val, str):
                     s = val.strip()
                     return s if s else None
