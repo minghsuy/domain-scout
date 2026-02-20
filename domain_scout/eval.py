@@ -155,8 +155,7 @@ def load_ground_truth(path: Path | None = None) -> list[GroundTruthEntry]:
         import yaml
     except ImportError:
         print(
-            "ERROR: pyyaml is required for the eval harness. "
-            "Install with: uv sync --all-groups",
+            "ERROR: pyyaml is required for the eval harness. Install with: uv sync --all-groups",
             file=sys.stderr,
         )
         sys.exit(1)
