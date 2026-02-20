@@ -1,0 +1,911 @@
+{
+  "entity": {
+    "company_name": "UnitedHealth Group",
+    "location": null,
+    "seed_domain": [
+      "uhg.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "optum.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812658000,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657912,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812714924,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812715046,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695329428,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695330183,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695439897,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695439877,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440247,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440242,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440253,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440187,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440205,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440218,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695777767,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695777585,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695901064,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695901443,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695914465,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695915332,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695921273,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695921886,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695934280,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695934643,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696332640,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696333110,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696342680,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696343324,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696347856,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696348258,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696350904,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696351240,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696358366,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696358466,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696364181,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696364520,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696369882,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696370485,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696373520,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696373506,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696380101,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696380275,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696385698,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696385977,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696562803,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696563806,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697262618,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697262570,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697301561,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697301840,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697749618,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697751386,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697946663,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697946934,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698004452,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698005266,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698121482,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698125620,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698176980,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698172990,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698188908,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698189822,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698207798,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698208836,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698253343,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with uhg.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "UnitedHealth Group Inc."
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "uhc.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440200,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695440188,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697070856,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697071628,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with uhg.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "UnitedHealth Group Inc."
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "uhg.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:uhg.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657878,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657975,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657914,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657960,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657948,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812657982,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812658046,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812658001,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812658089,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812715062,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812715013,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain uhg.com",
+          "seed_domain": "uhg.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "SALESFORCE.COM, INC.",
+        "UnitedHealth Group Inc."
+      ],
+      "first_seen": "2023-01-25T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "uhg.com"
+      ]
+    },
+    {
+      "domain": "provider.engineering",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695047967,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'UnitedHealth Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695049282,
+          "cert_org": "UnitedHealth Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "UnitedHealth Group Inc."
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {
+    "uhg.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T09:58:30.957522Z",
+    "elapsed_seconds": 40.34,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

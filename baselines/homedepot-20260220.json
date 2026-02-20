@@ -1,0 +1,1222 @@
+{
+  "entity": {
+    "company_name": "Home Depot",
+    "location": null,
+    "seed_domain": [
+      "homedepot.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "homedepot.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:homedepot.com",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487930869,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496441738,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8497606275,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8510467967,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8543901824,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8544660475,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8563221170,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8566709103,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588698232,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8597160353,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8598436042,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645589911,
+          "cert_org": "The Home Depot Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8646020128,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654451945,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8662309141,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668585504,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668995118,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8670747882,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697025238,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697036176,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697987729,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706015356,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706022379,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706034718,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8712797353,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714131061,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8723975838,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729474064,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730204737,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730368367,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761245958,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761910859,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769216312,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769227457,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770314577,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770334211,
+          "cert_org": "Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777757187,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780257234,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780465963,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8786697748,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787312690,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8793969360,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794832872,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794838413,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795994618,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819711747,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821034178,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836300429,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836301088,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8838600818,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8838973938,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8847724122,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8850321485,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856531807,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8872635852,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8873257520,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8873328584,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874038950,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875249760,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882020752,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882020626,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882796739,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8884296158,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8884314717,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8884359903,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8884386183,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885253128,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892671073,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895770431,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903291641,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904087033,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912498498,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912498493,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8914070597,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8914879906,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8915005668,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940785889,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940785797,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941336679,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942231005,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942256625,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8948562687,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8948562735,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949062639,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949321576,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949367043,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949537894,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949580675,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949845816,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950020048,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8958441225,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959364511,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959555661,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain homedepot.com",
+          "seed_domain": "homedepot.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Home Depot",
+        "SALESFORCE.COM, INC.",
+        "The Home Depot",
+        "The Home Depot Inc."
+      ],
+      "first_seen": "2023-01-23T00:00:00",
+      "last_seen": "2024-04-19T15:42:30",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "homedepot.com"
+      ]
+    },
+    {
+      "domain": "homedepot.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8567884794,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665653818,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942761449,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Home Depot of Canada Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Home Depot of Canada Inc."
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with homedepot.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Home Depot"
+      ],
+      "first_seen": "2023-02-03T19:31:18",
+      "last_seen": "2024-03-30T20:38:38",
+      "resolves": true,
+      "rdap_org": "Home Depot of Canada Inc.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "homedepot.com.mx",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8669687067,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697701936,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722466495,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8859502802,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8859510157,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875029724,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with homedepot.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Home Depot"
+      ],
+      "first_seen": "2023-02-16T18:32:45",
+      "last_seen": "2024-04-04T19:41:19",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "thdws.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'THE HOME DEPOT, INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8960724997,
+          "cert_org": "THE HOME DEPOT, INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with homedepot.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "THE HOME DEPOT, INC"
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "homedepotpro.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950150779,
+          "cert_org": "The Home Depot",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Home Depot"
+      ],
+      "first_seen": "2023-03-21T18:04:25",
+      "last_seen": "2024-04-11T18:04:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ediversifiedchem.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot Pro' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8655029336,
+          "cert_org": "The Home Depot Pro",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Home Depot Pro"
+      ],
+      "first_seen": "2023-02-14T20:41:31",
+      "last_seen": "2024-02-24T20:41:31",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "wilmar.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot Pro' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8761160516,
+          "cert_org": "The Home Depot Pro",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Home Depot Pro' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8761336669,
+          "cert_org": "The Home Depot Pro",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Home Depot Pro"
+      ],
+      "first_seen": "2023-02-27T19:50:47",
+      "last_seen": "2024-03-21T19:50:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {
+    "homedepot.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T09:53:24.350991Z",
+    "elapsed_seconds": 55.44,
+    "domains_found": 7,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

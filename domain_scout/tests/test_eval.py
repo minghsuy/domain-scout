@@ -289,7 +289,7 @@ class TestEvaluateBaseline:
 
         gt = load_ground_truth()
         report = evaluate_baseline(gt)
-        assert len(report.entities) == 3
+        assert len(report.entities) >= 3  # at least the original 3
 
         # walmart-seed1: all 17 are TPs, no FPs
         ws1 = next(e for e in report.entities if e.label_id == "walmart-seed1")

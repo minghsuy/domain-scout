@@ -1,0 +1,2222 @@
+{
+  "entity": {
+    "company_name": "Johnson & Johnson",
+    "location": null,
+    "seed_domain": [
+      "jnj.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "novyiden.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Johnson LLC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492364135,
+          "cert_org": "Johnson & Johnson LLC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jnj.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson & Johnson LLC"
+      ],
+      "first_seen": "2023-01-25T06:39:28",
+      "last_seen": "2024-02-26T06:39:27",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "noviyden.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Johnson LLC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492364135,
+          "cert_org": "Johnson & Johnson LLC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jnj.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson & Johnson LLC"
+      ],
+      "first_seen": "2023-01-25T06:39:28",
+      "last_seen": "2024-02-26T06:39:27",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sourceviewanalytics.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693581827,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693582687,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693582994,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584678,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584714,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584690,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jnj.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson and Johnson"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "depuysynthesmatch.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693581813,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693582272,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693583004,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584528,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584706,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586918,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jnj.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson and Johnson"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jjcustomerconnect.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695104413,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695104699,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695151972,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695154026,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jnj.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson and Johnson"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jnj.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:jnj.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812737625,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812738166,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693583822,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693583852,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693584838,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693585852,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693585999,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586465,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586853,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586829,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586921,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586929,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693586938,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587303,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587198,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587350,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587468,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587525,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587481,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587775,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587766,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587741,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587795,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8693587704,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8694409344,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8694409301,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695558657,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695558875,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696075003,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696074982,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696075006,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696075024,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain jnj.com",
+          "seed_domain": "jnj.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696256044,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696256562,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696766346,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696767595,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697091878,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697093376,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697319067,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697319073,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697367698,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697368433,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697372051,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697373662,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697378489,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697379132,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697379148,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697379168,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697421336,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697421572,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697596858,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697597003,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697597074,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697597273,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697597318,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697597366,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697602782,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697603553,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698473204,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698474003,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862513,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862663,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862752,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862732,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862748,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862740,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862944,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862852,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862894,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862864,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700863080,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700862998,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700863186,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700863137,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700878933,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700879097,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700879168,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700879160,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700885994,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8700886905,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702792587,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702792767,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703712828,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703712979,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703954600,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703956124,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704513591,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704514555,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704530815,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704531558,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551565,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551583,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551630,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551799,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551893,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704551844,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704552300,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704552917,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704552922,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704553904,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704553421,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704553888,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704553851,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554007,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554010,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554023,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554284,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554321,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554354,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554364,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554406,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson and Johnson' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704554445,
+          "cert_org": "Johnson and Johnson",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cloudflare, Inc.",
+        "Johnson and Johnson"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "jnj.com"
+      ]
+    },
+    {
+      "domain": "adt.com.br",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8505016082,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-01-26T00:00:00",
+      "last_seen": "2024-02-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "johnsoncontrols.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8505026528,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8505034896,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8505054757,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8579512508,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8606217278,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-01-26T00:00:00",
+      "last_seen": "2024-03-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myenterprisemanagement.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8534767445,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-01-30T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jwu.edu",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543874984,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543879318,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8660887389,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8661097593,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8661104165,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson & Wales University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8661122734,
+          "cert_org": "Johnson & Wales University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson & Wales University"
+      ],
+      "first_seen": "2023-01-31T14:53:24",
+      "last_seen": "2024-03-08T15:43:48",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "steptoe.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Steptoe & Johnson LLP' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8544002268,
+          "cert_org": "Steptoe & Johnson LLP",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Steptoe & Johnson LLP' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8573379759,
+          "cert_org": "Steptoe & Johnson LLP",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Steptoe & Johnson LLP"
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-03-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "verasyscontrols.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8549376783,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jci.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8551158112,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8696093432,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8696093497,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sensormatic.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8556294418,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8556299887,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jccc.edu",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson County Community College' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8566027434,
+          "cert_org": "Johnson County Community College",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson County Community College' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8566275589,
+          "cert_org": "Johnson County Community College",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson County Community College' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8590462121,
+          "cert_org": "Johnson County Community College",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson County Community College"
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aimportal.co.uk",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8596731935,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-03-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "enviro-tec.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8606217278,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ruskin.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8606837295,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-02-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "teradisk.net",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8612319753,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8612319865,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-09T00:00:00",
+      "last_seen": "2024-03-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "axinter.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Axel Johnson International AB' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8620622077,
+          "cert_org": "Axel Johnson International AB",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Axel Johnson International AB' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8673907386,
+          "cert_org": "Axel Johnson International AB",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Axel Johnson International AB"
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jcifederal.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls Federal Systems, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8624533526,
+          "cert_org": "Johnson Controls Federal Systems, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls Federal Systems, Inc."
+      ],
+      "first_seen": "2023-02-10T21:25:43",
+      "last_seen": "2024-02-20T21:25:42",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hitachiclimat-erpactive.fr",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8644293894,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hitachiaircon-erpactive.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8644294139,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "adt.com.es",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8651889856,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "johnsonu.edu",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8653777608,
+          "cert_org": "Johnson University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson University' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8653797818,
+          "cert_org": "Johnson University",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson University"
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "solutionnavigator.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8663817804,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-16T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hvacnavigator.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Controls, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8663821860,
+          "cert_org": "Johnson Controls, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Controls, Inc."
+      ],
+      "first_seen": "2023-02-16T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mutualdistributing.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Brothers Liquor Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8677599487,
+          "cert_org": "Johnson Brothers Liquor Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Brothers Liquor Company"
+      ],
+      "first_seen": "2023-02-17T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "johnsonmatthey.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Johnson Matthey PLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8694529068,
+          "cert_org": "Johnson Matthey PLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Johnson Matthey PLC"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cloudflaressl.com",
+      "confidence": 0.8,
+      "sources": [
+        "ct_san_expansion:jnj.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain jnj.com",
+          "seed_domain": "jnj.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cloudflare, Inc."
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "jnj.com"
+      ]
+    }
+  ],
+  "seed_domain_assessment": {
+    "jnj.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T10:00:32.367197Z",
+    "elapsed_seconds": 53.6,
+    "domains_found": 30,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out",
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

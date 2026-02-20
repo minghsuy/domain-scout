@@ -1,0 +1,983 @@
+{
+  "entity": {
+    "company_name": "Chevron",
+    "location": null,
+    "seed_domain": [
+      "chevron.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "chevron.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:chevron.com",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20135064458,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812677263,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Chevron Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8457518516,
+          "cert_org": "Chevron Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551616154,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645136113,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Chevron Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8646569341,
+          "cert_org": "Chevron Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8694220643,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8694518240,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8695154856,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696254257,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8696947235,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697036038,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697264805,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697264696,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697384226,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697503861,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697510069,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698050893,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698117519,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8699637302,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8699841147,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701039723,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701365854,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701726513,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702003820,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702338845,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702388816,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703262979,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8703610292,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704804665,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704915074,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705185376,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705787852,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705887444,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705887992,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705894907,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707270228,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8708568193,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710624686,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710650108,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710658571,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710658719,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710663477,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710663583,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710671663,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710678113,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8711322094,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8712175247,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8712386727,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8713881985,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714744645,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812822288,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715626239,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715681816,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715730773,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716169638,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716486032,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716486011,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719528573,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain chevron.com",
+          "seed_domain": "chevron.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719561209,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721967035,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722822634,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722825536,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722833927,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8723635675,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8726560993,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727958278,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728600265,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728702293,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729802208,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729971551,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730324400,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730430608,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732000857,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732265195,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732438071,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CHEVRON CORPORATION",
+        "Chevron Corporation",
+        "Microsoft Corporation"
+      ],
+      "first_seen": "2023-01-21T00:00:00",
+      "last_seen": "2024-12-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "chevron.com"
+      ]
+    },
+    {
+      "domain": "chevroncontechron.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:chevron.com",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812677263,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain chevron.com",
+          "seed_domain": "chevron.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with chevron.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CHEVRON CORPORATION"
+      ],
+      "first_seen": "2023-07-03T00:00:00",
+      "last_seen": "2024-07-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "chevron.com"
+      ]
+    },
+    {
+      "domain": "caltex.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719246558,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719297757,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with chevron.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CHEVRON CORPORATION"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nblenergy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Chevron Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8453705269,
+          "cert_org": "Chevron Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Chevron Corporation"
+      ],
+      "first_seen": "2023-01-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tengizchevroil.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "ct_san_expansion:chevron.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654531072,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698050893,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706895256,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CHEVRON CORPORATION' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8711648835,
+          "cert_org": "CHEVRON CORPORATION",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain chevron.com",
+          "seed_domain": "chevron.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CHEVRON CORPORATION"
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "chevron.com"
+      ]
+    }
+  ],
+  "seed_domain_assessment": {
+    "chevron.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T10:03:31.029566Z",
+    "elapsed_seconds": 51.7,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out",
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

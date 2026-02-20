@@ -1,0 +1,992 @@
+{
+  "entity": {
+    "company_name": "Comcast",
+    "location": null,
+    "seed_domain": [
+      "comcast.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "comcast.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:comcast.com",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697889056,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697889297,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697896329,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697897056,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697898625,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697901494,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697902035,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697902096,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697904827,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697905642,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697905920,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697907052,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697907777,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697908519,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697910855,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697911242,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697941333,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697941857,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697954693,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697956156,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960185,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960515,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960619,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697962474,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697965680,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697966127,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698229270,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698229825,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698229932,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698230297,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698231110,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698233982,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698235201,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698235561,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698235542,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698240238,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698240097,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698240386,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698241270,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698241498,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698246105,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698246092,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698246882,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698247218,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266032,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266150,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266238,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266461,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266449,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266602,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698266942,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698267280,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698273624,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698273787,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain comcast.com",
+          "seed_domain": "comcast.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Comcast Corporation"
+      ],
+      "first_seen": "2023-01-21T00:00:00",
+      "last_seen": "2024-02-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "comcast.com"
+      ]
+    },
+    {
+      "domain": "comcast.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697911223,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697912695,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697935440,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697936252,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697936568,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697936824,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697936734,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697939497,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697956291,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697956467,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960185,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960515,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697960619,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697962474,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697963458,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697965680,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697965713,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697965930,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697965995,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697966182,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697966127,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697966386,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697966369,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697967756,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698247238,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698251872,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with comcast.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Comcast Corporation"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "comcastspectacor.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697911113,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697911311,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Comcast Corporation"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "masergy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697924659,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697926094,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697931295,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697932603,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697934435,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697934554,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697935290,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Comcast Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697936444,
+          "cert_org": "Comcast Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Comcast Corporation"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {
+    "comcast.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T10:06:39.982111Z",
+    "elapsed_seconds": 68.08,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

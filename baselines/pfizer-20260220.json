@@ -1,0 +1,366 @@
+{
+  "entity": {
+    "company_name": "Pfizer",
+    "location": null,
+    "seed_domain": [
+      "pfizer.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "pfizerpapconnect.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479513069,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with pfizer.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pfizer, Inc"
+      ],
+      "first_seen": "2023-01-23T17:23:16",
+      "last_seen": "2024-02-22T17:23:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pfizer.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "ct_seed_subdomain:pfizer.com",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496744901,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653899451,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698281110,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698281207,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705966969,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714627072,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760006613,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761245865,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761267979,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770210671,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8772935759,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8773385842,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_seed_subdomain",
+          "description": "Subdomain of seed domain pfizer.com",
+          "seed_domain": "pfizer.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8781845637,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8782438817,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cloudflare, Inc.",
+        "Pfizer Incorporated",
+        "Pfizer, Inc"
+      ],
+      "first_seen": "2023-01-23T13:14:31",
+      "last_seen": "2024-04-03T16:12:07",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": [
+        "pfizer.com"
+      ]
+    },
+    {
+      "domain": "eucrisa4youaccess.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770210595,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with pfizer.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pfizer, Inc"
+      ],
+      "first_seen": "2023-02-28T18:14:56",
+      "last_seen": "2024-03-28T18:14:55",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pfizeracademy.ph",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pfizer, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653707481,
+          "cert_org": "Pfizer, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pfizer, Inc"
+      ],
+      "first_seen": "2023-02-14T16:31:56",
+      "last_seen": "2024-03-13T16:31:56",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cloudflaressl.com",
+      "confidence": 0.8,
+      "sources": [
+        "ct_san_expansion:pfizer.com"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_san_expansion",
+          "description": "Found on same cert as seed domain pfizer.com",
+          "seed_domain": "pfizer.com",
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cloudflare, Inc."
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-02-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": [
+        "pfizer.com"
+      ]
+    }
+  ],
+  "seed_domain_assessment": {
+    "pfizer.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T09:59:00.247940Z",
+    "elapsed_seconds": 29.29,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

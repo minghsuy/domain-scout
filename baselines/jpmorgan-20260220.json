@@ -1,0 +1,1030 @@
+{
+  "entity": {
+    "company_name": "JPMorgan Chase",
+    "location": null,
+    "seed_domain": [
+      "jpmorgan.com"
+    ],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "jpmorganchase.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702840247,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702847002,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8704811692,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-21T06:05:45",
+      "last_seen": "2024-02-21T12:05:36",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jpmchase.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706780264,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121386,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121393,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121447,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714481843,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714481989,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714482126,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714482306,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714482363,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714484802,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714485143,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714485202,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716071453,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-21T17:56:23",
+      "last_seen": "2024-02-22T21:20:42",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "onyxcoinsystems.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706956232,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-21T18:31:58",
+      "last_seen": "2024-02-21T18:31:58",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chasepaymentech.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707299097,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707299002,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707303093,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707303113,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-21T19:42:01",
+      "last_seen": "2024-02-21T19:42:41",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chasebonus.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8708146886,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-21T22:21:12",
+      "last_seen": "2024-02-21T22:21:12",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chase.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709087542,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709094718,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710620013,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710663451,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710726556,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710749898,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710757784,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710781024,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710784000,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710783933,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710784006,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710783874,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716071453,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717817434,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717825650,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717825590,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717825685,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717825545,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717825672,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717974635,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717981211,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717981239,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719825200,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719828724,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719838006,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8720198683,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8720204414,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with jpmorgan.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-22T01:10:34",
+      "last_seen": "2024-02-23T09:24:58",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jpmorgan.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812787269,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812805325,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8697642863,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701215921,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701223128,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8701223147,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812814888,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812814931,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702418166,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702422791,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702643041,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702647811,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702647821,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702692542,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702698441,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702698622,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702792058,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702796869,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702796880,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702796893,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702798999,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705098214,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705098430,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121386,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121393,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709121447,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709151608,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709151614,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8709151565,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710808357,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710813127,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812822294,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719825200,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719828724,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'JPMorgan Chase and Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719838006,
+          "cert_org": "JPMorgan Chase and Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "JPMorgan Chase and Co."
+      ],
+      "first_seen": "2023-02-20T13:23:22",
+      "last_seen": "2024-07-02T08:27:18",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": true,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {
+    "jpmorgan.com": "timeout"
+  },
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.4.0",
+    "timestamp": "2026-02-20T09:54:08.106576Z",
+    "elapsed_seconds": 43.75,
+    "domains_found": 7,
+    "timed_out": false,
+    "seed_count": 1,
+    "errors": [
+      "Seed validation timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}
