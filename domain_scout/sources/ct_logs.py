@@ -104,7 +104,7 @@ def _extract_org_from_subject(subject: str) -> str | None:
             if val.startswith('"') and val.endswith('"'):
                 inner = val[1:-1]
                 # In quoted string, \" is literal ", \\ is literal \
-                return inner.replace(r'\"', '"').replace(r"\\", "\\")
+                return inner.replace(r"\"", '"').replace(r"\\", "\\")
 
             # Unquoted: unescape \, and \\
             return val.replace(r"\,", ",").replace(r"\\", "\\")
@@ -112,7 +112,7 @@ def _extract_org_from_subject(subject: str) -> str | None:
     return None
 
 
-def _extract_base_domain(name: str) -> str | None:
+def extract_base_domain(name: str) -> str | None:
     """Extract the registrable base domain from a DNS name.
 
     Handles wildcards and subdomains by keeping the last two labels
@@ -132,7 +132,7 @@ def _extract_base_domain(name: str) -> str | None:
     return ".".join(parts[-2:])
 
 
-def _is_valid_domain(name: str) -> bool:
+def is_valid_domain(name: str) -> bool:
     """Reject obviously invalid entries."""
     name = name.strip().lower()
     if not name or name == "*":
@@ -310,7 +310,7 @@ class CTLogSource:
                     "san_dns_names": [],
                 }
                 san_sets[cert_id] = set()
-            if san and _is_valid_domain(san):
+            if san and is_valid_domain(san):
                 san_sets[cert_id].add(san)
 
         for cid, cert in certs.items():
@@ -366,7 +366,7 @@ class CTLogSource:
             name_value = entry.get("name_value", "")
             for name in name_value.split("\n"):
                 name = name.strip()
-                if name and _is_valid_domain(name):
+                if name and is_valid_domain(name):
                     san_sets[cert_id].add(name)
 
         for cid, cert in certs.items():
@@ -427,13 +427,3 @@ class CTLogSource:
                 json_error=str(exc),
             )
             return []
-
-
-def extract_base_domain(name: str) -> str | None:
-    """Public wrapper for base domain extraction."""
-    return _extract_base_domain(name)
-
-
-def is_valid_domain(name: str) -> bool:
-    """Public wrapper for domain validation."""
-    return _is_valid_domain(name)
