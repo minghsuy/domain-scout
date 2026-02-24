@@ -37,7 +37,7 @@ _SCHEMA = pa.schema(
 
 def _write_test_parquet(path: Path, rows: list[dict[str, object]]) -> None:
     """Write test data to a parquet file."""
-    arrays = {name: [] for name in _SCHEMA.names}
+    arrays: dict[str, list[object]] = {name: [] for name in _SCHEMA.names}
     for row in rows:
         for name in _SCHEMA.names:
             arrays[name].append(row.get(name))
@@ -204,9 +204,10 @@ class TestSearchByOrg:
     async def test_san_reconstruction(self, source: LocalParquetSource) -> None:
         results = await source.search_by_org("Apple Inc.")
         # Find the cert with fingerprint aaa111 (has apple.com + icloud.com)
-        multi_san = [r for r in results if len(r["san_dns_names"]) > 1]
+        sans_lists = [r["san_dns_names"] for r in results]
+        multi_san = [s for s in sans_lists if isinstance(s, list) and len(s) > 1]
         assert len(multi_san) == 1
-        assert set(multi_san[0]["san_dns_names"]) == {"apple.com", "icloud.com"}
+        assert set(multi_san[0]) == {"apple.com", "icloud.com"}
 
     @pytest.mark.asyncio()
     async def test_fuzzy_match(self, source: LocalParquetSource) -> None:
@@ -238,7 +239,9 @@ class TestSearchByOrg:
         assert "not_after" in rec
         assert "san_dns_names" in rec
         assert rec["org_name"] == "Microsoft Corporation"
-        assert "microsoft.com" in rec["san_dns_names"]
+        sans = rec["san_dns_names"]
+        assert isinstance(sans, list)
+        assert "microsoft.com" in sans
 
 
 class TestSearchByDomain:
@@ -253,7 +256,11 @@ class TestSearchByDomain:
     async def test_suffix_match(self, source: LocalParquetSource) -> None:
         # store.apple.com should match when searching for apple.com via LIKE %.apple.com
         results = await source.search_by_domain("apple.com")
-        all_sans = {s for r in results for s in r["san_dns_names"]}
+        all_sans: set[str] = set()
+        for r in results:
+            sans = r["san_dns_names"]
+            if isinstance(sans, list):
+                all_sans.update(sans)
         assert "store.apple.com" in all_sans
 
     @pytest.mark.asyncio()
