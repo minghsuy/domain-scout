@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from typing import Literal
 
 ProfileName = Literal["broad", "balanced", "strict"]
+LocalMode = Literal["disabled", "local_only", "local_first"]
 
 _PROFILES: dict[str, dict[str, object]] = {
     "broad": {
@@ -84,7 +85,7 @@ class ScoutConfig:
 
     # --- Local parquet warehouse ---
     warehouse_path: str | None = None
-    local_mode: str = "disabled"  # "disabled" | "local_only" | "local_first"
+    local_mode: LocalMode = "disabled"
     local_fuzzy_threshold: float = 65.0
     local_max_fuzzy_matches: int = 10
 

@@ -113,6 +113,36 @@ def _make_warehouse(tmp_path: Path) -> Path:
                 "first_seen": datetime(2024, 2, 1, tzinfo=UTC),
                 "log_source": "test",
             },
+            {
+                "org_raw": "Apple Inc.",
+                "domain": "store.apple.com",
+                "issuer_org": "DigiCert",
+                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+                "fingerprint": "aaa333",
+                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+                "log_source": "test",
+            },
+            {
+                "org_raw": "",
+                "domain": "empty-org.example.com",
+                "issuer_org": "Let's Encrypt",
+                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+                "fingerprint": "ddd111",
+                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+                "log_source": "test",
+            },
+            {
+                "org_raw": None,
+                "domain": "null-org.example.com",
+                "issuer_org": "Let's Encrypt",
+                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+                "fingerprint": "eee111",
+                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+                "log_source": "test",
+            },
         ],
     )
     return warehouse
@@ -156,17 +186,19 @@ class TestLocalParquetInit:
             LocalParquetSource(config)
 
     def test_loads_org_index(self, source: LocalParquetSource) -> None:
-        assert len(source._org_index) == 3  # Apple, Microsoft, Applebee's
+        # Apple, Microsoft, Applebee's — empty string and None excluded
+        assert len(source._org_index) == 3
+        assert "" not in source._org_index
 
 
 class TestSearchByOrg:
     @pytest.mark.asyncio()
     async def test_exact_match(self, source: LocalParquetSource) -> None:
         results = await source.search_by_org("Apple Inc.")
-        assert len(results) >= 2
-        # Should find at least both Apple certs (aaa111, aaa222)
+        assert len(results) >= 3
+        # Should find all three Apple certs (aaa111, aaa222, aaa333)
         apple_results = [r for r in results if r["org_name"] == "Apple Inc."]
-        assert len(apple_results) == 2
+        assert len(apple_results) == 3
 
     @pytest.mark.asyncio()
     async def test_san_reconstruction(self, source: LocalParquetSource) -> None:
@@ -213,16 +245,16 @@ class TestSearchByDomain:
     @pytest.mark.asyncio()
     async def test_exact_domain(self, source: LocalParquetSource) -> None:
         results = await source.search_by_domain("apple.com")
-        assert len(results) >= 1
-        # Both certs should be found (aaa111 and aaa222 have apple.com)
+        # aaa111 (apple.com+icloud.com), aaa222 (apple.com), aaa333 (store.apple.com via suffix)
         cert_ids = {r["cert_id"] for r in results}
-        assert len(cert_ids) == 2
+        assert len(cert_ids) == 3
 
     @pytest.mark.asyncio()
     async def test_suffix_match(self, source: LocalParquetSource) -> None:
-        # If we had "sub.apple.com", this would match via suffix
+        # store.apple.com should match when searching for apple.com via LIKE %.apple.com
         results = await source.search_by_domain("apple.com")
-        assert len(results) >= 1
+        all_sans = {s for r in results for s in r["san_dns_names"]}
+        assert "store.apple.com" in all_sans
 
     @pytest.mark.asyncio()
     async def test_no_match(self, source: LocalParquetSource) -> None:
@@ -280,3 +312,23 @@ class TestHybridCTSource:
         result = await hybrid.get_cert_org(123)
         assert result == "Test Org"
         remote.get_cert_org.assert_called_once_with(123)
+
+
+class TestEdgeCases:
+    @pytest.mark.asyncio()
+    async def test_empty_org_excluded_from_results(self, source: LocalParquetSource) -> None:
+        """Empty string org_raw should not appear in org_index or search results."""
+        results = await source.search_by_org("")
+        assert results == []
+
+    @pytest.mark.asyncio()
+    async def test_null_org_excluded(self, source: LocalParquetSource) -> None:
+        """Null org_raw rows should not appear in org_index."""
+        # Search for the domain that has null org — it exists but shouldn't match org search
+        results = await source.search_by_domain("null-org.example.com")
+        assert len(results) == 1
+        assert results[0]["org_name"] is None
+
+    def test_close(self, source: LocalParquetSource) -> None:
+        """close() should not raise."""
+        source.close()

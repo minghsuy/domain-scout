@@ -9,9 +9,8 @@ from typing import TYPE_CHECKING
 
 import structlog
 
-from domain_scout.config import ScoutConfig  # noqa: TC001
-
 if TYPE_CHECKING:
+    from domain_scout.config import ScoutConfig
     from domain_scout.sources.ct_logs import CTLogSource
 
 log = structlog.get_logger()
@@ -57,7 +56,7 @@ class LocalParquetSource:
         if not wpath.is_dir():
             raise FileNotFoundError(f"Warehouse directory not found: {wpath}")
 
-        files = sorted(wpath.glob("**/*.parquet"))
+        files = list(wpath.glob("**/*.parquet"))
         if not files:
             raise FileNotFoundError(f"No parquet files in: {wpath}")
 
@@ -70,7 +69,7 @@ class LocalParquetSource:
             "WHERE org_raw IS NOT NULL",
             [self._parquet_glob],
         ).fetchall()
-        self._org_index: list[str] = [r[0] for r in result]
+        self._org_index: list[str] = [r[0] for r in result if r[0]]
         log.info(
             "local_parquet.loaded",
             parquet_files=len(files),
@@ -102,12 +101,12 @@ class LocalParquetSource:
 
         placeholders = ", ".join(["?"] * len(matched_names))
         sql = (
-            f"SELECT fingerprint, org_raw, "
-            f"MIN(not_before) AS not_before, MAX(not_after) AS not_after, "
-            f"LIST(DISTINCT domain ORDER BY domain) AS san_dns_names "
-            f"FROM read_parquet(?, union_by_name=true) "
+            "SELECT fingerprint, org_raw, "
+            "MIN(not_before) AS not_before, MAX(not_after) AS not_after, "
+            "LIST(DISTINCT domain ORDER BY domain) AS san_dns_names "
+            "FROM read_parquet(?, union_by_name=true) "
             f"WHERE org_raw IN ({placeholders}) "
-            f"GROUP BY fingerprint, org_raw"
+            "GROUP BY fingerprint, org_raw"
         )
         params = [self._parquet_glob, *matched_names]
         result = self._conn.execute(sql, params)
@@ -134,6 +133,12 @@ class LocalParquetSource:
     async def get_cert_org(self, cert_id: int) -> str | None:
         """Not applicable for local parquet (no cert_id concept)."""
         return None
+
+    def close(self) -> None:
+        """Close the DuckDB connection."""
+        if self._conn is not None:
+            self._conn.close()
+            log.debug("local_parquet.closed")
 
 
 class HybridCTSource:

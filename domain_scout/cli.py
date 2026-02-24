@@ -77,13 +77,10 @@ def scout(
     if local and local_first:
         typer.echo("Error: --local and --local-first are mutually exclusive.", err=True)
         raise typer.Exit(1)
-    if local:
-        overrides["local_mode"] = "local_only"
-    elif local_first:
-        overrides["local_mode"] = "local_first"
     if local or local_first:
         import os
 
+        overrides["local_mode"] = "local_only" if local else "local_first"
         overrides["warehouse_path"] = warehouse_path or os.environ.get(
             "DOMAIN_SCOUT_WAREHOUSE_PATH",
             str(Path.home() / ".local" / "share" / "ct-warehouse"),
