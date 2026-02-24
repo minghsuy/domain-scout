@@ -51,15 +51,32 @@ class Scout:
         cache: DuckDBCache | None = None,
     ) -> None:
         self.config = config or ScoutConfig()
-        ct_inner = CTLogSource(self.config)
         rdap_inner = RDAPLookup(self.config)
-        if cache is not None:
-            from domain_scout.cache import CachedCTLogSource, CachedRDAPLookup
 
-            self._ct: CTSource | CTLogSource = CachedCTLogSource(ct_inner, cache)
+        if self.config.local_mode == "local_only":
+            from domain_scout.sources.local_parquet import LocalParquetSource
+
+            self._ct: CTSource | CTLogSource = LocalParquetSource(self.config)
+        elif self.config.local_mode == "local_first":
+            from domain_scout.sources.local_parquet import HybridCTSource, LocalParquetSource
+
+            local = LocalParquetSource(self.config)
+            remote = CTLogSource(self.config)
+            self._ct = HybridCTSource(local, remote)
+        else:
+            ct_inner = CTLogSource(self.config)
+            if cache is not None:
+                from domain_scout.cache import CachedCTLogSource
+
+                self._ct = CachedCTLogSource(ct_inner, cache)
+            else:
+                self._ct = ct_inner
+
+        if cache is not None:
+            from domain_scout.cache import CachedRDAPLookup
+
             self._rdap: RDAPSource | RDAPLookup = CachedRDAPLookup(rdap_inner, cache)
         else:
-            self._ct = ct_inner
             self._rdap = rdap_inner
         self._dns = DNSChecker(self.config)
 
