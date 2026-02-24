@@ -47,6 +47,10 @@ class ScanRequest(BaseModel):
         default=None, ge=5, le=300, description="Override total_timeout (seconds)"
     )
     deep: bool = Field(default=False, description="Enable GeoDNS deep mode")
+    local: bool = Field(default=False, description="Use local parquet warehouse only")
+    warehouse_path: str | None = Field(
+        default=None, description="Path to parquet warehouse directory"
+    )
 
 
 class DiffRequest(BaseModel):
@@ -121,6 +125,10 @@ def create_app(
             overrides["total_timeout"] = min(req.timeout, _MAX_SCAN_TIMEOUT)
         if req.deep:
             overrides["deep_mode"] = True
+        if req.local:
+            overrides["local_mode"] = "local_only"
+            if req.warehouse_path:
+                overrides["warehouse_path"] = req.warehouse_path
 
         try:
             if req.profile:

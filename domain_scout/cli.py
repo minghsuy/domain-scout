@@ -52,6 +52,15 @@ def scout(
         bool, typer.Option("--cache/--no-cache", help="Enable query cache")
     ] = False,
     cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
+    local: Annotated[
+        bool, typer.Option("--local", help="Use local parquet warehouse only")
+    ] = False,
+    local_first: Annotated[
+        bool, typer.Option("--local-first", help="Try local warehouse, fall back to crt.sh")
+    ] = False,
+    warehouse_path: Annotated[
+        str | None, typer.Option("--warehouse-path", help="Path to parquet warehouse directory")
+    ] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
@@ -62,10 +71,29 @@ def scout(
         timeout = max(timeout, 180)
     if len(seeds) >= 3:
         timeout = max(timeout, 150)
-    if profile:
-        config = ScoutConfig.from_profile(profile, total_timeout=timeout, deep_mode=deep)  # type: ignore[arg-type]
-    else:
-        config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
+
+    # Resolve local mode and warehouse path
+    overrides: dict[str, object] = {"total_timeout": timeout, "deep_mode": deep}
+    if local and local_first:
+        typer.echo("Error: --local and --local-first are mutually exclusive.", err=True)
+        raise typer.Exit(1)
+    if local:
+        overrides["local_mode"] = "local_only"
+    elif local_first:
+        overrides["local_mode"] = "local_first"
+    if local or local_first:
+        import os
+
+        overrides["warehouse_path"] = warehouse_path or os.environ.get(
+            "DOMAIN_SCOUT_WAREHOUSE_PATH",
+            str(Path.home() / ".local" / "share" / "ct-warehouse"),
+        )
+
+    config = (
+        ScoutConfig.from_profile(profile, **overrides)  # type: ignore[arg-type]
+        if profile
+        else ScoutConfig(**overrides)  # type: ignore[arg-type]
+    )
 
     cache = None
     if use_cache:
