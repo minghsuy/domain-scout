@@ -95,9 +95,12 @@ def compute_metrics(
     for k in k_values:
         top_k = ranked_domains[:k]
 
-        # Precision: |top_k ∩ owned| / k  (conservative — unknown != relevant)
+        # Precision: |top_k ∩ owned| / min(k, discovered)
+        # Adaptive denominator: don't penalize entities that discovered fewer
+        # than k domains.  Unknown domains in top_k still count against.
         hits = sum(1 for d in top_k if d in owned)
-        precision = hits / k if k > 0 else 0.0
+        denom = min(k, len(ranked_domains)) if ranked_domains else 0
+        precision = hits / denom if denom > 0 else 0.0
 
         # Recall: |top_k ∩ owned| / |owned|
         recall = hits / len(owned) if owned else 0.0
