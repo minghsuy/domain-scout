@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.scout import _filter_subsidiaries, load_subsidiary_map
+from domain_scout.scout import Scout, _DomainAccum, _filter_subsidiaries, load_subsidiary_map
 
 # ---------------------------------------------------------------------------
 # load_subsidiary_map tests
@@ -67,6 +67,13 @@ class TestLoadSubsidiaryMap:
         # Both normalize to the same thing — should be deduped
         assert len(result[key]) == 1
 
+    def test_malformed_csv_raises(self, tmp_path: Path) -> None:
+        """CSV missing required columns raises KeyError."""
+        csv = tmp_path / "bad.csv"
+        csv.write_text("ticker,name\nXYZ,Acme\n")
+        with pytest.raises(KeyError):
+            load_subsidiary_map(str(csv))
+
 
 # ---------------------------------------------------------------------------
 # _filter_subsidiaries tests
@@ -116,37 +123,27 @@ class TestFilterSubsidiaries:
 
 
 class TestMatchSubsidiaries:
-    def _make_scout_with_subs(self, subs_map: dict[str, list[str]]) -> object:
+    @staticmethod
+    def _make_scout_with_subs(subs_map: dict[str, list[str]]) -> Scout:
         """Create a Scout with pre-loaded subsidiary map (no CSV needed)."""
-        from domain_scout.scout import Scout
-
         with patch.object(Scout, "__init__", lambda self: None):
             s = Scout.__new__(Scout)
             s._subsidiaries = subs_map
             return s
 
     def test_exact_match(self) -> None:
-        from domain_scout.scout import Scout
-
         s = self._make_scout_with_subs({"3m": ["Meguiar's Inc.", "Scott Technologies"]})
-        assert isinstance(s, Scout)
         result = s._match_subsidiaries("3M Co")
         assert "Meguiar's Inc." in result
 
     def test_fuzzy_match(self) -> None:
-        from domain_scout.scout import Scout
-
         s = self._make_scout_with_subs({"jpmorgan chase": ["Paymentech LLC"]})
-        assert isinstance(s, Scout)
         # "JPMorgan Chase & Co." normalizes close to "jpmorgan chase"
         result = s._match_subsidiaries("JPMorgan Chase & Co.")
         assert "Paymentech LLC" in result
 
     def test_no_match(self) -> None:
-        from domain_scout.scout import Scout
-
         s = self._make_scout_with_subs({"3m": ["Meguiar's Inc."]})
-        assert isinstance(s, Scout)
         result = s._match_subsidiaries("Totally Unrelated Company")
         assert result == []
 
@@ -157,6 +154,17 @@ class TestMatchSubsidiaries:
 
 
 class TestSubsidiaryExpansion:
+    @staticmethod
+    def _make_scout(**kwargs: object) -> Scout:
+        """Create a Scout with patched __init__ and optional attribute overrides."""
+        with patch.object(Scout, "__init__", lambda self: None):
+            s = Scout.__new__(Scout)
+            s.config = ScoutConfig()
+            s._subsidiaries = {}
+            for k, v in kwargs.items():
+                setattr(s, k, v)
+            return s
+
     def test_config_fields(self) -> None:
         """Config has subsidiary fields with correct defaults."""
         config = ScoutConfig()
@@ -165,26 +173,16 @@ class TestSubsidiaryExpansion:
 
     def test_source_tag_in_scoring(self) -> None:
         """ct_subsidiary_match gets scored at 0.80 base."""
-        from domain_scout.scout import Scout, _DomainAccum
-
-        with patch.object(Scout, "__init__", lambda self: None):
-            s = Scout.__new__(Scout)
-            s.config = ScoutConfig()
-
+        s = self._make_scout()
         accum = _DomainAccum()
         accum.sources.add("ct_subsidiary_match")
-        # No resolution → Level 0 → -0.05
+        # No resolution -> Level 0 -> -0.05
         score = s._score_confidence(accum, "Test Co", [])
         assert score == 0.75
 
     def test_source_tag_with_resolution(self) -> None:
-        """ct_subsidiary_match with resolution gets Level 1 → 0.80."""
-        from domain_scout.scout import Scout, _DomainAccum
-
-        with patch.object(Scout, "__init__", lambda self: None):
-            s = Scout.__new__(Scout)
-            s.config = ScoutConfig()
-
+        """ct_subsidiary_match with resolution gets Level 1 -> 0.80."""
+        s = self._make_scout()
         accum = _DomainAccum()
         accum.sources.add("ct_subsidiary_match")
         accum.resolves = True
@@ -195,35 +193,51 @@ class TestSubsidiaryExpansion:
     async def test_subsidiary_queries_launched(self) -> None:
         """Subsidiary names trigger additional org search tasks."""
         from domain_scout.models import EntityInput
-        from domain_scout.scout import Scout
 
-        with patch.object(Scout, "__init__", lambda self: None):
-            s = Scout.__new__(Scout)
-            s.config = ScoutConfig()
-            s._subsidiaries = {"walmart": ["Jet.com Inc.", "Bonobos Inc."]}
-            s._ct = AsyncMock()
-            s._ct.search_by_org = AsyncMock(return_value=[])
-            s._rdap = AsyncMock()
-            s._dns = AsyncMock()
-            s._dns.resolve = AsyncMock(return_value=False)
+        ct_mock = AsyncMock(search_by_org=AsyncMock(return_value=[]))
+        s = self._make_scout(
+            _subsidiaries={"walmart": ["Jet.com Inc.", "Bonobos Inc."]},
+            _ct=ct_mock,
+            _rdap=AsyncMock(),
+            _dns=AsyncMock(resolve=AsyncMock(return_value=False)),
+        )
 
         entity = EntityInput(company_name="Walmart Inc.", seed_domain=[])
         await s._discover(entity)
 
         # Should have called search_by_org for: "Walmart Inc." + "Jet.com Inc." + "Bonobos Inc."
-        org_calls = [call.args[0] for call in s._ct.search_by_org.call_args_list]
+        org_calls = [call.args[0] for call in ct_mock.search_by_org.call_args_list]
         assert "Walmart Inc." in org_calls
         assert "Jet.com Inc." in org_calls
         assert "Bonobos Inc." in org_calls
 
     def test_max_queries_cap(self) -> None:
         """subsidiary_max_queries caps the number of subsidiary searches."""
-        from domain_scout.scout import Scout
-
-        with patch.object(Scout, "__init__", lambda self: None):
-            s = Scout.__new__(Scout)
-            s._subsidiaries = {"test": [f"Sub{i}" for i in range(50)]}
-
+        s = self._make_scout(_subsidiaries={"test": [f"Sub{i}" for i in range(50)]})
         result = s._match_subsidiaries("Test Corp")
         # _match_subsidiaries returns all; cap is applied in _discover
         assert len(result) == 50
+
+    @pytest.mark.asyncio
+    async def test_max_queries_cap_enforced_in_discover(self) -> None:
+        """_discover() only launches subsidiary_max_queries CT searches."""
+        from domain_scout.models import EntityInput
+
+        subs = [f"Brand{i} Inc." for i in range(20)]
+        ct_mock = AsyncMock(search_by_org=AsyncMock(return_value=[]))
+        config = ScoutConfig(subsidiary_max_queries=3)
+        s = self._make_scout(
+            config=config,
+            _subsidiaries={"test": subs},
+            _ct=ct_mock,
+            _rdap=AsyncMock(),
+            _dns=AsyncMock(resolve=AsyncMock(return_value=False)),
+        )
+
+        entity = EntityInput(company_name="Test Corp", seed_domain=[])
+        await s._discover(entity)
+
+        # org search calls: 1 (parent) + 1 (domain guess) + 3 (capped subsidiaries)
+        org_calls = [call.args[0] for call in ct_mock.search_by_org.call_args_list]
+        sub_calls = [c for c in org_calls if c.startswith("Brand")]
+        assert len(sub_calls) == 3

@@ -26,6 +26,7 @@ if TYPE_CHECKING:
 from domain_scout.config import ScoutConfig
 from domain_scout.matching.entity_match import (
     domain_from_company_name,
+    normalize_org_name,
     org_name_similarity,
 )
 from domain_scout.models import (
@@ -49,8 +50,6 @@ def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
     names (distinct brands only, capped by length for relevance).
     """
     import csv
-
-    from domain_scout.matching.entity_match import normalize_org_name
 
     raw: dict[str, list[str]] = {}
     with open(csv_path, newline="") as f:
@@ -91,8 +90,6 @@ _SHELL_WORDS = frozenset(
 
 def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
     """Filter subsidiaries to those likely to have distinct CT certs."""
-    from domain_scout.matching.entity_match import normalize_org_name
-
     parent_words = set(parent_normalized.split())
     seen: set[str] = set()
     result: list[str] = []
@@ -105,7 +102,7 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
 
         sub_words = set(norm.split())
         # Skip if name shares significant words with parent (already found by parent org search)
-        significant_overlap = parent_words & sub_words - _SHELL_WORDS
+        significant_overlap = (parent_words & sub_words) - _SHELL_WORDS
         if significant_overlap:
             continue
         # Skip pure legal shells (all words are generic)
@@ -148,12 +145,10 @@ class Scout:
 
     def _match_subsidiaries(self, company_name: str) -> list[str]:
         """Find subsidiary names for a company using the loaded EDGAR map."""
-        from domain_scout.matching.entity_match import normalize_org_name
-
         normalized = normalize_org_name(company_name)
         # Exact match first
         if normalized in self._subsidiaries:
-            return self._subsidiaries[normalized]
+            return list(self._subsidiaries[normalized])
         # Fuzzy match against parent names
         best_key: str | None = None
         best_score = 0.0
@@ -162,8 +157,10 @@ class Scout:
             if score > best_score:
                 best_score = score
                 best_key = parent_key
+                if score >= 0.95:
+                    break
         if best_key and best_score >= 0.85:
-            return self._subsidiaries[best_key]
+            return list(self._subsidiaries[best_key])
         return []
 
     def discover(
