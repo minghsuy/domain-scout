@@ -82,6 +82,10 @@ class ScoutConfig:
     cb_failure_threshold: int = 3
     cb_recovery_timeout: float = 30.0
 
+    # --- Subsidiary expansion ---
+    subsidiaries_path: str | None = None
+    subsidiary_max_queries: int = 10
+
     # --- Output filtering ---
     include_non_resolving: bool = False
 

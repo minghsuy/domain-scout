@@ -42,6 +42,82 @@ from domain_scout.sources.rdap import RDAPLookup
 log = structlog.get_logger()
 
 
+def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
+    """Load parent→subsidiary mappings from an EDGAR Exhibit 21 CSV.
+
+    Returns a dict keyed by normalized parent_name → list of filtered subsidiary
+    names (distinct brands only, capped by length for relevance).
+    """
+    import csv
+
+    from domain_scout.matching.entity_match import normalize_org_name
+
+    raw: dict[str, list[str]] = {}
+    with open(csv_path, newline="") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            parent = row["parent_name"]
+            sub = row["subsidiary_name"]
+            key = normalize_org_name(parent)
+            raw.setdefault(key, []).append(sub)
+
+    # Filter each parent's subsidiaries to distinct brands
+    result: dict[str, list[str]] = {}
+    for parent_key, subs in raw.items():
+        filtered = _filter_subsidiaries(parent_key, subs)
+        if filtered:
+            result[parent_key] = filtered
+    return result
+
+
+_SHELL_WORDS = frozenset(
+    {
+        "llc",
+        "l.l.c.",
+        "lp",
+        "l.p.",
+        "holdings",
+        "holding",
+        "investments",
+        "capital",
+        "management",
+        "partners",
+        "fund",
+        "trust",
+        "re",
+    }
+)
+
+
+def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
+    """Filter subsidiaries to those likely to have distinct CT certs."""
+    from domain_scout.matching.entity_match import normalize_org_name
+
+    parent_words = set(parent_normalized.split())
+    seen: set[str] = set()
+    result: list[str] = []
+
+    for sub in subs:
+        norm = normalize_org_name(sub)
+        if norm in seen or not norm:
+            continue
+        seen.add(norm)
+
+        sub_words = set(norm.split())
+        # Skip if name shares significant words with parent (already found by parent org search)
+        significant_overlap = parent_words & sub_words - _SHELL_WORDS
+        if significant_overlap:
+            continue
+        # Skip pure legal shells (all words are generic)
+        if sub_words <= _SHELL_WORDS:
+            continue
+        result.append(sub)
+
+    # Sort by name length (shorter = more likely a real brand)
+    result.sort(key=len)
+    return result
+
+
 class Scout:
     """Discover internet domains associated with a business entity."""
 
@@ -62,6 +138,33 @@ class Scout:
             self._ct = ct_inner
             self._rdap = rdap_inner
         self._dns = DNSChecker(self.config)
+        self._subsidiaries: dict[str, list[str]] = {}
+        if self.config.subsidiaries_path:
+            try:
+                self._subsidiaries = load_subsidiary_map(self.config.subsidiaries_path)
+                log.info("scout.subsidiaries_loaded", parents=len(self._subsidiaries))
+            except Exception:
+                log.warning("scout.subsidiaries_load_failed", exc_info=True)
+
+    def _match_subsidiaries(self, company_name: str) -> list[str]:
+        """Find subsidiary names for a company using the loaded EDGAR map."""
+        from domain_scout.matching.entity_match import normalize_org_name
+
+        normalized = normalize_org_name(company_name)
+        # Exact match first
+        if normalized in self._subsidiaries:
+            return self._subsidiaries[normalized]
+        # Fuzzy match against parent names
+        best_key: str | None = None
+        best_score = 0.0
+        for parent_key in self._subsidiaries:
+            score = org_name_similarity(normalized, parent_key)
+            if score > best_score:
+                best_score = score
+                best_key = parent_key
+        if best_key and best_score >= 0.85:
+            return self._subsidiaries[best_key]
+        return []
 
     def discover(
         self,
@@ -137,6 +240,21 @@ class Scout:
                 name="domain_guess",
             )
         )
+
+        # Strategy D: subsidiary expansion (if EDGAR data loaded)
+        if self._subsidiaries:
+            sub_names = self._match_subsidiaries(entity.company_name)
+            for sub_name in sub_names[: self.config.subsidiary_max_queries]:
+                independent_tasks.append(
+                    asyncio.create_task(
+                        self._strategy_org_search(
+                            sub_name,
+                            errors,
+                            source_tag="ct_subsidiary_match",
+                        ),
+                        name=f"subsidiary:{sub_name[:30]}",
+                    )
+                )
 
         # Parallel seed validation for all seeds
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
@@ -429,7 +547,10 @@ class Scout:
     # --- Step 2A: Organization name search ---
 
     async def _strategy_org_search(
-        self, org_name: str, errors: list[str]
+        self,
+        org_name: str,
+        errors: list[str],
+        source_tag: str = "ct_org_match",
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
         try:
@@ -459,11 +580,11 @@ class Scout:
                 if not base:
                     continue
                 accum = _DomainAccum()
-                accum.sources.add("ct_org_match")
+                accum.sources.add(source_tag)
                 desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
                 accum.evidence.append(
                     EvidenceRecord(
-                        source_type="ct_org_match",
+                        source_type=source_tag,
                         description=desc,
                         cert_id=_int_or_none(rec.get("cert_id")),
                         cert_org=cert_org,
@@ -657,6 +778,8 @@ class Scout:
             score = max(score, 0.90)
         if "ct_org_match" in accum.sources:
             score = max(score, 0.85)
+        if "ct_subsidiary_match" in accum.sources:
+            score = max(score, 0.80)
         if any(s.startswith("ct_san_expansion:") for s in accum.sources):
             score = max(score, 0.80)
         if any(s.startswith("ct_seed_subdomain:") for s in accum.sources):

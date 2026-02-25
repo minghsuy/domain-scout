@@ -52,6 +52,10 @@ def scout(
         bool, typer.Option("--cache/--no-cache", help="Enable query cache")
     ] = False,
     cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
+    subsidiaries_path: Annotated[
+        str | None,
+        typer.Option("--subsidiaries-path", help="Path to EDGAR subsidiaries CSV"),
+    ] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
@@ -63,9 +67,18 @@ def scout(
     if len(seeds) >= 3:
         timeout = max(timeout, 150)
     if profile:
-        config = ScoutConfig.from_profile(profile, total_timeout=timeout, deep_mode=deep)  # type: ignore[arg-type]
+        config = ScoutConfig.from_profile(
+            profile,  # type: ignore[arg-type]
+            total_timeout=timeout,
+            deep_mode=deep,
+            subsidiaries_path=subsidiaries_path,
+        )
     else:
-        config = ScoutConfig(total_timeout=timeout, deep_mode=deep)
+        config = ScoutConfig(
+            total_timeout=timeout,
+            deep_mode=deep,
+            subsidiaries_path=subsidiaries_path,
+        )
 
     cache = None
     if use_cache:
