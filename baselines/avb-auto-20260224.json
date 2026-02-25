@@ -1,0 +1,1107 @@
+{
+  "entity": {
+    "company_name": "AvalonBay Communities",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "avalonprop.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722499311,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722499105,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722580459,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722582035,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722638800,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722639152,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902683972,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902685054,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903110472,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903116708,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903316654,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903316734,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903773391,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903773684,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911751999,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911753426,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8914815213,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8914815412,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993546170,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993546363,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9024357365,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9024357293,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9378392932,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9378393291,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9422372306,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9422378002,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431217676,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431217621,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9613066916,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9613067066,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9654021202,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9654021266,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9784274470,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9784274891,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9888991453,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9888991787,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9889131298,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9889131271,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10111239889,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10111240728,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143203547,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143203674,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10149828474,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10149828758,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10157789614,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10157790826,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10158979573,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10158980028,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10169021436,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10169022387,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10187264588,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10187264546,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10221378576,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10221378649,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245416723,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245416950,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245434678,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245434860,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10806508856,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10806509302,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11177618011,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11177618594,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11694407814,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11694407811,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11834457752,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11834457743,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11929946400,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11929946195,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11933569410,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11933569187,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12161515518,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12161515611,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AvalonBay Communities, Inc."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2025-02-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avalonbay.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730654029,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730662359,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731644024,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731645595,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731696379,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731696970,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9059574514,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9059574558,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9415385433,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9415385525,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9475254521,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9475254489,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9552570180,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9552570181,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10041336278,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10041336401,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10069231390,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10069231508,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10069362266,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10069362242,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109363923,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109363883,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10187237226,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10187237433,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10346820691,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10346820747,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10987086348,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10987086589,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12362125406,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12362125593,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12460994486,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12460994649,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12461105051,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12461105054,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12657686805,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AvalonBay Communities, Inc."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2025-04-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cert-manager.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396333308,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'AvalonBay Communities, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396336750,
+          "cert_org": "AvalonBay Communities, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "AvalonBay Communities, Inc."
+      ],
+      "first_seen": "2023-05-15T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:38:00.673959Z",
+    "elapsed_seconds": 6.8,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

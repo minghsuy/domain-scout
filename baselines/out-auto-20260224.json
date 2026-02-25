@@ -1,0 +1,1007 @@
+{
+  "entity": {
+    "company_name": "OUTFRONT Media Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "onsmart.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794756959,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794757186,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794757684,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794758542,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12315999900,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12315999917,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with outfrontmedia.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc."
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2025-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "outfrontmediadpo.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794757143,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794757794,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8832072105,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12031344879,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12091203252,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16519786102,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with outfrontmedia.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc.",
+        "Outfront Media, Inc."
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2026-02-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "outfront.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230783870,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230783904,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455626058,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455627092,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872031169,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872031491,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264769360,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264769593,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10432026372,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10432032012,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11020124628,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11020124908,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11340981602,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11693674624,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11693674825,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11846302288,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11846302290,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11854645723,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11854645770,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11909173726,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11909173732,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12780622639,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12780622761,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12825064886,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12825065006,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12910415846,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12910416039,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13151690817,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13151690969,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14018282444,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14018282564,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14504389255,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14504389260,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15997754333,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15997754334,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16363990195,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16363990196,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16418542217,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16418542239,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17224599135,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17224599435,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608566948,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608568328,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608566854,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608567252,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608568040,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17608568173,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with outfrontmedia.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc.",
+        "Outfront Media, Inc."
+      ],
+      "first_seen": "2023-04-25T00:00:00",
+      "last_seen": "2026-04-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "oohlaunchpad.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814690281,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814690588,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814776175,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814777246,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10897479470,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10897479125,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10897569982,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10897569841,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with outfrontmedia.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc."
+      ],
+      "first_seen": "2023-10-17T00:00:00",
+      "last_seen": "2024-10-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "outedge.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12199366301,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12199366464,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13071549277,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17924209293,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with outfrontmedia.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc.",
+        "Outfront Media, Inc."
+      ],
+      "first_seen": "2024-02-26T00:00:00",
+      "last_seen": "2025-05-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "outfrontmedia.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794752542,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794752700,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9139239776,
+          "cert_org": "Outfront Media, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872025278,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872025428,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12296833882,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12296834082,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13151805871,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13151805885,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17224578606,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17224578852,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18050776045,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Outfront Media Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18050776973,
+          "cert_org": "Outfront Media Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Outfront Media Inc.",
+        "Outfront Media, Inc."
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2026-04-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T20:38:31.452928Z",
+    "elapsed_seconds": 26.23,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

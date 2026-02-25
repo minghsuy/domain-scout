@@ -1,0 +1,1281 @@
+{
+  "entity": {
+    "company_name": "SASOL LTD",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "sasolsiyakha.co.za",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792512724,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2024-03-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasoltechdata.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8825717616,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-03-07T00:00:00",
+      "last_seen": "2024-04-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolsignatures.co.za",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9179859186,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-04-18T00:00:00",
+      "last_seen": "2024-04-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolinternationalinsurancedac.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9347992035,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasoltransporters.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9464274589,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9464274732,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-05-23T00:00:00",
+      "last_seen": "2024-06-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolcustomer1.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9657633448,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9664567085,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9944327239,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-06-15T00:00:00",
+      "last_seen": "2024-07-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolinsport.co.za",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249277975,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with sasolbursaries.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-08-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolbursaries.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756734237,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasol.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8775957184,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8775957584,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8775963918,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792517675,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792517810,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792522051,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794768749,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826616302,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8833697121,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836252578,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879083484,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8899721948,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8899723757,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8963353304,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013717992,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9075552185,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9117985280,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9117986228,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9164341877,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9171780283,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9179859200,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9252502130,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9256289972,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9313484042,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9340074350,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9347251640,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349396975,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349408188,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9418793490,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9418797192,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9420636594,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9452284525,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9462461759,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9462719704,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474320137,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533306231,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9649658850,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9649659022,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9649813101,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9650647374,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9657322172,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9657327249,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9690747365,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9690747912,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9716880642,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9759694730,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813710602,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813717179,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9821054322,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9839389127,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9846876419,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9846876927,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9849073556,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9854450675,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9951466499,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10001077392,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10001082245,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10141580006,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10177814663,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10177825810,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10189136173,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243353840,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10263295720,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10317009150,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10361763550,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10361764049,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10361769947,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10361770461,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10414306070,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10433101007,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10440160252,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448074672,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10494667481,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10568516206,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10568526194,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10602685978,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10602686065,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10630619480,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10676124669,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10759252125,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10771946777,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10772052373,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10958689094,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10964328630,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10974332888,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10974332941,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11139075814,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2024-11-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasoltechnox.co.za",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9608854866,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-06-09T00:00:00",
+      "last_seen": "2024-06-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasoldigital.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10189743006,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10196455726,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-08-21T00:00:00",
+      "last_seen": "2024-08-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sasolkyc.co.za",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Sasol LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249288128,
+          "cert_org": "Sasol LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Sasol LTD"
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-08-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:32:03.285132Z",
+    "elapsed_seconds": 15.72,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

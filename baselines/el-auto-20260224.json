@@ -1,0 +1,2483 @@
+{
+  "entity": {
+    "company_name": "Est\u00e9e Lauder Companies (The)",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "bykilian.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kilian-paris.ae",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bykilian.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kilianparis.sa",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kilian-paris.sa",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kilian-paris.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kilianparis.ae",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bykilian.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bykilian.com.hk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407206702,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11407529719,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-14T00:00:00",
+      "last_seen": "2024-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com.hk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda-me.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.no",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.gr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.co.th",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avedakorea.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.dk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.se",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.com.tr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aveda.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418331428,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11418375836,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-28T00:00:00",
+      "last_seen": "2025-01-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.at",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.gr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.co.th",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.hk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.ar",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.tw",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.cn",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.tr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.pl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrowncosmetics.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.ph",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.co.za",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.cl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown-me.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.my",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrowncosmetics.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrowncosmetics.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.co.kr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.co.il",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bobbibrown.com.sg",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421586563,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11421596422,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2023-12-29T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com.tr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com.cn",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.co.kr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com.sg",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.hk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.co.th",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com.ph",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "origins.com.tw",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Est\u00e9e Lauder Companies Inc.' matches target (score=0.92)",
+          "seed_domain": null,
+          "cert_id": 11522201469,
+          "cert_org": "The Est\u00e9e Lauder Companies Inc.",
+          "similarity_score": 0.9167,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Est\u00e9e Lauder Companies Inc."
+      ],
+      "first_seen": "2024-01-01T00:00:00",
+      "last_seen": "2025-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:34:24.281405Z",
+    "elapsed_seconds": 24.98,
+    "domains_found": 70,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

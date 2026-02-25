@@ -1,0 +1,1244 @@
+{
+  "entity": {
+    "company_name": "INSPERITY, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "administaff.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904486535,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9693137791,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053487754,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10390214223,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with insperity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-03-16T18:58:25",
+      "last_seen": "2024-10-02T20:06:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "insperity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8504396675,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8566718543,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589685005,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589690392,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668860067,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714250549,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768965805,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768973454,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785636154,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8793596729,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828704689,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904486535,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940771197,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981462278,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130065222,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130065170,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130065414,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9231582326,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349619781,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9365897031,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455518237,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9490305506,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533868812,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533872437,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9634883540,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642978058,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9693130865,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9835219651,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9879241155,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9880503664,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9946254687,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9946258031,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9946262506,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9954585766,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9977193206,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9992611659,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10000394621,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10000397405,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008060884,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008064493,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10038532945,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053487754,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10085436829,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10085441585,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10085450574,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10141157613,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10146218549,
+          "cert_org": "Insperity, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165514151,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165515054,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10173471602,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10173471631,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10173471583,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10205524853,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10212287525,
+          "cert_org": "Insperity, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10257467561,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264037876,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264037947,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264046002,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264048653,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10271962146,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10271962364,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302550702,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302550808,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555768,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302556038,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10303119834,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10303126534,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10311363676,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10311363837,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10311363920,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363565730,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10388446144,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389762826,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389762974,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389763011,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389768953,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10390214223,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc",
+        "Insperity, Inc."
+      ],
+      "first_seen": "2023-01-26T17:48:56",
+      "last_seen": "2024-10-12T15:21:34",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "performsmart.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705793318,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-02-21T15:05:01",
+      "last_seen": "2024-03-21T15:05:00",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "insperitytimestar.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349614347,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-05-09T14:06:39",
+      "last_seen": "2024-06-07T14:06:39",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "orgplus.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643529754,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302556336,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389768995,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-06-13T15:42:36",
+      "last_seen": "2024-10-02T18:56:09",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "insperitysales.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9880545047,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10166047111,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-07-11T18:12:38",
+      "last_seen": "2024-08-16T15:50:35",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "simplei9.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165515054,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10388446144,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-08-17T14:11:14",
+      "last_seen": "2024-10-12T15:21:34",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "compassionatwork.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555831,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10389762781,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:06:32",
+      "last_seen": "2024-10-02T18:55:37",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "courtcouriers.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10388446144,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10390214223,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:07:02",
+      "last_seen": "2024-10-12T15:21:34",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jobdescription.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10390214223,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:07:02",
+      "last_seen": "2024-10-02T20:06:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "administaffcompanies.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10390214223,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:07:02",
+      "last_seen": "2024-10-02T20:06:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jobdescriptions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:07:02",
+      "last_seen": "2024-10-02T13:07:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "performancereview.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Insperity, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302555914,
+          "cert_org": "Insperity, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Insperity, Inc"
+      ],
+      "first_seen": "2023-09-05T13:07:02",
+      "last_seen": "2024-10-02T13:07:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T02:45:23.507803Z",
+    "elapsed_seconds": 19.81,
+    "domains_found": 13,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

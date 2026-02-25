@@ -1,0 +1,604 @@
+{
+  "entity": {
+    "company_name": "FedEx",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "edi.tnt.de",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486535369,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486535366,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fedex.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FedEx Corporation"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fedex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485303305,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485303606,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485304399,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485304339,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485310153,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8485310667,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486758322,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486759514,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486928419,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8486933242,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487000425,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487001019,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487418762,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487424958,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487467750,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487467767,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487575993,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487576674,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487582766,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487582960,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487590930,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487591222,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487711334,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487711414,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487846765,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487847070,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488809896,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488810308,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488859023,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488859853,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488873179,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488874537,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488943906,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488949996,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488964415,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488964347,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8489369911,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8489370640,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8489760901,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8489761889,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494335994,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494336156,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494344176,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494344505,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8495441197,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8495442540,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505797646,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505798030,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FedEx Corporation"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "genco.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487512111,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FedEx Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487512812,
+          "cert_org": "FedEx Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FedEx Corporation"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:42:35.379329Z",
+    "elapsed_seconds": 21.58,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 120,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

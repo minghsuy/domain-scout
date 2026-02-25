@@ -1,0 +1,1400 @@
+{
+  "entity": {
+    "company_name": "American Homes 4 Rent",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "amh.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830538447,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367186,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11039269071,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11345121435,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11432383497,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923837159,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13932014800,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13932014684,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13932039813,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13949466695,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15309580895,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11345473132,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11404529112,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11404534894,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11415102843,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11417488868,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11417494264,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11987473369,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12385842073,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12590838385,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12590843632,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12590969371,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12590969468,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12598155097,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13014182560,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13018214823,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923747765,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923847483,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923914722,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925103303,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925174097,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925216693,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925258264,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925942671,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925975827,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13926093188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13926227212,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13931340952,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14595279789,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14864449483,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15309582798,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15811462054,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18022572664,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20434262999,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-03-07T00:00:00",
+      "last_seen": "2025-12-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanhomes4rent.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949344958,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949400629,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12306497077,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923683075,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930139612,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-03-21T00:00:00",
+      "last_seen": "2025-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "amhliving.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012442019,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12306968645,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924967982,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930688485,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13935589522,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2025-04-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ah4r.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9087285212,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9088295329,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9088363745,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9088395754,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118846118,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121111301,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9145576871,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283267114,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9360972296,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9527121856,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9527346458,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10167105559,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10683094061,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10804107018,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10812305757,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12441866679,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12435616182,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12435746730,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12435835104,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12435871614,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12436035920,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12501161686,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12509562150,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12701998235,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12981300248,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12982268661,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12992900925,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13390503494,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923414960,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923505150,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923590130,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923602547,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923817612,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925103303,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925146553,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925174097,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925189549,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925216693,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925231004,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13969108847,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14850893766,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14852068642,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14852172935,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17272791720,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17425571797,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17427372597,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17427513586,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17433443470,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17433538536,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17833438561,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17905917226,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-04-07T00:00:00",
+      "last_seen": "2025-11-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanresidentialcapital.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363688719,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363721950,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14686370705,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20455411365,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-09-12T00:00:00",
+      "last_seen": "2025-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "amresprop.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363721950,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14686370705,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-09-12T00:00:00",
+      "last_seen": "2025-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanresidentialcapital.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363721950,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14686370705,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20455411365,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-09-12T00:00:00",
+      "last_seen": "2025-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanresidentialproperties.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363721950,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14686370705,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-09-12T00:00:00",
+      "last_seen": "2025-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanresidentialproperties.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363721950,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10609367188,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14686370705,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-09-12T00:00:00",
+      "last_seen": "2025-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanhomes.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10873478053,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10878798631,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15069246611,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Homes 4 Rent, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15074866464,
+          "cert_org": "American Homes 4 Rent, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Homes 4 Rent, L.P."
+      ],
+      "first_seen": "2023-10-23T00:00:00",
+      "last_seen": "2025-11-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T21:29:29.860207Z",
+    "elapsed_seconds": 39.08,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

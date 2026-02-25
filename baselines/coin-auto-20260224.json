@@ -1,0 +1,794 @@
+{
+  "entity": {
+    "company_name": "Coinbase",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "trust.global",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10119628247,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10119628285,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944530715,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914800025,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13919929372,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930212063,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with neutrino.nu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Coinbase, Inc."
+      ],
+      "first_seen": "2023-08-11T00:00:00",
+      "last_seen": "2025-08-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "coinbase-sandbox.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15162235060,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with neutrino.nu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Coinbase, Inc."
+      ],
+      "first_seen": "2024-10-31T00:00:00",
+      "last_seen": "2025-10-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "coinbase.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8958810269,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8958816581,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8958845903,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8958883446,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8991118722,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405954780,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405965912,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405976446,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405982561,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405992945,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9639017523,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9966495721,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10055344102,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117113581,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10192007210,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10711297945,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834979020,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10845657014,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11429455378,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11429459881,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11435392443,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914704142,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928443004,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928492976,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928607948,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928678955,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12148225795,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12148267864,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12148294134,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12602712104,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13233445815,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13233499796,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13233706390,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13233738372,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13233816736,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13696398192,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13778732939,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13810510941,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914811137,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914834669,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914873401,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914928956,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914945601,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915054607,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915076040,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915101491,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915354272,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13919900768,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924415959,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13948236581,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14541460784,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15353489516,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15353519625,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16860486179,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20034034974,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Coinbase, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2025-11-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cbhq.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9087990795,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9398675782,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12578291210,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12840386661,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914255969,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13919770209,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13926461708,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Coinbase, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15215324763,
+          "cert_org": "Coinbase, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Coinbase, Inc."
+      ],
+      "first_seen": "2023-04-07T00:00:00",
+      "last_seen": "2025-11-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:01:30.798389Z",
+    "elapsed_seconds": 11.74,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

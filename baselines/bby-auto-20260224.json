@@ -1,0 +1,992 @@
+{
+  "entity": {
+    "company_name": "Best Buy",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "bestbuy.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8783598422,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with bestbuy.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd",
+        "Best Buy Co, Inc."
+      ],
+      "first_seen": "2023-03-02T08:16:01",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gslink.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with bestbuy.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bestbuy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492242402,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492286236,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8541084185,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8541169023,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559267896,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8587151652,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600568912,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8603826223,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8611340628,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653697646,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665529737,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665593478,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665630703,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665788651,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8669068366,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8670207437,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706551089,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710548120,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722367074,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731170244,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8733000395,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8783798792,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819427446,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819579326,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826363635,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8831503100,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8846544679,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848463447,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8888718316,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903726677,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8909746532,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8957337414,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968261717,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981012255,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981307266,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985105236,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988639154,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8996489798,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8998052335,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9007154892,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9008138104,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012864021,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012890104,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012923015,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012954430,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9013616192,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9013634407,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9044883974,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9045072770,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048930365,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9071097889,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9071121314,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9075152716,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9107401477,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109319490,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9110779498,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd.",
+        "Best Buy Co, Inc."
+      ],
+      "first_seen": "2023-01-25T06:17:49",
+      "last_seen": "2024-05-03T15:14:36",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bbycontent.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8710548120,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8888718316,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Co, Inc."
+      ],
+      "first_seen": "2023-02-22T05:14:12",
+      "last_seen": "2024-04-12T05:22:33",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "greatcall.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Co, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8898108534,
+          "cert_org": "Best Buy Co, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Co, Inc."
+      ],
+      "first_seen": "2023-03-16T04:01:19",
+      "last_seen": "2024-03-14T04:01:19",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "futureshop.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bestbuyforbusiness.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "geeksquad.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bestbuycanada.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8997993690,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8998216347,
+          "cert_org": "Best Buy Canada Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9013615952,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9013625407,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9074776589,
+          "cert_org": "Best Buy Canada Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Best Buy Canada Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Best Buy Canada Ltd."
+        }
+      ],
+      "cert_org_names": [
+        "Best Buy Canada Ltd",
+        "Best Buy Canada Ltd."
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-05-06T06:10:37",
+      "resolves": true,
+      "rdap_org": "Best Buy Canada Ltd.",
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:41:04.067381Z",
+    "elapsed_seconds": 37.64,
+    "domains_found": 9,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

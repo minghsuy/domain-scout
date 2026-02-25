@@ -1,0 +1,947 @@
+{
+  "entity": {
+    "company_name": "Allstate",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "allstate.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8511521126,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8534855755,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8568610963,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8603933973,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8604113051,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8612049549,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8612049536,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8624056029,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651197387,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651796683,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651796634,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651830629,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8651835442,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8651840700,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651897603,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651897760,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8652203249,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8652203214,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8652203133,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8652203257,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8657505235,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8657505219,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8657505237,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8657505289,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8659238448,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8659250233,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8666549111,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8670069503,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707893405,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722520290,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722520294,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8722520150,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722766111,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8757284529,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760188627,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760188504,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8766089126,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768815787,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8775827218,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8793853976,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8816586216,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826301240,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830152154,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830152132,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830152225,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8834988114,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8834988295,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836648835,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8872731342,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company",
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-01-27T15:01:03",
+      "last_seen": "2024-04-07T18:48:48",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myallstateflood.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8568790105,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-02-03T22:16:39",
+      "last_seen": "2024-03-03T22:16:38",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "encompassinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8604285810,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-02-08T08:45:30",
+      "last_seen": "2024-03-07T08:45:29",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstate.jobs",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622665343,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Allstate Insurance Company"
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-02-10T15:56:58",
+      "last_seen": "2024-03-10T15:56:57",
+      "resolves": true,
+      "rdap_org": "Allstate Insurance Company",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstateroadsideservices.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731893882,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-02-24T18:27:17",
+      "last_seen": "2024-02-24T18:27:17",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstateagencies.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8757284529,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-02-27T09:54:45",
+      "last_seen": "2024-03-26T09:54:45",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "answermarketplace.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Allstate Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8849589923,
+          "cert_org": "The Allstate Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Allstate Corporation"
+      ],
+      "first_seen": "2023-03-09T21:06:20",
+      "last_seen": "2024-04-09T21:06:20",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "leadmanagementlab.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496725210,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496725261,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8819893740,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-01-25T20:16:45",
+      "last_seen": "2024-04-06T17:01:17",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatebrandcentral.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8566962648,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-02-03T16:42:39",
+      "last_seen": "2024-03-03T16:42:39",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatenewsroom.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8568707515,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8675198500,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-02-03T22:00:52",
+      "last_seen": "2024-03-03T22:00:51",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatecapac.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8622858060,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-02-10T16:30:57",
+      "last_seen": "2024-03-10T16:30:57",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatecaliforniapac.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8622858060,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-02-10T16:30:57",
+      "last_seen": "2024-03-10T16:30:57",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "accessallstate.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8825818084,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-03-07T07:58:33",
+      "last_seen": "2024-04-06T07:58:32",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatebenefits.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8849610175,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-03-09T21:09:25",
+      "last_seen": "2024-04-09T21:09:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstatevoluntary.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allstate Insurance Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8849610175,
+          "cert_org": "Allstate Insurance Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allstate Insurance Company"
+      ],
+      "first_seen": "2023-03-09T21:09:25",
+      "last_seen": "2024-04-09T21:09:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:23:04.038045Z",
+    "elapsed_seconds": 22.38,
+    "domains_found": 15,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1139 @@
+{
+  "entity": {
+    "company_name": "ETSY INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "patternbyetsy.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769673982,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9038693357,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12450511883,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12483688745,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923603145,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930813836,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17791629554,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17881489064,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with etsycorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Etsy, Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2026-04-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "etsy.app",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11250038799,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15602059846,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with etsycorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Etsy, Inc."
+      ],
+      "first_seen": "2023-11-28T00:00:00",
+      "last_seen": "2025-12-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "etsycorp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8536134524,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175109649,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175292297,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10149671738,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603389010,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10883768960,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11952063968,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12691216817,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12691281242,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13014666596,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13870227760,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13920314298,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922358237,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924477393,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16946848946,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16957043263,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17785790192,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17785805497,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18126209805,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18771129363,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18771151738,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19758205752,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20440058381,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20487695459,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Etsy, Inc."
+      ],
+      "first_seen": "2023-01-30T00:00:00",
+      "last_seen": "2026-09-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "etsy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645643551,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9059143649,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9059469011,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595669764,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10094644412,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243666940,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243808582,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243808737,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10328138595,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10328138748,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10878509392,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11422342757,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12285890163,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12498690557,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12530426867,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588044955,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12691309727,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12829767495,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12835539697,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12918876917,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12919004984,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12919100932,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12919159546,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12919828789,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928805803,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928810004,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928809915,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928818469,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928828943,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928831140,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13284792473,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914811216,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922914141,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923174210,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923461033,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924211835,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924909772,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14148898636,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14148934364,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14334870430,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14334872908,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16882364832,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17832513905,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20338878086,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15821777257,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16096097481,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17183761312,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998834062,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998821106,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998818303,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998827594,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998834276,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998835243,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998836227,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998836695,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17998845109,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18276451360,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18770930189,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18770964648,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19383698102,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19383771520,
+          "cert_org": "Etsy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19858915968,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19858916247,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20139575943,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20140618853,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20140630448,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20140645104,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20140649604,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20182455550,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20310000204,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20310019808,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Etsy Inc.",
+        "Etsy, Inc."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2026-08-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gogetsy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Etsy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13296062042,
+          "cert_org": "Etsy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Etsy, Inc."
+      ],
+      "first_seen": "2024-06-05T00:00:00",
+      "last_seen": "2025-06-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T04:40:47.928258Z",
+    "elapsed_seconds": 21.97,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

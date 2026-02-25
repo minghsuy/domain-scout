@@ -1,0 +1,387 @@
+{
+  "entity": {
+    "company_name": "Ameren",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ameren.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787122127,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787122178,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792730195,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792739268,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792751210,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792756478,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792762020,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792767546,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792770082,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8837678792,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8849425093,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881431550,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881441379,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881458938,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940463080,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8956168034,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9181721509,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223245948,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9239788699,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9255636125,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9255668634,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9314463059,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341769850,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349950097,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ameren Corporation"
+      ],
+      "first_seen": "2023-03-02T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lasallelinkproject.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223182719,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ameren Corporation"
+      ],
+      "first_seen": "2023-04-24T00:00:00",
+      "last_seen": "2024-04-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "amerensustainability.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9348812168,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ameren Corporation"
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myameren.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ameren Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349950097,
+          "cert_org": "Ameren Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ameren Corporation"
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:25:25.340825Z",
+    "elapsed_seconds": 19.54,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

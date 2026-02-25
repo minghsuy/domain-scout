@@ -1,0 +1,943 @@
+{
+  "entity": {
+    "company_name": "JACK IN THE BOX INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "jitb.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004228639,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004374617,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9587933002,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9773299289,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9773304982,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9841742507,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9851893021,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9851965924,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10063453010,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10063498700,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10063803470,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10441551377,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472857786,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10503068529,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10587868216,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10711945755,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10824553437,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11048150757,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12470212286,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12470363312,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13299316905,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13318406391,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13468922653,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13468962507,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13605222649,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13605292119,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13660161844,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13688141897,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13712215536,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13926459347,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13926556986,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930318843,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14019513779,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14110682477,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14425694792,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14608542385,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14620044706,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15311116476,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18560591156,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18660219796,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18939355056,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18939397198,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19356428514,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19358458347,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19364840707,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19520430352,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19534954486,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19554477632,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Jack in the Box Inc"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2026-07-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jackinthebox.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9134405689,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9667346637,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9774549049,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790733854,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790770658,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790777965,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790783315,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791231319,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10052746460,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10361833811,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362815713,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362874309,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472857786,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10536256881,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11411702752,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11420840830,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11724773989,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11776124836,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11866255095,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11923165381,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12069519743,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12380390585,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13117258974,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13243656465,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13468984135,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13955492756,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14050457433,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14314577034,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14427238486,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14608542385,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17408129933,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17954657588,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20380349554,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976935919,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15978356536,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16223661904,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16418687639,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16453340412,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17217395364,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18409535790,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18693875268,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20312528590,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20414462208,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Jack in the Box Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20658493872,
+          "cert_org": "Jack in the Box Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Jack in the Box Inc"
+      ],
+      "first_seen": "2023-04-13T00:00:00",
+      "last_seen": "2026-09-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:39:39.074395Z",
+    "elapsed_seconds": 33.84,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

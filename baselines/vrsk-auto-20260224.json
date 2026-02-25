@@ -1,0 +1,379 @@
+{
+  "entity": {
+    "company_name": "Verisk Analytics",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "propertypreswizard.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11416190285,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11607538789,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16097032461,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16395571190,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16096991821,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16377338353,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22502664962,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22504788650,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with xactanalysis.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Verisk Analytics, Inc."
+      ],
+      "first_seen": "2023-12-27T00:00:00",
+      "last_seen": "2026-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "xactware.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11986674203,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924130423,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16858572068,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16779202120,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22508915229,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with xactanalysis.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Verisk Analytics, Inc."
+      ],
+      "first_seen": "2024-02-05T00:00:00",
+      "last_seen": "2026-03-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "xactanalysis.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9881137772,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10589572922,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13244215769,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13586809366,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18773931966,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19100825485,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Verisk Analytics, Inc."
+      ],
+      "first_seen": "2023-07-11T00:00:00",
+      "last_seen": "2026-07-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "xactnet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12920467829,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12920489295,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17891260659,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17891627843,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18168207883,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Verisk Analytics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18168221794,
+          "cert_org": "Verisk Analytics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Verisk Analytics, Inc."
+      ],
+      "first_seen": "2024-05-01T00:00:00",
+      "last_seen": "2026-06-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T18:25:55.030569Z",
+    "elapsed_seconds": 1.86,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

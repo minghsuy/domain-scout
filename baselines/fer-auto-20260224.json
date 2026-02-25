@@ -1,0 +1,289 @@
+{
+  "entity": {
+    "company_name": "Ferrovial SE",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "k-inurban.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Construccion S.A.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 15040345062,
+          "cert_org": "Ferrovial Construccion S.A.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Construccion S.A.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 15040345440,
+          "cert_org": "Ferrovial Construccion S.A.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ferrovial.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ferrovial Construccion S.A."
+      ],
+      "first_seen": "2024-10-22T00:00:00",
+      "last_seen": "2025-10-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ferrovial.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Grupo Ferrovial SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9892761792,
+          "cert_org": "Grupo Ferrovial SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Grupo Ferrovial SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 11037173869,
+          "cert_org": "Grupo Ferrovial SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 13801762674,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 13861707603,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 13893097229,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 14448231793,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 14448231795,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 15364422340,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18143838229,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18147069346,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19509083106,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19509082825,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19509082824,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ferrovial Corporacion SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19509083050,
+          "cert_org": "Ferrovial Corporacion SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19660898062,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FERROVIAL CORPORACION SA' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22409017385,
+          "cert_org": "FERROVIAL CORPORACION SA",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FERROVIAL CORPORACION SA",
+        "Ferrovial Corporacion SA",
+        "Grupo Ferrovial SA"
+      ],
+      "first_seen": "2023-07-13T00:00:00",
+      "last_seen": "2026-12-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T00:50:31.805645Z",
+    "elapsed_seconds": 34.13,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1422 @@
+{
+  "entity": {
+    "company_name": "ONTO INNOVATION INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "rudolphtech.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048689578,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306085029,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580954210,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9587705665,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11833025476,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12765756088,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13055448308,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13210670109,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13210709362,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16286317906,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16286317901,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17587988310,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17587988311,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17588000847,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17588000785,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ontoinnovation.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Onto Innovation Inc",
+        "Onto Innovation Inc."
+      ],
+      "first_seen": "2023-04-03T14:40:53",
+      "last_seen": "2026-04-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nanometrics.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9232501393,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ontoinnovation.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Onto Innovation Inc"
+      ],
+      "first_seen": "2023-04-25T20:03:14",
+      "last_seen": "2024-04-25T20:03:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ontoinnovation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787856230,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8951434574,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001748365,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9185361996,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298038347,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9305816265,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9305820712,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9305854044,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9308965519,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309027077,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317225412,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317233391,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397194258,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397207680,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397212326,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9564388855,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9564464192,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9579792142,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9637137670,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9841054944,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10108865042,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10108918211,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10141613706,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10209912255,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10272411444,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353274852,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353280310,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10388487586,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10481929312,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10947137899,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10947146352,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10947251155,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11337456444,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11357528549,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13316536904,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11570462159,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11724535944,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11725070318,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11876650030,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11877723797,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12139775985,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12293562239,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12498207531,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12567347372,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12569713955,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12658391590,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12658403729,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12814709949,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13055469894,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223872857,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223878065,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223896280,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223941719,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223951662,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223957928,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13223965705,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13254363043,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13305886774,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13623534190,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13794471280,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13794498518,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13855302774,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13855314316,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13881187030,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14033416197,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14033496148,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14134465668,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14134503302,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14134514232,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14525590149,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14587113536,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14587119483,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14661387018,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14698480596,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14704265864,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15028630423,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15509989401,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15509989318,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15510729118,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15510729190,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697412726,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697412651,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697470730,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697470992,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697684280,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15697684316,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15742606197,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15742606721,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580603741,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580608728,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18021918460,
+          "cert_org": "Onto Innovation Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976192762,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976192865,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16360487620,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16360487224,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16715956755,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16715958062,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940808233,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940808374,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940828533,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940828385,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940833461,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940833483,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092341409,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092341058,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17367313940,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17367313875,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17451163634,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17451163768,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17451181675,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17451181767,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558360959,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558361231,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558820013,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558819756,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580582092,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580581607,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580606391,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17580606385,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17581720373,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17581720372,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17582366709,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17582366260,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17582412425,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Onto Innovation Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17582412890,
+          "cert_org": "Onto Innovation Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Onto Innovation Inc",
+        "Onto Innovation Inc."
+      ],
+      "first_seen": "2023-03-02T22:30:27",
+      "last_seen": "2026-04-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T05:32:08.699479Z",
+    "elapsed_seconds": 24.92,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

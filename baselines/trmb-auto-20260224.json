@@ -1,0 +1,1254 @@
+{
+  "entity": {
+    "company_name": "Trimble Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "vrsnow.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483190565,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11258283756,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15205172270,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20839381837,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694039359,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vrsnow.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483287420,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265628373,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12122228567,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13919896170,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930161085,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859608696,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999775161,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694325382,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694331828,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rtx-pp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483352013,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265646058,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944787408,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13920032973,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930403878,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999787670,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19515221578,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694509574,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trimblertx.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483407709,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9785248681,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265660994,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12971089296,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915439869,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915485334,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915485418,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17902957534,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20060599027,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20062361066,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999813769,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999850920,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694714705,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc",
+        "Trimble Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trimblertx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483494180,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9785319806,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11257793866,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265677629,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12971092477,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944791631,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13873861867,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13882446499,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915024954,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13919987671,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13920033600,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930403105,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999763978,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999776781,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061655671,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18832640289,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999822251,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999892634,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21196274015,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc",
+        "Trimble Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-10-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vrsnow.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483520473,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265733145,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12357605762,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914902458,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999836979,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999834339,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19513213010,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22694837975,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vrsnow.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992345674,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001056509,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12122311821,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859607601,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16527461778,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22506373119,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24278123093,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-03-28T00:00:00",
+      "last_seen": "2027-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vrsnow.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992705091,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001082434,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12122468582,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13914823897,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13930209713,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859632912,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16527553109,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22506396719,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24278225242,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-03-28T00:00:00",
+      "last_seen": "2027-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trimbleglobal.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9785304281,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12971092586,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13845701804,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13920025795,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18999873629,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc."
+      ],
+      "first_seen": "2023-06-30T00:00:00",
+      "last_seen": "2026-07-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sketchup.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9888768492,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10221468847,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13698198401,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14232102492,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16911229969,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19273449217,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19229846596,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19273434363,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20536805059,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc."
+      ],
+      "first_seen": "2023-07-12T00:00:00",
+      "last_seen": "2026-07-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trimblepaas.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10042102054,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928728574,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14699360660,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20459815763,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21753667929,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc"
+      ],
+      "first_seen": "2023-08-02T00:00:00",
+      "last_seen": "2026-10-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trimble.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10063899252,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11409389038,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14014470041,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14529299298,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14529300696,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20417895200,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16076571804,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20161844732,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20415151288,
+          "cert_org": "Trimble Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Trimble Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23746754802,
+          "cert_org": "Trimble Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Trimble Inc",
+        "Trimble Inc."
+      ],
+      "first_seen": "2023-08-04T00:00:00",
+      "last_seen": "2027-01-17T14:20:50",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T18:20:55.069681Z",
+    "elapsed_seconds": 4.57,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

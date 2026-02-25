@@ -1,0 +1,649 @@
+{
+  "entity": {
+    "company_name": "ELBIT SYSTEMS LTD",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "devbitedge.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12156307864,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16864513377,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16822395481,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22509225930,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with elbit.global",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems LTD"
+      ],
+      "first_seen": "2024-02-22T00:00:00",
+      "last_seen": "2026-03-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "elbitsystemscareer.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13342022966,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17981987517,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18785235983,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with elbit.global",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems Ltd"
+      ],
+      "first_seen": "2024-06-10T00:00:00",
+      "last_seen": "2026-07-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "elbit.global",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8956489193,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12478245607,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17363646442,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems LTD"
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2026-03-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "elbitsystems.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9769333881,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10131102726,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10131466050,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10479598970,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10674535291,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11414632563,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13195475652,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13514799312,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14843664547,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14860711569,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18024421829,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20712932596,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15796065433,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16439749737,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18402538609,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18402539273,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21335333572,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21730887941,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23196284348,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23493871469,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23620303998,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems LTD",
+        "Elbit Systems Ltd"
+      ],
+      "first_seen": "2023-06-28T00:00:00",
+      "last_seen": "2026-12-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "imisystems.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10131466050,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems Ltd"
+      ],
+      "first_seen": "2023-08-13T00:00:00",
+      "last_seen": "2024-09-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ashot.co.il",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10131466050,
+          "cert_org": "Elbit Systems Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems Ltd"
+      ],
+      "first_seen": "2023-08-13T00:00:00",
+      "last_seen": "2024-09-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "esl-family.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11105044862,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15818491458,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16782107873,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Elbit Systems LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22584890875,
+          "cert_org": "Elbit Systems LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Elbit Systems LTD"
+      ],
+      "first_seen": "2023-11-15T00:00:00",
+      "last_seen": "2026-12-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rokar.co.il",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 11768930780,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 11768930865,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 16198019532,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 16198019583,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18249836703,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18249836352,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18272468809,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ELBIT SYSTEMS - ROKAR LTD' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18272468889,
+          "cert_org": "ELBIT SYSTEMS - ROKAR LTD",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ELBIT SYSTEMS - ROKAR LTD"
+      ],
+      "first_seen": "2024-01-17T00:00:00",
+      "last_seen": "2026-05-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:43:03.134037Z",
+    "elapsed_seconds": 18.04,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

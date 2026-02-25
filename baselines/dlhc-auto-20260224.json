@@ -1,0 +1,929 @@
+{
+  "entity": {
+    "company_name": "DLH Holdings Corp.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "s-3.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8966939678,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8966940035,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8966944007,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8966944148,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9079201684,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9079201847,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190838008,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190838177,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645118380,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645118490,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668227561,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668228221,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791532365,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791532683,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791578607,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791578811,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791595151,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791595311,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791802909,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791802910,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791827180,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791827380,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791850058,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9791850200,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with s-3.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP",
+        "DLH HOLDINGS CORP.",
+        "DLH Holdings Corp."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-06-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-3.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777016953,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777023515,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP."
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2024-02-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "infinibytecloud.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826810519,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826811472,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881071580,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881072459,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943830586,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943830666,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943843859,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943844123,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943854154,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8943854295,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111964774,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111965303,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111980266,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111980427,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112000306,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112001612,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112019519,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112019809,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112032132,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112032262,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190574979,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190575172,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9204856288,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9204860441,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9926634133,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9926634123,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP.",
+        "DLH Holdings Corp."
+      ],
+      "first_seen": "2023-03-07T00:00:00",
+      "last_seen": "2024-07-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nih.gov",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8886118387,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8886119484,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH Holdings Corp."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "detroitself.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8886128589,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8886128817,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9132315462,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9132321720,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP.",
+        "DLH Holdings Corp."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-04-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dlhcorp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086599823,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086599861,
+          "cert_org": "DLH HOLDINGS CORP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190946479,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190950705,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645071790,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645071893,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645518842,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645518912,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645732868,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645733159,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645745479,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645745452,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754929269,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754934624,
+          "cert_org": "DLH Holdings Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP",
+        "DLH HOLDINGS CORP.",
+        "DLH Holdings Corp."
+      ],
+      "first_seen": "2023-04-07T00:00:00",
+      "last_seen": "2024-06-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ifed2.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9759835491,
+          "cert_org": "DLH Holdings Corp",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9759839494,
+          "cert_org": "DLH Holdings Corp",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9759931616,
+          "cert_org": "DLH Holdings Corp",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH Holdings Corp' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9759931579,
+          "cert_org": "DLH Holdings Corp",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH Holdings Corp"
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-06-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stomptpoxx.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109380520,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DLH HOLDINGS CORP.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109381048,
+          "cert_org": "DLH HOLDINGS CORP.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DLH HOLDINGS CORP."
+      ],
+      "first_seen": "2023-08-10T00:00:00",
+      "last_seen": "2024-08-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T03:04:13.431608Z",
+    "elapsed_seconds": 40.42,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

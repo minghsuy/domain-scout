@@ -1,0 +1,667 @@
+{
+  "entity": {
+    "company_name": "Biogen",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "biogen.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705658355,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705684924,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874246319,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892541095,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892599546,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892668750,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893878593,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8951130151,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8976079271,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981556433,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058682914,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9129698482,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223951631,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282069342,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282095336,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397613927,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397647799,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9404116938,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9490870975,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9588143409,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702138346,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702170241,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9772296632,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9781914236,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9850802667,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9901335445,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9926288016,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9940746016,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9977398774,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9977656378,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978674125,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978726926,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984234664,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10045510384,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10085780954,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10101291326,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10150978140,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10213442607,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10221275694,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249760849,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249785258,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10352855559,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353053463,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353073165,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353256363,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353450515,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353463603,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353476493,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353487695,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362583468,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363329398,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Biogen, Inc."
+      ],
+      "first_seen": "2023-02-21T14:40:46",
+      "last_seen": "2024-10-11T18:31:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tysabrifdp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8708025810,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Biogen, Inc."
+      ],
+      "first_seen": "2023-02-21T21:57:20",
+      "last_seen": "2024-02-24T21:57:20",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "blossomspregnancyregistry.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716103390,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Biogen, Inc."
+      ],
+      "first_seen": "2023-02-22T21:25:49",
+      "last_seen": "2024-03-22T21:25:49",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cleo-app.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050566663,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Biogen France S.A.S' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Biogen France S.A.S"
+        }
+      ],
+      "cert_org_names": [
+        "Biogen, Inc."
+      ],
+      "first_seen": "2023-04-03T19:14:56",
+      "last_seen": "2024-04-05T19:14:56",
+      "resolves": true,
+      "rdap_org": "Biogen France S.A.S",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biogenidec.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Biogen, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9894187694,
+          "cert_org": "Biogen, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Biogen, Inc."
+      ],
+      "first_seen": "2023-07-13T13:51:40",
+      "last_seen": "2024-07-13T13:51:39",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:42:03.223564Z",
+    "elapsed_seconds": 19.78,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,559 @@
+{
+  "entity": {
+    "company_name": "FUELCELL ENERGY INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "fuelcellenergy.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9488824732,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10892586103,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11099176666,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11099190475,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11106996363,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11406923446,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13356282617,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15055106534,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15056480039,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15061067044,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17984604861,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19513416837,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19662051850,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22011981703,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22599409844,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22599541280,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22603406337,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22862791430,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22862934239,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890227137,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890257658,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890280169,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890302809,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890413237,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22890483359,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22931779559,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fce.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FuelCell Energy, Inc."
+      ],
+      "first_seen": "2023-05-26T00:00:00",
+      "last_seen": "2026-12-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fce.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882497258,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9488824732,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243451813,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243477589,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372020566,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10885592033,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11087294704,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11089371318,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11765747681,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14454441519,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14879142534,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15257323861,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20403023720,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20731670954,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20844142089,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16658486943,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17719364721,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20845588180,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526881325,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22368407693,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22369602187,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22507071564,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FuelCell Energy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23040661033,
+          "cert_org": "FuelCell Energy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FuelCell Energy, Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2027-01-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T02:26:46.610147Z",
+    "elapsed_seconds": 13.28,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

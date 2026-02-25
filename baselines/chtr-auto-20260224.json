@@ -1,0 +1,702 @@
+{
+  "entity": {
+    "company_name": "Charter Communications",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "charterlab.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8479946271,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8486737207,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8486767283,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8486784899,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-23T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "charter.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8482191921,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8482191791,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8482191765,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8482191770,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8482191846,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8489031655,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496174641,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496198128,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496208666,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496221291,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496228874,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496235245,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496250764,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496253960,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496278118,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496285064,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496293134,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496308655,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496322561,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8496339898,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8536432662,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8545155109,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "spectrummobile.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8488006800,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8488015734,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8488029918,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8488046682,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8488062759,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8503577462,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8503590564,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rr.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511899538,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511925676,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511943704,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511950468,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511982842,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512084375,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512089019,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "spectrumenterprise.net",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8511982842,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512084375,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512089019,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "spectrum.net",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512084375,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512089019,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "brighthouse.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512123542,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8512138017,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chartercom.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8537831094,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-30T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myspectrumreach.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543975154,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543980099,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543987333,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charter Communications Operating, LLC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8543996043,
+          "cert_org": "Charter Communications Operating, LLC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charter Communications Operating, LLC"
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:54:26.671076Z",
+    "elapsed_seconds": 15.96,
+    "domains_found": 9,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

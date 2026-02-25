@@ -1,0 +1,1355 @@
+{
+  "entity": {
+    "company_name": "Ciena",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "myciena.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769083388,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779808019,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ciena.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-02-28T15:33:09",
+      "last_seen": "2024-03-24T21:01:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tibitcommunications.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910658495,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9081929870,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429122361,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ciena.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-03-17T09:37:11",
+      "last_seen": "2024-05-19T13:54:29",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cienagov.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048387120,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9718635867,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ciena.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-04-03T13:54:52",
+      "last_seen": "2024-07-19T16:56:20",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "benunets.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534064100,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9552890309,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ciena.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-05-31T13:34:47",
+      "last_seen": "2024-06-30T18:07:23",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cas-isms.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243092758,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ciena.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-08-28T16:20:06",
+      "last_seen": "2024-09-28T16:20:05",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ciena.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588902374,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590147949,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8652623911,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661737952,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661737928,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8683908681,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705943144,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705943127,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8705943100,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721685649,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741330,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741268,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741307,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741358,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741963,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760741965,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760815390,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769083388,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770009732,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770431597,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779808019,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795377526,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848591237,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848591140,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903653972,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8964956461,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8973985021,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001543001,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003733531,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049278351,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049278373,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049278358,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174578233,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174578319,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9195746169,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9195746166,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9195746123,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298036887,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298036798,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341250675,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9351331410,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9351953861,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474140670,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474141121,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9486990550,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9512798621,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525600490,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525600454,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525600406,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9553487336,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9585885269,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642921727,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9666874112,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9761898049,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9761898040,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9832536316,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9832536434,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9833744820,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840618235,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9849198108,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9976427411,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836861,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836774,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836770,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836849,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836761,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836754,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836839,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836772,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836784,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836825,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836923,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991836937,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837143,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837101,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837186,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837048,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837148,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9991837030,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9994312118,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10038181334,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10044632492,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10173473969,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10220927787,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10220927801,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10220927765,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273228849,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273228813,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273228868,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273228865,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273228748,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302416127,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312343459,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10378575464,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10379472293,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10447010293,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472561546,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472870322,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472870409,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472888779,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10532174216,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10587026479,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10588247421,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634606895,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634607022,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634607023,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634607024,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634607026,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634606896,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10683053556,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10708616743,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10708642988,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10802192810,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895142531,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ciena Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895142532,
+          "cert_org": "Ciena Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ciena Corporation"
+      ],
+      "first_seen": "2023-02-06T11:47:03",
+      "last_seen": "2024-11-09T17:53:27",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:56:47.725592Z",
+    "elapsed_seconds": 2.6,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

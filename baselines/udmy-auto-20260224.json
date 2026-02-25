@@ -1,0 +1,625 @@
+{
+  "entity": {
+    "company_name": "Udemy, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "udemy.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883046147,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883090399,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9291981267,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9292081326,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10422867925,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10422906721,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10528949824,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13938083944,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13941392996,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13941428076,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13956301755,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13956353924,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12434646287,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12434656580,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13434984697,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13505737489,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13937492321,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13937596489,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13941267995,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13941310946,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14459338949,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14484859390,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14608416249,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14608478073,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16088535947,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16182789223,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16962458198,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16962464625,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22720383980,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19095607994,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19095662447,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21396087560,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21396238071,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23437615622,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with corpu.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Udemy Inc.",
+        "Udemy, Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2026-11-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "udemycdn.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10884016730,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13937976108,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15056090285,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with corpu.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Udemy, Inc."
+      ],
+      "first_seen": "2023-10-24T00:00:00",
+      "last_seen": "2024-11-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "udemymail.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23232435257,
+          "cert_org": "Udemy Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with corpu.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Udemy Inc"
+      ],
+      "first_seen": "2025-12-19T00:00:00",
+      "last_seen": "2026-12-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "corpu.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8655909319,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9939797402,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249264455,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13938200914,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Udemy Inc.",
+        "Udemy, Inc."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-09-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "udinfra.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903983955,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9660566513,
+          "cert_org": "Udemy Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12476840135,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13129802982,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Udemy, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17848558169,
+          "cert_org": "Udemy, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Udemy Inc.",
+        "Udemy, Inc."
+      ],
+      "first_seen": "2023-03-16T00:00:00",
+      "last_seen": "2026-05-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:07:42.658346Z",
+    "elapsed_seconds": 22.34,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,910 @@
+{
+  "entity": {
+    "company_name": "NETSCOUT SYSTEMS INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "arbornetworks.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8789639989,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8789640761,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NETSCOUT Systems Inc,' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821004117,
+          "cert_org": "NETSCOUT Systems Inc,",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NETSCOUT Systems Inc,' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821004504,
+          "cert_org": "NETSCOUT Systems Inc,",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with netscout.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "NETSCOUT Systems Inc,",
+        "Netscout Systems, Inc."
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2024-04-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "arbor.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050059189,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050059321,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with netscout.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Netscout Systems, Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-05-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "netscout.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8582452376,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8582453030,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600560366,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600560380,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600567279,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600569125,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600570748,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600571030,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600572895,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600573823,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600576066,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600576317,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600585557,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600585975,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600615185,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600616402,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600617888,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600618515,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654908282,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654908363,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654915354,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654915471,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654922182,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654923630,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654923705,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654925089,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654925842,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654925982,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654926495,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654933349,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769069479,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769069539,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769914897,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769917263,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778636251,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778637085,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821022068,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821028212,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821356608,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821356746,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821952093,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821952024,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8832406898,
+          "cert_org": "Netscout Systems INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856940795,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856951141,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875643883,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875644029,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875941278,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875941342,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8876129935,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8876129923,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895584219,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895584852,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904325700,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904325710,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950252922,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950253090,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049831161,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049831518,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049961499,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049961584,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050081335,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050088575,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9078331465,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9078331638,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9120809022,
+          "cert_org": "Netscout Systems INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121273883,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121274101,
+          "cert_org": "Netscout Systems Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9139296035,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9139296040,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175274409,
+          "cert_org": "Netscout Systems INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175439087,
+          "cert_org": "Netscout Systems INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9176172541,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9176172553,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226113259,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226113308,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238198544,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Netscout Systems, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238202671,
+          "cert_org": "Netscout Systems, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Netscout Systems INC.",
+        "Netscout Systems Inc",
+        "Netscout Systems, Inc."
+      ],
+      "first_seen": "2023-02-05T00:00:00",
+      "last_seen": "2024-05-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T05:02:48.258796Z",
+    "elapsed_seconds": 36.49,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1079 @@
+{
+  "entity": {
+    "company_name": "RESIDEO TECHNOLOGIES, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "resideo.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589666806,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606660591,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8660048387,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8666676804,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668685835,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756283044,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756283077,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756283037,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756290281,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756290223,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779045910,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779053033,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785207888,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785356547,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8851610372,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857090207,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874194385,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893698068,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893698172,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893698681,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893706134,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912021942,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912022179,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912022533,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912033233,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912033357,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912033707,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942291143,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942295036,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993738927,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013046422,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023252873,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023259914,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023260078,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023261112,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023266867,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023266860,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023418385,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023424847,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9069033135,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109506210,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109523839,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109541516,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109542097,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109582285,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111854836,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111891616,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9202739262,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9202739204,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9202739740,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9206940614,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9209775717,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9209776872,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9221687940,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282495613,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282505551,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282505523,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc.",
+        "Resideo Technologies, Inc",
+        "Resideo Technologies, Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-05-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tc20e.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883212991,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lifewhere.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982241811,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982241880,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982241802,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076873228,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076898855,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076906631,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc.",
+        "Resideo Technologies, Inc."
+      ],
+      "first_seen": "2023-03-26T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "firstalert.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003011737,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9077480486,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies, Inc"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-05-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "brkelectronics.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003158275,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9077460196,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies, Inc"
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-05-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "adi-gardiner.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013046422,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies, Inc"
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2024-04-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stentorius.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013046422,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies, Inc"
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2024-04-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "adiglobal.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013046422,
+          "cert_org": "Resideo Technologies, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with alarmnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies, Inc"
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2024-04-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "connectedlyric.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589663774,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589666628,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589666769,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606714072,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "honeywellhome.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606667470,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855126802,
+          "cert_org": "Resideo Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942262871,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9148868646,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc.",
+        "Resideo Technologies, Inc."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "totalconnect2.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Resideo Technologies Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175712657,
+          "cert_org": "Resideo Technologies Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Resideo Technologies Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-05-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:50:33.405322Z",
+    "elapsed_seconds": 25.45,
+    "domains_found": 11,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

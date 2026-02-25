@@ -1,0 +1,1080 @@
+{
+  "entity": {
+    "company_name": "ENTEGRIS INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "entegris.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760483249,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760500311,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760519982,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760576034,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760582920,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760594449,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760598693,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771485328,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771505144,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771547840,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771555116,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771555473,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771562916,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771574717,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771585530,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778297712,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778411955,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779026310,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779035856,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779805969,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8786772024,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787986094,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795828973,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821892130,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822076230,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822145989,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822162631,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822192609,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822208698,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822221416,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828407552,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856240052,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857154304,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857185140,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8907908065,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940838663,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940844727,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940855028,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940860379,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949326652,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949871800,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004696683,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004717200,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004717294,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004734026,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004734811,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9004743037,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9005269910,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9011526930,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9011544806,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9024595337,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086962956,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086963043,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086962978,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086963008,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086969988,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9110314509,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111023627,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121060113,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9140013675,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174892940,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175054923,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175061513,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175644849,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182095474,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189402498,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223295088,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282446784,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282459479,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282466705,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282477803,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283135937,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283145333,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283145331,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283150766,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9338697764,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366330094,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9482645202,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536058170,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536073191,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9544477769,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9551950982,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9569365126,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595796227,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595801874,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9637735972,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643523906,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9651552149,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9847251716,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938188073,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938197294,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938197896,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938202433,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938207555,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938211779,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984871732,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984876381,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10044973806,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062804474,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10086579053,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10207068085,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10220422488,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10253202058,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Entegris Inc."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-08-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cabotcmp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828154676,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023947042,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223152740,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143052779,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Entegris Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143149930,
+          "cert_org": "Entegris Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Entegris Inc."
+      ],
+      "first_seen": "2023-03-07T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T03:33:35.072748Z",
+    "elapsed_seconds": 23.22,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

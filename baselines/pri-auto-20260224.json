@@ -1,0 +1,1158 @@
+{
+  "entity": {
+    "company_name": "Primerica, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "primericamortgage.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828681783,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828686399,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828687094,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828687144,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848980940,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848982847,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-03-07T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primerica.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893557085,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893557533,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893564811,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893565067,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076185584,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076185713,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174213688,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174213835,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9288124191,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9288124162,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309176294,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309176499,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341427123,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341427124,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9364833280,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9364833348,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9423588067,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9423587997,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9482509221,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9482509830,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524374873,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524375076,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524381695,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524381607,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9579342540,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9579346914,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603185750,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603186013,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603199020,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603202997,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9606143250,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9606144516,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9694084948,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9694087851,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9694112165,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9694112308,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9752176079,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9752176020,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9755104533,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-03-15T00:00:00",
+      "last_seen": "2024-06-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericalatino.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericafna.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericacanada.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "womeninprimerica.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericacanada.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9755104533,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "therealhowmoneyworks.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericacanada.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericaworkshops.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with primericaonline.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericaonline.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8758353175,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8758353292,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076197031,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076197111,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9635848949,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9635849073,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9637279183,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9637279379,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9638869270,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9638869505,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-07-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericabusinessopportunity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9755104533,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "primericafinancialsolutions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472201708,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472204587,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-24T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myprimerica.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9482509221,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PRIMERICA, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9482509830,
+          "cert_org": "PRIMERICA, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PRIMERICA, INC."
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:18:31.186181Z",
+    "elapsed_seconds": 4.25,
+    "domains_found": 14,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

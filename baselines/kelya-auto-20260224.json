@@ -1,0 +1,1309 @@
+{
+  "entity": {
+    "company_name": "KELLY SERVICES INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "kellyocg.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8677025681,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8677061120,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9924889926,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10768801591,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-02-17T17:45:15",
+      "last_seen": "2024-10-13T03:50:16",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyhelixanalytics.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8839105606,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249863028,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10253830705,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-03-08T18:12:31",
+      "last_seen": "2024-09-29T17:51:27",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyfusion.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8997226866,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-03-29T05:12:55",
+      "last_seen": "2024-03-29T05:12:55",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyhelix.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118589809,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9192990680,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-04-11T14:40:32",
+      "last_seen": "2024-05-14T06:37:08",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyhba.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9187049038,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-04-19T07:44:03",
+      "last_seen": "2024-05-13T07:44:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyweb.de",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430888677,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430940605,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-05-19T19:46:57",
+      "last_seen": "2024-06-18T19:59:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.it",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430984603,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9753576614,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-05-19T20:07:48",
+      "last_seen": "2024-07-25T16:47:35",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.eu",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9972140283,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9972247575,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603834006,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mykellyjobs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-07-23T22:54:08",
+      "last_seen": "2024-11-03T15:10:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mykellyjobs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494788238,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-01-25T14:26:50",
+      "last_seen": "2024-02-25T14:26:49",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9421216978,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9422364470,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9611975290,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10094477824,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10192420649,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10602898683,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10602983204,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603055425,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10956791117,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10956805690,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-05-18T13:22:20",
+      "last_seen": "2024-11-17T15:10:05",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myptstime.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9644353630,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-06-13T18:20:23",
+      "last_seen": "2024-07-13T18:20:23",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyocg.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984294035,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-07-25T12:13:25",
+      "last_seen": "2024-08-24T12:13:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "findabetterjob.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10205564268,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-08-23T14:08:17",
+      "last_seen": "2024-09-22T14:08:16",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10253284151,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10566011530,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11017196199,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11029037678,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-08-30T04:47:15",
+      "last_seen": "2024-11-06T20:52:30",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ayers.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10256849636,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-08-30T16:05:22",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mykelly.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mykelly.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyeducationalstaffing.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.com.pr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10884543436,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-10-24T17:38:30",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservicesinvestments.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-09-27T18:58:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mykelly.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448616991,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10559574246,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10681362103,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10713144253,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10728341803,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-09-22T18:58:05",
+      "last_seen": "2024-10-18T21:40:37",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyservices.no",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603120846,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603141155,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-10-04T14:08:52",
+      "last_seen": "2024-11-03T14:11:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyconnect.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10741363630,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-10-11T21:44:29",
+      "last_seen": "2024-10-11T21:44:28",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyeducation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10884425716,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-10-24T17:21:30",
+      "last_seen": "2024-11-09T17:21:29",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellyeducationprod.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Kelly Services, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10884425716,
+          "cert_org": "Kelly Services, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Kelly Services, Inc."
+      ],
+      "first_seen": "2023-10-24T17:21:30",
+      "last_seen": "2024-11-09T17:21:29",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T03:31:40.890479Z",
+    "elapsed_seconds": 52.01,
+    "domains_found": 28,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "entity": {
+    "company_name": "URBAN ONE, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "u1corp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474879970,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10159876705,
+          "cert_org": "Urban One, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11931230276,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12426735663,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13120245877,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17933261381,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16417330471,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17089383634,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18429530959,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18559663433,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18678511322,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Urban One, Inc",
+        "Urban One, Inc."
+      ],
+      "first_seen": "2023-05-24T18:47:30",
+      "last_seen": "2026-05-28T19:32:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tvonesales.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10102981122,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Urban One, Inc."
+      ],
+      "first_seen": "2023-08-09T19:14:50",
+      "last_seen": "2024-08-09T19:14:49",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tvonepartners.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10103001635,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10103012005,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Urban One, Inc."
+      ],
+      "first_seen": "2023-08-09T19:18:51",
+      "last_seen": "2024-08-09T19:21:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tvone.tv",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Urban One, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14020121057,
+          "cert_org": "Urban One, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Urban One, Inc."
+      ],
+      "first_seen": "2024-08-06T16:55:27",
+      "last_seen": "2025-08-06T16:55:26",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T01:45:54.225982Z",
+    "elapsed_seconds": 14.33,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

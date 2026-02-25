@@ -1,0 +1,1256 @@
+{
+  "entity": {
+    "company_name": "GE Aerospace",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "geaerospace.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12895879874,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12895879875,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13152977681,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13370112999,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13370121117,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13602108626,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13696483452,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14037606765,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14586742254,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14621667602,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14621963373,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14621994539,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092088946,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17476009294,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19538516080,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16222392527,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16372545609,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16451191159,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16451222797,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16721885299,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16721926746,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859139592,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16879263352,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17014806241,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17069888609,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092076907,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17110152037,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17217819335,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17371631640,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419446269,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17423140486,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558460655,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558478973,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558559306,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17559528626,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17559546877,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17559577910,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17559593187,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17563331828,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17563351402,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17609085114,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17609113752,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17697097168,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17697106430,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17697116852,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17697129927,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with geaerospace.us",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "GE Aerospace",
+        "GE Aerospace, Inc"
+      ],
+      "first_seen": "2024-04-29T00:00:00",
+      "last_seen": "2026-04-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "geaerospace.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12089068616,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12089085419,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12089356898,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12099283060,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14526778134,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14526786513,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14526793634,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14526850500,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367469197,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367471189,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16660654338,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16660666400,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "GE Aerospace, Inc"
+      ],
+      "first_seen": "2024-02-15T00:00:00",
+      "last_seen": "2026-02-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "geaerospace.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12091794012,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12307255686,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12848236968,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12848265056,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12863765744,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12865069616,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12865073380,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12895879874,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12895879875,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13345090337,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13345098364,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13356090328,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13367273402,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13367662406,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13370112999,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13370121117,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13536708829,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13658602158,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13748339278,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14320647559,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14323647413,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14454094191,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14504055091,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14572379021,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14583705701,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14700248479,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14786249551,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14786341314,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14786375018,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14786407547,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14786434629,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14948128485,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15069946660,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15069954275,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15266890660,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15715369003,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16459664008,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092088946,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17875979531,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18061248642,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22478452086,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367473107,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16418260125,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16451256689,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16675439327,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16721936886,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940032474,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16940047277,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17092076907,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17371683706,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17371704253,
+          "cert_org": "GE Aerospace, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419230276,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419245279,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17466619368,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558319656,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558352318,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17609070364,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17613174786,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17697086461,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17746879792,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17789535405,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "GE Aerospace",
+        "GE Aerospace, Inc"
+      ],
+      "first_seen": "2024-02-15T00:00:00",
+      "last_seen": "2026-04-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ge.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'GE Aerospace' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419446269,
+          "cert_org": "GE Aerospace",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "GE Aerospace"
+      ],
+      "first_seen": "2025-03-26T00:00:00",
+      "last_seen": "2026-03-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:53:58.373928Z",
+    "elapsed_seconds": 11.84,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 120,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

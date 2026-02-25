@@ -1,0 +1,809 @@
+{
+  "entity": {
+    "company_name": "STAR GROUP, L.P.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "petro.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620111915,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620112019,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620238725,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620247257,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237590,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237591,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237593,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237596,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237606,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237611,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237824,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237833,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11265237834,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211007274,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211041749,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211048973,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211064060,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12305083923,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16868615354,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16868667287,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834823449,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834828421,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834847561,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834851667,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834859288,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834864320,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834867802,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834878769,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15834881859,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15836211773,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16942249549,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16943089653,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16945170258,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16945175874,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16945205938,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22511870157,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22511869366,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with stargrouplp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2026-04-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "idealpropane.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14277129960,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14277189800,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20328052580,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with stargrouplp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P."
+      ],
+      "first_seen": "2024-08-24T00:00:00",
+      "last_seen": "2025-08-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "catooil.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19534249440,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19534808389,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with stargrouplp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P."
+      ],
+      "first_seen": "2025-07-08T00:00:00",
+      "last_seen": "2026-07-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "petroheat.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20160783509,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20949728620,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21013245207,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with stargrouplp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P."
+      ],
+      "first_seen": "2025-08-06T00:00:00",
+      "last_seen": "2026-08-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stargrouplp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620111915,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620112019,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211007274,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211064060,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16868615354,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16868667287,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16942249549,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16945205938,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20464560077,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20465208778,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20482272154,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20486262142,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20486397855,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20949527528,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22511870157,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22511869366,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24210446088,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24288633545,
+          "cert_org": "Star Group, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P."
+      ],
+      "first_seen": "2023-02-10T00:00:00",
+      "last_seen": "2026-08-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "codoil.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9876941291,
+          "cert_org": "Star Group, L.P",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13387311419,
+          "cert_org": "Star Group, L.P",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Star Group, L.P' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17994278547,
+          "cert_org": "Star Group, L.P",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Star Group, L.P"
+      ],
+      "first_seen": "2023-07-11T00:00:00",
+      "last_seen": "2025-07-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:59:48.737054Z",
+    "elapsed_seconds": 8.19,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

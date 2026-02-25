@@ -1,0 +1,1396 @@
+{
+  "entity": {
+    "company_name": "CSX Corporation",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "mytransflo.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9398640634,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with csx.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9057542897,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9149004582,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9201891035,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9201994773,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230669214,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9281212366,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9369490575,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9369863014,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9406571895,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9423211593,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9535078770,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9657586438,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9703137707,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9903436259,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10167525015,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10216216726,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10241983452,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10244089671,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10476383649,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10757450999,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10822137609,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11028247644,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11132396477,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11250959089,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11273194477,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11278833545,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11316519941,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-04-04T00:00:00",
+      "last_seen": "2024-12-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shiprailplus.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121697788,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174331673,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-04-11T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "boctrr.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138749786,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10310576139,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-04-13T00:00:00",
+      "last_seen": "2024-09-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transloading.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csxtransflo.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflo.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bulktransloading.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorp.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bulktransloading.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorporation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflotranscend.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorp.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflologistics.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflo.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mytransflo.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csxtransmode.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflologistics.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mytransflo.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorporation.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflocorporation.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflotranscend.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306589374,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-04T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intermodal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9369823469,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10197159448,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10371382165,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10976719397,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-12T00:00:00",
+      "last_seen": "2024-11-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shipcsx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-16T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "colocsx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10677798664,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10804572968,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-16T00:00:00",
+      "last_seen": "2024-11-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csxintermodalterminals.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10197159448,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10371382165,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10976719397,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-16T00:00:00",
+      "last_seen": "2024-11-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csxcrudebyrail.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403703441,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9814726816,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11128619132,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-16T00:00:00",
+      "last_seen": "2024-12-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "csxcrewlife.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9421203329,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10007545984,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10072177369,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-05-18T00:00:00",
+      "last_seen": "2024-08-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valueofintermodal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10197159448,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10371382165,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-08-22T00:00:00",
+      "last_seen": "2024-09-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "transflo.dev",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10894792627,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CSX Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098557471,
+          "cert_org": "CSX Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CSX Corporation"
+      ],
+      "first_seen": "2023-10-25T00:00:00",
+      "last_seen": "2024-10-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:09:11.009373Z",
+    "elapsed_seconds": 22.85,
+    "domains_found": 31,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

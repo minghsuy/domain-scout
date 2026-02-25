@@ -1,0 +1,777 @@
+{
+  "entity": {
+    "company_name": "Arista Networks",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "aristanetworks.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8801487430,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8801491655,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8816070043,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822986109,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8995632909,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9006130434,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282799833,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309168674,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9484475710,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with arista.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arista Networks, Inc."
+      ],
+      "first_seen": "2023-03-04T00:00:00",
+      "last_seen": "2024-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "arista.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8801478266,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822986109,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8873391435,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8898887017,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8976830461,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9123930028,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9123930478,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9201059011,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9220729566,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283530752,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429982509,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429982589,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9462191653,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9467101033,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9484475710,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9488802004,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9493463521,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9541081170,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9657639215,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668402233,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709397897,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9724512670,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813727239,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813742733,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813742872,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813742932,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9813749364,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825198973,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825207460,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825207483,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825207508,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825207882,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825214063,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825214289,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825220894,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825229136,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825236583,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825244116,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825266654,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825276713,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825286477,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825294315,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825308358,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825318499,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825333526,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825341660,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825355549,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9827435767,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arista Networks, Inc."
+      ],
+      "first_seen": "2023-03-04T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "metamako.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8801478370,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8801482312,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9937259433,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9973260298,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arista Networks, Inc."
+      ],
+      "first_seen": "2023-03-04T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "arista.io",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048621039,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112715526,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arista Networks, Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "untangle.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9116157234,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arista Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9492228882,
+          "cert_org": "Arista Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arista Networks, Inc."
+      ],
+      "first_seen": "2023-04-11T00:00:00",
+      "last_seen": "2024-05-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:34:24.010915Z",
+    "elapsed_seconds": 26.17,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

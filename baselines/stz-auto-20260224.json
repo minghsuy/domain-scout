@@ -1,0 +1,614 @@
+{
+  "entity": {
+    "company_name": "Constellation Brands",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "cbrandsgear.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536781016,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10768047753,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13305485201,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13380748621,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17989737354,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with cbrands.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Constellation Brands, Inc."
+      ],
+      "first_seen": "2023-05-31T00:00:00",
+      "last_seen": "2025-07-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "constellationbeergear.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536781016,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10768047753,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13305485201,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13380748621,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17989737354,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with cbrands.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Constellation Brands, Inc."
+      ],
+      "first_seen": "2023-05-31T00:00:00",
+      "last_seen": "2025-07-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cbrands.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9065411040,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9069032156,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9079300804,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533730993,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10047340635,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10414755650,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10676626331,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10843907690,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11261179686,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12984046855,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14033619610,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14033635536,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13036385706,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13344140873,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13368602796,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13820030313,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14033877475,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14585510536,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17981987422,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18580457349,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20296361588,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20422815086,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CONSTELLATION BRANDS, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16739624720,
+          "cert_org": "CONSTELLATION BRANDS, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17063701894,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17633323527,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17745540613,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18580443597,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18693079308,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19054160701,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19054281445,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19054645306,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19062922300,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19716983667,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19760167414,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19761227574,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20208655035,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20486259933,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20952385929,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21063847546,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21118814202,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21224648314,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Constellation Brands, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21226527359,
+          "cert_org": "Constellation Brands, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CONSTELLATION BRANDS, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22507937994,
+          "cert_org": "CONSTELLATION BRANDS, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CONSTELLATION BRANDS, INC.",
+        "Constellation Brands, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2026-09-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:03:49.155429Z",
+    "elapsed_seconds": 1.72,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

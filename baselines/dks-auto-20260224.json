@@ -1,0 +1,1080 @@
+{
+  "entity": {
+    "company_name": "DICK'S SPORTING GOODS, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "goinggoing.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589692318,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8589692721,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "golfgalaxy.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959330814,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959330905,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dksxchange.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959410014,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959410141,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965301779,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965309388,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fieldandstreamshop.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959416658,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959417165,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "publiclands.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959433423,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959433742,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "caliastudio.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959471747,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959472061,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "secondskin.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959471747,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959472061,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "calia.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959471747,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959472061,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dickssportinggoods.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-03-22T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dickssportinggoods.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505553090,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505557031,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959400864,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959401122,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959471747,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959472061,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-01-26T00:00:00",
+      "last_seen": "2024-04-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dcsg.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505553526,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505553900,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505557136,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8505558588,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DICK'S Sporting Goods Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8535402296,
+          "cert_org": "DICK'S Sporting Goods Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8543577237,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8543577297,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614478304,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614478301,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614478858,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614479012,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614479236,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614479400,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715117232,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715117400,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856777699,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856781516,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856781571,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8856782429,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959395564,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959398718,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974193111,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974193017,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974193177,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974198713,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992457012,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992457337,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992717495,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992717950,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262161,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262126,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262106,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262293,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262845,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001262872,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001263145,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001263120,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001270106,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001270169,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001270823,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001270846,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001271060,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001271213,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001271754,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001273086,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001355883,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001356480,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001356692,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001357629,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058064546,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058064595,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118370670,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118370878,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127987438,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127988147,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182422920,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182424032,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9201149891,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dick's Sporting Goods, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9201149888,
+          "cert_org": "Dick's Sporting Goods, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DICK'S Sporting Goods Inc",
+        "Dick's Sporting Goods, Inc."
+      ],
+      "first_seen": "2023-01-26T00:00:00",
+      "last_seen": "2024-05-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T04:15:34.912584Z",
+    "elapsed_seconds": 5.05,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

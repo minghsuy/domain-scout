@@ -1,0 +1,1026 @@
+{
+  "entity": {
+    "company_name": "AVNET INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "element14.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182740718,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9246839639,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with avnet.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-04-18T16:47:03",
+      "last_seen": "2024-05-06T16:47:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avnet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8592262424,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623482912,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8676885448,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8708497417,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732244651,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760196294,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787497799,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787822823,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787868598,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874500217,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874500297,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8886641589,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8951539776,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959967348,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8960216088,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967416850,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982302915,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983590266,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9052076031,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058591363,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9119182537,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138372731,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138384335,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9148061095,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9173834042,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182161902,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9194999182,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9307334698,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9307370381,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9350075707,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9350120959,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9350797380,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9350999744,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366352605,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366396090,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397285402,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456875482,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456875690,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474140744,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525242344,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525284021,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525716515,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9554663526,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580057043,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580075194,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580099435,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580124018,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580149667,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9611023323,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9701846812,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702070373,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9710382239,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9753563706,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754306051,
+          "cert_org": "Avnet, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc.",
+        "Avnet, Inc."
+      ],
+      "first_seen": "2023-02-06T21:45:42",
+      "last_seen": "2024-07-18T16:41:30",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avnetdev.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787711382,
+          "cert_org": "Avnet Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc"
+      ],
+      "first_seen": "2023-03-02T22:04:19",
+      "last_seen": "2024-03-02T22:04:19",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "premierfarnell.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875125806,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875125805,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9306511370,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-13T19:55:30",
+      "last_seen": "2024-05-06T15:24:52",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pours.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8966274625,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T16:03:48",
+      "last_seen": "2024-04-16T16:03:48",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "supplychaindigitaldashboard.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968189645,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T21:43:47",
+      "last_seen": "2024-04-05T21:43:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dfeoptions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968189645,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T21:43:47",
+      "last_seen": "2024-04-05T21:43:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "proscalnext.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968189645,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T21:43:47",
+      "last_seen": "2024-04-05T21:43:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "proscaldemo.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968189645,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T21:43:47",
+      "last_seen": "2024-04-05T21:43:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "warranty-renewal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8968189645,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-03-23T21:43:47",
+      "last_seen": "2024-04-05T21:43:47",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "farnell.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9246912655,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-04-27T14:56:12",
+      "last_seen": "2024-05-24T14:56:12",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "newark.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9246952168,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-04-27T15:04:37",
+      "last_seen": "2024-05-10T15:04:37",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cnsha05-vpn.cn",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9315902495,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-05-05T14:59:08",
+      "last_seen": "2024-06-05T14:59:08",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avnet.me",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9701790374,
+          "cert_org": "Avnet Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet Inc."
+      ],
+      "first_seen": "2023-06-20T15:02:58",
+      "last_seen": "2024-07-08T15:02:57",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avnet-abacus.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754306051,
+          "cert_org": "Avnet, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet, Inc."
+      ],
+      "first_seen": "2023-06-26T00:00:00",
+      "last_seen": "2024-06-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "avnet-silica.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Avnet, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754306051,
+          "cert_org": "Avnet, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Avnet, Inc."
+      ],
+      "first_seen": "2023-06-26T00:00:00",
+      "last_seen": "2024-06-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:24:16.789992Z",
+    "elapsed_seconds": 25.0,
+    "domains_found": 16,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

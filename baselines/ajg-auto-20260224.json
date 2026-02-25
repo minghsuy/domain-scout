@@ -1,0 +1,1898 @@
+{
+  "entity": {
+    "company_name": "Arthur J. Gallagher & Co.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ajg.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8474884475,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8474896327,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-01-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "risxfacs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8490776590,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-01-25T00:00:00",
+      "last_seen": "2024-02-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "travelwithgallagher.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8539466191,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8594352878,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-03-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hospitalityins.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8540946260,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gallagherbassett.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8545914675,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8545997963,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8560011319,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8562892164,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8563075042,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8563239846,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588639176,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588642587,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728216541,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "safetyassist.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ompl.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crombielockwood.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "monumentinsurance.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "childproof.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "safetyassist.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "orioninsurance.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dealersblock.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553563709,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-03-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "haywards.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558064917,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558074896,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stratasolicitors.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558090181,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stratasolicitors.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558114194,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "artexrisk.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558127670,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8655552710,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "quantum-underwriting.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558131586,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558136282,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558136522,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ajg.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8561008678,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8561035563,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8562064141,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8586788206,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588718890,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588752122,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8594072998,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8615873578,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8616514725,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8616969801,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8642147076,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645648043,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8648529530,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661913473,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665898119,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702164813,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702371056,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702458553,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8702738967,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707554080,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707609955,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707690623,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716164010,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728075418,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728247657,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732238676,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732365424,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755601748,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763145455,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-03-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "suretysolutions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8562015797,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "advisorsafeinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8562978307,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "agenteoprogram.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569222863,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-03-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "goldencareeoprogram.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569239680,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588687757,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aimeoprogram.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569941532,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588673126,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-04T00:00:00",
+      "last_seen": "2024-03-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "franinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588634109,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "air-sur.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588714023,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-02-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ajgrms.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588744258,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "collegestudentinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600598908,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gallagherglobalalliance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8601216971,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-03-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ajgswitzerland.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605277782,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ajgswitzerland.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605323197,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hessepartner.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605397453,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hesse-partner.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605422631,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hessepartner.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605439958,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mygbclaim.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8642303347,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deputybondsonline.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8643479677,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-03-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "penunderwriting.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8643503030,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bollingerclaims.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8648438206,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "alescorms.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651856974,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651928108,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "reportmyincident.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651889842,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "horseshoeglobal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651913650,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "franbenefits.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728032010,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "penunderwriting.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728084049,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bollingerschools.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728175872,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "barmore.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "barmore.info",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gallaghermalpractice.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "barmoreinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nhstexas.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "galaghermalpractice.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728189882,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "erimusib.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8757438174,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gbtpa.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8766950412,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ajg.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Arthur J. Gallagher & Co.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767633981,
+          "cert_org": "Arthur J. Gallagher & Co.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Arthur J. Gallagher & Co."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-03-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:34:51.510209Z",
+    "elapsed_seconds": 22.31,
+    "domains_found": 53,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

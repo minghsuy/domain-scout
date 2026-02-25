@@ -1,0 +1,1050 @@
+{
+  "entity": {
+    "company_name": "TELUS CORP",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "koodomobile.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590132333,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8602333007,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8694649720,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715888854,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715894362,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "publicmobile.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714525286,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714540703,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELUS Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELUS Corporation"
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-22T00:00:00",
+      "last_seen": "2024-03-24T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELUS Corporation",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "koodo.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELUS Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELUS Corporation"
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELUS Corporation",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "telus.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELUS Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELUS Corporation"
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELUS Corporation",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "koodo.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "koodomobile.ca",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELUS Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELUS Corporation"
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with telus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-03-12T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELUS Corporation",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "telus.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8511632883,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8511632858,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8536775495,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553197229,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553580402,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590126666,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590126678,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590134565,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590134430,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590134623,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590140407,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590140567,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590152817,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590157967,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590158082,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590163029,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590162866,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590165936,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590171054,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590838303,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591268485,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599247389,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599250288,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599257008,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599451475,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606406443,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606406673,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8607280554,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8615261003,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8615595231,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622439554,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622439604,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622439643,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622439821,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622456038,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622456163,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622458139,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8622458253,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645385508,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8660948472,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8662052084,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8668677653,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678189287,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678189352,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678194597,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698177566,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698183267,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698829768,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8699063111,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8699063258,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706058046,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706058363,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8713953940,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715265881,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715945670,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722126415,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730603681,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730610959,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730616116,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730617119,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730617189,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-01-27T00:00:00",
+      "last_seen": "2024-03-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "telusquebec.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590166095,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590171095,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "telusmobility.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8662052084,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-15T00:00:00",
+      "last_seen": "2024-03-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "citrixportal.adt.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELUS Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714484799,
+          "cert_org": "TELUS Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TELUS Corp."
+      ],
+      "first_seen": "2023-02-22T00:00:00",
+      "last_seen": "2024-03-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T20:34:58.722425Z",
+    "elapsed_seconds": 22.42,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

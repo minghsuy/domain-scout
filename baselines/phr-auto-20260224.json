@@ -1,0 +1,823 @@
+{
+  "entity": {
+    "company_name": "Phreesia, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "phreesia.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312947677,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572591037,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10710133231,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10710428285,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10711214744,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11252352384,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14571922814,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15445640354,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15445640240,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604172904,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604450691,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11855957546,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11986643546,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11998951819,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12347717208,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12393499577,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12394892431,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14207741435,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14453723047,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14454973645,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14571935808,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14572010345,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15445674443,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15786292749,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15998738421,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20308680063,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20403029860,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20425264052,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15786336992,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16070982217,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16419020340,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16760539333,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16760793340,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16779032720,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16852932901,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16852934447,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19988125527,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20438274660,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22259725948,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22502521345,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22730584031,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24223368637,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24223952201,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24224286547,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24384959527,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24391513059,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24391529680,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24447826524,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24448018981,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24448156533,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24449055120,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23518399637,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24224380870,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24385461639,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24448182277,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24469263899,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Phreesia, Inc."
+      ],
+      "first_seen": "2023-09-06T00:00:00",
+      "last_seen": "2027-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "secure-checkin.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12030338867,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16284638020,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19629413076,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23316576570,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Phreesia, Inc."
+      ],
+      "first_seen": "2024-02-09T00:00:00",
+      "last_seen": "2027-01-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "testnj-checkin.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12030455417,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12030537506,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16284243792,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16284230374,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22503650175,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23572967380,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Phreesia, Inc."
+      ],
+      "first_seen": "2024-02-09T00:00:00",
+      "last_seen": "2027-01-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "insigniahealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14208862639,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14610033476,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20440713001,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19876177046,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20457675382,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Phreesia, Inc."
+      ],
+      "first_seen": "2024-08-19T00:00:00",
+      "last_seen": "2026-08-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "accessefm.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18366294374,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Phreesia, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24336217804,
+          "cert_org": "Phreesia, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Phreesia, Inc."
+      ],
+      "first_seen": "2025-05-12T00:00:00",
+      "last_seen": "2027-02-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T15:31:57.323240Z",
+    "elapsed_seconds": 12.17,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "include_non_resolving": false
+    }
+  }
+}

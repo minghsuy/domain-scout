@@ -1,0 +1,1268 @@
+{
+  "entity": {
+    "company_name": "BioNTech SE",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "bion.tech",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840416754,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840417235,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840523837,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840556963,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9841306623,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9841307116,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9841332522,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9922702581,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9922734897,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11024360942,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11124204391,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13038599700,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13512734591,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13669961087,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13681201592,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13904465917,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14002021043,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14002221718,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14017516147,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14017641885,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14425529746,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14876267198,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with bnt.digital",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-07-06T11:11:15",
+      "last_seen": "2025-11-11T14:41:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biontech-imfs.de",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10955963070,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with bnt.digital",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-10-31T13:21:07",
+      "last_seen": "2024-12-01T13:21:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biontech.us",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15490323995,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532521686,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532540664,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with bnt.digital",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2024-11-25T09:01:02",
+      "last_seen": "2025-12-27T09:01:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bnt.digital",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551175688,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551200275,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8964230425,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9846930375,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10043689835,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10044796253,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12812593956,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12220336423,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12227200806,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13904467390,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13904468479,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-02-01T13:21:11",
+      "last_seen": "2025-08-30T09:51:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biontech.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721864062,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8818235682,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8890329112,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8890366052,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949008674,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9221349904,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9312675863,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9585169818,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9585721554,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9640533860,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9650619275,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9723207469,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787243853,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9846957039,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10005595280,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10387659093,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10617764576,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10621117220,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10637066976,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11165970409,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12494045209,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14794499517,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403581208,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403582865,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11646138896,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11799287947,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11862289555,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12494036591,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12811926483,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13076838054,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13272107346,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13293892154,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13294384450,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13465731159,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13466696883,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13501096273,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13609982913,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13940814667,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13940996086,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14059181315,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14424362964,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14794466520,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15336812196,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15406924758,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15490323995,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532521686,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532540664,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-02-23T14:21:39",
+      "last_seen": "2025-12-27T09:01:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biontech.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9075512466,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188103905,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533463406,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9585761001,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10248816697,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10637069632,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13017721402,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13042673857,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11719808728,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11720801386,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11720956965,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11763814492,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11918351517,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11918567102,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12065108417,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12096763949,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013038805,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013149584,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013291808,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13029360113,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13029363939,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13029366586,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13029509386,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13138907769,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14876113272,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15490323995,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532521686,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15532540664,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-04-06T08:26:14",
+      "last_seen": "2025-12-27T09:01:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "comirnaty.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9541189837,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9543445424,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioNTech SE' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9585222646,
+          "cert_org": "BioNTech SE",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioNTech SE"
+      ],
+      "first_seen": "2023-06-01T07:56:12",
+      "last_seen": "2024-07-02T07:56:11",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T00:24:02.628216Z",
+    "elapsed_seconds": 16.77,
+    "domains_found": 7,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "entity": {
+    "company_name": "NOVA LTD.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "windows-conservatories.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA GROUP LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9781480666,
+          "cert_org": "NOVA GROUP LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA GROUP LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9781480823,
+          "cert_org": "NOVA GROUP LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "NOVA GROUP LTD"
+      ],
+      "first_seen": "2023-06-29T00:00:00",
+      "last_seen": "2024-06-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "novabank.com.tr",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA BANK LTD.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8856350534,
+          "cert_org": "NOVA BANK LTD.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA BANK LTD.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8856485473,
+          "cert_org": "NOVA BANK LTD.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA BANK LTD.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10108383522,
+          "cert_org": "NOVA BANK LTD.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA BANK LTD.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 12229020735,
+          "cert_org": "NOVA BANK LTD.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'NOVA BANK LTD.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 12291252696,
+          "cert_org": "NOVA BANK LTD.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "NOVA BANK LTD."
+      ],
+      "first_seen": "2023-03-10T13:57:47",
+      "last_seen": "2025-04-01T12:20:34",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nexusnova.co.uk",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nexus Nova Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10990504605,
+          "cert_org": "Nexus Nova Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nexus Nova Ltd' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10990509312,
+          "cert_org": "Nexus Nova Ltd",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Nexus Nova Ltd"
+      ],
+      "first_seen": "2023-11-04T00:00:00",
+      "last_seen": "2024-11-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:57:15.275651Z",
+    "elapsed_seconds": 15.35,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "entity": {
+    "company_name": "Host Hotels & Resorts",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "hosthotels.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9222990198,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223333181,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11140265190,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11140486972,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11143679283,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11187218595,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11251968101,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11252067495,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11252187605,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11274490783,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11274796852,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11275948572,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11286699835,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11325477836,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13014221367,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15493776821,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11390526675,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11404591422,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11406988291,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407058631,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407060640,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407170825,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407703903,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407887531,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11407918859,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11409820085,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11409972829,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11411167438,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11421331360,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11422726118,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013644284,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013668578,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13014207943,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13014214154,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13018241358,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15436509706,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15436657491,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15493767137,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15493883468,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15623942410,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17912770005,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20863030481,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20864794068,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15812576831,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15813128768,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15813198794,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15813247605,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16098982308,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16099953529,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16163647382,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16163661906,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16447634030,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18020805579,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18022554320,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18022574522,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18128572365,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18128574589,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18128583484,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18980103126,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18981165285,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20031668087,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20039097575,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20895777420,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22502665145,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22503055464,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22503060296,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22849504962,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22851166613,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23162776783,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23617411075,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23618012425,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23618176876,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23724271344,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23750313689,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24018334501,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24039912380,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24042054873,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24364256524,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24548741612,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with hostmarriott.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "HOST HOTELS & RESORTS, L.P.",
+        "Host Hotels & Resorts, Inc."
+      ],
+      "first_seen": "2023-04-24T00:00:00",
+      "last_seen": "2027-01-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hostmarriott.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892384678,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048128637,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048293260,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048302514,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9550702077,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9551788992,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9924516302,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12439343289,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12439368840,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16138409465,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16592298768,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16592468622,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'HOST HOTELS & RESORTS, L.P.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16656675055,
+          "cert_org": "HOST HOTELS & RESORTS, L.P.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419446557,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17473115466,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18406356656,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18520707587,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24018352023,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23750150972,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Host Hotels & Resorts, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23750235933,
+          "cert_org": "Host Hotels & Resorts, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "HOST HOTELS & RESORTS, L.P.",
+        "Host Hotels & Resorts, Inc."
+      ],
+      "first_seen": "2023-03-15T00:00:00",
+      "last_seen": "2027-01-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T17:03:58.062734Z",
+    "elapsed_seconds": 7.53,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

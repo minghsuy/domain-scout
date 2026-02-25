@@ -1,0 +1,599 @@
+{
+  "entity": {
+    "company_name": "Allot Ltd.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "allot.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9286797223,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9287466351,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9287869319,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9346444587,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9363620526,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9385794277,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9386037211,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9386204797,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9394671446,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9394796073,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9395343352,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9444388437,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9452306452,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454153202,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454761494,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456055546,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456129644,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9526915709,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9578454199,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9592809671,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9592877104,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9592942541,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9593020447,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9601291494,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9601384273,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9601512800,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9601824111,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10725010362,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448296208,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448404084,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12449238431,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12450497850,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12455238697,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12456781011,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12458078197,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12458189644,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12458498983,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12458723253,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12462084928,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12466835402,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12472509703,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12477917635,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12595396970,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13049364290,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13076178576,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13137779759,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13206628091,
+          "cert_org": "Allot Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allot Ltd."
+      ],
+      "first_seen": "2023-05-02T00:00:00",
+      "last_seen": "2025-04-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "optenet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10676185648,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10677042960,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12346819605,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13501489678,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14557228751,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14557334629,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Allot Ltd' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14557537554,
+          "cert_org": "Allot Ltd",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Allot Ltd"
+      ],
+      "first_seen": "2023-10-09T00:00:00",
+      "last_seen": "2025-10-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:03:16.211273Z",
+    "elapsed_seconds": 21.21,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

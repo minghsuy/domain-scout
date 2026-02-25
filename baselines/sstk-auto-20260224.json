@@ -1,0 +1,1114 @@
+{
+  "entity": {
+    "company_name": "Shutterstock, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "picmonkey.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8948848336,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8948979458,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10387456026,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10413958000,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10703419138,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10703419193,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10703436503,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10975133224,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10985923439,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14684828552,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12447055564,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12447055610,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-03-21T00:00:00",
+      "last_seen": "2025-03-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "turbosquid.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174770466,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12294113417,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12294117196,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12294268663,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12777771312,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2025-04-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shutterstock.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174770512,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9195549916,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9314894005,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938819141,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9939299957,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10156988281,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10157917583,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10271737094,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10271747970,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10271754102,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273150931,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273161682,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10273168082,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10310525847,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10370300980,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10375934087,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10490622835,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10697380522,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10822527556,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10893740675,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10896317843,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10896492759,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11095642026,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15144337520,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11689962907,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11768069664,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11865266462,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12515231643,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12515244375,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12813311934,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13036133846,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13138355115,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942105340,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942124027,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13951559808,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2025-08-31T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bigstockphoto.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9315181606,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10419941948,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10493953437,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10697380489,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10950915374,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10968508937,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12981408433,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-05-05T00:00:00",
+      "last_seen": "2025-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "free3d.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9635931803,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13433280959,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-06-12T00:00:00",
+      "last_seen": "2025-06-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "offset.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9939302473,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11165252634,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11184697553,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11995937179,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-07-19T00:00:00",
+      "last_seen": "2025-02-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "splashnews.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142235697,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10565827906,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13138355115,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-08-14T00:00:00",
+      "last_seen": "2025-03-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pond5.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10197572255,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10213313139,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10369002586,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10490622959,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10697380852,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10954472485,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10968508743,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942179912,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942180844,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942182121,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942182330,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13951559807,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-08-22T00:00:00",
+      "last_seen": "2025-08-31T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bigstock.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10419941948,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10493953437,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10697380489,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10950915374,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10968508937,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-09-18T00:00:00",
+      "last_seen": "2024-09-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "premiumbeat.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10601806480,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10601908353,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10601908756,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-10-04T00:00:00",
+      "last_seen": "2024-10-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bigstockcorp.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10822521507,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2023-10-18T00:00:00",
+      "last_seen": "2024-10-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "backgrid.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13455251534,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Shutterstock, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13514799187,
+          "cert_org": "Shutterstock, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Shutterstock, Inc."
+      ],
+      "first_seen": "2024-06-20T00:00:00",
+      "last_seen": "2025-06-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T19:45:23.222388Z",
+    "elapsed_seconds": 16.89,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

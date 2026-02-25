@@ -1,0 +1,1078 @@
+{
+  "entity": {
+    "company_name": "Pure Storage, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "flashstack.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10873251948,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10873357987,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10874111540,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with purestorage.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-10-23T00:00:00",
+      "last_seen": "2024-10-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "purestorage.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8568045858,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8592958399,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8593377360,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8618002579,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722613834,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722625000,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769683808,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771028386,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage (Pure Storage, Inc.)' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8842919002,
+          "cert_org": "Pure Storage (Pure Storage, Inc.)",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8849987306,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8850043132,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8850113627,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855830529,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857785014,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8877500220,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8877512629,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949595481,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959636819,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9014505653,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048350866,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9094164553,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130378516,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9148500606,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9148527105,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9176927649,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9183624719,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9183919550,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9184342825,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189868174,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9233033092,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9240313003,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241564820,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9247065533,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9318628582,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9336285407,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9369388472,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9405008818,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455940633,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9473783230,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9473814089,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645145060,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645145008,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9695522479,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9713364489,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9726395101,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9726494492,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9824063611,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843658567,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843672850,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843701102,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843785245,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9874599255,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9880627681,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10039282103,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117281105,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142490791,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10200602205,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10200620530,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10200713887,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10208758492,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10216359971,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10216634177,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10244610415,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10244635943,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10244708970,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10244722510,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372886233,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10380499690,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10417654317,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10518540680,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10576654572,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10576678654,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10810766941,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10810799266,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10810847026,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834319665,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10873251948,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10873357987,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10874111540,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10917083994,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10986651227,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11017319405,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11030838000,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11030847017,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049248619,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11057231162,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11089505325,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11121912656,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11129550558,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage (Pure Storage, Inc.)",
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-02-03T00:00:00",
+      "last_seen": "2024-11-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "portworx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9352283405,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9369483712,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "purestoragecompanystore.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10215528180,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-08-24T00:00:00",
+      "last_seen": "2024-08-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pureaccelerate.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10354850688,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-09-11T00:00:00",
+      "last_seen": "2024-09-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "purebenefits.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834918128,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Pure Storage, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10840178506,
+          "cert_org": "Pure Storage, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Pure Storage, Inc."
+      ],
+      "first_seen": "2023-10-19T00:00:00",
+      "last_seen": "2024-10-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T19:53:55.144907Z",
+    "elapsed_seconds": 23.79,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

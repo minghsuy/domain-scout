@@ -1,0 +1,749 @@
+{
+  "entity": {
+    "company_name": "TELEFONICA BRASIL S.A.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "vivo.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8662344871,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8713768410,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8715282674,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990391801,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013143758,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9014033990,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112196990,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10110294520,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116641057,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116704379,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116760025,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116821326,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116947550,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117018291,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117058593,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117104707,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117153756,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10607768990,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10608186093,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10617726746,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10617727852,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10623284140,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10623883760,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10638967514,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10640266942,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895268553,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895417457,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895418352,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10895418875,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10959109908,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12425720454,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13900541843,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13901289513,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11336680317,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11367013891,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403749714,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11640348497,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11772059172,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELEF\u00d4NICA BRASIL S.A' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELEF\u00d4NICA BRASIL S.A"
+        }
+      ],
+      "cert_org_names": [
+        "TELEFONICA BRASIL S.A.",
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2023-02-15T19:31:09",
+      "last_seen": "2025-01-26T18:26:04",
+      "resolves": true,
+      "rdap_org": "TELEF\u00d4NICA BRASIL S.A",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "telefonica.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990391801,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112196990,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10110294585,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10623284140,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TELEFONICA BRASIL S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10623883760,
+          "cert_org": "TELEFONICA BRASIL S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10638967514,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10640266942,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10679620893,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10679621528,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELEF\u00d4NICA BRASIL S.A' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELEF\u00d4NICA BRASIL S.A"
+        }
+      ],
+      "cert_org_names": [
+        "TELEFONICA BRASIL S.A.",
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2023-03-28T13:12:04",
+      "last_seen": "2024-10-08T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELEF\u00d4NICA BRASIL S.A",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ztpurpura.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634130471,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10636702539,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14068605202,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'TELEF\u00d4NICA BRASIL S.A' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "TELEF\u00d4NICA BRASIL S.A"
+        }
+      ],
+      "cert_org_names": [
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2023-10-06T00:00:00",
+      "last_seen": "2024-10-08T23:59:59",
+      "resolves": true,
+      "rdap_org": "TELEF\u00d4NICA BRASIL S.A",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valesaudepet.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420489,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420780,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11999032402,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2024-01-23T00:00:00",
+      "last_seen": "2025-02-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valesaudesempre.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420489,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420780,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11998993240,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11998993853,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11999032402,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2024-01-23T00:00:00",
+      "last_seen": "2025-02-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valesaude.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420489,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Telefonica Brasil S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11845420780,
+          "cert_org": "Telefonica Brasil S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Telefonica Brasil S.A."
+      ],
+      "first_seen": "2024-01-23T00:00:00",
+      "last_seen": "2025-01-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:40:12.052241Z",
+    "elapsed_seconds": 23.88,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

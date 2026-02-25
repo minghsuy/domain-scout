@@ -1,0 +1,558 @@
+{
+  "entity": {
+    "company_name": "HACKETT GROUP, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "answerthink.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9279008727,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10242352168,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11024987817,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13222294743,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14606007728,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15065791795,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15079740530,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15085455147,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20439369469,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15610467007,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19265778658,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21689589472,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21690849058,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22445891139,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23452302928,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with thehackettgroup.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Hackett Group, Inc."
+      ],
+      "first_seen": "2023-05-01T00:00:00",
+      "last_seen": "2027-01-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "thehackettgroup.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8588614034,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8608595305,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8964611344,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9126743865,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9194042406,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10220755128,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10823829951,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10823833964,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12219950319,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12222772402,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12355188008,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12673513843,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12765408419,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12981115853,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013328517,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14616522406,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14959876914,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14959876912,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16869942902,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17856315504,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17912837800,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20435015794,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17401645995,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17403225948,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17417269683,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18441568010,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18442190432,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18807287287,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18819498454,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21690044634,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21747348390,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21747356516,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Hackett Group, Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2026-11-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "spendmatters.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Hackett Group, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20308285047,
+          "cert_org": "The Hackett Group, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Hackett Group, Inc."
+      ],
+      "first_seen": "2025-08-13T00:00:00",
+      "last_seen": "2026-09-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T02:42:19.030492Z",
+    "elapsed_seconds": 26.98,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

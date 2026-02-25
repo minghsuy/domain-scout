@@ -1,0 +1,1161 @@
+{
+  "entity": {
+    "company_name": "Stryker Corporation",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "tornierblueprint.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480506597,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8503402802,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-01-23T20:16:05",
+      "last_seen": "2024-02-27T14:46:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stryker.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480534920,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480564751,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8481620048,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8481676701,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8503341528,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8514422608,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8514451965,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8547179814,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8565375159,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8565376214,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8565405227,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8566844675,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8567240778,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8567241050,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8593601055,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605581399,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623252403,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8623252431,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8625543666,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8648835032,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8648892000,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654665913,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654692774,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654723740,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8656557241,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678636830,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678660593,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678661307,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678685151,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678686013,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678715592,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678716285,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678744342,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707321409,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707321426,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714486976,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721328375,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721361252,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722499783,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731169913,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8733629384,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763331851,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8788747529,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794102599,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-01-23T20:21:04",
+      "last_seen": "2024-04-03T16:36:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shopsageproducts.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591361623,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-06T19:01:03",
+      "last_seen": "2024-03-09T19:01:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "wright.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591393876,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605552972,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-06T19:06:03",
+      "last_seen": "2024-03-11T12:26:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mukametal.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591452703,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-06T19:16:02",
+      "last_seen": "2024-03-09T19:16:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "physio-control.jp",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8605430371,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-08T12:06:02",
+      "last_seen": "2024-03-11T12:06:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bacs.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8671225682,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8671225755,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8671254140,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8671255325,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8671283460,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-16T23:36:03",
+      "last_seen": "2024-03-19T23:46:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vocera.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707342180,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-02-21T19:51:02",
+      "last_seen": "2024-03-24T19:51:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "teamoris.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794283805,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with strykercorp.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-03-03T17:11:03",
+      "last_seen": "2024-04-03T17:11:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "strykercorp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480393855,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480595221,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569713070,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569745398,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8569745782,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591423418,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8591423815,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8597571959,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654366364,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8654367361,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678636830,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678660593,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678661307,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678685151,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678686013,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678715592,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678716285,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678744342,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678893369,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678893511,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8683520210,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8683543501,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8683543513,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8683564190,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777909794,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777910001,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777910238,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777958795,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777963367,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777986511,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777991661,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8781800786,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Stryker Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8781801368,
+          "cert_org": "Stryker Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Stryker Corporation"
+      ],
+      "first_seen": "2023-01-23T19:56:04",
+      "last_seen": "2024-04-02T02:46:21",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T18:12:14.879664Z",
+    "elapsed_seconds": 5.04,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

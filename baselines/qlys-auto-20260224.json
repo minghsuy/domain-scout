@@ -1,0 +1,1430 @@
+{
+  "entity": {
+    "company_name": "QUALYS, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "qualys.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942588040,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942592084,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9064161093,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9064176875,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121224649,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121231524,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121239966,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9170606948,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9181727978,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9224740846,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226156714,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9254949872,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9293961860,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9294183893,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9294198019,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9294205808,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295249468,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295963076,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9359160619,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9359406929,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9363265760,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9399565421,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9412359176,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9412359163,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534565411,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9699885869,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9700472292,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9760460018,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9760460550,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9770821564,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9771204023,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9771430612,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9877565096,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938309287,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9938455494,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9992970656,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109486874,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109487155,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ssllabs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-08-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ssllabs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768291503,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9040177137,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9145337603,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-04-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualys.dev",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9066624717,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9066631421,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9115559107,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296413585,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296414210,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296418223,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296418310,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296418250,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296418386,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296418435,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296422324,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296422625,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296422821,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296422902,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296423095,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296426558,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296426731,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9340947662,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9471922377,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9492026784,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9492266490,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9530930230,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9541049749,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642655745,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642660657,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642660688,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642660766,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642660818,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642666401,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642666792,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667182,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667071,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667299,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667437,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667477,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642667775,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643712450,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9656486907,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9691770973,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777292055,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787585993,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10156363153,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10157246254,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10158304189,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10170429610,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10171810017,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-08-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualysksa.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070204781,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070236802,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070243147,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070249911,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070257718,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070266230,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070286344,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070286554,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070292134,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070297791,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070305702,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070312164,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070339135,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070344642,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070732167,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9074726639,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9074726759,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9258268095,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9985048920,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-07-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualys.services",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9253750125,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10158304189,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10170429610,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10171810017,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10171810414,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-04-28T00:00:00",
+      "last_seen": "2024-08-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualys.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349517875,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9831000452,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-07-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualys.ae",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465854132,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-05-23T00:00:00",
+      "last_seen": "2024-05-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "qualys.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533722679,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9533868731,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787559689,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787560036,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787567976,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787568112,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787568264,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577097,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577264,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577275,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577323,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577435,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787577355,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9787585794,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9811875624,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9839719753,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9839719648,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9839722780,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Qualys, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9839722934,
+          "cert_org": "Qualys, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Qualys, Inc."
+      ],
+      "first_seen": "2023-05-31T00:00:00",
+      "last_seen": "2024-07-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T03:36:55.543104Z",
+    "elapsed_seconds": 42.42,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

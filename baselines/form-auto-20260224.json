@@ -1,0 +1,648 @@
+{
+  "entity": {
+    "company_name": "FORMFACTOR INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "formfactor.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8538578252,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552705627,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552705646,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552705744,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552705939,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8677228550,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8677774371,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992513508,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051677804,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189452493,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189452363,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9553843431,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9553843364,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9553843695,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9954757881,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9986416190,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9994525979,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008714492,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008714807,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008715060,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10242981434,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10242981656,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243899537,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10243899830,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249570042,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11028043162,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11039480242,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11039479889,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11058852353,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11315671486,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11409478838,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11409478911,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11771882579,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11868040733,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12068853748,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12079450908,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12171233543,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12670314082,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12670313996,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12864531935,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12864559768,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13141254069,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13141254197,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13297992177,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13456752530,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13872601790,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13872613403,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13872624267,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14337966679,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14505804027,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15164082736,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15212496995,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15426893105,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20411276899,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FormFactor, Inc."
+      ],
+      "first_seen": "2023-01-30T00:00:00",
+      "last_seen": "2025-11-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "frtmetrology.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761299036,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FormFactor, Inc."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-03-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "janult.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10110063281,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13886123883,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'FormFactor, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19838114850,
+          "cert_org": "FormFactor, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "FormFactor, Inc."
+      ],
+      "first_seen": "2023-08-10T00:00:00",
+      "last_seen": "2025-08-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T01:50:51.524514Z",
+    "elapsed_seconds": 13.21,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1057 @@
+{
+  "entity": {
+    "company_name": "PTC THERAPEUTICS, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ptcpac.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296473020,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12982285264,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16779830011,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18384090608,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19518612458,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ptcbio.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2023-05-03T00:00:00",
+      "last_seen": "2026-06-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "emflaza.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643029643,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10423212317,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10423225245,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13354064141,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14417097311,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14417106166,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16780021056,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16780863524,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19078943808,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19530625766,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20807383304,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22523725508,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ptcbio.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2023-06-13T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "reimaginepku.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12090470248,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16379112773,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16369978196,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16782622349,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ptcbio.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2024-02-15T00:00:00",
+      "last_seen": "2026-02-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kebilidi.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15129697138,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15213492441,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15220088096,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21423925646,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21444405808,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21472994668,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ptcbio.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2024-10-29T00:00:00",
+      "last_seen": "2026-11-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "makingmovesinfa.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16869796112,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22509961178,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ptcbio.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2025-02-27T00:00:00",
+      "last_seen": "2026-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ptcbio.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903196131,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8912058264,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9059857811,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296472824,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296476306,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296477038,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349664183,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9398001828,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455369180,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455379010,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10197965653,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10438872107,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10547923505,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10705564245,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10706049043,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11048100361,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11109206796,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13969814595,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11354737978,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11605360995,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11832661214,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11865409427,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996774125,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12293628477,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448625102,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12907330637,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12907349890,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12907361933,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12929625592,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13853057960,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13853097319,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13955765194,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13955975829,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15028713580,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15255118601,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15310812690,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16076570515,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16364103610,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16779916791,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16780433823,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16858573051,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15626677878,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16076570381,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16364083211,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16428151634,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16546637485,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16782092145,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16782275961,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16782477934,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16874413529,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16878616440,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19685314059,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19685334123,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21452603252,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21762827554,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21762845130,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21943206407,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22235354516,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22505309474,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22710708239,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22733016508,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22847424215,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24515033718,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'PTC Therapeutics, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23726740809,
+          "cert_org": "PTC Therapeutics, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "PTC Therapeutics, Inc."
+      ],
+      "first_seen": "2023-03-16T00:00:00",
+      "last_seen": "2027-01-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T04:48:32.792931Z",
+    "elapsed_seconds": 9.26,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

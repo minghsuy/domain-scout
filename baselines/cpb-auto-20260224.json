@@ -1,0 +1,998 @@
+{
+  "entity": {
+    "company_name": "Campbell's Company (The)",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "mystarwebsite.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18673898380,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18673898543,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-05-28T00:00:00",
+      "last_seen": "2026-05-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "soups.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18682108352,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18682108330,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849192126,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849215289,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849239410,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849239574,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 20770256589,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 20770256607,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 21698886173,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 21698902537,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22360637894,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22360640082,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22846650611,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22846667850,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22846682217,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22846697058,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-05-29T00:00:00",
+      "last_seen": "2026-12-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "campbells.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690620022,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690620124,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690716059,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690716407,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690818044,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690818133,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077883772,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077883773,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077935263,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077935264,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077960115,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077960306,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077982537,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19077982475,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22421071379,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22421087406,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22441094771,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22441104427,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22467647895,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22467667183,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22574784463,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22574818347,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22574880928,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22574892964,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 23029124919,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 23029141583,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-05-29T00:00:00",
+      "last_seen": "2026-12-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "campbellsfoodservice.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690652195,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690652536,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690766611,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690765895,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690864832,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690864940,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-05-29T00:00:00",
+      "last_seen": "2026-05-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cookwithcampbells.ca",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690674550,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690675522,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690794934,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690797349,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690891648,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18690891728,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-05-29T00:00:00",
+      "last_seen": "2026-05-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "campbellsoup.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18775568993,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18775569210,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18853908742,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18853908871,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22089548055,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22089560795,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22591414327,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22591439116,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-06-02T00:00:00",
+      "last_seen": "2026-11-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cscassets.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849830600,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849830681,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849859295,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849859447,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849872316,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849872329,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849884925,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 18849884928,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-06-06T00:00:00",
+      "last_seen": "2026-06-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pflearning.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19059347385,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 19059348008,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-06-16T00:00:00",
+      "last_seen": "2026-07-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "idp-references.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 21419653041,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 21419669063,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 23009439024,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 23009455926,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-10-02T00:00:00",
+      "last_seen": "2026-12-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "thecampbellscompany.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895106145,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895106185,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895121734,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895121701,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895129129,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Campbell's Company' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 22895136180,
+          "cert_org": "The Campbell's Company",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Campbell's Company"
+      ],
+      "first_seen": "2025-12-04T00:00:00",
+      "last_seen": "2026-12-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:48:26.618431Z",
+    "elapsed_seconds": 8.72,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

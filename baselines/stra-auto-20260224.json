@@ -1,0 +1,1040 @@
+{
+  "entity": {
+    "company_name": "Strategic Education, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "strayer.edu",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553817416,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8957536334,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9355807554,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9361653530,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9652861711,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9658071028,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9988101698,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10039614024,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10191872504,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10320103662,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10423139865,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13039696677,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-02-01T22:03:19",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "strategiced.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553817416,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8723079950,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759691634,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9340060226,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9544022228,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9651473351,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9652861711,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9653036844,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9658071028,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9658461316,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9659741409,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9880550846,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10166184793,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10191872504,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10206288787,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10364041152,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10380448749,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10423139865,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10918120818,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10968644630,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10988423507,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11348309386,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403539386,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11570550032,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11602007712,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11603838652,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604026248,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604060581,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604172913,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604209674,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11604282257,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11638734092,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11638900875,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-02-01T22:03:19",
+      "last_seen": "2025-01-25T15:52:20",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "capellaleadership.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10775912981,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15044493209,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-10-13T21:30:27",
+      "last_seen": "2024-10-27T21:30:26",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "strayeruniversity.edu",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sophia.org",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "insightpath.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "workforceedge.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rightskill.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with capella.edu",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "capella.edu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553817416,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893322879,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9652861711,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9653036844,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9658071028,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9718046528,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10320170159,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10324410799,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353942027,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10423139865,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10918120818,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11348323741,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11570550032,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11649942970,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-02-01T22:03:19",
+      "last_seen": "2025-02-05T17:20:30",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sophiaapp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sophia-testing.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "capellalearning.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "jwmi.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Strategic Education, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969328886,
+          "cert_org": "Strategic Education, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Strategic Education, Inc."
+      ],
+      "first_seen": "2023-11-01T18:55:15",
+      "last_seen": "2024-11-01T18:55:14",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T00:42:35.487149Z",
+    "elapsed_seconds": 45.47,
+    "domains_found": 13,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

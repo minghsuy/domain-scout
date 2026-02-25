@@ -1,0 +1,1088 @@
+{
+  "entity": {
+    "company_name": "EMBRAER S.A.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "embraer.com.br",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883600487,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048538933,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9239821889,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403716828,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636986944,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9666127675,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9666146289,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9703083062,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9789199710,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9833385467,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10205634293,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10206768036,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10302377514,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10303338792,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10378405341,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10378646395,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10424208288,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10441557965,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10441577348,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10475456299,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10534201452,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10825114403,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11261186593,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11261226320,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11261251032,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11644971782,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11644971579,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11919784563,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12169055022,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12198237876,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12990881877,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12991134538,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13015219128,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13210357751,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13275867656,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13315335997,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13316001867,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13345583057,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13601787484,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with flyembraer.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Embraer S.A."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2025-07-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "embraer.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992381609,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992410661,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013250669,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9014286499,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9196219796,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9196220158,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9365899806,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643119860,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643153265,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9652348988,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709674013,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9793433040,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9793433052,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9793439929,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9793447376,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9842050380,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9976030474,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9985924377,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9986136174,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9986144598,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9989935554,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10038684637,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10038688635,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10045876626,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10366121592,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10366522270,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10424168279,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10424168472,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11017943781,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11017943636,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11089493377,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11089493080,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12207794722,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12211078199,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12283166407,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12447771338,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12450608865,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12483138607,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12483829069,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928103015,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12928213345,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13057654108,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13377550592,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13388638605,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13583832881,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13596195731,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13596226893,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with flyembraer.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Embraer S.A."
+      ],
+      "first_seen": "2023-03-28T00:00:00",
+      "last_seen": "2025-07-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "embraersuppliers.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11932376246,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with flyembraer.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Embraer S.A."
+      ],
+      "first_seen": "2024-01-31T00:00:00",
+      "last_seen": "2025-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "flyembraer.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8849589489,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8872901257,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8913696496,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9139466222,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9408256644,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9761953091,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9761961162,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10116869814,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13920431088,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12346334582,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12483202732,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12689053931,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12698644515,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Embraer S.A.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13003652044,
+          "cert_org": "Embraer S.A.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Embraer S.A."
+      ],
+      "first_seen": "2023-03-09T00:00:00",
+      "last_seen": "2025-04-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T05:38:07.245486Z",
+    "elapsed_seconds": 23.05,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

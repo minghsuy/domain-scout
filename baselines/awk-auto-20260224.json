@@ -1,0 +1,1340 @@
+{
+  "entity": {
+    "company_name": "American Water Works",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "amwater.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551474889,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8598454569,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599339433,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8599598177,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8669711251,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975098335,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975129876,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975136747,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975143515,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975150560,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975174633,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975281727,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981521602,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984118240,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984638492,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049392796,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9305957235,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9397291344,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416414984,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416442514,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416447929,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465014149,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465023660,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465036309,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472077616,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586298115,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586307953,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586318936,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595942437,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9604106870,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9613183103,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9633884278,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9633884391,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9649729744,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9833326606,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9833348698,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840548924,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9840895728,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9920126291,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9947268384,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10046659489,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10046659994,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062660294,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142372087,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142484788,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142832236,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142850567,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10303292834,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318841514,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318847101,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318882474,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318892187,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318899067,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10318904422,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10323218930,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10431208332,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10603425679,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10604199557,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639027494,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639039199,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639059181,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639069177,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639079306,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10639174668,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10669401537,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10737637616,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10947010882,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11015603740,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11324100804,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11335940889,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11344985924,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11424151992,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11425035167,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12451704913,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12594655807,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12971998160,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12972021038,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13055939327,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13873475268,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13874545341,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13879375121,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14107014982,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14784365712,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15234178238,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11682211786,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11682241672,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11682802525,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11682841313,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11855626385,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11929175791,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12055788864,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12208908314,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12451697281,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588386462,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588386364,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588394875,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588412041,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588425767,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588433296,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588448432,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12588449790,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12589372973,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12659884570,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12659917364,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12680854828,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12732690039,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12732698587,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12896259785,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12939688178,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12971985606,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12972012922,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12972014988,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12972034825,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12972045535,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12992731528,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12992917986,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13055919984,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13063135252,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13066862839,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13244859784,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13244859936,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13244941788,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273024490,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273033749,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273036894,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13343483108,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13593933069,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13620340789,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13620359806,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Water Works Company, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2025-07-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "awrusa.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Company, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11354327718,
+          "cert_org": "American Water Works Company, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Water Works Company, Inc."
+      ],
+      "first_seen": "2023-12-08T00:00:00",
+      "last_seen": "2024-12-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "testawwa.org",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Association' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9713247200,
+          "cert_org": "American Water Works Association",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Association' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 13586463327,
+          "cert_org": "American Water Works Association",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Water Works Association"
+      ],
+      "first_seen": "2023-06-21T00:00:00",
+      "last_seen": "2025-08-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "awwa.org",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Association' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 11317179687,
+          "cert_org": "American Water Works Association",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Water Works Association' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 12387190558,
+          "cert_org": "American Water Works Association",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Water Works Association"
+      ],
+      "first_seen": "2023-12-04T00:00:00",
+      "last_seen": "2024-12-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:27:46.765794Z",
+    "elapsed_seconds": 5.27,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}
