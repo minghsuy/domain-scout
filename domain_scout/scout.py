@@ -100,6 +100,10 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
             continue
         seen.add(norm)
 
+        # Skip garbage: numeric-only, too short after normalization
+        if len(norm) < 3 or norm.replace(" ", "").isdigit():
+            continue
+
         sub_words = set(norm.split())
         # Skip if name shares significant words with parent (already found by parent org search)
         significant_overlap = (parent_words & sub_words) - _SHELL_WORDS
@@ -107,6 +111,9 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
             continue
         # Skip pure legal shells (all words are generic)
         if sub_words <= _SHELL_WORDS:
+            continue
+        # Skip names where all words are <=3 chars (acronym soup like "17A LLC", "RLC LLC")
+        if all(len(w) <= 3 for w in sub_words - _SHELL_WORDS):
             continue
         result.append(sub)
 

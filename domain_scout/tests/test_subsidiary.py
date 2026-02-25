@@ -98,6 +98,25 @@ class TestFilterSubsidiaries:
         filtered = _filter_subsidiaries(parent, subs)
         assert filtered == []
 
+    def test_removes_garbage_names(self) -> None:
+        """Numeric-only and too-short names are filtered out."""
+        parent = "cadence"
+        subs = ["10", "11", "A", "AB", "Pixar Inc."]
+        filtered = _filter_subsidiaries(parent, subs)
+        assert filtered == ["Pixar Inc."]
+
+    def test_removes_acronym_soup(self) -> None:
+        """Names where all significant words are <=3 chars are filtered out."""
+        parent = "comcast"
+        subs = ["17A LLC", "NBC LLC", "Xumo LLC", "Pixar Inc."]
+        filtered = _filter_subsidiaries(parent, subs)
+        # "17A LLC", "NBC LLC" are acronym soup → removed
+        # "Xumo LLC" → "xumo" is 4 chars → kept
+        # "Pixar Inc." → "pixar" is 5 chars → kept
+        assert any("xumo" in s.lower() for s in filtered)
+        assert any("pixar" in s.lower() for s in filtered)
+        assert not any("17a" in s.lower() for s in filtered)
+
     def test_sorts_by_length(self) -> None:
         """Results are sorted by name length (shorter = more likely real brand)."""
         parent = "acme"
