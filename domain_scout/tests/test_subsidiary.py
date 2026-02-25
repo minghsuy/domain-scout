@@ -12,7 +12,13 @@ if TYPE_CHECKING:
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.scout import Scout, _DomainAccum, _filter_subsidiaries, load_subsidiary_map
+from domain_scout.scout import (
+    Scout,
+    _brand_sort_key,
+    _DomainAccum,
+    _filter_subsidiaries,
+    load_subsidiary_map,
+)
 
 # ---------------------------------------------------------------------------
 # load_subsidiary_map tests
@@ -117,13 +123,15 @@ class TestFilterSubsidiaries:
         assert any("pixar" in s.lower() for s in filtered)
         assert not any("17a" in s.lower() for s in filtered)
 
-    def test_sorts_by_length(self) -> None:
-        """Results are sorted by name length (shorter = more likely real brand)."""
+    def test_sorts_by_brand_score(self) -> None:
+        """Focused brand names rank above verbose or weak names."""
         parent = "acme"
-        subs = ["Very Long Brand Name Industries", "ShortCo", "Medium Brand"]
+        subs = ["Westin 200, Inc.", "Pixar Inc.", "Cabinda Gulf Oil Company Limited"]
         filtered = _filter_subsidiaries(parent, subs)
-        lengths = [len(s) for s in filtered]
-        assert lengths == sorted(lengths)
+        # Pixar (bucket 0) should come before Cabinda (bucket 1, verbose)
+        # and both before Westin 200 (bucket 2, has number)
+        assert filtered[0] == "Pixar Inc."
+        assert filtered[-1] == "Westin 200, Inc."
 
     def test_empty_input(self) -> None:
         assert _filter_subsidiaries("anything", []) == []
@@ -134,6 +142,45 @@ class TestFilterSubsidiaries:
         subs = ["Meguiar's Inc.", "Scott Technologies Inc.", "D B Industries LLC"]
         filtered = _filter_subsidiaries(parent, subs)
         assert len(filtered) == 3
+
+
+# ---------------------------------------------------------------------------
+# _brand_sort_key tests
+# ---------------------------------------------------------------------------
+
+
+class TestBrandSortKey:
+    def test_focused_brand_is_bucket_0(self) -> None:
+        """Clean brand name with 1-3 words, no numbers, not acronym."""
+        bucket, _ = _brand_sort_key("Texaco Inc.")
+        assert bucket == 0
+
+    def test_verbose_brand_is_bucket_1(self) -> None:
+        """Brand words present but >3 normalized words."""
+        bucket, _ = _brand_sort_key("Buena Vista Non-Theatrical Distribution, Inc.")
+        assert bucket == 1
+
+    def test_number_in_name_is_bucket_2(self) -> None:
+        """Names with digits get penalized."""
+        bucket, _ = _brand_sort_key("Westin 200, Inc.")
+        assert bucket == 2
+
+    def test_acronym_is_bucket_2(self) -> None:
+        """All-caps short acronym gets penalized."""
+        bucket, _ = _brand_sort_key("FTNV LLC")
+        assert bucket == 2
+
+    def test_no_brand_words_is_bucket_2(self) -> None:
+        """Name with only generic/short words."""
+        bucket, _ = _brand_sort_key("RE Fund LP")
+        assert bucket == 2
+
+    def test_tiebreak_by_length(self) -> None:
+        """Within same bucket, shorter name wins."""
+        key_short = _brand_sort_key("Pixar Inc.")
+        key_long = _brand_sort_key("LinkedIn Corporation")
+        assert key_short[0] == key_long[0] == 0  # same bucket
+        assert key_short < key_long  # shorter wins
 
 
 # ---------------------------------------------------------------------------

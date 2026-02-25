@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import re
 import time
 from datetime import UTC, datetime
 from importlib.metadata import version as _pkg_version
@@ -117,9 +118,71 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
             continue
         result.append(sub)
 
-    # Sort by name length (shorter = more likely a real brand)
-    result.sort(key=len)
+    result.sort(key=_brand_sort_key)
     return result
+
+
+# Words too generic to count as "brand" signal in subsidiary names.
+_GENERIC_WORDS = _SHELL_WORDS | frozenset(
+    {
+        "services",
+        "solutions",
+        "international",
+        "global",
+        "enterprises",
+        "financial",
+        "properties",
+        "advisors",
+        "consulting",
+        "associates",
+        "ventures",
+        "realty",
+        "hotel",
+        "hotels",
+    }
+)
+
+# Suffixes to strip when detecting all-caps acronym cores.
+_SUFFIX_RE = re.compile(
+    r"\b(LLC|Inc|Incorporated|Ltd|Limited|Corp|Corporation|Company|LP|SAS|"
+    r"GmbH|SA|SE|NV|plc|L\.P\.|L\.L\.C\.)\b",
+    re.IGNORECASE,
+)
+
+
+def _brand_sort_key(name: str) -> tuple[int, int]:
+    """Sort key ranking subsidiaries by brand distinctness.
+
+    Returns ``(bucket, name_length)`` — lower is better.
+
+    * **Bucket 0** — focused brand: 1-3 non-generic words, no numbers, not
+      an all-caps acronym.  e.g. "Texaco Inc.", "LinkedIn Corporation".
+    * **Bucket 1** — decent: has brand words but verbose (>3 words).
+      e.g. "Cabinda Gulf Oil Company Limited".
+    * **Bucket 2** — weak: contains numbers, all-caps acronym, or no real
+      brand words.  e.g. "Westin 200, Inc.", "FTNV LLC", "TSQ2, LLC".
+    """
+    norm = normalize_org_name(name)
+    words = norm.split()
+    brand_words = [w for w in words if len(w) >= 4 and w not in _GENERIC_WORDS]
+
+    has_numbers = bool(re.search(r"\d", name))
+
+    # Detect all-caps acronym core (e.g. "FTNV LLC" → core "FTNV")
+    core = _SUFFIX_RE.sub("", name)
+    core = re.sub(r"[^a-zA-Z]", "", core).strip()
+    is_acronym = bool(core) and core == core.upper() and len(core) <= 8
+
+    if has_numbers or is_acronym:
+        bucket = 2
+    elif brand_words and len(words) <= 3:
+        bucket = 0
+    elif brand_words:
+        bucket = 1
+    else:
+        bucket = 2
+
+    return (bucket, len(name))
 
 
 class Scout:
