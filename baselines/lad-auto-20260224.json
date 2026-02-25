@@ -1,0 +1,1314 @@
+{
+  "entity": {
+    "company_name": "LITHIA MOTORS INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "lithiainc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8818631157,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8820524924,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8820581087,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8820695422,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8828661397,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857694095,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8917019194,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8929134181,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8933014729,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8933014690,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985346201,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015005567,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015109372,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015134326,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9020543695,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9026019386,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9112957666,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9185697032,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9216803656,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9227497218,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9227499309,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9227588330,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230916363,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238787613,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9239601164,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9239611040,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283642627,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283642757,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283642751,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349916712,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9361939147,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9361939029,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9361939055,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9362351037,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366325046,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9413215942,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9439019687,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9460189404,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9513350927,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9550370176,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9554751431,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9596616893,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9713470803,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9783643753,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9932709872,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9933004575,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9940473000,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9940924831,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9941071479,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9995453474,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10010120334,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10010658680,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10032422610,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10041235750,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10160735207,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10265104689,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10274599935,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10307098364,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10307249206,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10315056688,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363118286,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10374534370,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10391098021,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10391206350,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418411214,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418771430,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10442986792,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10503870343,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10774624532,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10774768608,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10776491085,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814089349,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10815667536,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834440872,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10886357952,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10959234020,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10959547311,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098150397,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11101255946,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11121534036,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11121597272,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11141362044,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11143907652,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11145670555,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11148592408,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11150944277,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11156362582,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11167695617,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11443525864,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13932301857,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11857548660,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11859244972,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11867447592,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lithia Motors, Inc."
+      ],
+      "first_seen": "2023-03-06T00:00:00",
+      "last_seen": "2025-01-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lithia.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857767478,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858608458,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8994516038,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9119970940,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9164620466,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9206181064,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9206181053,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317058740,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317112480,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317387457,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9695924985,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9940473000,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10200322639,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10272023361,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10330746904,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10415288559,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10442986792,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10474392865,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11091856861,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11451844814,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11452612116,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11452880633,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11454883191,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11456152700,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11457201234,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11457404855,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11459438997,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11631419609,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11760688777,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lithia Motors, Inc."
+      ],
+      "first_seen": "2023-03-10T00:00:00",
+      "last_seen": "2025-01-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "driveway.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9728718964,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11327281134,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11327506087,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11370538148,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12393158595,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13141808818,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lithia Motors, Inc."
+      ],
+      "first_seen": "2023-06-23T00:00:00",
+      "last_seen": "2024-12-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pfaffauto.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10100051291,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lithia Motors, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13950825406,
+          "cert_org": "Lithia Motors, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lithia Motors, Inc."
+      ],
+      "first_seen": "2023-08-09T00:00:00",
+      "last_seen": "2024-08-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T05:06:01.657731Z",
+    "elapsed_seconds": 8.52,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

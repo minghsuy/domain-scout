@@ -1,0 +1,1292 @@
+{
+  "entity": {
+    "company_name": "GAP INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "gapinc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755724165,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755730607,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755755573,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755755790,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755778695,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755778646,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755838846,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755845032,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755859544,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755859631,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755870896,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755871434,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755906204,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755906435,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755941671,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755941709,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755965009,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755965280,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755991406,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8755996345,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756036219,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8756042288,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780540470,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780541282,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8782652351,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8782657330,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785999612,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785999820,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815757162,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815758083,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815787199,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815787899,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815818517,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815818594,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815837242,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815837805,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815883969,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8815884216,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8827519696,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8827520490,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858877079,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858877268,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858906352,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858906748,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879312729,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879314028,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879337349,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879338338,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879361002,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879365811,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879375056,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879376444,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879396108,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879396289,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879424079,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879424230,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879486355,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879487051,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879522463,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8879522811,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883500103,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883500205,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883506802,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883507632,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883508553,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883509553,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883515826,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883515895,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889186403,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889188933,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889201999,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889208684,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889220237,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889220528,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889414732,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889415343,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889441994,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889448765,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889462535,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889462733,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889484515,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889485454,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889518860,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889519671,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889539530,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889539709,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889566750,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889567279,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889593142,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8889593893,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910862412,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910863712,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910924321,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910938291,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910988093,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910988106,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911010368,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911010965,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911046306,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911046540,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911068501,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911073412,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945499936,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945505420,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945521429,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945521496,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945532510,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945533682,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945557359,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945557609,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945601284,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945602135,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945613882,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8945614564,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8970648848,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8970654016,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8970687975,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8970696141,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8989135008,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8989135560,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8989170510,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Gap, Inc."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-03-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gap.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780797336,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780799966,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780820650,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780821280,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780852088,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780852759,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895788754,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895788929,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911094646,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'The Gap, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911099806,
+          "cert_org": "The Gap, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "The Gap, Inc."
+      ],
+      "first_seen": "2023-03-02T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T02:59:28.465198Z",
+    "elapsed_seconds": 30.06,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

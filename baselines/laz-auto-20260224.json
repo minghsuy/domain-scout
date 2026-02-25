@@ -1,0 +1,1237 @@
+{
+  "entity": {
+    "company_name": "Lazard, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "lsal.com.sa",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874103625,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9037093100,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9173988080,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with lazard.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lazard, Inc."
+      ],
+      "first_seen": "2023-03-13T00:00:00",
+      "last_seen": "2024-04-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lazardfundmanagers.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050461254,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230565447,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with lazard.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lazard, Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lazardassetmanagement.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366541446,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456969029,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with lazard.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lazard, Inc."
+      ],
+      "first_seen": "2023-05-11T00:00:00",
+      "last_seen": "2024-06-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lazardnet.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366541446,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with lazard.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lazard, Inc."
+      ],
+      "first_seen": "2023-05-11T00:00:00",
+      "last_seen": "2024-06-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lazard.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8677823990,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761815436,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761833805,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761842219,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779511267,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779920864,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779933998,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785888502,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785902428,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795604542,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795605252,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795615204,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795620553,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795628635,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795636794,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795641100,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795645320,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819967740,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8831422559,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8831438677,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8831456484,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8837387703,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8839556888,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8840806176,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855646945,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855667473,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855691242,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8855704962,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874103625,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874977588,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8880812437,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892323274,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894322881,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894332454,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894350134,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894358708,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8911354928,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8915059496,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941078238,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8957915710,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967592677,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967631462,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981873784,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9022319432,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9023626680,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9037093100,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9057906356,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058304338,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9058768245,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9069636440,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070942227,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9079040454,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9079054679,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118468484,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118519779,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118535978,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118579519,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118597364,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138194247,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138749821,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138837667,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138869107,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138883151,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9138895291,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9173988080,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9181970121,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182338139,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188434303,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188699801,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188708130,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188718278,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188726441,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188730663,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188735986,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188742726,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188761325,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189700121,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9194768636,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9203703981,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230523716,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230544376,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9231952972,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9237615869,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9237645572,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9237830664,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290166405,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290180862,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290202900,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9308571614,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9308595251,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9316111065,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9352010707,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9358329855,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9365896792,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366537136,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366538536,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366539833,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366541446,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396319113,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9414905870,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9414934662,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430741749,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430753013,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455080879,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9455123065,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456884116,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Lazard, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9456969029,
+          "cert_org": "Lazard, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Lazard, Inc."
+      ],
+      "first_seen": "2023-02-17T00:00:00",
+      "last_seen": "2024-06-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T03:37:02.587307Z",
+    "elapsed_seconds": 22.81,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

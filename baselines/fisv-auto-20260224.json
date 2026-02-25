@@ -1,0 +1,994 @@
+{
+  "entity": {
+    "company_name": "Fiserv",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "checkfree.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8484443314,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492036919,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fiservapps.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Fiserv, Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cunetbranch.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8487537409,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fiservapps.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Fiserv, Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "getbills.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492046267,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8499877685,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fiservapps.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Fiserv, Inc."
+      ],
+      "first_seen": "2023-01-25T00:00:00",
+      "last_seen": "2024-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fiserv.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8506365760,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with fiservapps.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Fiserv, Inc."
+      ],
+      "first_seen": "2023-01-26T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fiservapps.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8477831276,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8477844080,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479104041,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479136168,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479159875,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479205742,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479249121,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480326189,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8480394281,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483845345,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8483845773,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8484223355,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8492078855,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8494936959,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8495052901,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496347858,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496350713,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496356646,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496363538,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507504230,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507607379,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507678928,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507752521,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507797224,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507865158,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507921839,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8507977275,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508026552,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508084211,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508136840,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508205399,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508245137,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508273334,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508373114,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508425184,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508460113,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508502071,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508505321,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508544337,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508588317,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508633156,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508658651,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508677579,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508734411,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508780685,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508828901,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508866984,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508915902,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8508961919,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509013505,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509058412,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509110999,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509183682,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509259310,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509272124,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509294952,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509318716,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509336521,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509371959,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509389331,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509416924,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509441252,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509492509,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509537032,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8509576221,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8511165363,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531751122,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531778039,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531822971,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531836118,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531858790,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531874238,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531905135,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531922701,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531955213,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531985683,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8531999312,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8532016989,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8532037697,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8532078631,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8532105005,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Fiserv, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8532119598,
+          "cert_org": "Fiserv, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Fiserv, Inc."
+      ],
+      "first_seen": "2023-01-23T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:44:55.917646Z",
+    "elapsed_seconds": 17.53,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 120,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

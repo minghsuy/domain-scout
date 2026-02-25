@@ -1,0 +1,225 @@
+{
+  "entity": {
+    "company_name": "Erie Indemnity",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "agentexchange.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11188084145,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with erieinsurance.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Erie Indemnity Company"
+      ],
+      "first_seen": "2023-11-22T00:00:00",
+      "last_seen": "2024-12-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "erieinsurance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10472503711,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10556514945,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13932398482,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13949735793,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13968699276,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16473697065,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16473967881,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16519173735,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18291196838,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18291989957,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22505682626,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Erie Indemnity Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22506205526,
+          "cert_org": "Erie Indemnity Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Erie Indemnity Company"
+      ],
+      "first_seen": "2023-09-25T00:00:00",
+      "last_seen": "2026-05-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:33:39.349704Z",
+    "elapsed_seconds": 5.23,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

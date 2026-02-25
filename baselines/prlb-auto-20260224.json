@@ -1,0 +1,366 @@
+{
+  "entity": {
+    "company_name": "Proto Labs Inc",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "protomold.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996532689,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996542020,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996827563,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12129592793,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16425679377,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16678828447,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16678836294,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22505301938,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24312439789,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with protolabs.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Proto Labs, Inc"
+      ],
+      "first_seen": "2024-02-06T00:00:00",
+      "last_seen": "2027-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "protolabs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8490073519,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8567236416,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996542100,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11996827563,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12100311039,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12129592793,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16680362856,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859095381,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16425679377,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16678828447,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16678836294,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16680324645,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16966323558,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18314834464,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22505301938,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22507280043,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22515435993,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Proto Labs, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24312439789,
+          "cert_org": "Proto Labs, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Proto Labs, Inc"
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2027-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:04:37.324973Z",
+    "elapsed_seconds": 14.51,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

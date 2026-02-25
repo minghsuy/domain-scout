@@ -1,0 +1,501 @@
+{
+  "entity": {
+    "company_name": "Dollar General",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "dollargeneral.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8496383652,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8544546232,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8546376709,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551453861,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590704977,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590716184,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590732593,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8973395918,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282095421,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290355393,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9296965921,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9299339527,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9414738205,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9529572572,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9535276008,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902969026,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902978424,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9933479958,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9933516134,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9986868408,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10222318887,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-01-25T19:14:31",
+      "last_seen": "2024-09-25T18:51:40",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dg.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551453861,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9986868408,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-02-01T14:22:06",
+      "last_seen": "2024-08-25T20:16:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dgpartners.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8669085119,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-02-16T16:28:44",
+      "last_seen": "2024-03-16T16:28:44",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dgmedianetwork.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902097619,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9139909873,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-03-16T13:13:31",
+      "last_seen": "2024-05-13T18:46:29",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dgshopperpanel.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902169102,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-03-16T13:22:59",
+      "last_seen": "2024-04-16T13:22:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "misuperdollargeneral.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10160072659,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar General Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165791892,
+          "cert_org": "Dollar General Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dolgen.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar General Corporation"
+      ],
+      "first_seen": "2023-08-16T21:51:18",
+      "last_seen": "2024-09-17T15:06:58",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:13:57.555905Z",
+    "elapsed_seconds": 10.73,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

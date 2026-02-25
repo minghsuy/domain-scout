@@ -1,0 +1,796 @@
+{
+  "entity": {
+    "company_name": "Eversource Energy",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "eversource.me",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731082130,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731082112,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731098653,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731099591,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731839282,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731840294,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731865251,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8731865779,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9047249297,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9047249318,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9341298175,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9341298564,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349903791,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349903902,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359513150,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359513592,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359685941,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359686499,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359706471,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359712391,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9360994071,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9360994105,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with eversource.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Eversource Energy Transmission Ventures, Inc"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-05-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "eversource.us",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9058810686,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9058810774,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9288496924,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9288496909,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349890227,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349890369,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with eversource.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Eversource Energy Transmission Ventures, Inc"
+      ],
+      "first_seen": "2023-04-04T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cvx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9222509788,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9222510379,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with eversource.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Eversource Energy Transmission Ventures, Inc"
+      ],
+      "first_seen": "2023-04-24T00:00:00",
+      "last_seen": "2024-04-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "eversource.xyz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349835717,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9349836068,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with eversource.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Eversource Energy Transmission Ventures, Inc"
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-05-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "eversource.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8729667432,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8729668932,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8729708572,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8729709010,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8984619302,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8985318889,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8991540859,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8991541118,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8991569658,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8991570002,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9000692397,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9000693336,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9069793321,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9069793445,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9175825064,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9175825040,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9229942357,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9229942322,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9305908992,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9305908993,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9306248549,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9306248575,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9366234549,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9366264162,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369170181,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369176878,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369189899,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369198783,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369200022,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369223352,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369525879,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9369545827,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9394910339,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Eversource Energy Transmission Ventures, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9394910613,
+          "cert_org": "Eversource Energy Transmission Ventures, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Eversource Energy Transmission Ventures, Inc"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-05-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:35:46.868984Z",
+    "elapsed_seconds": 21.9,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

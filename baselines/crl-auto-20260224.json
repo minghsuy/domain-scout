@@ -1,0 +1,1134 @@
+{
+  "entity": {
+    "company_name": "Charles River Laboratories",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "crl.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559304026,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050522903,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9184082396,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223635165,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9297615986,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9297631250,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430662089,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603932156,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603959158,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603984583,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777454899,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777462155,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777474862,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777533232,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10047027274,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-09-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hemacare.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787037526,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848251742,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848311443,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-03-02T00:00:00",
+      "last_seen": "2024-04-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vigenebio.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787169167,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-03-02T00:00:00",
+      "last_seen": "2024-04-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "piedmontrcdata.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8884314769,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-04-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "criverindia.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9088855088,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-04-07T00:00:00",
+      "last_seen": "2024-05-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "charlesriverlabs.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9612316455,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-06-09T00:00:00",
+      "last_seen": "2024-07-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lal-ptp.eu",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9650812550,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-06-14T00:00:00",
+      "last_seen": "2024-07-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lal-ptp.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9650812550,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-06-14T00:00:00",
+      "last_seen": "2024-07-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hemacaredonorcenter.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754759382,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777440096,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777447572,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777612227,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10046679939,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-06-26T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "explorabiolabs.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9783443259,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with criver.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-06-29T00:00:00",
+      "last_seen": "2024-06-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "criver.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8546264506,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559221474,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559247871,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559270917,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559330411,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559380947,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8560066173,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8560085956,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8560103496,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8620899859,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8653256025,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8675427073,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678066540,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8678089217,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706946809,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770041733,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778139970,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819562120,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819711636,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819756056,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819807205,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848032075,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848119438,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848165355,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848526817,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8883516338,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894869601,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967659717,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967781094,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8972594463,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050716040,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127887072,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9184139941,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9203779564,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9231940992,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9231980890,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238124078,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9307739091,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9307765545,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9365979131,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430524988,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636058421,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636080032,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645387715,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9650829025,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9667452986,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754801709,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777431805,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777511727,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9777518978,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790367093,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9816336692,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9995267023,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-01-31T00:00:00",
+      "last_seen": "2024-07-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "astartebio.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Charles River Laboratories Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902956562,
+          "cert_org": "Charles River Laboratories Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Charles River Laboratories Inc"
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-07-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:53:44.253422Z",
+    "elapsed_seconds": 20.57,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,820 @@
+{
+  "entity": {
+    "company_name": "North American Construction Group Ltd.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "nunagroup.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11027276156,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11027293360,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148411543,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148418469,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15424565370,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15424576676,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23203039273,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23203332583,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with nunalogistics.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "North American Construction Group Ltd."
+      ],
+      "first_seen": "2023-11-07T16:32:39",
+      "last_seen": "2027-01-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nunalogistics.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904900837,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525600364,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9525611590,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "North American Construction Group Ltd."
+      ],
+      "first_seen": "2023-03-16T19:58:34",
+      "last_seen": "2024-06-30T16:35:20",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nacg.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9077366681,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9637028454,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9825043499,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10328742763,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10328758049,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098729959,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098843484,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11143012958,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12755944390,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12058452720,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12058460934,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12658878705,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13201425763,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13211854542,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14490598811,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14490615054,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148295138,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148439290,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15588748378,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16568318849,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16858938805,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859069428,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17947349222,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17950440926,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20877749265,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22506660983,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16774508307,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16774508922,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18110548477,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18657205599,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18658062645,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18827198938,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233507095,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233524942,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22508716116,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22508748390,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22787266490,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22787280001,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'North American Construction Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 1.0,
+          "rdap_org": "North American Construction Group Inc."
+        }
+      ],
+      "cert_org_names": [
+        "North American Construction Group Ltd."
+      ],
+      "first_seen": "2023-04-06T15:06:06",
+      "last_seen": "2026-12-29T23:59:59",
+      "resolves": true,
+      "rdap_org": "North American Construction Group Inc.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nacg.network",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098785438,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098802577,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098811029,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098815754,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098823162,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11098831878,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15069208858,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148327212,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148350365,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148361375,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148367279,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148379389,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148392186,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233526020,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233544235,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233547309,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233563798,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233564728,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233581490,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233582070,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233582318,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233602611,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233602523,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233657835,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'North American Construction Group Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22233677409,
+          "cert_org": "North American Construction Group Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "North American Construction Group Ltd."
+      ],
+      "first_seen": "2023-11-14T17:47:00",
+      "last_seen": "2026-12-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T03:28:29.191425Z",
+    "elapsed_seconds": 18.96,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

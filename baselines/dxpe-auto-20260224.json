@@ -1,0 +1,285 @@
+{
+  "entity": {
+    "company_name": "DXP ENTERPRISES INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ccp-src.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975572596,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9128061502,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12242538581,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15587798937,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15587798333,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20878029119,
+          "cert_org": "DXP Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DXP Enterprises, Inc."
+      ],
+      "first_seen": "2023-03-24T00:00:00",
+      "last_seen": "2026-01-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dxpe.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10001007641,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10001041787,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008385344,
+          "cert_org": "DXP ENTERPRISES, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10008422857,
+          "cert_org": "DXP ENTERPRISES, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10047121482,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10149553365,
+          "cert_org": "DXP ENTERPRISES, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10556054682,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13970375065,
+          "cert_org": "DXP ENTERPRISES, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13970384137,
+          "cert_org": "DXP ENTERPRISES, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14019220477,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18376641563,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15588440990,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dxp Enterprises, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20268680625,
+          "cert_org": "Dxp Enterprises, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DXP ENTERPRISES, INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20457282626,
+          "cert_org": "DXP ENTERPRISES, INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DXP ENTERPRISES, INC",
+        "DXP ENTERPRISES, INC.",
+        "Dxp Enterprises, Inc."
+      ],
+      "first_seen": "2023-07-27T16:06:02",
+      "last_seen": "2026-09-21T12:53:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:54:06.180718Z",
+    "elapsed_seconds": 25.83,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

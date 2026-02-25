@@ -1,0 +1,1224 @@
+{
+  "entity": {
+    "company_name": "Accenture",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "accenture.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812729165,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717327982,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717479994,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8717751601,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8718104079,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8718398802,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8718813709,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719041215,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719277641,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719291926,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8719322943,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8725953136,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8726564749,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727118402,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727142680,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727547914,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727547850,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727621163,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727686308,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727716430,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727716576,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727734701,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727734723,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727757041,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727783892,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727784089,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727809222,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727809217,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727827800,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727903546,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727927503,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727933994,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727946924,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727966826,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727966951,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8727974712,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728126609,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728169176,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728224815,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728269699,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728311630,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728351440,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728383453,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728456451,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728456990,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728593267,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728613473,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728613597,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728613650,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728637400,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728672978,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728673216,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8728925892,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729049885,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729197234,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729405709,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8729435357,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730309307,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730462947,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730462880,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731073553,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731098260,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731098272,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731263771,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731436010,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731532321,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732472292,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8749137522,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751992386,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752124811,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752190922,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752239619,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752319424,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752319569,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752338418,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752433787,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752521318,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752597070,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752883815,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752883910,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752884104,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8752894242,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753744718,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753873917,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753876497,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753878850,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753989297,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753995407,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753995474,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753995424,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754012385,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754018708,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754018626,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754067632,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754139157,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754151735,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754151634,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754174099,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754364398,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754488543,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754503692,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754561915,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754562028,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8754573020,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Accenture LLP"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-07-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "merck.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8586430552,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8586436497,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8586436554,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8586457946,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8594728218,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8663810712,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Accenture LLP"
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cas.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730112240,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730193154,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Accenture LLP"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "accenture.lv",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture LLP' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731005663,
+          "cert_org": "Accenture LLP",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Accenture LLP"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "z86ldgs6sx.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture Japan Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8484435527,
+          "cert_org": "Accenture Japan Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Accenture Japan Ltd.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8484435529,
+          "cert_org": "Accenture Japan Ltd.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Accenture Japan Ltd."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nhs.net",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ACCENTURE (UK) LIMITED' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8730194755,
+          "cert_org": "ACCENTURE (UK) LIMITED",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ACCENTURE (UK) LIMITED"
+      ],
+      "first_seen": "2023-02-24T14:05:59",
+      "last_seen": "2024-03-27T14:05:58",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:17:24.954674Z",
+    "elapsed_seconds": 30.45,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 120,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

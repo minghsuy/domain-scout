@@ -1,0 +1,799 @@
+{
+  "entity": {
+    "company_name": "WOLFSPEED, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "wolfspeed.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10167406779,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10987376111,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11405004200,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14135727200,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14135727917,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14876714317,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15269242014,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20300599870,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20732486855,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20844616440,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20439751616,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22214202638,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with cree.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Wolfspeed, Inc."
+      ],
+      "first_seen": "2023-08-17T00:00:00",
+      "last_seen": "2026-12-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cree.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8615145418,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940985860,
+          "cert_org": "Wolfspeed, inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013198407,
+          "cert_org": "Wolfspeed, inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013243908,
+          "cert_org": "Wolfspeed, inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013269282,
+          "cert_org": "Wolfspeed, inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9237031825,
+          "cert_org": "Wolfspeed, inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed,INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9543630747,
+          "cert_org": "Wolfspeed,INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636274758,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645112801,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702209074,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9752832063,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9752982863,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9753508135,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9763561720,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10190675800,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10431130585,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10987376111,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10987375872,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11087674874,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11121239908,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11325578753,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13538013955,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11405004200,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11767235689,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11940256630,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12026691544,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12065981257,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12285872366,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12579131493,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12680037156,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12835957889,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273594723,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13368468197,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13505289936,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13517721820,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13517958605,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13537669494,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13673892542,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13796012722,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13853822426,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13942263782,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14209163479,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14670964138,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14834314692,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14848938477,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14849134285,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14876086921,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14876714317,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15148312823,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15211002498,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15433947255,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15455581873,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16882627461,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20732486855,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15599620764,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16074752332,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18045125892,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18045126718,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18578208489,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19575368122,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20203704902,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21093695030,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Wolfspeed, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22214202638,
+          "cert_org": "Wolfspeed, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Wolfspeed, Inc.",
+        "Wolfspeed, inc.",
+        "Wolfspeed,INC."
+      ],
+      "first_seen": "2023-02-09T00:00:00",
+      "last_seen": "2026-12-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T15:35:25.834124Z",
+    "elapsed_seconds": 19.88,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "include_non_resolving": false
+    }
+  }
+}

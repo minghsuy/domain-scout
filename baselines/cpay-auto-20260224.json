@@ -1,0 +1,1980 @@
+{
+  "entity": {
+    "company_name": "Corpay",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "corpay.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425103172,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21445699592,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21445777721,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21445971216,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21446031068,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21446054870,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447874374,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447914734,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447954027,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450323774,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-02T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425103172,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425241267,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425338286,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425457596,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21425509587,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21446241859,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447646312,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447700906,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21447993324,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448087004,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448121971,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448175880,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448214685,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448288739,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21448345292,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450722526,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21524770427,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21524810611,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527424555,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527503972,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527541833,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-02T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "itiadvantage.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21445449218,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "efectivale.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21445931166,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cambridgefx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21449856230,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "femaemergencyhotels.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21449956803,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "7-elevenfleet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450193015,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fintwistonline.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450245880,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "efectifintech.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450284464,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valesdegasolina.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450362831,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "efectivalefintech.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450475367,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "efectivalefintech.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21450551537,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-03T00:00:00",
+      "last_seen": "2026-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstarmileagepoint.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21524858603,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "allstarmileagepoint.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21524973870,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "efektivnitankovani.cz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525132956,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525157473,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.hu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.sk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526764527,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526920636,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.lu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526819869,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.pl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.at",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.cz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526859960,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcorcards.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525285304,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "epyx.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525311880,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tankpassen-vergelijken.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525865820,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-tankpas.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21525936730,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-tankkarte.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526034419,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526058203,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-kartya.hu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526201809,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-karta.sk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526249574,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-karta.pl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526472524,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-carte.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21526569712,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chjones.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "autodiscover.ccs.cz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "travelcard.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcor.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21527064744,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fuellynk.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21532011428,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-06T00:00:00",
+      "last_seen": "2026-10-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-karta.cz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21545843459,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-tankkarte.at",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21545899480,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-carte.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21545899575,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-tankkaart.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21546010931,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-carte.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21546010867,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kiwifuelcards.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21546011109,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "shell-tankkarte.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21546159196,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mina.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21547191112,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-07T00:00:00",
+      "last_seen": "2026-10-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pacpridenet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721403659,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-14T00:00:00",
+      "last_seen": "2026-10-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cfnnet.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721431900,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-14T00:00:00",
+      "last_seen": "2026-10-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crewconnect.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721433175,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-14T00:00:00",
+      "last_seen": "2026-10-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "travelcor.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721445303,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-14T00:00:00",
+      "last_seen": "2026-10-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "plugsurfing.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21739306308,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-15T00:00:00",
+      "last_seen": "2026-10-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "clclodging.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcardsusa.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "corpayone.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "comdata.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "corpayinc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fleetcardusa.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corpay, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21855035106,
+          "cert_org": "Corpay, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corpay, Inc."
+      ],
+      "first_seen": "2025-10-20T00:00:00",
+      "last_seen": "2026-10-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:05:45.533879Z",
+    "elapsed_seconds": 23.62,
+    "domains_found": 58,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

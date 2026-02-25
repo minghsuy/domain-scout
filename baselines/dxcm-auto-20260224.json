@@ -1,0 +1,1049 @@
+{
+  "entity": {
+    "company_name": "Dexcom",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "mydiabetesdata.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13457786887,
+          "cert_org": "Dexcom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18009974781,
+          "cert_org": "Dexcom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367704966,
+          "cert_org": "Dexcom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with dexcom.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dexcom, Inc."
+      ],
+      "first_seen": "2024-06-20T00:00:00",
+      "last_seen": "2026-01-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexcom.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DEXCOM, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836805076,
+          "cert_org": "DEXCOM, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DEXCOM, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8836811903,
+          "cert_org": "DEXCOM, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DEXCOM, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8837355751,
+          "cert_org": "DEXCOM, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DEXCOM, INC.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8837356622,
+          "cert_org": "DEXCOM, INC.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983482264,
+          "cert_org": "Dexcom Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983985601,
+          "cert_org": "Dexcom Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13660901319,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13660901334,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13677435755,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13677436059,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13702065132,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13702065279,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13728587791,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13728587988,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13755271401,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13755271469,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13783945850,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13783945810,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13812810747,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom INC' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13812810896,
+          "cert_org": "Dexcom INC",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976587749,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976587757,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15982397492,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15982398519,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064087026,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064086768,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064295549,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064295306,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064658259,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16064659212,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16237428482,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16237428672,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16373599322,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16373599817,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16451581043,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16451581059,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16766891157,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16766891158,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776076018,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776076022,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776096799,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776098343,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776114699,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776114910,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16866411441,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16866411737,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17074151091,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17074151231,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17074273689,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17074273837,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17079715677,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17079715816,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17079800017,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17079800650,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17252105727,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17252105414,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17259892778,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17259892990,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17359132722,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17359132641,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17359242165,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17359251906,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17986463268,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17986463440,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17986616223,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17986616302,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18046898476,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18046898292,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DEXCOM, INC.",
+        "DexCom, Inc.",
+        "Dexcom INC",
+        "Dexcom Inc"
+      ],
+      "first_seen": "2023-03-08T00:00:00",
+      "last_seen": "2026-05-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexdevlab.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8840832253,
+          "cert_org": "Dexcom Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dexcom Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8840832618,
+          "cert_org": "Dexcom Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15699560689,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15699560732,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DexCom, Inc.",
+        "Dexcom Inc"
+      ],
+      "first_seen": "2023-03-08T00:00:00",
+      "last_seen": "2025-12-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexcominc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15132384460,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15132384646,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15173929692,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15173930238,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16766919415,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16766921464,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16999767919,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16999768392,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17876954882,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17876954752,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DexCom, Inc."
+      ],
+      "first_seen": "2024-10-29T00:00:00",
+      "last_seen": "2026-05-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexcom.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16373036126,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16373036276,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17551730016,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17551730261,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DexCom, Inc."
+      ],
+      "first_seen": "2025-01-23T00:00:00",
+      "last_seen": "2026-04-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexcomdev.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776131417,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16776132140,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DexCom, Inc."
+      ],
+      "first_seen": "2025-02-20T00:00:00",
+      "last_seen": "2026-03-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dexcom.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17412072385,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DexCom, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17412072498,
+          "cert_org": "DexCom, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DexCom, Inc."
+      ],
+      "first_seen": "2025-03-26T00:00:00",
+      "last_seen": "2026-03-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:12:58.461584Z",
+    "elapsed_seconds": 13.03,
+    "domains_found": 7,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

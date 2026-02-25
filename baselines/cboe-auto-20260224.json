@@ -1,0 +1,1018 @@
+{
+  "entity": {
+    "company_name": "Cboe Global Markets",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "hanweck.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8673017028,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-02-17T00:00:00",
+      "last_seen": "2024-03-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "livevol.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819059382,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8819064481,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9604779961,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9604779901,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9604780099,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9807218956,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10063777707,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-06T00:00:00",
+      "last_seen": "2024-09-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cboe.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885230665,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885230701,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586788485,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10355495100,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362564596,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362949206,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363195893,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363285191,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363636240,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363808736,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10363940254,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10364107555,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10364186211,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10364253722,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10371947741,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-10-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cboe.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885230701,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10315153346,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10315178359,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-10-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bats.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885230701,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418126733,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418147551,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418160994,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10418174062,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-09-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ft-x.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941387633,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941995812,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942008680,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9068160432,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070696596,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9070879884,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10055475660,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10055483392,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-04-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chi-x.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9008037110,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9752440220,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2024-06-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "neo.inc",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cboe.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aequitasneo.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aequitasneoexchange.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "etfmarket.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "neo.exchange",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071213912,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9411636886,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "trade-alert.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9413039545,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9590128806,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-05-17T00:00:00",
+      "last_seen": "2024-06-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "batstrading.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9754163495,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-06-26T00:00:00",
+      "last_seen": "2024-07-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "theamericanfinancialexchange.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9928243360,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10417797325,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10417802679,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10417802732,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-07-18T00:00:00",
+      "last_seen": "2024-10-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hanweckassoc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9932335732,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9942999789,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9943023384,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10026141287,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-07-18T00:00:00",
+      "last_seen": "2024-07-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cboe.co.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9949462829,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-07-21T00:00:00",
+      "last_seen": "2024-08-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ftoptions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CBOE Global Markets, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10322081785,
+          "cert_org": "CBOE Global Markets, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CBOE Global Markets, Inc."
+      ],
+      "first_seen": "2023-09-07T00:00:00",
+      "last_seen": "2024-10-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:50:40.333694Z",
+    "elapsed_seconds": 16.75,
+    "domains_found": 19,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

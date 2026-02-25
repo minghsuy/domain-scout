@@ -1,0 +1,1133 @@
+{
+  "entity": {
+    "company_name": "ConocoPhillips",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "econocophillips.mobi",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730771918,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-03-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "conocophillips.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779621206,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895484303,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967458294,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8973704753,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9067958785,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127987070,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9421715311,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9587117906,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595657337,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9693235406,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9871560204,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10040426886,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10093016983,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10108791549,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10150093924,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165210959,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10969569117,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2024-11-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "coplab.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858360167,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-03-10T00:00:00",
+      "last_seen": "2024-04-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "econocophillips.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975411123,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9581749640,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9582009909,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9945921098,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109878112,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10266250154,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10266367400,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10447510557,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10556158636,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10803994332,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10804204427,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10804266033,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10811929210,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-03-24T00:00:00",
+      "last_seen": "2024-10-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cop.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9281040250,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9406900347,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536665954,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9879420629,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353558369,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353617810,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353948217,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10354096559,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10354157158,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10354224465,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10358565456,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-05-01T00:00:00",
+      "last_seen": "2024-09-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "conocophillipsalaska.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9582084509,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-06-05T00:00:00",
+      "last_seen": "2024-06-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cop.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9644865847,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143361849,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10191428659,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10536879835,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with conocophillips.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-06-13T00:00:00",
+      "last_seen": "2024-10-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "conocophillips.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559248105,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8615682640,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779621206,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9014433524,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9067958785,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188194010,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230317054,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298264685,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298290019,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9298310375,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9339491752,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9339508590,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349242534,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403277158,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524149141,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9524180833,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9581937644,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9587117906,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9693235406,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9703023818,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9762863849,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9815688963,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9871560204,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10039850054,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10045391156,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109514542,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10113649225,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10166804044,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10814961334,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10815398034,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10815419889,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10825552919,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10875205741,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-02-02T00:00:00",
+      "last_seen": "2024-11-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "powerincooperation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698117411,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-02-20T00:00:00",
+      "last_seen": "2024-03-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "copapp.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9173790280,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9190614108,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9280482911,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9280603019,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9834779488,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872150822,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ConocoPhillips Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10884798375,
+          "cert_org": "ConocoPhillips Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ConocoPhillips Company"
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-07-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:03:32.257703Z",
+    "elapsed_seconds": 3.17,
+    "domains_found": 10,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

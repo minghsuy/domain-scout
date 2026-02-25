@@ -1,0 +1,1023 @@
+{
+  "entity": {
+    "company_name": "SYNAPTICS Inc",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "displaylink.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431972078,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9493009579,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9589704092,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9956302763,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9961246473,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10709745680,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10709745588,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11358812439,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11681779505,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12354132516,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13934757020,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14020689491,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15061817674,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16369932250,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20296424063,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with synaptics.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Synaptics Inc."
+      ],
+      "first_seen": "2023-05-19T00:00:00",
+      "last_seen": "2025-09-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "synaptics.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8600672720,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8716054352,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8821967896,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8876526973,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941594366,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9055099083,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9192976474,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9195451569,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9233764046,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9233804263,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9362365138,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9406369420,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431972078,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9493009579,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9589704092,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9661743092,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9661743180,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9661748736,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9669603945,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9956302763,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9961246473,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10916110796,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10975750814,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11024446107,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063296729,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063298036,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063299201,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063300845,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063301889,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063306514,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063314999,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11063346448,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11069773653,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11687324653,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11692968707,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12359457911,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15263173289,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15459417227,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15523128655,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15523860156,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15523886999,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11358812439,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11635466333,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12144013561,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12144354277,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12169488437,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12205557066,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12231190109,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12237620502,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12347521978,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12354132516,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12359450037,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12359666740,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12365744252,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12441355637,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12746422357,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12746422166,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12746422167,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12746430080,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13077859543,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13078681070,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13079029738,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13084174149,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13934757020,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13957834389,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13964518860,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14835477598,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15061817674,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15263153821,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15263165342,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15327414842,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15334180782,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15459409495,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15459451269,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15465079601,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16859925036,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16912124193,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20844064616,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20844331828,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Synaptics Inc."
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2025-12-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "displaylink.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10709745680,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10709745588,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14020689491,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Synaptics Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20296424063,
+          "cert_org": "Synaptics Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Synaptics Inc."
+      ],
+      "first_seen": "2023-10-10T00:00:00",
+      "last_seen": "2025-09-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T19:32:48.544256Z",
+    "elapsed_seconds": 16.0,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1458 @@
+{
+  "entity": {
+    "company_name": "Burlington Stores, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "coat.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779016727,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822626532,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8840027541,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8840043647,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8906571943,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985085908,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985086039,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8994898706,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9113466850,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226230292,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9254659119,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9254751391,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9281427379,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416699905,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9424832413,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9449456429,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9449456410,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9449456464,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9556518405,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9606135161,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9621830248,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9621830988,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9646207145,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9761063934,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9869151240,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9869151210,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9869151284,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902022531,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10011248315,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10165984979,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10176988706,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10215085715,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10215110374,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249016778,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10264287410,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353720394,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353727154,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10551355701,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10551376056,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10560706234,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10560733653,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10560782037,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10599155268,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11220973985,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12561511051,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with burlington.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Burlington Stores, Inc."
+      ],
+      "first_seen": "2023-03-01T18:40:54",
+      "last_seen": "2024-12-09T00:00:10",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "burlingtonstores.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9621830271,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with burlington.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Burlington Stores, Inc."
+      ],
+      "first_seen": "2023-06-11T00:00:08",
+      "last_seen": "2024-07-06T00:00:08",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "burlingtoninvestors.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9869151239,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10000520235,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with burlington.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Burlington Stores, Inc."
+      ],
+      "first_seen": "2023-07-10T06:00:12",
+      "last_seen": "2024-07-27T14:37:36",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "burlington.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778796969,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8788347801,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8822626227,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8829514929,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8869712775,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8869712830,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8872234572,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8980719424,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985144713,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8985182215,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8994898678,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8994898789,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003588553,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003609423,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9049191428,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9078257415,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9184082369,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9211626156,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9211626133,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226230311,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9226230428,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9275221853,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9275221829,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9362474920,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366379785,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9413990926,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9413997819,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416699877,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416699803,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9416704556,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9424832413,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9449456426,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9503267600,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9518980722,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9528627444,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9556518405,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9621830988,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636046402,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9696507198,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9704744909,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9704744861,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9740309012,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9790367342,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9833379411,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9835412482,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9835539548,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9869151210,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9873082196,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9890897058,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902022531,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142306713,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10214320081,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10215100176,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10242302786,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10304489262,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10304495848,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10353727154,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10586830408,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10587822768,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10599155268,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10605786264,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634900577,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10682542789,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10683174761,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10683174382,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10706324987,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10786177543,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10802527926,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10806320137,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10824610131,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10938703866,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10938704359,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10971237504,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10980547303,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10989583128,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11026948020,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11037150595,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11099162023,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11108694274,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11112267048,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11112267404,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11112267237,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11238996339,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11252572148,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11325392838,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11354606098,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11365867138,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11365867139,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11365867140,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11413033829,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11420190850,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12439746004,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Burlington Stores, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12534635494,
+          "cert_org": "Burlington Stores, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Burlington Stores, Inc."
+      ],
+      "first_seen": "2023-03-01T17:58:08",
+      "last_seen": "2024-12-28T17:58:21",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T02:58:53.178501Z",
+    "elapsed_seconds": 42.99,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

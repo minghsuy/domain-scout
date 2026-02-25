@@ -1,0 +1,1149 @@
+{
+  "entity": {
+    "company_name": "EXTREME NETWORKS INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "extremenetworks.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8647383140,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777605085,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9067321110,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130138827,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9130505975,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9305444025,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9366951918,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9815890298,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9871660706,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9886081547,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10001868501,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10031229235,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142057552,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10142906255,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10143328908,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249406037,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10380750554,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10702852407,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10958375030,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11030369775,
+          "cert_org": "Extreme Networks, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11038001141,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11128792945,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11142809548,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11155018823,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12466904335,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12576776964,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13537604484,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11787041425,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11832580552,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11832608315,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11832613368,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12168958703,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12394605143,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12461064243,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12576759321,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12578237663,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12586956797,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13166756328,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13537595317,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13602125509,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13621627012,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13792968264,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14049699779,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14107997596,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14150859092,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14415992601,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14454392398,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14784575216,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15175785561,
+          "cert_org": "Extreme Networks, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15323611688,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15337713989,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15493303568,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16866728246,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17319983528,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17467373299,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18053741380,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18344446322,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20301543980,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20841529994,
+          "cert_org": "Extreme Networks, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15942189000,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16221094770,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16221154388,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16369934985,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16369964105,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16369978622,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16736911679,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17089960461,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17290282644,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17292452485,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17743956955,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17881141408,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18257208375,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18912110621,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19267223452,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19511456109,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20159180299,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20267625473,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20350439191,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20485147110,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20732594857,
+          "cert_org": "Extreme Networks, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20907758987,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc",
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2026-09-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "enterasys.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9232587324,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12812171169,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18028729000,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17843525449,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-04-25T00:00:00",
+      "last_seen": "2026-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ezcloudx.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9535512319,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13002225317,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17881519223,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17978490716,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-05-31T00:00:00",
+      "last_seen": "2026-04-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "extremeanalytics.online",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9925021649,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13918991334,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19968464487,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19968450153,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-07-17T00:00:00",
+      "last_seen": "2026-07-31T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "infovistacloud.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10376702262,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10376702360,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14709260637,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14709260513,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-09-14T00:00:00",
+      "last_seen": "2025-09-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nonetworkcapex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403643672,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15700351332,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20887433276,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2023-12-13T00:00:00",
+      "last_seen": "2025-12-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "extremecloudbi.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13275686955,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17962832256,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2024-06-03T00:00:00",
+      "last_seen": "2025-06-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "extremecloudbi.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Extreme Networks, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13275703780,
+          "cert_org": "Extreme Networks, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Extreme Networks, Inc."
+      ],
+      "first_seen": "2024-06-03T00:00:00",
+      "last_seen": "2025-06-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T23:47:45.381521Z",
+    "elapsed_seconds": 36.29,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

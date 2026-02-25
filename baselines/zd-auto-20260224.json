@@ -1,0 +1,1206 @@
+{
+  "entity": {
+    "company_name": "ZIFF DAVIS, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ereceptionist.fr",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with evoice.co.uk",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ereceptionist.de",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with evoice.co.uk",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ereceptionist.ie",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with evoice.co.uk",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ereceptionist.co.uk",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with evoice.co.uk",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "line2.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9316542966,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9316542957,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12603527665,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12603527783,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16958578334,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16958578689,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24212192932,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24212192715,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with evoice.co.uk",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2027-02-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "evoice.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "campaigner.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "j2.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "emailcampaigns.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "smtp.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pdfmail.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ereceptionist.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "j2global.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "evoice.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557441,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965557856,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-03-23T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ziffdavis.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9458444730,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9458445040,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11844664098,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11844663990,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11919168098,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11919168099,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11919174381,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11919174559,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12274492330,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12274492332,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12837168429,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12837168509,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13016704167,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13016704272,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367769776,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367770173,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367769961,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367769989,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367770677,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16367770898,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16775288252,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16775289896,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16777206752,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16777209072,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16860348863,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16860347437,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18365537005,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18365537061,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19006152409,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19006152650,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20750589882,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20750589719,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721644473,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721653477,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721653903,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21721667231,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922761788,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922762404,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922762039,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922763709,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922774377,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23922774430,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538878367,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538879210,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538946874,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538946603,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2023-05-22T00:00:00",
+      "last_seen": "2027-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ehgroup.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12150905110,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12150905118,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16777186227,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16777186828,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538946099,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Ziff Davis Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24538957927,
+          "cert_org": "Ziff Davis Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Ziff Davis Inc."
+      ],
+      "first_seen": "2024-02-21T00:00:00",
+      "last_seen": "2027-02-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T15:47:27.903132Z",
+    "elapsed_seconds": 16.48,
+    "domains_found": 16,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "include_non_resolving": false
+    }
+  }
+}

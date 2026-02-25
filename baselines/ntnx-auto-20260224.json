@@ -1,0 +1,569 @@
+{
+  "entity": {
+    "company_name": "Nutanix, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "nutanix.dev",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902946210,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with nutanix.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Nutanix, Inc."
+      ],
+      "first_seen": "2023-03-16T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nutanix.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8553502514,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8706729817,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721078732,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760824070,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760824989,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8775312173,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777919242,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778244626,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778255296,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778266983,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8783274412,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8783437930,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785882569,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8844461100,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8861097455,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8861165379,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8873691768,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875739070,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882763066,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892181948,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8900442831,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8900477424,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8901575803,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8902946210,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8903068805,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8910587326,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8947001365,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8947094240,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8947145944,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8947281891,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8947511510,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8963909848,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8964235719,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8964856998,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8973290138,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982454396,
+          "cert_org": "Nutanix Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982454458,
+          "cert_org": "Nutanix Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982796472,
+          "cert_org": "Nutanix Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8982861893,
+          "cert_org": "Nutanix Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984114168,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8991307461,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992761249,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8999469345,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9010934765,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9022674988,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9035113483,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9035119232,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9038373306,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Nutanix, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9048016729,
+          "cert_org": "Nutanix, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Nutanix Inc",
+        "Nutanix, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-04-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T04:11:38.556470Z",
+    "elapsed_seconds": 14.65,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

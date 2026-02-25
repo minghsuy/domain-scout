@@ -1,0 +1,828 @@
+{
+  "entity": {
+    "company_name": "StoneX Group Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "stonex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8771696604,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785388327,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895188696,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981493828,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983406082,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984043295,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990216413,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8991947331,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993149568,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076599433,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076656181,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9118027701,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127351639,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127429555,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9147381793,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9147462083,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9181318569,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9247978590,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341571470,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396200380,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396325139,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9396561149,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430339814,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430397919,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430465828,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454947053,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9457597300,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465773502,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465841259,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465903392,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9465981254,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9491689461,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9537090756,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9589007567,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9594793119,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9594880109,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9594933435,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9610673136,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9610743878,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9634798553,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642889442,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9658285727,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-02-28T21:55:22",
+      "last_seen": "2024-07-05T14:07:13",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "fcstone.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892138515,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892299658,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892475054,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8892567500,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981641343,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993002188,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-15T13:26:45",
+      "last_seen": "2024-03-28T19:33:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intlcdn.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8895232493,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-15T20:33:24",
+      "last_seen": "2024-03-15T20:33:24",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "saswealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8991248706,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-28T15:16:46",
+      "last_seen": "2024-03-28T15:16:46",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intlfcstonesecurities.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002847433,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-29T17:53:09",
+      "last_seen": "2024-03-29T17:53:09",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intlfcstonesecurities.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002884688,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-29T17:59:50",
+      "last_seen": "2024-03-29T17:59:50",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intlfcstonesecurities.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002937936,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-03-29T18:06:49",
+      "last_seen": "2024-03-29T18:06:49",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stonexpoc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9288320433,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-05-02T12:15:40",
+      "last_seen": "2024-05-02T12:15:40",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stonex.com.ar",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9489734482,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-05-26T12:44:39",
+      "last_seen": "2024-05-26T12:44:39",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "gainvest.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9489796787,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-05-26T12:56:25",
+      "last_seen": "2024-05-26T12:56:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "intlfcstone.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642593364,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9659986374,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-06-13T12:55:46",
+      "last_seen": "2024-06-29T12:55:46",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "stonexbullion.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9652304787,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'StoneX Group Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9660234007,
+          "cert_org": "StoneX Group Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "StoneX Group Inc."
+      ],
+      "first_seen": "2023-06-14T18:59:11",
+      "last_seen": "2024-06-15T19:03:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T02:43:27.862878Z",
+    "elapsed_seconds": 20.1,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

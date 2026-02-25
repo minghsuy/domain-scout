@@ -1,0 +1,1052 @@
+{
+  "entity": {
+    "company_name": "TXNM ENERGY INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "tnpe.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16082478961,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18546963409,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20463911479,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20463911903,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with pnmresources.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TXNM Energy, Inc"
+      ],
+      "first_seen": "2025-01-08T02:29:13",
+      "last_seen": "2026-09-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pnm.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16082478961,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16659824217,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16660224076,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16660367980,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16660487175,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17087305442,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17090694166,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19556489839,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19556489915,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19680861635,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19680861191,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19813844331,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19813844197,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20334920424,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20334920071,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20949666290,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20949665859,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with pnmresources.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TXNM Energy, Inc"
+      ],
+      "first_seen": "2025-01-08T02:29:13",
+      "last_seen": "2026-10-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tnmp.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16082478961,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17087593805,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17090654508,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18165460426,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973420026,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973419275,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973646815,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973646891,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973793162,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18973792500,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19510053349,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19510053206,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19730190727,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19730191543,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20880237498,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20880237781,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21062845169,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21062845935,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with pnmresources.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TXNM Energy, Inc"
+      ],
+      "first_seen": "2025-01-08T02:29:13",
+      "last_seen": "2026-10-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pnmresources.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15864766125,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15864871120,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15942579679,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15976944089,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16048654642,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16082478961,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16140649208,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16142879082,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16528859767,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16529056366,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17418855234,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419169492,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17419168733,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17693038812,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17767748404,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17767808660,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18361044236,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18397045828,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18565033885,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18565034083,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18664479894,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18664480025,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18676906214,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18676906047,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19372819595,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19372819517,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19716516501,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19716516590,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19989978227,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19989978228,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20263335017,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20263335254,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20356087938,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20356087941,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20451562304,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20451562762,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20461530627,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20461530036,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20900245783,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20901312123,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20909846777,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21113661104,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21113661399,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21400751023,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21400768186,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21626477190,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21626512393,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21723572497,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TXNM Energy, Inc"
+      ],
+      "first_seen": "2024-12-23T15:12:42",
+      "last_seen": "2026-11-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "txnmenergy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19716860529,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19716860423,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19730337951,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19730337539,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19901738982,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19901738196,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21624406762,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TXNM Energy, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21624446358,
+          "cert_org": "TXNM Energy, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TXNM Energy, Inc"
+      ],
+      "first_seen": "2025-07-16T00:00:00",
+      "last_seen": "2026-11-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T03:01:51.153835Z",
+    "elapsed_seconds": 24.78,
+    "domains_found": 5,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

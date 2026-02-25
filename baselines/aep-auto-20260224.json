@@ -1,0 +1,1430 @@
+{
+  "entity": {
+    "company_name": "American Electric Power",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "aepnow.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9101762220,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9666931298,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-04-09T13:28:04",
+      "last_seen": "2024-07-12T14:23:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pnrtransmission.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9231555550,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9245755047,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-04-25T16:59:03",
+      "last_seen": "2024-05-23T11:51:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepadvocacy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9366021905,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-05-11T15:50:04",
+      "last_seen": "2024-06-06T15:50:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepvotes.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9421820645,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-05-18T15:04:03",
+      "last_seen": "2024-06-13T15:04:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepclaims.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9597570723,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-07T21:48:05",
+      "last_seen": "2024-07-03T21:48:05",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "indianamichiganpower.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9602469932,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-08T12:54:03",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "psoklahoma.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepnationalaccounts.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepohio.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with aep.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aep.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8537021115,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8537037230,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8544852293,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8544863685,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8552463687,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8587690204,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8643228680,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8643301481,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8660538866,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8674825333,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8697335265,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8699565501,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8712291778,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8712354642,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8712445443,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8715169932,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8758345960,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8775100564,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8780596076,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8792191544,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8819338384,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8820000261,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8820125629,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8840072478,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8890929224,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8913198297,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8939489123,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8939525701,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8947375675,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8958447727,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9032604059,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9084908457,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9085343627,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9101903821,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9102920700,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9108369982,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9108402230,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9109022937,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9111271621,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9145904315,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9194500332,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9223190043,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9253857123,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9256373446,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9294782226,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9295711022,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9314341936,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9325377678,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9338229809,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9357834254,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9359658228,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9365705670,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9365721427,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9406528277,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9406586182,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9412817048,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420428656,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420475238,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420506124,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420580194,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420636484,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420684162,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9420726302,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9453587157,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9464257002,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9523504059,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9534148119,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9549324943,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9550912207,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9600637201,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9607995492,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9608087588,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9664969639,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9708471622,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9708499712,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9708552531,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9750401916,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9750429921,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9772691707,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9781192790,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9788381676,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9788429946,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9816559915,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9831288265,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9839762277,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9871150015,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9871171377,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9894688218,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-01-30T18:35:07",
+      "last_seen": "2024-08-08T15:29:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aeppac.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9611175106,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-09T15:24:04",
+      "last_seen": "2024-07-05T15:24:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "swepco.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aeptexas.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kentuckypower.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aepaccount.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "appalachianpower.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9777977718,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-06-29T07:52:05",
+      "last_seen": "2024-07-25T07:52:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ettexas.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'American Electric Power Service Corporation' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9880233581,
+          "cert_org": "American Electric Power Service Corporation",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "American Electric Power Service Corporation"
+      ],
+      "first_seen": "2023-07-11T17:06:04",
+      "last_seen": "2024-08-06T17:06:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:25:43.899998Z",
+    "elapsed_seconds": 13.36,
+    "domains_found": 17,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

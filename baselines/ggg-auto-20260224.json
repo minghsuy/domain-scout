@@ -1,0 +1,663 @@
+{
+  "entity": {
+    "company_name": "GRACO INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "qedenv.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983319632,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12021324605,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922652233,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922636938,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with graco.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Graco Inc."
+      ],
+      "first_seen": "2023-03-27T00:00:00",
+      "last_seen": "2025-04-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "graco.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760045199,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8862086573,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8875198435,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8913888234,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8913895167,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8992933078,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001107675,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051219722,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051332564,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9189885128,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9194862503,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9880960483,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10557840623,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10918153323,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12471472993,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12471479823,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12150335531,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12396946408,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12426967042,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12496739453,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12499311906,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12499526158,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12502203830,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12568396183,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12568694740,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12578934697,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12579001094,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12734105940,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13870043118,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15214626711,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17854161496,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20840189262,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16498323476,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16780629644,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17110514743,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17110520345,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17110554711,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17371583827,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17373232296,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17377016351,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17724039412,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17741422619,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18271838563,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18714216205,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19098404714,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19098610010,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20035587738,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20969638378,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21065864371,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21066674776,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22104047936,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24494424146,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24535176158,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24535302084,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24537924759,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Graco Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24609756808,
+          "cert_org": "Graco Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Graco Inc."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2027-03-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T19:58:13.358943Z",
+    "elapsed_seconds": 20.46,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

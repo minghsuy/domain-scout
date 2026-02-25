@@ -1,0 +1,646 @@
+{
+  "entity": {
+    "company_name": "Enerflex Ltd.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "exterran.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Enerflex Ltd.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10250968325,
+          "cert_org": "Enerflex Ltd.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14138970384,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15521585740,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15684592928,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20300317042,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with enerflex.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ENERFLEX LTD",
+        "Enerflex Ltd."
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2025-11-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "enerflex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8788362966,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429438202,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429526810,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429532109,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10061443002,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10125530602,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10125615158,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10263458283,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634133006,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12982650415,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13695066138,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11944459316,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12198430797,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13682718488,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13886429528,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14222411148,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14305243413,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14878786323,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15238726945,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16868054827,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19512115591,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20334055678,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16424097691,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16973710902,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19512110776,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19512616162,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19514086498,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19835700793,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20314500981,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20413815305,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21427450336,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22049069820,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22505299659,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22768793068,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22872703715,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22925928163,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22983282331,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22984972304,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23038039639,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23065329570,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23109960382,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23142791108,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23188541679,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23202868439,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23203294237,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23203541881,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23203649325,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 23867012192,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24499275200,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ENERFLEX LTD"
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2027-03-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myexterran.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14415388811,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'ENERFLEX LTD' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14526815453,
+          "cert_org": "ENERFLEX LTD",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "ENERFLEX LTD"
+      ],
+      "first_seen": "2024-09-03T00:00:00",
+      "last_seen": "2025-09-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T20:51:57.099520Z",
+    "elapsed_seconds": 31.97,
+    "domains_found": 3,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

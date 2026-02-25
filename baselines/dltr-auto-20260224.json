@@ -1,0 +1,867 @@
+{
+  "entity": {
+    "company_name": "Dollar Tree",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "dollartree.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8702512982,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8702513163,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8710464061,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8792986959,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8849306651,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8908265830,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8928457458,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8986663811,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8990124487,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8990283740,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9003755491,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9003762788,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9003763358,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9003763418,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9003763764,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9007324914,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050476889,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050716577,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9173017349,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9205878317,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9230493170,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9230682243,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9301869318,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9392347612,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9392347570,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9418051294,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9464332952,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree",
+        "Dollar Tree Stores, Inc"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-06-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dollartreecanada.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9464332944,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-23T00:00:00",
+      "last_seen": "2024-06-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "greenbrierintl.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "midwoodbrands.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dollartree.media",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dollartreeinfo.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chesapeakemediagroup.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chesapeake.media",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chesapeakemediagroup.us",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "familydollar.media",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with familydollar.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree"
+      ],
+      "first_seen": "2023-05-25T00:00:00",
+      "last_seen": "2024-05-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "familydollar.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8599714013,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8849306651,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8873219639,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9007324914,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050476889,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050716577,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9173017349,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9205878317,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9392347570,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9464618012,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9476939659,
+          "cert_org": "Dollar Tree",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree",
+        "Dollar Tree Stores, Inc"
+      ],
+      "first_seen": "2023-02-07T00:00:00",
+      "last_seen": "2024-06-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dtarbitration.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8778387986,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree Stores, Inc"
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2024-03-31T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dollartree.xyz",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Dollar Tree Stores, Inc' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9392347570,
+          "cert_org": "Dollar Tree Stores, Inc",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Dollar Tree Stores, Inc"
+      ],
+      "first_seen": "2023-05-15T00:00:00",
+      "last_seen": "2024-06-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:14:31.292935Z",
+    "elapsed_seconds": 28.37,
+    "domains_found": 13,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,1148 @@
+{
+  "entity": {
+    "company_name": "Corebridge Financial, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "assurededgeadvisory.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759924851,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-02-27T16:37:06",
+      "last_seen": "2024-02-27T16:37:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "corebridgefinancial.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770117454,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770117443,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001098572,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9001099069,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238439982,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9243856069,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9243902216,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9248340207,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9248340294,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290112954,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403851023,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9403859683,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9517425846,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9546364967,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9583623724,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9605390580,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9605396246,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692280,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692474,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692476,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692605,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692619,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692693,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692839,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692809,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668692881,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9668693779,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9700628401,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-02-28T17:59:09",
+      "last_seen": "2024-06-20T11:46:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "incomegeneration.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8901745658,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-03-16T12:25:39",
+      "last_seen": "2024-03-16T12:25:39",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valic.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941149053,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9148207117,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9230364203,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9240981475,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9247860241,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9279872894,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9365911304,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9423407574,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9428972847,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9471811580,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9471818594,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9471829271,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9471834247,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9472997831,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9517105178,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9517311562,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9545292906,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9545993493,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9546804137,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595680655,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642249927,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645623725,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645719278,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9651664461,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702869652,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717281178,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-03-20T15:22:39",
+      "last_seen": "2024-06-22T12:54:54",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "dropsolutions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9000879003,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-03-29T13:30:51",
+      "last_seen": "2024-03-29T13:30:51",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "corebridgedirect.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9238496347,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-04-26T15:55:15",
+      "last_seen": "2024-04-26T15:55:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myretirementmanager.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9240960967,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-04-26T23:02:04",
+      "last_seen": "2024-04-26T23:02:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sunamerica.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9363578692,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9546400837,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9546820365,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9660055688,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-05-11T05:57:18",
+      "last_seen": "2024-06-15T18:35:49",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valicnotification.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368384176,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368385494,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534625889,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534729956,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-05-12T10:21:13",
+      "last_seen": "2024-05-31T15:09:31",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valicalerts.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368384176,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368385494,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534625889,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534729956,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-05-12T10:21:13",
+      "last_seen": "2024-05-31T15:09:31",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valicdeliver-e.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368384176,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9368385494,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534625889,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9534729956,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-05-12T10:21:13",
+      "last_seen": "2024-05-31T15:09:31",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "safg.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9543969641,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9543992225,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9544062021,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9603422074,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-06-01T16:04:57",
+      "last_seen": "2024-06-08T15:42:46",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "agsourcetrac.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9581331200,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717372101,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-06-05T19:59:46",
+      "last_seen": "2024-06-22T13:13:54",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aglife.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9613182755,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643154030,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9710423178,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717372096,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-06-09T21:32:46",
+      "last_seen": "2024-06-22T13:13:55",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americangeneral.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717281206,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-06-22T12:54:58",
+      "last_seen": "2024-06-22T12:54:57",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americangeneraltermlife.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Corebridge Financial, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717372081,
+          "cert_org": "Corebridge Financial, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Corebridge Financial, Inc."
+      ],
+      "first_seen": "2023-06-22T13:13:54",
+      "last_seen": "2024-06-22T13:13:53",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T18:34:23.837147Z",
+    "elapsed_seconds": 22.76,
+    "domains_found": 16,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

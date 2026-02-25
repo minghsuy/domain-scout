@@ -1,0 +1,914 @@
+{
+  "entity": {
+    "company_name": "CyberArk Software Ltd.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "cyberark.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767861139,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8929822934,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940150192,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8981878993,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9108195777,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9270671883,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9347191019,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9592226146,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9592314311,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9691737732,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9877056578,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9975505492,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9976926290,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9983263463,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10074418179,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10139229045,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10139471576,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10320040323,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10342666049,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10378173704,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10870204852,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10881816945,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10881850254,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11033306337,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11035051620,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11035413216,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11075859561,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11181894977,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11194469202,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11199995849,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11225763035,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12423369129,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13761881829,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14806235604,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11403409855,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-02-28T12:26:02",
+      "last_seen": "2025-01-14T14:26:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "alero.io",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8826747944,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9715050133,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9717024647,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9831456016,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9831456417,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13524941455,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11631380473,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-03-07T10:06:41",
+      "last_seen": "2025-02-04T08:21:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cyberark.cloud",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8829993070,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830024355,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8830049255,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-03-07T18:21:03",
+      "last_seen": "2024-04-07T18:31:02",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "idaptive.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175465233,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9175728160,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11712892603,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-04-17T19:41:18",
+      "last_seen": "2025-02-11T17:11:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "alero.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223261650,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-04-24T14:51:16",
+      "last_seen": "2024-05-25T14:51:15",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cyberarktest.cloud",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9247316452,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9255768061,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9256965289,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9256965269,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9282394528,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-04-27T16:01:18",
+      "last_seen": "2024-05-29T21:26:25",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cyber-ark.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9278602320,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9330708713,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9443078630,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9443201396,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10198389024,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10342852757,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10347231424,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11302449271,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11895124259,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11895363085,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-05-01T08:56:17",
+      "last_seen": "2025-02-28T11:56:01",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cybrqa.co.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9931749042,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9931749070,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9931779668,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9931780230,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9932610970,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9932947291,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247680604,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247683830,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10284685411,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10351403800,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11753804875,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11753811319,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'CYBERARK SOFTWARE LTD.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11753811249,
+          "cert_org": "CYBERARK SOFTWARE LTD.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "CYBERARK SOFTWARE LTD."
+      ],
+      "first_seen": "2023-07-18T13:01:23",
+      "last_seen": "2025-02-15T13:31:28",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T02:32:47.410294Z",
+    "elapsed_seconds": 26.02,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

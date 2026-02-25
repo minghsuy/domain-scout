@@ -1,0 +1,1782 @@
+{
+  "entity": {
+    "company_name": "Deere & Company",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "deere.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730145665,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730164157,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730219815,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730225202,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730246817,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730652572,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730672127,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731412997,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8732298338,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8758870735,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8758928825,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759375178,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759584731,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760444257,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760483342,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761610316,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761815325,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761901540,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768639301,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768815547,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769771983,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "starfirenetwork.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769149909,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8769221559,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ro",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.cn",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.co.za",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.hr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ch",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.se",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.tr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.sk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.hu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.co.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ge",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.asia",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.no",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.fi",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.co.nz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ee",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "navcomtech.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.dk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.at",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.africa",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.bg",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "johndeere.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ua",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.gr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.pt",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.cz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.co.th",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.lu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.pl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.si",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.lv",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.lt",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.rs",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "deere.com.ar",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770190222,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Deere and Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770818931,
+          "cert_org": "Deere and Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Deere and Company"
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:11:46.552977Z",
+    "elapsed_seconds": 6.53,
+    "domains_found": 48,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

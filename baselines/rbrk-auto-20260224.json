@@ -1,0 +1,660 @@
+{
+  "entity": {
+    "company_name": "Rubrik, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "rubrik.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488406774,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488419120,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8614714021,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8665744581,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8817212272,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8850491205,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8850491440,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8893003913,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941243036,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8941247881,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9054336629,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9054354364,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9068845580,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9075628671,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9110003767,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9237023321,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9346874855,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9404787468,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430437432,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9891224505,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10057054897,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062262516,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10082005857,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10307366130,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10698569977,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10698580957,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11046061494,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11238930110,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11640243197,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11640278225,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11860764553,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12584812264,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12888852363,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13059595387,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13977215560,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11411546901,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11613471531,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11617157966,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11651845378,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11853325399,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11853491745,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11854756581,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12205728705,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12272440829,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12273297298,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12362042544,
+          "cert_org": "Rubrik, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12421121389,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12421139634,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12421139644,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12497602001,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12498787894,
+          "cert_org": "Rubrik, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12596096023,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12652160872,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12753340970,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12753464885,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12755553663,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Rubrik, Inc",
+        "Rubrik, Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2025-04-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ransimlab.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779162755,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779565494,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780465055,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780539776,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rubrik, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12593735078,
+          "cert_org": "Rubrik, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Rubrik, Inc."
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2025-04-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T03:30:24.637868Z",
+    "elapsed_seconds": 26.23,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

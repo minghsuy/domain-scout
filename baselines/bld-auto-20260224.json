@@ -1,0 +1,1175 @@
+{
+  "entity": {
+    "company_name": "TopBuild Corp",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "americannationalinsulation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763700469,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763702649,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11958107615,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11958107840,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2025-02-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sip-insulation.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763717091,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8763718383,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11958071937,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11958072147,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2025-02-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "usiinc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8764118621,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8764118999,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "webldit.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990678368,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990678694,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283136095,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9283136102,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9297512367,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9297512563,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12208841711,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12208841835,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-03-28T00:00:00",
+      "last_seen": "2025-03-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "topbuild.cloud",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9178044125,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9178045030,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9178140316,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9178141470,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9646690756,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9646691500,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10960177840,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10960181224,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11324412669,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11324412668,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12704948696,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12704433079,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12704432828,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12704948309,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-04-18T00:00:00",
+      "last_seen": "2025-04-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "eaglerocksupply.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431132110,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431132236,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-05-19T00:00:00",
+      "last_seen": "2024-05-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "distributioninternational.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431321379,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431321587,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645477610,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645477686,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12843694584,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12843694749,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12843733985,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-05-19T00:00:00",
+      "last_seen": "2025-04-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "silvercote.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9437506840,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9437506813,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645591339,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645596322,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-05-20T00:00:00",
+      "last_seen": "2024-06-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "specialtydistributionbillpay.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645150635,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645150718,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-06-13T00:00:00",
+      "last_seen": "2024-06-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "topbuild.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245954671,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10245954870,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11664055048,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11664058088,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2025-01-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "truteam.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249601671,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249601602,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249749891,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249749920,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249833996,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249834632,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10252762183,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10252762230,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10265777017,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10265777128,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362609596,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10362609640,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-09-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "eflprojectmanager.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10877116104,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10877116568,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-10-24T00:00:00",
+      "last_seen": "2024-10-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "garlandinsulating.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10956668287,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10956668777,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-10-31T00:00:00",
+      "last_seen": "2024-10-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "idealproducts.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11267366867,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11267366869,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-11-30T00:00:00",
+      "last_seen": "2024-11-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "topbuildfs.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11316532741,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11316532818,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11360183672,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11360183669,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11360331274,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11360331273,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-12-04T00:00:00",
+      "last_seen": "2024-12-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "service-partners.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11396054776,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11396054646,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11705486230,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11705594148,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11705652722,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2023-12-13T00:00:00",
+      "last_seen": "2025-01-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mascocs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11870917422,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11870927161,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12104415943,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12104415911,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2024-01-26T00:00:00",
+      "last_seen": "2025-02-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "environmentsforliving.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11871145744,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TopBuild Corp.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11871145929,
+          "cert_org": "TopBuild Corp.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TopBuild Corp."
+      ],
+      "first_seen": "2024-01-26T00:00:00",
+      "last_seen": "2025-02-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T17:45:18.909283Z",
+    "elapsed_seconds": 24.17,
+    "domains_found": 18,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

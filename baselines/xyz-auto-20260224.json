@@ -1,0 +1,868 @@
+{
+  "entity": {
+    "company_name": "Block, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "squareup.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794672068,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975181151,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9184845575,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9929183151,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9929440169,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9935528990,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10502958842,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10503140670,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12906351861,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12010785416,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12199249631,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12212998111,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12223370730,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12285981807,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12849004001,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13367879639,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13575051496,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with giveandgetlocal.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc",
+        "Block, Inc."
+      ],
+      "first_seen": "2023-03-03T18:18:17",
+      "last_seen": "2025-06-12T14:23:37",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "squareupsandbox.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975181151,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12212998111,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12223370730,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13575051496,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with giveandgetlocal.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block, Inc."
+      ],
+      "first_seen": "2023-03-24T17:51:02",
+      "last_seen": "2025-02-27T23:33:16",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "squareupstaging.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9360495062,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10958028787,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11029617135,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11029755777,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12212584348,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12222732684,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12733405154,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with giveandgetlocal.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block, Inc."
+      ],
+      "first_seen": "2023-05-10T16:41:20",
+      "last_seen": "2025-04-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "square.site",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11999107876,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with giveandgetlocal.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2024-02-06T00:00:00",
+      "last_seen": "2025-02-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "giveandgetlocal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8608853898,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-02-08T00:00:00",
+      "last_seen": "2024-03-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "editmysite.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8795033369,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11642621097,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11642928466,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2025-01-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "weeblycloud.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9144882157,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9156842941,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12501459580,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13013690632,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-04-14T00:00:00",
+      "last_seen": "2025-04-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "loginportal.site",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9915378132,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13588366299,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-07-16T00:00:00",
+      "last_seen": "2025-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "square.online",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249937554,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10565909056,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-09-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "weebly.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10249937554,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10565909056,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10922342432,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11043081726,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-11-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "weeblysite.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10922342432,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11043081726,
+          "cert_org": "Block Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block Inc"
+      ],
+      "first_seen": "2023-10-28T00:00:00",
+      "last_seen": "2024-11-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "afterpay.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12152768269,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block, Inc."
+      ],
+      "first_seen": "2024-02-22T00:00:00",
+      "last_seen": "2025-02-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cash.app",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12438365804,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Block, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12449294316,
+          "cert_org": "Block, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Block, Inc."
+      ],
+      "first_seen": "2024-03-19T00:00:00",
+      "last_seen": "2025-03-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hrblock.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'H & R Block, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9604710254,
+          "cert_org": "H & R Block, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "H & R Block, Inc."
+      ],
+      "first_seen": "2023-06-08T19:38:41",
+      "last_seen": "2024-06-08T19:38:41",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hrblock.net",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'H & R Block, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10167406607,
+          "cert_org": "H & R Block, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'H & R Block, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10167598634,
+          "cert_org": "H & R Block, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'H & R Block, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10206246174,
+          "cert_org": "H & R Block, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'H & R Block, Inc.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 10250985709,
+          "cert_org": "H & R Block, Inc.",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "H & R Block, Inc."
+      ],
+      "first_seen": "2023-08-17T19:46:34",
+      "last_seen": "2024-08-29T21:30:11",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:43:40.136704Z",
+    "elapsed_seconds": 29.93,
+    "domains_found": 15,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

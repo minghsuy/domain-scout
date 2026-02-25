@@ -1,0 +1,1698 @@
+{
+  "entity": {
+    "company_name": "BIOMARIN PHARMACEUTICAL INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "brineura.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8590858325,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarin.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645317558,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9121207443,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9352275770,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645580177,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9645585673,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9888696129,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9953722050,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-08-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "palynziq.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8655370666,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2024-03-16T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsdayla.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707029277,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bmrnusaccess.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8874280441,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9307952737,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-13T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "childhooddementia.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8885324200,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-14T00:00:00",
+      "last_seen": "2024-04-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarin.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8887353392,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-15T00:00:00",
+      "last_seen": "2024-03-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vimizim.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942230715,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinrareconnections.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942245262,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "liveunlimitedpku.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942249448,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarincopay.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8975526189,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-24T00:00:00",
+      "last_seen": "2024-03-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "acordatedemipku.ar",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002204833,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-03-29T00:00:00",
+      "last_seen": "2024-03-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "acondroplasia.cl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050390053,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223636014,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "haemdifferently.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050396186,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "haemdifferently.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050396186,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "haemdifferently.expert",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050396186,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsreference.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071801319,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-05-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cln2meetings.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9071821490,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-05T00:00:00",
+      "last_seen": "2024-04-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "discoverdysplasias.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9078972085,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-06T00:00:00",
+      "last_seen": "2024-04-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "battendayla.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174778729,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-05-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinhemophilia.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241036719,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-26T00:00:00",
+      "last_seen": "2024-05-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinhemophilia.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241036719,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-26T00:00:00",
+      "last_seen": "2024-05-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinhemophilia.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241036719,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-26T00:00:00",
+      "last_seen": "2024-05-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinhemophilia.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241036719,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-26T00:00:00",
+      "last_seen": "2024-05-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarinhemophilia.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9241036719,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-04-26T00:00:00",
+      "last_seen": "2024-05-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "roctavian.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9430243207,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-05-19T00:00:00",
+      "last_seen": "2024-05-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "acondroplasiaitalia.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764122896,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pku.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764132231,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "www.pku.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764132231,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pkuevents.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764139995,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "morquiosity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764140190,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarin-rareconnections.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764153281,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "achondroplasia.expert",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9764199045,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978731102,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978742842,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978743109,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-06-27T00:00:00",
+      "last_seen": "2024-07-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pediatricseizures.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843577535,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-08-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsreference.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843581752,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hemdifferently.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843586253,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kuvan.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843591252,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9957537688,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "naglazyme.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843595299,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "paediatricseizures.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843595661,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "epilepsiatest.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843600115,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "epilepsiateste.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843608182,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biopediatria.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843608665,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsreference.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9843612443,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-06T00:00:00",
+      "last_seen": "2024-07-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rareandready.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902591351,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsreference.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902597371,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "epicrd.org",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902603475,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "venn.expert",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902603665,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pkuliving.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902610652,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mpsmeetings.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902617246,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "voxzogo.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902623142,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pkumeetings.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902629092,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "roctavian.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902636656,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "whatwouldyoususpect.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902642127,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vosoritideinjection.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978715332,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-24T00:00:00",
+      "last_seen": "2024-08-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pku.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978721254,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-24T00:00:00",
+      "last_seen": "2024-08-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "biomarin.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BioMarin Pharmaceutical Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9978757136,
+          "cert_org": "BioMarin Pharmaceutical Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BioMarin Pharmaceutical Inc."
+      ],
+      "first_seen": "2023-07-24T00:00:00",
+      "last_seen": "2024-08-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T15:34:53.422094Z",
+    "elapsed_seconds": 24.28,
+    "domains_found": 56,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [
+      "RDAP corroboration timed out"
+    ],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "include_non_resolving": false
+    }
+  }
+}

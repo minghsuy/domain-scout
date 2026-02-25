@@ -1,0 +1,1109 @@
+{
+  "entity": {
+    "company_name": "BORGWARNER INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "borgwarner.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8651394776,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8652383438,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8714039718,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8846999712,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8973887971,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990024982,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9126424199,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9126437047,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9402194459,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9594854911,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9594921289,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9665160210,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9769333802,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9993101507,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10139216945,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247123670,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247124339,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247187407,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10247262550,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10319367115,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10319384082,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10634961355,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10812148596,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12577670203,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922132812,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13931925462,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13948415229,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11352397591,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12136885995,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12136980496,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12158541469,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12491750765,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12577651313,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12656375773,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12743054532,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12743066044,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13054138458,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13281682595,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13281756184,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13353279959,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13353279965,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13430537673,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13454820292,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13893791059,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13901819732,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922121946,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922652403,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13922775421,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923089331,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923191692,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923372058,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923452615,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923494706,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923802037,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923889082,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13923957383,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924090805,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13924897486,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13925483669,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13965087065,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14115953689,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16860279240,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16863561082,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17452947163,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17468097257,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17854212818,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17855008151,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17984695267,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20060693911,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061165440,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061357764,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061360139,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061468676,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061513512,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061550341,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061556601,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20061939133,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20062247107,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20062496231,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18908373503,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18908518487,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19112039871,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19133717783,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20134431283,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20154593228,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20156831677,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20157041761,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20157174179,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20157504320,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20157608009,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20486958894,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20503575394,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20503638055,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20504051365,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24061083715,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with delcoremy.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BorgWarner Inc."
+      ],
+      "first_seen": "2023-02-14T00:00:00",
+      "last_seen": "2027-01-05T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "phinia.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076580241,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10055520928,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10174407720,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10177556490,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11402065163,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with delcoremy.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BorgWarner Inc."
+      ],
+      "first_seen": "2023-04-06T00:00:00",
+      "last_seen": "2024-08-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "delcoremy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8484897337,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12137041448,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BorgWarner Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2025-01-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "delcoremywarranty.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10040272499,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12512083053,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'BorgWarner Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17452319809,
+          "cert_org": "BorgWarner Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "BorgWarner Inc."
+      ],
+      "first_seen": "2023-08-01T00:00:00",
+      "last_seen": "2025-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T04:45:31.040720Z",
+    "elapsed_seconds": 18.04,
+    "domains_found": 4,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

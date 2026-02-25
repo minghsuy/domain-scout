@@ -1,0 +1,780 @@
+{
+  "entity": {
+    "company_name": "RAMBUS INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "plda.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9400161773,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12905379232,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12992378712,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17909014442,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with rambus.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Rambus Inc."
+      ],
+      "first_seen": "2023-05-16T00:00:00",
+      "last_seen": "2025-05-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rambus.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8611737919,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661566715,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661571337,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8852742055,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9108223922,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9636357902,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9656715883,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9812096267,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9959969977,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10102117042,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10513564131,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10668808651,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10722235259,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11032927559,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11234632874,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11234632750,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11234639703,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15167597313,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12029460958,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12228089782,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12281603697,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12281622430,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12301992735,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12669801052,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13217967072,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13678452576,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13682070115,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14509310187,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14777170361,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14953839299,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 14961634144,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15167599358,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15167615516,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15173926259,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15452624088,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15503688950,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16870400461,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16879495373,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16909957029,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17949812651,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20414319777,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20485478475,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 20840552737,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16481917217,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16557516291,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16689872949,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16768204023,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16780969004,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19544616882,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 19869661682,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21076368616,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21127008644,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21874600593,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 21875875713,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22055947659,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22193908974,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22194830098,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22383880143,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22507490402,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22508471284,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22509088545,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22707467294,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 22775193643,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24173094305,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24173160033,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24173357135,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24220871124,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24481894693,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Rambus Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 24482080449,
+          "cert_org": "Rambus Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Rambus Inc."
+      ],
+      "first_seen": "2023-02-09T00:00:00",
+      "last_seen": "2027-03-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-25T01:58:56.920089Z",
+    "elapsed_seconds": 45.81,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

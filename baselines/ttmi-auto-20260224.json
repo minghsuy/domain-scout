@@ -1,0 +1,991 @@
+{
+  "entity": {
+    "company_name": "TTM TECHNOLOGIES INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "ttm.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552840790,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8558169517,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188672959,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290098909,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9406810767,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9421412534,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9431516060,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9459297615,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9459373422,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9459424580,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702734390,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9702751021,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9781887658,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9789505727,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9850019380,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9873692626,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9879887962,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9879922369,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9894130552,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9946791598,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9946796765,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10117581306,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372321283,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372348282,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372359976,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10439782579,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10440248912,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10440282618,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10482014466,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10736590040,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10742173278,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10742215594,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10843018132,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10843026751,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10945966208,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11272985905,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11275615023,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11856507211,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11856640317,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12769494017,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with ttmtech.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TTM Technologies, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2024-12-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ttmtech.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488379741,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8552255849,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8559580900,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8566116434,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8606749929,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8646061040,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760025532,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9086076281,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9173851043,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174270711,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9349513928,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429815882,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9429913499,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643980926,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9660414629,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9694184227,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9762362153,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9879561185,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9888484413,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9977306069,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10040167205,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10044543224,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10111233836,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10111390593,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10159080057,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10199843922,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10214116361,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10221378361,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10372334869,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10433359594,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10449282109,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10532226091,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10546140086,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572646224,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572673600,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572682595,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572707296,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10572716413,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10573123887,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10573559467,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10573626933,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10574714021,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10574730653,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10587138570,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10587200338,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10739021936,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10739050458,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834565041,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10834575906,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11920678425,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11921120763,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11921506509,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12020465206,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12020714385,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12398488165,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12438537402,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'TTM Technologies, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12458874715,
+          "cert_org": "TTM Technologies, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "TTM Technologies, Inc."
+      ],
+      "first_seen": "2023-01-24T00:00:00",
+      "last_seen": "2024-12-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T01:59:15.009026Z",
+    "elapsed_seconds": 8.12,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

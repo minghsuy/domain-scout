@@ -1,0 +1,1238 @@
+{
+  "entity": {
+    "company_name": "DARLING INGREDIENTS INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "cert-manager.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753604602,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8753604903,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9577698094,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9577698234,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2024-06-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ecoson.be",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904154614,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8904154744,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-16T00:00:00",
+      "last_seen": "2024-03-15T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "darlingii.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940060313,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8940060421,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9528780947,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9528781059,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9708897007,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9708897287,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709354707,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709354746,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709442408,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9709442407,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9713080232,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9713083980,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9716767613,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9716768109,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-20T00:00:00",
+      "last_seen": "2024-07-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rendac.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974689053,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974689500,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974695718,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974695917,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9224376308,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9224376730,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-24T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "darpro-solutions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988425649,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988430315,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988475495,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988476215,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988507206,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8988508146,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990892268,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8990898679,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9147824893,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9147825984,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223220798,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223221956,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223226217,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9223226609,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-28T00:00:00",
+      "last_seen": "2024-04-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hepac.biz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rothsay.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Darling Ingredients' Canada' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Darling Ingredients' Canada"
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": "Darling Ingredients' Canada",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sonac.biz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rousselot.biz",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rousselot.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "griffinind.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "darpro.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973378,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9015973514,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-03-31T00:00:00",
+      "last_seen": "2024-04-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "peptan.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9110011035,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9110011037,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9113607795,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9113608467,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-04-10T00:00:00",
+      "last_seen": "2024-05-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "darlingiidev.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9344094831,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9344095015,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-05-09T00:00:00",
+      "last_seen": "2024-06-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "valleyproteins.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454442657,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454442724,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454812710,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454820871,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454839285,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454845857,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454875608,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454875960,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454920564,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9454920572,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765903895,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765904018,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765910424,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765910403,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765910496,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765910528,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765917269,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765917733,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765922362,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765922363,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765922304,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765922435,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9765922504,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-05-22T00:00:00",
+      "last_seen": "2024-07-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mfsparts.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9590584686,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9590584992,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9590588560,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9590588608,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9756618219,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9756618371,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-06-07T00:00:00",
+      "last_seen": "2024-07-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "faros.ind.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643354148,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Darling Ingredients Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9643354072,
+          "cert_org": "Darling Ingredients Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Darling Ingredients Inc."
+      ],
+      "first_seen": "2023-06-13T00:00:00",
+      "last_seen": "2024-06-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T21:39:27.902053Z",
+    "elapsed_seconds": 40.32,
+    "domains_found": 17,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

@@ -1,0 +1,968 @@
+{
+  "entity": {
+    "company_name": "Broadridge Financial Solutions",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "broadridge.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730098317,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730105282,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730137394,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730160903,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730879078,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8735343811,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8735343830,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8735343954,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8737250001,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8745761507,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759684062,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759684627,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759691353,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760203985,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761560350,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8766984257,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767022531,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767188741,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767376819,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8767409638,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8768329617,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770736935,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8776255744,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777486450,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777517806,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777595448,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777648124,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777690638,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777743612,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777762593,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8779703674,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780447323,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780463194,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780464760,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780474323,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780547760,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780559752,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780567172,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780583981,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780626715,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780626577,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780644140,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8784159638,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785037328,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785052778,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785102758,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785138194,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785147923,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785262254,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8785276089,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8786209100,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8786446464,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787164047,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8787701912,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791846147,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791846247,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791846696,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791850820,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791850705,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791869008,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791908423,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8791909028,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792029255,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792056148,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792068903,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792109300,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with digitalpresentment.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-02-24T13:48:45",
+      "last_seen": "2024-03-02T10:37:26",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "digital-delivery.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731470401,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599664,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599564,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599541,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599585,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599608,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8777599702,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with digitalpresentment.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-02-24T17:24:03",
+      "last_seen": "2024-02-29T14:12:33",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mypartnersite.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8764359849,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with digitalpresentment.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2024-02-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ltxtrading.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8778836489,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with digitalpresentment.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-03-01T18:05:33",
+      "last_seen": "2024-02-29T18:05:33",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "icsdelivery.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8792005266,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with digitalpresentment.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-03-03T10:21:07",
+      "last_seen": "2024-03-02T10:21:07",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mydigitaliim.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8759660781,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-02-27T16:00:26",
+      "last_seen": "2024-02-27T16:00:26",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tinybfs.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760902238,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760902208,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Broadridge Financial Solutions, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8760983170,
+          "cert_org": "Broadridge Financial Solutions, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Broadridge Financial Solutions, Inc."
+      ],
+      "first_seen": "2023-02-27T19:12:13",
+      "last_seen": "2024-02-27T19:24:10",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:46:09.740576Z",
+    "elapsed_seconds": 24.68,
+    "domains_found": 7,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 120,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

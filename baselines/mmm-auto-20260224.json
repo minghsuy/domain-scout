@@ -1,0 +1,605 @@
+{
+  "entity": {
+    "company_name": "3M",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "3mhis.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721579097,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721580491,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724647760,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724647908,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mmm.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "3m.com.cn",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724564989,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724565106,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mmm.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "3mskins.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731306411,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731306551,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731306731,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731307069,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731307171,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8731307564,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mmm.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-02-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mmm.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721579061,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8721579207,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722694147,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8722700121,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724564989,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724565106,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730489566,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730491670,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730591573,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8730593527,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751047709,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751053438,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751081778,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751087027,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751120665,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751128011,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751165826,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751166300,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751200498,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751201076,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751260103,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751260755,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751328414,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751328988,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751334933,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751335478,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751401682,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751401638,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8751401720,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-26T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mmodal.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724052203,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724052974,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kci1.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724647783,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org '3M Company' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8724647812,
+          "cert_org": "3M Company",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "3M Company"
+      ],
+      "first_seen": "2023-02-23T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:15:37.688380Z",
+    "elapsed_seconds": 8.3,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

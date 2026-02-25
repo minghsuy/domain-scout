@@ -1,0 +1,925 @@
+{
+  "entity": {
+    "company_name": "DOMO, INC.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "domo.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8592520008,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8592525723,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983217009,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983220974,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983236040,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983242384,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983251823,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8983262946,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984628948,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9341905868,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9474035362,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9581561000,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9895258822,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062860815,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062883191,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10062919664,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10109655997,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10258175331,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312294073,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312305617,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312311448,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312317319,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10312329851,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10635938237,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10640506147,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10804579343,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10905718757,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11018042024,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11018106403,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11028963837,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049658735,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049676883,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049687431,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049688383,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13916643877,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928804508,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928920702,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13928928173,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929055021,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929117056,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929131348,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929137990,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929192446,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929204052,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929211842,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929301600,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929333816,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929360159,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944623196,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944683006,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13944920526,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13969589339,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15215178828,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11347169118,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11347190671,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11680802264,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11680824866,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11681791662,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11690960871,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11723642190,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11909681933,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12056499838,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12056507011,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12056521483,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12056521484,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12611614689,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12611671847,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614891522,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614902316,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614902318,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614902421,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614902380,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12614914501,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12981870479,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13069355480,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13164975020,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13354045784,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13660151457,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13911035448,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915535468,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13915887392,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13916063997,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13916076043,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13916099824,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with domosoftware.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Domo, Inc."
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2025-08-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "domo.buzz",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11049911432,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12392933862,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13929337991,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Domo, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15317402543,
+          "cert_org": "Domo, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with domosoftware.net",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Domo, Inc."
+      ],
+      "first_seen": "2023-11-09T00:00:00",
+      "last_seen": "2024-12-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T19:11:58.205396Z",
+    "elapsed_seconds": 14.91,
+    "domains_found": 2,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}

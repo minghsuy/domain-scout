@@ -1,0 +1,1185 @@
+{
+  "entity": {
+    "company_name": "CROSS COUNTRY HEALTHCARE INC",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "cru48.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8772387839,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8772388017,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11917738584,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11917738368,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16484018553,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16484017314,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2026-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "cejkasearch.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012954189,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012954473,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295862549,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295867236,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11411308793,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11411309057,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12906532792,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12906532940,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984547,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984700,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15975173664,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15975173536,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2026-01-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mdainc.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295862549,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295867236,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9667863915,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9667864306,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984547,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984700,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273563921,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273563845,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-05-03T00:00:00",
+      "last_seen": "2025-07-04T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "medstaffinc.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295862549,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295867236,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984547,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984700,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-05-03T00:00:00",
+      "last_seen": "2025-05-21T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crosscountrysearch.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586142273,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9586142521,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273567254,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13273567485,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-06-06T00:00:00",
+      "last_seen": "2025-06-27T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mediscan.net",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984738526,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984739120,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-07-25T00:00:00",
+      "last_seen": "2024-07-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crosscountrylocums.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053247389,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053252301,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with mylearningcommunity.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-08-03T00:00:00",
+      "last_seen": "2024-08-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mylearningcommunity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551504990,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8551506496,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11917738399,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11917738881,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16484017612,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16484017611,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-02-01T00:00:00",
+      "last_seen": "2026-03-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crosscountry.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770291130,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8770292858,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8939340960,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8939341555,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012953492,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012954095,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295862549,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9295867236,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11702383952,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11702383790,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12240375172,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12240375171,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12240375179,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12240374975,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984547,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13012984700,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15975382677,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 15975382766,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16938949075,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16938948475,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16959835407,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16959835891,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16959989002,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 16959989181,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17275269284,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17275269518,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 18234862103,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-02-28T00:00:00",
+      "last_seen": "2026-05-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ccrn.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012953726,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012954364,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076815770,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9076815687,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984744785,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9984744829,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053063293,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10053063286,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12567641491,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12567641352,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12567815727,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12567815602,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13895381799,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13895444086,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13948545319,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13948545616,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558449350,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 17558449413,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2026-04-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crosscountryallied.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10248965315,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10248965618,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-08-29T00:00:00",
+      "last_seen": "2024-09-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "crosscountry.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10957410560,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Cross Country Healthcare, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10957410550,
+          "cert_org": "Cross Country Healthcare, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Cross Country Healthcare, Inc."
+      ],
+      "first_seen": "2023-10-31T00:00:00",
+      "last_seen": "2024-11-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T01:51:42.426319Z",
+    "elapsed_seconds": 45.68,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

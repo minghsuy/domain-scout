@@ -1,0 +1,1053 @@
+{
+  "entity": {
+    "company_name": "DaVita",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "villagehealthmobilestage.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8556824429,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-02-02T07:44:03",
+      "last_seen": "2024-03-02T07:44:03",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "capellawebqa.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8556904943,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-02-02T07:58:27",
+      "last_seen": "2024-03-02T07:58:26",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "davitaphysiciansolutions.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8720335360,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-02-23T09:46:53",
+      "last_seen": "2024-03-23T09:46:53",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "davitadev.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9415574899,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita Inc"
+      ],
+      "first_seen": "2023-05-17T20:41:04",
+      "last_seen": "2024-05-17T20:41:04",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "villagehealth.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9881940426,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-07-11T22:41:33",
+      "last_seen": "2024-08-11T22:41:32",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "davitaventuregroup.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9881940426,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9954794718,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with davita.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-07-11T22:41:33",
+      "last_seen": "2024-08-11T22:41:32",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "davita.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8479667953,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8488829269,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8512332127,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8526958314,
+          "cert_org": "DaVita Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527042738,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527187294,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527294729,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527462349,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527896321,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8557421794,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8563280484,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8612534078,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8720116441,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8720232348,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8762026614,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8772095783,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8963289863,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8971009354,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9050162904,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051399377,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9158510702,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9181962985,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9183664484,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188958050,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9188969716,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9191874099,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9191892321,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9191915181,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9290093948,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9299031261,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9299226707,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9308043146,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9308114895,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309444725,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9309456917,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9319595088,
+          "cert_org": "DaVita Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9324442881,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9332226305,
+          "cert_org": "DaVita Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9348666562,
+          "cert_org": "DaVita Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9466772680,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9466783128,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536505589,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9536619527,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9551702755,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9551731350,
+          "cert_org": "DaVita Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9580788215,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9595707485,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9612973804,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9638395139,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9680086929,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9680188540,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9680205122,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9726437813,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9726638412,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9762931415,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9789653890,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9794389621,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9872744788,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9876007265,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9881940426,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9954794718,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita",
+        "DaVita Inc",
+        "DaVita Inc."
+      ],
+      "first_seen": "2023-01-23T17:51:38",
+      "last_seen": "2024-08-11T22:41:32",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "nephrologycarealliance.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8527583775,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8557227172,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-01-29T14:50:29",
+      "last_seen": "2024-03-01T08:57:19",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chronickidneyfailure.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9012126118,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-03-30T15:14:28",
+      "last_seen": "2024-03-30T15:14:28",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "davitaadvocacy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9182402086,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-04-18T15:37:06",
+      "last_seen": "2024-04-28T15:37:06",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vhcapella.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317641790,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9317698228,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9361741278,
+          "cert_org": "DaVita Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9547676082,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita",
+        "DaVita Inc"
+      ],
+      "first_seen": "2023-05-05T19:20:03",
+      "last_seen": "2024-06-03T02:57:31",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vivelyhealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9881940426,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'DaVita' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9954794718,
+          "cert_org": "DaVita",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "DaVita"
+      ],
+      "first_seen": "2023-07-11T22:41:33",
+      "last_seen": "2024-08-11T22:41:32",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:11:27.613626Z",
+    "elapsed_seconds": 10.28,
+    "domains_found": 12,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

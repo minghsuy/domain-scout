@@ -1,0 +1,608 @@
+{
+  "entity": {
+    "company_name": "Analog Devices",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "analog.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8669133109,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8838704413,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8884909958,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8884923281,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8884931738,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8892610223,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8893098512,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8966962703,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8966967876,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8966968086,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8966968194,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8971400439,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9001238701,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9001452351,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011159696,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011177791,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011196702,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011206882,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011225694,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9011235813,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9067365446,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9076683583,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9077257437,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9087634808,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 9109749318,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9109796140,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9111854379,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9127537665,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9137063555,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9137077737,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9137089746,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9140102338,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9140117978,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9140133375,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174009850,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174023135,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with otosense.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices International UC",
+        "Analog Devices, Inc."
+      ],
+      "first_seen": "2023-02-16T00:00:00",
+      "last_seen": "2024-05-03T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "linear-tech.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174009850,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174023135,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with otosense.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "simplaylabs.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174009850,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with otosense.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "linear.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174009850,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174023135,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with otosense.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hittite.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices, Inc.' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9174009850,
+          "cert_org": "Analog Devices, Inc.",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices, Inc."
+      ],
+      "first_seen": "2023-04-17T00:00:00",
+      "last_seen": "2024-04-19T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "otosense.com",
+      "confidence": 0.85,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Analog Devices International UC' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": 8589663650,
+          "cert_org": "Analog Devices International UC",
+          "similarity_score": 0.9,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Analog Devices International UC"
+      ],
+      "first_seen": "2023-02-06T00:00:00",
+      "last_seen": "2024-03-07T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:28:58.071749Z",
+    "elapsed_seconds": 12.7,
+    "domains_found": 6,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

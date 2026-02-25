@@ -1,0 +1,3052 @@
+{
+  "entity": {
+    "company_name": "Boston Scientific",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "bsci.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8645496607,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8661039815,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698978364,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8698996720,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761796896,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857899842,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8858502959,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8907521612,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8913153370,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967954238,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993195861,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8993608838,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013718221,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9013827020,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9018711481,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-13T00:00:00",
+      "last_seen": "2024-04-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tiefehirnstimulation-info.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8967325145,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-04-22T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "preventicesolutions.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "vertiflex.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "djuphjarnstimulering.se",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "livingwithlss.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "controlatudolor.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "troublesdumouvement.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "rdap_registrant_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8707354905,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "rdap_registrant_match",
+          "description": "RDAP registrant 'Boston Scientific International S.A.' matches target (score=0.90)",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": 0.9,
+          "rdap_org": "Boston Scientific International S.A."
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-02-21T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": "Boston Scientific International S.A.",
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "expertconnectbsc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8794032027,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-03T00:00:00",
+      "last_seen": "2024-03-29T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8857291444,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-10T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bsci-stage.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8873999338,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-13T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "leapplushealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8894268567,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8965905864,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-15T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "labbsci.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949732286,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-21T00:00:00",
+      "last_seen": "2024-03-09T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "beyondcarelatam.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8974868172,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-03-24T00:00:00",
+      "last_seen": "2024-03-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "clearingtheclot.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "myprostateinfo.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientificargentina.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.co.kr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lcbeadsupport.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hardfacts.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "spaceoar.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hulp-bij-erectiele-disfunctie.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.nl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "treatmybph.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sicdsystem.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "endosuite.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "solutions-derection.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "amsmenshealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "your-heart-health.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanmedicalsystems.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "chooseyou.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "lifebeatonline.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hilfe-bei-erektiler-dysfunktion.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "soluzione-impotenza.it",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.at",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "freedomfromfibroids.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "rezum.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "meineprostata.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonpeg.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bphsolutions.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bph-solutions.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com.mx",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "goliathstudy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "galilmedical.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "my-prostate-info.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.co.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "menshealthtreatments.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "clearingtheclot.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com.co",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "watchman.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "covid19heartstudy.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "btforasthma.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.cl",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mykidneystone.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "menshealthtreatments-mea.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "brain-stimulation.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "uroph-techservices.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edsolutions.co.uk",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "solucion-de.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "treatmybph.com.au",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.fr",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanmedicalsystems.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edtreatments.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "thepainfultruth.eu",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "watchman.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "ekossupport.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.ca",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com.br",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "mi-prostata.es",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "hardfacts.com.cn",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "s-icd.de",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "varithena.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pain.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientific.com.pe",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "knowyourhealth.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "thrombusuniversity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "americanmedicalsystems.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "watchmandevice.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "devicelongevity.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "aus-info.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "theraspherenow.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "menshealthtreatments.co.in",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bph-chiryo.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "bostonscientificpt.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Boston Scientific Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9051269595,
+          "cert_org": "Boston Scientific Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Boston Scientific Corporation"
+      ],
+      "first_seen": "2023-04-03T00:00:00",
+      "last_seen": "2024-04-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T15:45:04.606893Z",
+    "elapsed_seconds": 13.79,
+    "domains_found": 95,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

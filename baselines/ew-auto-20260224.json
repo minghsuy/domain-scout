@@ -1,0 +1,1208 @@
+{
+  "entity": {
+    "company_name": "Edwards Lifesciences",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "edwards.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "dns_guess",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8780688230,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 8983693528,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 8984211620,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9066040098,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9071922205,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9123207745,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9135350739,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9191236237,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9234578088,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9298065750,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9335877164,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9422283256,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9468823843,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9468871956,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9468931852,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9552854184,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9552854272,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9581485598,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9583525211,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9583549305,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9606568921,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9810050977,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9841763562,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9842094164,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9955275916,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10020699897,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10035090612,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10036650523,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10054178943,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10083459321,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10273480188,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10302769491,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10441007513,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10441856911,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10532590288,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10540209300,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11051881230,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11141830692,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11251676043,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11252515685,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11337193398,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11338237146,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 12092078417,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 12991936925,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 13445912273,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 13834711769,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 15249958421,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11920864817,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11930491944,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 11931172569,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc.",
+        "Edwards Lifesciences Corporation"
+      ],
+      "first_seen": "2023-03-01T00:00:00",
+      "last_seen": "2025-01-30T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "reachfortheheart.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 8906704540,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-03-17T00:00:00",
+      "last_seen": "2024-03-20T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "heartvalves.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9149315768,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9149516130,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9149888228,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10199093578,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-04-14T00:00:00",
+      "last_seen": "2024-05-10T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "yourhigherstandard.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9149402368,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9149502880,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10621503145,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 12832862953,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-04-14T00:00:00",
+      "last_seen": "2024-05-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "pulmonaryvalvereplacement.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9299031122,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9299081228,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9424221766,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9424256971,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10166176357,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 21726403957,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-05-03T00:00:00",
+      "last_seen": "2024-05-02T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edwardsbenchmark.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9424362821,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9424440267,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10198218900,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-05-18T00:00:00",
+      "last_seen": "2024-06-14T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tavrtalk.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9553626502,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10958280799,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-06-02T00:00:00",
+      "last_seen": "2024-06-01T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "heartandvalves.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9696241960,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 13943052247,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-06-19T00:00:00",
+      "last_seen": "2024-06-18T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "offthesidelines.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 9955471386,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with justgettingstarted.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-07-21T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "justgettingstarted.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8725093227,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8725103892,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10622952365,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences Corporation"
+      ],
+      "first_seen": "2023-02-24T00:00:00",
+      "last_seen": "2024-02-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edwardsviewfinder.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9393635000,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9902819724,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9925266171,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9940408362,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10476776964,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10876243576,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11197790526,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 14677466770,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences Corporation' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11910705677,
+          "cert_org": "Edwards Lifesciences Corporation",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc.",
+        "Edwards Lifesciences Corporation"
+      ],
+      "first_seen": "2023-05-15T00:00:00",
+      "last_seen": "2025-01-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edwardsmrtr.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10083503854,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-08-07T00:00:00",
+      "last_seen": "2024-08-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "edwards-mrtr.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 10083503854,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2023-08-07T00:00:00",
+      "last_seen": "2024-08-06T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "benmakusho.jp",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Edwards Lifesciences (U.S.) Inc.' matches target (score=0.91)",
+          "seed_domain": null,
+          "cert_id": 12832862953,
+          "cert_org": "Edwards Lifesciences (U.S.) Inc.",
+          "similarity_score": 0.9091,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Edwards Lifesciences (U.S.) Inc."
+      ],
+      "first_seen": "2024-04-24T00:00:00",
+      "last_seen": "2024-05-17T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-23T16:24:49.057174Z",
+    "elapsed_seconds": 20.32,
+    "domains_found": 14,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "include_non_resolving": false
+    }
+  }
+}

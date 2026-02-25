@@ -1,0 +1,1025 @@
+{
+  "entity": {
+    "company_name": "Toll Brothers, Inc.",
+    "location": null,
+    "seed_domain": [],
+    "industry": null
+  },
+  "domains": [
+    {
+      "domain": "rialtotexas.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9642431862,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with tollbrothersinc.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-06-13T00:00:00",
+      "last_seen": "2024-06-25T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "westminstertitle.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9901162638,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with tollbrothersinc.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-07-14T00:00:00",
+      "last_seen": "2024-07-23T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tollbrotherssmarthome.com",
+      "confidence": 0.95,
+      "sources": [
+        "ct_org_match",
+        "shared_infra"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11799583807,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "shared_infra",
+          "description": "Shares infrastructure with tollbrothersinc.com",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2024-01-19T00:00:00",
+      "last_seen": "2025-01-28T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tollbrothersinc.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8761843241,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8837000820,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8848389259,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8881769619,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8882083224,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8901899884,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8905015381,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8905126730,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8905711365,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8905720170,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8942369547,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949130170,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949786199,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949791279,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8949993902,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950033044,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950109217,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950203088,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950289044,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950337129,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950382287,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8950504174,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8959298599,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 8984770716,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002206064,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9002329821,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9003098093,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9060712451,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9068170487,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9422156731,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10151311888,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10151532339,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10198954228,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10256498866,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10257021343,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10257165997,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10257201445,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10257782627,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10258230277,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10258393589,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10414562374,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10520004151,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10681278638,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10703540202,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10709538768,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11608819162,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11998936086,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12450715305,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13067216233,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11639150017,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11680899296,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12272565035,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12283134746,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12382870562,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12436507844,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12437362054,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12437975504,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12438049732,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448423732,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448456237,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448509078,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448563701,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12448602919,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-02-27T00:00:00",
+      "last_seen": "2025-04-08T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tollbrothers.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match",
+        "dns_guess"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9014312351,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9901162638,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9985080134,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10835181905,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10851095316,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11110521087,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11110579476,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11370243811,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11424267766,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12437019622,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12981406607,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 13896809471,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "dns_guess",
+          "description": "Guessed from company name, resolves in DNS",
+          "seed_domain": null,
+          "cert_id": null,
+          "cert_org": null,
+          "similarity_score": null,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-03-30T00:00:00",
+      "last_seen": "2024-12-11T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "kellerhomes.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 9932489691,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-07-18T00:00:00",
+      "last_seen": "2024-08-13T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "sabalhomes.net",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 10448863667,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-09-22T00:00:00",
+      "last_seen": "2024-09-24T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    },
+    {
+      "domain": "tolltest.com",
+      "confidence": 0.9,
+      "sources": [
+        "ct_org_match"
+      ],
+      "evidence": [
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11164322020,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11166139370,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11272086043,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11272211644,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 11314197902,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        },
+        {
+          "source_type": "ct_org_match",
+          "description": "Cert org 'Toll Brothers, Inc' matches target (score=1.00)",
+          "seed_domain": null,
+          "cert_id": 12805020988,
+          "cert_org": "Toll Brothers, Inc",
+          "similarity_score": 1.0,
+          "rdap_org": null
+        }
+      ],
+      "cert_org_names": [
+        "Toll Brothers, Inc"
+      ],
+      "first_seen": "2023-11-21T00:00:00",
+      "last_seen": "2024-12-12T23:59:59",
+      "resolves": true,
+      "rdap_org": null,
+      "is_seed": false,
+      "seed_sources": []
+    }
+  ],
+  "seed_domain_assessment": {},
+  "seed_cross_verification": {},
+  "run_metadata": {
+    "schema_version": "1.0",
+    "tool_version": "0.5.0",
+    "timestamp": "2026-02-24T20:51:19.916281Z",
+    "elapsed_seconds": 45.6,
+    "domains_found": 8,
+    "timed_out": false,
+    "seed_count": 0,
+    "errors": [],
+    "config": {
+      "postgres_timeout": 15,
+      "http_timeout": 15,
+      "dns_timeout": 5.0,
+      "total_timeout": 90,
+      "postgres_max_retries": 2,
+      "http_max_retries": 2,
+      "max_concurrent_queries": 5,
+      "burst_delay": 1.0,
+      "seed_confirm_threshold": 0.6,
+      "org_match_threshold": 0.65,
+      "inclusion_threshold": 0.6,
+      "ct_recent_years": 2,
+      "ct_max_results": 200,
+      "crtsh_postgres_host": "crt.sh",
+      "crtsh_postgres_port": 5432,
+      "crtsh_postgres_db": "certwatch",
+      "crtsh_postgres_user": "guest",
+      "crtsh_json_base_url": "https://crt.sh",
+      "guess_tlds": [
+        ".com",
+        ".net",
+        ".io",
+        ".co",
+        ".org"
+      ],
+      "infra_check_max": 10,
+      "rdap_corroborate_max": 10,
+      "dns_nameservers": [
+        "8.8.8.8",
+        "1.1.1.1"
+      ],
+      "deep_mode": false,
+      "geodns_base_url": "https://geonet.shodan.io/api/geodns",
+      "geodns_concurrency": 3,
+      "geodns_delay": 0.5,
+      "cb_failure_threshold": 3,
+      "cb_recovery_timeout": 30.0,
+      "warehouse_path": null,
+      "local_mode": "disabled",
+      "local_fuzzy_threshold": 65.0,
+      "local_max_fuzzy_matches": 10,
+      "resolution_path": null,
+      "include_non_resolving": false
+    }
+  }
+}
