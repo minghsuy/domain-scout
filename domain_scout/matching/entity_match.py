@@ -37,7 +37,7 @@ _ABBREVIATIONS: dict[str, str] = {
 
 # Legal suffixes to strip before comparison (unambiguous — safe at any position)
 _LEGAL_SUFFIXES = [
-    r"\bInc\.?",
+    r"\bInc\b\.?",
     r"\bIncorporated\b",
     r"\bCorp\.?\b",
     r"\bCorporation\b",
