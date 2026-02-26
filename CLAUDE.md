@@ -61,6 +61,7 @@ domain_scout/
     ├── test_rdap.py         # RDAP lookup parsing tests
     ├── test_config.py       # ScoutConfig validation and profiles
     ├── test_eval.py         # Evaluation harness unit tests
+    ├── test_subsidiary.py   # Subsidiary-aware CT search (EDGAR Exhibit 21)
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -91,6 +92,6 @@ domain_scout/
 
 ## Testing
 
-- **379 unit tests** + 4 integration tests (deselected by default)
+- **407 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

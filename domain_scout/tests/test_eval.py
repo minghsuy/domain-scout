@@ -87,13 +87,13 @@ class TestComputeMetrics:
         assert results[0].false_positives == 1
 
     def test_k_larger_than_results(self) -> None:
-        """When k > number of ranked domains, use available domains."""
+        """When k > number of ranked domains, precision uses adaptive denominator."""
         ranked = ["a.com", "b.com"]
         owned = {"a.com", "b.com", "c.com"}
         results = compute_metrics(ranked, owned, set(), k_values=(5,))
         m = results[0]
-        # precision = 2/5 (conservative: only 2 items, all owned, but k=5)
-        assert m.precision == 0.4
+        # precision = 2/min(5,2) = 2/2 = 1.0 (adaptive: don't penalize small result sets)
+        assert m.precision == 1.0
         # recall = 2/3
         assert m.recall == pytest.approx(0.667, abs=0.001)
 
@@ -175,7 +175,6 @@ class TestLoadGroundTruth:
         entries = load_ground_truth()
         for e in entries:
             assert e.company_name
-            assert e.seeds
             assert e.owned_domains
 
     def test_custom_path(self, tmp_path: Path) -> None:

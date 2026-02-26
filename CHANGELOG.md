@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **Subsidiary-aware CT search** — discovers domains for EDGAR Exhibit 21 subsidiaries, ranked by brand distinctness scoring
+- Expanded eval ground truth from 22 to 399 entities
+- Adaptive k denominator in eval precision (precision@k uses min(k, owned_domains) as denominator)
+
+### Changed
+- Eval table shows "Found X/Y" instead of raw recall decimal for readability
+
+### Fixed
+- `normalize_org_name` was stripping "Inc" from inside words (e.g., "Incyte" → "yte")
+- Subsidiary filter hardened against real EDGAR data edge cases
+- Precedence bug in subsidiary ranking, defensive copy for input mutation, test gaps
+
 ## [0.5.0] - 2026-02-20
 
 ### Added
