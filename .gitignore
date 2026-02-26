@@ -12,6 +12,6 @@ build/
 SPEC.md
 *-threat-model.md
 *_report.md
-# baselines/ — tracked for eval harness reproducibility
+baselines/
 .hypothesis/
 jules-workflow-guide.md
