@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import csv
 import re
 import time
 from datetime import UTC, datetime
@@ -48,9 +49,8 @@ def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
     """Load parent→subsidiary mappings from an EDGAR Exhibit 21 CSV.
 
     Returns a dict keyed by normalized parent_name → list of filtered subsidiary
-    names (distinct brands only, capped by length for relevance).
+    names (distinct brands only, ranked by brand distinctness).
     """
-    import csv
 
     raw: dict[str, list[str]] = {}
     with open(csv_path, newline="") as f:
@@ -73,9 +73,7 @@ def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
 _SHELL_WORDS = frozenset(
     {
         "llc",
-        "l.l.c.",
         "lp",
-        "l.p.",
         "holdings",
         "holding",
         "investments",
@@ -144,7 +142,7 @@ _GENERIC_WORDS = _SHELL_WORDS | frozenset(
 
 # Suffixes to strip when detecting all-caps acronym cores.
 _SUFFIX_RE = re.compile(
-    r"\b(LLC|Inc|Incorporated|Ltd|Limited|Corp|Corporation|Company|LP|SAS|"
+    r"\b(LLC|Inc|Incorporated|Ltd|Limited|Corp|Corporation|Company|LP|"
     r"GmbH|SA|SE|NV|plc|L\.P\.|L\.L\.C\.)\b",
     re.IGNORECASE,
 )
@@ -170,7 +168,7 @@ def _brand_sort_key(name: str) -> tuple[int, int]:
 
     # Detect all-caps acronym core (e.g. "FTNV LLC" → core "FTNV")
     core = _SUFFIX_RE.sub("", name)
-    core = re.sub(r"[^a-zA-Z]", "", core).strip()
+    core = re.sub(r"[^a-zA-Z]", "", core)
     is_acronym = bool(core) and core == core.upper() and len(core) <= 8
 
     if has_numbers or is_acronym:

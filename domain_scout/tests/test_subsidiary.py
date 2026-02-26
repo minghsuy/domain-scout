@@ -265,7 +265,7 @@ class TestSubsidiaryExpansion:
             _subsidiaries={"walmart": ["Jet.com Inc.", "Bonobos Inc."]},
             _ct=ct_mock,
             _rdap=AsyncMock(),
-            _dns=AsyncMock(resolve=AsyncMock(return_value=False)),
+            _dns=AsyncMock(bulk_resolve=AsyncMock(return_value={})),
         )
 
         entity = EntityInput(company_name="Walmart Inc.", seed_domain=[])
@@ -297,7 +297,7 @@ class TestSubsidiaryExpansion:
             _subsidiaries={"test": subs},
             _ct=ct_mock,
             _rdap=AsyncMock(),
-            _dns=AsyncMock(resolve=AsyncMock(return_value=False)),
+            _dns=AsyncMock(bulk_resolve=AsyncMock(return_value={})),
         )
 
         entity = EntityInput(company_name="Test Corp", seed_domain=[])
