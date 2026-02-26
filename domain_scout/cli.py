@@ -61,6 +61,10 @@ def scout(
     warehouse_path: Annotated[
         str | None, typer.Option("--warehouse-path", help="Path to parquet warehouse directory")
     ] = None,
+    subsidiaries_path: Annotated[
+        str | None,
+        typer.Option("--subsidiaries-path", help="Path to EDGAR subsidiaries CSV"),
+    ] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
@@ -85,6 +89,8 @@ def scout(
             "DOMAIN_SCOUT_WAREHOUSE_PATH",
             str(Path.home() / ".local" / "share" / "ct-warehouse"),
         )
+    if subsidiaries_path:
+        overrides["subsidiaries_path"] = subsidiaries_path
 
     config = (
         ScoutConfig.from_profile(profile, **overrides)  # type: ignore[arg-type]

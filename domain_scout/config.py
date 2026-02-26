@@ -89,6 +89,10 @@ class ScoutConfig:
     local_fuzzy_threshold: float = 65.0
     local_max_fuzzy_matches: int = 10
 
+    # --- Subsidiary expansion ---
+    subsidiaries_path: str | None = None
+    subsidiary_max_queries: int = 10
+
     # --- Output filtering ---
     include_non_resolving: bool = False
 

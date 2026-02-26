@@ -18,6 +18,12 @@ class TestNormalize:
     def test_strips_inc(self) -> None:
         assert normalize_org_name("Acme Inc.") == "acme"
 
+    def test_inc_not_stripped_from_words(self) -> None:
+        """Inc suffix must not be stripped from words like Income, Inclusive."""
+        assert normalize_org_name("Realty Income Corporation") == "realty income"
+        assert normalize_org_name("Inclusive Design") == "inclusive design"
+        assert normalize_org_name("Incannex Healthcare Inc.") == "incannex healthcare"
+
     def test_strips_llc(self) -> None:
         assert normalize_org_name("Acme Solutions LLC") == "acme solutions"
 
