@@ -43,7 +43,8 @@ domain_scout/
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback) + circuit breaker
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
-│   └── dns_utils.py    # DNS resolution checker
+│   ├── dns_utils.py    # DNS resolution checker
+│   └── local_parquet.py # LocalParquetSource + HybridCTSource for CT warehouse
 ├── matching/
 │   └── entity_match.py # Org-name similarity scoring (rapidfuzz, acronyms, brand aliases)
 └── tests/
@@ -62,6 +63,7 @@ domain_scout/
     ├── test_config.py       # ScoutConfig validation and profiles
     ├── test_eval.py         # Evaluation harness unit tests
     ├── test_subsidiary.py   # Subsidiary-aware CT search (EDGAR Exhibit 21)
+    ├── test_local_parquet.py # LocalParquetSource + HybridCTSource tests
     └── test_integration.py  # marked "integration", deselected by default
 ```
 
@@ -92,6 +94,6 @@ domain_scout/
 
 ## Testing
 
-- **429 unit tests** + 4 integration tests (deselected by default)
+- **433 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
