@@ -51,6 +51,9 @@ build-backend = "hatchling.build"
 packages = ["domain_scout"]
 exclude = ["domain_scout/tests"]
 
+[tool.hatch.build.targets.wheel.force-include]
+"domain_scout/scorer/logistic_v1.json" = "domain_scout/scorer/logistic_v1.json"
+
 [tool.ruff]
 target-version = "py312"
 line-length = 100

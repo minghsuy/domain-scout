@@ -498,7 +498,9 @@ class Scout:
         # Step 4: confidence scoring and infrastructure comparison
         confirmed_domains: list[str] = []
         for domain, accum in domain_evidence.items():
-            accum.confidence = self._score_confidence(accum, entity.company_name, seeds)
+            accum.confidence = self._score_confidence(
+                accum, entity.company_name, seeds, domain=domain,
+            )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
 
@@ -851,9 +853,27 @@ class Scout:
     # --- Step 3: Confidence scoring ---
 
     def _score_confidence(
-        self, accum: _DomainAccum, company_name: str, seed_domains: list[str]
+        self, accum: _DomainAccum, company_name: str, seed_domains: list[str],
+        domain: str = "",
     ) -> float:
-        # Phase 1: base score from source type (unchanged)
+        # Learned scorer path (opt-in via config)
+        if self.config.use_learned_scorer and domain and accum.cert_org_names:
+            from domain_scout.scorer import score_confidence as _learned_score
+
+            best_sim = max(
+                (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
+                default=0.0,
+            )
+            return _learned_score(
+                domain=domain,
+                company_name=company_name,
+                best_similarity=best_sim,
+                sources=accum.sources,
+                cert_org_names=accum.cert_org_names,
+            )
+
+        # Heuristic scorer (default)
+        # Phase 1: base score from source type
         score = 0.0
 
         if "cross_seed_verified" in accum.sources:

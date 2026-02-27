@@ -93,6 +93,9 @@ class ScoutConfig:
     subsidiaries_path: str | None = None
     subsidiary_max_queries: int = 10
 
+    # --- Scoring ---
+    use_learned_scorer: bool = False
+
     # --- Output filtering ---
     include_non_resolving: bool = False
 
