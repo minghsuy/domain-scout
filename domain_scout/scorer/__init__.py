@@ -121,6 +121,10 @@ def score_confidence(
     best_similarity: float,
     sources: set[str],
     cert_org_names: set[str],
+    *,
+    resolves: bool = False,
+    evidence_count: int = 0,
+    unique_cert_count: int = 0,
 ) -> float:
     """Score domain-entity attribution using the learned logistic model.
 
@@ -134,6 +138,12 @@ def score_confidence(
     means = scaler["mean"]
     scales = scaler["scale"]
 
+    evidence_density = (
+        float(evidence_count) / float(unique_cert_count)
+        if unique_cert_count > 0
+        else 0.0
+    )
+
     raw: dict[str, float] = {
         "best_similarity": best_similarity,
         "source_count": float(len(sources)),
@@ -143,6 +153,9 @@ def score_confidence(
         "tld_is_country": float(_tld_is_country(domain)),
         "entity_name_in_org": float(_entity_name_in_org(company_name, cert_org_names)),
         "org_matches_different_entity": 0.0,  # requires S&P 500 data, not available at inference
+        "evidence_density": evidence_density,
+        "resolves": float(resolves),
+        "domain_length": float(len(domain.split(".")[0])),
     }
 
     z = intercept

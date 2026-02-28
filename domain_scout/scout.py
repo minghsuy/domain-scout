@@ -864,12 +864,21 @@ class Scout:
                 (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
                 default=0.0,
             )
+            # Count unique cert IDs for evidence_density
+            cert_ids: set[int] = set()
+            for ev in accum.evidence:
+                if ev.cert_id is not None:
+                    cert_ids.add(ev.cert_id)
+
             return _learned_score(
                 domain=domain,
                 company_name=company_name,
                 best_similarity=best_sim,
                 sources=accum.sources,
                 cert_org_names=accum.cert_org_names,
+                resolves=accum.resolves,
+                evidence_count=len(accum.evidence),
+                unique_cert_count=len(cert_ids),
             )
 
         # Heuristic scorer (default)
