@@ -81,12 +81,14 @@ class LocalParquetSource:
     ) -> list[dict[str, object]]:
         """Search warehouse by org name using fuzzy matching."""
         from rapidfuzz import process as rfprocess
+        from rapidfuzz.utils import default_process
 
         matches = rfprocess.extract(
             org_name,
             self._org_index,
             limit=self._cfg.local_max_fuzzy_matches,
             score_cutoff=self._cfg.local_fuzzy_threshold,
+            processor=default_process,
         )
         if not matches:
             log.debug("local_parquet.no_org_match", query=org_name)
