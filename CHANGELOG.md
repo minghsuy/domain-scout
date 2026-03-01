@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- **Learned scorer** — 11-feature logistic regression model with isotonic calibration (GZ AUC 0.9992, 0 FN), replaces heuristic scoring when model file present (#36)
+- **RDAP skip-TLDs** — skip RDAP lookups for 35 ccTLDs not in IANA bootstrap registry, eliminating noisy 404 logs (#37)
+- `docs/rdap-cctld-support.md` — documents ccTLD RDAP landscape and maintenance schedule
+
+### Changed
+- RDAP architecture note in CLAUDE.md updated to reference skip-TLDs and quarterly review cadence
+
 ## [0.6.0] - 2026-02-25
 
 ### Added
