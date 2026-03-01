@@ -8,7 +8,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.sources.rdap import RDAPLookup
+from domain_scout.sources.rdap import RDAP_SKIP_TLDS, RDAPLookup
 
 
 def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncMock:
@@ -253,3 +253,66 @@ class TestRDAPLookup:
         }
         # extract_name only looks for registrant entity
         assert RDAPLookup._extract_name(data) is None
+
+
+class TestRDAPSkipTLDs:
+    """Tests for RDAP ccTLD skip logic."""
+
+    def test_skip_set_contains_expected_tlds(self) -> None:
+        """Verify known unsupported TLDs are in the skip set."""
+        for tld in ("it", "de", "jp", "cn", "ru", "edu", "io", "us"):
+            assert tld in RDAP_SKIP_TLDS, f"{tld} missing from RDAP_SKIP_TLDS"
+
+    def test_skip_set_excludes_supported_tlds(self) -> None:
+        """Verify TLDs known to have RDAP are NOT in the skip set."""
+        for tld in ("com", "net", "org", "uk", "au", "br", "fr", "nl"):
+            assert tld not in RDAP_SKIP_TLDS, f"{tld} should not be in RDAP_SKIP_TLDS"
+
+    @pytest.mark.asyncio
+    async def test_skipped_tld_returns_none_without_http(self) -> None:
+        """A .it domain must return None without making an HTTP request."""
+        config = ScoutConfig()
+        rdap = RDAPLookup(config)
+
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient") as mock_cls:
+            org = await rdap.get_registrant_org("example.it")
+
+        assert org is None
+        mock_cls.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_skipped_tld_info_returns_nulls_without_http(self) -> None:
+        """get_registrant_info for a skipped TLD returns null dict, no HTTP."""
+        config = ScoutConfig()
+        rdap = RDAPLookup(config)
+
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient") as mock_cls:
+            info = await rdap.get_registrant_info("example.de")
+
+        assert info == {"org": None, "name": None, "country": None}
+        mock_cls.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_supported_tld_makes_http_request(self) -> None:
+        """A .com domain must proceed with the normal HTTP lookup."""
+        config = ScoutConfig()
+        rdap = RDAPLookup(config)
+
+        mock_data: dict[str, object] = {
+            "entities": [
+                {
+                    "roles": ["registrant"],
+                    "vcardArray": [
+                        "vcard",
+                        [["version", {}, "text", "4.0"], ["org", {}, "text", "Test Corp"]],
+                    ],
+                }
+            ]
+        }
+        mock_client = _make_httpx_mock(mock_data)
+
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            org = await rdap.get_registrant_org("example.com")
+
+        assert org == "Test Corp"
+        mock_client.get.assert_called_once()
