@@ -33,10 +33,26 @@ def _get_model() -> dict[str, Any]:
 # Feature helpers (mirrored from ct-entity-resolution build_training_data.py)
 # ---------------------------------------------------------------------------
 
-_COMPANY_SUFFIX_SKIP = frozenset({
-    "inc", "corp", "ltd", "llc", "plc", "company", "group", "holdings",
-    "the", "and", "co", "sa", "se", "nv", "ag", "ab",
-})
+_COMPANY_SUFFIX_SKIP = frozenset(
+    {
+        "inc",
+        "corp",
+        "ltd",
+        "llc",
+        "plc",
+        "company",
+        "group",
+        "holdings",
+        "the",
+        "and",
+        "co",
+        "sa",
+        "se",
+        "nv",
+        "ag",
+        "ab",
+    }
+)
 
 # ISO 3166-1 alpha-2 country codes for TLD check
 _CC_CODES = (
@@ -115,6 +131,7 @@ def _isotonic_interpolate(x: float, x_vals: list[float], y_vals: list[float]) ->
 # Public scoring API
 # ---------------------------------------------------------------------------
 
+
 def score_confidence(
     domain: str,
     company_name: str,
@@ -140,9 +157,7 @@ def score_confidence(
     scales = scaler["scale"]
 
     evidence_density = (
-        float(evidence_count) / float(unique_cert_count)
-        if unique_cert_count > 0
-        else 0.0
+        float(evidence_count) / float(unique_cert_count) if unique_cert_count > 0 else 0.0
     )
 
     raw: dict[str, float] = {

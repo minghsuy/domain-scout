@@ -499,7 +499,10 @@ class Scout:
         confirmed_domains: list[str] = []
         for domain, accum in domain_evidence.items():
             accum.confidence = self._score_confidence(
-                accum, entity.company_name, seeds, domain=domain,
+                accum,
+                entity.company_name,
+                seeds,
+                domain=domain,
             )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
@@ -853,7 +856,10 @@ class Scout:
     # --- Step 3: Confidence scoring ---
 
     def _score_confidence(
-        self, accum: _DomainAccum, company_name: str, seed_domains: list[str],
+        self,
+        accum: _DomainAccum,
+        company_name: str,
+        seed_domains: list[str],
         domain: str = "",
     ) -> float:
         # Learned scorer path (opt-in via config)
@@ -872,9 +878,11 @@ class Scout:
 
             # Extract max RDAP registrant similarity from evidence
             rdap_sim = max(
-                (ev.similarity_score for ev in accum.evidence
-                 if ev.source_type == "rdap_registrant_match"
-                 and ev.similarity_score is not None),
+                (
+                    ev.similarity_score
+                    for ev in accum.evidence
+                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
+                ),
                 default=0.0,
             )
 
