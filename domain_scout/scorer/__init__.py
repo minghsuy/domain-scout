@@ -125,6 +125,7 @@ def score_confidence(
     resolves: bool = False,
     evidence_count: int = 0,
     unique_cert_count: int = 0,
+    rdap_similarity: float = 0.0,
 ) -> float:
     """Score domain-entity attribution using the learned logistic model.
 
@@ -156,6 +157,11 @@ def score_confidence(
         "evidence_density": evidence_density,
         "resolves": float(resolves),
         "domain_length": float(len(domain.split(".")[0])),
+        "rdap_similarity": rdap_similarity,
+        # ASN/NS features: not available at inference (would need separate DNS+ASN lookup)
+        "same_asn_as_anchor": 0.0,
+        "asn_is_cdn": 0.0,
+        "shares_nameserver": 0.0,
     }
 
     z = intercept

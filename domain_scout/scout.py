@@ -870,6 +870,14 @@ class Scout:
                 if ev.cert_id is not None:
                     cert_ids.add(ev.cert_id)
 
+            # Extract max RDAP registrant similarity from evidence
+            rdap_sim = max(
+                (ev.similarity_score for ev in accum.evidence
+                 if ev.source_type == "rdap_registrant_match"
+                 and ev.similarity_score is not None),
+                default=0.0,
+            )
+
             return _learned_score(
                 domain=domain,
                 company_name=company_name,
@@ -879,6 +887,7 @@ class Scout:
                 resolves=accum.resolves,
                 evidence_count=len(accum.evidence),
                 unique_cert_count=len(cert_ids),
+                rdap_similarity=rdap_sim,
             )
 
         # Heuristic scorer (default)
