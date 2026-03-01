@@ -16,6 +16,50 @@ log = structlog.get_logger()
 
 _RDAP_BOOTSTRAP = "https://rdap.org/domain/"
 
+# TLDs not in the IANA RDAP bootstrap registry (https://data.iana.org/rdap/dns.json).
+# Requests to rdap.org for these TLDs return 404.  Skip them to avoid
+# unnecessary HTTP round-trips and noisy warning logs.
+RDAP_SKIP_TLDS: frozenset[str] = frozenset(
+    {
+        "ae",
+        "at",
+        "be",
+        "bg",
+        "ch",
+        "cl",
+        "cn",
+        "co",
+        "de",
+        "dk",
+        "edu",
+        "ee",
+        "es",
+        "hk",
+        "hr",
+        "hu",
+        "ie",
+        "il",
+        "io",
+        "it",
+        "jp",
+        "kr",
+        "lt",
+        "lu",
+        "lv",
+        "mx",
+        "my",
+        "nz",
+        "pe",
+        "ro",
+        "ru",
+        "se",
+        "sk",
+        "tr",
+        "us",
+        "za",
+    }
+)
+
 
 def _safe_list(value: object) -> list[object]:
     """Return value if it is a list, otherwise an empty list."""
@@ -54,6 +98,11 @@ class RDAPLookup:
         }
 
     async def _query(self, domain: str) -> dict[str, object]:
+        tld = domain.rsplit(".", 1)[-1].lower()
+        if tld in RDAP_SKIP_TLDS:
+            log.debug("rdap.skip_unsupported_tld", domain=domain, tld=tld)
+            return {}
+
         url = f"{_RDAP_BOOTSTRAP}{domain}"
         async with httpx.AsyncClient(
             timeout=self._cfg.http_timeout,

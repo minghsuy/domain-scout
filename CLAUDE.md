@@ -70,8 +70,8 @@ domain_scout/
 ## Architecture Notes
 
 - **crt.sh Postgres is primary, JSON API is fallback** — dates must be normalized (JSON returns strings, Postgres returns datetime objects)
-- **RDAP uses rdap.org** (universal bootstrap), NOT ARIN — needed for ccTLDs like .it
-- .it ccTLD doesn't support RDAP at all (404 is expected, not a bug)
+- **RDAP uses rdap.org** (universal bootstrap), NOT ARIN — skips 35 ccTLDs not in IANA bootstrap (see `docs/rdap-cctld-support.md`)
+- `RDAP_SKIP_TLDS` frozenset in `rdap.py` prevents wasted lookups and noisy 404 logs; review quarterly against IANA bootstrap at `https://data.iana.org/rdap/dns.json`
 - psycopg2-binary runs via `run_in_executor` (sync driver in async code)
 - Multi-seed: `--seed` is repeatable, runs parallel CT expansions per seed, cross-seed verification boosts confidence
 - Evidence is structured (`EvidenceRecord` with `source_type`, `cert_id`, `similarity_score`) — not plain strings
@@ -94,6 +94,6 @@ domain_scout/
 
 ## Testing
 
-- **433 unit tests** + 4 integration tests (deselected by default)
+- **438 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
