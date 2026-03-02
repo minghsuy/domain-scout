@@ -20,6 +20,100 @@ from domain_scout.sources.local_parquet import (
 if TYPE_CHECKING:
     from pathlib import Path
 
+# Shared test rows used by both parquet and DuckDB fixtures
+_TEST_ROWS: list[dict[str, object]] = [
+    {
+        "org_raw": "Apple Inc.",
+        "domain": "apple.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+        "fingerprint": "aaa111",
+        "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Apple Inc.",
+        "domain": "icloud.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+        "fingerprint": "aaa111",  # Same cert, different SAN
+        "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Apple Inc.",
+        "domain": "apple.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 6, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 6, 1, tzinfo=UTC),
+        "fingerprint": "aaa222",  # Different cert
+        "first_seen": datetime(2024, 6, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Microsoft Corporation",
+        "domain": "microsoft.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 3, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 3, 1, tzinfo=UTC),
+        "fingerprint": "bbb111",
+        "first_seen": datetime(2024, 3, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Microsoft Corporation",
+        "domain": "azure.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 3, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 3, 1, tzinfo=UTC),
+        "fingerprint": "bbb111",  # Same cert
+        "first_seen": datetime(2024, 3, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Applebee's International, Inc.",
+        "domain": "applebees.com",
+        "issuer_org": "Let's Encrypt",
+        "not_before": datetime(2024, 2, 1, tzinfo=UTC),
+        "not_after": datetime(2024, 5, 1, tzinfo=UTC),
+        "fingerprint": "ccc111",
+        "first_seen": datetime(2024, 2, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "Apple Inc.",
+        "domain": "store.apple.com",
+        "issuer_org": "DigiCert",
+        "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+        "fingerprint": "aaa333",
+        "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": "",
+        "domain": "empty-org.example.com",
+        "issuer_org": "Let's Encrypt",
+        "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+        "fingerprint": "ddd111",
+        "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+    {
+        "org_raw": None,
+        "domain": "null-org.example.com",
+        "issuer_org": "Let's Encrypt",
+        "not_before": datetime(2024, 1, 1, tzinfo=UTC),
+        "not_after": datetime(2025, 1, 1, tzinfo=UTC),
+        "fingerprint": "eee111",
+        "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
+        "log_source": "test",
+    },
+]
+
 # Minimal schema matching warehouse parquet files
 _SCHEMA = pa.schema(
     [
@@ -46,106 +140,49 @@ def _write_test_parquet(path: Path, rows: list[dict[str, object]]) -> None:
 
 
 def _make_warehouse(tmp_path: Path) -> Path:
-    """Create a test warehouse with known data."""
+    """Create a test parquet warehouse with known data."""
     warehouse = tmp_path / "warehouse"
     warehouse.mkdir()
-
-    _write_test_parquet(
-        warehouse / "test.parquet",
-        [
-            {
-                "org_raw": "Apple Inc.",
-                "domain": "apple.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
-                "fingerprint": "aaa111",
-                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Apple Inc.",
-                "domain": "icloud.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
-                "fingerprint": "aaa111",  # Same cert, different SAN
-                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Apple Inc.",
-                "domain": "apple.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 6, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 6, 1, tzinfo=UTC),
-                "fingerprint": "aaa222",  # Different cert
-                "first_seen": datetime(2024, 6, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Microsoft Corporation",
-                "domain": "microsoft.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 3, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 3, 1, tzinfo=UTC),
-                "fingerprint": "bbb111",
-                "first_seen": datetime(2024, 3, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Microsoft Corporation",
-                "domain": "azure.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 3, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 3, 1, tzinfo=UTC),
-                "fingerprint": "bbb111",  # Same cert
-                "first_seen": datetime(2024, 3, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Applebee's International, Inc.",
-                "domain": "applebees.com",
-                "issuer_org": "Let's Encrypt",
-                "not_before": datetime(2024, 2, 1, tzinfo=UTC),
-                "not_after": datetime(2024, 5, 1, tzinfo=UTC),
-                "fingerprint": "ccc111",
-                "first_seen": datetime(2024, 2, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "Apple Inc.",
-                "domain": "store.apple.com",
-                "issuer_org": "DigiCert",
-                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
-                "fingerprint": "aaa333",
-                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": "",
-                "domain": "empty-org.example.com",
-                "issuer_org": "Let's Encrypt",
-                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
-                "fingerprint": "ddd111",
-                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-            {
-                "org_raw": None,
-                "domain": "null-org.example.com",
-                "issuer_org": "Let's Encrypt",
-                "not_before": datetime(2024, 1, 1, tzinfo=UTC),
-                "not_after": datetime(2025, 1, 1, tzinfo=UTC),
-                "fingerprint": "eee111",
-                "first_seen": datetime(2024, 1, 1, tzinfo=UTC),
-                "log_source": "test",
-            },
-        ],
-    )
+    _write_test_parquet(warehouse / "test.parquet", _TEST_ROWS)
     return warehouse
+
+
+def _make_duckdb_warehouse(tmp_path: Path) -> Path:
+    """Create a test DuckDB warehouse with known data."""
+    import duckdb
+
+    db_path = tmp_path / "test_warehouse.duckdb"
+    conn = duckdb.connect(str(db_path))
+    conn.execute(
+        """
+        CREATE TABLE cert_events (
+            org_raw VARCHAR,
+            domain VARCHAR,
+            issuer_org VARCHAR,
+            not_before TIMESTAMP,
+            not_after TIMESTAMP,
+            fingerprint VARCHAR,
+            first_seen TIMESTAMP,
+            log_source VARCHAR
+        )
+        """
+    )
+    for row in _TEST_ROWS:
+        conn.execute(
+            "INSERT INTO cert_events VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+            [
+                row["org_raw"],
+                row["domain"],
+                row["issuer_org"],
+                row["not_before"],
+                row["not_after"],
+                row["fingerprint"],
+                row["first_seen"],
+                row["log_source"],
+            ],
+        )
+    conn.close()
+    return db_path
 
 
 @pytest.fixture()
@@ -339,3 +376,102 @@ class TestEdgeCases:
     def test_close(self, source: LocalParquetSource) -> None:
         """close() should not raise."""
         source.close()
+
+
+# ---------------------------------------------------------------------------
+# DuckDB warehouse tests
+# ---------------------------------------------------------------------------
+
+
+@pytest.fixture()
+def duckdb_warehouse(tmp_path: Path) -> Path:
+    return _make_duckdb_warehouse(tmp_path)
+
+
+@pytest.fixture()
+def duckdb_source(duckdb_warehouse: Path) -> LocalParquetSource:
+    config = ScoutConfig(
+        warehouse_path=str(duckdb_warehouse),
+        local_mode="local_only",
+        local_fuzzy_threshold=65.0,
+        local_max_fuzzy_matches=10,
+    )
+    return LocalParquetSource(config)
+
+
+class TestDuckDBInit:
+    def test_loads_org_index(self, duckdb_source: LocalParquetSource) -> None:
+        assert len(duckdb_source._org_index) == 3
+        assert "" not in duckdb_source._org_index
+
+    def test_non_duckdb_file_raises(self, tmp_path: Path) -> None:
+        fake = tmp_path / "not_a.db"
+        fake.write_text("nope")
+        config = ScoutConfig(warehouse_path=str(fake))
+        with pytest.raises(FileNotFoundError, match="not found"):
+            LocalParquetSource(config)
+
+
+class TestDuckDBSearchByOrg:
+    @pytest.mark.asyncio()
+    async def test_exact_match(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_org("Apple Inc.")
+        apple = [r for r in results if r["org_name"] == "Apple Inc."]
+        assert len(apple) == 3
+
+    @pytest.mark.asyncio()
+    async def test_san_reconstruction(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_org("Apple Inc.")
+        sans_lists = [r["san_dns_names"] for r in results]
+        multi_san = [s for s in sans_lists if isinstance(s, list) and len(s) > 1]
+        assert len(multi_san) == 1
+        assert set(multi_san[0]) == {"apple.com", "icloud.com"}
+
+    @pytest.mark.asyncio()
+    async def test_no_match(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_org("Nonexistent Corp ZZZZZ")
+        assert results == []
+
+    @pytest.mark.asyncio()
+    async def test_record_structure(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_org("Microsoft Corporation")
+        assert len(results) >= 1
+        rec = results[0]
+        assert rec["org_name"] == "Microsoft Corporation"
+        sans = rec["san_dns_names"]
+        assert isinstance(sans, list)
+        assert "microsoft.com" in sans
+
+
+class TestDuckDBSearchByDomain:
+    @pytest.mark.asyncio()
+    async def test_exact_domain(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_domain("apple.com")
+        cert_ids = {r["cert_id"] for r in results}
+        assert len(cert_ids) == 3
+
+    @pytest.mark.asyncio()
+    async def test_suffix_match(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_domain("apple.com")
+        all_sans: set[str] = set()
+        for r in results:
+            sans = r["san_dns_names"]
+            if isinstance(sans, list):
+                all_sans.update(sans)
+        assert "store.apple.com" in all_sans
+
+    @pytest.mark.asyncio()
+    async def test_no_match(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_domain("nonexistent.example.org")
+        assert results == []
+
+
+class TestDuckDBEdgeCases:
+    @pytest.mark.asyncio()
+    async def test_null_org_excluded(self, duckdb_source: LocalParquetSource) -> None:
+        results = await duckdb_source.search_by_domain("null-org.example.com")
+        assert len(results) == 1
+        assert results[0]["org_name"] is None
+
+    def test_close(self, duckdb_source: LocalParquetSource) -> None:
+        duckdb_source.close()
