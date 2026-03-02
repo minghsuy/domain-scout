@@ -1,4 +1,4 @@
-"""Local parquet warehouse as a CT source."""
+"""Local CT warehouse source (parquet directory or DuckDB file)."""
 
 from __future__ import annotations
 
@@ -46,35 +46,55 @@ def _row_to_record(row: tuple[object, ...], columns: list[str]) -> dict[str, obj
 
 
 class LocalParquetSource:
-    """CT source backed by local parquet warehouse files."""
+    """CT source backed by local parquet files or a DuckDB warehouse."""
 
     def __init__(self, config: ScoutConfig) -> None:
         import duckdb
 
         self._cfg = config
         wpath = Path(config.warehouse_path or "")
+
+        # DuckDB file: attach read-only, query cert_events table
+        if wpath.is_file() and wpath.suffix == ".duckdb":
+            self._conn = duckdb.connect(str(wpath), read_only=True)
+            try:
+                self._from_clause = "cert_events"
+                self._org_index = self._load_org_index()
+            except Exception:
+                self._conn.close()
+                raise
+            log.info(
+                "local_warehouse.loaded_duckdb",
+                path=str(wpath),
+                distinct_orgs=len(self._org_index),
+            )
+            return
+
+        # Parquet directory: scan for .parquet files
         if not wpath.is_dir():
-            raise FileNotFoundError(f"Warehouse directory not found: {wpath}")
+            raise FileNotFoundError(f"Warehouse path not found: {wpath}")
 
         files = list(wpath.glob("**/*.parquet"))
         if not files:
             raise FileNotFoundError(f"No parquet files in: {wpath}")
 
-        self._parquet_glob = str(wpath / "**" / "*.parquet")
+        parquet_glob = str(wpath / "**" / "*.parquet")
         self._conn = duckdb.connect()
-
-        # Preload distinct org names for fuzzy matching
-        result = self._conn.execute(
-            "SELECT DISTINCT org_raw FROM read_parquet(?, union_by_name=true) "
-            "WHERE org_raw IS NOT NULL",
-            [self._parquet_glob],
-        ).fetchall()
-        self._org_index: list[str] = [r[0] for r in result if r[0]]
+        self._from_clause = f"read_parquet('{parquet_glob}', union_by_name=true)"
+        self._org_index = self._load_org_index()
         log.info(
-            "local_parquet.loaded",
+            "local_warehouse.loaded_parquet",
             parquet_files=len(files),
             distinct_orgs=len(self._org_index),
         )
+
+    def _load_org_index(self) -> list[str]:
+        """Load distinct org names from the warehouse for fuzzy matching."""
+        result = self._conn.execute(
+            f"SELECT DISTINCT org_raw FROM {self._from_clause} "
+            "WHERE org_raw IS NOT NULL AND org_raw != ''"
+        ).fetchall()
+        return [r[0] for r in result if r[0]]
 
     async def search_by_org(
         self, org_name: str, *, verify_org: bool = True
@@ -91,12 +111,12 @@ class LocalParquetSource:
             processor=default_process,
         )
         if not matches:
-            log.debug("local_parquet.no_org_match", query=org_name)
+            log.debug("local_warehouse.no_org_match", query=org_name)
             return []
 
         matched_names = [m[0] for m in matches]
         log.debug(
-            "local_parquet.org_matches",
+            "local_warehouse.org_matches",
             query=org_name,
             matches=[(m[0], round(m[1], 1)) for m in matches],
         )
@@ -106,12 +126,11 @@ class LocalParquetSource:
             "SELECT fingerprint, org_raw, "
             "MIN(not_before) AS not_before, MAX(not_after) AS not_after, "
             "LIST(DISTINCT domain ORDER BY domain) AS san_dns_names "
-            "FROM read_parquet(?, union_by_name=true) "
+            f"FROM {self._from_clause} "
             f"WHERE org_raw IN ({placeholders}) "
             "GROUP BY fingerprint, org_raw"
         )
-        params = [self._parquet_glob, *matched_names]
-        result = self._conn.execute(sql, params)
+        result = self._conn.execute(sql, matched_names)
         columns = [desc[0] for desc in result.description]
         rows = result.fetchall()
         return [_row_to_record(r, columns) for r in rows]
@@ -122,29 +141,29 @@ class LocalParquetSource:
             "SELECT fingerprint, org_raw, "
             "MIN(not_before) AS not_before, MAX(not_after) AS not_after, "
             "LIST(DISTINCT domain ORDER BY domain) AS san_dns_names "
-            "FROM read_parquet(?, union_by_name=true) "
+            f"FROM {self._from_clause} "
             "WHERE domain = ? OR domain LIKE ? "
             "GROUP BY fingerprint, org_raw"
         )
         suffix_pattern = f"%.{domain}"
-        result = self._conn.execute(sql, [self._parquet_glob, domain, suffix_pattern])
+        result = self._conn.execute(sql, [domain, suffix_pattern])
         columns = [desc[0] for desc in result.description]
         rows = result.fetchall()
         return [_row_to_record(r, columns) for r in rows]
 
     async def get_cert_org(self, cert_id: int) -> str | None:
-        """Not applicable for local parquet (no cert_id concept)."""
+        """Not applicable for local warehouse (no cert_id concept)."""
         return None
 
     def close(self) -> None:
         """Close the DuckDB connection."""
         if self._conn is not None:
             self._conn.close()
-            log.debug("local_parquet.closed")
+            log.debug("local_warehouse.closed")
 
 
 class HybridCTSource:
-    """Tries local parquet first, falls back to remote CTLogSource."""
+    """Tries local warehouse first, falls back to remote CTLogSource."""
 
     def __init__(self, local: LocalParquetSource, remote: CTLogSource) -> None:
         self._local = local
