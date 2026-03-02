@@ -1,4 +1,4 @@
-"""Tests for local parquet warehouse source."""
+"""Tests for local parquet/DuckDB warehouse source."""
 
 from __future__ import annotations
 
@@ -21,6 +21,17 @@ if TYPE_CHECKING:
     from pathlib import Path
 
 # Shared test rows used by both parquet and DuckDB fixtures
+_COLUMNS = [
+    "org_raw",
+    "domain",
+    "issuer_org",
+    "not_before",
+    "not_after",
+    "fingerprint",
+    "first_seen",
+    "log_source",
+]
+
 _TEST_ROWS: list[dict[str, object]] = [
     {
         "org_raw": "Apple Inc.",
@@ -139,7 +150,7 @@ def _write_test_parquet(path: Path, rows: list[dict[str, object]]) -> None:
     pq.write_table(table, path)
 
 
-def _make_warehouse(tmp_path: Path) -> Path:
+def _make_parquet_warehouse(tmp_path: Path) -> Path:
     """Create a test parquet warehouse with known data."""
     warehouse = tmp_path / "warehouse"
     warehouse.mkdir()
@@ -167,38 +178,38 @@ def _make_duckdb_warehouse(tmp_path: Path) -> Path:
         )
         """
     )
-    for row in _TEST_ROWS:
-        conn.execute(
-            "INSERT INTO cert_events VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
-            [
-                row["org_raw"],
-                row["domain"],
-                row["issuer_org"],
-                row["not_before"],
-                row["not_after"],
-                row["fingerprint"],
-                row["first_seen"],
-                row["log_source"],
-            ],
-        )
+    conn.executemany(
+        "INSERT INTO cert_events VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
+        [[row[c] for c in _COLUMNS] for row in _TEST_ROWS],
+    )
     conn.close()
     return db_path
 
 
-@pytest.fixture()
-def warehouse(tmp_path: Path) -> Path:
-    return _make_warehouse(tmp_path)
-
-
-@pytest.fixture()
-def source(warehouse: Path) -> LocalParquetSource:
+def _make_source(warehouse_path: Path) -> LocalParquetSource:
     config = ScoutConfig(
-        warehouse_path=str(warehouse),
+        warehouse_path=str(warehouse_path),
         local_mode="local_only",
         local_fuzzy_threshold=65.0,
         local_max_fuzzy_matches=10,
     )
     return LocalParquetSource(config)
+
+
+@pytest.fixture(params=["parquet", "duckdb"])
+def source(request: pytest.FixtureRequest, tmp_path: Path) -> LocalParquetSource:
+    """Parametrized fixture: runs each test against both backends."""
+    if request.param == "parquet":
+        wh = _make_parquet_warehouse(tmp_path)
+    else:
+        wh = _make_duckdb_warehouse(tmp_path)
+    return _make_source(wh)
+
+
+@pytest.fixture()
+def parquet_source(tmp_path: Path) -> LocalParquetSource:
+    """Parquet-only fixture for parquet-specific tests."""
+    return _make_source(_make_parquet_warehouse(tmp_path))
 
 
 class TestFingerprintToCertId:
@@ -209,7 +220,12 @@ class TestFingerprintToCertId:
         assert _fingerprint_to_cert_id("aaa111") != _fingerprint_to_cert_id("bbb111")
 
 
-class TestLocalParquetInit:
+class TestInit:
+    def test_loads_org_index(self, source: LocalParquetSource) -> None:
+        # Apple, Microsoft, Applebee's — empty string and None excluded
+        assert len(source._org_index) == 3
+        assert "" not in source._org_index
+
     def test_missing_directory(self, tmp_path: Path) -> None:
         config = ScoutConfig(warehouse_path=str(tmp_path / "nonexistent"))
         with pytest.raises(FileNotFoundError, match="not found"):
@@ -222,10 +238,24 @@ class TestLocalParquetInit:
         with pytest.raises(FileNotFoundError, match="No parquet"):
             LocalParquetSource(config)
 
-    def test_loads_org_index(self, source: LocalParquetSource) -> None:
-        # Apple, Microsoft, Applebee's — empty string and None excluded
-        assert len(source._org_index) == 3
-        assert "" not in source._org_index
+    def test_non_duckdb_file_raises(self, tmp_path: Path) -> None:
+        fake = tmp_path / "not_a.db"
+        fake.write_text("nope")
+        config = ScoutConfig(warehouse_path=str(fake))
+        with pytest.raises(FileNotFoundError, match="not found"):
+            LocalParquetSource(config)
+
+    def test_duckdb_missing_table(self, tmp_path: Path) -> None:
+        """DuckDB file without cert_events table gives a clear error."""
+        import duckdb
+
+        db_path = tmp_path / "empty.duckdb"
+        conn = duckdb.connect(str(db_path))
+        conn.execute("CREATE TABLE other_table (x INT)")
+        conn.close()
+        config = ScoutConfig(warehouse_path=str(db_path))
+        with pytest.raises(Exception):  # noqa: B017
+            LocalParquetSource(config)
 
 
 class TestSearchByOrg:
@@ -233,14 +263,12 @@ class TestSearchByOrg:
     async def test_exact_match(self, source: LocalParquetSource) -> None:
         results = await source.search_by_org("Apple Inc.")
         assert len(results) >= 3
-        # Should find all three Apple certs (aaa111, aaa222, aaa333)
         apple_results = [r for r in results if r["org_name"] == "Apple Inc."]
         assert len(apple_results) == 3
 
     @pytest.mark.asyncio()
     async def test_san_reconstruction(self, source: LocalParquetSource) -> None:
         results = await source.search_by_org("Apple Inc.")
-        # Find the cert with fingerprint aaa111 (has apple.com + icloud.com)
         sans_lists = [r["san_dns_names"] for r in results]
         multi_san = [s for s in sans_lists if isinstance(s, list) and len(s) > 1]
         assert len(multi_san) == 1
@@ -248,7 +276,6 @@ class TestSearchByOrg:
 
     @pytest.mark.asyncio()
     async def test_fuzzy_match(self, source: LocalParquetSource) -> None:
-        # "Apple" should fuzzy-match "Apple Inc." but not "Applebee's"
         config = ScoutConfig(
             warehouse_path=source._cfg.warehouse_path,
             local_fuzzy_threshold=70.0,
@@ -285,13 +312,11 @@ class TestSearchByDomain:
     @pytest.mark.asyncio()
     async def test_exact_domain(self, source: LocalParquetSource) -> None:
         results = await source.search_by_domain("apple.com")
-        # aaa111 (apple.com+icloud.com), aaa222 (apple.com), aaa333 (store.apple.com via suffix)
         cert_ids = {r["cert_id"] for r in results}
         assert len(cert_ids) == 3
 
     @pytest.mark.asyncio()
     async def test_suffix_match(self, source: LocalParquetSource) -> None:
-        # store.apple.com should match when searching for apple.com via LIKE %.apple.com
         results = await source.search_by_domain("apple.com")
         all_sans: set[str] = set()
         for r in results:
@@ -315,44 +340,44 @@ class TestGetCertOrg:
 
 class TestHybridCTSource:
     @pytest.mark.asyncio()
-    async def test_returns_local_when_found(self, source: LocalParquetSource) -> None:
+    async def test_returns_local_when_found(self, parquet_source: LocalParquetSource) -> None:
         remote = AsyncMock()
-        hybrid = HybridCTSource(source, remote)
+        hybrid = HybridCTSource(parquet_source, remote)
         results = await hybrid.search_by_org("Apple Inc.")
         assert len(results) >= 1
         remote.search_by_org.assert_not_called()
 
     @pytest.mark.asyncio()
-    async def test_falls_back_to_remote(self, source: LocalParquetSource) -> None:
+    async def test_falls_back_to_remote(self, parquet_source: LocalParquetSource) -> None:
         remote = AsyncMock()
         remote.search_by_org.return_value = [{"cert_id": 1, "san_dns_names": ["fallback.com"]}]
-        hybrid = HybridCTSource(source, remote)
+        hybrid = HybridCTSource(parquet_source, remote)
         results = await hybrid.search_by_org("Nonexistent Corp ZZZZZ")
         assert len(results) == 1
         remote.search_by_org.assert_called_once()
 
     @pytest.mark.asyncio()
-    async def test_domain_local_first(self, source: LocalParquetSource) -> None:
+    async def test_domain_local_first(self, parquet_source: LocalParquetSource) -> None:
         remote = AsyncMock()
-        hybrid = HybridCTSource(source, remote)
+        hybrid = HybridCTSource(parquet_source, remote)
         results = await hybrid.search_by_domain("apple.com")
         assert len(results) >= 1
         remote.search_by_domain.assert_not_called()
 
     @pytest.mark.asyncio()
-    async def test_domain_fallback(self, source: LocalParquetSource) -> None:
+    async def test_domain_fallback(self, parquet_source: LocalParquetSource) -> None:
         remote = AsyncMock()
         remote.search_by_domain.return_value = [{"cert_id": 2, "san_dns_names": ["x.com"]}]
-        hybrid = HybridCTSource(source, remote)
+        hybrid = HybridCTSource(parquet_source, remote)
         results = await hybrid.search_by_domain("nonexistent.example.org")
         assert len(results) == 1
         remote.search_by_domain.assert_called_once()
 
     @pytest.mark.asyncio()
-    async def test_get_cert_org_delegates(self, source: LocalParquetSource) -> None:
+    async def test_get_cert_org_delegates(self, parquet_source: LocalParquetSource) -> None:
         remote = AsyncMock()
         remote.get_cert_org.return_value = "Test Org"
-        hybrid = HybridCTSource(source, remote)
+        hybrid = HybridCTSource(parquet_source, remote)
         result = await hybrid.get_cert_org(123)
         assert result == "Test Org"
         remote.get_cert_org.assert_called_once_with(123)
@@ -368,7 +393,6 @@ class TestEdgeCases:
     @pytest.mark.asyncio()
     async def test_null_org_excluded(self, source: LocalParquetSource) -> None:
         """Null org_raw rows should not appear in org_index."""
-        # Search for the domain that has null org — it exists but shouldn't match org search
         results = await source.search_by_domain("null-org.example.com")
         assert len(results) == 1
         assert results[0]["org_name"] is None
@@ -376,102 +400,3 @@ class TestEdgeCases:
     def test_close(self, source: LocalParquetSource) -> None:
         """close() should not raise."""
         source.close()
-
-
-# ---------------------------------------------------------------------------
-# DuckDB warehouse tests
-# ---------------------------------------------------------------------------
-
-
-@pytest.fixture()
-def duckdb_warehouse(tmp_path: Path) -> Path:
-    return _make_duckdb_warehouse(tmp_path)
-
-
-@pytest.fixture()
-def duckdb_source(duckdb_warehouse: Path) -> LocalParquetSource:
-    config = ScoutConfig(
-        warehouse_path=str(duckdb_warehouse),
-        local_mode="local_only",
-        local_fuzzy_threshold=65.0,
-        local_max_fuzzy_matches=10,
-    )
-    return LocalParquetSource(config)
-
-
-class TestDuckDBInit:
-    def test_loads_org_index(self, duckdb_source: LocalParquetSource) -> None:
-        assert len(duckdb_source._org_index) == 3
-        assert "" not in duckdb_source._org_index
-
-    def test_non_duckdb_file_raises(self, tmp_path: Path) -> None:
-        fake = tmp_path / "not_a.db"
-        fake.write_text("nope")
-        config = ScoutConfig(warehouse_path=str(fake))
-        with pytest.raises(FileNotFoundError, match="not found"):
-            LocalParquetSource(config)
-
-
-class TestDuckDBSearchByOrg:
-    @pytest.mark.asyncio()
-    async def test_exact_match(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_org("Apple Inc.")
-        apple = [r for r in results if r["org_name"] == "Apple Inc."]
-        assert len(apple) == 3
-
-    @pytest.mark.asyncio()
-    async def test_san_reconstruction(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_org("Apple Inc.")
-        sans_lists = [r["san_dns_names"] for r in results]
-        multi_san = [s for s in sans_lists if isinstance(s, list) and len(s) > 1]
-        assert len(multi_san) == 1
-        assert set(multi_san[0]) == {"apple.com", "icloud.com"}
-
-    @pytest.mark.asyncio()
-    async def test_no_match(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_org("Nonexistent Corp ZZZZZ")
-        assert results == []
-
-    @pytest.mark.asyncio()
-    async def test_record_structure(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_org("Microsoft Corporation")
-        assert len(results) >= 1
-        rec = results[0]
-        assert rec["org_name"] == "Microsoft Corporation"
-        sans = rec["san_dns_names"]
-        assert isinstance(sans, list)
-        assert "microsoft.com" in sans
-
-
-class TestDuckDBSearchByDomain:
-    @pytest.mark.asyncio()
-    async def test_exact_domain(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_domain("apple.com")
-        cert_ids = {r["cert_id"] for r in results}
-        assert len(cert_ids) == 3
-
-    @pytest.mark.asyncio()
-    async def test_suffix_match(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_domain("apple.com")
-        all_sans: set[str] = set()
-        for r in results:
-            sans = r["san_dns_names"]
-            if isinstance(sans, list):
-                all_sans.update(sans)
-        assert "store.apple.com" in all_sans
-
-    @pytest.mark.asyncio()
-    async def test_no_match(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_domain("nonexistent.example.org")
-        assert results == []
-
-
-class TestDuckDBEdgeCases:
-    @pytest.mark.asyncio()
-    async def test_null_org_excluded(self, duckdb_source: LocalParquetSource) -> None:
-        results = await duckdb_source.search_by_domain("null-org.example.com")
-        assert len(results) == 1
-        assert results[0]["org_name"] is None
-
-    def test_close(self, duckdb_source: LocalParquetSource) -> None:
-        duckdb_source.close()

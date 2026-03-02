@@ -57,13 +57,12 @@ class LocalParquetSource:
         # DuckDB file: attach read-only, query cert_events table
         if wpath.is_file() and wpath.suffix == ".duckdb":
             self._conn = duckdb.connect(str(wpath), read_only=True)
-            self._from_clause = "cert_events"
-
-            result = self._conn.execute(
-                "SELECT DISTINCT org_raw FROM cert_events "
-                "WHERE org_raw IS NOT NULL AND org_raw != ''"
-            ).fetchall()
-            self._org_index: list[str] = [r[0] for r in result if r[0]]
+            try:
+                self._from_clause = "cert_events"
+                self._org_index = self._load_org_index()
+            except Exception:
+                self._conn.close()
+                raise
             log.info(
                 "local_warehouse.loaded_duckdb",
                 path=str(wpath),
@@ -79,20 +78,23 @@ class LocalParquetSource:
         if not files:
             raise FileNotFoundError(f"No parquet files in: {wpath}")
 
-        self._parquet_glob = str(wpath / "**" / "*.parquet")
+        parquet_glob = str(wpath / "**" / "*.parquet")
         self._conn = duckdb.connect()
-        self._from_clause = f"read_parquet('{self._parquet_glob}', union_by_name=true)"
-
-        result = self._conn.execute(
-            f"SELECT DISTINCT org_raw FROM {self._from_clause} "
-            "WHERE org_raw IS NOT NULL AND org_raw != ''"
-        ).fetchall()
-        self._org_index = [r[0] for r in result if r[0]]
+        self._from_clause = f"read_parquet('{parquet_glob}', union_by_name=true)"
+        self._org_index = self._load_org_index()
         log.info(
             "local_warehouse.loaded_parquet",
             parquet_files=len(files),
             distinct_orgs=len(self._org_index),
         )
+
+    def _load_org_index(self) -> list[str]:
+        """Load distinct org names from the warehouse for fuzzy matching."""
+        result = self._conn.execute(
+            f"SELECT DISTINCT org_raw FROM {self._from_clause} "
+            "WHERE org_raw IS NOT NULL AND org_raw != ''"
+        ).fetchall()
+        return [r[0] for r in result if r[0]]
 
     async def search_by_org(
         self, org_name: str, *, verify_org: bool = True
