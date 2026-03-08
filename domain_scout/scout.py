@@ -960,18 +960,19 @@ class Scout:
         async def _check(domain: str, accum: _DomainAccum) -> None:
             try:
                 shared = await self._dns.shares_infrastructure(reference, domain)
-                if shared:
-                    accum.sources.add("shared_infra")
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="shared_infra",
-                            description=f"Shares infrastructure with {reference}",
-                        )
+                if not shared:
+                    return
+                accum.sources.add("shared_infra")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="shared_infra",
+                        description=f"Shares infrastructure with {reference}",
                     )
-                    # Cap so infra boost can't exceed the +0.10 total boost limit.
-                    # Only cross_seed_verified (0.90 base) should reach 1.00.
-                    max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
-                    accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
+                )
+                # Cap so infra boost can't exceed the +0.10 total boost limit.
+                # Only cross_seed_verified (0.90 base) should reach 1.00.
+                max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
+                accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
             except Exception:
                 pass
 
