@@ -12,7 +12,7 @@ class EntityInput(BaseModel):
 
     company_name: str = Field(min_length=1, max_length=200)
     location: str | None = None
-    seed_domain: list[str] = Field(default_factory=list)
+    seed_domain: list[str] = Field(default_factory=list, max_length=50)
     industry: str | None = None
 
 
