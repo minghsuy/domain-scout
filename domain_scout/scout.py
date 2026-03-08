@@ -276,6 +276,7 @@ class Scout:
         return await self._discover(entity)
 
     async def _discover(self, entity: EntityInput) -> ScoutResult:
+        self._dns.reset()
         t0 = time.monotonic()
         total_budget = self.config.total_timeout
         errors: list[str] = []
