@@ -8,7 +8,7 @@ from __future__ import annotations
 
 import hashlib
 import math
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from unittest.mock import AsyncMock
 
 import pytest
@@ -17,11 +17,9 @@ from domain_scout.eval import compute_metrics
 from domain_scout.scout import (
     Scout,
     _DomainAccum,
-    _extract_sans,
     _normalize_time,
 )
 from domain_scout.sources.local_parquet import _fingerprint_to_cert_id
-
 
 # ---------------------------------------------------------------------------
 # 1. _normalize_time correctness (guards against PR #66 type changes)
@@ -73,7 +71,7 @@ class TestNormalizeTime:
         assert "123456" in result
 
     def test_datetime_with_tz(self) -> None:
-        dt = datetime(2025, 1, 15, 12, 0, 0, tzinfo=timezone.utc)
+        dt = datetime(2025, 1, 15, 12, 0, 0, tzinfo=UTC)
         result = _normalize_time(dt)
         assert result is not None
         assert "2025-01-15" in result
@@ -189,7 +187,9 @@ class TestScoringPriority:
 
         This catches any refactoring that accidentally reorders the tiers.
         """
-        base_sources_fn = lambda extra: {"ct_org_match", *extra}
+
+        def base_sources_fn(extra: set[str]) -> set[str]:
+            return {"ct_org_match", *extra}
 
         # Level 3: resolves + rdap + multi_source
         l3 = self._make_accum(
@@ -319,15 +319,14 @@ class TestPhaseOrdering:
             dns_idx = call_order.index("dns_bulk_resolve")
             rdap_idx = call_order.index("rdap_corroborate")
             assert dns_idx < rdap_idx, (
-                f"DNS resolution must happen before RDAP corroboration, "
-                f"but order was: {call_order}"
+                f"DNS resolution must happen before RDAP corroboration, but order was: {call_order}"
             )
 
     @pytest.mark.asyncio
     async def test_scoring_after_strategies(self) -> None:
         """Confidence scoring must happen after all strategies complete."""
         from domain_scout.config import ScoutConfig
-        from domain_scout.models import EntityInput, EvidenceRecord
+        from domain_scout.models import EntityInput
 
         config = ScoutConfig()
         scout = Scout(config=config)
@@ -452,9 +451,7 @@ class TestGracefulDegradation:
         scout._ct.search_by_domain = AsyncMock(return_value=[])  # type: ignore[method-assign]
 
         errors: list[str] = []
-        result = await scout._validate_seed(
-            "test.com", "TestCo", ["test.com"], errors
-        )
+        result = await scout._validate_seed("test.com", "TestCo", ["test.com"], errors)
         # Should complete despite RDAP failure
         assert "assessment" in result
         assert any("RDAP" in e for e in errors)
