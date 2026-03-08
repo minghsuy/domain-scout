@@ -1,0 +1,46 @@
+site_name: domain-scout
+site_description: Discover internet domains associated with a business entity via CT logs, RDAP, and DNS
+site_url: https://minghsuy.github.io/domain-scout
+repo_url: https://github.com/minghsuy/domain-scout
+repo_name: minghsuy/domain-scout
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Architecture: architecture.md
+  - Multi-Seed Discovery: multi-seed.md
+  - Deep Mode: deep-mode.md
+  - Examples: examples.md
+  - API Reference: api.md
+  - RDAP ccTLD Support: rdap-cctld-support.md
+  - Changelog: changelog.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - tables
