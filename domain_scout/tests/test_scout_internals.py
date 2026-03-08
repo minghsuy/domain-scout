@@ -25,9 +25,7 @@ class TestStrategySeedExpansionErrorHandling:
         errors: list[str] = []
 
         results = await scout._strategy_seed_expansion(
-            seed_domain="example.com",
-            company_name="Example Inc",
-            errors=errors
+            seed_domain="example.com", company_name="Example Inc", errors=errors
         )
 
         # Assert results list is empty
