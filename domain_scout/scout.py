@@ -840,18 +840,21 @@ class Scout:
         strong_prefixes = ("ct_san_expansion:", "ct_seed_subdomain:")
         for accum in domain_evidence.values():
             contributing_seeds = _extract_contributing_seeds(accum.sources)
-            if len(contributing_seeds) >= 2:
-                has_strong = any(s.startswith(strong_prefixes) for s in accum.sources)
-                if not has_strong:
-                    continue
-                seeds_str = ", ".join(sorted(contributing_seeds))
-                accum.sources.add("cross_seed_verified")
-                accum.evidence.append(
-                    EvidenceRecord(
-                        source_type="cross_seed_verified",
-                        description=f"Cross-verified: found from seeds {seeds_str}",
-                    )
+            if len(contributing_seeds) < 2:
+                continue
+
+            has_strong = any(s.startswith(strong_prefixes) for s in accum.sources)
+            if not has_strong:
+                continue
+
+            seeds_str = ", ".join(sorted(contributing_seeds))
+            accum.sources.add("cross_seed_verified")
+            accum.evidence.append(
+                EvidenceRecord(
+                    source_type="cross_seed_verified",
+                    description=f"Cross-verified: found from seeds {seeds_str}",
                 )
+            )
 
     # --- Step 3: Confidence scoring ---
 
