@@ -116,5 +116,3 @@ class DeltaReport(BaseModel):
     warnings: list[DeltaWarning] = Field(default_factory=list)
     baseline_metadata: RunMetadata
     current_metadata: RunMetadata
-
-

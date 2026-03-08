@@ -8,6 +8,7 @@ import secrets
 import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
+from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
@@ -146,6 +147,11 @@ def create_app(
         if req.local_mode != "disabled":
             overrides["local_mode"] = req.local_mode
             if req.warehouse_path:
+                if ".." in Path(req.warehouse_path).parts:
+                    raise HTTPException(
+                        status_code=400,
+                        detail="Invalid warehouse_path: path traversal detected",
+                    )
                 overrides["warehouse_path"] = req.warehouse_path
 
         try:

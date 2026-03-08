@@ -242,6 +242,32 @@ class TestScanRequest:
         assert req.timeout == 60
         assert req.deep is True
 
+    def test_scan_warehouse_path_traversal(
+        self, client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Scan returns 400 when warehouse_path contains path traversal."""
+        resp = client.post(
+            "/scan",
+            json={
+                "entity": {"company_name": "TestCorp"},
+                "local_mode": "local_only",
+                "warehouse_path": "../../../etc/passwd",
+            },
+        )
+        assert resp.status_code == 400
+        assert "Invalid warehouse_path" in resp.json()["detail"]
+
+        # Absolute paths must NOT be rejected as traversal
+        resp_absolute = client.post(
+            "/scan",
+            json={
+                "entity": {"company_name": "TestCorp"},
+                "local_mode": "local_only",
+                "warehouse_path": "/opt/warehouse",
+            },
+        )
+        assert resp_absolute.status_code != 400
+
 
 class TestAPIKeyAuth:
     @pytest.fixture
@@ -313,8 +339,6 @@ class TestAPIKeyAuth:
         resp = auth_client.get("/health")
         assert resp.status_code == 200
 
-        # Note: /ready relies on HTTPX client inside which might fail depending on external logic,
-        # so we mock the httpx client here as well.
         with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
             resp = auth_client.get("/ready")
         assert resp.status_code == 200
