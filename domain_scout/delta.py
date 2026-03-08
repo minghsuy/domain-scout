@@ -112,12 +112,12 @@ def _check_warnings(baseline: ScoutResult, current: ScoutResult) -> list[DeltaWa
 
     b_cfg = baseline.run_metadata.config
     c_cfg = current.run_metadata.config
-    diff_keys = sorted(k for k in b_cfg.keys() | c_cfg.keys() if b_cfg.get(k) != c_cfg.get(k))
+    diff_keys = [k for k in b_cfg.keys() | c_cfg.keys() if b_cfg.get(k) != c_cfg.get(k)]
     if diff_keys:
         warnings.append(
             DeltaWarning(
                 code="config_changed",
-                message=f"Config keys differ: {', '.join(diff_keys)}",
+                message=f"Config keys differ: {', '.join(sorted(diff_keys))}",
             )
         )
 
