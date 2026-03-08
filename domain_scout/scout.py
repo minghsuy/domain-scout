@@ -338,11 +338,14 @@ class Scout:
                     )
                 )
 
+        # Pre-calculate base domains for all seeds once
+        seed_to_base = {s: extract_base_domain(s) for s in seeds}
+
         # Parallel seed validation for all seeds
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
         for sd in seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, entity.company_name, seeds, errors),
+                self._validate_seed(sd, entity.company_name, seeds, errors, seed_to_base),
                 name=f"seed_validation:{sd}",
             )
 
@@ -558,7 +561,12 @@ class Scout:
     # --- Step 1: Seed validation ---
 
     async def _validate_seed(
-        self, seed: str, company_name: str, all_seeds: list[str], errors: list[str]
+        self,
+        seed: str,
+        company_name: str,
+        all_seeds: list[str],
+        errors: list[str],
+        seed_to_base: dict[str, str | None] | None = None,
     ) -> dict[str, Any]:
         """Returns dict with assessment, org_name, and co_hosted_seeds."""
         resolves = await self._dns.resolves(seed)
@@ -572,14 +580,16 @@ class Scout:
         # Also check CT for the org name on certs
         ct_records = await self._ct.search_by_domain(seed)
         cert_orgs: set[str] = set()
+
         # Build reverse lookup: base domain -> original seed domain (excluding current seed)
+        if seed_to_base is None:
+            seed_to_base = {s: extract_base_domain(s) for s in all_seeds}
+
+        base_to_seed = {
+            base: s for s, base in seed_to_base.items() if s != seed and base is not None
+        }
+
         co_hosted_seeds: list[str] = []
-        base_to_seed: dict[str, str] = {}
-        for s in all_seeds:
-            if s != seed:
-                base = extract_base_domain(s)
-                if base:
-                    base_to_seed[base] = s
 
         for rec in ct_records:
             org = rec.get("org_name")
