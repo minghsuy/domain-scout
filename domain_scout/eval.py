@@ -92,56 +92,88 @@ def compute_metrics(
     False positives are domains explicitly in ``not_owned`` that appear in top-k.
     """
     results: list[MetricsAtK] = []
+    if not k_values:
+        return results
+
+    # Deduplicate and sort k_values to ensure we calculate progressively
+    unique_k_values = sorted(set(k_values))
+
+    hits = 0
+    fps = 0
+    dcg = 0.0
+
+    owned_len = len(owned)
+    ranked_len = len(ranked_domains)
+    max_k = unique_k_values[-1]
+
+    metrics_map: dict[int, tuple[int, int, float]] = {}
+
+    k_idx = 0
+    current_k = unique_k_values[k_idx]
+
+    # Process ranked_domains in a single pass up to the maximum required k
+    for i, domain in enumerate(ranked_domains):
+        # We check if i == current_k *before* processing i.
+        while i == current_k:
+            metrics_map[current_k] = (hits, fps, dcg)
+            k_idx += 1
+            if k_idx >= len(unique_k_values):
+                break
+            current_k = unique_k_values[k_idx]
+
+        if k_idx >= len(unique_k_values):
+            break
+
+        if domain in owned:
+            hits += 1
+            dcg += 1.0 / math.log2(i + 2)  # standard DCG: log2(rank+1), rank is 1-based
+        if domain in not_owned:
+            fps += 1
+
+    # In case we exhausted ranked_domains but not all unique_k_values
+    while k_idx < len(unique_k_values):
+        current_k = unique_k_values[k_idx]
+        metrics_map[current_k] = (hits, fps, dcg)
+        k_idx += 1
+
+    # Precompute IDCG only up to the maximum needed ideal count
+    max_ideal = min(max_k, owned_len)
+    idcg_at_k = [0.0] * (max_ideal + 1)
+    idcg_val = 0.0
+    for i in range(max_ideal):
+        idcg_val += 1.0 / math.log2(i + 2)
+        idcg_at_k[i + 1] = idcg_val
+
+    # Reconstruct in original order
     for k in k_values:
-        top_k = ranked_domains[:k]
+        hits_k, fps_k, dcg_k = metrics_map[k]
 
         # Precision: |top_k ∩ owned| / min(k, discovered)
         # Adaptive denominator: don't penalize entities that discovered fewer
         # than k domains.  Unknown domains in top_k still count against.
-        hits = sum(1 for d in top_k if d in owned)
-        denom = min(k, len(ranked_domains)) if ranked_domains else 0
-        precision = hits / denom if denom > 0 else 0.0
+        denom = min(k, ranked_len) if ranked_len else 0
+        precision = hits_k / denom if denom > 0 else 0.0
 
         # Recall: |top_k ∩ owned| / |owned|
-        recall = hits / len(owned) if owned else 0.0
+        recall = hits_k / owned_len if owned_len else 0.0
 
         # NDCG@k: normalized discounted cumulative gain
-        ndcg = _ndcg_at_k(top_k, owned, k)
-
-        # False positives: explicit not_owned in top-k
-        fps = [d for d in top_k if d in not_owned]
+        ideal_count = min(k, owned_len)
+        idcg = idcg_at_k[ideal_count]
+        ndcg = dcg_k / idcg if idcg > 0 else 0.0
 
         results.append(
             MetricsAtK(
                 k=k,
-                hits=hits,
+                hits=hits_k,
                 precision=round(precision, 3),
                 recall=round(recall, 3),
                 ndcg=round(ndcg, 3),
-                false_positives=len(fps),
+                false_positives=fps_k,
             )
         )
+
     return results
-
-
-def _dcg_at_k(ranked: list[str], relevant: set[str], k: int) -> float:
-    """Discounted cumulative gain at k."""
-    dcg = 0.0
-    for i, domain in enumerate(ranked[:k]):
-        if domain in relevant:
-            dcg += 1.0 / math.log2(i + 2)  # standard DCG: log2(rank+1), rank is 1-based
-    return dcg
-
-
-def _ndcg_at_k(ranked: list[str], relevant: set[str], k: int) -> float:
-    """Normalized DCG at k."""
-    dcg = _dcg_at_k(ranked, relevant, k)
-    # Ideal DCG: all relevant items at the top
-    ideal_count = min(k, len(relevant))
-    idcg = sum(1.0 / math.log2(i + 2) for i in range(ideal_count))
-    if idcg == 0.0:
-        return 0.0
-    return dcg / idcg
 
 
 def collect_false_positives(ranked_domains: list[str], not_owned: set[str]) -> list[str]:
