@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import os
-from datetime import UTC, datetime
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -14,7 +13,8 @@ if TYPE_CHECKING:
 from fastapi.testclient import TestClient
 
 from domain_scout.api import ScanRequest, create_app, get_app
-from domain_scout.models import EntityInput, RunMetadata, ScoutResult
+from domain_scout.models import EntityInput
+from domain_scout.tests.conftest import mock_result as _mock_result
 
 
 @pytest.fixture
@@ -22,20 +22,6 @@ def client() -> TestClient:
     """Create a test client with no cache."""
     app = create_app(cache=None, max_concurrent=2)
     return TestClient(app)
-
-
-def _mock_result() -> ScoutResult:
-    """Build a minimal ScoutResult for mocking discover_async."""
-    return ScoutResult(
-        entity=EntityInput(company_name="TestCorp", seed_domain=["test.com"]),
-        domains=[],
-        run_metadata=RunMetadata(
-            tool_version="0.3.0",
-            timestamp=datetime.now(UTC),
-            elapsed_seconds=1.0,
-            domains_found=0,
-        ),
-    )
 
 
 @pytest.fixture

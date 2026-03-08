@@ -43,6 +43,7 @@ from domain_scout.sources.dns_utils import DNSChecker
 from domain_scout.sources.rdap import RDAPLookup
 
 log = structlog.get_logger()
+_TOOL_VERSION = _pkg_version("domain-scout-ct")
 
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
@@ -305,6 +306,7 @@ class Scout:
         seed_assessments: dict[str, str] = {}
         seed_org_names: dict[str, str | None] = {}
         seed_cross_verification: dict[str, list[str]] = {}
+        seed_ct_records: dict[str, list[dict[str, Any]]] = {}
 
         independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
@@ -366,6 +368,8 @@ class Scout:
                         seed_org_names[sd] = result["org_name"]
                         if result.get("co_hosted_seeds"):
                             seed_cross_verification[sd] = result["co_hosted_seeds"]
+                        if result.get("ct_records"):
+                            seed_ct_records[sd] = result["ct_records"]
                         log.info(
                             "scout.seed_validated",
                             seed=sd,
@@ -391,6 +395,8 @@ class Scout:
                             seed_org_names.setdefault(sd, r["org_name"])
                             if r.get("co_hosted_seeds"):
                                 seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
+                            if r.get("ct_records"):
+                                seed_ct_records.setdefault(sd, r["ct_records"])
 
         # Phase 2: Seed-dependent strategies (B + optional second org search)
         dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
@@ -411,11 +417,16 @@ class Scout:
                     )
                 )
 
-        # Strategy B per seed (parallel) — tagged with seed name
+        # Strategy B per seed (parallel) — reuses CT records from seed validation
         for sd in seeds:
             dependent_tasks.append(
                 asyncio.create_task(
-                    self._strategy_seed_expansion(sd, entity.company_name, errors),
+                    self._strategy_seed_expansion(
+                        sd,
+                        entity.company_name,
+                        errors,
+                        ct_records=seed_ct_records.get(sd),
+                    ),
                     name=f"seed_expansion:{sd}",
                 )
             )
@@ -542,7 +553,7 @@ class Scout:
         observe(DOMAINS_FOUND, float(len(domains)))
 
         run_meta = RunMetadata(
-            tool_version=_pkg_version("domain-scout-ct"),
+            tool_version=_TOOL_VERSION,
             timestamp=datetime.now(UTC),
             elapsed_seconds=round(elapsed, 2),
             domains_found=len(domains),
@@ -569,7 +580,7 @@ class Scout:
         errors: list[str],
         seed_to_base: dict[str, str | None] | None = None,
     ) -> dict[str, Any]:
-        """Returns dict with assessment, org_name, and co_hosted_seeds."""
+        """Returns dict with assessment, org_name, co_hosted_seeds, and ct_records."""
         resolves = await self._dns.resolves(seed)
 
         rdap_org: str | None = None
@@ -578,7 +589,7 @@ class Scout:
         except Exception as exc:
             errors.append(f"RDAP lookup failed for {seed}: {exc}")
 
-        # Also check CT for the org name on certs
+        # Also check CT for the org name on certs (shared with seed expansion)
         ct_records = await self._ct.search_by_domain(seed)
         cert_orgs: set[str] = set()
 
@@ -640,6 +651,7 @@ class Scout:
             "assessment": assessment,
             "org_name": best_org,
             "co_hosted_seeds": co_hosted_seeds,
+            "ct_records": ct_records,
         }
 
     # --- Step 2A: Organization name search ---
@@ -713,15 +725,22 @@ class Scout:
     # --- Step 2B: Seed domain expansion ---
 
     async def _strategy_seed_expansion(
-        self, seed_domain: str, company_name: str, errors: list[str]
+        self,
+        seed_domain: str,
+        company_name: str,
+        errors: list[str],
+        ct_records: list[dict[str, Any]] | None = None,
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
-        try:
-            records = await self._ct.search_by_domain(seed_domain)
-        except Exception as exc:
-            inc(SOURCE_ERRORS_TOTAL, source="ct")
-            errors.append(f"CT seed expansion failed: {exc}")
-            return results
+        if ct_records is not None:
+            records = ct_records
+        else:
+            try:
+                records = await self._ct.search_by_domain(seed_domain)
+            except Exception as exc:
+                inc(SOURCE_ERRORS_TOTAL, source="ct")
+                errors.append(f"CT seed expansion failed: {exc}")
+                return results
 
         seed_base = extract_base_domain(seed_domain)
 
@@ -750,9 +769,7 @@ class Scout:
                 accum = _DomainAccum()
 
                 # Is this a SAN on a cert that also covers the seed domain?
-                has_seed_san = any(
-                    extract_base_domain(s) == seed_base for s in sans if is_valid_domain(s)
-                )
+                has_seed_san = seed_base in unique_bases
 
                 if base == seed_base:
                     accum.sources.add(f"ct_seed_subdomain:{seed_domain}")

@@ -23,14 +23,14 @@ class TestDNSChecker:
 
     @pytest.mark.asyncio
     async def test_resolves_success(self, checker: DNSChecker) -> None:
-        """resolves() should return True if A or AAAA records exist."""
-        with patch.object(checker._resolver, "resolve", new_callable=AsyncMock):
+        """resolves() should return True if get_ips returns results."""
+        with patch.object(checker, "get_ips", return_value=["1.2.3.4"]):
             assert await checker.resolves("example.com") is True
 
     @pytest.mark.asyncio
     async def test_resolves_failure(self, checker: DNSChecker) -> None:
-        """resolves() should return False if no records found."""
-        with patch.object(checker._resolver, "resolve", side_effect=dns.exception.DNSException):
+        """resolves() should return False if get_ips returns empty."""
+        with patch.object(checker, "get_ips", return_value=[]):
             assert await checker.resolves("example.com") is False
 
     @pytest.mark.asyncio
