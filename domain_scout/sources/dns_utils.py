@@ -26,6 +26,8 @@ class DNSChecker:
         self._resolver = dns.asyncresolver.Resolver()
         self._resolver.nameservers = config.dns_nameservers
         self._resolver.lifetime = config.dns_timeout
+        self._ns_cache: dict[str, asyncio.Task[tuple[str, ...]]] = {}
+        self._ips_cache: dict[str, asyncio.Task[tuple[str, ...]]] = {}
 
     async def resolves(self, domain: str) -> bool:
         """Check whether a domain resolves to any A or AAAA record."""
@@ -38,8 +40,7 @@ class DNSChecker:
         log.debug("dns.no_resolution", domain=domain)
         return False
 
-    async def get_ips(self, domain: str) -> list[str]:
-        """Return all A/AAAA addresses for a domain."""
+    async def _get_ips_uncached(self, domain: str) -> tuple[str, ...]:
         ips: list[str] = []
         for rdtype in (dns.rdatatype.A, dns.rdatatype.AAAA):
             try:
@@ -47,15 +48,28 @@ class DNSChecker:
                 ips.extend(rr.to_text() for rr in answer)
             except (dns.exception.DNSException, ValueError):
                 continue
-        return ips
+        return tuple(ips)
+
+    async def get_ips(self, domain: str) -> list[str]:
+        """Return all A/AAAA addresses for a domain."""
+        if domain not in self._ips_cache:
+            self._ips_cache[domain] = asyncio.create_task(self._get_ips_uncached(domain))
+        return list(await self._ips_cache[domain])
+
+    async def _get_nameservers_uncached(self, domain: str) -> tuple[str, ...]:
+        try:
+            answer = await self._resolver.resolve(domain, dns.rdatatype.NS)
+            return tuple(sorted(rr.to_text().rstrip(".").lower() for rr in answer))
+        except (dns.exception.DNSException, ValueError):
+            return ()
 
     async def get_nameservers(self, domain: str) -> list[str]:
         """Return NS records for a domain."""
-        try:
-            answer = await self._resolver.resolve(domain, dns.rdatatype.NS)
-            return sorted(rr.to_text().rstrip(".").lower() for rr in answer)
-        except (dns.exception.DNSException, ValueError):
-            return []
+        if domain not in self._ns_cache:
+            self._ns_cache[domain] = asyncio.create_task(
+                self._get_nameservers_uncached(domain)
+            )
+        return list(await self._ns_cache[domain])
 
     async def shares_infrastructure(self, domain_a: str, domain_b: str) -> bool:
         """Check if two domains share nameservers or IP ranges."""
