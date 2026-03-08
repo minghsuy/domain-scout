@@ -703,86 +703,98 @@ class Scout:
         seed_base = extract_base_domain(seed_domain)
 
         for rec in records:
-            sans = _extract_sans(rec)
-            cn = rec.get("common_name", "")
-            cert_org = rec.get("org_name")
-            all_names = _collect_cert_names(sans, cn)
-
-            # Detect CDN/multi-tenant certs: many unrelated base domains + org mismatch
-            unique_bases = {extract_base_domain(s) for s in sans if is_valid_domain(s)} - {None}
-            org_sim = (
-                org_name_similarity(cert_org, company_name)
-                if isinstance(cert_org, str) and cert_org
-                else 0.0
+            results.extend(
+                self._process_seed_expansion_record(rec, seed_domain, seed_base, company_name)
             )
-            is_cdn_cert = len(unique_bases) > 10 and org_sim < self.config.org_match_threshold
 
-            for name in all_names:
-                if not is_valid_domain(name):
+        return results
+
+    def _process_seed_expansion_record(
+        self,
+        rec: dict[str, Any],
+        seed_domain: str,
+        seed_base: str | None,
+        company_name: str,
+    ) -> list[tuple[str, _DomainAccum]]:
+        results: list[tuple[str, _DomainAccum]] = []
+        sans = _extract_sans(rec)
+        cn = rec.get("common_name", "")
+        cert_org = rec.get("org_name")
+        all_names = _collect_cert_names(sans, cn)
+
+        # Detect CDN/multi-tenant certs: many unrelated base domains + org mismatch
+        unique_bases = {extract_base_domain(s) for s in sans if is_valid_domain(s)} - {None}
+        org_sim = (
+            org_name_similarity(cert_org, company_name)
+            if isinstance(cert_org, str) and cert_org
+            else 0.0
+        )
+        is_cdn_cert = len(unique_bases) > 10 and org_sim < self.config.org_match_threshold
+
+        # Is this a SAN on a cert that also covers the seed domain?
+        has_seed_san = any(extract_base_domain(s) == seed_base for s in sans if is_valid_domain(s))
+
+        for name in all_names:
+            if not is_valid_domain(name):
+                continue
+            base = extract_base_domain(name)
+            if not base:
+                continue
+
+            accum = _DomainAccum()
+
+            if base == seed_base:
+                accum.sources.add(f"ct_seed_subdomain:{seed_domain}")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="ct_seed_subdomain",
+                        description=f"Subdomain of seed domain {seed_domain}",
+                        seed_domain=seed_domain,
+                    )
+                )
+            elif has_seed_san:
+                # Skip non-seed SANs on CDN certs — Strategy A handles org-matched domains
+                if is_cdn_cert:
                     continue
-                base = extract_base_domain(name)
-                if not base:
-                    continue
-
-                accum = _DomainAccum()
-
-                # Is this a SAN on a cert that also covers the seed domain?
-                has_seed_san = any(
-                    extract_base_domain(s) == seed_base for s in sans if is_valid_domain(s)
+                accum.sources.add(f"ct_san_expansion:{seed_domain}")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="ct_san_expansion",
+                        description=f"Found on same cert as seed domain {seed_domain}",
+                        seed_domain=seed_domain,
+                    )
+                )
+            else:
+                accum.sources.add(f"ct_seed_related:{seed_domain}")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="ct_seed_related",
+                        description=f"Found in CT search for {seed_domain}",
+                        seed_domain=seed_domain,
+                    )
                 )
 
-                if base == seed_base:
-                    accum.sources.add(f"ct_seed_subdomain:{seed_domain}")
+            if isinstance(cert_org, str) and cert_org:
+                accum.cert_org_names.add(cert_org)
+                sim = org_name_similarity(cert_org, company_name)
+                if sim >= self.config.org_match_threshold:
+                    accum.sources.add("ct_org_match")
+                    desc = f"Cert org '{cert_org}' matches target (score={sim:.2f})"
                     accum.evidence.append(
                         EvidenceRecord(
-                            source_type="ct_seed_subdomain",
-                            description=f"Subdomain of seed domain {seed_domain}",
-                            seed_domain=seed_domain,
-                        )
-                    )
-                elif has_seed_san:
-                    # Skip non-seed SANs on CDN certs — Strategy A handles org-matched domains
-                    if is_cdn_cert:
-                        continue
-                    accum.sources.add(f"ct_san_expansion:{seed_domain}")
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="ct_san_expansion",
-                            description=f"Found on same cert as seed domain {seed_domain}",
-                            seed_domain=seed_domain,
-                        )
-                    )
-                else:
-                    accum.sources.add(f"ct_seed_related:{seed_domain}")
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="ct_seed_related",
-                            description=f"Found in CT search for {seed_domain}",
-                            seed_domain=seed_domain,
+                            source_type="ct_org_match",
+                            description=desc,
+                            cert_id=_int_or_none(rec.get("cert_id")),
+                            cert_org=cert_org,
+                            similarity_score=round(sim, 4),
                         )
                     )
 
-                if isinstance(cert_org, str) and cert_org:
-                    accum.cert_org_names.add(cert_org)
-                    sim = org_name_similarity(cert_org, company_name)
-                    if sim >= self.config.org_match_threshold:
-                        accum.sources.add("ct_org_match")
-                        desc = f"Cert org '{cert_org}' matches target (score={sim:.2f})"
-                        accum.evidence.append(
-                            EvidenceRecord(
-                                source_type="ct_org_match",
-                                description=desc,
-                                cert_id=_int_or_none(rec.get("cert_id")),
-                                cert_org=cert_org,
-                                similarity_score=round(sim, 4),
-                            )
-                        )
-
-                nb = rec.get("not_before")
-                na = rec.get("not_after")
-                if nb:
-                    accum.update_times(nb, na)
-                results.append((base, accum))
+            nb = rec.get("not_before")
+            na = rec.get("not_after")
+            if nb:
+                accum.update_times(nb, na)
+            results.append((base, accum))
 
         return results
 
