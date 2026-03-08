@@ -985,6 +985,30 @@ class Scout:
 
     # --- RDAP corroboration ---
 
+    async def _check_rdap_candidate(
+        self, domain: str, accum: _DomainAccum, company_name: str
+    ) -> None:
+        try:
+            rdap_org = await self._rdap.get_registrant_org(domain)
+            if not rdap_org:
+                return
+            sim = org_name_similarity(rdap_org, company_name)
+            if sim < self.config.org_match_threshold:
+                return
+
+            accum.sources.add("rdap_registrant_match")
+            accum.rdap_org = rdap_org
+            accum.evidence.append(
+                EvidenceRecord(
+                    source_type="rdap_registrant_match",
+                    description=f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})",
+                    rdap_org=rdap_org,
+                    similarity_score=round(sim, 4),
+                )
+            )
+        except Exception as exc:
+            log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
+
     async def _rdap_corroborate(
         self, domain_evidence: dict[str, _DomainAccum], company_name: str
     ) -> None:
@@ -1002,31 +1026,11 @@ class Scout:
         if not candidates:
             return
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
-            try:
-                rdap_org = await self._rdap.get_registrant_org(domain)
-                if not rdap_org:
-                    return
-                sim = org_name_similarity(rdap_org, company_name)
-                if sim >= self.config.org_match_threshold:
-                    accum.sources.add("rdap_registrant_match")
-                    accum.rdap_org = rdap_org
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="rdap_registrant_match",
-                            description=(
-                                f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
-                            ),
-                            rdap_org=rdap_org,
-                            similarity_score=round(sim, 4),
-                        )
-                    )
-            except Exception as exc:
-                log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
-
         try:
             await asyncio.wait_for(
-                asyncio.gather(*[_check(d, a) for d, a in candidates]),
+                asyncio.gather(
+                    *[self._check_rdap_candidate(d, a, company_name) for d, a in candidates]
+                ),
                 timeout=15.0,
             )
         except TimeoutError:
