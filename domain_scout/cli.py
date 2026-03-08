@@ -134,6 +134,9 @@ def serve(  # noqa: PLR0913
     no_cache: Annotated[bool, typer.Option("--no-cache", help="Disable query cache")] = False,
     cache_dir: Annotated[str | None, typer.Option("--cache-dir", help="Cache directory")] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Debug logging")] = False,
+    api_key: Annotated[
+        str | None, typer.Option("--api-key", help="API Key for authentication")
+    ] = None,
 ) -> None:
     """Start the REST API server."""
     import os
@@ -157,6 +160,8 @@ def serve(  # noqa: PLR0913
         os.environ["DOMAIN_SCOUT_CACHE"] = "false"
     if cache_dir:
         os.environ["DOMAIN_SCOUT_CACHE_DIR"] = cache_dir
+    if api_key:
+        os.environ["DOMAIN_SCOUT_API_KEY"] = api_key
 
     uvicorn.run(
         "domain_scout.api:get_app",
