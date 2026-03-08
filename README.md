@@ -2,8 +2,11 @@
 
 [![CI](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml/badge.svg)](https://github.com/minghsuy/domain-scout/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/domain-scout-ct)](https://pypi.org/project/domain-scout-ct/)
+[![Docs](https://img.shields.io/badge/docs-GitHub%20Pages-blue)](https://minghsuy.github.io/domain-scout)
 
 Discover internet domains associated with a business entity using Certificate Transparency logs, RDAP, and DNS.
+
+**[Documentation](https://minghsuy.github.io/domain-scout)** | **[PyPI](https://pypi.org/project/domain-scout-ct/)** | **[Changelog](CHANGELOG.md)**
 
 Useful for security teams, asset inventories, and M&A due diligence — where seed domains can be wrong, misspelled, or belong to a parent company.
 
@@ -28,7 +31,7 @@ uv sync --all-groups --all-extras
 
 ```bash
 # Basic usage
-domain-scout --name "Guidewire Software" --location "San Mateo, CA"
+domain-scout --name "Cloudflare" --location "San Francisco, CA"
 
 # With seed domain
 domain-scout --name "Palo Alto Networks" --location "Santa Clara, CA" --seed "paloaltonetworks.com"

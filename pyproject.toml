@@ -36,6 +36,7 @@ eval = ["pyyaml>=6.0"]
 all = ["domain-scout-ct[api,cache,metrics,eval]"]
 
 [project.urls]
+Documentation = "https://minghsuy.github.io/domain-scout"
 Repository = "https://github.com/minghsuy/domain-scout"
 Changelog = "https://github.com/minghsuy/domain-scout/blob/main/CHANGELOG.md"
 Issues = "https://github.com/minghsuy/domain-scout/issues"

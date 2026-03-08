@@ -20,3 +20,4 @@ tasks/
 *.duckdb
 *.duckdb.wal
 .playwright-mcp/
+site/
