@@ -18,7 +18,7 @@ log = structlog.get_logger()
 
 def _fingerprint_to_cert_id(fp: str) -> int:
     """Deterministic cert_id from fingerprint hash."""
-    return int(hashlib.md5(fp.encode()).hexdigest()[:8], 16)  # noqa: S324
+    return int(hashlib.sha256(fp.encode()).hexdigest()[:12], 16)
 
 
 def _row_to_record(row: tuple[object, ...], columns: list[str]) -> dict[str, object]:
