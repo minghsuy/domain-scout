@@ -5,15 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [0.7.0] - 2026-03-07
 
 ### Added
 - **Learned scorer** — 11-feature logistic regression model with isotonic calibration (GZ AUC 0.9992, 0 FN), replaces heuristic scoring when model file present (#36)
 - **RDAP skip-TLDs** — skip RDAP lookups for 35 ccTLDs not in IANA bootstrap registry, eliminating noisy 404 logs (#37)
+- **DuckDB local CT source** — `LocalParquetSource` and `HybridCTSource` for CT warehouse files (#38)
+- **API key authentication** — `X-API-Key` header support for sensitive endpoints (`/scan`, `/diff`, `/cache/*`) (#58)
+- **CONVENTIONS.md** — guardrails for automated tooling (Jules, Copilot) (#69)
+- **Invariant tests** — CI gate tests to prevent regressions from automated PRs (#70)
+- **Claude Code review** — GitHub Action for AI-assisted PR review (#71)
 - `docs/rdap-cctld-support.md` — documents ccTLD RDAP landscape and maintenance schedule
+- Unit tests for `_extract_sans` helper (#39), seed expansion error handling (#53)
+- Shared test fixture `conftest.py` with `mock_result()` factory (#73)
 
 ### Changed
+- Seed validation reuses CT records for expansion, eliminating duplicate crt.sh queries (#73)
+- `resolves()` delegates to cached `get_ips()`, eliminating redundant DNS queries per seed (#73)
+- DNS infrastructure check caches nameserver and IP lookups (#67)
+- Seed validation pre-calculates base domains for O(1) lookup (#43)
+- `_check` functions in `scout.py` refactored to use early returns (#50)
+- `_strategy_org_search` refactored to reduce nesting (#68)
 - RDAP architecture note in CLAUDE.md updated to reference skip-TLDs and quarterly review cadence
+
+### Fixed
+- **Path traversal vulnerability** in `warehouse_path` API parameter (#60)
+- Unbounded list size in `seed_domain` input (#46)
+
+### Removed
+- Unused `CertRecord` model (#42)
 
 ## [0.6.0] - 2026-02-25
 

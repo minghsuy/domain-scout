@@ -48,23 +48,27 @@ domain_scout/
 ├── matching/
 │   └── entity_match.py # Org-name similarity scoring (rapidfuzz, acronyms, brand aliases)
 └── tests/
-    ├── test_ct.py
-    ├── test_matching.py
-    ├── test_multi_seed.py
-    ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
+    ├── conftest.py          # Shared test fixtures (mock_result factory)
     ├── test_acceptance.py   # Walmart fixture tests with source-level mocks
-    ├── test_delta.py        # delta reporting, CLI diff, API /diff
     ├── test_api.py          # REST API endpoint tests
     ├── test_cache.py        # DuckDB cache tests
-    ├── test_metrics.py      # Prometheus metrics tests
     ├── test_cli.py          # CLI command tests (scout, serve, diff, cache)
-    ├── test_dns_utils.py    # DNS checker unit tests
-    ├── test_rdap.py         # RDAP lookup parsing tests
     ├── test_config.py       # ScoutConfig validation and profiles
+    ├── test_ct.py
+    ├── test_delta.py        # delta reporting, CLI diff, API /diff
+    ├── test_dns_utils.py    # DNS checker unit tests
     ├── test_eval.py         # Evaluation harness unit tests
-    ├── test_subsidiary.py   # Subsidiary-aware CT search (EDGAR Exhibit 21)
+    ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
+    ├── test_integration.py  # marked "integration", deselected by default
+    ├── test_invariants.py   # CI gate invariants for automated PRs
     ├── test_local_parquet.py # LocalParquetSource + HybridCTSource tests
-    └── test_integration.py  # marked "integration", deselected by default
+    ├── test_matching.py
+    ├── test_metrics.py      # Prometheus metrics tests
+    ├── test_models.py       # Pydantic model validation tests
+    ├── test_multi_seed.py
+    ├── test_rdap.py         # RDAP lookup parsing tests
+    ├── test_scout_internals.py # _extract_sans helper tests
+    └── test_subsidiary.py   # Subsidiary-aware CT search (EDGAR Exhibit 21)
 ```
 
 ## Architecture Notes
@@ -94,6 +98,6 @@ domain_scout/
 
 ## Testing
 
-- **438 unit tests** + 4 integration tests (deselected by default)
+- **492 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
