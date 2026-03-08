@@ -1131,10 +1131,9 @@ def _normalize_time(val: object) -> str | None:
     if isinstance(val, str):
         if not val:
             return None
-        try:
-            return datetime.fromisoformat(val).isoformat()
-        except ValueError:
-            return val
+        if len(val) >= 11 and val[10] == " " and val[4] == "-" and val[7] == "-":
+            return val.replace(" ", "T", 1)
+        return val
     return str(val)
 
 
