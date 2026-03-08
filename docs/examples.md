@@ -30,7 +30,7 @@ All discovered through Certificate Transparency SAN co-occurrence + organization
 
 ## Generali
 
-An Italian multinational insurance company operating across Europe, Middle East, and Asia.
+An Italian multinational financial services company operating across Europe, Middle East, and Asia.
 
 ```bash
 domain-scout --name "Generali" --seed "generali.it"
@@ -47,7 +47,7 @@ domain-scout --name "Generali" --seed "generali.it"
 | `generali.ch` | 0.90 | Switzerland |
 | `generali.hu` | 0.90 | Hungary |
 | `generali.sk` | 0.90 | Slovakia |
-| `genertel.it` | 0.95 | Italy (direct insurance brand) |
+| `genertel.it` | 0.95 | Italy (direct brand) |
 | `cattolica.it` | 0.95 | Italy (acquired company) |
 | `alleanza.it` | 0.95 | Italy (subsidiary) |
 | `futuregenerali.in` | 0.90 | India (joint venture) |

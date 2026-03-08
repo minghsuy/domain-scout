@@ -30,7 +30,7 @@ def _get_model() -> dict[str, Any]:
 
 
 # ---------------------------------------------------------------------------
-# Feature helpers (mirrored from ct-entity-resolution build_training_data.py)
+# Feature helpers (mirrored from training pipeline build_training_data.py)
 # ---------------------------------------------------------------------------
 
 _COMPANY_SUFFIX_SKIP = frozenset(

@@ -1,4 +1,4 @@
-"""Tests for subsidiary-aware CT search (EDGAR Exhibit 21 integration)."""
+"""Tests for subsidiary-aware CT search."""
 
 from __future__ import annotations
 

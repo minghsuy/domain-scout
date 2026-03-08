@@ -47,7 +47,7 @@ _TOOL_VERSION = _pkg_version("domain-scout-ct")
 
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
-    """Load parent→subsidiary mappings from an EDGAR Exhibit 21 CSV.
+    """Load parent→subsidiary mappings from a corporate subsidiaries CSV.
 
     Returns a dict keyed by normalized parent_name → list of filtered subsidiary
     names (distinct brands only, ranked by brand distinctness).
@@ -230,7 +230,7 @@ class Scout:
                 log.warning("scout.subsidiaries_load_failed", exc_info=True)
 
     def _match_subsidiaries(self, company_name: str) -> list[str]:
-        """Find subsidiary names for a company using the loaded EDGAR map."""
+        """Find subsidiary names for a company using the loaded subsidiary map."""
         normalized = normalize_org_name(company_name)
         # Exact match first
         if normalized in self._subsidiaries:
@@ -326,7 +326,7 @@ class Scout:
             )
         )
 
-        # Strategy D: subsidiary expansion (if EDGAR data loaded)
+        # Strategy D: subsidiary expansion (if subsidiary data loaded)
         if self._subsidiaries:
             sub_names = self._match_subsidiaries(entity.company_name)
             for sub_name in sub_names[: self.config.subsidiary_max_queries]:

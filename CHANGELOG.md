@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.6.0] - 2026-02-25
 
 ### Added
-- **Subsidiary-aware CT search** — discovers domains for EDGAR Exhibit 21 subsidiaries, ranked by brand distinctness scoring
+- **Subsidiary-aware CT search** — discovers domains for corporate subsidiaries, ranked by brand distinctness scoring
 - Expanded eval ground truth from 22 to 399 entities
 - Adaptive k denominator in eval precision (precision@k uses min(k, owned_domains) as denominator)
 
@@ -47,7 +47,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - `normalize_org_name` was stripping "Inc" from inside words (e.g., "Incyte" → "yte")
-- Subsidiary filter hardened against real EDGAR data edge cases
+- Subsidiary filter hardened against real-world data edge cases
 - Precedence bug in subsidiary ranking, defensive copy for input mutation, test gaps
 
 ## [0.5.0] - 2026-02-20

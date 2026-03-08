@@ -68,7 +68,7 @@ domain_scout/
     ├── test_multi_seed.py
     ├── test_rdap.py         # RDAP lookup parsing tests
     ├── test_scout_internals.py # _extract_sans helper tests
-    └── test_subsidiary.py   # Subsidiary-aware CT search (EDGAR Exhibit 21)
+    └── test_subsidiary.py   # Subsidiary-aware CT search
 ```
 
 ## Architecture Notes
@@ -90,7 +90,7 @@ domain_scout/
 
 ## Conventions
 
-- No insurance/underwriting language in public-facing files (README, commits, PR descriptions)
+- No domain-specific use-case language in public-facing files (README, commits, PR descriptions)
 - SPEC.md is gitignored (contains internal context)
 - Security reports (*-threat-model.md, *_report.md) are gitignored
 - License: MIT

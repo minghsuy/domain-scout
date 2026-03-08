@@ -63,7 +63,7 @@ def scout(  # noqa: PLR0913
     ] = None,
     subsidiaries_path: Annotated[
         str | None,
-        typer.Option("--subsidiaries-path", help="Path to EDGAR subsidiaries CSV"),
+        typer.Option("--subsidiaries-path", help="Path to subsidiaries CSV"),
     ] = None,
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:

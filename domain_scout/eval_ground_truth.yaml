@@ -4,7 +4,7 @@
 # "not_owned" means the domain appeared in results but is a false positive (CDN, shared cert, etc.).
 # Domains not in either list are treated as "unknown" — conservative precision counts them against.
 #
-# Sources: CT log cert_events data (ct-entity-resolution, 2026-02-19/20, ~1.7M rows),
+# Sources: CT log certificate data (~1.7M rows),
 # cross-referenced with public corporate subsidiary records and WHOIS/RDAP.
 #
 # Auto-labeled entries added 2026-02-24 (min_confidence=0.85, min_domains=2)

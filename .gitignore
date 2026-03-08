@@ -15,3 +15,8 @@ SPEC.md
 baselines/
 .hypothesis/
 jules-workflow-guide.md
+scripts/
+tasks/
+*.duckdb
+*.duckdb.wal
+.playwright-mcp/
