@@ -338,11 +338,14 @@ class Scout:
                     )
                 )
 
+        # Pre-calculate base domains for all seeds once
+        seed_to_base = {s: extract_base_domain(s) for s in seeds}
+
         # Parallel seed validation for all seeds
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
         for sd in seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, entity.company_name, seeds, errors),
+                self._validate_seed(sd, entity.company_name, seeds, errors, seed_to_base),
                 name=f"seed_validation:{sd}",
             )
 
@@ -558,7 +561,12 @@ class Scout:
     # --- Step 1: Seed validation ---
 
     async def _validate_seed(
-        self, seed: str, company_name: str, all_seeds: list[str], errors: list[str]
+        self,
+        seed: str,
+        company_name: str,
+        all_seeds: list[str],
+        errors: list[str],
+        seed_to_base: dict[str, str | None] | None = None,
     ) -> dict[str, Any]:
         """Returns dict with assessment, org_name, and co_hosted_seeds."""
         resolves = await self._dns.resolves(seed)
@@ -572,14 +580,16 @@ class Scout:
         # Also check CT for the org name on certs
         ct_records = await self._ct.search_by_domain(seed)
         cert_orgs: set[str] = set()
+
         # Build reverse lookup: base domain -> original seed domain (excluding current seed)
+        if seed_to_base is None:
+            seed_to_base = {s: extract_base_domain(s) for s in all_seeds}
+
+        base_to_seed = {
+            base: s for s, base in seed_to_base.items() if s != seed and base is not None
+        }
+
         co_hosted_seeds: list[str] = []
-        base_to_seed: dict[str, str] = {}
-        for s in all_seeds:
-            if s != seed:
-                base = extract_base_domain(s)
-                if base:
-                    base_to_seed[base] = s
 
         for rec in ct_records:
             org = rec.get("org_name")
@@ -633,6 +643,53 @@ class Scout:
 
     # --- Step 2A: Organization name search ---
 
+    def _process_org_record(
+        self,
+        rec: dict[str, Any],
+        org_name: str,
+        source_tag: str,
+    ) -> list[tuple[str, _DomainAccum]]:
+        results: list[tuple[str, _DomainAccum]] = []
+        cert_org = rec.get("org_name")
+        if not isinstance(cert_org, str) or not cert_org:
+            return results
+
+        # Only keep certs where the org matches our target
+        similarity = org_name_similarity(cert_org, org_name)
+        if similarity < self.config.org_match_threshold:
+            return results
+
+        sans = _extract_sans(rec)
+        cn = rec.get("common_name", "")
+        all_names = _collect_cert_names(sans, cn)
+
+        for name in all_names:
+            if not is_valid_domain(name):
+                continue
+            base = extract_base_domain(name)
+            if not base:
+                continue
+            accum = _DomainAccum()
+            accum.sources.add(source_tag)
+            desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+            accum.evidence.append(
+                EvidenceRecord(
+                    source_type=source_tag,
+                    description=desc,
+                    cert_id=_int_or_none(rec.get("cert_id")),
+                    cert_org=cert_org,
+                    similarity_score=round(similarity, 4),
+                )
+            )
+            accum.cert_org_names.add(cert_org)
+            nb = rec.get("not_before")
+            na = rec.get("not_after")
+            if nb:
+                accum.update_times(nb, na)
+            results.append((base, accum))
+
+        return results
+
     async def _strategy_org_search(
         self,
         org_name: str,
@@ -648,42 +705,7 @@ class Scout:
             return results
 
         for rec in records:
-            cert_org = rec.get("org_name")
-            if not isinstance(cert_org, str) or not cert_org:
-                continue
-            # Only keep certs where the org matches our target
-            similarity = org_name_similarity(cert_org, org_name)
-            if similarity < self.config.org_match_threshold:
-                continue
-
-            sans = _extract_sans(rec)
-            cn = rec.get("common_name", "")
-            all_names = _collect_cert_names(sans, cn)
-
-            for name in all_names:
-                if not is_valid_domain(name):
-                    continue
-                base = extract_base_domain(name)
-                if not base:
-                    continue
-                accum = _DomainAccum()
-                accum.sources.add(source_tag)
-                desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
-                accum.evidence.append(
-                    EvidenceRecord(
-                        source_type=source_tag,
-                        description=desc,
-                        cert_id=_int_or_none(rec.get("cert_id")),
-                        cert_org=cert_org,
-                        similarity_score=round(similarity, 4),
-                    )
-                )
-                accum.cert_org_names.add(cert_org)
-                nb = rec.get("not_before")
-                na = rec.get("not_after")
-                if nb:
-                    accum.update_times(nb, na)
-                results.append((base, accum))
+            results.extend(self._process_org_record(rec, org_name, source_tag))
 
         return results
 
@@ -960,18 +982,20 @@ class Scout:
         async def _check(domain: str, accum: _DomainAccum) -> None:
             try:
                 shared = await self._dns.shares_infrastructure(reference, domain)
-                if shared:
-                    accum.sources.add("shared_infra")
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="shared_infra",
-                            description=f"Shares infrastructure with {reference}",
-                        )
+                if not shared:
+                    return
+
+                accum.sources.add("shared_infra")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="shared_infra",
+                        description=f"Shares infrastructure with {reference}",
                     )
-                    # Cap so infra boost can't exceed the +0.10 total boost limit.
-                    # Only cross_seed_verified (0.90 base) should reach 1.00.
-                    max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
-                    accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
+                )
+                # Cap so infra boost can't exceed the +0.10 total boost limit.
+                # Only cross_seed_verified (0.90 base) should reach 1.00.
+                max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
+                accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
             except Exception:
                 pass
 
@@ -1008,19 +1032,21 @@ class Scout:
                 if not rdap_org:
                     return
                 sim = org_name_similarity(rdap_org, company_name)
-                if sim >= self.config.org_match_threshold:
-                    accum.sources.add("rdap_registrant_match")
-                    accum.rdap_org = rdap_org
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="rdap_registrant_match",
-                            description=(
-                                f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
-                            ),
-                            rdap_org=rdap_org,
-                            similarity_score=round(sim, 4),
-                        )
+                if sim < self.config.org_match_threshold:
+                    return
+
+                accum.sources.add("rdap_registrant_match")
+                accum.rdap_org = rdap_org
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="rdap_registrant_match",
+                        description=(
+                            f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
+                        ),
+                        rdap_org=rdap_org,
+                        similarity_score=round(sim, 4),
                     )
+                )
             except Exception as exc:
                 log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
 

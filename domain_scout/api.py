@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import os
+import secrets
 import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
@@ -14,7 +15,8 @@ if TYPE_CHECKING:
 
 import httpx
 import structlog
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import Depends, FastAPI, HTTPException, Response, Security
+from fastapi.security import APIKeyHeader
 from pydantic import BaseModel, Field
 
 from domain_scout._metrics import CONTENT_TYPE_LATEST, generate_latest
@@ -66,6 +68,7 @@ def create_app(
     *,
     cache: DuckDBCache | None = None,
     max_concurrent: int = 3,
+    api_key: str | None = None,
 ) -> FastAPI:
     """Create and configure the FastAPI application."""
 
@@ -87,6 +90,19 @@ def create_app(
     app.state.semaphore = asyncio.Semaphore(max_concurrent)
     app.state.ready_cache = {}
     app.state.ready_cache_ts = 0.0
+    app.state.api_key = api_key
+
+    api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
+
+    def verify_api_key(
+        api_key_header: str | None = Security(api_key_header),
+    ) -> None:
+        if app.state.api_key is None:
+            return
+        if not api_key_header:
+            raise HTTPException(status_code=401, detail="API Key required")
+        if not secrets.compare_digest(api_key_header, app.state.api_key):
+            raise HTTPException(status_code=401, detail="Invalid API Key")
 
     @app.get("/health")
     async def health() -> dict[str, str]:
@@ -118,7 +134,7 @@ def create_app(
         app.state.ready_cache_ts = now
         return result
 
-    @app.post("/scan", response_model=ScoutResult)
+    @app.post("/scan", response_model=ScoutResult, dependencies=[Depends(verify_api_key)])
     async def scan(req: ScanRequest) -> ScoutResult:
         """Run a domain discovery scan."""
         overrides: dict[str, Any] = {}
@@ -160,7 +176,7 @@ def create_app(
 
         return result
 
-    @app.get("/cache/stats")
+    @app.get("/cache/stats", dependencies=[Depends(verify_api_key)])
     async def cache_stats() -> dict[str, Any]:
         """Return cache statistics."""
         if app.state.cache is None:
@@ -169,7 +185,7 @@ def create_app(
         stats = await loop.run_in_executor(None, app.state.cache.stats)
         return {"enabled": True, **stats}
 
-    @app.post("/cache/clear")
+    @app.post("/cache/clear", dependencies=[Depends(verify_api_key)])
     async def cache_clear() -> dict[str, str]:
         """Clear all cached entries."""
         if app.state.cache is None:
@@ -180,7 +196,7 @@ def create_app(
 
     # No semaphore needed: compute_delta is pure CPU, no network I/O,
     # sub-millisecond for typical result sizes (<100 domains).
-    @app.post("/diff", response_model=DeltaReport)
+    @app.post("/diff", response_model=DeltaReport, dependencies=[Depends(verify_api_key)])
     async def diff_endpoint(req: DiffRequest) -> DeltaReport:
         """Compute delta between two scan results."""
         return compute_delta(req.baseline, req.current)
@@ -209,4 +225,7 @@ def get_app() -> FastAPI:
 
     cache_dir = os.environ.get("DOMAIN_SCOUT_CACHE_DIR")
     cache = DuckDBCache(cache_dir=cache_dir) if cache_enabled else None
-    return create_app(cache=cache, max_concurrent=max_concurrent)
+
+    api_key = os.environ.get("DOMAIN_SCOUT_API_KEY")
+
+    return create_app(cache=cache, max_concurrent=max_concurrent, api_key=api_key)

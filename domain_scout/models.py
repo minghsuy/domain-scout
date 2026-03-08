@@ -12,7 +12,7 @@ class EntityInput(BaseModel):
 
     company_name: str = Field(min_length=1, max_length=200)
     location: str | None = None
-    seed_domain: list[str] = Field(default_factory=list)
+    seed_domain: list[str] = Field(default_factory=list, max_length=50)
     industry: str | None = None
 
 
@@ -118,16 +118,3 @@ class DeltaReport(BaseModel):
     current_metadata: RunMetadata
 
 
-# --- Intermediate models (not part of public API) ---
-
-
-class CertRecord(BaseModel):
-    """A certificate record from crt.sh."""
-
-    cert_id: int
-    common_name: str
-    subject: str
-    org_name: str | None = None
-    not_before: datetime | None = None
-    not_after: datetime | None = None
-    san_dns_names: list[str] = Field(default_factory=list)
