@@ -91,7 +91,8 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
     """Filter subsidiaries to those likely to have distinct CT certs."""
     parent_words = set(parent_normalized.split())
     seen: set[str] = set()
-    result: list[tuple[str, str]] = []
+    result: list[str] = []
+    norm_cache: dict[str, str] = {}
 
     for sub in subs:
         norm = normalize_org_name(sub)
@@ -114,10 +115,30 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
         # Skip names where all words are <=3 chars (acronym soup like "17A LLC", "RLC LLC")
         if all(len(w) <= 3 for w in sub_words - _SHELL_WORDS):
             continue
-        result.append((sub, norm))
+        norm_cache[sub] = norm
+        result.append(sub)
 
-    result.sort(key=lambda x: _brand_sort_key(x[0], x[1]))
-    return [x[0] for x in result]
+    def _cached_brand_sort_key(name: str) -> tuple[int, int]:
+        """Wrap _brand_sort_key with cached normalize_org_name results."""
+        norm = norm_cache[name]
+        words = norm.split()
+        brand_words = [w for w in words if len(w) >= 4 and w not in _GENERIC_WORDS]
+        has_numbers = bool(re.search(r"\d", name))
+        core = _SUFFIX_RE.sub("", name)
+        core = re.sub(r"[^a-zA-Z]", "", core)
+        is_acronym = bool(core) and core == core.upper() and len(core) <= 8
+        if has_numbers or is_acronym:
+            bucket = 2
+        elif brand_words and len(words) <= 3:
+            bucket = 0
+        elif brand_words:
+            bucket = 1
+        else:
+            bucket = 2
+        return (bucket, len(name))
+
+    result.sort(key=_cached_brand_sort_key)
+    return result
 
 
 # Words too generic to count as "brand" signal in subsidiary names.
@@ -148,7 +169,7 @@ _SUFFIX_RE = re.compile(
 )
 
 
-def _brand_sort_key(name: str, norm: str | None = None) -> tuple[int, int]:
+def _brand_sort_key(name: str) -> tuple[int, int]:
     """Sort key ranking subsidiaries by brand distinctness.
 
     Returns ``(bucket, name_length)`` — lower is better.
@@ -160,8 +181,7 @@ def _brand_sort_key(name: str, norm: str | None = None) -> tuple[int, int]:
     * **Bucket 2** — weak: contains numbers, all-caps acronym, or no real
       brand words.  e.g. "Westin 200, Inc.", "FTNV LLC", "TSQ2, LLC".
     """
-    if norm is None:
-        norm = normalize_org_name(name)
+    norm = normalize_org_name(name)
     words = norm.split()
     brand_words = [w for w in words if len(w) >= 4 and w not in _GENERIC_WORDS]
 
