@@ -147,17 +147,12 @@ def create_app(
         if req.local_mode != "disabled":
             overrides["local_mode"] = req.local_mode
             if req.warehouse_path:
-                base_dir_str = os.environ.get(
-                    "DOMAIN_SCOUT_WAREHOUSE_PATH",
-                    str(Path.home() / ".local" / "share" / "ct-warehouse"),
-                )
-                base_dir = Path(base_dir_str).resolve()
-                target_path = (base_dir / req.warehouse_path).resolve()
-                if not target_path.is_relative_to(base_dir):
+                if ".." in Path(req.warehouse_path).parts:
                     raise HTTPException(
-                        status_code=400, detail="Invalid warehouse_path: path traversal detected"
+                        status_code=400,
+                        detail="Invalid warehouse_path: path traversal detected",
                     )
-                overrides["warehouse_path"] = str(target_path)
+                overrides["warehouse_path"] = req.warehouse_path
 
         try:
             if req.profile:
