@@ -27,7 +27,7 @@ app.add_typer(cache_app, name="cache")
 
 
 @app.command()
-def scout(
+def scout(  # noqa: PLR0913
     name: Annotated[str, typer.Option("--name", "-n", help="Company name to search for")],
     location: Annotated[
         str | None, typer.Option("--location", "-l", help="City, state, country")
@@ -124,7 +124,7 @@ def scout(
 
 
 @app.command()
-def serve(
+def serve(  # noqa: PLR0913
     host: Annotated[str, typer.Option("--host", help="Bind address")] = "127.0.0.1",
     port: Annotated[int, typer.Option("--port", help="Bind port")] = 8080,
     workers: Annotated[int, typer.Option("--workers", help="Uvicorn workers")] = 1,
