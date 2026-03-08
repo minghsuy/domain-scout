@@ -8,6 +8,7 @@ import secrets
 import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
+from pathlib import Path
 from typing import TYPE_CHECKING, Any
 
 if TYPE_CHECKING:
@@ -146,7 +147,17 @@ def create_app(
         if req.local_mode != "disabled":
             overrides["local_mode"] = req.local_mode
             if req.warehouse_path:
-                overrides["warehouse_path"] = req.warehouse_path
+                base_dir_str = os.environ.get(
+                    "DOMAIN_SCOUT_WAREHOUSE_PATH",
+                    str(Path.home() / ".local" / "share" / "ct-warehouse"),
+                )
+                base_dir = Path(base_dir_str).resolve()
+                target_path = (base_dir / req.warehouse_path).resolve()
+                if not target_path.is_relative_to(base_dir):
+                    raise HTTPException(
+                        status_code=400, detail="Invalid warehouse_path: path traversal detected"
+                    )
+                overrides["warehouse_path"] = str(target_path)
 
         try:
             if req.profile:

@@ -9,24 +9,25 @@ Usage:
         --output domain_scout/eval_ground_truth.yaml \
         --min-confidence 0.85 --min-domains 2
 """
+
 from __future__ import annotations
 
 import argparse
 import json
-import sys
 from pathlib import Path
 
 import yaml
 
-
 # Domains appearing in 3+ entities — likely shared/CDN, not company-owned
-SHARED_DOMAIN_BLOCKLIST = frozenset({
-    "cert-manager.com",
-    "key4.ch",
-    "ubs.com",
-    "ubssecurities.com",
-    "from.ubs",
-})
+SHARED_DOMAIN_BLOCKLIST = frozenset(
+    {
+        "cert-manager.com",
+        "key4.ch",
+        "ubs.com",
+        "ubssecurities.com",
+        "from.ubs",
+    }
+)
 
 
 def load_existing_companies(gt_path: Path) -> set[str]:
@@ -147,7 +148,7 @@ def main() -> None:
 
         new_entries.append(entry)
 
-    print(f"\nResults:")
+    print("\nResults:")
     print(f"  New auto-labels: {len(new_entries)}")
     print(f"  Skipped (already in GT): {skipped_existing}")
     print(f"  Skipped (below quality): {skipped_quality}")
@@ -161,7 +162,10 @@ def main() -> None:
     if new_entries:
         # Domain count distribution
         counts = sorted(len(e["owned_domains"]) for e in new_entries)
-        print(f"  Domains per entity: min={counts[0]}, median={counts[len(counts)//2]}, max={counts[-1]}")
+        print(
+            f"  Domains per entity: min={counts[0]}, median={counts[len(counts) // 2]}, "
+            f"max={counts[-1]}"
+        )
 
     if args.dry_run:
         print("\n[DRY RUN] No files written.")
@@ -176,14 +180,17 @@ def main() -> None:
     with args.output.open("w") as f:
         f.write(
             "# Ground truth labels for domain-scout evaluation harness.\n"
-            '# Each entry maps a (company, seeds) pair to known-owned and known-not-owned domains.\n'
-            '# "owned" means the domain is legitimately operated by / affiliated with the company.\n'
+            "# Each entry maps a (company, seeds) pair to known-owned and known-not-owned "
+            "domains.\n"
+            '# "owned" means the domain is legitimately operated by / affiliated with '
+            'the company.\n'
             '# "not_owned" means the domain appeared in results but is a false positive '
             "(CDN, shared cert, etc.).\n"
             '# Domains not in either list are treated as "unknown" — conservative precision '
             "counts them against.\n"
             "#\n"
-            "# Sources: CT log cert_events data (ct-entity-resolution, 2026-02-19/20, ~1.7M rows),\n"
+            "# Sources: CT log cert_events data (ct-entity-resolution, 2026-02-19/20, "
+            "~1.7M rows),\n"
             "# cross-referenced with public corporate subsidiary records and WHOIS/RDAP.\n"
             "#\n"
             f"# Auto-labeled entries added 2026-02-24 (min_confidence={args.min_confidence}, "
