@@ -1,0 +1,6198 @@
+# Ground truth labels for domain-scout evaluation harness.
+# Each entry maps a (company, seeds) pair to known-owned and known-not-owned domains.
+# "owned" means the domain is legitimately operated by / affiliated with the company.
+# "not_owned" means the domain appeared in results but is a false positive (CDN, shared cert, etc.).
+# Domains not in either list are treated as "unknown" — conservative precision counts them against.
+#
+# Sources: CT log certificate data (~1.7M rows),
+# cross-referenced with public corporate subsidiary records and WHOIS/RDAP.
+#
+# Auto-labeled entries added 2026-02-24 (min_confidence=0.85, min_domains=2)
+
+- label_id: panw-20260217
+  company_name: Palo Alto Networks
+  seeds:
+  - paloaltonetworks.com
+  owned_domains:
+  - paloaltonetworks.com
+  - prismacloud.io
+  - paloaltonetworks.jp
+  - paloaltonetworks.es
+  - paloaltonetworks.ca
+  - securityroundtable.org
+  - paloaltonetworks.tw
+  - paloaltonetworks.com.mx
+  - cortex.ai
+  - paloaltonetworks.lat
+  - paloaltonetworks.co.kr
+  - paloaltonetworks.co.uk
+  - paloaltonetworks.fr
+  - prisma.security
+  - paloaltonetworks.com.au
+  - paloaltonetworks.in
+  - paloaltonetworks.sg
+  - paloaltonetworks.nl
+  - paloaltonetworks.com.br
+  - paloaltonetworks.de
+  - paloaltonetworks.cn
+  - paloaltonetworks.it
+  - bridgecrew.cloud
+  - prismaaccess.cn
+  - zingbox.com
+  - panclouddev.com
+  not_owned: []
+- label_id: walmart-seed1
+  company_name: Walmart
+  seeds:
+  - walmart.com
+  owned_domains:
+  - walmart.com
+  - wal-mart.com
+  - bodegaaurrera.com.mx
+  - walmart.com.mx
+  - sams.com.mx
+  - george.com
+  - walmartlabs.com
+  - game.co.za
+  - makro.co.za
+  - asda.com
+  - b.wal.co
+  - bestprice.in
+  - dw.wmt.co
+  - samsclub.com
+  - toyou.co.uk
+  - asdapriceguarantee.co.uk
+  - walmart.ca
+  not_owned: []
+- label_id: walmart-seed2
+  company_name: Walmart
+  seeds:
+  - walmart.com
+  - samsclub.com
+  owned_domains:
+  - walmart.com
+  - samsclub.com
+  - wal-mart.com
+  - asda.com
+  - walmartluminate.com
+  - walmart.com.mx
+  - walmart.ca
+  - walmartconnect.ca
+  - walmarthealth.com
+  - bodegaaurrera.com.mx
+  - sams.com.mx
+  - walmartlabs.com
+  - makro.co.za
+  - b.wal.co
+  - bestprice.in
+  - dw.wmt.co
+  - george.com
+  - toyou.co.uk
+  - game.co.za
+  - asdapriceguarantee.co.uk
+  - samsclubsng.com
+  - sams.com
+  - walmartbenefits.com
+  not_owned:
+  - hubspot.com
+  - exacttarget.com
+- label_id: nike-20260220
+  company_name: Nike
+  seeds:
+  - nike.com
+  owned_domains:
+  - nike.com
+  - niketeamsports.com
+  - nikecloud.com
+  not_owned: []
+- label_id: homedepot-20260220
+  company_name: Home Depot
+  seeds:
+  - homedepot.com
+  owned_domains:
+  - homedepot.com
+  - homedepot.ca
+  - homedepot.com.mx
+  not_owned: []
+- label_id: jpmorgan-20260220
+  company_name: JPMorgan Chase
+  seeds:
+  - jpmorgan.com
+  owned_domains:
+  - jpmorgan.com
+  - chase.com
+  - jpmchase.net
+  - jpmchase.com
+  - jpmorganchase.com
+  - jpmorgan.co.uk
+  - jpmorgan.net
+  - paymentech.com
+  - chasepaymentech.com
+  - jpmorgancc.com
+  - jpmacontent.com
+  - globalshares.com
+  - highbridge.com
+  - highbridgetcfltd.co.uk
+  - highbridgemsfltd.co.uk
+  - instamedtest.com
+  - equity-admin.com
+  - equity-gateway.com
+  - acctmanagement.com
+  - jpmam.com
+  - jpmorganfunds.com
+  - jpmorganaccessfunds.com
+  - jpmorganetfs.com
+  - jpmorgansmartretirement.com
+  - jpmorganinstitutional.com
+  - jpmgloballiquidity.com
+  - sixcirclesfunds.com
+  - thekoreafund.com
+  - securitycapital.com
+  - jpmprivatebank.com
+  - jpmprivatefolio.com
+  - morganmoney.io
+  - jpmorgan529.com
+  - nyadvisor529.com
+  - ny529advisor.com
+  - advisorguided529.com
+  - chaseonlinesweepstakes.com
+  - uncoveretfs.com
+  - etfguides.co.uk
+  - jpmam.com.br
+  - jpmorganam.com.hk
+  - jpmorganam.com.tw
+  - jpmorganam.com.au
+  - jpmorganam.com.sg
+  - jpmorganam.com.br
+  - jpmorganam.co.kr
+  - jpmorganam.lu
+  - jpmorganam.dk
+  - jpmorganam.fi
+  - jpmorganam.fr
+  - jpmorganam.se
+  - jpmorganam.no
+  - jpmorganam.at
+  - jpmorganam.es
+  - jpmorganassetmanagement.fr
+  - jpmorganassetmanagement.de
+  - jpmorganassetmanagement.ch
+  - jpmorganassetmanagement.es
+  - jpmorganassetmanagement.it
+  - jpmorganassetmanagement.be
+  - jpmorganassetmanagement.at
+  - jpmam.es
+  - jpmam.se
+  - jpmam.dk
+  - jpmam.fi
+  - jpmam.fr
+  - jpmam.it
+  - jpmam.pt
+  - jpmam.no
+  - jpmam.lu
+  - jpmam.at
+  not_owned:
+  - cargillequity.com
+  - artisanpartnersequity.com
+  - ulequityplans.com
+  - interxionequitybasedincentiveplans.com
+  - acucelastockplans.com
+  - russellltip.com
+- label_id: wellsfargo-20260220
+  company_name: Wells Fargo
+  seeds:
+  - wellsfargo.com
+  owned_domains:
+  - wellsfargo.com
+  - fccaccessonline.com
+  - accesswca.com
+  - cdfconnect.com
+  - leaseconnect.com
+  - myleasingsource.com
+  - financeaccess.com
+  - currencyteller.com
+  - onlinemyaccounts.com
+  - getmyaccounts.com
+  - myonlineresourcecenter.com
+  - wf.com
+  - wfafinet.com
+  - pacwebpledge.com
+  - wfhmevents.com
+  - ctslink.com
+  - servicerconnect.com
+  - cdolink.com
+  - securitieslink.com
+  - firstclearing.com
+  - wystar.com
+  not_owned: []
+- label_id: morganstanley-20260220
+  company_name: Morgan Stanley
+  seeds:
+  - morganstanley.com
+  owned_domains:
+  - morganstanley.com
+  - ms.com
+  - morganstanleyfa.com
+  - morganstanleypwa.com
+  - morganstanleygc.com
+  - msgraystone.com
+  - morganstanleybranch.com
+  - morganstanley.com.au
+  - morganstanley.ca
+  - shareworks.com
+  - msfunds.com.cn
+  - morganstanley.com.cn
+  - morganstanley.co.jp
+  - morganstanleyinvestmentfunds.com
+  - morganstanley.com.br
+  - morganstanleyfunds.co.uk
+  - etrade.com
+  - gradifi.com
+  not_owned: []
+- label_id: goldmansachs-20260220
+  company_name: Goldman Sachs
+  seeds:
+  - gs.com
+  owned_domains:
+  - gs.com
+  - goldman.com
+  - marcus.com
+  - nextcapital.com
+  - gsam.com
+  - gsselect.com
+  - gsinform.com
+  - folioidentity.com
+  - foliofn.com
+  - folioclient.com
+  - folioinstitutional.com
+  - folioinvesting.com
+  - gscio.com
+  - login.gs
+  - gscapitalpartners.com
+  - goldrockscapital.com
+  - goldmansachs.cn
+  - gsassetmanagement.com
+  - gsesim.com
+  not_owned: []
+- label_id: amex-20260220
+  company_name: American Express
+  seeds:
+  - americanexpress.com
+  owned_domains:
+  - americanexpress.com
+  - pocket-concierge.jp
+  - departures-international.com
+  - americanexpress.co.in
+  not_owned:
+  - aexgroup.net
+  - amexgbt.com
+  - hrgworldwide.com
+  - kds.com
+- label_id: bankofamerica-20260220
+  company_name: Bank of America
+  seeds:
+  - bankofamerica.com
+  owned_domains:
+  - bankofamerica.com
+  - bofa.com
+  - ml.com
+  - merrill.com
+  - bofaml.com
+  - applyonlinenow.com
+  - mynewcard.com
+  not_owned: []
+- label_id: unitedhealth-20260220
+  company_name: UnitedHealth Group
+  seeds:
+  - uhg.com
+  owned_domains:
+  - uhg.com
+  - uhc.com
+  - optum.com
+  - optumrx.com
+  - optumid.com
+  - optuminsightplatform.com
+  - vivifyhealth.com
+  - aikyam.com
+  - providerexpress.com
+  - onehealthcareid.com
+  - myuhccsrewards.com
+  - yourdentalplan.com
+  - listenhearlivewell.com
+  - uhchearing.com
+  - uhchearingportal.com
+  - epichearing.com
+  - relatehearing.com
+  - aarphearingsolutions.com
+  - aarphearingsolutions.org
+  - aarphearingsolutions.net
+  - aarpuhchearingsolutions.com
+  - earprofessionals.com
+  - earprofessionalsgroup.com
+  - earprofessionalsnetwork.com
+  - hearprofessionalsgroup.com
+  - hearprofessionalsnetwork.com
+  - excelsiorinsurance.com
+  - suppsportal.com
+  not_owned: []
+- label_id: pfizer-20260220
+  company_name: Pfizer
+  seeds:
+  - pfizer.com
+  owned_domains:
+  - pfizer.com
+  - pfizer.it
+  - pfizerpapconnect.com
+  - eucrisa4youaccess.com
+  - pfizeracademy.ph
+  not_owned:
+  - cloudflaressl.com
+- label_id: merck-20260220
+  company_name: Merck
+  seeds:
+  - merck.com
+  owned_domains:
+  - merck.com
+  - homeagain.com
+  - msdchina.com.cn
+  - programavemser.com.br
+  not_owned:
+  - merck.de
+  - merckgroup.com
+  - lifescienceglobaladvisors.com
+  - emdgroup.com
+  - ligacontralaobesidad.com
+  - curiousfutureinsight.com
+  - retatupeso.com
+  - emdmillipore.com
+  - curiousfutureinsight.org
+  - thyroidaware.com
+- label_id: jnj-20260220
+  company_name: Johnson & Johnson
+  seeds:
+  - jnj.com
+  owned_domains:
+  - jnj.com
+  - jnj.com.cn
+  - novyiden.com
+  - noviyden.com
+  - sourceviewanalytics.ca
+  - depuysynthesmatch.ca
+  - jjcustomerconnect.com
+  not_owned:
+  - adt.com.br
+  - johnsoncontrols.com
+  - myenterprisemanagement.com
+  - jwu.edu
+  - steptoe.com
+- label_id: abbvie-20260220
+  company_name: AbbVie
+  seeds:
+  - abbvie.com
+  owned_domains:
+  - abbvie.com
+  - abbvienet.com
+  - abbviecareandme.ie
+  - allergan.com
+  - nothingiseverything.ca
+  - nsclc-researchstudies.com
+  - hidradenitissuppurativa.com
+  - abbviecareduodopa.com.au
+  - juvederm.co.il
+  - miestudiodetembloresencial.com
+  - humirapartenaires.ca
+  - pcyc.com
+  - agnsnt.com
+  - visaoemdia.com.br
+  - abbviesuppliers.com
+  - abbvieproductive.com
+  - cellinecareandsupport.com
+  - abbviecertificationprogram.com
+  - venevos-hcp.de
+  - tratamentodevida.com.br
+  - telisotuzumab.com
+  - abbviecareprogram.jp
+  - cellineactivate.com
+  - abbviemedicines.ie
+  - botoxmedicines.co.uk
+  - abbviepharma.jp
+  - adermatotrophin-re.com
+  - abbviemedicines.co.uk
+  - abbvieclinicaltrials.it
+  - abbviefarmaceutica.com.br
+  - neuroinfo-abbvie.de
+  - abbviemedical.es
+  not_owned: []
+- label_id: ford-20260220
+  company_name: Ford Motor Company
+  seeds:
+  - ford.com
+  owned_domains:
+  - ford.com
+  - dealerconnection.com
+  - ford.com.cn
+  - ford.cn
+  - ford.ca
+  not_owned: []
+- label_id: tesla-20260220
+  company_name: Tesla
+  seeds:
+  - tesla.com
+  owned_domains:
+  - tesla.com
+  not_owned: []
+- label_id: chevron-20260220
+  company_name: Chevron
+  seeds:
+  - chevron.com
+  owned_domains:
+  - chevron.com
+  - chevron.net
+  - texaco.com
+  - texacolubricants.com
+  - texacodelo.com
+  - chevrontexacorewards.com
+  - chevronlubricants.com
+  - chevronlubricants.ca
+  - havoline.com
+  - havoline.com.mx
+  - chevrondelo.com
+  - deloperformance.com
+  - chevronbaseoils.com
+  - chevronprocessoils.com
+  - chevronindustrial.com
+  - chevronisoclean.com
+  - chevronmarineproducts.com
+  - caltexlubricants.com
+  - oronite.com
+  - chevronwithtechron.com
+  - techronworks.com
+  - techronclean.com
+  - techroncleans.com
+  - chevronalbakri.com
+  - delotractorrestorationcompetition.com
+  not_owned:
+  - hess.com
+- label_id: bp-20260220
+  company_name: BP
+  seeds:
+  - bp.com
+  owned_domains:
+  - bp.com
+  - bpglobal.com
+  - bpamerica.com
+  - bpenergy.com
+  - bp.com.au
+  - bp.de
+  - bp.pl
+  - bp.co.nz
+  - bp.co.za
+  - bp.com.cn
+  - bp.at
+  - bp.pt
+  - bp.nl
+  - bp.energy
+  - bp.jobs
+  - amoco.com
+  - castrol.com
+  - castrol.co.uk
+  - castrol.de
+  - castrol.fr
+  - castrol.com.br
+  - castrol.com.cn
+  - castrol.com.au
+  - castrol.co.za
+  - castrol.co.in
+  - castrol.co.nz
+  - castrol.ca
+  - castrol.in
+  - castrol.it
+  - castrol.nl
+  - castrol.pl
+  - castrol.es
+  - castrol.at
+  - castrol.ch
+  - castrol.be
+  - castrol.cz
+  - castrol.no
+  - castrol.ro
+  - castrol.se
+  - castrol.eu
+  - castrol.us
+  - castrol.uk
+  - bpcastrol.com
+  - castrolusa.com
+  - castroloil.com
+  - castrolprofessional.com
+  - castrolmoto.com
+  - castrolracing.com
+  - castrolfootball.com
+  - castrolfootkhana.com
+  - castrolfsrewards.com
+  - castroltradebarometer.com
+  - castrolenginewarranty.com
+  - aral.de
+  - aral.com
+  - aral-pulse.de
+  - aral-cardkomfort.de
+  - bppulse.com
+  - bppulse.co.uk
+  - bppulse.nl
+  - bppulse.pl
+  - airbp.com
+  - bplubricants.com
+  - bpbiofuels.com
+  - bprewards.co.za
+  - bpsa.co.za
+  - bpme.pl
+  - wildbeancafe.com
+  - xconvenience.com.au
+  - freebees.nl
+  - mybpshares.com
+  not_owned: []
+- label_id: disney-20260220
+  company_name: Walt Disney
+  seeds:
+  - disney.com
+  owned_domains:
+  - disney.com
+  - hulu.com
+  - shopdisney.com
+  - marvelstudios.com
+  - frozenthemusical.com
+  - twdctech.com
+  - matterhorn.app
+  - disney.co.za
+  - disney.cz
+  - disney.co.jp
+  - disney.de
+  - thelionking.ch
+  - disney.se
+  - disney.fr
+  - disney.fi
+  - disney.es
+  - disney.ie
+  - disney.my
+  - disney.sg
+  - disney.co.th
+  - disney.co.nz
+  - disney.no
+  - disney.dk
+  - disney.ro
+  - disney.hr
+  - disney.hu
+  - disney.pt
+  - disney.bg
+  - disney.be
+  - disney.ae
+  - disney.com.au
+  - disney.nl
+  - disney.id
+  - disney.ph
+  - disney.it
+  - disney.at
+  - disney.pl
+  - disney.gr
+  - disney.ch
+  - disney.com.br
+  - disney.sk
+  - disney.co.il
+  - disney.co.kr
+  - disney.tw
+  - disney.vn
+  not_owned: []
+- label_id: comcast-20260220
+  company_name: Comcast
+  seeds:
+  - comcast.com
+  owned_domains:
+  - comcast.com
+  - comcast.net
+  - xfinity.com
+  - fandango.com
+  - masergy.com
+  - usj.co.jp
+  - usjc.co.jp
+  - xcal.tv
+  - ucdp.net
+  - vipertv.net
+  - comcastspectacor.com
+  not_owned: []
+- label_id: a-auto-20260224
+  company_name: Agilent Technologies
+  seeds: []
+  owned_domains:
+  - agilent.com.cn
+  - agilent.com
+  - agilent.net
+  - biotek.com
+- label_id: aapl-auto-20260224
+  company_name: Apple Inc.
+  seeds: []
+  owned_domains:
+  - apple.com
+  - icloud.com
+  - beatsbydre.com
+- label_id: abnb-auto-20260224
+  company_name: Airbnb
+  seeds: []
+  owned_domains:
+  - airbnb.biz
+  - airbnb.com.tr
+  - airbnb.ca
+  - airbnb.com.my
+  - airbnb.co.id
+  - airbnb.co.il
+  - airbnb.com.hr
+  - airbnb.pt
+  - airbnb.it
+  - airbnb.com
+  - airbnb.si
+  - airbnb.com.gt
+  - airbnb.com.hn
+  - airbnb.com.ro
+  - airbnb.fr
+  - airbnb.cl
+  - airbnb.com.bz
+  - airbnb.lu
+  - airbnb.rs
+  - airbnb.se
+  - airbnb.fi
+  - airbnb.com.mt
+  - airbnb.la
+  - airbnb.ba
+  - airbnb.lv
+  - airbnb.dk
+  - airbnb.com.ph
+  - airbnb.cz
+  - airbnb.mx
+  - airbnb.com.pe
+  - airbnb.com.au
+  - airbnb.com.ec
+  - airbnb.ie
+  - airbnb.com.sv
+  - airbnb.ch
+  - airbnb.am
+  - airbnb.be
+  - airbnb.nl
+  - airbnb.jp
+  - airbnb.com.hk
+  - airbnb.co.uk
+  - airbnb.co.kr
+  - airbnb.com.bo
+  - airbnb.me
+  - airbnb.cn
+  - airbnb.com.co
+  - airbnb.co.nz
+  - airbnb.com.tw
+  - airbnb.com.sg
+  - airbnb.co.in
+  - airbnb.com.pa
+  - airbnb.com.py
+  - airbnb.com.ee
+  - airbnb.co.cr
+  - airbnb.cat
+  - airbnb.com.vn
+  - airbnb.is
+  - airbnb.com.ni
+  - airbnb.co.za
+  - airbnb.com.br
+  - airbnb.de
+  - airbnb.com.ar
+  - airbnb.co.ve
+  - airbnb.al
+  - airbnb.at
+  - airbnb.lt
+  - airbnb.pl
+  - airbnb.com.ua
+  - airbnb.es
+  - airbnb.no
+  - airbnb.ae
+  - airbnb.az
+  - airbnb.com.kh
+  - airbnb.gr
+  - airbnb.hu
+- label_id: abt-auto-20260224
+  company_name: Abbott Laboratories
+  seeds: []
+  owned_domains:
+  - corelaboratory.abbott
+  - transfusion.abbott
+  - univantshce.com
+  - bethe1donor.com
+  - integratinghealth.abbott
+  - diagnosticsportal.abbott
+  - abbott.co.jp
+  - diagnostics.abbott
+  - molecular.abbott
+  - molecularcatalog.abbott
+  - medicine.abbott
+  - abbottsmartpack.in
+  - abbott.co.kr
+  - abbottnutrition.com
+  - eas.com
+  - abbott-careandshare.com.vn
+  - corelabportal.abbott
+  - rals.com
+  - freestylelibre.pt
+  - calidadsimilac.com
+  - freestylelibre.gr
+  - nepro.com
+  - keepthemplaying.com
+  - abbottecho.com
+  - ascertaintox.com
+  - mycorelabus.abbott
+  - ensure.co.id
+  - freestylebattery.com
+  - afiblife.com
+  - binaxnow-selftest.abbott
+  - breakthroughthebarrier.com
+  - corelab.abbott
+  - abbott.com
+  - freestylelibre.es
+  - firstcheckfamily.com
+  - abbott-diabetescare.com
+  - abbottmolecular.com
+  - abbottdiagnostics.com
+  - idnowmarketingtoolkit.com
+  - aliniq.com
+  - tbibiomarkers.com
+  - juven.com
+  - freestyleandroid.com
+  - acare.co.in
+  - abbottmtbitest.com
+  - hivcombo.com
+  - alinity.com
+  - keepthemlearning.com
+  - pediasure.mx
+  - aleretoxicology.co.uk
+  - aleretoxicology.com
+  - gomolecular.com
+  - hatsofftesting.com
+  - epvesselclosure.com
+  - freestylefoundations.abbott
+  - cholestechldxmarketingtoolkit.com
+  - istatmtbitest.com
+  - abbottalk.com
+  - domoreforheartfailure.com
+  - freestylelibre.no
+  - alere.com
+  - healthierlabs.com
+  - pedialyte.com
+  - acelisconnectedhealth.com
+  - abbottcdx.com
+  - aegispoc.com
+  - idnow.abbott
+  - abon.com.cn
+  - knowledgegenie.in
+  - eterna.abbott
+  - escreen.com
+  - freestylelibre.be
+  - abbottafsymposium.com
+  - rapidtest.abbott
+  - standingstoneinc.com
+- label_id: achc-auto-20260224
+  company_name: Acadia Healthcare Company, Inc.
+  seeds: []
+  owned_domains:
+  - acadia-hc.com
+  - acadiahealthcare.com
+- label_id: acn-auto-20260224
+  company_name: Accenture
+  seeds: []
+  owned_domains:
+  - accenture.com
+  - merck.com
+  - cas.com
+  - accenture.lv
+  - z86ldgs6sx.com
+  - nhs.net
+- label_id: adi-auto-20260224
+  company_name: Analog Devices
+  seeds: []
+  owned_domains:
+  - analog.com
+  - linear-tech.com
+  - simplaylabs.com
+  - linear.com
+  - hittite.com
+  - otosense.com
+- label_id: adm-auto-20260224
+  company_name: Archer Daniels Midland
+  seeds: []
+  owned_domains:
+  - adm.com
+  - admani.com
+  - e-adm.com
+  - admanimalnutrition.com
+  - maltacleyton.com.mx
+  - hermesbyadgene.fr
+  - upscience-labs.com
+  - adgene.fr
+  - pilardiere.eu
+  - pilardiere.com
+  - vitaliv.com.br
+  - admnewzealand.co.nz
+  - rodellekitchen.com
+  - thetopchoice.com.mx
+  - admworld.com
+  - equilibrio-petfood.com
+  - agro01.com
+  - dpnutrition.fr
+  - everland-petfood.com
+  - destrier.com
+  - pancosma.com
+  - naturalis-petfood.com
+  - regal-basse-cour.com
+  - evialis.com
+  - epicorebionetworks.com
+  - via-nutritionequine.fr
+  - bernaqua.com
+  - royal-horse.com
+  - ocialis.asia
+  - maxpetfood.com.br
+  - greenbisonsoy.com
+  - adm-agri.co.uk
+  - admgrain.com.au
+  - fulllife.com.mx
+  - ganadorcolombia.com
+- label_id: adma-auto-20260224
+  company_name: ADMA BIOLOGICS, INC.
+  seeds: []
+  owned_domains:
+  - admabiologics.com
+  - admabiocenters.com
+  - admabio.com
+- label_id: adp-auto-20260224
+  company_name: Automatic Data Processing
+  seeds: []
+  owned_domains:
+  - adpcorp.com
+  - payrollapp.com
+  - adp.com
+- label_id: adv-auto-20260224
+  company_name: Advantage Solutions Inc.
+  seeds: []
+  owned_domains:
+  - daymon.com
+  - asmnet.com
+  - sunflowergroup.com
+  - targetdemo.com
+  - rmsisrs.com
+  - demosystem.net
+  - daymoninteractions.com
+  - clearlybrand.com
+  - bestchoicebrand.com
+  - alwayssavebrand.com
+  - clearlyorganicbrand.com
+  - adveats.com
+  - clubdemo.xyz
+  - sasretail.xyz
+  - getthesavings.com
+  - advantage.xyz
+  - sasretail.com
+  - thedatacouncil.com
+  - springboardadv.com
+  - asmconnects.com
+  - hatchsf.com
+- label_id: aee-auto-20260224
+  company_name: Ameren
+  seeds: []
+  owned_domains:
+  - ameren.com
+  - lasallelinkproject.com
+  - amerensustainability.com
+  - myameren.com
+- label_id: aep-auto-20260224
+  company_name: American Electric Power
+  seeds: []
+  owned_domains:
+  - aepnow.com
+  - pnrtransmission.com
+  - aepadvocacy.com
+  - aepvotes.com
+  - aepclaims.com
+  - indianamichiganpower.com
+  - psoklahoma.com
+  - aepnationalaccounts.com
+  - aepohio.com
+  - aep.com
+  - aeppac.com
+  - swepco.com
+  - aeptexas.com
+  - kentuckypower.com
+  - aepaccount.com
+  - appalachianpower.com
+  - ettexas.com
+- label_id: afgd-auto-20260224
+  company_name: AMERICAN FINANCIAL GROUP INC
+  seeds: []
+  owned_domains:
+  - afgadt.com
+  - afgirc.com
+  - afgconnect.com
+  - amrecap.com
+  - brothersproperty.com
+- label_id: agl-auto-20260224
+  company_name: agilon health, inc.
+  seeds: []
+  owned_domains:
+  - trustedseniorcareadvantage.com
+  - preferredseniorcareadvantage.com
+- label_id: aig-auto-20260224
+  company_name: American International Group
+  seeds: []
+  owned_domains:
+  - aig.co.jp
+  - aiglife.co.uk
+  - aiginsurance.nl
+  - aig.com
+  - www-416.aig.ie
+  - www-417.aig.ie
+  - travelguard.com
+  - aigtheftandloss.com
+  - mycomfortshield.com
+  - aig.com.cn
+  - sunamerica.com
+  - aigtravel.com.au
+  - jetstartravelinsurance.co.nz
+  - aiginsurance.com
+  - travelguard.ca
+  - jetstartravelinsurance.com.au
+  - jetstartravelinsurance.com.sg
+  - travelguardworldwide.com
+  - travelguard.co.it
+  - good2gotravelinsurance.com.au
+  - layatravelinsurance.ie
+  - aig.com.sg
+  - valic.com
+- label_id: ait-auto-20260224
+  company_name: APPLIED INDUSTRIAL TECHNOLOGIES INC
+  seeds: []
+  owned_domains:
+  - applied.com
+  - appliedfluidpower.com
+  - appliedau.com
+  - chooseparts.com
+  - appliedcanada.com
+  - acs-ga.com
+  - sealsunlimited.ca
+  - hubindustrial.com
+  - cangroindustries.com
+  - rficonstructionproducts.com
+  - fcxperformance.com
+- label_id: aiz-auto-20260224
+  company_name: Assurant
+  seeds: []
+  owned_domains:
+  - assurantlogistics.com
+  - assurant.com
+  - hylamobile.com
+  - thewarrantygroup.com
+  - mywirelessclaim.com
+  - assurantcustomerportal.com
+  - protectyourbubble.com
+  - assurantdeviceclaim.com
+- label_id: ajg-auto-20260224
+  company_name: Arthur J. Gallagher & Co.
+  seeds: []
+  owned_domains:
+  - ajg.com.au
+  - risxfacs.com
+  - travelwithgallagher.com
+  - hospitalityins.com
+  - gallagherbassett.com
+  - safetyassist.co.nz
+  - ompl.co.nz
+  - crombielockwood.co.nz
+  - monumentinsurance.co.nz
+  - childproof.co.nz
+  - safetyassist.nz
+  - orioninsurance.co.nz
+  - dealersblock.co.nz
+  - haywards.net
+  - stratasolicitors.co.uk
+  - stratasolicitors.com
+  - artexrisk.com
+  - quantum-underwriting.com
+  - ajg.com
+  - suretysolutions.com
+  - advisorsafeinsurance.com
+  - agenteoprogram.com
+  - goldencareeoprogram.com
+  - aimeoprogram.com
+  - franinsurance.com
+  - air-sur.com
+  - ajgrms.com
+  - collegestudentinsurance.com
+  - gallagherglobalalliance.com
+  - ajgswitzerland.ch
+  - ajgswitzerland.com
+  - hessepartner.ch
+  - hesse-partner.ch
+  - hessepartner.com
+  - mygbclaim.com
+  - deputybondsonline.co.uk
+  - penunderwriting.co.uk
+  - bollingerclaims.com
+  - alescorms.com
+  - reportmyincident.com
+  - horseshoeglobal.com
+  - franbenefits.com
+  - penunderwriting.com
+  - bollingerschools.com
+  - barmore.com
+  - barmore.info
+  - gallaghermalpractice.com
+  - barmoreinsurance.com
+  - nhstexas.com
+  - galaghermalpractice.com
+  - erimusib.com
+  - gbtpa.com
+  - ajg.co.uk
+- label_id: akam-auto-20260224
+  company_name: Akamai Technologies
+  seeds: []
+  owned_domains:
+  - akamai.com
+  - accuweather.com
+  - mrk.to
+  - bosch-home.com
+  - siemens-home.com
+  - roularta.be
+  - janrain.com
+  - unimelb.edu.au
+  - tiday.xyz
+- label_id: alb-auto-20260224
+  company_name: Albemarle Corporation
+  seeds: []
+  owned_domains:
+  - ketjen.com
+  - albemarle.com
+- label_id: algn-auto-20260224
+  company_name: Align Technology
+  seeds: []
+  owned_domains:
+  - aligntech.com
+  - invisalign.com.cn
+  - invisalign.cn
+  - invisalign.net.cn
+  - invisalign.com
+  - invisalignmarketing.com
+  - myitero.cn
+  - myaligntech.com
+  - invisalignmarketing.eu
+  - aligneu.com
+  - myitero.com
+  - mycadent.com
+- label_id: all-auto-20260224
+  company_name: Allstate
+  seeds: []
+  owned_domains:
+  - allstate.com
+  - myallstateflood.com
+  - encompassinsurance.com
+  - allstate.jobs
+  - allstateroadsideservices.com
+  - allstateagencies.com
+  - answermarketplace.com
+  - leadmanagementlab.com
+  - allstatebrandcentral.com
+  - allstatenewsroom.com
+  - allstatecapac.com
+  - allstatecaliforniapac.com
+  - accessallstate.com
+  - allstatebenefits.com
+  - allstatevoluntary.com
+- label_id: allt-auto-20260224
+  company_name: Allot Ltd.
+  seeds: []
+  owned_domains:
+  - allot.com
+  - optenet.com
+- label_id: amat-auto-20260224
+  company_name: Applied Materials
+  seeds: []
+  owned_domains:
+  - wpwycs2o.com
+  - think-silicon.com
+  - picosun.com
+  - amat.com
+  - protradehr.com
+- label_id: amcx-auto-20260224
+  company_name: AMC Networks Inc.
+  seeds: []
+  owned_domains:
+  - rljentertainment.com
+  - auroravts.com
+  - elgourmet.com
+  - amctvla.club
+  - amcnetworks.com
+  - strib.gg
+  - amcnetworkslatam.com
+  - filmandarts.tv
+  - europaeuropa.tv
+  - maschic.com
+  - filmandarts.com.br
+  - maschic.club
+  - amcn-la.com
+  - elgourmet.club
+  - europaeuropa.club
+  - filmandarts.club
+  - nudgeforamcni.com
+- label_id: amd-auto-20260224
+  company_name: Advanced Micro Devices
+  seeds: []
+  owned_domains:
+  - amd.com
+  - amdengdesign.com
+- label_id: amgn-auto-20260224
+  company_name: Amgen
+  seeds: []
+  owned_domains:
+  - repatha-pts.jp
+  - evenity-pts.jp
+  - acve-navi.jp
+  - amgen.com
+- label_id: amh-auto-20260224
+  company_name: American Homes 4 Rent
+  seeds: []
+  owned_domains:
+  - amh.com
+  - americanhomes4rent.com
+  - amhliving.com
+  - ah4r.com
+  - americanresidentialcapital.com
+  - amresprop.com
+  - americanresidentialcapital.net
+  - americanresidentialproperties.com
+  - americanresidentialproperties.net
+  - americanhomes.com
+- label_id: amp-auto-20260224
+  company_name: Ameriprise Financial
+  seeds: []
+  owned_domains:
+  - ampf.com
+  - ameriprise.com
+  - ameripriseadvisors.com
+  - columbiathreadneedleus.com
+  - columbiamanagementcontent.com
+  - lionstoneinvestments.com
+  - columbiathreadneedleetf.com
+  - riversource.com
+  - retirementinteractive.com
+  - advisorcompass.com
+  - columbiathreadneedle.com
+  - rvsprotectionguide.com
+- label_id: amt-auto-20260224
+  company_name: American Tower
+  seeds: []
+  owned_domains:
+  - americantower.cl
+  - americantower.cr
+  - atcfrance.fr
+  - americantower.pe
+  - americantower.com.gh
+  - atcburkinafaso.bf
+  - americantower.com.de
+  - atcsouthafrica.co.za
+  - atcnigeria.ng
+  - atcuganda.ug
+  - americantower.com
+  - americantower.com.ar
+  - atctower.in
+  - americantower.com.mx
+  - americantower.com.br
+  - atcsitios.com.co
+  - atckenya.ke
+  - atcniger.ne
+  - americantower.es
+  - americantower.com.py
+  - transcend.in
+  - xceltele.com
+  - spectrasite.com
+  - sestower.com
+- label_id: anet-auto-20260224
+  company_name: Arista Networks
+  seeds: []
+  owned_domains:
+  - aristanetworks.com
+  - arista.com
+  - metamako.com
+  - arista.io
+  - untangle.com
+- label_id: angi-auto-20260224
+  company_name: Angi Inc.
+  seeds: []
+  owned_domains:
+  - angi.com
+  - homeadvisor.com
+  - mhelpdesk.dev
+  - servicemagic.com
+  - angieslist.com
+  - handy.com
+- label_id: anip-auto-20260224
+  company_name: ANI PHARMACEUTICALS INC
+  seeds: []
+  owned_domains:
+  - anipharmaceuticals.com
+  - cortrophininyourcorner.com
+  - cortrophingel.com
+  - cortrophinsle.com
+  - cortrophinhcp.com
+  - cortrophininjection.com
+  - cortrophin.com
+  - cortrophinsarcoidosis.com
+  - cortrophinms.com
+  - cortrophindm-pm.com
+  - cortrophinns.com
+  - cortrophinuveitis.com
+  - cortrophinra.com
+  - choosecortrophin.com
+  - cortrophinsupport.com
+- label_id: apd-auto-20260224
+  company_name: Air Products
+  seeds: []
+  owned_domains:
+  - airproducts.fr
+  - airproducts.in
+  - apci.com
+  - airproducts.co.uk
+  - airproducts.ie
+  - airproducts.ca
+  - airproducts.co.jp
+  - gasin.com
+  - airproducts-sandnes.no
+  - airproducts.hu
+  - airproducts.com
+  - airproducts.ae
+  - airproducts.me
+  - airproducts.com.br
+  - airproducts.com.my
+  - airproducts.be
+  - airproducts.cz
+  - airproducts.de
+  - airproducts.com.hk
+  - airproducts.nl
+  - airproducts.com.tw
+  - airproducts.co.id
+  - airproducts.com.sg
+  - airproducts.sk
+  - airproducts.it
+  - airproducts.co.il
+  - airproducts.com.cn
+  - airproductsqudra.com
+  - carburos.com
+  - airproducts.com.pl
+  - airproducts.co.kr
+  - inoxap.com
+  - johnsonair.com
+  - allianceairproducts.com
+- label_id: aph-auto-20260224
+  company_name: Amphenol
+  seeds: []
+  owned_domains:
+  - amphenolmao.com
+  - timesmicrowave.com
+  - amphenol-aerospace.com
+  - amphenol-tcs.com
+  - amphenolcanada.com
+  - amphenolpcd.com
+  - amphenol-sensors.com
+- label_id: apo-auto-20260224
+  company_name: Apollo Global Management
+  seeds: []
+  owned_domains:
+  - apollo.com
+  - apollolp.com
+  - perseusaviation.com
+  - visionbridge.com
+  - elianttrade.com
+  - rram.com
+  - apollocref.com
+  - apollofunds.com
+  - apolloacademy.com
+  - apollopkairfinance.com
+  - apolloic.com
+  - midcapfinancialic.com
+  - 100westputnam.com
+  - apollostrategicgrowthcapital.com
+- label_id: app-auto-20260224
+  company_name: AppLovin
+  seeds: []
+  owned_domains:
+  - applovin.com
+  - applvn.com
+- label_id: aptv-auto-20260224
+  company_name: Aptiv
+  seeds: []
+  owned_domains:
+  - aptiv.com
+  - awsaptiv.com
+- label_id: are-auto-20260224
+  company_name: Alexandria Real Estate Equities
+  seeds: []
+  owned_domains:
+  - apella.com
+  - 701dexter.com
+  - aresdevents.com
+  - therinkat401park.com
+  - are.com
+  - alexandrialaunchlabs.com
+  - watertown-mall.com
+  - alexandriasrp.com
+  - labspace.com
+  - alexandriacenterattravillegateway.com
+- label_id: ares-auto-20260224
+  company_name: Ares Management
+  seeds: []
+  owned_domains:
+  - ares.com
+  - aresmgmt.com
+- label_id: asan-auto-20260224
+  company_name: Asana, Inc.
+  seeds: []
+  owned_domains:
+  - asana.com
+  - asana-gov.com
+- label_id: asb-auto-20260224
+  company_name: ASSOCIATED BANC-CORP
+  seeds: []
+  owned_domains:
+  - pathtothepack.com
+  - mybankmutual.com
+  - mutualmilestones.com
+  - bkmu.net
+  - bankmutualcorp.com
+  - bankmutual.com
+  - associatedtpo.com
+  - associatedbank.com
+  - associatedbankvisa.com
+- label_id: ash-auto-20260224
+  company_name: ASHLAND INC.
+  seeds: []
+  owned_domains:
+  - ezashland.com
+  - ashland.com
+- label_id: atlc-auto-20260224
+  company_name: Atlanticus Holdings Corp
+  seeds: []
+  owned_domains:
+  - carfinancial.com
+  - myfortiva.com
+- label_id: atr-auto-20260224
+  company_name: APTARGROUP, INC.
+  seeds: []
+  owned_domains:
+  - aptargroup.biz
+  - aptar.com
+- label_id: audc-auto-20260224
+  company_name: AUDIOCODES LTD
+  seeds: []
+  owned_domains:
+  - audiocodes.com
+  - audiocodes.io
+- label_id: avb-auto-20260224
+  company_name: AvalonBay Communities
+  seeds: []
+  owned_domains:
+  - avalonprop.com
+  - avalonbay.com
+  not_owned:
+  - cert-manager.com
+- label_id: avgo-auto-20260224
+  company_name: Broadcom
+  seeds: []
+  owned_domains:
+  - symantec.com
+  - broadcom.net
+  - bluecoat.com
+  - broadcom.com
+  - bizops.com
+  - symantecdlp.com
+  - messagelabs.net
+- label_id: avt-auto-20260224
+  company_name: AVNET INC
+  seeds: []
+  owned_domains:
+  - element14.com
+  - avnet.com
+  - avnetdev.com
+  - premierfarnell.com
+  - pours.com
+  - supplychaindigitaldashboard.com
+  - dfeoptions.com
+  - proscalnext.com
+  - proscaldemo.com
+  - warranty-renewal.com
+  - farnell.com
+  - newark.com
+  - cnsha05-vpn.cn
+  - avnet.me
+  - avnet-abacus.eu
+  - avnet-silica.com
+- label_id: avy-auto-20260224
+  company_name: Avery Dennison
+  seeds: []
+  owned_domains:
+  - averydennison.com.cn
+  - averydennison.cl
+  - averydennison.com.ar
+  - averydennison.it
+  - averydennison.net
+  - averydennison.com
+  - ntp.no
+  - averydennison.com.br
+  - averydennison.hk
+  - intelligent-label.com
+  - my-muse.com
+  - averydennison.cn
+  - mactacgraphics.eu
+  - averydennison.jp
+  - smartrac-group.com
+  - averydennison.co.za
+  - jdcinc.com
+  - jacgraphics.com
+  - wraplikeaking.com
+  - fasson.com
+- label_id: awk-auto-20260224
+  company_name: American Water Works
+  seeds: []
+  owned_domains:
+  - amwater.com
+  - awrusa.com
+  - testawwa.org
+  - awwa.org
+- label_id: axon-auto-20260224
+  company_name: Axon Enterprise
+  seeds: []
+  owned_domains:
+  - axon.com
+  - acs.mil
+  - evidence.com
+- label_id: axta-auto-20260224
+  company_name: Axalta Coating Systems Ltd.
+  seeds: []
+  owned_domains:
+  - standox.com
+  - spieshecker.com
+  - axaltacs.com
+  - colorsystem.info
+  - axalta.com
+  - cromax.com
+- label_id: azo-auto-20260224
+  company_name: AutoZone
+  seeds: []
+  owned_domains:
+  - autozonepro.com.mx
+  - autozone.com
+  - alldata.com
+  - alldatadiy.com
+  - alldataishop.com
+  - autozone.com.br
+  - autozone.com.mx
+  - duralastparts.com
+  - autozonepro.com
+- label_id: ba-auto-20260224
+  company_name: Boeing
+  seeds: []
+  owned_domains:
+  - boeingservices.com
+  - boeing.com
+  - jeppesen.com
+  - aeroinfo.com
+  - jetplan.com
+  - aviallinc.com
+  - gmdide.com
+  - boeing.net
+  - myboeingfleet.com
+- label_id: bby-auto-20260224
+  company_name: Best Buy
+  seeds: []
+  owned_domains:
+  - bestbuy.ca
+  - gslink.ca
+  - bestbuy.com
+  - bbycontent.com
+  - greatcall.com
+  - futureshop.ca
+  - bestbuyforbusiness.ca
+  - geeksquad.ca
+  - bestbuycanada.ca
+- label_id: bdx-auto-20260224
+  company_name: Becton Dickinson
+  seeds: []
+  owned_domains:
+  - crbard.com
+  - bdbiosciences.com
+  - bdbioscience.com
+  - bd.com
+  - bdx-cloud.com
+  - medmined.com
+  - embecta.com
+  - bdbeyond.com
+  - bdx.com
+  - specimencare.com
+  - scripteasy.co.uk
+  - medivance.com
+  - bdveritor.com
+  - hazmedsafety.com
+  - bdj.co.jp
+- label_id: ben-auto-20260224
+  company_name: Franklin Resources
+  seeds: []
+  owned_domains:
+  - frk.com
+  - franklintempleton.co.jp
+  - franklintempleton.com
+  - franklintempletonindia.com
+  - franklintempleton.ca
+  - fiduciarytrust.com
+  - franklintempleton.com.mx
+  - ftacademysales.com
+  - ftci.com
+  - ftsites.com
+  - ftecontributions.com
+  - leggmason.com
+  - beyondbullsandbears.com
+- label_id: bgi-auto-20260224
+  company_name: BIRKS GROUP INC.
+  seeds: []
+  owned_domains:
+  - birksgroup.com
+  - maisonbirks.com
+- label_id: biib-auto-20260224
+  company_name: Biogen
+  seeds: []
+  owned_domains:
+  - biogen.com
+  - tysabrifdp.com
+  - blossomspregnancyregistry.com
+  - cleo-app.fr
+  - biogenidec.com
+- label_id: bill-auto-20260224
+  company_name: BILL Holdings, Inc.
+  seeds: []
+  owned_domains:
+  - divvy.co
+  - bill.com
+  - cashview.com
+- label_id: bkd-auto-20260224
+  company_name: Brookdale Senior Living Inc.
+  seeds: []
+  owned_domains:
+  - mybslhr.com
+  - bslnet.mobi
+  - brookdaleliving.com
+  - brookdale.com
+- label_id: bke-auto-20260224
+  company_name: BUCKLE INC
+  seeds: []
+  owned_domains:
+  - buckle.com
+  - prd.bke.io
+  - bkeprd.com
+  - dev.bke.io
+  - bueptst.ms
+  - stg.bke.io
+  - bkedev.com
+  - bkestg.com
+  - buep.ms
+- label_id: bkr-auto-20260224
+  company_name: Baker Hughes
+  seeds: []
+  owned_domains:
+  - bakerhughes.com
+  - bakerhughesdirect.com
+- label_id: bld-auto-20260224
+  company_name: TopBuild Corp
+  seeds: []
+  owned_domains:
+  - americannationalinsulation.com
+  - sip-insulation.com
+  - usiinc.com
+  - webldit.com
+  - topbuild.cloud
+  - eaglerocksupply.com
+  - distributioninternational.com
+  - silvercote.com
+  - specialtydistributionbillpay.com
+  - topbuild.com
+  - truteam.com
+  - eflprojectmanager.com
+  - garlandinsulating.com
+  - idealproducts.ca
+  - topbuildfs.net
+  - service-partners.com
+  - mascocs.com
+  - environmentsforliving.com
+- label_id: bldr-auto-20260224
+  company_name: Builders FirstSource
+  seeds: []
+  owned_domains:
+  - buildersfirstsource.com
+  - probuild.com
+  - dixieline.com
+  - sbsalaska.com
+  - sanlorenzolumber.com
+  - bldr.com
+  - buildwithbmc.com
+- label_id: blkb-auto-20260224
+  company_name: BLACKBAUD INC
+  seeds: []
+  owned_domains:
+  - blackbaud.net
+  - blackbaud.co.uk
+  - blackbaud.com.au
+  - bbk12.com
+  - targetsite.com
+  - enrollwithsmart.com
+  - yourcausegrants.com
+  - blackbaudinstitute.com
+  - sharedservices-dev.com
+  - gooddonegreat.com
+  - blackbaudhosting.com
+  - blackbaud.com
+  - blackbaudcloud.com
+  - convio.com
+  - myetap.org
+  - thankyou4caring.org
+  - blackbaudondemand.com
+  - convio.net
+  - your-cause.com
+  - etapestry.com
+  - e-microedge.xyz
+  - grantrequest.xyz
+  - microedge.com
+  - smarttuition.com
+  - blackbaud.ca
+  - blackbaud.school
+  - blackbaudwp.com
+  - blackbaudase.com
+  - academicworks.com
+- label_id: bmi-auto-20260224
+  company_name: BADGER METER INC
+  seeds: []
+  owned_domains:
+  - badgermeter.com
+  - beaconama.net
+- label_id: bmrn-auto-20260224
+  company_name: BIOMARIN PHARMACEUTICAL INC
+  seeds: []
+  owned_domains:
+  - brineura.com
+  - biomarin.com
+  - palynziq.com
+  - mpsdayla.com
+  - bmrnusaccess.com
+  - childhooddementia.co.uk
+  - biomarin.eu
+  - vimizim.com
+  - biomarinrareconnections.com
+  - liveunlimitedpku.com
+  - biomarincopay.com
+  - acordatedemipku.ar
+  - acondroplasia.cl
+  - haemdifferently.it
+  - haemdifferently.eu
+  - haemdifferently.expert
+  - mpsreference.com.au
+  - cln2meetings.com
+  - discoverdysplasias.com
+  - battendayla.com
+  - biomarinhemophilia.es
+  - biomarinhemophilia.eu
+  - biomarinhemophilia.de
+  - biomarinhemophilia.fr
+  - biomarinhemophilia.com
+  - roctavian.com
+  - acondroplasiaitalia.com
+  - pku.it
+  - www.pku.it
+  - pkuevents.com
+  - morquiosity.com
+  - biomarin-rareconnections.com
+  - achondroplasia.expert
+  - pediatricseizures.com
+  - mpsreference.eu
+  - hemdifferently.com
+  - kuvan.com
+  - naglazyme.com
+  - paediatricseizures.com
+  - epilepsiatest.com
+  - epilepsiateste.com
+  - biopediatria.com
+  - mpsreference.com.br
+  - rareandready.org
+  - mpsreference.jp
+  - epicrd.org
+  - venn.expert
+  - pkuliving.eu
+  - mpsmeetings.com
+  - voxzogo.com.br
+  - pkumeetings.com
+  - roctavian.de
+  - whatwouldyoususpect.com
+  - vosoritideinjection.com
+  - pku.com
+  - biomarin.ca
+- label_id: bmy-auto-20260224
+  company_name: Bristol Myers Squibb
+  seeds: []
+  owned_domains:
+  - bms.com
+  - bmsbridge.jp
+  - myamltreatment.com.au
+  - sotyktu.com.au
+  - tyknology.com
+  - choosezeposiams.com
+  - auf-herz-und-venen.de
+  - survivorshiptoday.com
+  - bmsbridge-test.jp
+  - celgene.com
+  - bmsindialegal.info
+  - monorp.ca
+  - eliquis.it
+  - anticoagulante.info
+  - camzyos.no
+  - orencia.com
+  - bmsinformation.com
+  - junotherapeutics.com
+  - coulditbehcm.com
+  - opdivorx.com
+  - ioteachwithme.com
+  - opdivoyervoymnsclc.com
+  - opdivogastroeso.com
+  - rethinklymphoma.com
+  - detect-afib.com
+  - rinpashu.jp
+  - seelag3.com
+  - line4bmspatient.jp
+  - lenadex-japan.jp
+  - bmscustomerconnect.com
+  - eliquis.ie
+  - opdivohcp.com
+  - seeeliquisevidence.com
+  - understandingibd.com
+  - car-ttalk.com
+  - theshareregistry.org
+  - bmsmelanoma.com
+  - istodax-japan.jp
+  - opdivo.com
+  - opdivocombomnsclc-mpm.com
+  - empliciti.com
+  - reblozylondemand.com
+  - workingforuc.com
+  - ketsusen.jp
+  - bmsrequest-a-representative.com
+  - clinicalnurseconnection.com
+  - revlimid-japan.jp
+  - kotsuzuishu.jp
+  - hematologi.se
+  - opdualag.com
+  - reblozyl.com
+  - xn--nyrekrftinfo-cdb.dk
+  - exposehcm.com
+  - opdualaghcp.com
+  - pomalyst-japan.jp
+  - emplicitihcp.com
+  - immunologypathways.com
+  - io-portal.be
+  - ioteachwithmehcp.com
+  - reblozyl.ca
+  - onureg.com
+  - targetedproteindegraders.com
+- label_id: bntx-auto-20260224
+  company_name: BioNTech SE
+  seeds: []
+  owned_domains:
+  - bion.tech
+  - biontech-imfs.de
+  - biontech.us
+  - bnt.digital
+  - biontech.de
+  - biontech.com
+  - comirnaty.de
+- label_id: br-auto-20260224
+  company_name: Broadridge Financial Solutions
+  seeds: []
+  owned_domains:
+  - broadridge.com
+  - digital-delivery.com
+  - mypartnersite.com
+  - ltxtrading.com
+  - icsdelivery.com
+  - mydigitaliim.com
+  - tinybfs.com
+- label_id: brk.b-auto-20260224
+  company_name: Berkshire Hathaway
+  seeds: []
+  owned_domains:
+  - reecenichols.com
+  - huff.com
+  - homeservicesiowa.com
+  - elixir-dev.com
+  - bhanet.com
+  - bhhc.com
+  - bhegts.com
+  - midamericanenergy.com
+  - orioncre.net
+  - myewm.com
+  - brkenergy.com
+  - bherenewables.com
+  - midamerican.com
+  - longrealtyonline.com
+  - longadvantage.com
+  - longnet.net
+  - bhhsnw.com
+  - reeceandnichols.com
+  - berksi.com
+  - homeservices-ins.com
+  - homeservices.com
+  - mpp.com
+  - americanagrp.com
+  - midamericanenergyservices.com
+- label_id: bro-auto-20260224
+  company_name: Brown & Brown
+  seeds: []
+  owned_domains:
+  - brown.edu
+  - testbbh.com
+  - fbw-cpa.com
+  - adamsbrown.com
+  - curriebrown.com
+  - bbh.com
+  - lgldom.com
+  - fbtextra.com
+  - doublehboots.com
+  - sidecuts.com
+  - brownhelicopter.com
+  - odlumbrown.com
+  - hb.edu
+  - fundworldview.com
+  - eglobalcustody.com
+  - abb.com
+- label_id: bsx-auto-20260224
+  company_name: Boston Scientific
+  seeds: []
+  owned_domains:
+  - bsci.com
+  - tiefehirnstimulation-info.de
+  - bostonscientific.com
+  - preventicesolutions.com
+  - vertiflex.com
+  - djuphjarnstimulering.se
+  - livingwithlss.com
+  - controlatudolor.es
+  - troublesdumouvement.fr
+  - expertconnectbsc.com
+  - bostonscientific.com.au
+  - bsci-stage.com
+  - leapplushealth.com
+  - labbsci.com
+  - beyondcarelatam.com
+  - clearingtheclot.com
+  - bostonscientific.es
+  - myprostateinfo.co.uk
+  - bostonscientificargentina.com
+  - bostonscientific.co.kr
+  - lcbeadsupport.com
+  - bostonscientific.co.uk
+  - hardfacts.com.au
+  - spaceoar.co.uk
+  - hulp-bij-erectiele-disfunctie.nl
+  - s-icd.nl
+  - treatmybph.com
+  - sicdsystem.com
+  - endosuite.com
+  - solutions-derection.fr
+  - amsmenshealth.com
+  - your-heart-health.com
+  - americanmedicalsystems.co.uk
+  - chooseyou.com
+  - lifebeatonline.com
+  - s-icd.it
+  - hilfe-bei-erektiler-dysfunktion.de
+  - soluzione-impotenza.it
+  - s-icd.at
+  - freedomfromfibroids.com
+  - rezum.com
+  - meineprostata.com
+  - bostonpeg.jp
+  - bphsolutions.eu
+  - bph-solutions.eu
+  - s-icd.eu
+  - bostonscientific.eu
+  - bostonscientific.com.mx
+  - bostonscientific.de
+  - goliathstudy.com
+  - galilmedical.com
+  - my-prostate-info.co.uk
+  - bostonscientific.jp
+  - bostonscientific.co.in
+  - bostonscientific.fr
+  - menshealthtreatments.com.au
+  - clearingtheclot.co.uk
+  - bostonscientific.com.co
+  - watchman.com.br
+  - covid19heartstudy.com
+  - s-icd.co.uk
+  - s-icd.es
+  - btforasthma.com
+  - bostonscientific.cl
+  - mykidneystone.com
+  - menshealthtreatments-mea.com
+  - brain-stimulation.co.uk
+  - uroph-techservices.com
+  - edsolutions.co.uk
+  - solucion-de.es
+  - treatmybph.com.au
+  - s-icd.fr
+  - americanmedicalsystems.es
+  - edtreatments.com
+  - thepainfultruth.eu
+  - watchman.com
+  - ekossupport.com
+  - s-icd.ca
+  - bostonscientific.com.br
+  - mi-prostata.es
+  - hardfacts.com.cn
+  - s-icd.de
+  - varithena.com
+  - pain.com
+  - bostonscientific.com.pe
+  - knowyourhealth.com
+  - thrombusuniversity.com
+  - americanmedicalsystems.com
+  - watchmandevice.com
+  - devicelongevity.com
+  - aus-info.com
+  - theraspherenow.com
+  - menshealthtreatments.co.in
+  - bph-chiryo.jp
+  - bostonscientificpt.jp
+- label_id: burl-auto-20260224
+  company_name: Burlington Stores, Inc.
+  seeds: []
+  owned_domains:
+  - coat.com
+  - burlingtonstores.com
+  - burlingtoninvestors.com
+  - burlington.com
+- label_id: bwa-auto-20260224
+  company_name: BORGWARNER INC
+  seeds: []
+  owned_domains:
+  - borgwarner.com
+  - phinia.com
+  - delcoremy.com
+  - delcoremywarranty.com
+- label_id: bx-auto-20260224
+  company_name: Blackstone Inc.
+  seeds: []
+  owned_domains:
+  - bx.com
+  - blackstone.com
+  - blackstonemortgagetrust.com
+  - bepif.com
+  - documentpublication.co.uk
+  - ecred.com
+  - bxaccess.com
+  - investdox.com
+  - bxpe.com
+  - bxpef.com
+  - breit.ca
+  - bepimmo.com
+  - equityhealthcare.com
+  - blackstonelaunchpad.org
+  - bstonecorp.com
+  - blackstoneusa.net
+  - tubrands.com
+  - blackstonemerchant.com
+- label_id: c-auto-20260224
+  company_name: Citigroup
+  seeds: []
+  owned_domains:
+  - dmzroot.net
+  - citibank.ae
+  - citi.eu
+  - citigroup.com
+  - citibank.com
+  - citi.com
+  - citiworldprivileges.com
+  - citidirect.com
+  - citifxpulse.com
+  - citivelocity.com
+  - citibank.co.uk
+  - citibank.com.tr
+  - citibank.co.in
+  - universalcard.com
+  - citimanager.com
+  - citigroup.jp
+  - citibank.sk
+  - citibank.kz
+  - citibank.cz
+  - citibank.eu
+  - citibank.hu
+  - banamex.com
+  - citibank.com.cn
+  - citibank.com.sg
+  - citibank.com.hk
+  - citibank.com.vn
+  - citibank.co.id
+  - citibank.co.th
+  - citibank.com.my
+  - citibank.com.ph
+  - suncorpbankrewards.com.au
+- label_id: cabo-auto-20260224
+  company_name: Cable One, Inc.
+  seeds: []
+  owned_domains:
+  - cableone.biz
+  - newwavecom.com
+  - sparklight.com
+  - sparklight.net
+  - nwcable.net
+  - aboundinternet.net
+  - cableone.careers
+  - soundofsparklight.com
+  - cableone.com
+  - cableone.net
+  - fidelitycommunications.com
+  - soundofsparklight.net
+  - soundofsparklight.biz
+  - aboundinternet.biz
+  - cableoneadvertising.net
+  - sparklight.careers
+  - aboundinternet.com
+  - gigaone.com
+  - stopprogramminghikes.com
+- label_id: cae-auto-20260224
+  company_name: CAE INC
+  seeds: []
+  owned_domains:
+  - cae.com
+  - caeusats.com
+  - caemilusa.com
+  - caeuspac.org
+  - caeusa.com
+- label_id: cag-auto-20260224
+  company_name: Conagra Brands
+  seeds: []
+  owned_domains:
+  - conagrafoods.net
+  - conagrabrands.com
+  - conagra.net
+  - pinnaclefoods.com
+  - wendyschiliathome.com
+  - conagra.com
+  - conagrafoods.com
+  - conagrabrands.ca
+  - readyseteat.com
+  - bigs.com
+  - glutino.com
+  - bernsteins.com
+  - wolfbrandchili.com
+  - kidcuisine.com
+  - andycapps.com
+  - fleischmanns.com
+  - reddiwip.com
+  - actii.com
+  - guldens.com
+  - healthychoicecanada.ca
+  - vlasic.com
+  - conagrafoods.ca
+  - lachoy.com
+  - hungry-man.ca
+  - snackpack.com
+  - mrsbutterworths.com
+  - dennisonschili.com
+  - rosarita.com
+  - huntstomatoes.ca
+  - conagrafoodservice.com
+  - celestepizza.com
+  - brooksbeans.com
+  - ro-tel.com
+  - fiddlefaddlepopcorn.com
+  - vancampsbeans.com
+  - orville.com
+  - bluebonnet.com
+  - nalleyfoods.com
+  - openpit.com
+  - glutino.ca
+  - conagrabrands.com.mx
+  - hebrewnational.com
+  - mariecallendersmeals.com
+  - manwich.com
+  - jiffypoppopcorn.com
+  - vandekamps.com
+  - poppycock-popcorn.com
+  - libbysmeats.com
+  - earthbalancenatural.com
+  - hungry-man.com
+  - chefboyardee.com
+  - sandwichbros.com
+  - readyseteat.ca
+  - duncanhines.com
+  - duncanhines.ca
+  - pamcookingspray.com
+  - fronterafoods.com
+  - vlasic.ca
+  - mrspauls.com
+  - gardein.ca
+  - logcabinsyrups.com
+  - banquet.com
+  - dukesmeats.com
+  - blakesallnatural.com
+  - dukesmeats.ca
+  - poppycockpopcorn.com
+  - healthychoice.com
+- label_id: cah-auto-20260224
+  company_name: Cardinal Health
+  seeds: []
+  owned_domains:
+  - cardinalhealth.com
+  - metromedicalorder.com
+- label_id: cal-auto-20260224
+  company_name: CALERES INC
+  seeds: []
+  owned_domains:
+  - samedelman.com
+  - naturalizer.com
+  - lifestride.com
+  - ryka.com
+  - francosarto.com
+  - allenedmonds.com
+  - famousfootwear.com
+  - vionicshoes.com
+- label_id: capl-auto-20260224
+  company_name: CrossAmerica Partners LP
+  seeds: []
+  owned_domains:
+  - crossamericapartners.com
+  - caploperations.com
+- label_id: car-auto-20260224
+  company_name: AVIS BUDGET GROUP, INC.
+  seeds: []
+  owned_domains:
+  - abg.com
+  - avisbudget.com
+  - carrental.com
+  - abgcustomerservice.com
+  - budgettruck.com
+  - budget.ca
+  - budgettrucks.com.au
+  - budget.co.nz
+  - avisforbusiness.com
+  - budget.com
+  - avisdirect.com
+  - budgetbusinessprogram.com
+  - budgettruck.ca
+  - paylesscar.com
+  - avis.com
+  - budget.com.au
+  - airnewzealand.co.nz
+- label_id: cart-auto-20260224
+  company_name: Maplebear Inc.
+  seeds: []
+  owned_domains:
+  - instacart.com
+  - klipem.co.uk
+  - klipem.com
+- label_id: cass-auto-20260224
+  company_name: CASS INFORMATION SYSTEMS INC
+  seeds: []
+  owned_domains:
+  - cassbank.com
+  - cassinfo.com
+  - cassport.com
+- label_id: cat-auto-20260224
+  company_name: Caterpillar Inc.
+  seeds: []
+  owned_domains:
+  - perkins.com
+  - cat.com
+- label_id: cboe-auto-20260224
+  company_name: Cboe Global Markets
+  seeds: []
+  owned_domains:
+  - hanweck.com
+  - livevol.com
+  - cboe.com
+  - cboe.net
+  - bats.com
+  - ft-x.net
+  - chi-x.com
+  - neo.inc
+  - cboe.ca
+  - aequitasneo.com
+  - aequitasneoexchange.com
+  - etfmarket.ca
+  - neo.exchange
+  - trade-alert.com
+  - batstrading.co.uk
+  - theamericanfinancialexchange.com
+  - hanweckassoc.com
+  - cboe.co.jp
+  - ftoptions.com
+- label_id: cbre-auto-20260224
+  company_name: CBRE Group
+  seeds: []
+  owned_domains:
+  - cbre.com
+  - cbre.eu
+  - cbre.co.in
+  - cbre.co.jp
+  - cbre.fr
+  - cbre.co.il
+  - cbre.com.au
+  - cbre.co.nz
+  - telferyoung.com
+- label_id: cbz-auto-20260224
+  company_name: CBIZ, Inc.
+  seeds: []
+  owned_domains:
+  - emeritihealth.org
+  - cbiz.com
+  - cbizesc.com
+  - sunshinesys.net
+  - workforcereadyapps.com
+  - mycentrallyhr.com
+  - mhmcpa.com
+  - eflassociates.com
+  - kaconsults.com
+  - cbizcentral.com
+  - cbizsecuremail.com
+  - myemeritibenefits.org
+  - cbizenroll.com
+  - markspaneth.com
+  - pivotpointsecurity.com
+  - cbizcpas.com
+  - marcumllp.com
+  - pvtpt.com
+  - 1099-prep.com
+- label_id: cci-auto-20260224
+  company_name: Crown Castle
+  seeds: []
+  owned_domains:
+  - crowncastle.com
+  - vergx.com
+- label_id: cck-auto-20260224
+  company_name: CROWN HOLDINGS, INC.
+  seeds: []
+  owned_domains:
+  - crowncork.com
+  - hallmarkchannel.com
+  - hallmarkdrama.com
+  - hallmarkmoviesnow.com
+  - hmnow.com
+  - crownmediapress.com
+  - hallmarkchannelpress.com
+  - crownmedia.com
+  - hallmarkmoviesandmysteries.com
+  - watchhallmarktv.com
+  - crownmediainternational.com
+  - crownmediadev.com
+  - hallmarkchanneleverywhere.com
+  - hallmarktv.net
+- label_id: ccl-auto-20260224
+  company_name: Carnival
+  seeds: []
+  owned_domains:
+  - princess.com
+  - carnival.com
+  - carnivalaustralia.com
+  - wlcl.com.au
+  - pocruises.com.au
+  - shoestation.com
+  - shoecarnival.com
+  - cunard.com
+  - cunard.co.uk
+  - cunardline.cn
+  - cunard.de
+  - cunardline.com.au
+- label_id: ccrn-auto-20260224
+  company_name: CROSS COUNTRY HEALTHCARE INC
+  seeds: []
+  owned_domains:
+  - cru48.com
+  - cejkasearch.com
+  - mdainc.com
+  - medstaffinc.com
+  - crosscountrysearch.com
+  - mediscan.net
+  - crosscountrylocums.com
+  - mylearningcommunity.com
+  - crosscountry.com
+  - ccrn.com
+  - crosscountryallied.com
+  - crosscountry.in
+- label_id: cdna-auto-20260224
+  company_name: CareDx, Inc.
+  seeds: []
+  owned_domains:
+  - ottr.com
+  - caredx.com
+  - c19txr.org
+- label_id: cdns-auto-20260224
+  company_name: Cadence Design Systems
+  seeds: []
+  owned_domains:
+  - cadence.com.cn
+  - numeca.be
+  - numeca.com
+  - numflo.eu
+  - orcad.com
+  - cadence.com
+  - inspectar.com
+- label_id: ceg-auto-20260224
+  company_name: Constellation Energy
+  seeds: []
+  owned_domains:
+  - startexpower.com
+  - nebraskagas.com
+  - constellationconnect.com
+  - constellation.com
+  - exelonclearsight.com
+  - constellationclearsight.com
+- label_id: cf-auto-20260224
+  company_name: CF Industries
+  seeds: []
+  owned_domains:
+  - cffertilisers.co.uk
+  - cfindustries.com
+  - cfapps.co.uk
+- label_id: cfg-auto-20260224
+  company_name: Citizens Financial Group
+  seeds: []
+  owned_domains:
+  - citizensbank.com
+  - citizensmarketinghelp.com
+  - qacitizensbankonline.com
+  - citizensbankonline.com
+  - citizensaccess.com
+  - qacbforex.com
+  - qacollegeraptor.com
+  - qashoppingsheet.com
+  - qaraptorfi.com
+  - qacitizensbank.com
+  - citizensstandards.com
+  - franklinamerican.com
+- label_id: chd-auto-20260224
+  company_name: Church & Dwight
+  seeds: []
+  owned_domains:
+  - churchdwight.com
+  - viviscal.ca
+  - ahfoodchain.com
+  - viviscal.com
+  - oralcarepro.com
+  - flawlessbeauty.com
+  - orders-emea-churchdwight.co.uk
+  - orders-gmg-churchdwight.com
+  - churchdwight.com.mx
+  - lilcritters.com
+  - vitafusion.com
+  - hygienesquad.com
+- label_id: chrw-auto-20260224
+  company_name: C.H. Robinson
+  seeds: []
+  owned_domains:
+  - chrobinson.com
+  - mytmc.com
+  - navisphere.com
+  - enterprisetms.com
+  - freightquote.com
+  - milgram.com
+  - timcoworldwide.com
+  - chrwtrucks.com
+  - fqstaging.com
+  - navispherecarrier.com
+  - robinsonfresh.com
+  - navispherevision.com
+- label_id: chsco-auto-20260224
+  company_name: CHS INC
+  seeds: []
+  owned_domains:
+  - chshedging.com
+  - jayhawkpl.com
+  - russellconsultinggroup.com
+  - chscapital.com
+  - chspac.com
+  - chsfarmerselevator.com
+  - chsinc.com
+  - crudeoilsupply.com
+- label_id: chscp-auto-20260224
+  company_name: CHS INC
+  seeds: []
+  owned_domains:
+  - chshedging.com
+  - jayhawkpl.com
+  - russellconsultinggroup.com
+  - chscapital.com
+  - chspac.com
+  - chsfarmerselevator.com
+  - chsinc.com
+  - crudeoilsupply.com
+- label_id: chtr-auto-20260224
+  company_name: Charter Communications
+  seeds: []
+  owned_domains:
+  - charterlab.com
+  - charter.com
+  - spectrummobile.com
+  - rr.com
+  - spectrumenterprise.net
+  - spectrum.net
+  - brighthouse.com
+  - chartercom.com
+  - myspectrumreach.com
+- label_id: chwy-auto-20260224
+  company_name: Chewy, Inc.
+  seeds: []
+  owned_domains:
+  - petmd.com
+  - chewyhealth.com
+  - chewy.com
+  - zoopixapp.com
+- label_id: ci-auto-20260224
+  company_name: Cigna
+  seeds: []
+  owned_domains:
+  - cignamedicare5star.com
+  - cignawisecall.com
+  - comparaconcigna.com
+  - comparewithcigna.com
+  - newfortexas.com
+  - newforindy.com
+  - new4indy.com
+  - cignawise.com
+  - evernorthcaregroup.com
+  - comparecigna.com
+  - hsconnectonline.com
+  - cigna.com
+  - comparecignamedicare.com
+  - cignasupplemental.com
+  - mycigna.com
+  - cignacares.com
+  - cignabackpainhelp.com
+  - ticmrf.com
+  - cignainatlanta.com
+  - new4texas.com
+  - zeroincigna.com
+  - comparacigna.com
+  - cigna.com.tw
+  - mychoicefundapply.com
+  - mychoicefund.com
+  - mycignachoicefundmobile.com
+  - mycignachoicefund.com
+  - cignaaccess.com
+  - cignaforemployers.com
+  - cignaglobal.com
+  - ihglobaltelehealth.com
+  - cignaglobalhealth.com
+  - agentviewcigna.com
+  - group-billing-solutions.com
+- label_id: cien-auto-20260224
+  company_name: Ciena
+  seeds: []
+  owned_domains:
+  - myciena.com
+  - tibitcommunications.com
+  - cienagov.com
+  - benunets.com
+  - cas-isms.com
+  - ciena.com
+- label_id: cl-auto-20260224
+  company_name: Colgate-Palmolive
+  seeds: []
+  owned_domains:
+  - hillsretailorder.com
+  - shophills.be
+  - hillsvet-shop.de
+  - hills-shop.es
+  - hillsretailorder.tw
+  - hillsretailorder.co.uk
+  - shophills.nl
+  - cporder.com
+  - hills4you.com
+  - colgatepalmolive.com
+  - colgate.com
+  - hillspet.com
+  - pcaskin.com
+  - filorga.com
+  - tomsofmaine.com
+  - eltamd.com
+  - cpgaba-shop.de
+  - gabashop.com
+  - hillstohome.com
+  not_owned:
+  - cert-manager.com
+- label_id: clx-auto-20260224
+  company_name: Clorox
+  seeds: []
+  owned_domains:
+  - clorox.com
+  - outlook.com
+  - bee2bee.com
+- label_id: cme-auto-20260224
+  company_name: CME Group
+  seeds: []
+  owned_domains:
+  - cme.com
+  - cmegroup.com
+- label_id: cmg-auto-20260224
+  company_name: Chipotle Mexican Grill
+  seeds: []
+  owned_domains:
+  - chipotle.fr
+  - chipotle.ca
+  - chipotle.co.uk
+  - chipotle.de
+  - chipotle.com
+  - chipotlefeedback.com
+- label_id: cmrc-auto-20260224
+  company_name: Commerce.com, Inc.
+  seeds: []
+  owned_domains:
+  - integration.zone
+  - commerce.com
+- label_id: cnc-auto-20260224
+  company_name: Centene Corporation
+  seeds: []
+  owned_domains:
+  - meridiantotal.com
+  - ambettermeridian.com
+  - ambetterhealth.com
+  - coordinatedcarehealth.com
+  - homestatehealth.com
+  - magnoliahealthplan.com
+  - envolvehealth.com
+  - nhhealthyfamilies.com
+  - ambetterhealthnet.com
+  - centene.com
+  - ascensioncomplete.com
+  - ambetterofnorthcarolina.com
+  - ambetteroftennessee.com
+  - azcompletehealth.com
+  - mhsindiana.com
+  - wellcarebyallwell.com
+  - envolveoptical.com
+  - ambetterofoklahoma.com
+  - buckeyehealthplan.com
+  - cahealthwellness.com
+  - sunshinestatehealth.com
+  - healthnetcoverage.com
+  - arkansastotalcare.com
+  - healthnetoregon.com
+  - wellcarenc.com
+  - wellcarenewjersey.com
+  - celticinsurancecompany.com
+  - arhealthwellness.com
+  - nursewise.com
+  - meridianrx.com
+  - hnfs.com
+  - wellcare.com
+- label_id: cnp-auto-20260224
+  company_name: CenterPoint Energy
+  seeds: []
+  owned_domains:
+  - centerpointenergy.com
+  - mycenterpointenergy.com
+  - vectren.com
+- label_id: cof-auto-20260224
+  company_name: Capital One
+  seeds: []
+  owned_domains:
+  - capitalone.co.uk
+  - capitalonearena.com
+  - capitalonebank.com
+  - walmartcommunitycard.com
+  - walmartbusinesscard.com
+  - capitaloneventures.com
+  - capitalone.com
+  - viewlift.com
+  - hopper.com
+  - onecapital.com
+- label_id: cohu-auto-20260224
+  company_name: COHU INC
+  seeds: []
+  owned_domains:
+  - equiptest.com.sg
+  - ect-cpg.com
+  - cohu.com
+  - mycohu.com
+- label_id: coin-auto-20260224
+  company_name: Coinbase
+  seeds: []
+  owned_domains:
+  - trust.global
+  - coinbase-sandbox.com
+  - coinbase.com
+  - cbhq.net
+- label_id: cop-auto-20260224
+  company_name: ConocoPhillips
+  seeds: []
+  owned_domains:
+  - econocophillips.mobi
+  - conocophillips.net
+  - coplab.com
+  - econocophillips.com
+  - cop.com
+  - conocophillipsalaska.com
+  - cop.net
+  - conocophillips.com
+  - powerincooperation.com
+  - copapp.net
+- label_id: cor-auto-20260224
+  company_name: Cencora
+  seeds: []
+  owned_domains:
+  - amerisourcebergen.com
+  - intrinsiq.com
+  - innomar-strategies.com
+  - alliance-healthcare.nl
+  - alliance-healthcare.fr
+  - alcura-health.com
+  - cencora.com
+  - myclinview.com
+  - alcura-health.co.uk
+  - alcura-health.de
+  - alcura-health.ro
+  - alcura-health.fr
+  - alcura-health.es
+  - alcura-health.nl
+  - alloga.es
+- label_id: cpay-auto-20260224
+  company_name: Corpay
+  seeds: []
+  owned_domains:
+  - corpay.com
+  - fleetcor.com
+  - itiadvantage.com
+  - efectivale.com.mx
+  - cambridgefx.com
+  - femaemergencyhotels.com
+  - 7-elevenfleet.com
+  - fintwistonline.com
+  - efectifintech.com.mx
+  - valesdegasolina.com
+  - efectivalefintech.mx
+  - efectivalefintech.com
+  - allstarmileagepoint.com
+  - allstarmileagepoint.co.uk
+  - efektivnitankovani.cz
+  - fleetcor.hu
+  - fleetcor.nl
+  - fleetcor.sk
+  - fleetcor.de
+  - fleetcor.ch
+  - fleetcor.lu
+  - fleetcor.pl
+  - fleetcor.at
+  - fleetcor.fr
+  - fleetcor.cz
+  - fleetcorcards.be
+  - epyx.co.uk
+  - tankpassen-vergelijken.nl
+  - shell-tankpas.nl
+  - shell-tankkarte.de
+  - shell-kartya.hu
+  - shell-karta.sk
+  - shell-karta.pl
+  - shell-carte.fr
+  - chjones.co.uk
+  - autodiscover.ccs.cz
+  - travelcard.nl
+  - fleetcor.eu
+  - fuellynk.com.au
+  - shell-karta.cz
+  - shell-tankkarte.at
+  - shell-carte.ch
+  - shell-tankkaart.be
+  - shell-carte.be
+  - kiwifuelcards.co.nz
+  - shell-tankkarte.ch
+  - mina.co.uk
+  - pacpridenet.com
+  - cfnnet.com
+  - crewconnect.com
+  - travelcor.com
+  - plugsurfing.com
+  - clclodging.com
+  - fleetcardsusa.com
+  - corpayone.com
+  - comdata.com
+  - corpayinc.com
+  - fleetcardusa.com
+- label_id: cpb-auto-20260224
+  company_name: Campbell's Company (The)
+  seeds: []
+  owned_domains:
+  - mystarwebsite.com
+  - soups.com
+  - campbells.com
+  - campbellsfoodservice.com
+  - cookwithcampbells.ca
+  - campbellsoup.com
+  - cscassets.com
+  - pflearning.com
+  - idp-references.com
+  - thecampbellscompany.com
+- label_id: crbd-auto-20260224
+  company_name: Corebridge Financial, Inc.
+  seeds: []
+  owned_domains:
+  - assurededgeadvisory.com
+  - corebridgefinancial.com
+  - incomegeneration.com
+  - valic.com
+  - dropsolutions.com
+  - corebridgedirect.com
+  - myretirementmanager.com
+  - sunamerica.com
+  - valicnotification.com
+  - valicalerts.com
+  - valicdeliver-e.com
+  - safg.com
+  - agsourcetrac.com
+  - aglife.com
+  - americangeneral.com
+  - americangeneraltermlife.com
+- label_id: crh-auto-20260224
+  company_name: CRH plc
+  seeds: []
+  owned_domains:
+  - oldcastle.co
+  - oldcastle.com
+  - cemark.ua
+  - crhpurpose.com
+  - crh.com
+  - ephenry.com
+  - crhem.pl
+  - semnet.fi
+  - crhbrand.com
+  - normandyproducts.com
+  - cubis-systems.com
+  - crh-ua.com
+  - bosta-beton.com.pl
+  - crhukraine.com
+  - crhcwexe01.crh.ie
+  - crh.ie
+  - crhcwexe02.crh.ie
+  - roadstone.ie
+  - mobile.crh.fi
+  - oldcastleprecast.com
+  - nationalpipe.com
+  - crhmaterials.pl
+  - crh-corp.net
+  - trzuskawica.pl
+  - twojbeton.pl
+  - twoj-beton.pl
+  - bosta-beton.com
+  - bostabeton.com
+  - gruntfix.eu
+  - gruntfix.pl
+  - bosta-beton.pl
+  - bostabeton.pl
+  - gruntfix.com.pl
+  - gruntfix.com
+- label_id: crl-auto-20260224
+  company_name: Charles River Laboratories
+  seeds: []
+  owned_domains:
+  - crl.com
+  - hemacare.com
+  - vigenebio.com
+  - piedmontrcdata.com
+  - criverindia.com
+  - charlesriverlabs.com
+  - lal-ptp.eu
+  - lal-ptp.com
+  - hemacaredonorcenter.com
+  - explorabiolabs.com
+  - criver.com
+  - astartebio.com
+- label_id: crwd-auto-20260224
+  company_name: CrowdStrike
+  seeds: []
+  owned_domains:
+  - falcon-sandbox.com
+  - crowdstrikeracing.com
+  - falcon.events
+  - crowdstrike.com
+  - crwdstr.ke
+  - crowdstrikeswag.com
+- label_id: csgp-auto-20260224
+  company_name: CoStar Group
+  seeds: []
+  owned_domains:
+  - myloopnet.com
+  - loopnet.com
+  - loopnet.co.uk
+  - loopnet.ca
+  - realla.co.uk
+  - landandfarm.com
+  - areyouintheloop.com
+  - ten-x.com
+  - battleofthebids.com
+  - homes.com
+  - homesnap.com
+  - citysnap.com
+- label_id: csv-auto-20260224
+  company_name: CARRIAGE SERVICES INC
+  seeds: []
+  owned_domains:
+  - crsv.com
+  - carriageservices.com
+  - carriage-ai-internal.com
+- label_id: csx-auto-20260224
+  company_name: CSX Corporation
+  seeds: []
+  owned_domains:
+  - mytransflo.net
+  - csx.com
+  - shiprailplus.com
+  - boctrr.com
+  - transloading.com
+  - csxtransflo.com
+  - transflo.org
+  - bulktransloading.net
+  - transflocorp.org
+  - bulktransloading.com
+  - transflocorporation.com
+  - transflotranscend.net
+  - transflocorp.net
+  - transflologistics.com
+  - transflo.net
+  - mytransflo.com
+  - transflocorp.com
+  - csxtransmode.com
+  - transflologistics.net
+  - mytransflo.org
+  - transflocorporation.org
+  - transflocorporation.net
+  - transflotranscend.com
+  - intermodal.com
+  - shipcsx.com
+  - colocsx.com
+  - csxintermodalterminals.com
+  - csxcrudebyrail.com
+  - csxcrewlife.com
+  - valueofintermodal.com
+  - transflo.dev
+- label_id: ctas-auto-20260224
+  company_name: Cintas
+  seeds: []
+  owned_domains:
+  - mycintas.com
+  - cintas.ca
+  - cintasvip.com
+  - cintascares.com
+  - bestrestroom.com
+  - cintashawaii.com
+  - cintascapeawards.com
+  - custodianoftheyear.com
+  - shopcintas.com
+  - cintas.com
+  - cintasshineawards.com
+  - cintaspartners.com
+  - janitoroftheyear.com
+  - millmats.com
+  - cintasebiz.com
+  - canadasbestrestroom.com
+  - cintasfirstaidonline.com
+  - cintaspromoproducts.com
+- label_id: ctra-auto-20260224
+  company_name: Coterra
+  seeds: []
+  owned_domains:
+  - cimarex.com
+  - cabotog.com
+  - coterra.com
+- label_id: cuk-auto-20260224
+  company_name: CARNIVAL PLC
+  seeds: []
+  owned_domains:
+  - pocruises.com
+  - carnivalukgroup.com
+- label_id: cve-auto-20260224
+  company_name: CENOVUS ENERGY INC.
+  seeds: []
+  owned_domains:
+  - huskyasphalt.com
+  - huskyroadsolutions.com
+  - myhusky.ca
+  - huskyworks.ca
+  - huskyasphalt.ca
+  - winwithhusky.ca
+  - winwithhusky.com
+  - myhuskymillions.ca
+  - cenovusasphalt.com
+  - cenovusdiesel.ca
+  - cenovus.com
+  - cenovusdiesel.com
+  - rangesafety.ca
+  - huskybenefits.com
+  - huskyenergy.com.cn
+  - myhuskyrewards.ca
+  - routecommander.ca
+- label_id: cvi-auto-20260224
+  company_name: CVR ENERGY INC
+  seeds: []
+  owned_domains:
+  - cvrenergy.com
+  - cvrpartners.com
+  - coffeyvillecrude.com
+  - cvrpartnerstest.com
+  - fixtherfs.org
+  - coffeyvillecrudetest.com
+- label_id: cvlt-auto-20260224
+  company_name: COMMVAULT SYSTEMS INC
+  seeds: []
+  owned_domains:
+  - metallic.io
+  - hedviginc.com
+  - hedvig.io
+  - trapx.com
+  - commvault.com
+  - appranix.com
+- label_id: cvna-auto-20260224
+  company_name: Carvana
+  seeds: []
+  owned_domains:
+  - adesapublicauctions.com
+  - adesacinday.com
+  - adesa-cleveland.com
+  - adesawashingtondc.com
+  - carvana.com
+  - adesa.com
+- label_id: cybr-auto-20260224
+  company_name: CyberArk Software Ltd.
+  seeds: []
+  owned_domains:
+  - cyberark.com
+  - alero.io
+  - cyberark.cloud
+  - idaptive.com
+  - alero.eu
+  - cyberarktest.cloud
+  - cyber-ark.com
+  - cybrqa.co.in
+- label_id: d-auto-20260224
+  company_name: Dominion Energy
+  seeds: []
+  owned_domains:
+  - dominionenergy.com
+  - dom.com
+- label_id: dal-auto-20260224
+  company_name: Delta Air Lines
+  seeds: []
+  owned_domains:
+  - delta.com
+  - endeavorairnet.com
+  - nwa.com
+  - air4.com
+- label_id: dar-auto-20260224
+  company_name: DARLING INGREDIENTS INC.
+  seeds: []
+  owned_domains:
+  - ecoson.be
+  - darlingii.com
+  - rendac.com
+  - darpro-solutions.com
+  - hepac.biz
+  - rothsay.ca
+  - sonac.biz
+  - rousselot.biz
+  - rousselot.com
+  - griffinind.com
+  - darpro.com
+  - peptan.com
+  - darlingiidev.com
+  - valleyproteins.com
+  - mfsparts.com
+  - faros.ind.br
+  not_owned:
+  - cert-manager.com
+- label_id: dash-auto-20260224
+  company_name: DoorDash
+  seeds: []
+  owned_domains:
+  - trycaviar.com
+  - doordash.com
+  - doordash.team
+- label_id: ddog-auto-20260224
+  company_name: Datadog
+  seeds: []
+  owned_domains:
+  - datad0g.com
+  - datadoghq.com
+  - datadoghq.eu
+  - ddog-gov.com
+  - vector.dev
+  - dashcon.io
+  - datadog.com
+  - datadog.jp
+  - session-replay-datad0g.com
+  - session-replay-datadoghq.com
+  - browser-intake-datadoghq.eu
+  - browser-intake-datad0g.com
+  - browser-intake-datadoghq.com
+  - seekret.io
+  - browser-intake-us3-datadoghq.com
+  - browser-intake-us5-datadoghq.com
+- label_id: de-auto-20260224
+  company_name: Deere & Company
+  seeds: []
+  owned_domains:
+  - deere.com
+  - starfirenetwork.com
+  - deere.de
+  - deere.ro
+  - deere.com.au
+  - deere.com.cn
+  - deere.co.za
+  - deere.hr
+  - deere.ch
+  - deere.se
+  - deere.com.tr
+  - deere.sk
+  - deere.eu
+  - deere.hu
+  - deere.co.in
+  - deere.ge
+  - deere.be
+  - deere.asia
+  - deere.no
+  - deere.es
+  - deere.fi
+  - deere.co.nz
+  - deere.nl
+  - deere.ee
+  - navcomtech.com
+  - deere.dk
+  - deere.at
+  - deere.africa
+  - deere.bg
+  - johndeere.com
+  - deere.ua
+  - deere.ca
+  - deere.co.uk
+  - deere.gr
+  - deere.pt
+  - deere.cz
+  - deere.co.th
+  - deere.com.br
+  - deere.lu
+  - deere.com.mx
+  - deere.pl
+  - deere.si
+  - deere.it
+  - deere.fr
+  - deere.lv
+  - deere.lt
+  - deere.rs
+  - deere.com.ar
+- label_id: dell-auto-20260224
+  company_name: Dell Technologies
+  seeds: []
+  owned_domains:
+  - dellemc.com
+  - dell.to
+  - force10networks.com
+  - delltechnologies.com
+  - dell.com
+  - dwen.com
+  - dellproductselector.co.in
+  - rvtools.com
+  - dellproduct.com
+  - staging-platform-svc.com
+  - test-platform-svc.com
+  - dev-platform-svc.com
+  - emc.com
+  - wysemanagementsuite.com
+- label_id: dg-auto-20260224
+  company_name: Dollar General
+  seeds: []
+  owned_domains:
+  - dollargeneral.com
+  - dg.com
+  - dgpartners.com
+  - dgmedianetwork.com
+  - dgshopperpanel.com
+  - misuperdollargeneral.com
+- label_id: dhr-auto-20260224
+  company_name: Danaher Corporation
+  seeds: []
+  owned_domains:
+  - supplierrelationship.com
+  - danaher.com
+  - danaherconnect.com
+  - danaherprocurement.com
+  - danaher.net.cn
+  - veralto.net
+  - veralto.com
+  - veraltoprocurement.com
+  - veralto.org
+- label_id: dks-auto-20260224
+  company_name: DICK'S SPORTING GOODS, INC.
+  seeds: []
+  owned_domains:
+  - goinggoing.com
+  - golfgalaxy.com
+  - dksxchange.com
+  - fieldandstreamshop.com
+  - publiclands.com
+  - caliastudio.com
+  - secondskin.com
+  - calia.com
+  - dickssportinggoods.com
+  - dcsg.com
+- label_id: dlhc-auto-20260224
+  company_name: DLH Holdings Corp.
+  seeds: []
+  owned_domains:
+  - s-3.net
+  - s-3.com
+  - infinibytecloud.com
+  - nih.gov
+  - detroitself.org
+  - dlhcorp.com
+  - ifed2.com
+  - stomptpoxx.org
+- label_id: dlr-auto-20260224
+  company_name: Digital Realty
+  seeds: []
+  owned_domains:
+  - digitalrealty.com
+  - digitalrealty.de
+  - digitalrealty.co.uk
+  - digitalrealty.cn
+  - digitalrealty.jp
+  - digitalrealty.kr
+  - digitalrealty.nl
+  - digitalsavvis.com
+  - marketplaceportal.com
+  - westinbldg.com
+  - dft.com
+  - digitalrealty.asia
+  - interxion.com
+  - telx.com
+- label_id: dltr-auto-20260224
+  company_name: Dollar Tree
+  seeds: []
+  owned_domains:
+  - dollartree.com
+  - dollartreecanada.com
+  - greenbrierintl.com
+  - midwoodbrands.com
+  - dollartree.media
+  - dollartreeinfo.com
+  - chesapeakemediagroup.com
+  - chesapeake.media
+  - chesapeakemediagroup.us
+  - familydollar.media
+  - familydollar.com
+  - dtarbitration.com
+  - dollartree.xyz
+- label_id: domo-auto-20260224
+  company_name: DOMO, INC.
+  seeds: []
+  owned_domains:
+  - domo.com
+  - domo.buzz
+- label_id: dov-auto-20260224
+  company_name: Dover Corporation
+  seeds: []
+  owned_domains:
+  - destaco.com
+  - mpgdover.com
+  - opwces.com
+  - hydrosystemsco.com
+  - inpro-seal.com
+  - acmecryo.com
+  - regoproducts.com
+  - psgdover.com
+  - dovercorporation.com
+  - opwpes.com
+  - opwvws.com
+  - cpc-cryolab.com
+  - warnauto.com
+  - marshallexcelsior.com
+  - opwfluidtransfer.com
+- label_id: dpz-auto-20260224
+  company_name: Domino's
+  seeds: []
+  owned_domains:
+  - dominos.ca
+  - dominospizza.com.uy
+  - dominos.com
+  - dominos.com.om
+  - dominospizza.com.do
+  - dominospizza.pe
+  - dominos.com.qa
+  - dominospizza.org.pe
+  - dominospizza.com.pt
+  - dominospizza.com
+  - dominospizza.ng
+  - dominos.com.jo
+  - dominos.com.mu
+  - dominos.com.bh
+  - dominospizza.com.pe
+  - dominospizza.lc
+  - dominosdeliveryinsurance.com
+  - dominospizza.mu
+  - dominos.com.sa
+  - dominos.pt
+- label_id: dri-auto-20260224
+  company_name: Darden Restaurants
+  seeds: []
+  owned_domains:
+  - thecapitalburger.com
+  - thecapitalgrille.com
+  - cheddars.com
+  - bahamabreeze.com
+  - seasons52.com
+  - longhornsteakhouse.com
+  - darden.com
+  - olivegarden.ca
+  - evmblpay.com
+  - bbmblpay.com
+  - tcgmblpay.com
+  - yardhouse.com
+  - liveatlonghorn.com
+  - longhornpay.com
+  - italianfanfavorite.com
+  - wildfishseafoodgrille.com
+  - italianpairings.com
+  - lhmblpay.com
+  - pastapass.com
+  - olivegarden.com
+  - tcbmblpay.com
+  - yhmblpay.com
+  - cskmblpay.com
+  - italianfanfavorites.com
+  - eddiev.com
+  - ogmblpay.com
+  - curbsidecheckin.co
+  - viewwait.co
+  - capitalburger.com
+  - franchisedarden.com
+  - tcgpay.co
+  - breadsticknation.com
+  - s52mblpay.com
+- label_id: drs-auto-20260224
+  company_name: Leonardo DRS, Inc.
+  seeds: []
+  owned_domains:
+  - daylightsolutions.net
+  - drs-ts.com
+  - drs.com
+  - leonardodrs.com
+  - marlocoil.com
+  - daylightsolutions.com
+  - sbc-west.drs.ca
+  - sbc-east.drs.ca
+  not_owned:
+  - cert-manager.com
+- label_id: dte-auto-20260224
+  company_name: DTE Energy
+  seeds: []
+  owned_domains:
+  - dteenergy.com
+  - dteevdrive.com
+- label_id: duk-auto-20260224
+  company_name: Duke Energy
+  seeds: []
+  owned_domains:
+  - finditduke.com
+  - dukeenergy.com
+  - dukeenergyupdates.com
+  - locationdukeenergy.com
+  - shopdukeenergy.com
+  - pngasqa.us
+  - pngas.us
+  - piedmontng.com
+  - peaknet.com
+  - duke-energy.com
+  - econic.com
+  - energywisebusiness.com
+- label_id: dva-auto-20260224
+  company_name: DaVita
+  seeds: []
+  owned_domains:
+  - villagehealthmobilestage.com
+  - capellawebqa.com
+  - davitaphysiciansolutions.com
+  - davitadev.com
+  - villagehealth.com
+  - davitaventuregroup.com
+  - davita.com
+  - nephrologycarealliance.com
+  - chronickidneyfailure.com
+  - davitaadvocacy.com
+  - vhcapella.com
+  - vivelyhealth.com
+- label_id: dxcm-auto-20260224
+  company_name: Dexcom
+  seeds: []
+  owned_domains:
+  - mydiabetesdata.com
+  - dexcom.com
+  - dexdevlab.com
+  - dexcominc.com
+  - dexcom.jp
+  - dexcomdev.eu
+  - dexcom.eu
+- label_id: dxlg-auto-20260224
+  company_name: DESTINATION XL GROUP, INC.
+  seeds: []
+  owned_domains:
+  - dxlg.com
+  - destinationxl.com
+  - dxl.com
+  - casualmalexl.com
+  - rochesterclothing.com
+  - shoesxl.com
+  - casualmale.com
+  - shop-bigandtall.com
+  - rochesterclothing.eu
+  - bigandtall.com
+  - shop-destinationxl.com
+  - rochesterbigandtall.com
+  - livingxl.com
+  - shop-rochesterclothing.com
+  - shop-livingxl.com
+- label_id: dxpe-auto-20260224
+  company_name: DXP ENTERPRISES INC
+  seeds: []
+  owned_domains:
+  - ccp-src.com
+  - dxpe.com
+- label_id: ea-auto-20260224
+  company_name: Electronic Arts
+  seeds: []
+  owned_domains:
+  - masseffectarchives.com
+  - ea.com
+  - origin.com
+  - frostbite.com
+  - eaaccess.com
+  - easports.com
+  - spore.com
+  - bioware.com
+  - pogo.com
+- label_id: ed-auto-20260224
+  company_name: Consolidated Edison
+  seeds: []
+  owned_domains:
+  - conedison.com
+  - conedtransmission.com
+  - oru.com
+  - cleanlinknewjersey.com
+  - cleanlinknj.com
+  - coned.com
+- label_id: eeft-auto-20260224
+  company_name: EURONET WORLDWIDE, INC.
+  seeds: []
+  owned_domains:
+  - euronetworldwide.com
+  - eeft.com
+  - epayskylight.com
+  - epayworldwide.com
+  - epayworldwide.com.au
+  - giftplace.com.br
+- label_id: efxt-auto-20260224
+  company_name: Enerflex Ltd.
+  seeds: []
+  owned_domains:
+  - exterran.com
+  - enerflex.com
+  - myexterran.com
+- label_id: el-auto-20260224
+  company_name: Estée Lauder Companies (The)
+  seeds: []
+  owned_domains:
+  - bykilian.com
+  - kilian-paris.ae
+  - bykilian.fr
+  - kilianparis.sa
+  - kilian-paris.sa
+  - kilian-paris.com
+  - kilianparis.ae
+  - bykilian.co.uk
+  - bykilian.com.hk
+  - aveda.com.hk
+  - aveda.com.br
+  - aveda-me.com
+  - aveda.com.mx
+  - aveda.no
+  - aveda.gr
+  - aveda.ca
+  - aveda.jp
+  - aveda.com.au
+  - aveda.com
+  - aveda.it
+  - aveda.co.th
+  - aveda.de
+  - avedakorea.com
+  - aveda.dk
+  - aveda.se
+  - aveda.co.uk
+  - aveda.com.tr
+  - aveda.eu
+  - bobbibrown.at
+  - bobbibrown.gr
+  - bobbibrown.jp
+  - bobbibrown.ch
+  - bobbibrown.be
+  - bobbibrown.co.th
+  - bobbibrown.com.hk
+  - bobbibrown.com.ar
+  - bobbibrown.com.au
+  - bobbibrown.com.tw
+  - bobbibrown.com.cn
+  - bobbibrown.com.tr
+  - bobbibrown.pl
+  - bobbibrown.nl
+  - bobbibrowncosmetics.com
+  - bobbibrown.com.ph
+  - bobbibrown.co.za
+  - bobbibrown.cl
+  - bobbibrown.co.uk
+  - bobbibrown-me.com
+  - bobbibrown.com.mx
+  - bobbibrown.com.my
+  - bobbibrown.es
+  - bobbibrowncosmetics.fr
+  - bobbibrown.de
+  - bobbibrowncosmetics.ca
+  - bobbibrown.in
+  - bobbibrown.it
+  - bobbibrown.co.kr
+  - bobbibrown.co.il
+  - bobbibrown.com.sg
+  - origins.com.tr
+  - origins.com.cn
+  - origins.ca
+  - origins.co.kr
+  - origins.com.sg
+  - origins.hk
+  - origins.co.th
+  - origins.com
+  - origins.com.ph
+  - origins.eu
+  - origins.com.tw
+- label_id: embj-auto-20260224
+  company_name: EMBRAER S.A.
+  seeds: []
+  owned_domains:
+  - embraer.com.br
+  - embraer.com
+  - embraersuppliers.com
+  - flyembraer.com
+- label_id: eml-auto-20260224
+  company_name: EASTERN CO
+  seeds: []
+  owned_domains:
+  - eyevip.tw
+  - yava.co.in
+- label_id: emr-auto-20260224
+  company_name: Emerson Electric
+  seeds: []
+  owned_domains:
+  - emerson.com
+  - rosemount.com
+  - emersonprocess.com
+  - cpcus.com
+  - measurementinstrumentation.com
+  - emersonconnected.com
+  - pro-team.com
+  - eds-mobile.com
+  - ascoval.com.br
+  - asconumatics.org
+  - ascopneumatic.us
+  - asconumatics.fr
+  - ascopneumatic.com
+  - asconumatics.pl
+  - asconumatics.info
+  - asconumatics.it
+  - asconumatics.nl
+  - emerson.cn
+  - ridgidapps.com
+- label_id: ens-auto-20260224
+  company_name: EnerSys
+  seeds: []
+  owned_domains:
+  - enersys.com
+  - opticsre.com
+  - enersys.com.cn
+  - alpha.com
+  - ezselect.net
+  - hawkerpowersource.com
+- label_id: entg-auto-20260224
+  company_name: ENTEGRIS INC
+  seeds: []
+  owned_domains:
+  - entegris.com
+  - cabotcmp.com
+- label_id: eqh-auto-20260224
+  company_name: Equitable Holdings, Inc.
+  seeds: []
+  owned_domains:
+  - mymarketingstation.com
+  - equitableholdings.com
+  - equitable-funds.com
+  - planconnect.com
+  - equitable.com
+- label_id: eqnr-auto-20260224
+  company_name: EQUINOR ASA
+  seeds: []
+  owned_domains:
+  - equinor.jp
+  - statoil.no
+  - equinorbook.com
+  - statoil.com
+  - tr2000.net
+  - tr2000.no
+  - equinor.ar
+  - equinor.com
+- label_id: erie-auto-20260224
+  company_name: Erie Indemnity
+  seeds: []
+  owned_domains:
+  - agentexchange.com
+  - erieinsurance.com
+- label_id: es-auto-20260224
+  company_name: Eversource Energy
+  seeds: []
+  owned_domains:
+  - eversource.me
+  - eversource.us
+  - cvx.com
+  - eversource.xyz
+  - eversource.com
+- label_id: eslt-auto-20260224
+  company_name: ELBIT SYSTEMS LTD
+  seeds: []
+  owned_domains:
+  - devbitedge.com
+  - elbitsystemscareer.com
+  - elbit.global
+  - elbitsystems.com
+  - imisystems.com
+  - ashot.co.il
+  - esl-family.net
+  - rokar.co.il
+- label_id: etr-auto-20260224
+  company_name: Entergy
+  seeds: []
+  owned_domains:
+  - goentergy.com
+  - entergyetech.com
+  - entergyapp.com
+  - entergy.com
+  - eai-archee.com
+- label_id: etsy-auto-20260224
+  company_name: ETSY INC
+  seeds: []
+  owned_domains:
+  - patternbyetsy.com
+  - etsy.app
+  - etsycorp.com
+  - etsy.com
+  - gogetsy.com
+- label_id: evrg-auto-20260224
+  company_name: Evergy
+  seeds: []
+  owned_domains:
+  - evergy.com
+  - wcnoc.com
+  - evergyrenewablesolutions.com
+  - testkcpl.com
+  - testevergy.com
+- label_id: evtc-auto-20260224
+  company_name: EVERTEC, Inc.
+  seeds: []
+  owned_domains:
+  - evertecinc.com
+  - ath.com
+  - superecono.com
+  - popular.com
+  - collections-images.com
+  - popularautopr.com
+  - popularinc.net
+  - bancopopular.com
+  - popularinc.com
+  - athmovil.com
+  - bppr.com
+- label_id: ew-auto-20260224
+  company_name: Edwards Lifesciences
+  seeds: []
+  owned_domains:
+  - edwards.com
+  - reachfortheheart.com
+  - heartvalves.com
+  - yourhigherstandard.com
+  - pulmonaryvalvereplacement.com
+  - edwardsbenchmark.com
+  - tavrtalk.com
+  - heartandvalves.com
+  - offthesidelines.com
+  - justgettingstarted.com
+  - edwardsviewfinder.com
+  - edwardsmrtr.com
+  - edwards-mrtr.com
+  - benmakusho.jp
+- label_id: exc-auto-20260224
+  company_name: Exelon
+  seeds: []
+  owned_domains:
+  - peco.com
+  - exelonaquify.com
+  - comed.com
+  - exeloncorp.com
+  - atlanticcityelectric.com
+  - bge.com
+  - delmarva.com
+  - pepco.com
+  - pepcoholdings.com
+  - exelonclearsight.com
+  - pecosmartacsaverprogram.com
+- label_id: expd-auto-20260224
+  company_name: Expeditors International
+  seeds: []
+  owned_domains:
+  - tradeflow.com
+  - expd.com
+  - ftzworld.com
+  - miamifreezone.com
+  - tradewin.net
+  - cargosignal.com
+  - tradeflow.net
+  - tradeflow.info
+  - ftanavigator.net
+  - ftanavigator.com
+  - expeditors.com
+  - ftanavigator.org
+  - ecibglobal.com
+  - onyxsi.com
+  - vendorreferrals.com
+- label_id: expe-auto-20260224
+  company_name: Expedia Group
+  seeds: []
+  owned_domains:
+  - expedia.biz
+  - expecn.com
+  - expedia.com
+  - wotif.com
+  - travel.com.au
+  - wotif.co.nz
+  - wotif.com.au
+  - lastminute.co.nz
+  - lastminute.com.au
+  - vrbo.com
+  - hotwire.com
+  - ebookers.com
+  - ebookers.fi
+  - ebookers.fr
+  - ebookers.at
+  - ebookers.ch
+  - ebookers.nl
+  - mrjet.se
+  - ebookers.co.uk
+  - ebookers.no
+  - ebookers.de
+  - ebookers.be
+  - mrjet.dk
+  - tnetnoc.com
+  - ebookers.ie
+  - travelnow.com
+  - expediapartnercentral.com
+  - travelocity.com
+- label_id: exr-auto-20260224
+  company_name: Extra Space Storage
+  seeds: []
+  owned_domains:
+  - extraspace.com
+  - nsc.extraspace
+- label_id: extr-auto-20260224
+  company_name: EXTREME NETWORKS INC
+  seeds: []
+  owned_domains:
+  - extremenetworks.com
+  - enterasys.com
+  - ezcloudx.com
+  - extremeanalytics.online
+  - infovistacloud.com
+  - nonetworkcapex.com
+  - extremecloudbi.eu
+  - extremecloudbi.com
+- label_id: fcel-auto-20260224
+  company_name: FUELCELL ENERGY INC
+  seeds: []
+  owned_domains:
+  - fuelcellenergy.com
+  - fce.com
+- label_id: fdx-auto-20260224
+  company_name: FedEx
+  seeds: []
+  owned_domains:
+  - edi.tnt.de
+  - fedex.com
+  - genco.com
+- label_id: fe-auto-20260224
+  company_name: FirstEnergy
+  seeds: []
+  owned_domains:
+  - leensystem.com
+  - energysavepa-business.com
+  - energysaveoh-business.com
+  - myfirstrewards.com
+  - fecorporateresponsibility.com
+  - firstenergycorp.com
+  not_owned:
+  - cert-manager.com
+- label_id: fer-auto-20260224
+  company_name: Ferrovial SE
+  seeds: []
+  owned_domains:
+  - k-inurban.com
+  - ferrovial.com
+- label_id: fico-auto-20260224
+  company_name: Fair Isaac
+  seeds: []
+  owned_domains:
+  - myfico.com
+  - fairisaac.com
+  - ficoscore.com
+  - fico.com
+  - ficoscoreestimator.com
+- label_id: fis-auto-20260224
+  company_name: Fidelity National Information Services
+  seeds: []
+  owned_domains:
+  - worldpay.com
+  - accessmyiq.com
+  - fidelityifs.com
+  - fisglobal.com
+  - paytrust.com
+- label_id: fisv-auto-20260224
+  company_name: Fiserv
+  seeds: []
+  owned_domains:
+  - checkfree.com
+  - cunetbranch.com
+  - getbills.com
+  - fiserv.com
+  - fiservapps.com
+- label_id: flo-auto-20260224
+  company_name: FLOWERS FOODS INC
+  seeds: []
+  owned_domains:
+  - floconnect.com
+  - deploythejoy.com
+  - swingintotastykake.com
+  - floroutes.com
+  - flowersfoods.com
+- label_id: form-auto-20260224
+  company_name: FORMFACTOR INC
+  seeds: []
+  owned_domains:
+  - formfactor.com
+  - frtmetrology.com
+  - janult.com
+- label_id: forr-auto-20260224
+  company_name: FORRESTER RESEARCH, INC.
+  seeds: []
+  owned_domains:
+  - siriusdecisions.com
+  - dev.fbn.ai
+  - forrester.com
+  - feedbacknow.com
+  - feedback-now.ch
+  - feedback.cx
+  - feedbacknow.ch
+  - fdbnow.com
+  - fbn.ai
+- label_id: ftv-auto-20260224
+  company_name: Fortive
+  seeds: []
+  owned_domains:
+  - fortive.com
+  - intelex.com
+  - predictivesolutions.com
+  - fortiveprocurement.com
+  - fortivehub.com
+- label_id: gaia-auto-20260224
+  company_name: GAIA, INC
+  seeds: []
+  owned_domains:
+  - gaia.com
+  - gaiaherbs.com
+- label_id: gap-auto-20260224
+  company_name: GAP INC
+  seeds: []
+  owned_domains:
+  - gapinc.com
+  - gap.com
+- label_id: gco-auto-20260224
+  company_name: GENESCO INC
+  seeds: []
+  owned_domains:
+  - genescopartners.com
+  - genesco.com
+  - yourjourneys.com
+  - journeys.com
+  - journeys.ca
+  - littleburgundyshoes.com
+  - johnstonmurphy.ca
+  - johnstonmurphy.com
+  - mygenesco.com
+- label_id: ge-auto-20260224
+  company_name: GE Aerospace
+  seeds: []
+  owned_domains:
+  - geaerospace.net
+  - geaerospace.us
+  - geaerospace.com
+  - ge.com
+- label_id: gehc-auto-20260224
+  company_name: GE HealthCare
+  seeds: []
+  owned_domains:
+  - gehealthcare.com
+  - gehealthcare.cn
+  - gehealthcloud.com
+  - ge.com
+  - cardioiq.com
+- label_id: genvr-auto-20260224
+  company_name: Gen Digital Inc.
+  seeds: []
+  owned_domains:
+  - avira.com
+  - nortonlifelock.com
+  - nortonlifelockpartner.com
+  - lifelockpartner.com
+  - nortonpartner.com
+  - bullguard.com
+  - norton.com
+  - avast.com
+  - avg.com
+- label_id: gfi-auto-20260224
+  company_name: GOLD FIELDS LTD
+  seeds: []
+  owned_domains:
+  - gfg-safetyapp.com
+  - padgold.com.au
+- label_id: gfs-auto-20260224
+  company_name: GLOBALFOUNDRIES Inc.
+  seeds: []
+  owned_domains:
+  - globalfoundries.com
+  - usgfoundries.com
+  - gfoundries.com
+  - globalfoundry.info
+  - globalfoundries-saxony.org
+  - globalfoundries-saxony.biz
+  - globalfoundries-dresden.com
+  - globalfoundries.net
+  - globalfoundries-saxony.info
+  - eusgfoundries.com
+  - globalfoundriesusedequipment.com
+  - globalfoundries.us
+  - globalfoundries-saxony.net
+  - global-foundries.biz
+  - globalfoundries-dresden.info
+  - globalfoundry.net
+  - global-foundries.info
+  - globalfoundries-dresden.org
+  - globalfoundries-dresden.biz
+  - globalfoundry.org
+  - globalfoundriescd.com
+  - globalfoundries.biz
+  - globalfoundries-dresden.net
+  - global-foundries.org
+  - foundryfiles.com
+  - global-foundries.net
+  - usglobalfoundries.com
+  - globalfoundry.biz
+  - globalfoundries.org
+  - globalfoundries-saxony.com
+  - global-foundries.com
+  - global-foundries.mobi
+  - globalfoundries.info
+  - gf.com
+  - myglobalfoundries.com
+- label_id: ggg-auto-20260224
+  company_name: GRACO INC
+  seeds: []
+  owned_domains:
+  - qedenv.com
+  - graco.com
+- label_id: glbe-auto-20260224
+  company_name: Global-E Online Ltd.
+  seeds: []
+  owned_domains:
+  - globale-shops.com
+  - bglobale.com
+  - global-e.com
+- label_id: gldi-auto-20260224
+  company_name: CREDIT SUISSE AG
+  seeds: []
+  owned_domains:
+  - credit-suisse.com
+  - cshg.com.br
+  - csfb.net
+  - credit-suisse.ch
+- label_id: glxy-auto-20260224
+  company_name: Galaxy Digital Inc.
+  seeds: []
+  owned_domains:
+  - galaxydigital.io
+  - galaxy.com
+  - glxy.com
+- label_id: grpn-auto-20260224
+  company_name: Groupon, Inc.
+  seeds: []
+  owned_domains:
+  - groupon.com
+  - giftcloud.com
+  - vouchercloud.cz
+  - grouponworks.com
+  - groupon-content.net
+  - vouchercloud.fr
+  - vouchercloud.de
+  - groupon.jp
+  - vouchercloud.com
+  - vouchercloudbr.com.br
+  - vouchercloud.nl
+  - voucher-cloud.com.au
+  - vouchercloud.ie
+  - groupon.com.au
+  - groupon-shop.co.uk
+  - groupondata.com
+  - grouponcareers.com
+  - grouponinc.net
+  - groupon.de
+  - groupon.it
+  - groupon.nl
+  - groupon.ie
+  - groupon.pl
+  - groupon.ca
+  - groupon.fr
+  - groupon.ae
+  - groupon.co.nz
+  - groupon.co.uk
+  - groupon.be
+  - groupon.es
+  - grouponnz.co.nz
+  - groupon.lu
+  - groupondev.com
+  - grouponmail.pl
+  - grouponmail.es
+  - grouponmail.co.uk
+  - grouponmail.fr
+  - grouponmail.it
+  - grouponmail.ae
+  - grouponmail.be
+  - grouponmail.com.au
+  - grouponmail.de
+  - grouponmail.nl
+  - grouponmail.ca
+  - grouponmail.ie
+- label_id: grvy-auto-20260224
+  company_name: GRAVITY Co., Ltd.
+  seeds: []
+  owned_domains:
+  - ragnarok.co.kr
+  - gnjoy.com
+  - ragnarok-origin.com
+  - romeleu.com
+  - ragnaroketernallove.com
+  - gravity.co.kr
+  - ragnarokland.com
+  - ragnarokv.com
+  - romelglobal.com
+  - startwithgravity.net
+  - gravityteam.co
+- label_id: gsk-auto-20260224
+  company_name: GSK plc
+  seeds: []
+  owned_domains:
+  - gsk.com
+  - ospawietrzna.pl
+  - knowmeningococcal.com.au
+  - incellipta.co.il
+  - conectadosgsk.com.br
+  - participathivosgsk.com.br
+  - treatabletraits.jp
+  - ellipta.co.il
+  - knowthetoll.ca
+  - gskpro.com
+  - actionpotentialvc.com
+  - theprotectors.sg
+  - edott.it
+  - msds-gsk.com
+  - szczepienia.pl
+  - asthmasingapore.com
+  - zensoku.jp
+  - gsk-kompendium.at
+  - herpeszoster.co.il
+  - rsvirus.jp
+  - waki-ase.jp
+  - meningokoky.cz
+  - ellipta.co.nz
+  - gsk-india.com
+  - synflorix.cz
+  - gskreminders.ca
+  - keishuku.jp
+  - prosestricku.cz
+  - casadevacinasgsk.com.br
+  - gsk.co.nz
+  - gsk-on.com.br
+  - thecrownstudy.com
+  - benlysta.co.il
+  - zyrtec.com.sg
+  - zoltytydzien.pl
+  - treelipta.co.il
+- label_id: hckt-auto-20260224
+  company_name: HACKETT GROUP, INC.
+  seeds: []
+  owned_domains:
+  - answerthink.com
+  - thehackettgroup.com
+  - spendmatters.com
+- label_id: hnna-auto-20260224
+  company_name: HENNESSY ADVISORS INC
+  seeds: []
+  owned_domains:
+  - hennessyadvisors.com
+  - hennessyetfs.com
+  - hennessyfunds.com
+- label_id: hog-auto-20260224
+  company_name: HARLEY-DAVIDSON, INC.
+  seeds: []
+  owned_domains:
+  - h-dnet.com
+  - deallinknet.com
+  - hdfsi.com
+  - buell.com
+  - h-dmedia.com
+  - harley-davidson.com
+  - h-dvisa.com
+  - lvhd.com
+  - hendersonhd.com
+  - zionhd.com
+  - redrockharley.com
+  - h-dsn.com
+  - harley-davidson.in
+  - h-dgiftcard.com
+  - h-d.com
+  - hog.com
+  - h-dmuseum.com
+  - eaglemark.com
+  - h-dgiftcard.ca
+  - harley-davidson.co.th
+  - hdvisa.com
+  - harley-davidsonvisa.com
+  - harleydavidsonvisa.com
+  - talonsolution.com
+  - harley-davidson.asia
+  - harley-davidson.es
+  - harley-davidson.it
+  - harley-davidson.fr
+  - harleyeventapp.co.uk
+  - harley-davidsontaipei.com.tw
+  - h-dvisarewards.com
+  - hdds.com
+- label_id: hp-auto-20260224
+  company_name: Helmerich & Payne, Inc.
+  seeds: []
+  owned_domains:
+  - helmerichpayne.com
+  - hpinc.com
+  - magvar.com
+  - motivedrilling.com
+  - surveysync.net
+- label_id: hrb-auto-20260224
+  company_name: H&R BLOCK INC
+  seeds: []
+  owned_domains:
+  - hrblock.net
+  - hrblock.com
+- label_id: hst-auto-20260224
+  company_name: Host Hotels & Resorts
+  seeds: []
+  owned_domains:
+  - hosthotels.com
+  - hostmarriott.com
+- label_id: hubs-auto-20260224
+  company_name: HUBSPOT INC
+  seeds: []
+  owned_domains:
+  - hubspot.net
+  - hubapi.com
+  - hubspot.com
+  - hubspotqa.net
+  - hubinfraqa.com
+  - hubspotqa.com
+- label_id: icfi-auto-20260224
+  company_name: ICF International, Inc.
+  seeds: []
+  owned_domains:
+  - icf.com
+  - malariasurveys.org
+  - dhsprogram.com
+- label_id: idn-auto-20260224
+  company_name: Intellicheck, Inc.
+  seeds: []
+  owned_domains:
+  - icmobil.com
+  - intellicheck.com
+- label_id: idxx-auto-20260224
+  company_name: Idexx Laboratories
+  seeds: []
+  owned_domains:
+  - idexx.com
+  - idexxreminderservice.com.au
+  - idexxreminderservice.ca
+  - idexxreminderservice.com
+  - dvminsight.net
+  - pethealthnetwork.com
+  - idexx.co.za
+  - idexx.co.uk
+  - idexx.fi
+  - idexxcornerstone.com
+  - rvet.link
+  - idexx.ch
+  - idexx.dk
+  - idexx.co.nz
+  - idexx.at
+  - idexx.es
+  - idexx.nl
+  - idexx.ca
+  - idexx.fr
+  - idexx.it
+  - idexx.kr
+  - idexx.com.au
+  - idexx.no
+  - idexx.co.jp
+  - idexx.be
+  - idexx.de
+  - idexx.se
+  - idexxradil.com
+  - idexxbioanalytics.com
+  - vetconnectplus.com
+  - pethealthnetwork3d.com
+- label_id: ihrt-auto-20260224
+  company_name: iHeartMedia, Inc.
+  seeds: []
+  owned_domains:
+  - mediamonitors.com
+  - aircheckindia.com
+  - iheartmedia.com
+  - premiereradio.com
+  - premierenetworks.com
+  - iheartevents.com
+  - mediamonitorsuk.com
+  - testallmedia.com
+  - rcsworks.com
+  - iheart.com
+  - saveonthecoast.com
+  - criticalmassmedia.com
+  - rcsbeijing.com
+  - clearchannel.com
+  - ratethemusic.com
+  - podcastnewsdaily.com
+  - iheartadbuilder.com
+  - mediabase.com
+  - iheartbusiness.com
+  - iheartradio.net.nz
+  - rcssupport.com
+- label_id: it-auto-20260224
+  company_name: Gartner
+  seeds: []
+  owned_domains:
+  - capterra.com
+  - getapp.com
+  - softwareadvice.com
+  - labgartner.com
+  - gartner.com
+  - l2inc.com
+  - evanta.com
+  - researchsurveyproject.com
+  - scmworldcommunity.com
+- label_id: itrn-auto-20260224
+  company_name: Ituran Location & Control Ltd.
+  seeds: []
+  owned_domains:
+  - ituran.co.il
+  - ituran.com
+- label_id: jack-auto-20260224
+  company_name: JACK IN THE BOX INC
+  seeds: []
+  owned_domains:
+  - jitb.net
+  - jackinthebox.com
+- label_id: jbgs-auto-20260224
+  company_name: JBG SMITH Properties
+  seeds: []
+  owned_domains:
+  - 1221van.com
+  - jbg.com
+  - jbgsmith.com
+  - thegracereva.com
+  - sympark.com
+  - jbgsmithliving.com
+  - westend25apts.com
+  - centralplace.com
+  - atlanticplumbingdc.com
+  - thezoevalen.com
+  - londonnormandyapts.com
+  - riverhouseapts.com
+  - 901wdc.com
+  - 220living.com
+  - thebatleyapartments.com
+  - f1rstdc.com
+  - oldesalemvillageapartments.com
+  - juddandweiler.com
+  - thewrendc.com
+  - 13thandu.com
+  - 8001woodmont.com
+  - westhalf.com
+  - thebartlett.com
+- label_id: jout-auto-20260224
+  company_name: JOHNSON OUTDOORS INC
+  seeds: []
+  owned_domains:
+  - humminbird.com
+  - extrasport.com
+  - scubapro.eu
+  - jetboil.com
+  - neckykayaks.com
+  - oldtowncanoe.com
+  - eurekacamping.com
+  - cannondownriggers.com
+  - minnkotamotors.com
+  - oceankayak.com
+  - scubapro.com
+  - uwatec.com
+  - oldtownwatercraft.com
+  - johnsonoutdoors.eu
+  - carlislepaddles.com
+  - eurekatent.com
+  - fugawi.com
+  - chartselect.net
+  - johnsonoutdoors.com
+  - eurekatentscanada.com
+- label_id: kelya-auto-20260224
+  company_name: KELLY SERVICES INC
+  seeds: []
+  owned_domains:
+  - kellyocg.com
+  - kellyhelixanalytics.com
+  - kellyfusion.com
+  - kellyhelix.com
+  - kellyhba.com
+  - kellyweb.de
+  - kellyservices.it
+  - kellyservices.eu
+  - mykellyjobs.com
+  - kellyservices.com
+  - myptstime.com
+  - kellyocg.eu
+  - findabetterjob.com
+  - kellyservices.us
+  - ayers.com
+  - mykelly.ca
+  - mykelly.us
+  - kellyservices.com.br
+  - kellyeducationalstaffing.us
+  - kellyservices.com.pr
+  - kellyservices.com.mx
+  - kellyservices.ca
+  - kellyservicesinvestments.com
+  - mykelly.com
+  - kellyservices.no
+  - kellyconnect.com
+  - kellyeducation.com
+  - kellyeducationprod.com
+- label_id: kelyb-auto-20260224
+  company_name: KELLY SERVICES INC
+  seeds: []
+  owned_domains:
+  - kellyocg.com
+  - kellyhelixanalytics.com
+  - kellyfusion.com
+  - kellyhelix.com
+  - kellyhba.com
+  - kellyweb.de
+  - kellyservices.it
+  - kellyservices.eu
+  - mykellyjobs.com
+  - kellyservices.com
+  - myptstime.com
+  - kellyocg.eu
+  - findabetterjob.com
+  - kellyservices.us
+  - ayers.com
+  - kellyeducationalstaffing.us
+  - mykelly.ca
+  - mykelly.com
+  - kellyservicesinvestments.com
+  - kellyservices.com.pr
+  - kellyservices.ca
+  - kellyservices.com.mx
+  - kellyservices.com.br
+  - mykelly.us
+  - kellyservices.no
+  - kellyconnect.com
+  - kellyeducation.com
+  - kellyeducationprod.com
+- label_id: kfy-auto-20260224
+  company_name: KORN FERRY
+  seeds: []
+  owned_domains:
+  - kornferry.com
+  - kfy.com
+  - futurestep.com
+- label_id: knrx-auto-20260224
+  company_name: KNOREX LTD.
+  seeds: []
+  owned_domains:
+  - brand-display.com
+  - knorex.com
+- label_id: ko-auto-20260224
+  company_name: Coca-Cola Company (The)
+  seeds: []
+  owned_domains:
+  - minutemaid.com
+  - scaletccs.com
+  - coca-cola.com
+  - coke.com
+  - cokeonedev.com
+  - coca-cola.by
+  - coca-cola.org
+- label_id: ktb-auto-20260224
+  company_name: Kontoor Brands, Inc.
+  seeds: []
+  owned_domains:
+  - kontoorbrands.com
+  - lee.com
+  - wrangler.com
+  - rockandrepublic.com
+  - leeb2b.com
+  - wranglerfreegift.com
+  - wranglerb2b.com
+  - leefreegift.com
+  - ridersbylee.com
+  - www.lee.be
+  - lee.be
+  - lee.es
+  - www.lee.es
+  - lee.com.cn
+  - www.lee.it
+  - lee.it
+  - leejeans.com.au
+  - leejeans.com.mx
+  - www.lee.nl
+  - lee.nl
+  - www.lee.pl
+  - lee.pl
+  - ridersbylee.com.au
+  - wrangler.be
+  - wrangler.ca
+  - wrangler.com.au
+  - wrangler.com.mx
+  - wrangler.co.uk
+  - wrangler.de
+  - wrangler.dk
+  - wrangler.es
+  - wrangler.fr
+  - wrangler.it
+  - wrangler.nl
+  - wrangleronmybooty.com
+  - wrangler.pl
+- label_id: lad-auto-20260224
+  company_name: LITHIA MOTORS INC
+  seeds: []
+  owned_domains:
+  - lithiainc.com
+  - lithia.com
+  - driveway.com
+  - pfaffauto.com
+- label_id: laz-auto-20260224
+  company_name: Lazard, Inc.
+  seeds: []
+  owned_domains:
+  - lsal.com.sa
+  - lazardfundmanagers.com
+  - lazardassetmanagement.com
+  - lazardnet.com
+  - lazard.com
+- label_id: lcut-auto-20260224
+  company_name: LIFETIME BRANDS, INC
+  seeds: []
+  owned_domains:
+  - lifetimebrandsid.com
+  - hoan.com
+  - lifetimebrands.com
+- label_id: le-auto-20260224
+  company_name: LANDS' END, INC.
+  seeds: []
+  owned_domains:
+  - landsend.de
+  - landsend.co.uk
+  - landsend.com
+  - landsend.at
+- label_id: line-auto-20260224
+  company_name: Lineage, Inc.
+  seeds: []
+  owned_domains:
+  - medbullets.com
+  - orthobullets.com
+- label_id: lite-auto-20260224
+  company_name: Lumentum Holdings Inc.
+  seeds: []
+  owned_domains:
+  - lumentum.com
+  - neophotonics.com
+  - lumentum.co.jp
+  - lumentum.cn
+- label_id: lmnd-auto-20260224
+  company_name: Lemonade, Inc.
+  seeds: []
+  owned_domains:
+  - lemonade.com
+  - metromile.com
+- label_id: lnt-auto-20260224
+  company_name: Alliant Energy
+  seeds: []
+  owned_domains:
+  - alliantenergy.com
+  - alliant-energy.com
+  - alliantenergyretirees.com
+  - alliantenergyhomeassessment.com
+  - travero.com
+  - alliantenergyeconomicdevelopment.com
+  - powerhousetv.com
+  - alliantenergykids.com
+  - aetransportation.com
+  - logisticsparkcedarrapids.com
+  - regenfiber.com
+- label_id: lope-auto-20260224
+  company_name: Grand Canyon Education, Inc.
+  seeds: []
+  owned_domains:
+  - gce.com
+  - gcu.edu
+  - gcumedia.com
+  - orbiseducation.com
+- label_id: lpl-auto-20260224
+  company_name: LG Display Co., Ltd.
+  seeds: []
+  owned_domains:
+  - ohcare.org
+  - lgdisplay.com
+- label_id: lzb-auto-20260224
+  company_name: LA-Z-BOY INC
+  seeds: []
+  owned_domains:
+  - la-z-boy.ca
+  - la-z-boy.com
+  - learnatlzb.com
+  - englandfurniture.com
+  - lzbretail.com
+  - lzbcasegoods.com
+  - lazboymarketinghub.com
+  - la-z-boy.co.uk
+- label_id: mcrb-auto-20260224
+  company_name: Seres Therapeutics, Inc.
+  seeds: []
+  owned_domains:
+  - serestherapeutics.com
+  - myseresit.com
+- label_id: mdb-auto-20260224
+  company_name: MongoDB, Inc.
+  seeds: []
+  owned_domains:
+  - mongodb.com
+  - 10gen.com
+  - mongodb.org
+  - iscosmosdbreallymongodb.com
+  - isdocumentdbreallymongodb.com
+  - mongodb.social
+  - mongoid.org
+- label_id: med-auto-20260224
+  company_name: MEDIFAST INC
+  seeds: []
+  owned_domains:
+  - medifastinc.com
+  - optavia.com
+  - choosemedifast.com
+- label_id: meg-auto-20260224
+  company_name: Montrose Environmental Group, Inc.
+  seeds: []
+  owned_domains:
+  - enthalpy.com
+  - montrose-env.com
+  - enviro-intel.com
+  - targetemission.com
+  - montroseportal.com
+  - avantienv.com
+  - montroseportal.net
+  - myavanti.com
+- label_id: meli-auto-20260224
+  company_name: MERCADOLIBRE INC
+  seeds: []
+  owned_domains:
+  - mercadolivre.com.br
+  - mercadopago.com.ar
+  - mercadolibre.com.ar
+  - mercadolibre.com
+  - mercadopago.com
+  - mercadopago.com.mx
+  - mercadolibre.cl
+  - mercadoshops.com
+  - mercadopago.com.br
+  - mercadolibre.com.co
+  - mercadopago.cl
+  - kangu.com.br
+  - mercadolibreexperience.com.mx
+- label_id: mgrc-auto-20260224
+  company_name: MCGRATH RENTCORP
+  seeds: []
+  owned_domains:
+  - adlertankrentals.com
+  - mgrc.com
+  - mgrc.net
+  - trsrentelco.com
+  - designspacemodular.com
+  - enviroplex.com
+  - mobilemodular.com
+  - mobilemodularcontainers.com
+  - mobilemodularrents.com
+  - trs-rentelco.com
+- label_id: mmm-auto-20260224
+  company_name: 3M
+  seeds: []
+  owned_domains:
+  - 3mhis.net
+  - 3m.com.cn
+  - 3mskins.com
+  - mmm.com
+  - mmodal.com
+  - kci1.com
+- label_id: mo-auto-20260224
+  company_name: Altria
+  seeds: []
+  owned_domains:
+  - insightsc3m.com
+  - altriaposordering.com
+  - altria.com
+- label_id: morn-auto-20260224
+  company_name: Morningstar, Inc.
+  seeds: []
+  owned_domains:
+  - morningstarcommodity.com
+  - morningstar.es
+  - morningstar.fr
+  - morningstar.it
+  - morningstar.com.mx
+  - morningstarbr.com
+  - morningstarfunds.ie
+  - morningstar.pt
+  - morningstar.at
+  - morningstar.se
+  - morningstar.com
+  - morningstar.ca
+  - morningstar.dk
+  - morningstar.de
+  - morningstar.in
+  - morningstar.co.uk
+  - morningstar.cl
+  - morningstar.be
+  - morningstar.nl
+  - morningstar.no
+  - morningstar.co.il
+  - ibbotson.co.jp
+  - morningstar.fi
+  - morningstarthailand.com
+  - morningstar.ch
+  - morningstar.com.au
+  - finametrica.cn
+  - praemium.co.uk
+  - finametrica.de
+  - rpengine.com
+  - rpengine2.com
+  - cn-morningstar.cn
+  - dbrsratings.eu
+  - dbrsmorningstar.com
+  - dbrs.com
+  - funddata.com
+  - hemscott.com
+  - mp-morningstar.com
+  - aurorajet.ca
+  - maei.ca
+  - airsideflight.ca
+- label_id: mpti-auto-20260224
+  company_name: M-tron Industries, Inc.
+  seeds: []
+  owned_domains:
+  - ptf-llc.com
+  - mtronpti.com
+- label_id: msbip-auto-20260224
+  company_name: Midland States Bancorp, Inc.
+  seeds: []
+  owned_domains:
+  - midlandtc.com
+  - midlandef.com
+  - midlandfa.com
+  - midlandwealthadvisers.com
+  - midlandwm.com
+  - midlandwealthadvisors.com
+  - midlandwealthadvisors.net
+  - midlandwealthadvisers.org
+  - midlandwealthadvisors.org
+  - midlandsb.com
+  - midlandstatesbank.com
+  - midlandwealthadvisors.us
+  - midlandwealthadvisers.us
+  - midlandwealthadvisers.net
+- label_id: musa-auto-20260224
+  company_name: Murphy USA Inc.
+  seeds: []
+  owned_domains:
+  - murphyusa.com
+  - kevinmurphy.com.au
+  - kevinmurphyb2b.com
+  - kmmidatlantic.com
+  - kevinmurphydirect.com
+  - kmfrance.com
+  - kevinmurphyallaccess.com
+- label_id: nfbk-auto-20260224
+  company_name: Northfield Bancorp, Inc.
+  seeds: []
+  owned_domains:
+  - enorthfield.com
+  - northfieldbank.net
+- label_id: ngg-auto-20260224
+  company_name: NATIONAL GRID PLC
+  seeds: []
+  owned_domains:
+  - nationalgrid.com
+  - nationalgrideso.com
+  - corporg.net
+- label_id: ngl-auto-20260224
+  company_name: NGL Energy Partners LP
+  seeds: []
+  owned_domains:
+  - nglsupplywholesale.com
+  - nglmarinellc.com
+  - nglenergypartners.com
+  - centennialenergy.us
+  - nglsw.com
+  - grandmesapipeline.com
+  - nglrefined.com
+  - nglterminalco.com
+  - nglep.com
+- label_id: nice-auto-20260224
+  company_name: NICE Ltd.
+  seeds: []
+  owned_domains:
+  - nice.co.kr
+  - nicecms.co.kr
+  - 2308.co.kr
+  - nicereport.net
+  - nicers.co.kr
+  - aaarating.co.kr
+  - nicepro.kr
+  - gotcb.co.kr
+  - ca-bank.co.kr
+  - nicednb.com
+  - g2brating.co.kr
+  - ratingg2b.co.kr
+  - ppsrating.co.kr
+  - ppscredit.com
+  - creport.co.kr
+  - nicetradeinfo.com
+  - g2b-rating.com
+  - sbrating.co.kr
+  - flavourart.co.uk
+  - collabox.co.kr
+  - collabox.kr
+- label_id: nktr-auto-20260224
+  company_name: NEKTAR THERAPEUTICS
+  seeds: []
+  owned_domains:
+  - nektar.com
+  - immunivation.com
+- label_id: noa-auto-20260224
+  company_name: North American Construction Group Ltd.
+  seeds: []
+  owned_domains:
+  - nunagroup.com
+  - nunalogistics.com
+  - nacg.ca
+  - nacg.network
+- label_id: notv-auto-20260224
+  company_name: Inotiv, Inc.
+  seeds: []
+  owned_domains:
+  - basinc.com
+  - inotiv.com
+- label_id: nsp-auto-20260224
+  company_name: INSPERITY, INC.
+  seeds: []
+  owned_domains:
+  - administaff.com
+  - insperity.com
+  - performsmart.com
+  - insperitytimestar.com
+  - orgplus.com
+  - insperitysales.com
+  - simplei9.com
+  - compassionatwork.org
+  - courtcouriers.com
+  - jobdescription.com
+  - administaffcompanies.com
+  - jobdescriptions.com
+  - performancereview.com
+- label_id: ntct-auto-20260224
+  company_name: NETSCOUT SYSTEMS INC
+  seeds: []
+  owned_domains:
+  - arbornetworks.com
+  - arbor.net
+  - netscout.com
+- label_id: ntnx-auto-20260224
+  company_name: Nutanix, Inc.
+  seeds: []
+  owned_domains:
+  - nutanix.dev
+  - nutanix.com
+- label_id: nvmi-auto-20260224
+  company_name: NOVA LTD.
+  seeds: []
+  owned_domains:
+  - windows-conservatories.co.uk
+  - novabank.com.tr
+  - nexusnova.co.uk
+- label_id: oesx-auto-20260224
+  company_name: ORION ENERGY SYSTEMS, INC.
+  seeds: []
+  owned_domains:
+  - oriones.com
+  - oesx.com
+- label_id: ogn-auto-20260224
+  company_name: Organon & Co.
+  seeds: []
+  owned_domains:
+  - organon.com
+  - organonchina.com.cn
+  - ezetrol.ca
+  - maxaltrpd.com
+  - implanon.com
+  - zetia.cz
+  - hyzaar.com
+  - lotriderm.ca
+  - werkenbijorganon.com
+  - diprosone.ca
+  - implanon.ca
+  - cozaar.com
+  - diprosalic.ca
+  - aerius.cz
+  - organonconnect.com.au
+  - harmonyorganon.com
+  - celestone.com
+  - about-propecia.com
+  - medical-device-hcp.com
+  - nexplanon.com
+  - lasanteaufeminin.ca
+  - discoverdulera.com
+  - zetia.com
+  - implanonnxttraining.com
+  - fosamax.com
+  - lotrisone.ca
+  - zocor.pl
+  - hereforherhealth.ca
+  - diprolene.ca
+  - implanon-nxt.ca
+  - fosavance.ca
+  - fosamax.ca
+  - harmonybyorganon.ca
+  - singulair.com
+  - proscar.com
+  - hadlima.ca
+  - implanonnxt.ca
+  - singulairfacts.com
+  - maxalt.com
+  - singulairsavings.com
+  - implanonusa.com
+  - flashnotifymeorganon.com
+  - vytorin.com
+  - dondeestatuanticonceptivo.com
+  - singulairallergy.com
+  - nuvaring.de
+  - propecia.com
+  - ezetrol.co.uk
+  - zocor.com
+  - cerazette.cz
+  - pregnyl.com
+  - nasonex.cz
+- label_id: ogs-auto-20260224
+  company_name: ONE Gas, Inc.
+  seeds: []
+  owned_domains:
+  - oklahomanaturalgas.com
+  - kansasgasservice.com
+  - texasgasservice.com
+  - onegashub.com
+  - beadigherooklahoma.com
+  - beadigherotexas.com
+  - beadigherokansas.com
+  - onegas.jobs
+  - onegas.com
+- label_id: onto-auto-20260224
+  company_name: ONTO INNOVATION INC.
+  seeds: []
+  owned_domains:
+  - rudolphtech.com
+  - nanometrics.com
+  - ontoinnovation.com
+- label_id: out-auto-20260224
+  company_name: OUTFRONT Media Inc.
+  seeds: []
+  owned_domains:
+  - onsmart.com
+  - outfrontmediadpo.com
+  - outfront.com
+  - oohlaunchpad.com
+  - outedge.ca
+  - outfrontmedia.com
+- label_id: ovv-auto-20260224
+  company_name: Ovintiv Inc.
+  seeds: []
+  owned_domains:
+  - ovintiv.com
+  - encana.com
+- label_id: path-auto-20260224
+  company_name: UiPath, Inc.
+  seeds: []
+  owned_domains:
+  - uipath.com
+  - uipath-dev.com
+- label_id: pbh-auto-20260224
+  company_name: Prestige Consumer Healthcare Inc.
+  seeds: []
+  owned_domains:
+  - vitronc.com
+  - summerseve.com
+  - diabetictussin.com
+  - monistat.ca
+  - bcpowder.com
+  - monistat.com
+  - stye.com
+  - compoundw.com
+  - prestigebrands.ca
+  - doctorsnightguard.com
+  - littleremedies.com
+  - dentek.com.mx
+  - ecotrin.com
+  - treatlice.ca
+  - debrox.com
+  - goodyspowder.com
+  - summerseve.com.mx
+  - anacin.com
+  - dentek.com.br
+  - buttpaste.com
+  - tagamet.com
+  - efferdent.com
+  - chloraseptic.com
+  - nixlice.com
+  - gaviscon.ca
+  - dentek.com
+  - beanogas.com
+  - fleetlabs.com
+  - pedia-lax.com
+  - sleepeze.ca
+  - phazyme.com
+  - uristat.com
+  - prestigebrands.com
+  - prestigebrandsafrica.com
+  - theratears.com
+  - dramamine.com
+  - ludens.com
+  - cleareyes.com
+- label_id: pcor-auto-20260224
+  company_name: PROCORE TECHNOLOGIES, INC.
+  seeds: []
+  owned_domains:
+  - procoretech.com
+  - procore.org
+  - procore.com
+  - windtrap.io
+  - procore.design
+- label_id: pfgc-auto-20260224
+  company_name: Performance Food Group Co
+  seeds: []
+  owned_domains:
+  - codacoffee.us
+  - codacoffee.net
+  - codacoffee.co
+- label_id: phr-auto-20260224
+  company_name: Phreesia, Inc.
+  seeds: []
+  owned_domains:
+  - phreesia.net
+  - secure-checkin.com
+  - testnj-checkin.com
+  - insigniahealth.com
+  - accessefm.com
+- label_id: plus-auto-20260224
+  company_name: EPLUS INC
+  seeds: []
+  owned_domains:
+  - eplus.jp
+  - tst0eplus.jp
+  - t-jcb.com
+  - yomiuri.co.jp
+- label_id: pri-auto-20260224
+  company_name: Primerica, Inc.
+  seeds: []
+  owned_domains:
+  - primericamortgage.com
+  - primerica.com
+  - primericalatino.com
+  - primericafna.com
+  - primericacanada.com
+  - womeninprimerica.com
+  - primericacanada.ca
+  - therealhowmoneyworks.com
+  - primericacanada.net
+  - primericaworkshops.com
+  - primericaonline.com
+  - primericabusinessopportunity.com
+  - primericafinancialsolutions.com
+  - myprimerica.com
+- label_id: prlb-auto-20260224
+  company_name: Proto Labs Inc
+  seeds: []
+  owned_domains:
+  - protomold.com
+  - protolabs.com
+- label_id: prs-auto-20260224
+  company_name: PRUDENTIAL FINANCIAL INC
+  seeds: []
+  owned_domains:
+  - memberenroll.com
+  - pgimindiamf.com
+  - benefitsatpru.com
+  - prudential.com.br
+  - pgim.com
+  - prudential.com
+  - poweryourretirement.com
+- label_id: pso-auto-20260224
+  company_name: PEARSON PLC
+  seeds: []
+  owned_domains:
+  - pearson.com
+  - pearson.es
+  - pearsoned.com
+  - sciencesource2.ca
+  - pearsonenglishlearningsystem.com
+  - helloq.nl
+  - pearsonrealize.com
+  - talentlens.be
+  - ecpa-online.fr
+  - pearson-intl.com
+  - pearsonhighered.com
+  - erpi.com
+  - pearsonplaces.com.au
+  - edexcel.com
+  - schultrainer.de
+  - edexcel.org.uk
+  - pearsonschools.co.uk
+  - pearsonpte.com
+  - pearsonelt.com
+  - sciencesource.ca
+  - pearsontexas.com
+  - pearsonpte.com.cn
+  - pearsonerpi.com
+  - cogmed.nl
+  - interactivephysiology.com
+  - learningassessments.com
+  - mathology.ca
+  - statcrunch.com
+  - ichoosebtec.com
+  - mathologie.ca
+- label_id: pstg-auto-20260224
+  company_name: Pure Storage, Inc.
+  seeds: []
+  owned_domains:
+  - flashstack.com
+  - purestorage.com
+  - portworx.com
+  - purestoragecompanystore.com
+  - pureaccelerate.com
+  - purebenefits.com
+- label_id: ptct-auto-20260224
+  company_name: PTC THERAPEUTICS, INC.
+  seeds: []
+  owned_domains:
+  - ptcpac.com
+  - emflaza.com
+  - reimaginepku.com
+  - kebilidi.com
+  - makingmovesinfa.com
+  - ptcbio.com
+- label_id: pton-auto-20260224
+  company_name: PELOTON INTERACTIVE, INC.
+  seeds: []
+  owned_domains:
+  - onepeloton.ca
+  - onepeloton.com.au
+  - onepeloton.at
+  - onepeloton.co.uk
+  - onepeloton.de
+  - onepeloton.com
+- label_id: pwp-auto-20260224
+  company_name: Perella Weinberg Partners
+  seeds: []
+  owned_domains:
+  - tphco.com
+  - pwpartners.com
+- label_id: qlys-auto-20260224
+  company_name: QUALYS, INC.
+  seeds: []
+  owned_domains:
+  - qualys.com
+  - ssllabs.com
+  - qualys.dev
+  - qualysksa.com
+  - qualys.services
+  - qualys.eu
+  - qualys.ae
+  - qualys.us
+- label_id: qnst-auto-20260224
+  company_name: QUINSTREET, INC
+  seeds: []
+  owned_domains:
+  - qmp.ai
+  - nextinsure.com
+  - surehits.com
+  - mybanktracker.com
+  - cardratings.com
+  - amone.com
+  - shmktpl.com
+  - pretected.com
+  - quinstreet.com
+  - mbtmedia.com
+  - insurance.com
+  - insurancewins.com
+  - insure.com
+  - carinsurance.com
+  - moneyrates.com
+  - money-rates.com
+  - medicare-savings.org
+  - comparebrands.org
+  - health-insured.com
+  - guidetolenders.com
+  - comparisonadviser.com
+  - exchange.qmp.ai
+  - doorandwindow.com
+  - bestrates.com
+  - health-insured.org
+  - auto-insured.net
+  - medicare-savings.net
+  - comparebrands.ai
+  - americanhomewarranty.org
+  - goramie.com
+  - easylifeinsurancequote.net
+  - savingsaccounts.com
+  - loanadvisor.com
+  - cheapcarinsuranceusa.com
+  - oldhouseweb.com
+- label_id: qvcc-auto-20260224
+  company_name: QVC INC
+  seeds: []
+  owned_domains:
+  - qurio.app
+  - qvcemail.com
+  - api.qvc.jp
+  - qvc.jp
+  - www.qvc.jp
+  - qvc.com
+  - qvc.co.uk
+  - qvc.org.uk
+  - qvcuk.co.uk
+  - qvcuk.com
+  - int4.qvc.jp
+  - int1.qvc.jp
+  - int5.qvc.jp
+  - int7.qvc.jp
+  - int3.qvc.jp
+  - int-api.qvc.jp
+  - int6.qvc.jp
+  - int2.qvc.jp
+  - video.qvc.de
+  - qa.qvc.it
+  - qurateretailgroup.com
+  - blog.qvc.it
+  - qvc.qvc.jp
+  - qa.qvc.jp
+  - ori-live1.qvc.jp
+  - qa-api.qvc.jp
+  - cpqwah.co.uk
+  - cdn.qvc.it
+  - static.qvc.it
+  - qvc.fr
+  - qvc.it
+  - www.qvc.fr
+  - www.qvc.it
+  - qconnect.qvc.de
+  - cdn-live1.qvc.jp
+  - qvc.de
+  - qvc.info
+  - www.qvc.de
+  - qa-api.qvc.de
+  - qa.qvc.de
+  - int5.qvc.it
+  - int2.qvc.de
+  - int2.qvc.it
+  - int4.qvc.de
+  - int3.qvc.de
+  - int1.qvc.de
+  - int-api.qvc.it
+  - int.qvc.de
+  - int7.qvc.de
+  - int3.qvc.it
+  - int1.qvc.it
+  - int5.qvc.de
+  - int7.qvc.it
+  - int4.qvc.it
+  - int6.qvc.de
+  - int6.qvc.it
+  - origin-dc1-prod-de-ng-aem.qvc.de
+  - origin-dc1-prod-de-ngsites.qvc.de
+  - origin-dc2-prod-de-ngsites.qvc.de
+  - origin-dc2-prod-de-ng-aem.qvc.de
+- label_id: qvcd-auto-20260224
+  company_name: QVC INC
+  seeds: []
+  owned_domains:
+  - qurio.app
+  - qvcemail.com
+  - api.qvc.jp
+  - qvc.jp
+  - www.qvc.jp
+  - qvc.com
+  - qvcuk.co.uk
+  - qvcuk.com
+  - qvc.org.uk
+  - qvc.co.uk
+  - int6.qvc.jp
+  - int4.qvc.jp
+  - int7.qvc.jp
+  - int-api.qvc.jp
+  - int2.qvc.jp
+  - int1.qvc.jp
+  - int5.qvc.jp
+  - int3.qvc.jp
+  - video.qvc.de
+  - qa.qvc.it
+  - qurateretailgroup.com
+  - blog.qvc.it
+  - qvc.qvc.jp
+  - qa.qvc.jp
+  - ori-live1.qvc.jp
+  - qa-api.qvc.jp
+  - cpqwah.co.uk
+  - www.qvc.it
+  - static.qvc.it
+  - www.qvc.fr
+  - cdn.qvc.it
+  - qvc.fr
+  - qvc.it
+  - qconnect.qvc.de
+  - cdn-live1.qvc.jp
+  - qvc.de
+  - www.qvc.de
+  - qvc.info
+  - qa.qvc.de
+  - qa-api.qvc.de
+  - int3.qvc.de
+  - int-api.qvc.it
+  - int7.qvc.de
+  - int4.qvc.de
+  - int1.qvc.de
+  - int6.qvc.it
+  - int2.qvc.it
+  - int3.qvc.it
+  - int2.qvc.de
+  - int5.qvc.de
+  - int6.qvc.de
+  - int4.qvc.it
+  - int1.qvc.it
+  - int7.qvc.it
+  - int5.qvc.it
+  - int.qvc.de
+  - origin-dc2-prod-de-ngsites.qvc.de
+  - origin-dc2-prod-de-ng-aem.qvc.de
+  - origin-dc1-prod-de-ng-aem.qvc.de
+  - origin-dc1-prod-de-ngsites.qvc.de
+- label_id: rbbn-auto-20260224
+  company_name: Ribbon Communications Inc.
+  seeds: []
+  owned_domains:
+  - rbbn.com
+  - edgewaternetworks.com
+  - sonusnet.com
+  - ecitele.com
+  - genband.com
+  - ewni.net
+  not_owned:
+  - cert-manager.com
+- label_id: rbrk-auto-20260224
+  company_name: Rubrik, Inc.
+  seeds: []
+  owned_domains:
+  - rubrik.com
+  - ransimlab.com
+- label_id: rddt-auto-20260224
+  company_name: Reddit, Inc.
+  seeds: []
+  owned_domains:
+  - redditmail.com
+  - redd.it
+  - reddit.com
+  - redditinc.com
+  - redditstatus.com
+  - redditgifts.com
+  - redditmedia.com
+  - redditblog.com
+  - redditcollectibles.com
+  - reddithelp.com
+  - redditforpros.com
+- label_id: reyn-auto-20260224
+  company_name: Reynolds Consumer Products Inc.
+  seeds: []
+  owned_domains:
+  - reynoldsconsumer.com
+  - heftybrands.ca
+- label_id: rezi-auto-20260224
+  company_name: RESIDEO TECHNOLOGIES, INC.
+  seeds: []
+  owned_domains:
+  - resideo.com
+  - tc20e.com
+  - lifewhere.com
+  - firstalert.com
+  - brkelectronics.com
+  - adi-gardiner.com
+  - stentorius.com
+  - adiglobal.com
+  - connectedlyric.com
+  - honeywellhome.com
+  - totalconnect2.com
+- label_id: rmbs-auto-20260224
+  company_name: RAMBUS INC
+  seeds: []
+  owned_domains:
+  - plda.com
+  - rambus.com
+- label_id: rxo-auto-20260224
+  company_name: RXO, Inc.
+  seeds: []
+  owned_domains:
+  - rxo.com
+  - mygmcca.com
+  - bouncelogistics.com
+- label_id: ryam-auto-20260224
+  company_name: RAYONIER ADVANCED MATERIALS INC.
+  seeds: []
+  owned_domains:
+  - rayonieram.com
+  - ryam.com
+- label_id: saia-auto-20260224
+  company_name: SAIA INC
+  seeds: []
+  owned_domains:
+  - saiasecure.com
+  - saia.com
+- label_id: sang-auto-20260224
+  company_name: Sangoma Technologies Corp
+  seeds: []
+  owned_domains:
+  - sangoma.net
+  - digium.com
+  - sangoma.com
+  - star2star.net
+  - digiumcloud.net
+  - star2star.com
+- label_id: scsc-auto-20260224
+  company_name: SCANSOURCE, INC.
+  seeds: []
+  owned_domains:
+  - scansource.com
+  - posportal.com
+  - scansource.com.br
+  - cascadeportal.com
+  - channelexchange.io
+  - advantix.net
+  - intelisysuniversity.com
+  - techadvice.pro
+  - inty.com
+- label_id: scvl-auto-20260224
+  company_name: SHOE CARNIVAL INC
+  seeds: []
+  owned_domains:
+  - shoestation.com
+  - shoecarnival.com
+  - rogansshoes.com
+- label_id: sedg-auto-20260224
+  company_name: SOLAREDGE TECHNOLOGIES, INC.
+  seeds: []
+  owned_domains:
+  - solaredge.com
+  - solaredge.co.il
+  - solaredge.net
+- label_id: sgrp-auto-20260224
+  company_name: SPAR Group, Inc.
+  seeds: []
+  owned_domains:
+  - fdmfieldservices.com
+  - sparcanada.ca
+- label_id: sgu-auto-20260224
+  company_name: STAR GROUP, L.P.
+  seeds: []
+  owned_domains:
+  - petro.com
+  - idealpropane.com
+  - catooil.com
+  - petroheat.com
+  - stargrouplp.com
+  - codoil.com
+- label_id: shop-auto-20260224
+  company_name: SHOPIFY INC.
+  seeds: []
+  owned_domains:
+  - shopify.com
+  - shop.app
+- label_id: snex-auto-20260224
+  company_name: StoneX Group Inc.
+  seeds: []
+  owned_domains:
+  - stonex.com
+  - fcstone.com
+  - intlcdn.net
+  - saswealth.com
+  - intlfcstonesecurities.net
+  - intlfcstonesecurities.com
+  - intlfcstonesecurities.org
+  - stonexpoc.com
+  - stonex.com.ar
+  - gainvest.net
+  - intlfcstone.com
+  - stonexbullion.com
+- label_id: snfca-auto-20260224
+  company_name: SECURITY NATIONAL FINANCIAL CORP
+  seeds: []
+  owned_domains:
+  - matthewsfuneralfunding.com
+  - americanfuneralfinancial.com
+  - esnmc.com
+  - beneficiaryadvance.com
+  - securitynational.com
+  - memorialutah.com
+  - affordablefandc.com
+  - probstfamilyfunerals.com
+  - holbrookmortuary.com
+  - cjf.com
+  - mymortgageupdate.com
+  - logrowth.com
+  - snmcsales.com
+- label_id: snps-auto-20260224
+  company_name: Synopsys
+  seeds: []
+  owned_domains:
+  - synopsys.us
+  - concertio.com
+  - synopsys.com
+  - blackducksoftware.com
+  - blackduck.com
+  - whitehatsec.com
+  - openhub.net
+  - whitehatsec.eu
+- label_id: sojd-auto-20260224
+  company_name: SOUTHERN CO
+  seeds: []
+  owned_domains:
+  - smcelectric.com
+  - sofloco.com
+- label_id: sojf-auto-20260224
+  company_name: SOUTHERN CO
+  seeds: []
+  owned_domains:
+  - smcelectric.com
+  - sofloco.com
+- label_id: spt-auto-20260224
+  company_name: Sprout Social, Inc.
+  seeds: []
+  owned_domains:
+  - sproutsocial.com
+  - sproutsocial.eu
+- label_id: ssl-auto-20260224
+  company_name: SASOL LTD
+  seeds: []
+  owned_domains:
+  - sasolsiyakha.co.za
+  - sasoltechdata.com
+  - sasolsignatures.co.za
+  - sasolinternationalinsurancedac.com
+  - sasoltransporters.com
+  - sasolcustomer1.com
+  - sasolinsport.co.za
+  - sasolbursaries.com
+  - sasol.com
+  - sasoltechnox.co.za
+  - sasoldigital.com
+  - sasolkyc.co.za
+- label_id: ssrm-auto-20260224
+  company_name: SSR MINING INC.
+  seeds: []
+  owned_domains:
+  - anagold.com.tr
+  - ssrmining.com
+  - silverstandard.com
+  - ccvmining.net
+- label_id: sstk-auto-20260224
+  company_name: Shutterstock, Inc.
+  seeds: []
+  owned_domains:
+  - picmonkey.com
+  - turbosquid.com
+  - shutterstock.com
+  - bigstockphoto.com
+  - free3d.com
+  - offset.com
+  - splashnews.com
+  - pond5.com
+  - bigstock.com
+  - premiumbeat.com
+  - bigstockcorp.net
+  - backgrid.com
+- label_id: ssys-auto-20260224
+  company_name: STRATASYS LTD.
+  seeds: []
+  owned_domains:
+  - stratasys.com
+  - stratasys.co.kr
+  - stratasys.co.jp
+  - stratasys.com.cn
+- label_id: stn-auto-20260224
+  company_name: STANTEC INC
+  seeds: []
+  owned_domains:
+  - stantec.com
+  - cardno.com
+- label_id: stok-auto-20260224
+  company_name: Stoke Therapeutics, Inc.
+  seeds: []
+  owned_domains:
+  - stoketherapeutics.com
+  - monarchstudy.com
+  - emperorstudy.com
+- label_id: stra-auto-20260224
+  company_name: Strategic Education, Inc.
+  seeds: []
+  owned_domains:
+  - strayer.edu
+  - strategiced.com
+  - capellaleadership.com
+  - strayeruniversity.edu
+  - sophia.org
+  - insightpath.com
+  - workforceedge.com
+  - rightskill.com
+  - capella.edu
+  - sophiaapp.com
+  - sophia-testing.com
+  - capellalearning.com
+  - jwmi.com
+- label_id: strl-auto-20260224
+  company_name: STERLING INFRASTRUCTURE, INC.
+  seeds: []
+  owned_domains:
+  - banicki.com
+  - wadsco.com
+  - petillo.com
+  - strlco.com
+  - strlco.net
+  - plumbersgroup.com
+  - ccsofarizona.com
+  - ccs.team
+- label_id: stz-auto-20260224
+  company_name: Constellation Brands
+  seeds: []
+  owned_domains:
+  - cbrandsgear.com
+  - constellationbeergear.com
+  - cbrands.com
+- label_id: supv-auto-20260224
+  company_name: Grupo Supervielle S.A.
+  seeds: []
+  owned_domains:
+  - cordialfinanciera.com.ar
+  - segurossupervielle.com.ar
+  - supervielleseguros.com.ar
+  - supervielleseguros.seg.ar
+- label_id: syk-auto-20260224
+  company_name: Stryker Corporation
+  seeds: []
+  owned_domains:
+  - tornierblueprint.com
+  - stryker.com
+  - shopsageproducts.com
+  - wright.com
+  - mukametal.com
+  - physio-control.jp
+  - bacs.com
+  - vocera.com
+  - teamoris.com
+  - strykercorp.com
+- label_id: syna-auto-20260224
+  company_name: SYNAPTICS Inc
+  seeds: []
+  owned_domains:
+  - displaylink.com
+  - synaptics.com
+  - displaylink.org
+- label_id: syy-auto-20260224
+  company_name: Sysco
+  seeds: []
+  owned_domains:
+  - guestsupply.com
+  - sysco.com
+  - syscosource.ca
+  - syscosourceqa.ca
+  - paragonfresh.com
+  - justcutfresh.com
+  - kff.co.uk
+  - grecoandsons.com
+  - guestsupply.ca
+  - relishrewards.ie
+  - gilchristsoames.com
+  - pallasfoods.eu
+  - bahamafood.com
+  - trimpac.net
+  - brakessts.com
+  - stssysco.com
+  - coastalsunbelt.com
+  - syscopac.org
+  - thecoastalcos.com
+  - syscoevents.com
+  - finsselect.ca
+  - syscopossible.com
+  - apperts.com
+- label_id: tbi-auto-20260224
+  company_name: TrueBlue, Inc.
+  seeds: []
+  owned_domains:
+  - trueblue.com
+  - trueblueinc.com
+  - peopleready.com
+- label_id: tdoc-auto-20260224
+  company_name: Teladoc Health, Inc.
+  seeds: []
+  owned_domains:
+  - teladoc.com
+  - bestdoctors.com
+  - visitstaging.org
+  - teladoc.net
+  - intouchhealth.com
+  - visitnow.org
+  - intouchloadtesting.net
+  - intouchloadtesting.com
+  - teladochealth.com
+  - campaigncreator.com
+  - teladoc.ca
+  - engagementcenter.com
+- label_id: tech-auto-20260224
+  company_name: Bio-Techne
+  seeds: []
+  owned_domains:
+  - rndheme.com
+  - eurocelldiag.com
+- label_id: tgt-auto-20260224
+  company_name: Target Corporation
+  seeds: []
+  owned_domains:
+  - partnersonline.com
+  - targetcorporategiftcards.com
+  - target.com
+- label_id: tls-auto-20260224
+  company_name: TELOS CORP
+  seeds: []
+  owned_domains:
+  - telosid.com
+  - idvettingsolutions.com
+- label_id: tnet-auto-20260224
+  company_name: TRINET GROUP, INC.
+  seeds: []
+  owned_domains:
+  - trinet-devops.com
+  - hrpassport.com
+  - trinet.com
+  - zenefits.com
+  - trinet401k.com
+  - trinetselect401k.com
+  - littlebird.hr
+- label_id: tol-auto-20260224
+  company_name: Toll Brothers, Inc.
+  seeds: []
+  owned_domains:
+  - rialtotexas.com
+  - westminstertitle.com
+  - tollbrotherssmarthome.com
+  - tollbrothersinc.com
+  - tollbrothers.com
+  - kellerhomes.com
+  - sabalhomes.net
+  - tolltest.com
+- label_id: trmb-auto-20260224
+  company_name: Trimble Inc.
+  seeds: []
+  owned_domains:
+  - vrsnow.us
+  - vrsnow.de
+  - rtx-pp.com
+  - trimblertx.net
+  - trimblertx.com
+  - vrsnow.com.au
+  - vrsnow.ca
+  - vrsnow.co.nz
+  - trimbleglobal.net
+  - sketchup.com
+  - trimblepaas.com
+  - trimble.com
+- label_id: trn-auto-20260224
+  company_name: TRINITY INDUSTRIES INC
+  seeds: []
+  owned_domains:
+  - trinitypartsgroup.com
+  - trin.net
+  - trinityparts.com
+  - trinityrail.com
+  - gotilc.com
+  - trinityintegrity.com
+  - trinitymexico.com
+  - trinityrailglobal.info
+  - trinityrailglobal.com
+  - trinityrailglobal.org
+  - trinityrailglobal.online
+  - trinityrailglobal.biz
+  - trinityrailglobal.net
+  - trinityrailglobal.co
+  - trinityrailmaintenanceservices.com
+  - tilcdev.com
+  - trinityindustries.com
+  - trinityheads.com
+  - trinityrailbi.com
+  - pons1.com
+  - rsilogistics.com
+  - rsinext.com
+  - trinityrailmarket.com
+- label_id: ttmi-auto-20260224
+  company_name: TTM TECHNOLOGIES INC
+  seeds: []
+  owned_domains:
+  - ttm.com
+  - ttmtech.com
+- label_id: ttwo-auto-20260224
+  company_name: Take-Two Interactive
+  seeds: []
+  owned_domains:
+  - 2kgames.com
+  - rockstargames.com
+  - 2kchina.com
+  - take2games.com
+  - 2k.com
+  - ghoststorygames.com
+  - dxyz.pro
+  - take2asia.com
+  - privatedivision.com
+  - kerbalspaceprogram.com
+  - take2canada.com
+  - take2support.com
+  - taketwogames.com
+  - wwwtake2games.com
+  - take2games.net.au
+  - take2benelux.com
+  - take2deals.com
+  - take2licensing.com
+  - take2store.com
+  - take2games.tv
+  - take-2-interactive.com
+  - taketogames.com
+  - take2games.co.uk
+  - taketwolicensing.com
+  - taketwo.net
+  - take2games.net
+  - take2games.org
+  - take2games.biz
+  - take2games.cc
+  - take2interactive.com
+  - taketwo.fr
+  - take2games.com.au
+  - taketwo.com
+  - take2international.com
+  - take2.de
+  - vcentertainment.com
+  - firaxis.com
+  - hangar13games.com
+  - nordeus.com
+- label_id: tu-auto-20260224
+  company_name: TELUS CORP
+  seeds: []
+  owned_domains:
+  - koodomobile.com
+  - publicmobile.ca
+  - koodo.ca
+  - telus.ca
+  - koodo.com
+  - koodomobile.ca
+  - telus.com
+  - telusquebec.com
+  - telusmobility.com
+  - citrixportal.adt.ca
+- label_id: tvtx-auto-20260224
+  company_name: Travere Therapeutics, Inc.
+  seeds: []
+  owned_domains:
+  - retrophin.com
+  - thiolahcp.com
+  - travere.com
+  - filsparirems.com
+- label_id: txnm-auto-20260224
+  company_name: TXNM ENERGY INC
+  seeds: []
+  owned_domains:
+  - tnpe.com
+  - pnm.com
+  - tnmp.com
+  - pnmresources.com
+  - txnmenergy.com
+- label_id: ucb-auto-20260224
+  company_name: UNITED COMMUNITY BANKS INC
+  seeds: []
+  owned_domains:
+  - ucbi.com
+  - uconnect.com
+  - myprogressbank.com
+  - reliantbank.com
+  - reliantbankmortgage.com
+  - unitedcommunitybanks.com
+- label_id: udmy-auto-20260224
+  company_name: Udemy, Inc.
+  seeds: []
+  owned_domains:
+  - udemy.com
+  - udemycdn.com
+  - udemymail.com
+  - corpu.com
+  - udinfra.net
+- label_id: unm-auto-20260224
+  company_name: Unum Group
+  seeds: []
+  owned_domains:
+  - coloniallife.com
+  - coloniallifedental.com
+  - colonial-paulrevere.com
+  - unumgroup.com
+  - unumdentalcare.com
+  - unumvisioncare.com
+  - unum.com
+- label_id: unma-auto-20260224
+  company_name: Unum Group
+  seeds: []
+  owned_domains:
+  - coloniallife.com
+  - unumgroup.com
+  - unumdentalcare.com
+  - coloniallifedental.com
+  - colonial-paulrevere.com
+  - unumvisioncare.com
+  - unum.com
+- label_id: uone-auto-20260224
+  company_name: URBAN ONE, INC.
+  seeds: []
+  owned_domains:
+  - u1corp.com
+  - tvonesales.com
+  - tvonepartners.com
+  - tvone.tv
+- label_id: upwk-auto-20260224
+  company_name: UPWORK, INC
+  seeds: []
+  owned_domains:
+  - upwork.com
+  - go-lifted.com
+- label_id: usoi-auto-20260224
+  company_name: CREDIT SUISSE AG
+  seeds: []
+  owned_domains:
+  - cshg.com.br
+  - csfb.net
+  - credit-suisse.ch
+  - credit-suisse.com
+- label_id: viv-auto-20260224
+  company_name: TELEFONICA BRASIL S.A.
+  seeds: []
+  owned_domains:
+  - vivo.com.br
+  - telefonica.com.br
+  - ztpurpura.com.br
+  - valesaudepet.com.br
+  - valesaudesempre.com.br
+  - valesaude.com.br
+- label_id: vlto-auto-20260224
+  company_name: Veralto
+  seeds: []
+  owned_domains:
+  - dheasllc.com
+  - veralto.com
+  - veraltoprocurement.com
+  - veralto.org
+  - vltotest1.com
+  - veralto.net
+- label_id: vrsk-auto-20260224
+  company_name: Verisk Analytics
+  seeds: []
+  owned_domains:
+  - propertypreswizard.com
+  - xactware.com
+  - xactanalysis.com
+  - xactnet.com
+- label_id: vrts-auto-20260224
+  company_name: VIRTUS INVESTMENT PARTNERS, INC.
+  seeds: []
+  owned_domains:
+  - virtuscorp.com
+  - kayne.com
+  - virtusinv.com
+  - shiplp.com
+  - dpimc.com
+  - virtus.com
+- label_id: vrtx-auto-20260224
+  company_name: Vertex Pharmaceuticals
+  seeds: []
+  owned_domains:
+  - vrtx.com
+  - vertextreatments.ca
+  - vertexconnects.com
+  - symdeko.com.au
+  - thalassemiafindyourpath.co.uk
+  - vrtxglobalaccess.com
+  - genepossibilities.com
+  - genepossibilitieshcp.com
+  - ascentcfeducation.net
+  - vrtxconnect.com
+  - orkambihcp.com
+  - cfsource.ie
+  - cfsource.co.uk
+  - kalydeco.com
+  - orkambi.com
+  - vertexgps.com
+  - cfcare.net
+  - vrtxspendtransparency.com
+  - cfsource.de
+  - cftrscience.ca
+  - vrtx.ca
+  - vrtx.de
+  - vrtx.fr
+  - cfsource.ch
+  - cfsource.fr
+  - vertexfoundation.org
+  - cfsource.nl
+  - vertexmedinfo.com
+  - vertexvaliance.com.au
+  - cfsource.es
+  - bubblesofhope.ca
+  - kalydeco.com.au
+  - orkambi.com.au
+  - cf-akademie.de
+  - cfsource.com
+  - cfmedcare.com
+  - cfsource.it
+  - cfsource.co.il
+  - cfsource-arabic.com
+  - cf-telecolloquium.de
+  - casgevy.com
+  - casgevyhcp.com
+  - cfsource.dk
+  - cfsource.no
+  - cfsource.se
+  - everyday-cf.com
+  - globeinportal.com
+  - vertextreatmentshcp.com
+  - cfsource.pt
+  - cfsource.gr
+  - findyourbetathalpath.co.uk
+- label_id: vsat-auto-20260224
+  company_name: VIASAT INC
+  seeds: []
+  owned_domains:
+  - viasat.com
+  - viasatlive.com
+  - wildblue.net
+  - exede.net
+  - viasatmdd.com
+  - gowifinavy.com
+  - viasatpartnerconnect.com
+  - viasatdobrasil.com.br
+  - viasatprepago.com.mx
+  - viasatadvertising.com
+  not_owned:
+  - cert-manager.com
+- label_id: vsco-auto-20260224
+  company_name: Victoria's Secret & Co.
+  seeds: []
+  owned_domains:
+  - victoriassecret.com
+  - vspink.com
+- label_id: vtol-auto-20260224
+  company_name: Bristow Group Inc.
+  seeds: []
+  owned_domains:
+  - bristowgroup.com
+  - erahelicopters.com
+- label_id: wbs-auto-20260224
+  company_name: WEBSTER FINANCIAL CORP
+  seeds: []
+  owned_domains:
+  - hsabank.com
+  - snb.com
+  - websterbank.com
+  - wbcc.com
+  - websteronline.com
+  - interlinksweep.com
+  - sterlingnationalbank.com
+- label_id: weav-auto-20260224
+  company_name: Weave Communications, Inc.
+  seeds: []
+  owned_domains:
+  - weavelab.xyz
+  - getweave.com
+  - weavehelp.com
+- label_id: wgo-auto-20260224
+  company_name: WINNEBAGO INDUSTRIES INC
+  seeds: []
+  owned_domains:
+  - wgo.net
+  - winnebagoind.com
+  - lithionicsbattery.com
+  - chriscraft.com
+  - winnebago.com
+  - wgosource.com
+- label_id: wit-auto-20260224
+  company_name: WIPRO LTD
+  seeds: []
+  owned_domains:
+  - wipromobilebanking.com
+  - m3wind.com
+- label_id: wldn-auto-20260224
+  company_name: Willdan Group, Inc.
+  seeds: []
+  owned_domains:
+  - willdan.com
+  - weidtspace.com
+  - netenergyoptimizer.com
+  - cnctracker.com
+  - twgi.com
+  - theweidtgroup.com
+  - b3benchmarking.com
+  - focusonenergync.com
+- label_id: wly-auto-20260224
+  company_name: JOHN WILEY & SONS, INC.
+  seeds: []
+  owned_domains:
+  - wileyplus.com
+  - wiley.com
+  - jacplus.com.au
+  - dummies.com
+  - efficientlearning.com
+  - leadershipchallenge.com
+  - wileystudentchoice.ca
+  - wileystudentchoice.com
+  - xyzmedia.net
+  - jacatlas.com.au
+  - myworldatlas.com.au
+  - knewton.com
+  - advancementcourses.com
+  - royalmarsdenmanual.com
+  - johnwiley.com.au
+  - wiley.co.uk
+  - johnwiley.net.au
+  - lpionline.com
+  - wiley.tools
+  - wiley.com.sg
+  - wileydigitalsolutions.com.au
+  - jaconline.com.au
+  - wiley.ca
+- label_id: wm-auto-20260224
+  company_name: Waste Management
+  seeds: []
+  owned_domains:
+  - fairlesslandfill.com
+  - wmprintarchive.com
+  - wm.com
+  - wmsolutions.com
+  - oakleafwastemgmt.com
+  - adswaste.net
+  - americanlandfill.com
+  - dumpster.com
+  - enviroserv.com
+  - wastebyrail.com
+  - wmcanada.com
+  - flyashdirect.com
+  - rorr.com
+  - wmcanada.ca
+  - recycleoftenrecycleright.com
+  - agro-soil.com
+  - wmdolphin.com
+  - thebagster.com
+  - westsidewaste.com
+  - grundon.com
+  - wmsustainabilityservices.biz
+  - eco.com.sg
+  - mwan.gov.sa
+  - nuclearwasteservices.uk
+- label_id: wmg-auto-20260224
+  company_name: Warner Music Group Corp.
+  seeds: []
+  owned_domains:
+  - jmonae.com
+  - warnermusic.com
+  - wmg.com
+  - leigh-anneofficial.com
+  - barbiesounds.com
+  - barbiethealbum.com
+  - teddyswims.com
+  - asinhell.com
+- label_id: wms-auto-20260224
+  company_name: ADVANCED DRAINAGE SYSTEMS, INC.
+  seeds: []
+  owned_domains:
+  - adspipe.com
+  - ads-pipe.com
+  - orenco.com
+- label_id: wolf-auto-20260224
+  company_name: WOLFSPEED, INC.
+  seeds: []
+  owned_domains:
+  - wolfspeed.com
+  - cree.com
+- label_id: wpm-auto-20260224
+  company_name: Wheaton Precious Metals Corp.
+  seeds: []
+  owned_domains:
+  - silverwheaton.com
+  - wheatonpm.com
+- label_id: wsbc-auto-20260224
+  company_name: WESBANCO INC
+  seeds: []
+  owned_domains:
+  - weballotments.com
+  - firstnetbillpay.com
+  - wesbanco.com
+  - moveit2fcb.com
+- label_id: wtrg-auto-20260224
+  company_name: Essential Utilities, Inc.
+  seeds: []
+  owned_domains:
+  - unionromesewer.com
+  - aquaamerica.com
+  - aquawaterservices.com
+  - essential.co
+  - waterbyaqua.com
+  - aquawater.com
+  - peoples-gas.com
+  - aquaeportal.com
+- label_id: xfor-auto-20260224
+  company_name: X4 Pharmaceuticals, Inc
+  seeds: []
+  owned_domains:
+  - x4pharma.com
+  - x4speakerprograms.com
+- label_id: xom-auto-20260224
+  company_name: ExxonMobil
+  seeds: []
+  owned_domains:
+  - exxonmobilpac.org
+  - exxonmobilpac.com
+  - mobil.cn
+  - exxonmobil.com
+  - essocardonline.com.hk
+  - essocardonline.com.sg
+  - imperialoil.ca
+  - xtoenergy.com
+  - esso.ca
+  - mobil.com.cn
+  - mobilcardonline-guam.com
+  - xom.com
+- label_id: xyz-auto-20260224
+  company_name: Block, Inc.
+  seeds: []
+  owned_domains:
+  - squareup.com
+  - squareupsandbox.com
+  - squareupstaging.com
+  - square.site
+  - giveandgetlocal.com
+  - editmysite.com
+  - weeblycloud.com
+  - loginportal.site
+  - square.online
+  - weebly.com
+  - weeblysite.com
+  - afterpay.com
+  - cash.app
+  - hrblock.com
+  - hrblock.net
+- label_id: zd-auto-20260224
+  company_name: ZIFF DAVIS, INC.
+  seeds: []
+  owned_domains:
+  - ereceptionist.fr
+  - ereceptionist.de
+  - ereceptionist.ie
+  - ereceptionist.co.uk
+  - line2.com
+  - evoice.co.uk
+  - campaigner.com
+  - j2.com
+  - emailcampaigns.net
+  - smtp.com
+  - pdfmail.com
+  - ereceptionist.eu
+  - j2global.com
+  - evoice.co.nz
+  - ziffdavis.com
+  - ehgroup.com
+- label_id: zgn-auto-20260224
+  company_name: Ermenegildo Zegna N.V.
+  seeds: []
+  owned_domains:
+  - zegna.com
+  - zegna.cn
+  - zegnacert.com
+- label_id: zumz-auto-20260224
+  company_name: Zumiez Inc
+  seeds: []
+  owned_domains:
+  - zumiez.com
+  - thezumiezstash.com
+  - thezumiezstash.ca
+  - zumiez.ca
