@@ -288,16 +288,19 @@ class Scout:
         def _remaining() -> float:
             return max(0.0, total_budget - (time.monotonic() - t0))
 
+        def _process_single_result(result: Any) -> None:
+            if isinstance(result, BaseException):
+                errors.append(str(result))
+                return
+            for domain, accum in result:
+                if domain in domain_evidence:
+                    domain_evidence[domain].merge(accum)
+                else:
+                    domain_evidence[domain] = accum
+
         def _collect(results: list[Any]) -> None:
             for result in results:
-                if isinstance(result, BaseException):
-                    errors.append(str(result))
-                    continue
-                for domain, accum in result:
-                    if domain in domain_evidence:
-                        domain_evidence[domain].merge(accum)
-                    else:
-                        domain_evidence[domain] = accum
+                _process_single_result(result)
 
         # Phase 1: Seed validation + independent strategies run in parallel.
         # Strategies A (org search) and C (domain guess) don't need seed results.
