@@ -633,6 +633,53 @@ class Scout:
 
     # --- Step 2A: Organization name search ---
 
+    def _process_org_record(
+        self,
+        rec: dict[str, Any],
+        org_name: str,
+        source_tag: str,
+    ) -> list[tuple[str, _DomainAccum]]:
+        results: list[tuple[str, _DomainAccum]] = []
+        cert_org = rec.get("org_name")
+        if not isinstance(cert_org, str) or not cert_org:
+            return results
+
+        # Only keep certs where the org matches our target
+        similarity = org_name_similarity(cert_org, org_name)
+        if similarity < self.config.org_match_threshold:
+            return results
+
+        sans = _extract_sans(rec)
+        cn = rec.get("common_name", "")
+        all_names = _collect_cert_names(sans, cn)
+
+        for name in all_names:
+            if not is_valid_domain(name):
+                continue
+            base = extract_base_domain(name)
+            if not base:
+                continue
+            accum = _DomainAccum()
+            accum.sources.add(source_tag)
+            desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+            accum.evidence.append(
+                EvidenceRecord(
+                    source_type=source_tag,
+                    description=desc,
+                    cert_id=_int_or_none(rec.get("cert_id")),
+                    cert_org=cert_org,
+                    similarity_score=round(similarity, 4),
+                )
+            )
+            accum.cert_org_names.add(cert_org)
+            nb = rec.get("not_before")
+            na = rec.get("not_after")
+            if nb:
+                accum.update_times(nb, na)
+            results.append((base, accum))
+
+        return results
+
     async def _strategy_org_search(
         self,
         org_name: str,
@@ -648,42 +695,7 @@ class Scout:
             return results
 
         for rec in records:
-            cert_org = rec.get("org_name")
-            if not isinstance(cert_org, str) or not cert_org:
-                continue
-            # Only keep certs where the org matches our target
-            similarity = org_name_similarity(cert_org, org_name)
-            if similarity < self.config.org_match_threshold:
-                continue
-
-            sans = _extract_sans(rec)
-            cn = rec.get("common_name", "")
-            all_names = _collect_cert_names(sans, cn)
-
-            for name in all_names:
-                if not is_valid_domain(name):
-                    continue
-                base = extract_base_domain(name)
-                if not base:
-                    continue
-                accum = _DomainAccum()
-                accum.sources.add(source_tag)
-                desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
-                accum.evidence.append(
-                    EvidenceRecord(
-                        source_type=source_tag,
-                        description=desc,
-                        cert_id=_int_or_none(rec.get("cert_id")),
-                        cert_org=cert_org,
-                        similarity_score=round(similarity, 4),
-                    )
-                )
-                accum.cert_org_names.add(cert_org)
-                nb = rec.get("not_before")
-                na = rec.get("not_after")
-                if nb:
-                    accum.update_times(nb, na)
-                results.append((base, accum))
+            results.extend(self._process_org_record(rec, org_name, source_tag))
 
         return results
 
