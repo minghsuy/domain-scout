@@ -348,45 +348,14 @@ class Scout:
 
         # Wait for all seed validations (capped at 15s) while A/C also run
         if seed_tasks:
-            try:
-                seed_results = await asyncio.wait_for(
-                    asyncio.gather(*seed_tasks.values(), return_exceptions=True),
-                    timeout=min(15.0, _remaining()),
-                )
-                for sd, result in zip(seed_tasks.keys(), seed_results, strict=True):
-                    if isinstance(result, BaseException):
-                        errors.append(f"Seed validation failed for {sd}: {result}")
-                        seed_assessments[sd] = "error"
-                    else:
-                        seed_assessments[sd] = result["assessment"]
-                        seed_org_names[sd] = result["org_name"]
-                        if result.get("co_hosted_seeds"):
-                            seed_cross_verification[sd] = result["co_hosted_seeds"]
-                        log.info(
-                            "scout.seed_validated",
-                            seed=sd,
-                            assessment=result["assessment"],
-                            seed_org=result["org_name"],
-                            co_hosted=result.get("co_hosted_seeds", []),
-                        )
-            except TimeoutError:
-                errors.append("Seed validation timed out")
-                for sd, stask in seed_tasks.items():
-                    if not stask.done():
-                        stask.cancel()
-                        seed_assessments.setdefault(sd, "timeout")
-                    elif stask.cancelled():
-                        seed_assessments.setdefault(sd, "timeout")
-                    else:
-                        exc = stask.exception()
-                        if exc:
-                            seed_assessments.setdefault(sd, "error")
-                        else:
-                            r = stask.result()
-                            seed_assessments.setdefault(sd, r["assessment"])
-                            seed_org_names.setdefault(sd, r["org_name"])
-                            if r.get("co_hosted_seeds"):
-                                seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
+            await self._process_seed_tasks(
+                seed_tasks,
+                errors,
+                seed_assessments,
+                seed_org_names,
+                seed_cross_verification,
+                min(15.0, _remaining()),
+            )
 
         # Phase 2: Seed-dependent strategies (B + optional second org search)
         dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
@@ -458,32 +427,12 @@ class Scout:
                 errors.append("DNS resolution timed out")
 
         # Step 3b: GeoDNS rescue for non-resolving domains (deep mode)
-        if self.config.deep_mode and _remaining() > 3.0:
-            failed_domains = [d for d, acc in domain_evidence.items() if not acc.resolves]
-            if failed_domains:
-                log.info("scout.geodns_rescue", count=len(failed_domains))
-                try:
-                    async with httpx.AsyncClient(timeout=15.0) as client:
-                        geodns_map = await asyncio.wait_for(
-                            self._dns.bulk_geodns_resolve(failed_domains, client),
-                            timeout=max(1.0, _remaining() - 3.0),
-                        )
-                    for domain, did_resolve in geodns_map.items():
-                        if not did_resolve:
-                            continue
-                        accum = domain_evidence[domain]
-                        accum.resolves = True
-                        accum.sources.add("geodns")
-                        accum.evidence.append(
-                            EvidenceRecord(
-                                source_type="geodns",
-                                description="Resolved via Shodan GeoDNS (global)",
-                            )
-                        )
-                        log.info("scout.geodns_rescued", domain=domain)
-                except TimeoutError:
-                    timed_out = True
-                    errors.append("GeoDNS resolution timed out")
+        if (
+            self.config.deep_mode
+            and _remaining() > 3.0
+            and await self._run_geodns_rescue(domain_evidence, errors, max(1.0, _remaining() - 3.0))
+        ):
+            timed_out = True
 
         # Step 3c: RDAP corroboration on top resolving candidates
         if _remaining() > 5.0:
@@ -556,6 +505,88 @@ class Scout:
         )
 
     # --- Step 1: Seed validation ---
+
+    async def _run_geodns_rescue(
+        self, domain_evidence: dict[str, _DomainAccum], errors: list[str], timeout: float
+    ) -> bool:
+        """Run GeoDNS rescue for non-resolving domains and return whether it timed out."""
+        failed_domains = [d for d, acc in domain_evidence.items() if not acc.resolves]
+        if not failed_domains:
+            return False
+
+        log.info("scout.geodns_rescue", count=len(failed_domains))
+        try:
+            async with httpx.AsyncClient(timeout=15.0) as client:
+                geodns_map = await asyncio.wait_for(
+                    self._dns.bulk_geodns_resolve(failed_domains, client),
+                    timeout=timeout,
+                )
+            for domain, did_resolve in geodns_map.items():
+                if not did_resolve:
+                    continue
+                accum = domain_evidence[domain]
+                accum.resolves = True
+                accum.sources.add("geodns")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="geodns",
+                        description="Resolved via Shodan GeoDNS (global)",
+                    )
+                )
+                log.info("scout.geodns_rescued", domain=domain)
+            return False
+        except TimeoutError:
+            errors.append("GeoDNS resolution timed out")
+            return True
+
+    @staticmethod
+    async def _process_seed_tasks(
+        seed_tasks: dict[str, asyncio.Task[dict[str, Any]]],
+        errors: list[str],
+        seed_assessments: dict[str, str],
+        seed_org_names: dict[str, str | None],
+        seed_cross_verification: dict[str, list[str]],
+        timeout: float,
+    ) -> None:
+        try:
+            seed_results = await asyncio.wait_for(
+                asyncio.gather(*seed_tasks.values(), return_exceptions=True),
+                timeout=timeout,
+            )
+            for sd, result in zip(seed_tasks.keys(), seed_results, strict=True):
+                if isinstance(result, BaseException):
+                    errors.append(f"Seed validation failed for {sd}: {result}")
+                    seed_assessments[sd] = "error"
+                else:
+                    seed_assessments[sd] = result["assessment"]
+                    seed_org_names[sd] = result["org_name"]
+                    if result.get("co_hosted_seeds"):
+                        seed_cross_verification[sd] = result["co_hosted_seeds"]
+                    log.info(
+                        "scout.seed_validated",
+                        seed=sd,
+                        assessment=result["assessment"],
+                        seed_org=result["org_name"],
+                        co_hosted=result.get("co_hosted_seeds", []),
+                    )
+        except TimeoutError:
+            errors.append("Seed validation timed out")
+            for sd, stask in seed_tasks.items():
+                if not stask.done():
+                    stask.cancel()
+                    seed_assessments.setdefault(sd, "timeout")
+                elif stask.cancelled():
+                    seed_assessments.setdefault(sd, "timeout")
+                else:
+                    exc = stask.exception()
+                    if exc:
+                        seed_assessments.setdefault(sd, "error")
+                    else:
+                        r = stask.result()
+                        seed_assessments.setdefault(sd, r["assessment"])
+                        seed_org_names.setdefault(sd, r["org_name"])
+                        if r.get("co_hosted_seeds"):
+                            seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
 
     async def _validate_seed(
         self, seed: str, company_name: str, all_seeds: list[str], errors: list[str]
