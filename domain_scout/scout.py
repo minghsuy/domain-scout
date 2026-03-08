@@ -91,7 +91,7 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
     """Filter subsidiaries to those likely to have distinct CT certs."""
     parent_words = set(parent_normalized.split())
     seen: set[str] = set()
-    result: list[str] = []
+    result: list[tuple[str, str]] = []
 
     for sub in subs:
         norm = normalize_org_name(sub)
@@ -114,10 +114,10 @@ def _filter_subsidiaries(parent_normalized: str, subs: list[str]) -> list[str]:
         # Skip names where all words are <=3 chars (acronym soup like "17A LLC", "RLC LLC")
         if all(len(w) <= 3 for w in sub_words - _SHELL_WORDS):
             continue
-        result.append(sub)
+        result.append((sub, norm))
 
-    result.sort(key=_brand_sort_key)
-    return result
+    result.sort(key=lambda x: _brand_sort_key(x[0], x[1]))
+    return [x[0] for x in result]
 
 
 # Words too generic to count as "brand" signal in subsidiary names.
@@ -148,7 +148,7 @@ _SUFFIX_RE = re.compile(
 )
 
 
-def _brand_sort_key(name: str) -> tuple[int, int]:
+def _brand_sort_key(name: str, norm: str | None = None) -> tuple[int, int]:
     """Sort key ranking subsidiaries by brand distinctness.
 
     Returns ``(bucket, name_length)`` — lower is better.
@@ -160,7 +160,8 @@ def _brand_sort_key(name: str) -> tuple[int, int]:
     * **Bucket 2** — weak: contains numbers, all-caps acronym, or no real
       brand words.  e.g. "Westin 200, Inc.", "FTNV LLC", "TSQ2, LLC".
     """
-    norm = normalize_org_name(name)
+    if norm is None:
+        norm = normalize_org_name(name)
     words = norm.split()
     brand_words = [w for w in words if len(w) >= 4 and w not in _GENERIC_WORDS]
 
