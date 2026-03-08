@@ -960,18 +960,19 @@ class Scout:
         async def _check(domain: str, accum: _DomainAccum) -> None:
             try:
                 shared = await self._dns.shares_infrastructure(reference, domain)
-                if shared:
-                    accum.sources.add("shared_infra")
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="shared_infra",
-                            description=f"Shares infrastructure with {reference}",
-                        )
+                if not shared:
+                    return
+                accum.sources.add("shared_infra")
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="shared_infra",
+                        description=f"Shares infrastructure with {reference}",
                     )
-                    # Cap so infra boost can't exceed the +0.10 total boost limit.
-                    # Only cross_seed_verified (0.90 base) should reach 1.00.
-                    max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
-                    accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
+                )
+                # Cap so infra boost can't exceed the +0.10 total boost limit.
+                # Only cross_seed_verified (0.90 base) should reach 1.00.
+                max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
+                accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
             except Exception:
                 pass
 
@@ -1008,19 +1009,20 @@ class Scout:
                 if not rdap_org:
                     return
                 sim = org_name_similarity(rdap_org, company_name)
-                if sim >= self.config.org_match_threshold:
-                    accum.sources.add("rdap_registrant_match")
-                    accum.rdap_org = rdap_org
-                    accum.evidence.append(
-                        EvidenceRecord(
-                            source_type="rdap_registrant_match",
-                            description=(
-                                f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
-                            ),
-                            rdap_org=rdap_org,
-                            similarity_score=round(sim, 4),
-                        )
+                if sim < self.config.org_match_threshold:
+                    return
+                accum.sources.add("rdap_registrant_match")
+                accum.rdap_org = rdap_org
+                accum.evidence.append(
+                    EvidenceRecord(
+                        source_type="rdap_registrant_match",
+                        description=(
+                            f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
+                        ),
+                        rdap_org=rdap_org,
+                        similarity_score=round(sim, 4),
                     )
+                )
             except Exception as exc:
                 log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
 
