@@ -241,3 +241,80 @@ class TestScanRequest:
         assert req.profile == "strict"
         assert req.timeout == 60
         assert req.deep is True
+
+
+class TestAPIKeyAuth:
+    @pytest.fixture
+    def auth_client(self) -> TestClient:
+        app = create_app(cache=None, max_concurrent=2, api_key="secret-key")
+        return TestClient(app)
+
+    def test_missing_api_key_unauthorized(self, auth_client: TestClient) -> None:
+        """Requests without API key return 401 on protected endpoints."""
+        resp = auth_client.post("/scan", json={"entity": {"company_name": "TestCorp"}})
+        assert resp.status_code == 401
+        assert resp.json()["detail"] == "API Key required"
+
+        resp = auth_client.get("/cache/stats")
+        assert resp.status_code == 401
+
+        resp = auth_client.post("/cache/clear")
+        assert resp.status_code == 401
+
+        import json
+
+        resp = auth_client.post(
+            "/diff",
+            json={
+                "baseline": json.loads(_mock_result().model_dump_json()),
+                "current": json.loads(_mock_result().model_dump_json()),
+            },
+        )
+        assert resp.status_code == 401
+
+    def test_invalid_api_key_unauthorized(self, auth_client: TestClient) -> None:
+        """Requests with an invalid API key return 401."""
+        resp = auth_client.post(
+            "/scan",
+            json={"entity": {"company_name": "TestCorp"}},
+            headers={"X-API-Key": "wrong-key"},
+        )
+        assert resp.status_code == 401
+        assert resp.json()["detail"] == "Invalid API Key"
+
+    def test_valid_api_key_succeeds(
+        self, auth_client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Requests with a valid API key succeed."""
+        resp = auth_client.post(
+            "/scan",
+            json={"entity": {"company_name": "TestCorp"}},
+            headers={"X-API-Key": "secret-key"},
+        )
+        assert resp.status_code == 200
+
+        resp = auth_client.get("/cache/stats", headers={"X-API-Key": "secret-key"})
+        assert resp.status_code == 200
+
+        import json
+
+        resp = auth_client.post(
+            "/diff",
+            json={
+                "baseline": json.loads(_mock_result().model_dump_json()),
+                "current": json.loads(_mock_result().model_dump_json()),
+            },
+            headers={"X-API-Key": "secret-key"},
+        )
+        assert resp.status_code == 200
+
+    def test_public_endpoints_unaffected(self, auth_client: TestClient) -> None:
+        """Endpoints like /health and /ready remain accessible without a key."""
+        resp = auth_client.get("/health")
+        assert resp.status_code == 200
+
+        # Note: /ready relies on HTTPX client inside which might fail depending on external logic,
+        # so we mock the httpx client here as well.
+        with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
+            resp = auth_client.get("/ready")
+        assert resp.status_code == 200
