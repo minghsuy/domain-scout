@@ -18,10 +18,8 @@ from domain_scout.cli import app
 from domain_scout.models import (
     DeltaReport,
     DeltaSummary,
-    EntityInput,
-    RunMetadata,
-    ScoutResult,
 )
+from domain_scout.tests.conftest import mock_result as _mock_result
 
 
 @pytest.fixture
@@ -34,22 +32,6 @@ def mock_configure_logging() -> Iterator[None]:
     """Prevent CLI from reconfiguring structlog with closed streams."""
     with patch("domain_scout.cli.configure_logging"):
         yield
-
-
-def _mock_result() -> ScoutResult:
-    """Build a minimal ScoutResult for mocking discover."""
-    from datetime import UTC, datetime
-
-    return ScoutResult(
-        entity=EntityInput(company_name="TestCorp", seed_domain=["test.com"]),
-        domains=[],
-        run_metadata=RunMetadata(
-            tool_version="0.3.0",
-            timestamp=datetime.now(UTC),
-            elapsed_seconds=1.0,
-            domains_found=0,
-        ),
-    )
 
 
 class TestScoutCommand:

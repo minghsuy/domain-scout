@@ -36,14 +36,10 @@ class DNSChecker:
 
     async def resolves(self, domain: str) -> bool:
         """Check whether a domain resolves to any A or AAAA record."""
-        for rdtype in (dns.rdatatype.A, dns.rdatatype.AAAA):
-            try:
-                await self._resolver.resolve(domain, rdtype)
-                return True
-            except (dns.exception.DNSException, ValueError):
-                continue
-        log.debug("dns.no_resolution", domain=domain)
-        return False
+        ips = await self.get_ips(domain)
+        if not ips:
+            log.debug("dns.no_resolution", domain=domain)
+        return bool(ips)
 
     async def _get_ips_uncached(self, domain: str) -> tuple[str, ...]:
         ips: list[str] = []
