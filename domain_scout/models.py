@@ -118,16 +118,3 @@ class DeltaReport(BaseModel):
     current_metadata: RunMetadata
 
 
-# --- Intermediate models (not part of public API) ---
-
-
-class CertRecord(BaseModel):
-    """A certificate record from crt.sh."""
-
-    cert_id: int
-    common_name: str
-    subject: str
-    org_name: str | None = None
-    not_before: datetime | None = None
-    not_after: datetime | None = None
-    san_dns_names: list[str] = Field(default_factory=list)
