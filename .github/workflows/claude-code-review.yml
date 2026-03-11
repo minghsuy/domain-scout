@@ -3,21 +3,9 @@ name: Claude Code Review
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review, reopened]
-    # Optional: Only run on specific file changes
-    # paths:
-    #   - "src/**/*.ts"
-    #   - "src/**/*.tsx"
-    #   - "src/**/*.js"
-    #   - "src/**/*.jsx"
 
 jobs:
   claude-review:
-    # Optional: Filter by PR author
-    # if: |
-    #   github.event.pull_request.user.login == 'external-contributor' ||
-    #   github.event.pull_request.user.login == 'new-developer' ||
-    #   github.event.pull_request.author_association == 'FIRST_TIME_CONTRIBUTOR'
-
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,9 +24,35 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          plugin_marketplaces: 'https://github.com/anthropics/claude-code.git'
-          plugins: 'code-review@claude-code-plugins'
-          prompt: '/code-review:code-review ${{ github.repository }}/pull/${{ github.event.pull_request.number }}'
-          # See https://github.com/anthropics/claude-code-action/blob/main/docs/usage.md
-          # or https://code.claude.com/docs/en/cli-reference for available options
+          claude_args: '--allowed-tools "Bash(gh issue view:*),Bash(gh search:*),Bash(gh issue list:*),Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*)"'
+          prompt: |
+            Review PR #${{ github.event.pull_request.number }} in ${{ github.repository }}.
 
+            First, read the CLAUDE.md file in the repo root for project conventions.
+            Then review the PR diff using `gh pr diff ${{ github.event.pull_request.number }}`.
+
+            **Project: domain-scout** — async Python library for discovering domains via CT logs, RDAP, DNS, and Shodan GeoDNS.
+
+            ## Critical Checks
+            1. **crt.sh query safety** — No raw string interpolation in SQL queries to crt.sh Postgres. Parameterized queries only.
+            2. **Async correctness** — Proper use of await, no blocking calls in async context, correct semaphore/timeout scoping (asyncio.timeout applies to both semaphore acquisition AND work).
+            3. **Org-name matching** — Changes to entity_match.py must not regress fuzzy matching (acronym detection, suffix anchoring, brand aliases). Check for unintended side effects.
+            4. **Circuit breaker logic** — Changes to CTLogSource must preserve failure counting, recovery timeout, and fallback to JSON API.
+            5. **mypy --strict compliance** — All function signatures must have type hints. No `Any` without justification.
+
+            ## Standard Review Areas
+            - Pydantic model changes: backward compatibility, field validation
+            - Test coverage for new/changed behavior
+            - No hardcoded credentials or personal info
+            - structlog usage (not print/logging)
+            - ruff/mypy compliance
+
+            ## Output Format
+            Categorize each finding:
+            - :red_circle: **BLOCKING** — Must fix before merge (bugs, security, data correctness)
+            - :yellow_circle: **SHOULD FIX** — Strong recommendation (code quality, edge cases)
+            - :green_circle: **SUGGESTION** — Nice to have (style, minor improvements)
+
+            If the PR looks good, say so briefly.
+
+            Use `gh pr comment ${{ github.event.pull_request.number }}` with your Bash tool to leave your review as a comment on the PR.
