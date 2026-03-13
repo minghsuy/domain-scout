@@ -204,6 +204,28 @@ class TestGetApp:
         assert resp.status_code == 200
 
 
+class TestDiff:
+    def test_diff_success(self, client: TestClient) -> None:
+        import json
+
+        baseline = _mock_result()
+        current = _mock_result()
+
+        resp = client.post(
+            "/diff",
+            json={
+                "baseline": json.loads(baseline.model_dump_json()),
+                "current": json.loads(current.model_dump_json()),
+            },
+        )
+        assert resp.status_code == 200
+        data = resp.json()
+        assert "summary" in data
+        assert data["summary"]["added"] == 0
+        assert data["summary"]["removed"] == 0
+        assert data["summary"]["unchanged"] == len(baseline.domains)
+
+
 class TestScanRequest:
     def test_minimal(self) -> None:
         req = ScanRequest(entity=EntityInput(company_name="Acme"))
