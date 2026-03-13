@@ -6,6 +6,7 @@ calibrated probabilities from domain evidence features.
 
 from __future__ import annotations
 
+import bisect
 import json
 import math
 from importlib import resources
@@ -119,12 +120,12 @@ def _isotonic_interpolate(x: float, x_vals: list[float], y_vals: list[float]) ->
         return y_vals[0]
     if x >= x_vals[-1]:
         return y_vals[-1]
-    for i in range(len(x_vals) - 1):
-        if x_vals[i] <= x <= x_vals[i + 1]:
-            dx = x_vals[i + 1] - x_vals[i]
-            t = (x - x_vals[i]) / dx if dx else 0.0
-            return y_vals[i] + t * (y_vals[i + 1] - y_vals[i])
-    return y_vals[-1]
+
+    i = bisect.bisect_right(x_vals, x) - 1
+
+    dx = x_vals[i + 1] - x_vals[i]
+    t = (x - x_vals[i]) / dx if dx else 0.0
+    return y_vals[i] + t * (y_vals[i + 1] - y_vals[i])
 
 
 # ---------------------------------------------------------------------------
