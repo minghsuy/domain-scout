@@ -847,6 +847,24 @@ class TestRDAPCorroboration:
         assert "rdap_registrant_match" not in a.sources
 
     @pytest.mark.asyncio
+    async def test_exception_handled_and_logged(self) -> None:
+        """Exception during RDAP corroboration is logged."""
+        self.scout._rdap.get_registrant_org = AsyncMock(  # type: ignore[method-assign]
+            side_effect=Exception("RDAP down")
+        )
+        evidence: dict[str, _DomainAccum] = {}
+        a = _DomainAccum()
+        a.sources.add("ct_org_match")
+        a.resolves = True
+        evidence["walmart.com"] = a
+
+        with patch("domain_scout.scout.log.debug") as mock_log:
+            await self.scout._rdap_corroborate(evidence, "Walmart")
+            mock_log.assert_called_once_with(
+                "scout.rdap_corroborate_error", domain="walmart.com", error="RDAP down"
+            )
+
+    @pytest.mark.asyncio
     async def test_below_threshold_no_source(self) -> None:
         """RDAP org below org_match_threshold doesn't add source."""
         self.scout._rdap.get_registrant_org = AsyncMock(return_value="Totally Different Corp")  # type: ignore[method-assign]
