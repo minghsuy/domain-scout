@@ -19,13 +19,38 @@ def _load_model() -> dict[str, Any]:
     return result
 
 
-_MODEL: dict[str, Any] | None = None
+class FastModel:
+    __slots__ = ("intercept", "weights", "cal_x", "cal_y")
+
+    def __init__(self, model: dict[str, Any]) -> None:
+        features = model["features"]
+        scaler = model["scaler"]
+        coefs = model["coefficients"]
+        intercept = float(model["intercept"])
+        means = scaler["mean"]
+        scales = scaler["scale"]
+
+        self.weights = {f: coefs[f] / scales[i] for i, f in enumerate(features)}
+        self.intercept = intercept - sum(
+            means[i] * self.weights[features[i]] for i in range(len(features))
+        )
+
+        cal = model.get("calibration")
+        if cal:
+            self.cal_x = cal["x"]
+            self.cal_y = cal["y"]
+        else:
+            self.cal_x = None
+            self.cal_y = None
 
 
-def _get_model() -> dict[str, Any]:
+_MODEL: FastModel | None = None
+
+
+def _get_model() -> FastModel:
     global _MODEL  # noqa: PLW0603
     if _MODEL is None:
-        _MODEL = _load_model()
+        _MODEL = FastModel(_load_model())
     return _MODEL
 
 
@@ -149,46 +174,35 @@ def score_confidence(
     Returns a calibrated probability in [0, 1].
     """
     model = _get_model()
-    features = model["features"]
-    scaler = model["scaler"]
-    coefs = model["coefficients"]
-    intercept = float(model["intercept"])
-    means = scaler["mean"]
-    scales = scaler["scale"]
 
     evidence_density = (
         float(evidence_count) / float(unique_cert_count) if unique_cert_count > 0 else 0.0
     )
 
-    raw: dict[str, float] = {
-        "best_similarity": best_similarity,
-        "source_count": float(len(sources)),
-        "domain_has_company_token": float(_domain_has_company_token(domain, company_name)),
-        "has_shared_infra": float("shared_infra" in sources),
-        "has_dns_guess": float("dns_guess" in sources),
-        "tld_is_country": float(_tld_is_country(domain)),
-        "entity_name_in_org": float(_entity_name_in_org(company_name, cert_org_names)),
-        "org_matches_different_entity": 0.0,  # requires S&P 500 data, not available at inference
-        "evidence_density": evidence_density,
-        "resolves": float(resolves),
-        "domain_length": float(len(domain.split(".")[0])),
-        "rdap_similarity": rdap_similarity,
-        # ASN/NS features: not available at inference (would need separate DNS+ASN lookup)
-        "same_asn_as_anchor": 0.0,
-        "asn_is_cdn": 0.0,
-        "shares_nameserver": 0.0,
-    }
-
-    z = intercept
-    for i, fname in enumerate(features):
-        scaled = (raw[fname] - means[i]) / scales[i]
-        z += coefs[fname] * scaled
+    w = model.weights
+    z = model.intercept
+    z += best_similarity * w.get("best_similarity", 0.0)
+    z += float(len(sources)) * w.get("source_count", 0.0)
+    z += float(_domain_has_company_token(domain, company_name)) * w.get(
+        "domain_has_company_token", 0.0
+    )
+    z += float("shared_infra" in sources) * w.get("has_shared_infra", 0.0)
+    z += float("dns_guess" in sources) * w.get("has_dns_guess", 0.0)
+    z += float(_tld_is_country(domain)) * w.get("tld_is_country", 0.0)
+    z += float(_entity_name_in_org(company_name, cert_org_names)) * w.get("entity_name_in_org", 0.0)
+    z += 0.0 * w.get("org_matches_different_entity", 0.0)
+    z += evidence_density * w.get("evidence_density", 0.0)
+    z += float(resolves) * w.get("resolves", 0.0)
+    z += float(len(domain.split(".")[0])) * w.get("domain_length", 0.0)
+    z += rdap_similarity * w.get("rdap_similarity", 0.0)
+    z += 0.0 * w.get("same_asn_as_anchor", 0.0)
+    z += 0.0 * w.get("asn_is_cdn", 0.0)
+    z += 0.0 * w.get("shares_nameserver", 0.0)
 
     prob = 1.0 / (1.0 + math.exp(-z))
 
     # Apply isotonic calibration if available
-    cal = model.get("calibration")
-    if cal:
-        prob = _isotonic_interpolate(prob, cal["x"], cal["y"])
+    if model.cal_x is not None and model.cal_y is not None:
+        prob = _isotonic_interpolate(prob, model.cal_x, model.cal_y)
 
     return round(prob, 4)
