@@ -86,7 +86,7 @@ _COUNTRY_TLDS = frozenset("." + cc for cc in _CC_CODES.split())
 
 
 def _tld_is_country(domain: str) -> int:
-    tld = "." + domain.rsplit(".", maxsplit=1)[-1]
+    tld = "." + domain.rsplit(".", maxsplit=1)[-1].lower()
     return 1 if tld in _COUNTRY_TLDS else 0
 
 
