@@ -251,6 +251,67 @@ def _fuzzy_best(a: str, b: str) -> float:
     return score
 
 
+def _acronym_match(norm_a: str, norm_b: str, name_a: str, name_b: str) -> float:
+    """Acronym detection with CamelCase splitting and stop-word removal.
+
+    Try twice: once with all words kept (catches TSMC, SMBC where the
+    legal suffix is part of the acronym) and once with hard legal
+    suffixes stripped (catches UHG, JPMC, GSK where it isn't).
+    """
+    clean_a = norm_a.replace(" ", "")
+    clean_b = norm_b.replace(" ", "")
+    if len(clean_a) == len(clean_b):
+        return 0.0
+
+    if len(clean_a) < len(clean_b):
+        short, long_name = clean_a, name_b
+    else:
+        short, long_name = clean_b, name_a
+
+    if len(short) < 2:
+        return 0.0
+
+    initials_full = _get_initials(long_name)
+    initials_stripped = _get_initials(_HARD_LEGAL_SUFFIXES.sub(" ", long_name))
+
+    # Prefix match: "gs" matches "gsgi" (Goldman Sachs Group Inc)
+    # where trailing suffixes add unwanted initials.
+    if initials_full.startswith(short) or initials_stripped.startswith(short):
+        # Score below cross-seed verification (0.90) and confidence
+        # boost threshold (>0.9 in scout.py _score_confidence) so
+        # acronym matches alone don't inflate confidence.
+        return _ACRONYM_MATCH_SCORE
+
+    return 0.0
+
+
+def _alias_match(norm_a: str, norm_b: str) -> float:
+    """Brand-alias lookup for names that differ completely."""
+    alias_score = 0.0
+    for alias in _BRAND_ALIASES.get(norm_a, []):
+        alias_score = max(alias_score, _fuzzy_best(alias, norm_b))
+    for alias in _BRAND_ALIASES.get(norm_b, []):
+        alias_score = max(alias_score, _fuzzy_best(norm_a, alias))
+    return alias_score
+
+
+def _dba_match(name_a: str, norm_a: str, name_b: str, norm_b: str) -> float:
+    """DBA dual-match: compare against the operating (DBA) name.
+
+    If either input contains a DBA clause, also compare against the
+    operating (DBA) name. "ACME LLC DBA ACME CLOUD" should match both
+    "Acme" (legal name) and "Acme Cloud" (operating name).
+    """
+    best_score = 0.0
+    for raw, other_norm in ((name_a, norm_b), (name_b, norm_a)):
+        dba_name = _extract_dba_name(raw)
+        if dba_name:
+            norm_dba = normalize_org_name(dba_name)
+            if norm_dba:
+                best_score = max(best_score, _fuzzy_best(norm_dba, other_norm))
+    return best_score
+
+
 def org_name_similarity(name_a: str, name_b: str) -> float:
     """Score how similar two org names are (0.0–1.0).
 
@@ -274,53 +335,12 @@ def org_name_similarity(name_a: str, name_b: str) -> float:
     if norm_a == norm_b:
         return 1.0
 
-    # --- Acronym detection ---
-    # Try twice: once with all words kept (catches TSMC, SMBC where the
-    # legal suffix is part of the acronym) and once with hard legal
-    # suffixes stripped (catches UHG, JPMC, GSK where it isn't).
-    acronym_score = 0.0
-    clean_a = norm_a.replace(" ", "")
-    clean_b = norm_b.replace(" ", "")
-    if len(clean_a) != len(clean_b):
-        if len(clean_a) < len(clean_b):
-            short, long_name = clean_a, name_b
-        else:
-            short, long_name = clean_b, name_a
-        if len(short) >= 2:
-            initials_full = _get_initials(long_name)
-            initials_stripped = _get_initials(_HARD_LEGAL_SUFFIXES.sub(" ", long_name))
-            # Prefix match: "gs" matches "gsgi" (Goldman Sachs Group Inc)
-            # where trailing suffixes add unwanted initials.
-            if initials_full.startswith(short) or initials_stripped.startswith(short):
-                # Score below cross-seed verification (0.90) and confidence
-                # boost threshold (>0.9 in scout.py _score_confidence) so
-                # acronym matches alone don't inflate confidence.
-                acronym_score = _ACRONYM_MATCH_SCORE
-
-    # --- Fuzzy matching ---
-    fuzzy_score = _fuzzy_best(norm_a, norm_b)
-
-    # --- Brand-alias matching ---
-    alias_score = 0.0
-    for alias in _BRAND_ALIASES.get(norm_a, []):
-        alias_score = max(alias_score, _fuzzy_best(alias, norm_b))
-    for alias in _BRAND_ALIASES.get(norm_b, []):
-        alias_score = max(alias_score, _fuzzy_best(norm_a, alias))
-
-    best = max(fuzzy_score, acronym_score, alias_score)
-
-    # --- DBA dual-match ---
-    # If either input contains a DBA clause, also compare against the
-    # operating (DBA) name. "ACME LLC DBA ACME CLOUD" should match both
-    # "Acme" (legal name) and "Acme Cloud" (operating name).
-    for raw, other_norm in ((name_a, norm_b), (name_b, norm_a)):
-        dba_name = _extract_dba_name(raw)
-        if dba_name:
-            norm_dba = normalize_org_name(dba_name)
-            if norm_dba:
-                best = max(best, _fuzzy_best(norm_dba, other_norm))
-
-    return best
+    return max(
+        _fuzzy_best(norm_a, norm_b),
+        _acronym_match(norm_a, norm_b, name_a, name_b),
+        _alias_match(norm_a, norm_b),
+        _dba_match(name_a, norm_a, name_b, norm_b),
+    )
 
 
 def domain_from_company_name(company_name: str) -> list[str]:
