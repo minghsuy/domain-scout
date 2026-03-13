@@ -6,10 +6,10 @@ import asyncio
 import csv
 import re
 import time
-from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from importlib.metadata import version as _pkg_version
 from typing import TYPE_CHECKING, Any
+from dataclasses import dataclass, field
 
 import httpx
 import structlog
@@ -185,23 +185,6 @@ def _brand_sort_key(name: str) -> tuple[int, int]:
     return (bucket, len(name))
 
 
-@dataclass
-class _DiscoveryContext:
-    entity: EntityInput
-    start_time: float
-    total_budget: float
-    seeds: list[str]
-    errors: list[str] = field(default_factory=list)
-    timed_out: bool = False
-    domain_evidence: dict[str, _DomainAccum] = field(default_factory=dict)
-    seed_assessments: dict[str, str] = field(default_factory=dict)
-    seed_org_names: dict[str, str | None] = field(default_factory=dict)
-    seed_cross_verification: dict[str, list[str]] = field(default_factory=dict)
-    seed_ct_records: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
-
-    def remaining_time(self) -> float:
-        return max(0.0, self.total_budget - (time.monotonic() - self.start_time))
-
 
 @dataclass
 class _DiscoveryContext:
@@ -218,8 +201,6 @@ class _DiscoveryContext:
     seed_ct_records: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
 
     def remaining_time(self) -> float:
-        import time
-
         return max(0.0, self.total_budget - (time.monotonic() - self.start_time))
 
 
@@ -318,297 +299,275 @@ class Scout:
     async def _discover(self, entity: EntityInput) -> ScoutResult:
         self._dns.reset()
         t0 = time.monotonic()
+        total_budget = self.config.total_timeout
+        errors: list[str] = []
+        timed_out = False
+        seeds = entity.seed_domain  # list[str]
 
-        ctx = _DiscoveryContext(
-            entity=entity,
-            start_time=t0,
-            total_budget=self.config.total_timeout,
-            seeds=entity.seed_domain,
-        )
+        # Accumulator: domain -> evidence dict
+        domain_evidence: dict[str, _DomainAccum] = {}
 
-        await self._run_strategies(ctx)
-        await self._resolve_dns_and_rdap(ctx)
-        confirmed_domains = await self._score_and_boost(ctx)
-        return self._finalize(ctx, confirmed_domains)
+        def _remaining() -> float:
+            return max(0.0, total_budget - (time.monotonic() - t0))
 
-    async def _run_strategies(self, ctx: _DiscoveryContext) -> None:
-        independent_tasks = self._start_independent_strategies(ctx)
-        seed_tasks = self._start_seed_validation(ctx)
+        def _collect(results: list[Any]) -> None:
+            for result in results:
+                if isinstance(result, BaseException):
+                    errors.append(str(result))
+                    continue
+                for domain, accum in result:
+                    if domain in domain_evidence:
+                        domain_evidence[domain].merge(accum)
+                    else:
+                        domain_evidence[domain] = accum
 
-        if seed_tasks:
-            await self._wait_for_seed_validation(ctx, seed_tasks)
+        # Phase 1: Seed validation + independent strategies run in parallel.
+        # Strategies A (org search) and C (domain guess) don't need seed results.
+        seed_assessments: dict[str, str] = {}
+        seed_org_names: dict[str, str | None] = {}
+        seed_cross_verification: dict[str, list[str]] = {}
+        seed_ct_records: dict[str, list[dict[str, Any]]] = {}
 
-        dependent_tasks = self._start_dependent_strategies(ctx)
+        independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
-        all_strategy_tasks = independent_tasks + dependent_tasks
-        await self._wait_for_strategies(ctx, all_strategy_tasks)
-
-        if len(ctx.seeds) > 1:
-            self._apply_cross_seed_boost(ctx.domain_evidence, ctx.seeds)
-
-    def _start_independent_strategies(
-        self, ctx: _DiscoveryContext
-    ) -> list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]:
-        tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]] = []
-        tasks.append(
+        # Strategy A: org name search (independent of seed)
+        independent_tasks.append(
             asyncio.create_task(
-                self._strategy_org_search(ctx.entity.company_name, ctx.errors),
+                self._strategy_org_search(entity.company_name, errors),
                 name="org_search",
             )
         )
-        tasks.append(
+
+        # Strategy C: domain guessing (independent of seed)
+        independent_tasks.append(
             asyncio.create_task(
-                self._strategy_domain_guess(
-                    ctx.entity.company_name, ctx.entity.location, ctx.errors
-                ),
+                self._strategy_domain_guess(entity.company_name, entity.location, errors),
                 name="domain_guess",
             )
         )
 
+        # Strategy D: subsidiary expansion (if subsidiary data loaded)
         if self._subsidiaries:
-            sub_names = self._match_subsidiaries(ctx.entity.company_name)
+            sub_names = self._match_subsidiaries(entity.company_name)
             for sub_name in sub_names[: self.config.subsidiary_max_queries]:
-                tasks.append(
+                independent_tasks.append(
                     asyncio.create_task(
                         self._strategy_org_search(
                             sub_name,
-                            ctx.errors,
+                            errors,
                             source_tag="ct_subsidiary_match",
                         ),
                         name=f"subsidiary:{sub_name[:30]}",
                     )
                 )
-        return tasks
 
-    def _start_seed_validation(
-        self, ctx: _DiscoveryContext
-    ) -> dict[str, asyncio.Task[dict[str, Any]]]:
-        seed_to_base = {s: extract_base_domain(s) for s in ctx.seeds}
+        # Pre-calculate base domains for all seeds once
+        seed_to_base = {s: extract_base_domain(s) for s in seeds}
+
+        # Parallel seed validation for all seeds
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
-        for sd in ctx.seeds:
+        for sd in seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, ctx.entity.company_name, ctx.seeds, ctx.errors, seed_to_base),
+                self._validate_seed(sd, entity.company_name, seeds, errors, seed_to_base),
                 name=f"seed_validation:{sd}",
             )
-        return seed_tasks
 
-    async def _wait_for_seed_validation(
-        self, ctx: _DiscoveryContext, seed_tasks: dict[str, asyncio.Task[dict[str, Any]]]
-    ) -> None:
-        try:
-            seed_results = await asyncio.wait_for(
-                asyncio.gather(*seed_tasks.values(), return_exceptions=True),
-                timeout=min(15.0, ctx.remaining_time()),
-            )
-            for sd, result in zip(seed_tasks.keys(), seed_results, strict=True):
-                self._handle_seed_result(ctx, sd, result)
-        except TimeoutError:
-            ctx.errors.append("Seed validation timed out")
-            for sd, stask in seed_tasks.items():
-                self._handle_seed_timeout(ctx, sd, stask)
+        # Wait for all seed validations (capped at 15s) while A/C also run
+        if seed_tasks:
+            try:
+                seed_results = await asyncio.wait_for(
+                    asyncio.gather(*seed_tasks.values(), return_exceptions=True),
+                    timeout=min(15.0, _remaining()),
+                )
+                for sd, result in zip(seed_tasks.keys(), seed_results, strict=True):
+                    if isinstance(result, BaseException):
+                        errors.append(f"Seed validation failed for {sd}: {result}")
+                        seed_assessments[sd] = "error"
+                    else:
+                        seed_assessments[sd] = result["assessment"]
+                        seed_org_names[sd] = result["org_name"]
+                        if result.get("co_hosted_seeds"):
+                            seed_cross_verification[sd] = result["co_hosted_seeds"]
+                        if result.get("ct_records"):
+                            seed_ct_records[sd] = result["ct_records"]
+                        log.info(
+                            "scout.seed_validated",
+                            seed=sd,
+                            assessment=result["assessment"],
+                            seed_org=result["org_name"],
+                            co_hosted=result.get("co_hosted_seeds", []),
+                        )
+            except TimeoutError:
+                errors.append("Seed validation timed out")
+                for sd, stask in seed_tasks.items():
+                    if not stask.done():
+                        stask.cancel()
+                        seed_assessments.setdefault(sd, "timeout")
+                    elif stask.cancelled():
+                        seed_assessments.setdefault(sd, "timeout")
+                    else:
+                        exc = stask.exception()
+                        if exc:
+                            seed_assessments.setdefault(sd, "error")
+                        else:
+                            r = stask.result()
+                            seed_assessments.setdefault(sd, r["assessment"])
+                            seed_org_names.setdefault(sd, r["org_name"])
+                            if r.get("co_hosted_seeds"):
+                                seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
+                            if r.get("ct_records"):
+                                seed_ct_records.setdefault(sd, r["ct_records"])
 
-    def _handle_seed_result(self, ctx: _DiscoveryContext, sd: str, result: Any) -> None:
-        if isinstance(result, BaseException):
-            ctx.errors.append(f"Seed validation failed for {sd}: {result}")
-            ctx.seed_assessments[sd] = "error"
-        else:
-            ctx.seed_assessments[sd] = result["assessment"]
-            ctx.seed_org_names[sd] = result["org_name"]
-            if result.get("co_hosted_seeds"):
-                ctx.seed_cross_verification[sd] = result["co_hosted_seeds"]
-            if result.get("ct_records"):
-                ctx.seed_ct_records[sd] = result["ct_records"]
-            log.info(
-                "scout.seed_validated",
-                seed=sd,
-                assessment=result["assessment"],
-                seed_org=result["org_name"],
-                co_hosted=result.get("co_hosted_seeds", []),
-            )
+        # Phase 2: Seed-dependent strategies (B + optional second org search)
+        dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
-    def _handle_seed_timeout(self, ctx: _DiscoveryContext, sd: str, stask: asyncio.Task[dict[str, Any]]) -> None:
-        if not stask.done():
-            stask.cancel()
-            ctx.seed_assessments.setdefault(sd, "timeout")
-        elif stask.cancelled():
-            ctx.seed_assessments.setdefault(sd, "timeout")
-        else:
-            exc = stask.exception()
-            if exc:
-                ctx.seed_assessments.setdefault(sd, "error")
-            else:
-                r = stask.result()
-                ctx.seed_assessments.setdefault(sd, r["assessment"])
-                ctx.seed_org_names.setdefault(sd, r["org_name"])
-                if r.get("co_hosted_seeds"):
-                    ctx.seed_cross_verification.setdefault(sd, r["co_hosted_seeds"])
-                if r.get("ct_records"):
-                    ctx.seed_ct_records.setdefault(sd, r["ct_records"])
-
-    def _start_dependent_strategies(
-        self, ctx: _DiscoveryContext
-    ) -> list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]:
-        dependent_tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]] = []
+        # Extra org searches from seed-derived org names
         seen_org_searches: set[str] = set()
-        for sd, org_name in ctx.seed_org_names.items():
+        for sd, org_name in seed_org_names.items():
             if (
                 org_name
                 and org_name not in seen_org_searches
-                and org_name_similarity(org_name, ctx.entity.company_name) < 0.95
+                and org_name_similarity(org_name, entity.company_name) < 0.95
             ):
                 seen_org_searches.add(org_name)
                 dependent_tasks.append(
                     asyncio.create_task(
-                        self._strategy_org_search(org_name, ctx.errors),
+                        self._strategy_org_search(org_name, errors),
                         name=f"org_search_seed:{sd}",
                     )
                 )
 
-        for sd in ctx.seeds:
+        # Strategy B per seed (parallel) — reuses CT records from seed validation
+        for sd in seeds:
             dependent_tasks.append(
                 asyncio.create_task(
                     self._strategy_seed_expansion(
                         sd,
-                        ctx.entity.company_name,
-                        ctx.errors,
-                        ct_records=ctx.seed_ct_records.get(sd),
+                        entity.company_name,
+                        errors,
+                        ct_records=seed_ct_records.get(sd),
                     ),
                     name=f"seed_expansion:{sd}",
                 )
             )
-        return dependent_tasks
 
-    async def _wait_for_strategies(
-        self, ctx: _DiscoveryContext, tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]
-    ) -> None:
-        def _collect(results: list[Any]) -> None:
-            for result in results:
-                if isinstance(result, BaseException):
-                    ctx.errors.append(str(result))
-                    continue
-                for domain, accum in result:
-                    if domain in ctx.domain_evidence:
-                        ctx.domain_evidence[domain].merge(accum)
-                    else:
-                        ctx.domain_evidence[domain] = accum
-
-        strategy_budget = ctx.remaining_time() - 10.0
+        # Gather all strategy results under the remaining time budget (minus 10s reserve)
+        all_strategy_tasks = independent_tasks + dependent_tasks
+        strategy_budget = _remaining() - 10.0
         try:
             results = await asyncio.wait_for(
-                asyncio.gather(*tasks, return_exceptions=True),
+                asyncio.gather(*all_strategy_tasks, return_exceptions=True),
                 timeout=max(1.0, strategy_budget),
             )
             _collect(results)
         except TimeoutError:
-            ctx.timed_out = True
-            ctx.errors.append("Strategy phase timed out")
-            for task in tasks:
+            timed_out = True
+            errors.append("Strategy phase timed out")
+            # Collect any completed results
+            for task in all_strategy_tasks:
                 if task.done() and not task.cancelled():
                     exc = task.exception()
                     if exc:
-                        ctx.errors.append(str(exc))
+                        errors.append(str(exc))
                     else:
                         _collect([task.result()])
                 elif not task.done():
                     task.cancel()
 
-    async def _resolve_dns_and_rdap(self, ctx: _DiscoveryContext) -> None:
-        await self._resolve_dns_bulk(ctx)
-        await self._resolve_geodns_rescue(ctx)
-        await self._resolve_rdap_corroboration(ctx)
+        # Cross-seed detection: if a domain has seed-tagged sources from 2+ seeds
+        if len(seeds) > 1:
+            self._apply_cross_seed_boost(domain_evidence, seeds)
 
-    async def _resolve_dns_bulk(self, ctx: _DiscoveryContext) -> None:
-        all_domains = list(ctx.domain_evidence.keys())
-        if not all_domains or ctx.remaining_time() <= 2.0:
-            return
-        try:
-            resolve_map = await asyncio.wait_for(
-                self._dns.bulk_resolve(all_domains),
-                timeout=ctx.remaining_time() - 2.0,
-            )
-            for domain, resolves in resolve_map.items():
-                ctx.domain_evidence[domain].resolves = resolves
-        except TimeoutError:
-            ctx.timed_out = True
-            ctx.errors.append("DNS resolution timed out")
-
-    async def _resolve_geodns_rescue(self, ctx: _DiscoveryContext) -> None:
-        if not self.config.deep_mode or ctx.remaining_time() <= 3.0:
-            return
-        failed_domains = [d for d, acc in ctx.domain_evidence.items() if not acc.resolves]
-        if not failed_domains:
-            return
-        log.info("scout.geodns_rescue", count=len(failed_domains))
-        try:
-            async with httpx.AsyncClient(timeout=15.0) as client:
-                geodns_map = await asyncio.wait_for(
-                    self._dns.bulk_geodns_resolve(failed_domains, client),
-                    timeout=max(1.0, ctx.remaining_time() - 3.0),
+        # Step 3: DNS resolution for all discovered domains
+        all_domains = list(domain_evidence.keys())
+        if all_domains and _remaining() > 2.0:
+            try:
+                resolve_map = await asyncio.wait_for(
+                    self._dns.bulk_resolve(all_domains),
+                    timeout=_remaining() - 2.0,
                 )
-            for domain, did_resolve in geodns_map.items():
-                if not did_resolve:
-                    continue
-                accum = ctx.domain_evidence[domain]
-                accum.resolves = True
-                accum.sources.add("geodns")
-                accum.evidence.append(
-                    EvidenceRecord(
-                        source_type="geodns",
-                        description="Resolved via Shodan GeoDNS (global)",
-                    )
+                for domain, resolves in resolve_map.items():
+                    domain_evidence[domain].resolves = resolves
+            except TimeoutError:
+                timed_out = True
+                errors.append("DNS resolution timed out")
+
+        # Step 3b: GeoDNS rescue for non-resolving domains (deep mode)
+        if self.config.deep_mode and _remaining() > 3.0:
+            failed_domains = [d for d, acc in domain_evidence.items() if not acc.resolves]
+            if failed_domains:
+                log.info("scout.geodns_rescue", count=len(failed_domains))
+                try:
+                    async with httpx.AsyncClient(timeout=15.0) as client:
+                        geodns_map = await asyncio.wait_for(
+                            self._dns.bulk_geodns_resolve(failed_domains, client),
+                            timeout=max(1.0, _remaining() - 3.0),
+                        )
+                    for domain, did_resolve in geodns_map.items():
+                        if not did_resolve:
+                            continue
+                        accum = domain_evidence[domain]
+                        accum.resolves = True
+                        accum.sources.add("geodns")
+                        accum.evidence.append(
+                            EvidenceRecord(
+                                source_type="geodns",
+                                description="Resolved via Shodan GeoDNS (global)",
+                            )
+                        )
+                        log.info("scout.geodns_rescued", domain=domain)
+                except TimeoutError:
+                    timed_out = True
+                    errors.append("GeoDNS resolution timed out")
+
+        # Step 3c: RDAP corroboration on top resolving candidates
+        if _remaining() > 5.0:
+            try:
+                await asyncio.wait_for(
+                    self._rdap_corroborate(domain_evidence, entity.company_name),
+                    timeout=min(15.0, _remaining() - 3.0),
                 )
-                log.info("scout.geodns_rescued", domain=domain)
-        except TimeoutError:
-            ctx.timed_out = True
-            ctx.errors.append("GeoDNS resolution timed out")
+            except TimeoutError:
+                errors.append("RDAP corroboration timed out")
 
-    async def _resolve_rdap_corroboration(self, ctx: _DiscoveryContext) -> None:
-        if ctx.remaining_time() <= 5.0:
-            return
-        try:
-            await asyncio.wait_for(
-                self._rdap_corroborate(ctx.domain_evidence, ctx.entity.company_name),
-                timeout=min(15.0, ctx.remaining_time() - 3.0),
-            )
-        except TimeoutError:
-            ctx.errors.append("RDAP corroboration timed out")
-
-    async def _score_and_boost(self, ctx: _DiscoveryContext) -> list[str]:
+        # Step 4: confidence scoring and infrastructure comparison
         confirmed_domains: list[str] = []
-        for domain, accum in ctx.domain_evidence.items():
+        for domain, accum in domain_evidence.items():
             accum.confidence = self._score_confidence(
                 accum,
-                ctx.entity.company_name,
-                ctx.seeds,
+                entity.company_name,
+                seeds,
                 domain=domain,
             )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
 
+        # Infrastructure sharing boost (compare against highest-confidence seed)
         reference: str | None = None
-        if ctx.seeds:
+        if seeds:
+            # Pick highest-confidence confirmed seed
             best_seed_conf = -1.0
-            for sd in ctx.seeds:
+            for sd in seeds:
                 sd_base = extract_base_domain(sd)
-                if sd_base and sd_base in ctx.domain_evidence:
-                    conf = ctx.domain_evidence[sd_base].confidence
+                if sd_base and sd_base in domain_evidence:
+                    conf = domain_evidence[sd_base].confidence
                     if conf > best_seed_conf:
                         best_seed_conf = conf
                         reference = sd_base
             if reference is None:
-                reference = extract_base_domain(ctx.seeds[0])
+                reference = extract_base_domain(seeds[0])
         if not reference and confirmed_domains:
             reference = confirmed_domains[0]
-        if reference and len(ctx.domain_evidence) <= 50 and ctx.remaining_time() > 1.0:
-            await self._infra_boost(reference, ctx.domain_evidence)
+        if reference and len(domain_evidence) <= 50 and _remaining() > 1.0:
+            await self._infra_boost(reference, domain_evidence)
 
-        return confirmed_domains
+        # Build output
+        domains = self._build_output(domain_evidence, seeds)
 
-    def _finalize(self, ctx: _DiscoveryContext, confirmed_domains: list[str]) -> ScoutResult:
-        domains = self._build_output(ctx.domain_evidence, ctx.seeds)
-        elapsed = time.monotonic() - ctx.start_time
+        elapsed = time.monotonic() - t0
 
-        status = "timeout" if ctx.timed_out else ("error" if ctx.errors else "ok")
+        # Record metrics
+        status = "timeout" if timed_out else ("error" if errors else "ok")
         inc(SCANS_TOTAL, status=status)
         observe(SCAN_DURATION_SECONDS, elapsed)
         observe(DOMAINS_FOUND, float(len(domains)))
@@ -618,16 +577,16 @@ class Scout:
             timestamp=datetime.now(UTC),
             elapsed_seconds=round(elapsed, 2),
             domains_found=len(domains),
-            timed_out=ctx.timed_out,
-            seed_count=len(ctx.seeds),
-            errors=ctx.errors,
+            timed_out=timed_out,
+            seed_count=len(seeds),
+            errors=errors,
             config=self.config.to_dict(),
         )
         return ScoutResult(
-            entity=ctx.entity,
+            entity=entity,
             domains=domains,
-            seed_domain_assessment=ctx.seed_assessments,
-            seed_cross_verification=ctx.seed_cross_verification,
+            seed_domain_assessment=seed_assessments,
+            seed_cross_verification=seed_cross_verification,
             run_metadata=run_meta,
         )
 
