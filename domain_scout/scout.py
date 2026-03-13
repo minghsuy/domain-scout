@@ -726,7 +726,7 @@ class Scout:
         self,
         rec: dict[str, Any],
         seed_domain: str,
-        seed_base: str,
+        seed_base: str | None,
         company_name: str,
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
