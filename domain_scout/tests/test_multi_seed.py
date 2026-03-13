@@ -10,12 +10,13 @@ import pytest
 from domain_scout.config import ScoutConfig
 from domain_scout.models import (
     DiscoveredDomain,
+    DomainAccumulator,
     EntityInput,
     EvidenceRecord,
     RunMetadata,
     ScoutResult,
 )
-from domain_scout.scout import Scout, _DomainAccum, _extract_contributing_seeds
+from domain_scout.scout import Scout, _extract_contributing_seeds
 
 # Shared stub result for backward compat tests
 _STUB_META = RunMetadata(
@@ -33,8 +34,8 @@ class TestApplyCrossSeedBoost:
     """Test the static _apply_cross_seed_boost method."""
 
     def test_no_boost_single_seed(self) -> None:
-        evidence: dict[str, _DomainAccum] = {}
-        a = _DomainAccum()
+        evidence: dict[str, DomainAccumulator] = {}
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         evidence["samsclub.com"] = a
 
@@ -42,7 +43,7 @@ class TestApplyCrossSeedBoost:
         assert "cross_seed_verified" not in a.sources
 
     def test_boost_two_seeds(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
         evidence = {"walmartlabs.com": a}
@@ -52,7 +53,7 @@ class TestApplyCrossSeedBoost:
         assert any(e.source_type == "cross_seed_verified" for e in a.evidence)
 
     def test_boost_mixed_source_types(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_seed_related:samsclub.com")
         evidence = {"example.com": a}
@@ -62,7 +63,7 @@ class TestApplyCrossSeedBoost:
 
     def test_no_boost_same_seed_different_types(self) -> None:
         """Two source types from the same seed should NOT trigger cross-verification."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_seed_subdomain:walmart.com")
         evidence = {"example.com": a}
@@ -71,7 +72,7 @@ class TestApplyCrossSeedBoost:
         assert "cross_seed_verified" not in a.sources
 
     def test_boost_three_seeds(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:a.com")
         a.sources.add("ct_san_expansion:b.com")
         a.sources.add("ct_seed_related:c.com")
@@ -81,7 +82,7 @@ class TestApplyCrossSeedBoost:
         assert "cross_seed_verified" in a.sources
 
     def test_domains_without_seed_sources_unaffected(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.sources.add("dns_guess")
         evidence = {"example.com": a}
@@ -98,7 +99,7 @@ class TestScoreConfidenceMultiSeed:
         self.scout = Scout(config=ScoutConfig())
 
     def test_cross_seed_verified_score(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("cross_seed_verified")
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
@@ -109,31 +110,31 @@ class TestScoreConfidenceMultiSeed:
 
     def test_tagged_san_expansion_no_resolves(self) -> None:
         """ct_san_expansion:seed without resolution gets -0.05 penalty."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
         assert score == 0.75
 
     def test_tagged_seed_subdomain_no_resolves(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_subdomain:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
         assert score == 0.70
 
     def test_tagged_seed_related_no_resolves(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_related:walmart.com")
         score = self.scout._score_confidence(a, "Walmart", ["walmart.com"])
         assert score == 0.35
 
     def test_no_seeds_no_resolves(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         score = self.scout._score_confidence(a, "Walmart", [])
         assert score == 0.80
 
     def test_cross_seed_with_org_match_takes_highest(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("cross_seed_verified")
         a.sources.add("ct_org_match")
         a.sources.add("ct_san_expansion:walmart.com")
@@ -153,7 +154,7 @@ class TestBuildOutputSeedSources:
         self.scout = Scout(config=ScoutConfig())
 
     def test_seed_sources_populated(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
         a.sources.add("cross_seed_verified")
@@ -166,7 +167,7 @@ class TestBuildOutputSeedSources:
         assert sorted(domains[0].seed_sources) == ["samsclub.com", "walmart.com"]
 
     def test_is_seed_multi(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_subdomain:walmart.com")
         a.confidence = 0.90
         a.resolves = True
@@ -177,7 +178,7 @@ class TestBuildOutputSeedSources:
         assert domains[0].is_seed is True
 
     def test_empty_seed_sources_when_no_seeds(self) -> None:
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.confidence = 0.90
         a.resolves = True
@@ -267,10 +268,10 @@ class TestSimulatedScenarios:
 
     def test_walmart_samsclub_cross_verification(self) -> None:
         """Simulate: walmart.com and samsclub.com both find walmartlabs.com."""
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
 
         # walmartlabs.com found via walmart.com seed expansion
-        a1 = _DomainAccum()
+        a1 = DomainAccumulator()
         a1.sources.add("ct_san_expansion:walmart.com")
         a1.evidence.append(
             EvidenceRecord(
@@ -283,7 +284,7 @@ class TestSimulatedScenarios:
         evidence["walmartlabs.com"] = a1
 
         # walmartlabs.com also found via samsclub.com seed expansion
-        a2 = _DomainAccum()
+        a2 = DomainAccumulator()
         a2.sources.add("ct_san_expansion:samsclub.com")
         a2.evidence.append(
             EvidenceRecord(
@@ -306,9 +307,9 @@ class TestSimulatedScenarios:
 
     def test_generali_overlap(self) -> None:
         """Simulate: generali.it and generali.com both find generali.de."""
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
 
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:generali.it")
         a.sources.add("ct_san_expansion:generali.com")
         a.sources.add("ct_org_match")
@@ -331,9 +332,9 @@ class TestSimulatedScenarios:
         If Walmart sells ASDA, asda.com might only appear from walmart.com's
         historical certs, not from samsclub.com. No cross-verification boost.
         """
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
 
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.resolves = True
         evidence["asda.com"] = a
@@ -349,11 +350,11 @@ class TestSimulatedScenarios:
 
     def test_cdn_false_positive_not_cross_verified(self) -> None:
         """CDN domain from ct_seed_related only (no strong sources) is not cross-verified."""
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
 
         # cloudflare.com found as ct_seed_related from both seeds (just appeared
         # in search results, not actually on same cert)
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_related:walmart.com")
         a.sources.add("ct_seed_related:samsclub.com")
         a.resolves = True
@@ -368,9 +369,9 @@ class TestSimulatedScenarios:
 
     def test_unrelated_domains_not_boosted(self) -> None:
         """Domains only found via org match (no seed tags) get no cross-seed boost."""
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
 
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.sources.add("dns_guess")
         a.resolves = True
@@ -391,7 +392,7 @@ class TestPostMergerAcquisition:
 
     def test_acquired_brand_pre_integration_one_seed(self) -> None:
         """Domain only on one seed's certs (pre-integration) gets no cross-verify."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.resolves = True
         evidence = {"bonobos.com": a}
@@ -402,7 +403,7 @@ class TestPostMergerAcquisition:
 
     def test_divested_entity_historical_certs(self) -> None:
         """Divested subsidiary with mismatched org gets no cross-verify or org boost."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.cert_org_names.add("ASDA Group")
         a.resolves = True
@@ -414,7 +415,7 @@ class TestPostMergerAcquisition:
 
     def test_acquired_brand_different_source_types(self) -> None:
         """Cross-verification fires across different source types (SAN + subdomain)."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:companya.com")
         a.sources.add("ct_seed_subdomain:companyb.com")
         a.resolves = True
@@ -436,7 +437,7 @@ class TestPostSpinOff:
 
     def test_spinoff_shared_legacy_domain(self) -> None:
         """Shared domain on certs from both post-split seeds gets cross-verified."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:hp.com")
         a.sources.add("ct_san_expansion:hpe.com")
         a.resolves = True
@@ -448,7 +449,7 @@ class TestPostSpinOff:
 
     def test_spinoff_child_domain_not_on_parent_certs(self) -> None:
         """Domain only from one post-split seed gets no cross-verify."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:paypal.com")
         a.resolves = False
         evidence = {"paypal-engineering.com": a}
@@ -459,7 +460,7 @@ class TestPostSpinOff:
 
     def test_spinoff_transition_cert_non_resolving(self) -> None:
         """Cross-verified but non-resolving non-seed domain is excluded from output."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:hp.com")
         a.sources.add("ct_san_expansion:hpe.com")
         a.resolves = False
@@ -474,7 +475,7 @@ class TestPostSpinOff:
 
     def test_spinoff_single_seed_with_resolves(self) -> None:
         """Single-seed domain with resolves gets standard score, no cross-verify."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:hpe.com")
         a.resolves = True
         evidence = {"hpe-services.com": a}
@@ -495,11 +496,11 @@ class TestLookAlikeDifferentEntities:
 
     def test_independent_domains_no_cross(self) -> None:
         """Each seed finds only its own domains -- no cross-verification."""
-        a1 = _DomainAccum()
+        a1 = DomainAccumulator()
         a1.sources.add("ct_san_expansion:delta.com")
         a1.resolves = True
 
-        a2 = _DomainAccum()
+        a2 = DomainAccumulator()
         a2.sources.add("ct_san_expansion:deltafaucet.com")
         a2.resolves = True
 
@@ -514,7 +515,7 @@ class TestLookAlikeDifferentEntities:
 
         Without strong sources, weak evidence from multiple seeds stays at low score.
         """
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_related:delta.com")
         a.sources.add("ct_seed_related:deltafaucet.com")
         a.resolves = True
@@ -530,11 +531,11 @@ class TestLookAlikeDifferentEntities:
 
     def test_completely_isolated_seeds(self) -> None:
         """Zero cert overlap between unrelated seeds -- no cross-verification."""
-        a1 = _DomainAccum()
+        a1 = DomainAccumulator()
         a1.sources.add("ct_san_expansion:apple.com")
         a1.resolves = True
 
-        a2 = _DomainAccum()
+        a2 = DomainAccumulator()
         a2.sources.add("ct_san_expansion:applehospitality.com")
         a2.resolves = False
 
@@ -560,13 +561,13 @@ class TestCrossVerificationEdgeCases:
 
     def test_empty_evidence_dict(self) -> None:
         """Empty evidence dict does not error."""
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
         Scout._apply_cross_seed_boost(evidence, ["a.com", "b.com"])
         assert evidence == {}
 
     def test_single_domain_five_seeds(self) -> None:
         """Domain found by all 5 seeds gets cross-verified to 1.0."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         seeds = ["a.com", "b.com", "c.com", "d.com", "e.com"]
         for seed in seeds:
             a.sources.add(f"ct_san_expansion:{seed}")
@@ -579,7 +580,7 @@ class TestCrossVerificationEdgeCases:
 
     def test_duplicate_seed_no_cross_verify(self) -> None:
         """Same seed listed twice contributes only 1 unique seed -- no cross-verify."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:walmart.com")
         a.sources.add("ct_seed_subdomain:walmart.com")
         evidence = {"example.com": a}
@@ -589,7 +590,7 @@ class TestCrossVerificationEdgeCases:
 
     def test_boost_idempotency(self) -> None:
         """Second boost call is idempotent for sources but appends to evidence list."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_san_expansion:a.com")
         a.sources.add("ct_san_expansion:b.com")
         evidence = {"shared.com": a}
@@ -603,7 +604,7 @@ class TestCrossVerificationEdgeCases:
 
     def test_all_boosts_cap_at_one(self) -> None:
         """Every possible boost stacked still caps at exactly 1.0."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update(
             {
                 "cross_seed_verified",
@@ -619,7 +620,7 @@ class TestCrossVerificationEdgeCases:
 
     def test_seed_domain_own_tag_only_is_seed_not_cross_verified(self) -> None:
         """Seed domain with only its own tag: no cross-verify, but is_seed in output."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_subdomain:walmart.com")
         a.resolves = True
         evidence = {"walmart.com": a}
@@ -635,7 +636,7 @@ class TestCrossVerificationEdgeCases:
 
     def test_seed_domain_cross_verified_from_other_seed(self) -> None:
         """Seed domain with tags from both seeds gets cross-verified."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_seed_subdomain:walmart.com")
         a.sources.add("ct_san_expansion:samsclub.com")
         a.resolves = True
@@ -669,7 +670,7 @@ class TestBuildOutputEdgeCases:
 
     def test_non_resolving_cross_verified_excluded(self) -> None:
         """Non-resolving non-seed domain excluded even with high confidence."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update(
             {
                 "ct_san_expansion:a.com",
@@ -686,7 +687,7 @@ class TestBuildOutputEdgeCases:
 
     def test_below_inclusion_threshold_excluded(self) -> None:
         """Domain below 0.60 inclusion threshold excluded even if it resolves."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("dns_guess")
         a.resolves = True
         a.confidence = 0.35
@@ -697,17 +698,17 @@ class TestBuildOutputEdgeCases:
 
     def test_output_sorts_descending_by_confidence(self) -> None:
         """Output is sorted high-to-low by confidence."""
-        low = _DomainAccum()
+        low = DomainAccumulator()
         low.sources.add("ct_org_match")
         low.resolves = True
         low.confidence = 0.70
 
-        high = _DomainAccum()
+        high = DomainAccumulator()
         high.sources.add("cross_seed_verified")
         high.resolves = True
         high.confidence = 1.0
 
-        mid = _DomainAccum()
+        mid = DomainAccumulator()
         mid.sources.add("ct_san_expansion:a.com")
         mid.resolves = True
         mid.confidence = 0.85
@@ -729,7 +730,7 @@ class TestCorroborationLevels:
 
     def test_level3_resolves_rdap_high_sim(self) -> None:
         """Level 3: resolves + rdap_match + high_sim → +0.10."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update({"ct_org_match", "rdap_registrant_match", "ct_san_expansion:a.com"})
         a.cert_org_names.add("Walmart Inc.")
         a.resolves = True
@@ -738,7 +739,7 @@ class TestCorroborationLevels:
 
     def test_level3_resolves_rdap_multi_source(self) -> None:
         """Level 3: resolves + rdap_match + multi_source → +0.10."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update({"ct_org_match", "rdap_registrant_match", "ct_san_expansion:a.com"})
         a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", ["a.com"])
@@ -746,7 +747,7 @@ class TestCorroborationLevels:
 
     def test_level2_resolves_rdap(self) -> None:
         """Level 2: resolves + rdap_match (no multi_source) → +0.05."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update({"ct_org_match", "rdap_registrant_match"})
         a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", [])
@@ -754,7 +755,7 @@ class TestCorroborationLevels:
 
     def test_level2_resolves_high_sim(self) -> None:
         """Level 2: resolves + high_sim (no rdap) → +0.05."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.cert_org_names.add("Walmart Inc.")
         a.resolves = True
@@ -763,7 +764,7 @@ class TestCorroborationLevels:
 
     def test_level2_resolves_multi_source(self) -> None:
         """Level 2: resolves + multi_source (no rdap, no high_sim) → +0.05."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update({"ct_org_match", "ct_san_expansion:a.com", "ct_seed_subdomain:a.com"})
         a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", ["a.com"])
@@ -771,7 +772,7 @@ class TestCorroborationLevels:
 
     def test_level1_resolves_only(self) -> None:
         """Level 1: resolves only → +0.00."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", [])
@@ -779,7 +780,7 @@ class TestCorroborationLevels:
 
     def test_level0_no_resolves(self) -> None:
         """Level 0: no resolution → -0.05."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = False
         score = self.scout._score_confidence(a, "Walmart", [])
@@ -787,7 +788,7 @@ class TestCorroborationLevels:
 
     def test_cross_seed_rdap_resolves_reaches_one(self) -> None:
         """Cross-seed + rdap + resolves → 1.0."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.update(
             {
                 "cross_seed_verified",
@@ -803,7 +804,7 @@ class TestCorroborationLevels:
 
     def test_dns_guess_stays_at_030(self) -> None:
         """dns_guess stays at 0.30 regardless of corroboration."""
-        a = _DomainAccum()
+        a = DomainAccumulator()
         a.sources.add("dns_guess")
         a.resolves = True
         score = self.scout._score_confidence(a, "Walmart", [])
@@ -823,8 +824,8 @@ class TestRDAPCorroboration:
     @pytest.mark.asyncio
     async def test_adds_rdap_source_on_match(self) -> None:
         """RDAP corroboration adds rdap_registrant_match when org matches."""
-        evidence: dict[str, _DomainAccum] = {}
-        a = _DomainAccum()
+        evidence: dict[str, DomainAccumulator] = {}
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = True
         evidence["walmart.com"] = a
@@ -837,8 +838,8 @@ class TestRDAPCorroboration:
     @pytest.mark.asyncio
     async def test_skips_non_resolving(self) -> None:
         """Non-resolving domains are skipped."""
-        evidence: dict[str, _DomainAccum] = {}
-        a = _DomainAccum()
+        evidence: dict[str, DomainAccumulator] = {}
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = False
         evidence["dead.com"] = a
@@ -850,8 +851,8 @@ class TestRDAPCorroboration:
     async def test_below_threshold_no_source(self) -> None:
         """RDAP org below org_match_threshold doesn't add source."""
         self.scout._rdap.get_registrant_org = AsyncMock(return_value="Totally Different Corp")  # type: ignore[method-assign]
-        evidence: dict[str, _DomainAccum] = {}
-        a = _DomainAccum()
+        evidence: dict[str, DomainAccumulator] = {}
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = True
         evidence["unrelated.com"] = a
@@ -865,8 +866,8 @@ class TestRDAPCorroboration:
         self.scout._rdap.get_registrant_org = AsyncMock(  # type: ignore[method-assign]
             side_effect=Exception("RDAP service down")
         )
-        evidence: dict[str, _DomainAccum] = {}
-        a = _DomainAccum()
+        evidence: dict[str, DomainAccumulator] = {}
+        a = DomainAccumulator()
         a.sources.add("ct_org_match")
         a.resolves = True
         evidence["walmart.com"] = a
@@ -883,9 +884,9 @@ class TestRDAPCorroboration:
         self.scout = Scout(config=config)
         self.scout._rdap.get_registrant_org = AsyncMock(return_value="Walmart Inc.")  # type: ignore[method-assign]
 
-        evidence: dict[str, _DomainAccum] = {}
+        evidence: dict[str, DomainAccumulator] = {}
         for i in range(10):
-            a = _DomainAccum()
+            a = DomainAccumulator()
             a.sources.add("ct_org_match")
             a.resolves = True
             evidence[f"domain{i}.com"] = a

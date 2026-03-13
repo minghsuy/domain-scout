@@ -12,10 +12,10 @@ if TYPE_CHECKING:
 import pytest
 
 from domain_scout.config import ScoutConfig
+from domain_scout.models import DomainAccumulator
 from domain_scout.scout import (
     Scout,
     _brand_sort_key,
-    _DomainAccum,
     _filter_subsidiaries,
     load_subsidiary_map,
 )
@@ -240,7 +240,7 @@ class TestSubsidiaryExpansion:
     def test_source_tag_in_scoring(self) -> None:
         """ct_subsidiary_match gets scored at 0.80 base."""
         s = self._make_scout()
-        accum = _DomainAccum()
+        accum = DomainAccumulator()
         accum.sources.add("ct_subsidiary_match")
         # No resolution -> Level 0 -> -0.05
         score = s._score_confidence(accum, "Test Co", [])
@@ -249,7 +249,7 @@ class TestSubsidiaryExpansion:
     def test_source_tag_with_resolution(self) -> None:
         """ct_subsidiary_match with resolution gets Level 1 -> 0.80."""
         s = self._make_scout()
-        accum = _DomainAccum()
+        accum = DomainAccumulator()
         accum.sources.add("ct_subsidiary_match")
         accum.resolves = True
         score = s._score_confidence(accum, "Test Co", [])

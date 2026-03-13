@@ -31,12 +31,16 @@ from domain_scout.matching.entity_match import (
     normalize_org_name,
     org_name_similarity,
 )
+from domain_scout.matching.scoring import ConfidenceScorer
 from domain_scout.models import (
     DiscoveredDomain,
+    DomainAccumulator,
     EntityInput,
     EvidenceRecord,
     RunMetadata,
     ScoutResult,
+    _normalize_time,
+    _parse_time,
 )
 from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
 from domain_scout.sources.dns_utils import DNSChecker
@@ -221,6 +225,7 @@ class Scout:
         else:
             self._rdap = rdap_inner
         self._dns = DNSChecker(self.config)
+        self._scorer = ConfidenceScorer(self.config)
         self._subsidiaries: dict[str, list[str]] = {}
         if self.config.subsidiaries_path:
             try:
@@ -285,7 +290,7 @@ class Scout:
         seeds = entity.seed_domain  # list[str]
 
         # Accumulator: domain -> evidence dict
-        domain_evidence: dict[str, _DomainAccum] = {}
+        domain_evidence: dict[str, DomainAccumulator] = {}
 
         def _remaining() -> float:
             return max(0.0, total_budget - (time.monotonic() - t0))
@@ -308,7 +313,7 @@ class Scout:
         seed_cross_verification: dict[str, list[str]] = {}
         seed_ct_records: dict[str, list[dict[str, Any]]] = {}
 
-        independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
+        independent_tasks: list[asyncio.Task[list[tuple[str, DomainAccumulator]]]] = []
 
         # Strategy A: org name search (independent of seed)
         independent_tasks.append(
@@ -399,7 +404,7 @@ class Scout:
                                 seed_ct_records.setdefault(sd, r["ct_records"])
 
         # Phase 2: Seed-dependent strategies (B + optional second org search)
-        dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
+        dependent_tasks: list[asyncio.Task[list[tuple[str, DomainAccumulator]]]] = []
 
         # Extra org searches from seed-derived org names
         seen_org_searches: set[str] = set()
@@ -661,8 +666,8 @@ class Scout:
         rec: dict[str, Any],
         org_name: str,
         source_tag: str,
-    ) -> list[tuple[str, _DomainAccum]]:
-        results: list[tuple[str, _DomainAccum]] = []
+    ) -> list[tuple[str, DomainAccumulator]]:
+        results: list[tuple[str, DomainAccumulator]] = []
         cert_org = rec.get("org_name")
         if not isinstance(cert_org, str) or not cert_org:
             return results
@@ -682,7 +687,7 @@ class Scout:
             base = extract_base_domain(name)
             if not base:
                 continue
-            accum = _DomainAccum()
+            accum = DomainAccumulator()
             accum.sources.add(source_tag)
             desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
             accum.evidence.append(
@@ -708,8 +713,8 @@ class Scout:
         org_name: str,
         errors: list[str],
         source_tag: str = "ct_org_match",
-    ) -> list[tuple[str, _DomainAccum]]:
-        results: list[tuple[str, _DomainAccum]] = []
+    ) -> list[tuple[str, DomainAccumulator]]:
+        results: list[tuple[str, DomainAccumulator]] = []
         try:
             records = await self._ct.search_by_org(org_name)
         except Exception as exc:
@@ -730,8 +735,8 @@ class Scout:
         company_name: str,
         errors: list[str],
         ct_records: list[dict[str, Any]] | None = None,
-    ) -> list[tuple[str, _DomainAccum]]:
-        results: list[tuple[str, _DomainAccum]] = []
+    ) -> list[tuple[str, DomainAccumulator]]:
+        results: list[tuple[str, DomainAccumulator]] = []
         if ct_records is not None:
             records = ct_records
         else:
@@ -766,7 +771,7 @@ class Scout:
                 if not base:
                     continue
 
-                accum = _DomainAccum()
+                accum = DomainAccumulator()
 
                 # Is this a SAN on a cert that also covers the seed domain?
                 has_seed_san = seed_base in unique_bases
@@ -830,7 +835,7 @@ class Scout:
 
     async def _strategy_domain_guess(
         self, company_name: str, location: str | None, errors: list[str]
-    ) -> list[tuple[str, _DomainAccum]]:
+    ) -> list[tuple[str, DomainAccumulator]]:
         slugs = domain_from_company_name(company_name)
         # Also try with location keywords
         if location:
@@ -848,14 +853,14 @@ class Scout:
         resolve_map = await self._dns.bulk_resolve(candidates)
 
         # Return resolving candidates at low confidence (Strategy A handles CT matching)
-        results: list[tuple[str, _DomainAccum]] = []
+        results: list[tuple[str, DomainAccumulator]] = []
         for domain, does_resolve in resolve_map.items():
             if not does_resolve:
                 continue
             base = extract_base_domain(domain)
             if not base:
                 continue
-            accum = _DomainAccum()
+            accum = DomainAccumulator()
             accum.sources.add("dns_guess")
             accum.evidence.append(
                 EvidenceRecord(
@@ -871,7 +876,7 @@ class Scout:
     # --- Cross-seed detection ---
 
     @staticmethod
-    def _apply_cross_seed_boost(domain_evidence: dict[str, _DomainAccum], seeds: list[str]) -> None:
+    def _apply_cross_seed_boost(domain_evidence: dict[str, DomainAccumulator], seeds: list[str]) -> None:
         """Add cross_seed_verified source to domains found from 2+ independent seeds.
 
         Requires at least one strong source (ct_san_expansion or ct_seed_subdomain).
@@ -897,96 +902,14 @@ class Scout:
 
     def _score_confidence(
         self,
-        accum: _DomainAccum,
+        accum: DomainAccumulator,
         company_name: str,
         seed_domains: list[str],
         domain: str = "",
     ) -> float:
-        # Learned scorer path (opt-in via config)
-        if self.config.use_learned_scorer and domain and accum.cert_org_names:
-            from domain_scout.scorer import score_confidence as _learned_score
+        return self._scorer.score(accum, company_name, seed_domains, domain)
 
-            best_sim = max(
-                (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
-                default=0.0,
-            )
-            # Count unique cert IDs for evidence_density
-            cert_ids: set[int] = set()
-            for ev in accum.evidence:
-                if ev.cert_id is not None:
-                    cert_ids.add(ev.cert_id)
-
-            # Extract max RDAP registrant similarity from evidence
-            rdap_sim = max(
-                (
-                    ev.similarity_score
-                    for ev in accum.evidence
-                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
-                ),
-                default=0.0,
-            )
-
-            return _learned_score(
-                domain=domain,
-                company_name=company_name,
-                best_similarity=best_sim,
-                sources=accum.sources,
-                cert_org_names=accum.cert_org_names,
-                resolves=accum.resolves,
-                evidence_count=len(accum.evidence),
-                unique_cert_count=len(cert_ids),
-                rdap_similarity=rdap_sim,
-            )
-
-        # Heuristic scorer (default)
-        # Phase 1: base score from source type
-        score = 0.0
-
-        if "cross_seed_verified" in accum.sources:
-            score = max(score, 0.90)
-        if "ct_org_match" in accum.sources:
-            score = max(score, 0.85)
-        if "ct_subsidiary_match" in accum.sources:
-            score = max(score, 0.80)
-        if any(s.startswith("ct_san_expansion:") for s in accum.sources):
-            score = max(score, 0.80)
-        if any(s.startswith("ct_seed_subdomain:") for s in accum.sources):
-            score = max(score, 0.75)
-        if any(s.startswith("ct_seed_related:") for s in accum.sources):
-            score = max(score, 0.40)
-        if "dns_guess" in accum.sources and "ct_org_match" not in accum.sources:
-            score = max(score, 0.30)
-
-        # Phase 2: corroboration level adjustment
-        # dns_guess bypasses corroboration — it already implies resolution
-        if score <= 0.30:
-            return round(score, 2)
-
-        has_resolves = accum.resolves
-        has_rdap = "rdap_registrant_match" in accum.sources
-
-        best_sim = max(
-            (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
-            default=0.0,
-        )
-        has_high_sim = best_sim > 0.9
-
-        has_multi_source = len(accum.sources) >= 3
-
-        if has_resolves and (has_rdap or has_high_sim) and has_multi_source:
-            adjustment = 0.10  # Level 3: strong corroboration
-        elif has_resolves and (has_rdap or has_high_sim or has_multi_source):
-            adjustment = 0.05  # Level 2: moderate corroboration
-        elif has_resolves:
-            adjustment = 0.00  # Level 1: resolves only
-        else:
-            adjustment = -0.05  # Level 0: no resolution
-
-        score = min(1.0, max(0.0, score + adjustment))
-
-        return round(score, 2)
-
-    async def _infra_boost(self, reference: str, evidence: dict[str, _DomainAccum]) -> None:
+    async def _infra_boost(self, reference: str, evidence: dict[str, DomainAccumulator]) -> None:
         """Small confidence boost for domains sharing infra with a reference domain."""
         # Select top candidates by confidence, capped
         candidates = [
@@ -997,7 +920,7 @@ class Scout:
         candidates.sort(key=lambda x: x[1].confidence, reverse=True)
         candidates = candidates[: self.config.infra_check_max]
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
+        async def _check(domain: str, accum: DomainAccumulator) -> None:
             try:
                 shared = await self._dns.shares_infrastructure(reference, domain)
                 if not shared:
@@ -1028,7 +951,7 @@ class Scout:
     # --- RDAP corroboration ---
 
     async def _rdap_corroborate(
-        self, domain_evidence: dict[str, _DomainAccum], company_name: str
+        self, domain_evidence: dict[str, DomainAccumulator], company_name: str
     ) -> None:
         """Query RDAP on top resolving candidates and add corroborating evidence."""
         # Select resolving candidates without existing rdap_registrant_match
@@ -1044,7 +967,7 @@ class Scout:
         if not candidates:
             return
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
+        async def _check(domain: str, accum: DomainAccumulator) -> None:
             try:
                 rdap_org = await self._rdap.get_registrant_org(domain)
                 if not rdap_org:
@@ -1079,7 +1002,7 @@ class Scout:
     # --- Step 4: Build output ---
 
     def _build_output(
-        self, evidence: dict[str, _DomainAccum], seed_domains: list[str]
+        self, evidence: dict[str, DomainAccumulator], seed_domains: list[str]
     ) -> list[DiscoveredDomain]:
         domains: list[DiscoveredDomain] = []
         seed_bases = {extract_base_domain(sd) for sd in seed_domains} - {None}
@@ -1160,77 +1083,3 @@ def _extract_sans(rec: dict[str, object]) -> list[str]:
     raw = rec.get("san_dns_names")
     sans: list[str] = raw if isinstance(raw, list) else []
     return sans
-
-
-def _normalize_time(val: object) -> str | None:
-    """Normalize a datetime or string to ISO string for consistent comparison.
-
-    CT Postgres returns datetime objects, JSON API and cache return strings.
-    Normalizing to ISO strings prevents TypeError on mixed-type comparison.
-    """
-    if val is None:
-        return None
-    if isinstance(val, datetime):
-        return val.isoformat()
-    if isinstance(val, str):
-        if not val:
-            return None
-        try:
-            return datetime.fromisoformat(val).isoformat()
-        except ValueError:
-            return val
-    return str(val)
-
-
-def _parse_time(val: str | None) -> datetime | None:
-    """Parse an ISO 8601 string back to datetime for Pydantic output."""
-    if val is None:
-        return None
-    return datetime.fromisoformat(val)
-
-
-class _DomainAccum:
-    """Mutable accumulator for evidence about a single domain."""
-
-    __slots__ = (
-        "sources",
-        "evidence",
-        "cert_org_names",
-        "first_seen",
-        "last_seen",
-        "resolves",
-        "rdap_org",
-        "confidence",
-    )
-
-    def __init__(self) -> None:
-        self.sources: set[str] = set()
-        self.evidence: list[EvidenceRecord] = []
-        self.cert_org_names: set[str] = set()
-        self.first_seen: str | None = None
-        self.last_seen: str | None = None
-        self.resolves: bool = False
-        self.rdap_org: str | None = None
-        self.confidence: float = 0.0
-
-    def merge(self, other: _DomainAccum) -> None:
-        self.sources |= other.sources
-        self.evidence.extend(other.evidence)
-        self.cert_org_names |= other.cert_org_names
-        o_first = _normalize_time(other.first_seen)
-        if o_first and (self.first_seen is None or o_first < self.first_seen):
-            self.first_seen = o_first
-        o_last = _normalize_time(other.last_seen)
-        if o_last and (self.last_seen is None or o_last > self.last_seen):
-            self.last_seen = o_last
-        self.resolves = self.resolves or other.resolves
-        if self.rdap_org is None and other.rdap_org is not None:
-            self.rdap_org = other.rdap_org
-
-    def update_times(self, not_before: object, not_after: object) -> None:
-        nb = _normalize_time(not_before)
-        na = _normalize_time(not_after)
-        if nb and (self.first_seen is None or nb < self.first_seen):
-            self.first_seen = nb
-        if na and (self.last_seen is None or na > self.last_seen):
-            self.last_seen = na
