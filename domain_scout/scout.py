@@ -1125,10 +1125,12 @@ class Scout:
         return domains
 
 
-_SEED_SOURCE_PREFIXES = (
-    "ct_san_expansion:",
-    "ct_seed_subdomain:",
-    "ct_seed_related:",
+_SEED_SOURCE_PREFIXES = frozenset(
+    {
+        "ct_san_expansion",
+        "ct_seed_subdomain",
+        "ct_seed_related",
+    }
 )
 
 
@@ -1136,9 +1138,9 @@ def _extract_contributing_seeds(sources: set[str]) -> set[str]:
     """Extract the set of seed domains that contributed to a source set."""
     seeds: set[str] = set()
     for src in sources:
-        for prefix in _SEED_SOURCE_PREFIXES:
-            if src.startswith(prefix):
-                seeds.add(src[len(prefix) :])
+        parts = src.split(":", 1)
+        if len(parts) == 2 and parts[0] in _SEED_SOURCE_PREFIXES:
+            seeds.add(parts[1])
     return seeds
 
 
