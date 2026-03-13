@@ -910,21 +910,16 @@ class Scout:
                 (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
                 default=0.0,
             )
-            # Count unique cert IDs for evidence_density
+            # Count unique cert IDs and extract max RDAP registrant similarity in one pass
             cert_ids: set[int] = set()
+            rdap_sims: list[float] = []
             for ev in accum.evidence:
-                if ev.cert_id is not None:
-                    cert_ids.add(ev.cert_id)
+                if (cid := ev.cert_id) is not None:
+                    cert_ids.add(cid)
+                if ev.source_type == "rdap_registrant_match" and (score := ev.similarity_score) is not None:
+                    rdap_sims.append(score)
 
-            # Extract max RDAP registrant similarity from evidence
-            rdap_sim = max(
-                (
-                    ev.similarity_score
-                    for ev in accum.evidence
-                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
-                ),
-                default=0.0,
-            )
+            rdap_sim = max(rdap_sims, default=0.0)
 
             return _learned_score(
                 domain=domain,
