@@ -6,6 +6,7 @@ calibrated probabilities from domain evidence features.
 
 from __future__ import annotations
 
+import functools
 import json
 import math
 from importlib import resources
@@ -97,6 +98,7 @@ def _domain_has_company_token(domain: str, company_name: str) -> int:
     return 1 if any(t in base for t in tokens) else 0
 
 
+@functools.lru_cache(maxsize=2048)
 def _clean_name(name: str) -> str:
     tokens = [t.lower().rstrip(".,") for t in name.split()]
     tokens = [t for t in tokens if len(t) >= 2 and t not in _COMPANY_SUFFIX_SKIP]
