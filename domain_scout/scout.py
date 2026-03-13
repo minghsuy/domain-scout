@@ -203,26 +203,6 @@ class _DiscoveryContext:
         return max(0.0, self.total_budget - (time.monotonic() - self.start_time))
 
 
-@dataclass
-class _DiscoveryContext:
-    entity: EntityInput
-    start_time: float
-    total_budget: float
-    seeds: list[str]
-    errors: list[str] = field(default_factory=list)
-    timed_out: bool = False
-    domain_evidence: dict[str, _DomainAccum] = field(default_factory=dict)
-    seed_assessments: dict[str, str] = field(default_factory=dict)
-    seed_org_names: dict[str, str | None] = field(default_factory=dict)
-    seed_cross_verification: dict[str, list[str]] = field(default_factory=dict)
-    seed_ct_records: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
-
-    def remaining_time(self) -> float:
-        import time
-
-        return max(0.0, self.total_budget - (time.monotonic() - self.start_time))
-
-
 class Scout:
     """Discover internet domains associated with a business entity."""
 
@@ -348,8 +328,8 @@ class Scout:
 
     def _start_independent_strategies(
         self, ctx: _DiscoveryContext
-    ) -> list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]:
-        tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]] = []
+    ) -> list[asyncio.Task[list[tuple[str, _DomainAccum]]]]:
+        tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
         tasks.append(
             asyncio.create_task(
                 self._strategy_org_search(ctx.entity.company_name, ctx.errors),
@@ -387,7 +367,9 @@ class Scout:
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
         for sd in ctx.seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, ctx.entity.company_name, ctx.seeds, ctx.errors, seed_to_base),
+                self._validate_seed(
+                    sd, ctx.entity.company_name, ctx.seeds, ctx.errors, seed_to_base
+                ),
                 name=f"seed_validation:{sd}",
             )
         return seed_tasks
@@ -426,7 +408,9 @@ class Scout:
                 co_hosted=result.get("co_hosted_seeds", []),
             )
 
-    def _handle_seed_timeout(self, ctx: _DiscoveryContext, sd: str, stask: asyncio.Task[dict[str, Any]]) -> None:
+    def _handle_seed_timeout(
+        self, ctx: _DiscoveryContext, sd: str, stask: asyncio.Task[dict[str, Any]]
+    ) -> None:
         if not stask.done():
             stask.cancel()
             ctx.seed_assessments.setdefault(sd, "timeout")
@@ -447,8 +431,8 @@ class Scout:
 
     def _start_dependent_strategies(
         self, ctx: _DiscoveryContext
-    ) -> list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]:
-        dependent_tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]] = []
+    ) -> list[asyncio.Task[list[tuple[str, _DomainAccum]]]]:
+        dependent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
         seen_org_searches: set[str] = set()
         for sd, org_name in ctx.seed_org_names.items():
             if (
@@ -479,7 +463,7 @@ class Scout:
         return dependent_tasks
 
     async def _wait_for_strategies(
-        self, ctx: _DiscoveryContext, tasks: list[asyncio.Task[list[tuple[str, "_DomainAccum"]]]]
+        self, ctx: _DiscoveryContext, tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]]
     ) -> None:
         def _collect(results: list[Any]) -> None:
             for result in results:
