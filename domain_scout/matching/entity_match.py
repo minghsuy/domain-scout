@@ -225,7 +225,7 @@ def _fuzzy_best(a: str, b: str) -> float:
     # Penalize partial/token-set more when strings differ greatly in length.
     # Short substrings ("bank") matching inside long names ("deutsche bank")
     # get inflated scores without this guard.
-    length_ratio = min(len(a), len(b)) / max(len(a), len(b))
+    length_ratio = min(len(a), len(b)) / (max(len(a), len(b)) or 1)
     if length_ratio < 0.4:
         token_set *= 0.70
         partial *= 0.70
