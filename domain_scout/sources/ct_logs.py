@@ -29,7 +29,7 @@ log = structlog.get_logger()
 # Module-level singleton: bundled PSL only (no network fetch, no disk cache).
 # Avoids blocking the asyncio event loop with synchronous HTTP from requests.
 # Bundled PSL updates with each tldextract release — sufficient for our use.
-# include_private_domains=False: shared hosting suffixes (github.io, s3.amazonaws.com)
+# include_psl_private_domains=False: shared hosting suffixes (github.io, s3.amazonaws.com)
 # collapse to the public TLD — correct for entity-to-domain mapping since those certs
 # belong to the platform owner, not tenants.
 _tld = tldextract.TLDExtract(cache_dir=None, include_psl_private_domains=False)
@@ -125,7 +125,7 @@ def extract_base_domain(name: str) -> str | None:
     """Extract the registrable base domain from a DNS name.
 
     Uses tldextract for correct public-suffix handling (e.g., co.uk, com.au,
-    github.io).  Falls back gracefully for IP addresses and single labels.
+    co.jp).  Falls back gracefully for IP addresses and single labels.
     """
     name = name.lower().strip().rstrip(".")
     if name.startswith("*."):
