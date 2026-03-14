@@ -12,6 +12,7 @@ import httpx
 import psycopg2
 import psycopg2.extras
 import structlog
+import tldextract
 
 from domain_scout._metrics import (
     CT_FALLBACKS_TOTAL,
@@ -115,21 +116,18 @@ def _extract_org_from_subject(subject: str) -> str | None:
 def extract_base_domain(name: str) -> str | None:
     """Extract the registrable base domain from a DNS name.
 
-    Handles wildcards and subdomains by keeping the last two labels
-    (or three for two-letter second-level like .co.uk).
+    Uses tldextract for correct public-suffix handling (e.g., co.uk, com.au,
+    github.io).  Falls back gracefully for IP addresses and single labels.
     """
     name = name.lower().strip().rstrip(".")
     if name.startswith("*."):
         name = name[2:]
     if re.match(r"^\d+\.\d+\.\d+\.\d+$", name):
         return None
-    parts = name.split(".")
-    if len(parts) < 2:
+    ext = tldextract.extract(name)
+    if not ext.domain or not ext.suffix:
         return None
-    # Simple heuristic for ccTLD+SLD (co.uk, com.au, etc.)
-    if len(parts) >= 3 and len(parts[-2]) <= 3 and len(parts[-1]) == 2:
-        return ".".join(parts[-3:])
-    return ".".join(parts[-2:])
+    return f"{ext.domain}.{ext.suffix}"
 
 
 def is_valid_domain(name: str) -> bool:

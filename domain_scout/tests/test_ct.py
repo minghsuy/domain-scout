@@ -106,6 +106,12 @@ class TestExtractBaseDomain:
     def test_ipv4_public(self) -> None:
         assert extract_base_domain("8.8.8.8") is None
 
+    def test_com_au(self) -> None:
+        assert extract_base_domain("www.example.com.au") == "example.com.au"
+
+    def test_co_jp(self) -> None:
+        assert extract_base_domain("shop.example.co.jp") == "example.co.jp"
+
 
 class TestIsValidDomain:
     def test_valid(self) -> None:

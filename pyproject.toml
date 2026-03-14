@@ -25,6 +25,7 @@ dependencies = [
     "pydantic>=2.10.0",
     "rapidfuzz>=3.11.0",
     "structlog>=24.4.0",
+    "tldextract>=5.0.0",
     "typer>=0.15.0",
 ]
 
