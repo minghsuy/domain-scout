@@ -14,11 +14,6 @@ import psycopg2.extras
 import structlog
 import tldextract
 
-# Module-level singleton: bundled PSL only (no network fetch, no disk cache).
-# Avoids blocking the asyncio event loop with synchronous HTTP from requests.
-# Bundled PSL updates with each tldextract release — sufficient for our use.
-_tld = tldextract.TLDExtract(cache_dir=None)
-
 from domain_scout._metrics import (
     CT_FALLBACKS_TOTAL,
     CT_QUERIES_TOTAL,
@@ -30,6 +25,11 @@ if TYPE_CHECKING:
     from domain_scout.config import ScoutConfig
 
 log = structlog.get_logger()
+
+# Module-level singleton: bundled PSL only (no network fetch, no disk cache).
+# Avoids blocking the asyncio event loop with synchronous HTTP from requests.
+# Bundled PSL updates with each tldextract release — sufficient for our use.
+_tld = tldextract.TLDExtract(cache_dir=None)
 
 # OID for X.509 organizationName
 _ORG_OID = "2.5.4.10"
