@@ -29,7 +29,10 @@ log = structlog.get_logger()
 # Module-level singleton: bundled PSL only (no network fetch, no disk cache).
 # Avoids blocking the asyncio event loop with synchronous HTTP from requests.
 # Bundled PSL updates with each tldextract release — sufficient for our use.
-_tld = tldextract.TLDExtract(cache_dir=None)
+# include_private_domains=False: shared hosting suffixes (github.io, s3.amazonaws.com)
+# collapse to the public TLD — correct for entity-to-domain mapping since those certs
+# belong to the platform owner, not tenants.
+_tld = tldextract.TLDExtract(cache_dir=None, include_psl_private_domains=False)
 
 # OID for X.509 organizationName
 _ORG_OID = "2.5.4.10"
