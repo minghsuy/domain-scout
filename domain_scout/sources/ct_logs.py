@@ -14,6 +14,11 @@ import psycopg2.extras
 import structlog
 import tldextract
 
+# Module-level singleton: bundled PSL only (no network fetch, no disk cache).
+# Avoids blocking the asyncio event loop with synchronous HTTP from requests.
+# Bundled PSL updates with each tldextract release — sufficient for our use.
+_tld = tldextract.TLDExtract(cache_dir=None)
+
 from domain_scout._metrics import (
     CT_FALLBACKS_TOTAL,
     CT_QUERIES_TOTAL,
@@ -124,7 +129,7 @@ def extract_base_domain(name: str) -> str | None:
         name = name[2:]
     if re.match(r"^\d+\.\d+\.\d+\.\d+$", name):
         return None
-    ext = tldextract.extract(name)
+    ext = _tld(name)
     if not ext.domain or not ext.suffix:
         return None
     return f"{ext.domain}.{ext.suffix}"
