@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+from dataclasses import dataclass
 from pathlib import Path  # noqa: TC003 — Typer needs runtime import
 from typing import TYPE_CHECKING, Annotated
 
@@ -24,6 +25,91 @@ app = typer.Typer(
 
 cache_app = typer.Typer(help="Manage the query cache.")
 app.add_typer(cache_app, name="cache")
+
+
+@dataclass
+class ScoutCliArgs:
+    """Configuration object grouping CLI arguments for the scout command."""
+
+    name: str
+    location: str | None
+    seed: list[str] | None
+    industry: str | None
+    deep: bool
+    output: str
+    timeout: int
+    profile: str | None
+    use_cache: bool
+    cache_dir: str | None
+    local: bool
+    local_first: bool
+    warehouse_path: str | None
+    subsidiaries_path: str | None
+    verbose: bool
+
+
+class ScoutRunner:
+    """Service class to execute scout operations."""
+
+    def __init__(self, args: ScoutCliArgs) -> None:
+        self.args = args
+
+    def run(self) -> None:
+        """Run the scout discovery process with the configured arguments."""
+        configure_logging(level=logging.DEBUG if self.args.verbose else logging.INFO)
+
+        seeds = self.args.seed or []
+        timeout = self.args.timeout
+        if self.args.deep:
+            timeout = max(timeout, 180)
+        if len(seeds) >= 3:
+            timeout = max(timeout, 150)
+
+        # Resolve local mode and warehouse path
+        overrides: dict[str, object] = {"total_timeout": timeout, "deep_mode": self.args.deep}
+        if self.args.local and self.args.local_first:
+            typer.echo("Error: --local and --local-first are mutually exclusive.", err=True)
+            raise typer.Exit(1)
+        if self.args.local or self.args.local_first:
+            import os
+
+            overrides["local_mode"] = "local_only" if self.args.local else "local_first"
+            overrides["warehouse_path"] = self.args.warehouse_path or os.environ.get(
+                "DOMAIN_SCOUT_WAREHOUSE_PATH",
+                str(Path.home() / ".local" / "share" / "ct-warehouse"),
+            )
+        if self.args.subsidiaries_path:
+            overrides["subsidiaries_path"] = self.args.subsidiaries_path
+
+        config = (
+            ScoutConfig.from_profile(self.args.profile, **overrides)  # type: ignore[arg-type]
+            if self.args.profile
+            else ScoutConfig(**overrides)  # type: ignore[arg-type]
+        )
+
+        cache = None
+        if self.args.use_cache:
+            cache = _get_cache_or_exit(self.args.cache_dir)
+
+        try:
+            s = Scout(config=config, cache=cache)
+            result = s.discover(
+                company_name=self.args.name,
+                location=self.args.location,
+                seed_domain=seeds,
+                industry=self.args.industry,
+            )
+        except KeyboardInterrupt:
+            typer.echo("\nAborted.", err=True)
+            raise typer.Exit(1) from None
+        finally:
+            if cache:
+                cache.close()
+
+        if self.args.output == "json":
+            typer.echo(result.model_dump_json(indent=2))
+        else:
+            _print_table(result)
 
 
 @app.command()
@@ -68,59 +154,24 @@ def scout(  # noqa: PLR0913
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
-    configure_logging(level=logging.DEBUG if verbose else logging.INFO)
-
-    seeds = seed or []
-    if deep:
-        timeout = max(timeout, 180)
-    if len(seeds) >= 3:
-        timeout = max(timeout, 150)
-
-    # Resolve local mode and warehouse path
-    overrides: dict[str, object] = {"total_timeout": timeout, "deep_mode": deep}
-    if local and local_first:
-        typer.echo("Error: --local and --local-first are mutually exclusive.", err=True)
-        raise typer.Exit(1)
-    if local or local_first:
-        import os
-
-        overrides["local_mode"] = "local_only" if local else "local_first"
-        overrides["warehouse_path"] = warehouse_path or os.environ.get(
-            "DOMAIN_SCOUT_WAREHOUSE_PATH",
-            str(Path.home() / ".local" / "share" / "ct-warehouse"),
-        )
-    if subsidiaries_path:
-        overrides["subsidiaries_path"] = subsidiaries_path
-
-    config = (
-        ScoutConfig.from_profile(profile, **overrides)  # type: ignore[arg-type]
-        if profile
-        else ScoutConfig(**overrides)  # type: ignore[arg-type]
+    args = ScoutCliArgs(
+        name=name,
+        location=location,
+        seed=seed,
+        industry=industry,
+        deep=deep,
+        output=output,
+        timeout=timeout,
+        profile=profile,
+        use_cache=use_cache,
+        cache_dir=cache_dir,
+        local=local,
+        local_first=local_first,
+        warehouse_path=warehouse_path,
+        subsidiaries_path=subsidiaries_path,
+        verbose=verbose,
     )
-
-    cache = None
-    if use_cache:
-        cache = _get_cache_or_exit(cache_dir)
-
-    try:
-        s = Scout(config=config, cache=cache)
-        result = s.discover(
-            company_name=name,
-            location=location,
-            seed_domain=seeds,
-            industry=industry,
-        )
-    except KeyboardInterrupt:
-        typer.echo("\nAborted.", err=True)
-        raise typer.Exit(1) from None
-    finally:
-        if cache:
-            cache.close()
-
-    if output == "json":
-        typer.echo(result.model_dump_json(indent=2))
-    else:
-        _print_table(result)
+    ScoutRunner(args).run()
 
 
 @app.command()
