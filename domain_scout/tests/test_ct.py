@@ -106,6 +106,17 @@ class TestExtractBaseDomain:
     def test_ipv4_public(self) -> None:
         assert extract_base_domain("8.8.8.8") is None
 
+    def test_com_au(self) -> None:
+        assert extract_base_domain("www.example.com.au") == "example.com.au"
+
+    def test_co_jp(self) -> None:
+        assert extract_base_domain("shop.example.co.jp") == "example.co.jp"
+
+    def test_private_suffix_collapses(self) -> None:
+        """Shared hosting suffixes collapse to public TLD, not tenant subdomain."""
+        assert extract_base_domain("myco.github.io") == "github.io"
+        assert extract_base_domain("app.myco.s3.amazonaws.com") == "amazonaws.com"
+
 
 class TestIsValidDomain:
     def test_valid(self) -> None:

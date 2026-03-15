@@ -12,6 +12,7 @@ import httpx
 import psycopg2
 import psycopg2.extras
 import structlog
+import tldextract
 
 from domain_scout._metrics import (
     CT_FALLBACKS_TOTAL,
@@ -24,6 +25,14 @@ if TYPE_CHECKING:
     from domain_scout.config import ScoutConfig
 
 log = structlog.get_logger()
+
+# Module-level singleton: bundled PSL only (no network fetch, no disk cache).
+# Avoids blocking the asyncio event loop with synchronous HTTP from requests.
+# Bundled PSL updates with each tldextract release — sufficient for our use.
+# include_psl_private_domains=False: shared hosting suffixes (github.io, s3.amazonaws.com)
+# collapse to the public TLD — correct for entity-to-domain mapping since those certs
+# belong to the platform owner, not tenants.
+_tld = tldextract.TLDExtract(cache_dir=None, include_psl_private_domains=False)
 
 # OID for X.509 organizationName
 _ORG_OID = "2.5.4.10"
@@ -115,21 +124,18 @@ def _extract_org_from_subject(subject: str) -> str | None:
 def extract_base_domain(name: str) -> str | None:
     """Extract the registrable base domain from a DNS name.
 
-    Handles wildcards and subdomains by keeping the last two labels
-    (or three for two-letter second-level like .co.uk).
+    Uses tldextract for correct public-suffix handling (e.g., co.uk, com.au,
+    co.jp).  Falls back gracefully for IP addresses and single labels.
     """
     name = name.lower().strip().rstrip(".")
     if name.startswith("*."):
         name = name[2:]
     if re.match(r"^\d+\.\d+\.\d+\.\d+$", name):
         return None
-    parts = name.split(".")
-    if len(parts) < 2:
+    ext = _tld(name)
+    if not ext.domain or not ext.suffix:
         return None
-    # Simple heuristic for ccTLD+SLD (co.uk, com.au, etc.)
-    if len(parts) >= 3 and len(parts[-2]) <= 3 and len(parts[-1]) == 2:
-        return ".".join(parts[-3:])
-    return ".".join(parts[-2:])
+    return f"{ext.domain}.{ext.suffix}"
 
 
 def is_valid_domain(name: str) -> bool:
