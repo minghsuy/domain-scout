@@ -5,6 +5,7 @@ from __future__ import annotations
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
+import httpx
 import pytest
 
 from domain_scout.config import ScoutConfig
@@ -17,7 +18,10 @@ def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncM
     mock_response.status_code = status_code
     mock_response.raise_for_status = MagicMock()
     if status_code >= 400:
-        mock_response.raise_for_status.side_effect = Exception(f"HTTP {status_code}")
+        mock_request = MagicMock()
+        mock_response.raise_for_status.side_effect = httpx.HTTPStatusError(
+            f"HTTP {status_code}", request=mock_request, response=mock_response,
+        )
 
     if json_payload is not None:
         mock_response.json.return_value = json_payload
@@ -378,6 +382,11 @@ class TestRDAPCircuitBreaker:
 class TestRDAPRateLimiting:
     """Tests for RDAP semaphore and circuit breaker integration."""
 
+    def setup_method(self) -> None:
+        """Reset class-level state between tests."""
+        RDAPLookup._breaker = None
+        RDAPLookup._semaphore = None
+
     @pytest.mark.asyncio
     async def test_circuit_breaker_skips_when_open(self) -> None:
         """When breaker is open, _query returns empty dict without HTTP call."""
@@ -386,7 +395,7 @@ class TestRDAPRateLimiting:
 
         mock_client = _make_httpx_mock(status_code=500)
         with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
-            # First call fails and trips the breaker
+            # First call fails (5xx) and trips the breaker
             result1 = await rdap.get_registrant_org("fail.com")
             assert result1 is None
 
@@ -397,9 +406,54 @@ class TestRDAPRateLimiting:
             mock_client.get.assert_not_called()
 
     @pytest.mark.asyncio
-    async def test_semaphore_limits_concurrency(self) -> None:
-        """Semaphore limits concurrent RDAP queries."""
-        config = ScoutConfig(max_rdap_concurrent=2)
+    async def test_404_does_not_trip_circuit_breaker(self) -> None:
+        """404 is normal (domain not in RDAP) and should not trip the breaker."""
+        config = ScoutConfig(rdap_cb_failure_threshold=1, rdap_cb_recovery_timeout=999.0)
         rdap = RDAPLookup(config)
 
-        assert rdap._semaphore._value == 2  # noqa: SLF001
+        mock_client = _make_httpx_mock(status_code=404)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            # Three 404s should NOT trip the breaker
+            for _ in range(3):
+                await rdap.get_registrant_org("missing.com")
+
+            assert RDAPLookup._breaker is not None
+            assert RDAPLookup._breaker.state == "closed"
+
+    @pytest.mark.asyncio
+    async def test_5xx_trips_circuit_breaker(self) -> None:
+        """5xx errors should trip the breaker."""
+        config = ScoutConfig(rdap_cb_failure_threshold=2, rdap_cb_recovery_timeout=999.0)
+        rdap = RDAPLookup(config)
+
+        mock_client = _make_httpx_mock(status_code=500)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            await rdap.get_registrant_org("fail1.com")
+            await rdap.get_registrant_org("fail2.com")
+
+            assert RDAPLookup._breaker is not None
+            assert RDAPLookup._breaker.state == "open"
+
+    @pytest.mark.asyncio
+    async def test_class_level_breaker_shared(self) -> None:
+        """Breaker is shared across RDAPLookup instances."""
+        config = ScoutConfig(rdap_cb_failure_threshold=2, rdap_cb_recovery_timeout=999.0)
+        rdap1 = RDAPLookup(config)
+        rdap2 = RDAPLookup(config)
+
+        mock_client = _make_httpx_mock(status_code=500)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            await rdap1.get_registrant_org("fail1.com")
+            await rdap2.get_registrant_org("fail2.com")
+
+            # Two failures across different instances should trip the shared breaker
+            assert RDAPLookup._breaker is not None
+            assert RDAPLookup._breaker.state == "open"
+
+    @pytest.mark.asyncio
+    async def test_semaphore_initialized(self) -> None:
+        """Semaphore is created with configured concurrency."""
+        config = ScoutConfig(max_rdap_concurrent=2)
+        RDAPLookup(config)
+        assert RDAPLookup._semaphore is not None
+        assert RDAPLookup._semaphore._value == 2  # noqa: SLF001

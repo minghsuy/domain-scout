@@ -128,13 +128,19 @@ class _RDAPCircuitBreaker:
 class RDAPLookup:
     """Look up domain registration data via RDAP."""
 
+    # Shared across all instances to protect rdap.org as a single resource
+    _breaker: _RDAPCircuitBreaker | None = None
+    _semaphore: asyncio.Semaphore | None = None
+
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
-        self._semaphore = asyncio.Semaphore(config.max_rdap_concurrent)
-        self._breaker = _RDAPCircuitBreaker(
-            failure_threshold=config.rdap_cb_failure_threshold,
-            recovery_timeout=config.rdap_cb_recovery_timeout,
-        )
+        if RDAPLookup._semaphore is None:
+            RDAPLookup._semaphore = asyncio.Semaphore(config.max_rdap_concurrent)
+        if RDAPLookup._breaker is None:
+            RDAPLookup._breaker = _RDAPCircuitBreaker(
+                failure_threshold=config.rdap_cb_failure_threshold,
+                recovery_timeout=config.rdap_cb_recovery_timeout,
+            )
 
     async def get_registrant_org(self, domain: str) -> str | None:
         """Return the registrant organization name for a domain, or None."""
@@ -167,11 +173,15 @@ class RDAPLookup:
             log.debug("rdap.skip_unsupported_tld", domain=domain, tld=tld)
             return {}
 
-        if not self._breaker.should_allow():
-            log.debug("rdap.circuit_open_skip", domain=domain)
+        breaker = RDAPLookup._breaker
+        semaphore = RDAPLookup._semaphore
+        assert breaker is not None and semaphore is not None  # set in __init__
+
+        if not breaker.should_allow():
+            log.warning("rdap.circuit_open_skip", domain=domain)
             return {}
 
-        async with self._semaphore:
+        async with semaphore:
             try:
                 url = f"{_RDAP_BOOTSTRAP}{domain}"
                 async with httpx.AsyncClient(
@@ -182,10 +192,15 @@ class RDAPLookup:
                     resp.raise_for_status()
                     data: dict[str, object] = resp.json()
                 log.debug("rdap.query_ok", domain=domain)
-                self._breaker.record_success()
+                breaker.record_success()
                 return data
+            except httpx.HTTPStatusError as exc:
+                if exc.response.status_code >= 500:
+                    breaker.record_failure()
+                # 4xx (404 = domain not in RDAP) is normal, don't trip breaker
+                raise
             except Exception:
-                self._breaker.record_failure()
+                breaker.record_failure()
                 raise
 
     @staticmethod
