@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import asyncio
+import time
 from typing import TYPE_CHECKING
 
 import httpx
@@ -66,11 +68,73 @@ def _safe_list(value: object) -> list[object]:
     return value if isinstance(value, list) else []
 
 
+class _RDAPCircuitBreaker:
+    """Circuit breaker for rdap.org requests.
+
+    States: closed (normal) -> open (skip queries) -> half_open (probe).
+    """
+
+    def __init__(self, failure_threshold: int, recovery_timeout: float) -> None:
+        self._failure_threshold = failure_threshold
+        self._recovery_timeout = recovery_timeout
+        self._state: str = "closed"
+        self._failure_count: int = 0
+        self._opened_at: float = 0.0
+
+    @property
+    def state(self) -> str:
+        return self._state
+
+    def should_allow(self) -> bool:
+        """Return True if a query should be attempted."""
+        if self._state == "closed":
+            return True
+        if self._state == "open":
+            if time.monotonic() - self._opened_at >= self._recovery_timeout:
+                self._state = "half_open"
+                log.info("rdap.circuit_half_open")
+                return True
+            return False
+        # half_open: allow one probe
+        return True
+
+    def record_success(self) -> None:
+        if self._state == "half_open":
+            log.info("rdap.circuit_closed")
+        self._state = "closed"
+        self._failure_count = 0
+
+    def record_failure(self) -> None:
+        self._failure_count += 1
+        if self._state == "half_open":
+            log.warning("rdap.circuit_open", reason="half_open probe failed")
+        elif self._failure_count >= self._failure_threshold:
+            log.warning(
+                "rdap.circuit_open",
+                failure_count=self._failure_count,
+                threshold=self._failure_threshold,
+            )
+        else:
+            return
+        self._state = "open"
+        self._opened_at = time.monotonic()
+
+    def reset(self) -> None:
+        """Reset to initial closed state (for testing)."""
+        self._state = "closed"
+        self._failure_count = 0
+
+
 class RDAPLookup:
     """Look up domain registration data via RDAP."""
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
+        self._semaphore = asyncio.Semaphore(config.max_rdap_concurrent)
+        self._breaker = _RDAPCircuitBreaker(
+            failure_threshold=config.rdap_cb_failure_threshold,
+            recovery_timeout=config.rdap_cb_recovery_timeout,
+        )
 
     async def get_registrant_org(self, domain: str) -> str | None:
         """Return the registrant organization name for a domain, or None."""
@@ -103,16 +167,26 @@ class RDAPLookup:
             log.debug("rdap.skip_unsupported_tld", domain=domain, tld=tld)
             return {}
 
-        url = f"{_RDAP_BOOTSTRAP}{domain}"
-        async with httpx.AsyncClient(
-            timeout=self._cfg.http_timeout,
-            follow_redirects=True,
-        ) as client:
-            resp = await client.get(url)
-            resp.raise_for_status()
-            data: dict[str, object] = resp.json()
-            log.debug("rdap.query_ok", domain=domain)
-            return data
+        if not self._breaker.should_allow():
+            log.debug("rdap.circuit_open_skip", domain=domain)
+            return {}
+
+        async with self._semaphore:
+            try:
+                url = f"{_RDAP_BOOTSTRAP}{domain}"
+                async with httpx.AsyncClient(
+                    timeout=self._cfg.http_timeout,
+                    follow_redirects=True,
+                ) as client:
+                    resp = await client.get(url)
+                    resp.raise_for_status()
+                    data: dict[str, object] = resp.json()
+                log.debug("rdap.query_ok", domain=domain)
+                self._breaker.record_success()
+                return data
+            except Exception:
+                self._breaker.record_failure()
+                raise
 
     @staticmethod
     def _find_entity(data: dict[str, object], role: str) -> dict[str, object] | None:

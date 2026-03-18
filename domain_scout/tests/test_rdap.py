@@ -8,7 +8,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.sources.rdap import RDAP_SKIP_TLDS, RDAPLookup
+from domain_scout.sources.rdap import RDAP_SKIP_TLDS, RDAPLookup, _RDAPCircuitBreaker
 
 
 def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncMock:
@@ -316,3 +316,90 @@ class TestRDAPSkipTLDs:
 
         assert org == "Test Corp"
         mock_client.get.assert_called_once()
+
+
+class TestRDAPCircuitBreaker:
+    """Tests for the RDAP circuit breaker."""
+
+    def test_starts_closed(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        assert cb.state == "closed"
+        assert cb.should_allow() is True
+
+    def test_opens_after_threshold_failures(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        cb.record_failure()
+        cb.record_failure()
+        assert cb.state == "closed"
+        cb.record_failure()
+        assert cb.state == "open"
+        assert cb.should_allow() is False
+
+    def test_half_open_after_recovery_timeout(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=1, recovery_timeout=0.0)
+        cb.record_failure()
+        assert cb.state == "open"
+        # With 0s recovery, immediately transitions to half_open
+        assert cb.should_allow() is True
+        assert cb.state == "half_open"
+
+    def test_half_open_success_closes(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=1, recovery_timeout=0.0)
+        cb.record_failure()
+        cb.should_allow()  # transitions to half_open
+        cb.record_success()
+        assert cb.state == "closed"
+
+    def test_half_open_failure_reopens(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=1, recovery_timeout=0.0)
+        cb.record_failure()
+        cb.should_allow()  # transitions to half_open
+        cb.record_failure()
+        assert cb.state == "open"
+
+    def test_success_resets_failure_count(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=3, recovery_timeout=30.0)
+        cb.record_failure()
+        cb.record_failure()
+        cb.record_success()
+        # 2 failures + success + 1 failure should NOT trip (count reset)
+        cb.record_failure()
+        assert cb.state == "closed"
+
+    def test_reset(self) -> None:
+        cb = _RDAPCircuitBreaker(failure_threshold=1, recovery_timeout=30.0)
+        cb.record_failure()
+        assert cb.state == "open"
+        cb.reset()
+        assert cb.state == "closed"
+        assert cb.should_allow() is True
+
+
+class TestRDAPRateLimiting:
+    """Tests for RDAP semaphore and circuit breaker integration."""
+
+    @pytest.mark.asyncio
+    async def test_circuit_breaker_skips_when_open(self) -> None:
+        """When breaker is open, _query returns empty dict without HTTP call."""
+        config = ScoutConfig(rdap_cb_failure_threshold=1, rdap_cb_recovery_timeout=999.0)
+        rdap = RDAPLookup(config)
+
+        mock_client = _make_httpx_mock(status_code=500)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            # First call fails and trips the breaker
+            result1 = await rdap.get_registrant_org("fail.com")
+            assert result1 is None
+
+            # Second call should be skipped (breaker open)
+            mock_client.get.reset_mock()
+            result2 = await rdap.get_registrant_org("another.com")
+            assert result2 is None
+            mock_client.get.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_semaphore_limits_concurrency(self) -> None:
+        """Semaphore limits concurrent RDAP queries."""
+        config = ScoutConfig(max_rdap_concurrent=2)
+        rdap = RDAPLookup(config)
+
+        assert rdap._semaphore._value == 2  # noqa: SLF001

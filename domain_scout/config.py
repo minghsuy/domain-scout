@@ -83,6 +83,11 @@ class ScoutConfig:
     cb_failure_threshold: int = 3
     cb_recovery_timeout: float = 30.0
 
+    # --- RDAP rate limiting ---
+    max_rdap_concurrent: int = 3
+    rdap_cb_failure_threshold: int = 3
+    rdap_cb_recovery_timeout: float = 30.0
+
     # --- Local parquet warehouse ---
     warehouse_path: str | None = None
     local_mode: LocalMode = "disabled"
