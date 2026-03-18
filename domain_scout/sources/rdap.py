@@ -84,7 +84,7 @@ class _RDAPCircuitBreaker:
         self._opened_at: float = 0.0
 
     @property
-    def state(self) -> _BreakerState:
+    def state(self) -> str:
         return self._state
 
     def should_allow(self) -> bool:
