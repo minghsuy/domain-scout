@@ -20,7 +20,9 @@ def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncM
     if status_code >= 400:
         mock_request = MagicMock()
         mock_response.raise_for_status.side_effect = httpx.HTTPStatusError(
-            f"HTTP {status_code}", request=mock_request, response=mock_response,
+            f"HTTP {status_code}",
+            request=mock_request,
+            response=mock_response,
         )
 
     if json_payload is not None:
