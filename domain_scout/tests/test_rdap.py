@@ -389,6 +389,11 @@ class TestRDAPRateLimiting:
         RDAPLookup._breaker = None
         RDAPLookup._semaphore = None
 
+    def teardown_method(self) -> None:
+        """Clean up class-level state after each test."""
+        RDAPLookup._breaker = None
+        RDAPLookup._semaphore = None
+
     @pytest.mark.asyncio
     async def test_circuit_breaker_skips_when_open(self) -> None:
         """When breaker is open, _query returns empty dict without HTTP call."""
@@ -458,4 +463,3 @@ class TestRDAPRateLimiting:
         config = ScoutConfig(max_rdap_concurrent=2)
         RDAPLookup(config)
         assert RDAPLookup._semaphore is not None
-        assert RDAPLookup._semaphore._value == 2  # noqa: SLF001

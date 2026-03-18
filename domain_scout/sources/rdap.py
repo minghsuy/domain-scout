@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import time
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Literal
 
 import httpx
 import structlog
@@ -74,15 +74,17 @@ class _RDAPCircuitBreaker:
     States: closed (normal) -> open (skip queries) -> half_open (probe).
     """
 
+    _BreakerState = Literal["closed", "open", "half_open"]
+
     def __init__(self, failure_threshold: int, recovery_timeout: float) -> None:
         self._failure_threshold = failure_threshold
         self._recovery_timeout = recovery_timeout
-        self._state: str = "closed"
+        self._state: _RDAPCircuitBreaker._BreakerState = "closed"
         self._failure_count: int = 0
         self._opened_at: float = 0.0
 
     @property
-    def state(self) -> str:
+    def state(self) -> _BreakerState:
         return self._state
 
     def should_allow(self) -> bool:
@@ -126,16 +128,30 @@ class _RDAPCircuitBreaker:
 
 
 class RDAPLookup:
-    """Look up domain registration data via RDAP."""
+    """Look up domain registration data via RDAP.
 
-    # Shared across all instances to protect rdap.org as a single resource
+    The circuit breaker and semaphore are class-level singletons, initialized
+    from the first instance's config. Subsequent instances reuse the same state.
+    """
+
+    # Shared across all instances to protect rdap.org as a single resource.
+    # Initialized once from the first instance's config; subsequent instances
+    # log a warning if their config differs.
     _breaker: _RDAPCircuitBreaker | None = None
     _semaphore: asyncio.Semaphore | None = None
+    _init_concurrency: int | None = None
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
         if RDAPLookup._semaphore is None:
             RDAPLookup._semaphore = asyncio.Semaphore(config.max_rdap_concurrent)
+            RDAPLookup._init_concurrency = config.max_rdap_concurrent
+        elif RDAPLookup._init_concurrency != config.max_rdap_concurrent:
+            log.warning(
+                "rdap.config_mismatch_ignored",
+                existing=RDAPLookup._init_concurrency,
+                requested=config.max_rdap_concurrent,
+            )
         if RDAPLookup._breaker is None:
             RDAPLookup._breaker = _RDAPCircuitBreaker(
                 failure_threshold=config.rdap_cb_failure_threshold,
