@@ -26,9 +26,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
-      - run: uv pip install --system mkdocs-material
-      - run: mkdocs build --strict
+      - uses: astral-sh/setup-uv@v6
+      - run: uv venv && uv pip install mkdocs-material
+      - run: .venv/bin/mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
