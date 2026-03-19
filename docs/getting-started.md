@@ -8,18 +8,40 @@
 ## Installation
 
 ```bash
+pip install domain-scout-ct
+```
+
+Or from source:
+
+```bash
 git clone https://github.com/minghsuy/domain-scout.git
 cd domain-scout
 uv sync
 ```
 
-Or with pip:
+## Quickstart with CTScout API
+
+The fastest way to get started — no local data pipeline needed:
+
+1. Get a free API key at [ctscout.dev](https://ctscout.dev) (no email required)
+2. Run:
 
 ```bash
-pip install -e .
+export CTSCOUT_API_KEY=ds_free_...
+domain-scout --name "Goldman Sachs"
 ```
 
-## First run
+Or pass the key directly:
+
+```bash
+domain-scout --name "Goldman Sachs" --api-key ds_free_...
+```
+
+The free tier gives you 10 queries/day against 147K+ org-domain pairs. No local setup, no database, no crt.sh dependency.
+
+## First run (without API key)
+
+Without an API key, domain-scout queries crt.sh directly:
 
 ```bash
 domain-scout --name "Cloudflare" --seed "cloudflare.com"
@@ -61,6 +83,7 @@ Domains independently discovered from 2+ seeds receive a `cross_seed_verified` c
 | `--profile` | `-p` | Discovery profile: `broad`, `balanced`, `strict` | `balanced` |
 | `--output` | `-o` | Output format: `table` or `json` | `table` |
 | `--timeout` | | Total timeout in seconds | `120` |
+| `--api-key` | | CTScout API key (or `CTSCOUT_API_KEY` env var) | — |
 | `--verbose` | `-v` | Verbose logging | `false` |
 
 ## JSON output
