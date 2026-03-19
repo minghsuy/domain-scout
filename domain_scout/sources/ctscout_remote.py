@@ -7,8 +7,6 @@ from typing import TYPE_CHECKING
 import httpx
 import structlog
 
-from domain_scout._metrics import SOURCE_ERRORS_TOTAL, inc
-
 if TYPE_CHECKING:
     from domain_scout.config import ScoutConfig
 
@@ -53,19 +51,14 @@ class CTScoutRemoteSource:
         if seed_domain:
             body["seed_domain"] = seed_domain
 
-        try:
-            async with httpx.AsyncClient(timeout=self._timeout) as client:
-                resp = await client.post(
-                    f"{self._api_url}/scan",
-                    json=body,
-                    headers={"X-API-Key": self._api_key},
-                )
-                resp.raise_for_status()
-                data = resp.json()
-        except Exception as exc:
-            inc(SOURCE_ERRORS_TOTAL, source="ctscout_remote")
-            log.warning("ctscout_remote.query_failed", error=str(exc))
-            return []
+        async with httpx.AsyncClient(timeout=self._timeout) as client:
+            resp = await client.post(
+                f"{self._api_url}/scan",
+                json=body,
+                headers={"X-API-Key": self._api_key},
+            )
+            resp.raise_for_status()
+            data = resp.json()
 
         # Convert warehouse rows to CT-compatible records
         records: list[dict[str, object]] = []

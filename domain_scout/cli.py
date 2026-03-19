@@ -147,17 +147,6 @@ def serve(  # noqa: PLR0913
     api_key: Annotated[
         str | None, typer.Option("--api-key", help="API Key for authentication")
     ] = None,
-    warehouse_path: Annotated[
-        str | None, typer.Option("--warehouse-path", help="Default parquet warehouse directory")
-    ] = None,
-    subsidiaries_path: Annotated[
-        str | None,
-        typer.Option("--subsidiaries-path", help="Default subsidiaries CSV file"),
-    ] = None,
-    local_mode: Annotated[
-        str | None,
-        typer.Option("--local-mode", help="Default local mode: local_only | local_first"),
-    ] = None,
 ) -> None:
     """Start the REST API server."""
     import os
@@ -183,12 +172,6 @@ def serve(  # noqa: PLR0913
         os.environ["DOMAIN_SCOUT_CACHE_DIR"] = cache_dir
     if api_key:
         os.environ["DOMAIN_SCOUT_API_KEY"] = api_key
-    if warehouse_path:
-        os.environ["DOMAIN_SCOUT_WAREHOUSE_PATH"] = warehouse_path
-    if subsidiaries_path:
-        os.environ["DOMAIN_SCOUT_SUBSIDIARIES_PATH"] = subsidiaries_path
-    if local_mode:
-        os.environ["DOMAIN_SCOUT_LOCAL_MODE"] = local_mode
 
     uvicorn.run(
         "domain_scout.api:get_app",
