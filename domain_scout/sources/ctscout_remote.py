@@ -19,6 +19,9 @@ class CTScoutRemoteSource:
     Returns warehouse results as CT-compatible records so they integrate
     into the existing scoring pipeline. Each warehouse row becomes a
     synthetic CT record with source_type "ctscout_warehouse".
+
+    Note: ``verify_org`` is accepted for CTSource protocol compatibility
+    but has no effect — the API always filters by the query terms.
     """
 
     def __init__(self, config: ScoutConfig) -> None:
@@ -50,25 +53,34 @@ class CTScoutRemoteSource:
             body["company_name"] = company_name
         if seed_domain:
             body["seed_domain"] = seed_domain
+        if not body:
+            return []
 
-        async with httpx.AsyncClient(timeout=self._timeout) as client:
-            resp = await client.post(
-                f"{self._api_url}/scan",
-                json=body,
-                headers={"X-API-Key": self._api_key},
-            )
-            resp.raise_for_status()
-            data = resp.json()
+        try:
+            async with httpx.AsyncClient(timeout=self._timeout) as client:
+                resp = await client.post(
+                    f"{self._api_url}/scan",
+                    json=body,
+                    headers={"X-API-Key": self._api_key},
+                )
+                resp.raise_for_status()
+                data = resp.json()
+        except Exception as exc:
+            log.warning("ctscout_remote.query_failed", error=str(exc))
+            raise
 
         # Convert warehouse rows to CT-compatible records
         records: list[dict[str, object]] = []
         for row in data.get("domains", []):
+            apex = row.get("apex_domain")
+            if not apex:
+                continue
             records.append(
                 {
                     "cert_id": None,
                     "org_name": row.get("org"),
-                    "common_name": row.get("apex_domain"),
-                    "san_dns_names": [row.get("apex_domain", "")],
+                    "common_name": apex,
+                    "san_dns_names": [apex],
                     "not_before": row.get("first_seen"),
                     "not_after": row.get("last_seen"),
                     "source_type": "ctscout_warehouse",
