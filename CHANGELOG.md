@@ -7,14 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-03-19
+
 ### Added
 
-- Issue templates (bug report, feature request) and SECURITY.md
-- MkDocs Material documentation site with GitHub Pages deployment
+- CTScout remote data source: query ctscout.dev warehouse with a free API key
+  - `ctscout_api_key` config field + `--api-key` CLI flag
+  - `CTSCOUT_API_KEY` env var for zero-config usage
+  - Makes `pip install domain-scout-ct` useful out of the box (no local warehouse needed)
 - RDAP rate limiter: semaphore (default 3 concurrent) + circuit breaker (3 failures → 30s cooldown)
 - Config fields: `max_rdap_concurrent`, `rdap_cb_failure_threshold`, `rdap_cb_recovery_timeout`
-- CTScout remote data source: `ctscout_api_key` config + `--api-key` CLI flag queries ctscout.dev warehouse
-- `CTSCOUT_API_KEY` env var support for zero-config usage
+- Issue templates (bug report, feature request) and SECURITY.md
+- MkDocs Material documentation site with GitHub Pages deployment
 
 ### Changed
 
