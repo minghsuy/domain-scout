@@ -6,7 +6,7 @@
 
 Discover internet domains associated with a business entity using Certificate Transparency logs, RDAP, and DNS.
 
-**[Documentation](https://minghsuy.github.io/domain-scout)** | **[PyPI](https://pypi.org/project/domain-scout-ct/)** | **[Changelog](CHANGELOG.md)**
+**[Documentation](https://minghsuy.github.io/domain-scout)** | **[PyPI](https://pypi.org/project/domain-scout-ct/)** | **[Changelog](https://github.com/minghsuy/domain-scout/blob/main/CHANGELOG.md)** | **[CTScout API](https://ctscout.dev)**
 
 Useful for security teams, asset inventories, and M&A due diligence — where seed domains can be wrong, misspelled, or belong to a parent company.
 
