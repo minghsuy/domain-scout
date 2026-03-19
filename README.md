@@ -30,7 +30,14 @@ uv sync --all-groups --all-extras
 ### CLI
 
 ```bash
-# Basic usage
+# Quickest start — use CTScout API (free key from https://ctscout.dev)
+export CTSCOUT_API_KEY=ds_free_...
+domain-scout --name "Goldman Sachs"
+
+# Or pass the key directly
+domain-scout --name "Goldman Sachs" --api-key ds_free_...
+
+# Basic usage (queries crt.sh directly, no API key needed)
 domain-scout --name "Cloudflare" --location "San Francisco, CA"
 
 # With seed domain
