@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.1] - 2026-03-19
+
+### Fixed
+
+- Changelog link on PyPI now uses absolute URL (relative links don't work on PyPI)
+- Added CTScout API link to README header
+- Docs deploy workflow fixed for newer Ubuntu runners
+
 ## [0.8.0] - 2026-03-19
 
 ### Added
