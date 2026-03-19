@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - MkDocs Material documentation site with GitHub Pages deployment
 - RDAP rate limiter: semaphore (default 3 concurrent) + circuit breaker (3 failures → 30s cooldown)
 - Config fields: `max_rdap_concurrent`, `rdap_cb_failure_threshold`, `rdap_cb_recovery_timeout`
+- CTScout remote data source: `ctscout_api_key` config + `--api-key` CLI flag queries ctscout.dev warehouse
+- `CTSCOUT_API_KEY` env var support for zero-config usage
 
 ### Changed
 

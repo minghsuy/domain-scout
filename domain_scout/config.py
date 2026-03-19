@@ -98,6 +98,10 @@ class ScoutConfig:
     subsidiaries_path: str | None = None
     subsidiary_max_queries: int = 10
 
+    # --- CTScout remote API ---
+    ctscout_api_key: str | None = None
+    ctscout_api_url: str = "https://ctscout.dev"
+
     # --- Scoring ---
     use_learned_scorer: bool = False
 

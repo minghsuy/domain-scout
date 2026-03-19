@@ -205,6 +205,10 @@ class Scout:
             local = LocalParquetSource(self.config)
             remote = CTLogSource(self.config)
             self._ct = HybridCTSource(local, remote)
+        elif self.config.ctscout_api_key:
+            from domain_scout.sources.ctscout_remote import CTScoutRemoteSource
+
+            self._ct = CTScoutRemoteSource(self.config)
         else:
             ct_inner = CTLogSource(self.config)
             if cache is not None:
