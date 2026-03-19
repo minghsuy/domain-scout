@@ -27,8 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
-      - run: uv venv && uv pip install mkdocs-material
-      - run: .venv/bin/mkdocs build --strict
+      - run: uv run --with mkdocs-material mkdocs build --strict
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
