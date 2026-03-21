@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- **Server-default environment variables** for API deployment: `DOMAIN_SCOUT_WAREHOUSE_PATH`, `DOMAIN_SCOUT_SUBSIDIARIES_PATH`, `DOMAIN_SCOUT_LOCAL_MODE` (#116)
+- **Server-default environment variables** for API deployment: `DOMAIN_SCOUT_WAREHOUSE_PATH`, `DOMAIN_SCOUT_SUBSIDIARIES_PATH`, `DOMAIN_SCOUT_LOCAL_MODE` (#117)
 - `subsidiaries_path` field on `/scan` request body
 - Auto-enable `local_first` when `DOMAIN_SCOUT_WAREHOUSE_PATH` is set without explicit mode
 - `_reject_traversal()` helper for centralized path validation

@@ -235,7 +235,7 @@ Configure server-wide defaults so clients don't need to pass paths per request:
 |----------|-------------|---------|
 | `DOMAIN_SCOUT_WAREHOUSE_PATH` | Path to parquet warehouse directory | None |
 | `DOMAIN_SCOUT_SUBSIDIARIES_PATH` | Path to subsidiaries CSV file | None |
-| `DOMAIN_SCOUT_LOCAL_MODE` | `disabled`, `local_only`, or `local_first` | `disabled` (auto-enables `local_first` if warehouse path is set) |
+| `DOMAIN_SCOUT_LOCAL_MODE` | `disabled`, `local_only`, or `local_first` | `disabled` (auto-enables `local_first` if warehouse path is set and no explicit mode is given) |
 | `DOMAIN_SCOUT_API_KEY` | Require this key on authenticated endpoints | None |
 | `DOMAIN_SCOUT_CACHE` | Enable DuckDB cache (`true`/`false`) | `true` |
 | `DOMAIN_SCOUT_CACHE_DIR` | DuckDB cache directory | System default |
