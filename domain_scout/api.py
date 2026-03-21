@@ -9,7 +9,7 @@ import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
 from pathlib import Path
-from typing import TYPE_CHECKING, Any, get_args
+from typing import TYPE_CHECKING, Any, cast, get_args
 
 if TYPE_CHECKING:
     from collections.abc import AsyncIterator
@@ -258,8 +258,8 @@ def get_app() -> FastAPI:
     # Auto-enable local_first when warehouse path is configured
     default_local_mode: LocalMode = "disabled"
     raw_mode = os.environ.get("DOMAIN_SCOUT_LOCAL_MODE")
-    if raw_mode in get_args(LocalMode) and raw_mode != "disabled":
-        default_local_mode = raw_mode  # type: ignore[assignment]
+    if raw_mode in get_args(LocalMode):
+        default_local_mode = cast("LocalMode", raw_mode)
     elif warehouse_path:
         default_local_mode = "local_first"
 

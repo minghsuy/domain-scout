@@ -238,6 +238,17 @@ class TestGetApp:
             app = get_app()
         assert app.state.default_local_mode == "disabled"
 
+    def test_get_app_explicit_disabled_respected(self) -> None:
+        """Explicit disabled mode is not overridden by auto-enable logic."""
+        env = {
+            "DOMAIN_SCOUT_CACHE": "false",
+            "DOMAIN_SCOUT_LOCAL_MODE": "disabled",
+            "DOMAIN_SCOUT_WAREHOUSE_PATH": "/opt/warehouse",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.default_local_mode == "disabled"
+
 
 class TestScanRequest:
     def test_minimal(self) -> None:
