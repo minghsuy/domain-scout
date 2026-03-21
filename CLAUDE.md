@@ -90,7 +90,7 @@ domain_scout/
 - RDAP corroboration phase runs on top N resolving candidates, adds `rdap_registrant_match` source
 - Circuit breaker for crt.sh Postgres: shared `_CircuitBreaker` class variable on `CTLogSource`, skips Postgres after `cb_failure_threshold` consecutive failures, probes after `cb_recovery_timeout` seconds
 
-- **Fingerprint mode** (`--mode fingerprint`): for DV-cert companies where CT org search is blind. Skips Strategy A, adds DNS fingerprint verification as post-processing step (between RDAP corroboration and scoring). Extracts MX tenant IDs (Proofpoint, Mimecast, M365, Barracuda, IronPort, FireEye), NS zones, IP /24 prefixes, and SPF includes from seeds and candidates. MX tenant match treated as equivalent to `rdap_registrant_match` in corroboration scoring. Implies `--deep` mode.
+- **Fingerprint mode** (`--mode fingerprint`): for DV-cert companies where CT org search is blind. Skips Strategy A, adds DNS fingerprint verification as post-processing step (between RDAP corroboration and scoring). Extracts MX tenant IDs (Proofpoint, M365, Barracuda, IronPort, FireEye), NS zones, IP /24 prefixes, and SPF includes from seeds and candidates. MX tenant match treated as equivalent to `rdap_registrant_match` in corroboration scoring. Implies `--deep` mode.
 - Shodan reverse DNS candidate generation is deferred (see #110) — fingerprint mode works entirely with standard DNS queries (free, unlimited)
 
 ## Conventions

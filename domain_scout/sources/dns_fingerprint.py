@@ -39,8 +39,9 @@ class MXTenant:
 # Proofpoint: mxa-00393d01.gslb.pphosted.com → tenant "00393d01"
 _PROOFPOINT_RE = re.compile(r"^mx[ab]?-([0-9a-f]{6,12})\.gslb\.pphosted\.com$", re.IGNORECASE)
 
-# Mimecast: us-smtp-inbound-1.mimecast.com → tenant "us-1"
-_MIMECAST_RE = re.compile(r"^([a-z]{2})-smtp-inbound-(\d+)\.mimecast\.com$", re.IGNORECASE)
+# Mimecast: us-smtp-inbound-1.mimecast.com — NOT per-customer.
+# Inbound MX is shared infrastructure (region+sequence), not a tenant signal.
+# Per-tenant signal is in outbound/auth records, not inbound MX.
 
 # Microsoft 365: company-com.mail.protection.outlook.com → tenant "company-com"
 _MICROSOFT_RE = re.compile(r"^(.+)\.mail\.protection\.outlook\.com$", re.IGNORECASE)
@@ -67,9 +68,7 @@ def parse_mx_tenant(mx_host: str) -> MXTenant | None:
     if m:
         return MXTenant(provider="proofpoint", tenant_id=m.group(1))
 
-    m = _MIMECAST_RE.match(mx_host)
-    if m:
-        return MXTenant(provider="mimecast", tenant_id=f"{m.group(1)}-{m.group(2)}")
+    # Mimecast inbound MX intentionally skipped — shared infrastructure, not per-tenant
 
     m = _MICROSOFT_RE.match(mx_host)
     if m:

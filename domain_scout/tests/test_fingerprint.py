@@ -39,11 +39,9 @@ class TestParseMxTenant:
         assert t.provider == "proofpoint"
         assert t.tenant_id == "00393d01"
 
-    def test_mimecast(self) -> None:
-        t = parse_mx_tenant("us-smtp-inbound-1.mimecast.com")
-        assert t is not None
-        assert t.provider == "mimecast"
-        assert t.tenant_id == "us-1"
+    def test_mimecast_returns_none(self) -> None:
+        """Mimecast inbound MX is shared infrastructure, not per-customer."""
+        assert parse_mx_tenant("us-smtp-inbound-1.mimecast.com") is None
 
     def test_microsoft365(self) -> None:
         t = parse_mx_tenant("contoso-com.mail.protection.outlook.com")

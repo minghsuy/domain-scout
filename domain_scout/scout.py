@@ -1153,7 +1153,9 @@ class Scout:
         candidates = [
             (domain, accum)
             for domain, accum in domain_evidence.items()
-            if domain not in seed_bases and accum.resolves and "fp:mx_tenant" not in accum.sources
+            if domain not in seed_bases
+            and accum.resolves
+            and not any(s.startswith("fp:") for s in accum.sources)
         ]
         candidates.sort(key=lambda x: len(x[1].sources), reverse=True)
         candidates = candidates[: self.config.fp_candidate_limit]
@@ -1219,13 +1221,8 @@ class Scout:
                     signals=[str(s.signal_type) for s in best_match.signals],
                 )
 
-        try:
-            await asyncio.wait_for(
-                asyncio.gather(*[_check(d, a) for d, a in candidates]),
-                timeout=30.0,
-            )
-        except TimeoutError:
-            log.warning("scout.fingerprint_corroborate_timeout", checked=len(candidates))
+        # No inner timeout — caller in _discover wraps this with asyncio.wait_for
+        await asyncio.gather(*[_check(d, a) for d, a in candidates])
 
     # --- Step 4: Build output ---
 
