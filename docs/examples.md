@@ -102,10 +102,10 @@ domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode finge
 
 | Domain | Confidence | Key signal |
 |--------|-----------|------------|
-| `amshieldinsurance.com` | 0.95 | Shares Proofpoint MX tenant `002d0c01` |
+| `amshieldinsurance.com` | 0.95 | Shares Proofpoint MX tenant `002d0c01` + shared infra |
 | `shelterinsurance.com` | 0.90 | Seed domain |
-| `sayinsurance.com` | 0.90 | CT org match + MX tenant corroboration |
-| `shelterre.com` | 0.90 | CT org match + shared NS |
+| `sayinsurance.com` | 0.90 | MX tenant corroboration |
+| `shelterre.com` | 0.90 | Shared infrastructure |
 | `cloudflaressl.com` | 0.80 | SAN co-occurrence |
 
 AmShield is Shelter's commercial subsidiary (est. 2014), Shelter Re is their reinsurance arm (est. 1986). Both verified against public company records.

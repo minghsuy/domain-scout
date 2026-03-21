@@ -102,25 +102,32 @@ Fingerprint mode automatically implies `--deep` (GeoDNS) and sets the timeout to
 from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout
 
-config = ScoutConfig(discovery_mode="fingerprint", fp_candidate_limit=100)
+config = ScoutConfig(
+    discovery_mode="fingerprint",
+    deep_mode=True,        # CLI sets this automatically; Python API does not
+    total_timeout=180,     # CLI sets this automatically; Python API does not
+    fp_candidate_limit=100,
+)
 scout = Scout(config=config)
 result = scout.discover(company_name="Shelter Insurance", seed_domain="shelterinsurance.com")
 ```
 
 ## Example: Shelter Insurance
 
-Shelter Insurance uses DV certificates and Proofpoint for email. Default mode finds 3 domains; fingerprint mode finds 5:
+Shelter Insurance uses Proofpoint for email. Default mode finds 3 domains; fingerprint mode finds 5:
 
 ```
 === FINGERPRINT MODE ===
-  amshieldinsurance.com                      0.95  [ct_org_match, fp:mx_tenant, fp:ns_zone, shared_infra]
+  amshieldinsurance.com                      0.95  [ct_org_match, fp:mx_tenant, shared_infra]
     ^ Shares proofpoint MX tenant 'proofpoint:002d0c01' with seed
   shelterinsurance.com                       0.90  [ct_org_match, ct_seed_subdomain, dns_guess]
   sayinsurance.com                           0.90  [ct_org_match, fp:mx_tenant]
     ^ Shares proofpoint MX tenant 'proofpoint:002d0c01' with seed
-  shelterre.com                              0.90  [ct_org_match, fp:ns_zone, shared_infra]
+  shelterre.com                              0.90  [ct_org_match, shared_infra]
   cloudflaressl.com                          0.80  [ct_san_expansion]
 ```
+
+Note: `ct_org_match` appears because Shelter's seed certs do contain org names (discovered via seed expansion, not CT org search which is skipped).
 
 All findings verified: AmShield is Shelter's commercial subsidiary (est. 2014), Say Insurance was a former Shelter brand, and Shelter Re is their reinsurance arm (est. 1986).
 
