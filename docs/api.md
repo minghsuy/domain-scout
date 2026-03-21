@@ -227,6 +227,29 @@ domain-scout serve --port 8080
 domain-scout serve --port 8080 --api-key YOUR_KEY  # require authentication
 ```
 
+### Server environment variables
+
+Configure server-wide defaults so clients don't need to pass paths per request:
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `DOMAIN_SCOUT_WAREHOUSE_PATH` | Path to parquet warehouse directory | None |
+| `DOMAIN_SCOUT_SUBSIDIARIES_PATH` | Path to subsidiaries CSV file | None |
+| `DOMAIN_SCOUT_LOCAL_MODE` | `disabled`, `local_only`, or `local_first` | `disabled` (auto-enables `local_first` if warehouse path is set) |
+| `DOMAIN_SCOUT_API_KEY` | Require this key on authenticated endpoints | None |
+| `DOMAIN_SCOUT_CACHE` | Enable DuckDB cache (`true`/`false`) | `true` |
+| `DOMAIN_SCOUT_CACHE_DIR` | DuckDB cache directory | System default |
+| `DOMAIN_SCOUT_MAX_CONCURRENT` | Max concurrent scans | `3` |
+
+Example deployment with warehouse:
+
+```bash
+export DOMAIN_SCOUT_WAREHOUSE_PATH=/opt/ct-warehouse
+export DOMAIN_SCOUT_API_KEY=secret
+domain-scout serve --port 8080
+# Server auto-enables local_first mode — clients just POST to /scan
+```
+
 ### Endpoints
 
 | Method | Path | Description |
@@ -245,13 +268,31 @@ Authenticated endpoints (`/scan`, `/diff`, `/cache/*`) require `X-API-Key` heade
 
 ```json
 {
-  "company_name": "Shelter Insurance",
-  "seed_domain": ["shelterinsurance.com"],
-  "discovery_mode": "fingerprint",
-  "location": null,
-  "industry": null
+  "entity": {
+    "company_name": "Shelter Insurance",
+    "seed_domain": ["shelterinsurance.com"]
+  },
+  "profile": "balanced",
+  "timeout": 120,
+  "deep": false,
+  "local_mode": null,
+  "warehouse_path": null,
+  "subsidiaries_path": null
 }
 ```
+
+Only `entity.company_name` is required. All other fields are optional:
+
+| Field | Type | Description |
+|-------|------|-------------|
+| `profile` | `broad` \| `balanced` \| `strict` | Threshold preset |
+| `timeout` | `5-300` | Override total timeout (seconds) |
+| `deep` | `bool` | Enable GeoDNS deep mode |
+| `local_mode` | `disabled` \| `local_only` \| `local_first` \| `null` | Override server default |
+| `warehouse_path` | `string` \| `null` | Override server default warehouse path |
+| `subsidiaries_path` | `string` \| `null` | Override server default subsidiaries path |
+
+When `local_mode`, `warehouse_path`, or `subsidiaries_path` are `null` (or omitted), the server's environment variable defaults are used.
 
 Returns a `ScoutResult` JSON object.
 

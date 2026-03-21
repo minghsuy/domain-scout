@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2026-03-21
+
+### Added
+
+- **Server-default environment variables** for API deployment: `DOMAIN_SCOUT_WAREHOUSE_PATH`, `DOMAIN_SCOUT_SUBSIDIARIES_PATH`, `DOMAIN_SCOUT_LOCAL_MODE` (#116)
+- `subsidiaries_path` field on `/scan` request body
+- Auto-enable `local_first` when `DOMAIN_SCOUT_WAREHOUSE_PATH` is set without explicit mode
+- `_reject_traversal()` helper for centralized path validation
+
+### Changed
+
+- `ScanRequest.local_mode` defaults to `None` (server default) instead of `"disabled"` — backward compatible
+- `get_app()` uses `typing.get_args(LocalMode)` for forward-compatible mode validation
+
+### Fixed
+
+- Explicit `DOMAIN_SCOUT_LOCAL_MODE=disabled` is now respected when warehouse path is also configured
+
 ## [0.9.0] - 2026-03-21
 
 ### Added
