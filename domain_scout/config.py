@@ -8,6 +8,7 @@ from typing import Literal
 
 ProfileName = Literal["broad", "balanced", "strict"]
 LocalMode = Literal["disabled", "local_only", "local_first"]
+DiscoveryMode = Literal["default", "fingerprint"]
 
 _PROFILES: dict[str, dict[str, object]] = {
     "broad": {
@@ -101,6 +102,10 @@ class ScoutConfig:
     # --- CTScout remote API ---
     ctscout_api_key: str | None = None
     ctscout_api_url: str = "https://ctscout.dev"
+
+    # --- Discovery mode ---
+    discovery_mode: DiscoveryMode = "default"
+    fp_candidate_limit: int = 200  # max candidates to fingerprint-verify
 
     # --- Scoring ---
     use_learned_scorer: bool = False

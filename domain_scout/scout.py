@@ -39,6 +39,11 @@ from domain_scout.models import (
     ScoutResult,
 )
 from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
+from domain_scout.sources.dns_fingerprint import (
+    DNSFingerprint,
+    extract_fingerprint,
+    match_fingerprint,
+)
 from domain_scout.sources.dns_utils import DNSChecker
 from domain_scout.sources.rdap import RDAPLookup
 
@@ -315,12 +320,14 @@ class Scout:
         independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
         # Strategy A: org name search (independent of seed)
-        independent_tasks.append(
-            asyncio.create_task(
-                self._strategy_org_search(entity.company_name, errors),
-                name="org_search",
+        # Skip in fingerprint mode — DV certs have no org name, so CT org search is useless
+        if self.config.discovery_mode != "fingerprint":
+            independent_tasks.append(
+                asyncio.create_task(
+                    self._strategy_org_search(entity.company_name, errors),
+                    name="org_search",
+                )
             )
-        )
 
         # Strategy C: domain guessing (independent of seed)
         independent_tasks.append(
@@ -513,6 +520,16 @@ class Scout:
                 )
             except TimeoutError:
                 errors.append("RDAP corroboration timed out")
+
+        # Step 3d: DNS fingerprint corroboration (fingerprint mode)
+        if self.config.discovery_mode == "fingerprint" and seeds and _remaining() > 3.0:
+            try:
+                await asyncio.wait_for(
+                    self._fingerprint_corroborate(domain_evidence, seeds),
+                    timeout=min(30.0, _remaining() - 2.0),
+                )
+            except TimeoutError:
+                errors.append("Fingerprint corroboration timed out")
 
         # Step 4: confidence scoring and infrastructure comparison
         confirmed_domains: list[str] = []
@@ -968,6 +985,9 @@ class Scout:
 
         has_resolves = accum.resolves
         has_rdap = "rdap_registrant_match" in accum.sources
+        # MX tenant is a strong org-level signal — same corroboration weight as RDAP
+        has_mx_tenant = "fp:mx_tenant" in accum.sources
+        has_rdap = has_rdap or has_mx_tenant
 
         best_sim = max(
             (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
@@ -1079,6 +1099,136 @@ class Scout:
             )
         except TimeoutError:
             log.warning("scout.rdap_corroborate_timeout", checked=len(candidates))
+
+    # --- Fingerprint corroboration ---
+
+    async def _fingerprint_corroborate(
+        self,
+        domain_evidence: dict[str, _DomainAccum],
+        seed_domains: list[str],
+    ) -> None:
+        """Extract DNS fingerprints from seeds and compare against candidates.
+
+        Adds evidence tags that map to existing corroboration tiers:
+        - MX tenant match → treated like rdap_registrant_match (strong org signal)
+        - MX + NS match → treated like cross_seed_verified (multiple independent signals)
+        - NS/IP alone → treated like shared_infra (weak standalone, good corroboration)
+        """
+        if not seed_domains:
+            return
+
+        # Step 1: Extract fingerprints from all seeds (parallel)
+        bases = [b for sd in seed_domains if (b := extract_base_domain(sd))]
+        if not bases:
+            return
+
+        fp_results = await asyncio.gather(
+            *[extract_fingerprint(b, self._dns) for b in bases],
+            return_exceptions=True,
+        )
+        seed_fps: dict[str, DNSFingerprint] = {}
+        for sd_base, result in zip(bases, fp_results, strict=True):
+            if isinstance(result, BaseException):
+                log.debug("scout.fingerprint_extract_error", seed=sd_base, error=str(result))
+                continue
+            if not result.has_signals:
+                continue
+            seed_fps[sd_base] = result
+            log.info(
+                "scout.seed_fingerprint",
+                seed=sd_base,
+                mx_tenants=[str(t) for t in result.mx_tenants],
+                ns_zones=result.ns_zones,
+                ip_prefixes=result.ip_prefixes,
+                spf_includes=result.spf_includes,
+            )
+
+        if not seed_fps:
+            log.info("scout.fingerprint_no_seed_signals")
+            return
+
+        # Step 2: Select candidates to fingerprint-verify
+        seed_bases = set(seed_fps.keys())
+        candidates = [
+            (domain, accum)
+            for domain, accum in domain_evidence.items()
+            if domain not in seed_bases
+            and accum.resolves
+            and not any(s.startswith("fp:") for s in accum.sources)
+        ]
+        candidates.sort(key=lambda x: len(x[1].sources), reverse=True)
+        candidates = candidates[: self.config.fp_candidate_limit]
+
+        if not candidates:
+            return
+
+        log.info("scout.fingerprint_verifying", candidates=len(candidates))
+
+        # Step 3: Extract fingerprints and compare
+        sem = asyncio.Semaphore(self.config.max_concurrent_queries)
+
+        async def _check(domain: str, accum: _DomainAccum) -> None:
+            async with sem:
+                try:
+                    candidate_fp = await extract_fingerprint(domain, self._dns)
+                except Exception:
+                    return
+
+                # Compare against all seed fingerprints, take best match
+                best_match = None
+                best_signal_count = 0
+                for _seed_domain, seed_fp in seed_fps.items():
+                    fm = match_fingerprint(candidate_fp, seed_fp)
+                    if fm.signal_count > best_signal_count:
+                        best_match = fm
+                        best_signal_count = fm.signal_count
+
+                if not best_match or best_signal_count == 0:
+                    return
+
+                # Add evidence for each matching signal
+                sig_desc = {
+                    "mx_tenant": lambda s: (
+                        f"Shares {s.provider} MX tenant "
+                        f"'{s.seed_value}' with seed {best_match.seed_domain}"
+                    ),
+                    "ns_zone": lambda s: (
+                        f"Shares NS zone '{s.seed_value}' with seed {best_match.seed_domain}"
+                    ),
+                    "ip_prefix": lambda s: (
+                        f"Shares IP /24 prefix '{s.seed_value}' with seed {best_match.seed_domain}"
+                    ),
+                    "spf_include": lambda s: (
+                        f"Shares SPF include '{s.seed_value}' with seed {best_match.seed_domain}"
+                    ),
+                }
+
+                def _fallback(s: Any) -> str:
+                    return (
+                        f"Shares {s.signal_type} '{s.seed_value}' "
+                        f"with seed {best_match.seed_domain}"
+                    )
+
+                for sig in best_match.signals:
+                    source_tag = f"fp:{sig.signal_type}"
+                    accum.sources.add(source_tag)
+                    accum.evidence.append(
+                        EvidenceRecord(
+                            source_type=source_tag,
+                            description=sig_desc.get(sig.signal_type, _fallback)(sig),
+                            seed_domain=best_match.seed_domain,
+                        )
+                    )
+
+                log.debug(
+                    "scout.fingerprint_match",
+                    domain=domain,
+                    seed=best_match.seed_domain,
+                    signals=[str(s.signal_type) for s in best_match.signals],
+                )
+
+        # No inner timeout — caller in _discover wraps this with asyncio.wait_for
+        await asyncio.gather(*[_check(d, a) for d, a in candidates])
 
     # --- Step 4: Build output ---
 

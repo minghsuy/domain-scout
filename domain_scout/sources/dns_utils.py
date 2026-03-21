@@ -28,11 +28,15 @@ class DNSChecker:
         self._resolver.lifetime = config.dns_timeout
         self._ns_cache: dict[str, tuple[str, ...]] = {}
         self._ips_cache: dict[str, tuple[str, ...]] = {}
+        self._mx_cache: dict[str, tuple[str, ...]] = {}
+        self._txt_cache: dict[str, tuple[str, ...]] = {}
 
     def reset(self) -> None:
         """Clear cached DNS results. Call at the start of each scan."""
         self._ns_cache.clear()
         self._ips_cache.clear()
+        self._mx_cache.clear()
+        self._txt_cache.clear()
 
     async def resolves(self, domain: str) -> bool:
         """Check whether a domain resolves to any A or AAAA record."""
@@ -57,6 +61,34 @@ class DNSChecker:
             result = await self._get_ips_uncached(domain)
             self._ips_cache[domain] = result
         return list(self._ips_cache[domain])
+
+    async def _get_mx_uncached(self, domain: str) -> tuple[str, ...]:
+        try:
+            answer = await self._resolver.resolve(domain, dns.rdatatype.MX)
+            return tuple(sorted(rr.exchange.to_text().rstrip(".").lower() for rr in answer))
+        except (dns.exception.DNSException, ValueError):
+            return ()
+
+    async def get_mx_records(self, domain: str) -> list[str]:
+        """Return MX exchange hostnames for a domain."""
+        if domain not in self._mx_cache:
+            result = await self._get_mx_uncached(domain)
+            self._mx_cache[domain] = result
+        return list(self._mx_cache[domain])
+
+    async def _get_txt_uncached(self, domain: str) -> tuple[str, ...]:
+        try:
+            answer = await self._resolver.resolve(domain, dns.rdatatype.TXT)
+            return tuple(b"".join(rr.strings).decode("utf-8", errors="replace") for rr in answer)
+        except (dns.exception.DNSException, ValueError):
+            return ()
+
+    async def get_txt_records(self, domain: str) -> list[str]:
+        """Return TXT record strings for a domain."""
+        if domain not in self._txt_cache:
+            result = await self._get_txt_uncached(domain)
+            self._txt_cache[domain] = result
+        return list(self._txt_cache[domain])
 
     async def _get_nameservers_uncached(self, domain: str) -> tuple[str, ...]:
         try:

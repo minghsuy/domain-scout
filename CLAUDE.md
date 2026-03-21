@@ -43,7 +43,8 @@ domain_scout/
 ├── sources/
 │   ├── ct_logs.py      # crt.sh Postgres (primary) + JSON API (fallback) + circuit breaker
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
-│   ├── dns_utils.py    # DNS resolution checker
+│   ├── dns_utils.py    # DNS resolution checker (A/AAAA/NS/MX/TXT)
+│   ├── dns_fingerprint.py # DNS fingerprint extraction + matching for DV-cert companies
 │   └── local_parquet.py # LocalParquetSource + HybridCTSource for CT warehouse
 ├── matching/
 │   └── entity_match.py # Org-name similarity scoring (rapidfuzz, acronyms, brand aliases)
@@ -57,6 +58,7 @@ domain_scout/
     ├── test_ct.py
     ├── test_delta.py        # delta reporting, CLI diff, API /diff
     ├── test_dns_utils.py    # DNS checker unit tests
+    ├── test_fingerprint.py  # DNS fingerprint extraction, matching, MX tenant parsing
     ├── test_eval.py         # Evaluation harness unit tests
     ├── test_evidence.py     # profiles, RunMetadata, EvidenceRecord
     ├── test_integration.py  # marked "integration", deselected by default
@@ -88,6 +90,9 @@ domain_scout/
 - RDAP corroboration phase runs on top N resolving candidates, adds `rdap_registrant_match` source
 - Circuit breaker for crt.sh Postgres: shared `_CircuitBreaker` class variable on `CTLogSource`, skips Postgres after `cb_failure_threshold` consecutive failures, probes after `cb_recovery_timeout` seconds
 
+- **Fingerprint mode** (`--mode fingerprint`): for DV-cert companies where CT org search is blind. Skips Strategy A, adds DNS fingerprint verification as post-processing step (between RDAP corroboration and scoring). Extracts MX tenant IDs (Proofpoint, M365, Barracuda, IronPort, FireEye), NS zones, IP /24 prefixes, and SPF includes from seeds and candidates. MX tenant match treated as equivalent to `rdap_registrant_match` in corroboration scoring. Implies `--deep` mode.
+- Shodan reverse DNS candidate generation is deferred (see #110) — fingerprint mode works entirely with standard DNS queries (free, unlimited)
+
 ## Conventions
 
 - No domain-specific use-case language in public-facing files (README, commits, PR descriptions)
@@ -98,6 +103,6 @@ domain_scout/
 
 ## Testing
 
-- **492 unit tests** + 4 integration tests (deselected by default)
+- **560+ unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs
