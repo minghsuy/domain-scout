@@ -474,7 +474,7 @@ class TestFingerprintAcceptance:
         await scout.discover_async(entity)
 
         # search_by_org should not have been called (Strategy A skipped)
-        scout._ct.search_by_org.assert_not_called()  # type: ignore[union-attr]
+        scout._ct.search_by_org.assert_not_called()  # type: ignore[attr-defined]
 
     @pytest.mark.asyncio
     async def test_fingerprint_mx_tenant_boosts_confidence(self) -> None:
