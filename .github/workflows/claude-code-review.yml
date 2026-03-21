@@ -8,7 +8,7 @@ on:
 
 concurrency:
   group: claude-review-${{ github.event.pull_request.number || github.event.issue.number }}
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   claude-review:
@@ -34,14 +34,16 @@ jobs:
       - name: Run Claude Code Review
         id: claude-review
         uses: anthropics/claude-code-action@v1
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
           claude_args: '--allowed-tools "Bash(gh issue view:*),Bash(gh search:*),Bash(gh issue list:*),Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*)"'
           prompt: |
-            Review PR #${{ github.event.pull_request.number }} in ${{ github.repository }}.
+            Review PR #${{ env.PR_NUMBER }} in ${{ github.repository }}.
 
             First, read the CLAUDE.md file in the repo root for project conventions.
-            Then review the PR diff using `gh pr diff ${{ github.event.pull_request.number }}`.
+            Then review the PR diff using `gh pr diff ${{ env.PR_NUMBER }}`.
 
             **Project: domain-scout** — async Python library for discovering domains via CT logs, RDAP, DNS, and Shodan GeoDNS.
 
@@ -67,4 +69,4 @@ jobs:
 
             If the PR looks good, say so briefly.
 
-            Use `gh pr comment ${{ github.event.pull_request.number }}` with your Bash tool to leave your review as a comment on the PR.
+            Use `gh pr comment ${{ env.PR_NUMBER }}` with your Bash tool to leave your review as a comment on the PR.
