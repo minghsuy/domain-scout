@@ -32,6 +32,9 @@ domain-scout --name "Walmart" --seed walmart.com --profile strict
 
 # Deep mode for global resolution
 domain-scout --name "Walmart" --seed "walmart.com" --deep
+
+# Fingerprint mode for DV-cert companies (no org in certs)
+domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
 ```
 
 ## Documentation
@@ -40,7 +43,8 @@ domain-scout --name "Walmart" --seed "walmart.com" --deep
 - [How It Works](architecture.md) — Pipeline architecture, data sources, scoring
 - [Multi-Seed Discovery](multi-seed.md) — Cross-verification with multiple seed domains
 - [Deep Mode](deep-mode.md) — GeoDNS global resolution for regional domains
-- [Examples](examples.md) — Real-world results for Walmart, Generali, and more
+- [Fingerprint Mode](fingerprint-mode.md) — DNS fingerprinting for DV-cert companies
+- [Examples](examples.md) — Real-world results for Walmart, Generali, Shelter Insurance, and more
 - [API Reference](api.md) — Using domain-scout as a Python library
 
 ## License

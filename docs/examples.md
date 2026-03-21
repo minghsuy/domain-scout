@@ -88,6 +88,30 @@ domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
 
 If both seeds independently discover `walmartlabs.com` through separate CT searches, that convergence is a strong ownership signal. The seeds themselves may also share certificates, proving common ownership.
 
+## Fingerprint mode: Shelter Insurance
+
+Shelter Insurance uses DV certificates — CT org search finds nothing useful. Fingerprint mode discovers subsidiaries via shared Proofpoint MX tenant:
+
+```bash
+domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
+```
+
+**Default mode:** 3 domains (shelterinsurance.com, sayinsurance.com, cloudflaressl.com)
+
+**Fingerprint mode:** 5 domains — adds amshieldinsurance.com and shelterre.com:
+
+| Domain | Confidence | Key signal |
+|--------|-----------|------------|
+| `amshieldinsurance.com` | 0.95 | Shares Proofpoint MX tenant `002d0c01` |
+| `shelterinsurance.com` | 0.90 | Seed domain |
+| `sayinsurance.com` | 0.90 | CT org match + MX tenant corroboration |
+| `shelterre.com` | 0.90 | CT org match + shared NS |
+| `cloudflaressl.com` | 0.80 | SAN co-occurrence |
+
+AmShield is Shelter's commercial subsidiary (est. 2014), Shelter Re is their reinsurance arm (est. 1986). Both verified against public company records.
+
+See [Fingerprint Mode](fingerprint-mode.md) for details on when and how to use this mode.
+
 ## How to read the output
 
 - **Confidence** — 0.0 to 1.0 score based on multiple signals (see [Architecture](architecture.md))
@@ -101,5 +125,8 @@ If both seeds independently discover `walmartlabs.com` through separate CT searc
   - `dns_guess` — Guessed from company name, resolves
   - `shared_infra` — Shares nameservers or IP range with seed
   - `geodns` — Resolved via Shodan GeoDNS (deep mode)
+  - `fp:mx_tenant` — Shares MX tenant ID with seed (fingerprint mode)
+  - `fp:ns_zone` — Shares private NS zone with seed (fingerprint mode)
+  - `fp:spf_include` — Shares custom SPF include with seed (fingerprint mode)
 - **Evidence** (JSON output) — each domain carries structured `EvidenceRecord` entries with `source_type`, `cert_id` (links to `https://crt.sh/?id=N`), `cert_org`, `similarity_score`, and `seed_domain`. See [API Reference](api.md#evidencerecord) for the full schema.
 - **Run metadata** (JSON output) — the top-level `run_metadata` captures `tool_version`, `timestamp`, `elapsed_seconds`, and a full `config` snapshot for audit reproducibility.

@@ -42,6 +42,8 @@ from domain_scout.config import ScoutConfig
 config = ScoutConfig(
     total_timeout=180,          # seconds
     deep_mode=True,             # enable GeoDNS
+    discovery_mode="fingerprint",  # "default" or "fingerprint"
+    fp_candidate_limit=200,     # max candidates to fingerprint-verify
     dns_timeout=5.0,            # per-query DNS timeout
     org_match_threshold=0.65,   # fuzzy match threshold
     inclusion_threshold=0.6,    # minimum confidence to include
@@ -215,6 +217,43 @@ class DeltaWarning(BaseModel):
     code: str                            # e.g. "seeds_changed", "config_changed"
     message: str                         # human-readable explanation
 ```
+
+## REST API
+
+Start the server:
+
+```bash
+domain-scout serve --port 8080
+domain-scout serve --port 8080 --api-key YOUR_KEY  # require authentication
+```
+
+### Endpoints
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `POST` | `/scan` | Run a domain discovery scan |
+| `POST` | `/diff` | Compare two scan results |
+| `GET` | `/health` | Health check (returns version + status) |
+| `GET` | `/ready` | Readiness probe (checks crt.sh connectivity) |
+| `GET` | `/cache/stats` | Cache statistics |
+| `POST` | `/cache/clear` | Clear all cached entries |
+| `GET` | `/metrics` | Prometheus metrics |
+
+Authenticated endpoints (`/scan`, `/diff`, `/cache/*`) require `X-API-Key` header when `--api-key` is set.
+
+### POST /scan
+
+```json
+{
+  "company_name": "Shelter Insurance",
+  "seed_domain": ["shelterinsurance.com"],
+  "discovery_mode": "fingerprint",
+  "location": null,
+  "industry": null
+}
+```
+
+Returns a `ScoutResult` JSON object.
 
 ## JSON output
 
