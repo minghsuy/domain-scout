@@ -68,19 +68,31 @@ def scout(  # noqa: PLR0913
     api_key: Annotated[
         str | None, typer.Option("--api-key", help="CTScout API key (or CTSCOUT_API_KEY)")
     ] = None,
+    mode: Annotated[
+        str,
+        typer.Option("--mode", "-m", help="Discovery mode: default or fingerprint"),
+    ] = "default",
     verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
 ) -> None:
     """Discover domains associated with a company."""
     configure_logging(level=logging.DEBUG if verbose else logging.INFO)
 
+    if mode not in ("default", "fingerprint"):
+        typer.echo(f"Error: unknown mode {mode!r}. Choose 'default' or 'fingerprint'.", err=True)
+        raise typer.Exit(1)
+
     seeds = seed or []
-    if deep:
+    if deep or mode == "fingerprint":
         timeout = max(timeout, 180)
     if len(seeds) >= 3:
         timeout = max(timeout, 150)
 
     # Resolve local mode and warehouse path
-    overrides: dict[str, object] = {"total_timeout": timeout, "deep_mode": deep}
+    overrides: dict[str, object] = {
+        "total_timeout": timeout,
+        "deep_mode": deep or mode == "fingerprint",
+        "discovery_mode": mode,
+    }
     if local and local_first:
         typer.echo("Error: --local and --local-first are mutually exclusive.", err=True)
         raise typer.Exit(1)
