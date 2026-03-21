@@ -16,8 +16,11 @@ Input: company name + optional seed domain(s)
           │   ├─ Strategy A': CT search on seed org name
           │   └─ Strategy B: Seed domain expansion (SANs)
           │
-          ├─ Phase 3: DNS resolution
-          │   └─ Step 3b: GeoDNS rescue (--deep mode)
+          ├─ Phase 3: Post-processing
+          │   ├─ DNS resolution
+          │   ├─ Step 3b: GeoDNS rescue (--deep mode)
+          │   ├─ Step 3c: RDAP corroboration
+          │   └─ Step 3d: Fingerprint corroboration (--mode fingerprint)
           │
           ├─ Phase 4: Confidence scoring
           │   └─ Infrastructure sharing boost
@@ -44,10 +47,11 @@ Registration Data Access Protocol — the modern replacement for WHOIS. Used to 
 
 ### DNS
 
-Standard A/AAAA resolution via Google (8.8.8.8) and Cloudflare (1.1.1.1) public resolvers. Used for:
+Standard A/AAAA/NS/MX/TXT resolution via Google (8.8.8.8) and Cloudflare (1.1.1.1) public resolvers. Used for:
 
 - Validating that discovered domains actually resolve
 - Infrastructure comparison (shared nameservers or IP /24 prefixes)
+- Fingerprint extraction (MX tenant IDs, NS zones, SPF includes) in fingerprint mode
 
 ### Shodan GeoDNS (deep mode)
 
@@ -78,6 +82,16 @@ If a seed domain is provided, finds all certificates that cover the seed domain 
 
 Generates domain candidates from the company name (e.g., "Palo Alto Networks" -> `paloaltonetworks.com`, `paloalto.com`, `pan.com`) across common TLDs, then DNS-resolves them.
 
+### Fingerprint verification (`--mode fingerprint`)
+
+When `--mode fingerprint` is used, Strategy A (CT org search) is skipped — DV certificates have no org name, so this strategy returns nothing. Instead, a DNS fingerprint corroboration phase runs after DNS resolution:
+
+1. Extracts MX tenant IDs, NS zones, and SPF includes from each seed domain
+2. For each candidate found by other strategies (B, C, D), extracts its fingerprint
+3. Compares against the seed fingerprint — matching MX tenants, private NS zones, or custom SPF includes are added as evidence
+
+See [Fingerprint Mode](fingerprint-mode.md) for details on supported providers and signal filtering.
+
 ## Confidence scoring
 
 Each discovered domain receives a confidence score from 0.0 to 1.0:
@@ -92,14 +106,15 @@ Each discovered domain receives a confidence score from 0.0 to 1.0:
 | CT seed-related (found in seed search) | 0.40 |
 | DNS guess only | 0.30 |
 
-**Boosts:**
+**Corroboration signals** (boost existing scores, don't set base scores):
 
-| Condition | Boost |
-|-----------|-------|
-| 3+ independent sources | +0.10 |
-| 2 independent sources | +0.05 |
-| DNS resolves | +0.05 |
-| Org name similarity > 0.9 | +0.05 |
+| Condition | Effect |
+|-----------|--------|
+| RDAP registrant match or MX tenant match (`fp:mx_tenant`) | Treated as strong org-level signal |
+| 3+ independent sources + strong signal | +0.10 (Level 3) |
+| 2 independent sources or strong signal | +0.05 (Level 2) |
+| DNS resolves only | +0.00 (Level 1) |
+| No DNS resolution | -0.05 (Level 0) |
 | Shares infrastructure with seed | +0.05 |
 
 Domains below the inclusion threshold (default: 0.60) are filtered out. Non-resolving domains are also filtered unless they are the seed domain itself (or `include_non_resolving` is set, as in the `broad` profile).
@@ -122,6 +137,8 @@ The entire pipeline runs under a configurable total timeout (default: 120s, bump
 - All strategies: remaining - 10s reserve
 - DNS resolution: remaining - 2s reserve
 - GeoDNS: remaining - 3s reserve
+- RDAP corroboration: 15s cap
+- Fingerprint corroboration (fingerprint mode): 30s cap
 - Infrastructure checks: 10s hard cap
 
 If any phase times out, completed results are preserved and the pipeline continues with what it has.

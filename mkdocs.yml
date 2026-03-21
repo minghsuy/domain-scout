@@ -31,6 +31,7 @@ nav:
   - Architecture: architecture.md
   - Multi-Seed Discovery: multi-seed.md
   - Deep Mode: deep-mode.md
+  - Fingerprint Mode: fingerprint-mode.md
   - Examples: examples.md
   - API Reference: api.md
   - RDAP ccTLD Support: rdap-cctld-support.md

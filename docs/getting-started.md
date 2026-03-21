@@ -79,11 +79,18 @@ Domains independently discovered from 2+ seeds receive a `cross_seed_verified` c
 | `--seed` | `-s` | Seed domain (repeatable) | — |
 | `--location` | `-l` | City, state, country | — |
 | `--industry` | `-i` | Industry hint | — |
+| `--mode` | `-m` | Discovery mode: `default` or `fingerprint` | `default` |
 | `--deep` | `-d` | Enable GeoDNS global resolution | `false` |
 | `--profile` | `-p` | Discovery profile: `broad`, `balanced`, `strict` | `balanced` |
 | `--output` | `-o` | Output format: `table` or `json` | `table` |
 | `--timeout` | | Total timeout in seconds | `120` |
 | `--api-key` | | CTScout API key (or `CTSCOUT_API_KEY` env var) | — |
+| `--cache/--no-cache` | | Enable/disable DuckDB query cache | `false` |
+| `--cache-dir` | | Cache directory path | — |
+| `--local` | | Use local parquet warehouse only | `false` |
+| `--local-first` | | Try local warehouse, fall back to crt.sh | `false` |
+| `--warehouse-path` | | Path to parquet warehouse directory | — |
+| `--subsidiaries-path` | | Path to subsidiaries CSV | — |
 | `--verbose` | `-v` | Verbose logging | `false` |
 
 ## JSON output
