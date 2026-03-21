@@ -45,7 +45,8 @@ domain_scout/
 │   ├── rdap.py         # RDAP via rdap.org (universal bootstrap)
 │   ├── dns_utils.py    # DNS resolution checker (A/AAAA/NS/MX/TXT)
 │   ├── dns_fingerprint.py # DNS fingerprint extraction + matching for DV-cert companies
-│   └── local_parquet.py # LocalParquetSource + HybridCTSource for CT warehouse
+│   ├── local_parquet.py # LocalParquetSource + HybridCTSource for CT warehouse
+│   └── ctscout_remote.py # CTScout remote API source (ctscout.dev warehouse)
 ├── matching/
 │   └── entity_match.py # Org-name similarity scoring (rapidfuzz, acronyms, brand aliases)
 └── tests/
@@ -70,6 +71,8 @@ domain_scout/
     ├── test_multi_seed.py
     ├── test_rdap.py         # RDAP lookup parsing tests
     ├── test_scout_internals.py # _extract_sans helper tests
+    ├── test_scorer.py       # Learned scorer tests
+    ├── test_ctscout_remote.py # CTScout remote API source tests
     └── test_subsidiary.py   # Subsidiary-aware CT search
 ```
 
@@ -103,6 +106,6 @@ domain_scout/
 
 ## Testing
 
-- **560+ unit tests** + 4 integration tests (deselected by default)
+- **565 unit tests** + 4 integration tests (deselected by default)
 - Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
 - Seed domain choice significantly affects live results — different seeds find different SANs

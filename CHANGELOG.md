@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-03-21
+
+### Added
+
+- **DNS fingerprint expansion mode** (`--mode fingerprint`): discover domains for companies using DV certificates where CT org search is blind. Extracts MX tenant IDs, NS zones, and SPF includes from seed domains, then verifies candidates against the fingerprint (#109)
+- MX tenant parsing for Proofpoint, Microsoft 365, Barracuda, IronPort, and FireEye
+- Shared-infra blocklists for NS zones (Cloudflare, AWS, Azure, Google, GoDaddy, etc.) and SPF includes (M365, Google, SendGrid, etc.) to prevent false positive matches
+- `DNSChecker.get_mx_records()` and `get_txt_records()` with in-memory caching
+- `DiscoveryMode` type: `--mode default|fingerprint` CLI flag
+- `fp_candidate_limit` config field (default 200)
+- 30+ new unit tests and acceptance tests for fingerprint mode
+
+### Changed
+
+- Fingerprint mode skips CT org search (Strategy A) and implies `--deep` mode
+- MX tenant match treated as equivalent to `rdap_registrant_match` in corroboration scoring
+- Mimecast excluded from MX tenant parsing (shared infrastructure, not per-customer)
+- IP /24 prefix matching removed from fingerprint signals (CDN false positives)
+
+### Fixed
+
+- Claude Code Review workflow: PR number resolution for comment-triggered runs (#112)
+- Claude Code Review workflow: feedback loop from bot comments re-triggering reviews (#113)
+
 ## [0.8.1] - 2026-03-19
 
 ### Fixed
