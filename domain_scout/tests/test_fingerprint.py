@@ -254,12 +254,21 @@ class TestMatchFingerprint:
         assert result.signals[0].provider == "proofpoint"
 
     def test_ns_zone_match(self) -> None:
-        seed = self._make_fp("seed.com", ns_zones=["azure-dns.com"])
-        candidate = self._make_fp("candidate.com", ns_zones=["azure-dns.com"])
+        """Private/custom NS zones should match."""
+        seed = self._make_fp("seed.com", ns_zones=["ns.shelterinsurance.com"])
+        candidate = self._make_fp("candidate.com", ns_zones=["ns.shelterinsurance.com"])
 
         result = match_fingerprint(candidate, seed)
         assert result.has_ns_zone
         assert not result.has_mx_tenant
+
+    def test_ns_zone_shared_infra_filtered(self) -> None:
+        """Shared NS providers (Cloudflare, AWS, Azure) should NOT match."""
+        seed = self._make_fp("seed.com", ns_zones=["cloudflare.com"])
+        candidate = self._make_fp("candidate.com", ns_zones=["cloudflare.com"])
+
+        result = match_fingerprint(candidate, seed)
+        assert result.signal_count == 0
 
     def test_ip_prefix_match(self) -> None:
         seed = self._make_fp("seed.com", ip_prefixes=["10.0.1"])
@@ -273,13 +282,13 @@ class TestMatchFingerprint:
         seed = self._make_fp(
             "seed.com",
             mx_tenants=[tenant],
-            ns_zones=["azure-dns.com"],
+            ns_zones=["ns.contoso.com"],
             ip_prefixes=["10.0.1"],
         )
         candidate = self._make_fp(
             "candidate.com",
             mx_tenants=[tenant],
-            ns_zones=["azure-dns.com"],
+            ns_zones=["ns.contoso.com"],
             ip_prefixes=["10.0.1"],
         )
 
@@ -288,21 +297,30 @@ class TestMatchFingerprint:
         assert result.signal_types == {"mx_tenant", "ns_zone", "ip_prefix"}
 
     def test_no_match(self) -> None:
-        seed = self._make_fp("seed.com", ns_zones=["azure-dns.com"])
-        candidate = self._make_fp("candidate.com", ns_zones=["cloudflare.com"])
+        seed = self._make_fp("seed.com", ns_zones=["ns.acme.com"])
+        candidate = self._make_fp("candidate.com", ns_zones=["ns.other.com"])
 
         result = match_fingerprint(candidate, seed)
         assert result.signal_count == 0
 
     def test_spf_match(self) -> None:
-        seed = self._make_fp("seed.com", spf_includes=["spf.protection.outlook.com"])
+        """Custom SPF includes should match; shared providers should not."""
+        seed = self._make_fp("seed.com", spf_includes=["spf.shelterinsurance.com"])
         candidate = self._make_fp(
-            "candidate.com", spf_includes=["spf.protection.outlook.com", "_spf.google.com"]
+            "candidate.com", spf_includes=["spf.shelterinsurance.com", "_spf.google.com"]
         )
 
         result = match_fingerprint(candidate, seed)
         assert result.signal_count == 1
         assert result.signals[0].signal_type == "spf_include"
+
+    def test_spf_shared_provider_filtered(self) -> None:
+        """Shared SPF providers (M365, Google, SendGrid) should NOT match."""
+        seed = self._make_fp("seed.com", spf_includes=["spf.protection.outlook.com"])
+        candidate = self._make_fp("candidate.com", spf_includes=["spf.protection.outlook.com"])
+
+        result = match_fingerprint(candidate, seed)
+        assert result.signal_count == 0
 
     def test_partial_mx_no_match(self) -> None:
         """Different tenants on same provider should not match."""
@@ -485,6 +503,7 @@ class TestFingerprintAcceptance:
         result = await scout.discover_async(entity)
         domain_map = {d.domain: d for d in result.domains}
 
-        if "amshieldinsurance.com" in domain_map:
-            # MX tenant acts like RDAP — should trigger corroboration boost
-            assert domain_map["amshieldinsurance.com"].confidence >= 0.80
+        assert "amshieldinsurance.com" in domain_map, (
+            f"Missing amshieldinsurance.com, found: {list(domain_map.keys())}"
+        )
+        assert domain_map["amshieldinsurance.com"].confidence >= 0.80

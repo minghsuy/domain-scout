@@ -139,7 +139,7 @@ def _ns_zone(ns_host: str) -> str:
     """
     parts = ns_host.lower().rstrip(".").split(".")
     # For known two-part TLDs (co.uk, com.au), keep 3 parts
-    if len(parts) >= 3 and parts[-2] in ("co", "com", "net", "org"):
+    if len(parts) >= 3 and parts[-2] in ("co", "com"):
         return ".".join(parts[-3:])
     if len(parts) >= 2:
         return ".".join(parts[-2:])
@@ -248,6 +248,54 @@ class FingerprintMatch:
         return {s.signal_type for s in self.signals}
 
 
+# Shared-infra blocklists: these are too common to be org-level signals.
+# Matching on these produces false positives (millions of unrelated domains).
+_SHARED_NS_ZONES: frozenset[str] = frozenset(
+    {
+        "cloudflare.com",
+        "cloudflare.net",
+        "awsdns.com",
+        "awsdns.net",
+        "awsdns.org",
+        "azure-dns.com",
+        "azure-dns.net",
+        "azure-dns.org",
+        "nsone.net",
+        "google.com",
+        "googledomains.com",
+        "domaincontrol.com",  # GoDaddy
+        "registrar-servers.com",  # Namecheap
+        "hetzner.com",
+        "digitalocean.com",
+        "linode.com",
+        "dynect.net",  # Oracle Dyn
+    }
+)
+
+
+# AWS DNS uses variable subdomains (awsdns-56.co.uk, awsdns-12.com, etc.)
+# so we also match any zone containing "awsdns"
+def _is_shared_ns(zone: str) -> bool:
+    return zone in _SHARED_NS_ZONES or "awsdns" in zone
+
+
+_SHARED_SPF_INCLUDES: frozenset[str] = frozenset(
+    {
+        "spf.protection.outlook.com",
+        "_spf.google.com",
+        "sendgrid.net",
+        "amazonses.com",
+        "mailgun.org",
+        "servers.mcsv.net",  # Mailchimp
+        "zendesk.com",
+        "mail.zendesk.com",
+        "salesforce.com",
+        "mktomail.com",  # Marketo
+        "hubspot.net",
+    }
+)
+
+
 def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> FingerprintMatch:
     """Compare a candidate fingerprint against a seed fingerprint.
 
@@ -270,8 +318,8 @@ def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> Finger
                 )
             )
 
-    # NS zone match (moderate signal — many companies share DNS providers)
-    seed_ns = set(seed.ns_zones)
+    # NS zone match — skip shared providers (Cloudflare, AWS, Azure, etc.)
+    seed_ns = {ns for ns in seed.ns_zones if not _is_shared_ns(ns)}
     for nz in candidate.ns_zones:
         if nz in seed_ns:
             signals.append(
@@ -294,8 +342,8 @@ def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> Finger
                 )
             )
 
-    # SPF include match (moderate signal — shared email infra)
-    seed_spf = set(seed.spf_includes)
+    # SPF include match — skip shared providers (M365, Google, SendGrid, etc.)
+    seed_spf = {s for s in seed.spf_includes if s not in _SHARED_SPF_INCLUDES}
     for spf in candidate.spf_includes:
         if spf in seed_spf:
             signals.append(

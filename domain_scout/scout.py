@@ -1203,13 +1203,20 @@ class Scout:
                         f"Shares SPF include '{s.seed_value}' with seed {best_match.seed_domain}"
                     ),
                 }
+
+                def _fallback(s: Any) -> str:
+                    return (
+                        f"Shares {s.signal_type} '{s.seed_value}' "
+                        f"with seed {best_match.seed_domain}"
+                    )
+
                 for sig in best_match.signals:
                     source_tag = f"fp:{sig.signal_type}"
                     accum.sources.add(source_tag)
                     accum.evidence.append(
                         EvidenceRecord(
                             source_type=source_tag,
-                            description=sig_desc[sig.signal_type](sig),
+                            description=sig_desc.get(sig.signal_type, _fallback)(sig),
                             seed_domain=best_match.seed_domain,
                         )
                     )
