@@ -10,6 +10,7 @@ import pytest
 
 if TYPE_CHECKING:
     from collections.abc import Iterator
+    from pathlib import Path
 from fastapi.testclient import TestClient
 
 from domain_scout.api import ScanRequest, create_app, get_app
@@ -203,6 +204,51 @@ class TestGetApp:
         resp = test_client.get("/health")
         assert resp.status_code == 200
 
+    def test_get_app_warehouse_env(self) -> None:
+        """get_app() reads warehouse/subsidiaries/local_mode env vars."""
+        env = {
+            "DOMAIN_SCOUT_CACHE": "false",
+            "DOMAIN_SCOUT_WAREHOUSE_PATH": "/opt/warehouse",
+            "DOMAIN_SCOUT_SUBSIDIARIES_PATH": "/opt/subs.csv",
+            "DOMAIN_SCOUT_LOCAL_MODE": "local_first",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.default_warehouse_path == "/opt/warehouse"
+        assert app.state.default_subsidiaries_path == "/opt/subs.csv"
+        assert app.state.default_local_mode == "local_first"
+
+    def test_get_app_auto_local_first(self) -> None:
+        """get_app() auto-enables local_first when warehouse path is set."""
+        env = {
+            "DOMAIN_SCOUT_CACHE": "false",
+            "DOMAIN_SCOUT_WAREHOUSE_PATH": "/opt/warehouse",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.default_local_mode == "local_first"
+
+    def test_get_app_invalid_local_mode_ignored(self) -> None:
+        """get_app() ignores invalid DOMAIN_SCOUT_LOCAL_MODE values."""
+        env = {
+            "DOMAIN_SCOUT_CACHE": "false",
+            "DOMAIN_SCOUT_LOCAL_MODE": "bogus",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.default_local_mode == "disabled"
+
+    def test_get_app_explicit_disabled_respected(self) -> None:
+        """Explicit disabled mode is not overridden by auto-enable logic."""
+        env = {
+            "DOMAIN_SCOUT_CACHE": "false",
+            "DOMAIN_SCOUT_LOCAL_MODE": "disabled",
+            "DOMAIN_SCOUT_WAREHOUSE_PATH": "/opt/warehouse",
+        }
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.default_local_mode == "disabled"
+
 
 class TestScanRequest:
     def test_minimal(self) -> None:
@@ -253,6 +299,83 @@ class TestScanRequest:
             },
         )
         assert resp_absolute.status_code != 400
+
+    def test_scan_subsidiaries_path_traversal(
+        self, client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Scan returns 400 when subsidiaries_path contains path traversal."""
+        resp = client.post(
+            "/scan",
+            json={
+                "entity": {"company_name": "TestCorp"},
+                "subsidiaries_path": "../../etc/passwd",
+            },
+        )
+        assert resp.status_code == 400
+        assert "Invalid subsidiaries_path" in resp.json()["detail"]
+
+
+class TestServerDefaults:
+    """Tests for server-default configuration via create_app params."""
+
+    @pytest.fixture
+    def default_client(self, tmp_path: Path) -> TestClient:
+        app = create_app(
+            cache=None,
+            max_concurrent=2,
+            default_warehouse_path=str(tmp_path / "warehouse"),
+            default_subsidiaries_path=str(tmp_path / "subs.csv"),
+            default_local_mode="local_first",
+        )
+        return TestClient(app)
+
+    def test_server_defaults_used(
+        self, default_client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Server defaults are applied when request omits local_mode/paths."""
+        with patch("domain_scout.api.Scout.__init__", return_value=None):
+            resp = default_client.post(
+                "/scan",
+                json={"entity": {"company_name": "TestCorp"}},
+            )
+        assert resp.status_code == 200
+        assert mock_discover.call_count == 1
+
+    def test_request_overrides_server_defaults(
+        self, default_client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Per-request values override server defaults."""
+        with patch("domain_scout.api.Scout.__init__", return_value=None):
+            resp = default_client.post(
+                "/scan",
+                json={
+                    "entity": {"company_name": "TestCorp"},
+                    "local_mode": "local_only",
+                    "warehouse_path": "/other/warehouse",
+                },
+            )
+        assert resp.status_code == 200
+
+    def test_request_disabled_overrides_server_default(
+        self,
+        mock_discover: AsyncMock,
+    ) -> None:
+        """Explicit local_mode='disabled' in request overrides server default."""
+        app = create_app(
+            cache=None,
+            max_concurrent=2,
+            default_local_mode="local_first",
+            default_warehouse_path="/opt/warehouse",
+        )
+        client = TestClient(app)
+        resp = client.post(
+            "/scan",
+            json={
+                "entity": {"company_name": "TestCorp"},
+                "local_mode": "disabled",
+            },
+        )
+        assert resp.status_code == 200
 
 
 class TestAPIKeyAuth:

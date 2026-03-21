@@ -9,7 +9,7 @@ import time
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
 from pathlib import Path
-from typing import TYPE_CHECKING, Any
+from typing import TYPE_CHECKING, Any, cast, get_args
 
 if TYPE_CHECKING:
     from collections.abc import AsyncIterator
@@ -41,6 +41,12 @@ _MAX_SCAN_TIMEOUT = 300
 _READY_CACHE_TTL = 60.0
 
 
+def _reject_traversal(path: str, field: str) -> None:
+    """Raise 400 if path contains '..' components."""
+    if ".." in Path(path).parts:
+        raise HTTPException(status_code=400, detail=f"Invalid {field}: path traversal detected")
+
+
 class ScanRequest(BaseModel):
     """Request body for /scan endpoint."""
 
@@ -50,12 +56,13 @@ class ScanRequest(BaseModel):
         default=None, ge=5, le=300, description="Override total_timeout (seconds)"
     )
     deep: bool = Field(default=False, description="Enable GeoDNS deep mode")
-    local_mode: LocalMode = Field(
-        default="disabled", description="disabled | local_only | local_first"
+    local_mode: LocalMode | None = Field(
+        default=None, description="disabled | local_only | local_first"
     )
     warehouse_path: str | None = Field(
         default=None, description="Path to parquet warehouse directory (requires local_mode)"
     )
+    subsidiaries_path: str | None = Field(default=None, description="Path to subsidiaries CSV file")
 
 
 class DiffRequest(BaseModel):
@@ -70,6 +77,9 @@ def create_app(
     cache: DuckDBCache | None = None,
     max_concurrent: int = 3,
     api_key: str | None = None,
+    default_warehouse_path: str | None = None,
+    default_subsidiaries_path: str | None = None,
+    default_local_mode: LocalMode = "disabled",
 ) -> FastAPI:
     """Create and configure the FastAPI application."""
 
@@ -92,6 +102,9 @@ def create_app(
     app.state.ready_cache = {}
     app.state.ready_cache_ts = 0.0
     app.state.api_key = api_key
+    app.state.default_warehouse_path = default_warehouse_path
+    app.state.default_subsidiaries_path = default_subsidiaries_path
+    app.state.default_local_mode = default_local_mode
 
     api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
 
@@ -144,15 +157,21 @@ def create_app(
             overrides["total_timeout"] = min(req.timeout, _MAX_SCAN_TIMEOUT)
         if req.deep:
             overrides["deep_mode"] = True
-        if req.local_mode != "disabled":
-            overrides["local_mode"] = req.local_mode
-            if req.warehouse_path:
-                if ".." in Path(req.warehouse_path).parts:
-                    raise HTTPException(
-                        status_code=400,
-                        detail="Invalid warehouse_path: path traversal detected",
-                    )
-                overrides["warehouse_path"] = req.warehouse_path
+
+        # Resolve local_mode: request overrides server default
+        local_mode = req.local_mode if req.local_mode is not None else app.state.default_local_mode
+        if local_mode != "disabled":
+            overrides["local_mode"] = local_mode
+            warehouse = req.warehouse_path or app.state.default_warehouse_path
+            if warehouse:
+                _reject_traversal(warehouse, "warehouse_path")
+                overrides["warehouse_path"] = warehouse
+
+        # Resolve subsidiaries_path: request overrides server default
+        subs = req.subsidiaries_path or app.state.default_subsidiaries_path
+        if subs:
+            _reject_traversal(subs, "subsidiaries_path")
+            overrides["subsidiaries_path"] = subs
 
         try:
             if req.profile:
@@ -233,5 +252,22 @@ def get_app() -> FastAPI:
     cache = DuckDBCache(cache_dir=cache_dir) if cache_enabled else None
 
     api_key = os.environ.get("DOMAIN_SCOUT_API_KEY")
+    warehouse_path = os.environ.get("DOMAIN_SCOUT_WAREHOUSE_PATH")
+    subsidiaries_path = os.environ.get("DOMAIN_SCOUT_SUBSIDIARIES_PATH")
 
-    return create_app(cache=cache, max_concurrent=max_concurrent, api_key=api_key)
+    # Auto-enable local_first when warehouse path is configured
+    default_local_mode: LocalMode = "disabled"
+    raw_mode = os.environ.get("DOMAIN_SCOUT_LOCAL_MODE")
+    if raw_mode in get_args(LocalMode):
+        default_local_mode = cast("LocalMode", raw_mode)
+    elif warehouse_path:
+        default_local_mode = "local_first"
+
+    return create_app(
+        cache=cache,
+        max_concurrent=max_concurrent,
+        api_key=api_key,
+        default_warehouse_path=warehouse_path,
+        default_subsidiaries_path=subsidiaries_path,
+        default_local_mode=default_local_mode,
+    )
