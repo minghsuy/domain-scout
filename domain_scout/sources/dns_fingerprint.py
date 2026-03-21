@@ -330,17 +330,9 @@ def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> Finger
                 )
             )
 
-    # IP /24 prefix match (weak signal — shared hosting, CDNs)
-    seed_ips = set(seed.ip_prefixes)
-    for ip in candidate.ip_prefixes:
-        if ip in seed_ips:
-            signals.append(
-                FingerprintSignal(
-                    signal_type="ip_prefix",
-                    seed_value=ip,
-                    candidate_value=ip,
-                )
-            )
+    # IP /24 prefix intentionally skipped — CDN/shared hosting ranges
+    # (Cloudflare, Fastly, AWS) cover millions of unrelated customers in
+    # the same /24. MX tenant + NS zone provide stronger signals.
 
     # SPF include match — skip shared providers (M365, Google, SendGrid, etc.)
     seed_spf = {s for s in seed.spf_includes if s not in _SHARED_SPF_INCLUDES}

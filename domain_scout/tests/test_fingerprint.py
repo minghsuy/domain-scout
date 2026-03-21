@@ -270,12 +270,13 @@ class TestMatchFingerprint:
         result = match_fingerprint(candidate, seed)
         assert result.signal_count == 0
 
-    def test_ip_prefix_match(self) -> None:
+    def test_ip_prefix_not_matched(self) -> None:
+        """IP /24 prefix is intentionally skipped (CDN false positives)."""
         seed = self._make_fp("seed.com", ip_prefixes=["10.0.1"])
         candidate = self._make_fp("candidate.com", ip_prefixes=["10.0.1"])
 
         result = match_fingerprint(candidate, seed)
-        assert result.has_ip_prefix
+        assert result.signal_count == 0
 
     def test_multi_signal_match(self) -> None:
         tenant = MXTenant(provider="microsoft365", tenant_id="contoso-com")
@@ -283,18 +284,16 @@ class TestMatchFingerprint:
             "seed.com",
             mx_tenants=[tenant],
             ns_zones=["ns.contoso.com"],
-            ip_prefixes=["10.0.1"],
         )
         candidate = self._make_fp(
             "candidate.com",
             mx_tenants=[tenant],
             ns_zones=["ns.contoso.com"],
-            ip_prefixes=["10.0.1"],
         )
 
         result = match_fingerprint(candidate, seed)
-        assert result.signal_count == 3
-        assert result.signal_types == {"mx_tenant", "ns_zone", "ip_prefix"}
+        assert result.signal_count == 2
+        assert result.signal_types == {"mx_tenant", "ns_zone"}
 
     def test_no_match(self) -> None:
         seed = self._make_fp("seed.com", ns_zones=["ns.acme.com"])
@@ -383,20 +382,17 @@ _SHELTER_DNS: dict[str, bool] = {
     "shelterinsurance.com": True,
     "www.shelterinsurance.com": True,
     "amshieldinsurance.com": True,
-    "shelterre.com": True,
 }
 
 # MX records per domain — all share Proofpoint tenant 002d0c01
 _SHELTER_MX: dict[str, list[str]] = {
     "shelterinsurance.com": ["mxa-002d0c01.gslb.pphosted.com", "mxb-002d0c01.gslb.pphosted.com"],
     "amshieldinsurance.com": ["mxa-002d0c01.gslb.pphosted.com", "mxb-002d0c01.gslb.pphosted.com"],
-    "shelterre.com": ["mxa-002d0c01.gslb.pphosted.com"],
 }
 
 _SHELTER_NS: dict[str, list[str]] = {
     "shelterinsurance.com": ["ns1.cloudflare.com", "ns2.cloudflare.com"],
     "amshieldinsurance.com": ["ns1.cloudflare.com", "ns2.cloudflare.com"],
-    "shelterre.com": ["ns1.cloudflare.com", "ns2.cloudflare.com"],
 }
 
 

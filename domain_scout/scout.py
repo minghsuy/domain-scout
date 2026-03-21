@@ -40,6 +40,7 @@ from domain_scout.models import (
 )
 from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
 from domain_scout.sources.dns_fingerprint import (
+    DNSFingerprint,
     extract_fingerprint,
     match_fingerprint,
 )
@@ -1117,8 +1118,6 @@ class Scout:
             return
 
         # Step 1: Extract fingerprints from all seeds (parallel)
-        from domain_scout.sources.dns_fingerprint import DNSFingerprint
-
         bases = [b for sd in seed_domains if (b := extract_base_domain(sd))]
         if not bases:
             return
