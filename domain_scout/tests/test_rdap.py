@@ -9,7 +9,14 @@ import httpx
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.sources.rdap import RDAP_SKIP_TLDS, RDAPLookup, _RDAPCircuitBreaker
+from domain_scout.sources.rdap import (
+    RDAP_SKIP_TLDS,
+    RDAPLookup,
+    _RDAPCircuitBreaker,
+    extract_dates,
+    extract_nameservers,
+    extract_registrar,
+)
 
 
 def _make_httpx_mock(json_payload: Any = None, status_code: int = 200) -> AsyncMock:
@@ -463,3 +470,183 @@ class TestRDAPRateLimiting:
         config = ScoutConfig(max_rdap_concurrent=2)
         RDAPLookup(config)
         assert RDAPLookup._semaphore is not None
+
+
+class TestExtractRegistrar:
+    """Tests for extract_registrar()."""
+
+    def test_normal_case(self) -> None:
+        data: dict[str, object] = {
+            "entities": [
+                {
+                    "roles": ["registrar"],
+                    "vcardArray": [
+                        "vcard",
+                        [["fn", {}, "text", "GoDaddy LLC"]],
+                    ],
+                }
+            ]
+        }
+        assert extract_registrar(data) == "GoDaddy LLC"
+
+    def test_no_registrar_entity(self) -> None:
+        data: dict[str, object] = {
+            "entities": [
+                {
+                    "roles": ["registrant"],
+                    "vcardArray": ["vcard", [["fn", {}, "text", "Some Corp"]]],
+                }
+            ]
+        }
+        assert extract_registrar(data) is None
+
+    def test_empty_dict(self) -> None:
+        assert extract_registrar({}) is None
+
+    def test_short_vcard_field(self) -> None:
+        # vcard entry with fewer than 4 elements — should be skipped
+        data: dict[str, object] = {
+            "entities": [
+                {
+                    "roles": ["registrar"],
+                    "vcardArray": ["vcard", [["fn", {}]]],
+                }
+            ]
+        }
+        assert extract_registrar(data) is None
+
+
+class TestExtractDates:
+    """Tests for extract_dates()."""
+
+    def test_both_dates_present(self) -> None:
+        data: dict[str, object] = {
+            "events": [
+                {"eventAction": "registration", "eventDate": "2010-01-15T00:00:00Z"},
+                {"eventAction": "expiration", "eventDate": "2030-01-15T00:00:00Z"},
+            ]
+        }
+        created, expiry = extract_dates(data)
+        assert created == "2010-01-15T00:00:00Z"
+        assert expiry == "2030-01-15T00:00:00Z"
+
+    def test_only_registration(self) -> None:
+        data: dict[str, object] = {
+            "events": [
+                {"eventAction": "registration", "eventDate": "2010-01-15T00:00:00Z"},
+            ]
+        }
+        created, expiry = extract_dates(data)
+        assert created == "2010-01-15T00:00:00Z"
+        assert expiry is None
+
+    def test_no_events(self) -> None:
+        assert extract_dates({}) == (None, None)
+
+    def test_empty_date_strings_skipped(self) -> None:
+        data: dict[str, object] = {
+            "events": [
+                {"eventAction": "registration", "eventDate": "   "},
+                {"eventAction": "expiration", "eventDate": ""},
+            ]
+        }
+        assert extract_dates(data) == (None, None)
+
+
+class TestExtractNameservers:
+    """Tests for extract_nameservers()."""
+
+    def test_normal_case(self) -> None:
+        data: dict[str, object] = {
+            "nameservers": [
+                {"ldhName": "NS1.EXAMPLE.COM"},
+                {"ldhName": "ns2.example.com"},
+            ]
+        }
+        assert extract_nameservers(data) == ["ns1.example.com", "ns2.example.com"]
+
+    def test_empty_nameservers(self) -> None:
+        assert extract_nameservers({"nameservers": []}) == []
+        assert extract_nameservers({}) == []
+
+    def test_entries_without_ldh_name(self) -> None:
+        data: dict[str, object] = {
+            "nameservers": [
+                {"ldhName": "ns1.example.com"},
+                {"handle": "no-ldh-here"},
+                {"ldhName": "NS3.EXAMPLE.COM"},
+            ]
+        }
+        assert extract_nameservers(data) == ["ns1.example.com", "ns3.example.com"]
+
+
+class TestGetFullInfo:
+    """Tests for RDAPLookup.get_full_info()."""
+
+    def setup_method(self) -> None:
+        RDAPLookup._breaker = None
+        RDAPLookup._semaphore = None
+
+    def teardown_method(self) -> None:
+        RDAPLookup._breaker = None
+        RDAPLookup._semaphore = None
+
+    @pytest.mark.asyncio
+    async def test_success_all_fields(self) -> None:
+        config = ScoutConfig()
+        rdap = RDAPLookup(config)
+
+        mock_data: dict[str, object] = {
+            "entities": [
+                {
+                    "roles": ["registrant"],
+                    "vcardArray": [
+                        "vcard",
+                        [
+                            ["org", {}, "text", "Example Corp"],
+                            ["fn", {}, "text", "Jane Doe"],
+                            ["adr", {}, "text", ["", "", "", "", "", "", "US"]],
+                        ],
+                    ],
+                },
+                {
+                    "roles": ["registrar"],
+                    "vcardArray": ["vcard", [["fn", {}, "text", "GoDaddy"]]],
+                },
+            ],
+            "events": [
+                {"eventAction": "registration", "eventDate": "2005-05-01T00:00:00Z"},
+                {"eventAction": "expiration", "eventDate": "2025-05-01T00:00:00Z"},
+            ],
+            "nameservers": [{"ldhName": "NS1.GODADDY.COM"}],
+        }
+
+        mock_client = _make_httpx_mock(mock_data)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            result = await rdap.get_full_info("example.com")
+
+        assert result["org"] == "Example Corp"
+        assert result["name"] == "Jane Doe"
+        assert result["country"] == "US"
+        assert result["registrar"] == "GoDaddy"
+        assert result["created_date"] == "2005-05-01T00:00:00Z"
+        assert result["expiry_date"] == "2025-05-01T00:00:00Z"
+        assert result["nameservers"] == ["ns1.godaddy.com"]
+        assert result["raw"] is mock_data
+
+    @pytest.mark.asyncio
+    async def test_exception_returns_null_dict(self) -> None:
+        config = ScoutConfig()
+        rdap = RDAPLookup(config)
+
+        mock_client = _make_httpx_mock(status_code=500)
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            result = await rdap.get_full_info("fail.com")
+
+        assert result["org"] is None
+        assert result["name"] is None
+        assert result["country"] is None
+        assert result["registrar"] is None
+        assert result["created_date"] is None
+        assert result["expiry_date"] is None
+        assert result["nameservers"] == []

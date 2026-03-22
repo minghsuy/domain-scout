@@ -289,3 +289,95 @@ class RDAPLookup:
                 if isinstance(country, str):
                     return country
         return None
+
+    async def get_full_info(self, domain: str) -> dict[str, object]:
+        """Return a full RDAP info dict for a domain.
+
+        Keys: org, name, country, registrar, created_date, expiry_date,
+        nameservers (list[str]), raw (dict).  On any exception returns all
+        None values with an empty nameservers list.
+        """
+        try:
+            data = await self._query(domain)
+        except Exception as exc:
+            inc(SOURCE_ERRORS_TOTAL, source="rdap")
+            log.warning("rdap.lookup_failed", domain=domain, error=str(exc))
+            return {
+                "org": None,
+                "name": None,
+                "country": None,
+                "registrar": None,
+                "created_date": None,
+                "expiry_date": None,
+                "nameservers": [],
+                "raw": {},
+            }
+
+        created_date, expiry_date = extract_dates(data)
+        return {
+            "org": self._extract_org(data),
+            "name": self._extract_name(data),
+            "country": self._extract_country(data),
+            "registrar": extract_registrar(data),
+            "created_date": created_date,
+            "expiry_date": expiry_date,
+            "nameservers": extract_nameservers(data),
+            "raw": data,
+        }
+
+
+def extract_registrar(data: dict[str, object]) -> str | None:
+    """Extract registrar name from RDAP entities vcard."""
+    for entity in _safe_list(data.get("entities", [])):
+        if not isinstance(entity, dict):
+            continue
+        if "registrar" not in _safe_list(entity.get("roles", [])):
+            continue
+        raw_vcard = entity.get("vcardArray")
+        if not isinstance(raw_vcard, list) or len(raw_vcard) < 2:
+            continue
+        for entry in _safe_list(raw_vcard[1]):
+            if not isinstance(entry, list) or len(entry) < 4:
+                continue
+            if entry[0] == "fn":
+                val = entry[3]
+                if isinstance(val, str):
+                    s = val.strip()
+                    return s if s else None
+    return None
+
+
+def extract_dates(data: dict[str, object]) -> tuple[str | None, str | None]:
+    """Extract registration and expiry dates from RDAP events.
+
+    Returns (created_date, expiry_date); either may be None.
+    """
+    created_date: str | None = None
+    expiry_date: str | None = None
+    for event in _safe_list(data.get("events", [])):
+        if not isinstance(event, dict):
+            continue
+        action = event.get("eventAction")
+        date = event.get("eventDate")
+        if not isinstance(date, str):
+            continue
+        date = date.strip()
+        if not date:
+            continue
+        if action == "registration":
+            created_date = date
+        elif action == "expiration":
+            expiry_date = date
+    return created_date, expiry_date
+
+
+def extract_nameservers(data: dict[str, object]) -> list[str]:
+    """Extract nameserver ldhName hostnames, lowercased."""
+    result: list[str] = []
+    for ns in _safe_list(data.get("nameservers", [])):
+        if not isinstance(ns, dict):
+            continue
+        ldh = ns.get("ldhName")
+        if isinstance(ldh, str) and ldh.strip():
+            result.append(ldh.strip().lower())
+    return result
