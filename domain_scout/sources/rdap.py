@@ -295,7 +295,7 @@ class RDAPLookup:
 
         Keys: org, name, country, registrar, created_date, expiry_date,
         nameservers (list[str]), raw (dict).  On any exception returns all
-        None values with an empty nameservers list.
+        None values with an empty nameservers list and raw as {}.
         """
         try:
             data = await self._query(domain)
@@ -327,7 +327,11 @@ class RDAPLookup:
 
 
 def extract_registrar(data: dict[str, object]) -> str | None:
-    """Extract registrar name from RDAP entities vcard."""
+    """Extract registrar name from RDAP entities vcard.
+
+    Only searches top-level entities (no recursive walk into children).
+    Registrars are virtually always top-level in IANA-conformant responses.
+    """
     for entity in _safe_list(data.get("entities", [])):
         if not isinstance(entity, dict):
             continue

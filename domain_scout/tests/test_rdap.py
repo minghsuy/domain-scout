@@ -650,3 +650,4 @@ class TestGetFullInfo:
         assert result["created_date"] is None
         assert result["expiry_date"] is None
         assert result["nameservers"] == []
+        assert result["raw"] == {}
