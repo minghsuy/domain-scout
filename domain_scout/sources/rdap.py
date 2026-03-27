@@ -139,6 +139,7 @@ class RDAPLookup:
     # log a warning if their config differs.
     _breaker: _RDAPCircuitBreaker | None = None
     _semaphore: asyncio.Semaphore | None = None
+    _semaphore_loop_id: int | None = None
     _init_concurrency: int | None = None
 
     def __init__(self, config: ScoutConfig) -> None:
@@ -183,6 +184,21 @@ class RDAPLookup:
             "country": self._extract_country(data),
         }
 
+    @classmethod
+    def _ensure_semaphore(cls) -> asyncio.Semaphore:
+        """Ensure semaphore belongs to the current event loop.
+
+        When Scout.discover() calls asyncio.run() in a loop, each call
+        creates a new event loop. A Semaphore from a previous loop raises
+        "bound to a different event loop". Detect this and recreate.
+        """
+        loop_id = id(asyncio.get_running_loop())
+        if cls._semaphore is None or cls._semaphore_loop_id != loop_id:
+            concurrency = cls._init_concurrency or 5
+            cls._semaphore = asyncio.Semaphore(concurrency)
+            cls._semaphore_loop_id = loop_id
+        return cls._semaphore
+
     async def _query(self, domain: str) -> dict[str, object]:
         tld = domain.rsplit(".", 1)[-1].lower()
         if tld in RDAP_SKIP_TLDS:
@@ -190,8 +206,8 @@ class RDAPLookup:
             return {}
 
         breaker = RDAPLookup._breaker
-        semaphore = RDAPLookup._semaphore
-        assert breaker is not None and semaphore is not None  # set in __init__
+        semaphore = self._ensure_semaphore()
+        assert breaker is not None
 
         if not breaker.should_allow():
             log.warning("rdap.circuit_open_skip", domain=domain)
