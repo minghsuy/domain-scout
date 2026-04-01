@@ -268,14 +268,13 @@ class TestGleifScoring:
         # Simulate: querying GEICO, found domain with cert org "BNSF Railway Company"
         # BNSF is a sibling of GEICO under Berkshire Hathaway
         _, siblings = scout._expand_gleif_tree("Government Employees Insurance Company")
-        scout._current_sibling_names = siblings
 
         accum = _DomainAccum()
         accum.sources.add("ct_gleif_subsidiary")
         accum.cert_org_names.add("BNSF Railway Company")
         accum.resolves = True
 
-        score = scout._score_confidence(accum, "GEICO", [])
+        score = scout._score_confidence(accum, "GEICO", [], sibling_names=siblings)
         # Base 0.80 - 0.15 sibling penalty = 0.65
         assert score <= 0.70
         assert score >= 0.55

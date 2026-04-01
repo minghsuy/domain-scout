@@ -252,9 +252,6 @@ class Scout:
             except Exception:
                 log.warning("scout.gleif_load_failed", exc_info=True)
 
-        # Set per-discover; holds sibling names for confidence penalty
-        self._current_sibling_names: set[str] = set()
-
     def _expand_gleif_tree(self, company_name: str) -> tuple[list[str], set[str]]:
         """Expand corporate tree via GLEIF. Returns (subsidiary_names, sibling_names)."""
         if self._gleif_con is None:
@@ -389,11 +386,9 @@ class Scout:
         # Strategy D: subsidiary expansion
         # D1: GLEIF corporate tree (if available)
         gleif_sub_names: list[str] = []
-        self._current_sibling_names = set()
+        gleif_sibling_names: set[str] = set()
         if self._gleif_con is not None:
-            gleif_sub_names, self._current_sibling_names = self._expand_gleif_tree(
-                entity.company_name
-            )
+            gleif_sub_names, gleif_sibling_names = self._expand_gleif_tree(entity.company_name)
             for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]:
                 independent_tasks.append(
                     asyncio.create_task(
@@ -608,6 +603,7 @@ class Scout:
                 entity.company_name,
                 seeds,
                 domain=domain,
+                sibling_names=gleif_sibling_names,
             )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
@@ -990,6 +986,7 @@ class Scout:
         accum: _DomainAccum,
         company_name: str,
         seed_domains: list[str],
+        sibling_names: set[str] | None = None,
         domain: str = "",
     ) -> float:
         # Learned scorer path (opt-in via config)
@@ -1079,9 +1076,9 @@ class Scout:
 
         # Sibling penalty: reduce confidence for domains whose cert org
         # matches a GLEIF sibling entity (belongs to a different subsidiary)
-        if self._current_sibling_names and accum.cert_org_names:
+        if sibling_names and accum.cert_org_names:
             for cert_org in accum.cert_org_names:
-                if normalize_org_name(cert_org) in self._current_sibling_names:
+                if normalize_org_name(cert_org) in sibling_names:
                     score = max(0.0, score - 0.15)
                     break
 

@@ -211,6 +211,10 @@ def expand_corporate_tree(
             JOIN gleif_entity g ON g.lei = r.child_lei
             WHERE r.parent_lei = ?
               AND r.child_lei != ?
+              AND r.relationship_type IN (
+                  'IS_DIRECTLY_CONSOLIDATED_BY',
+                  'IS_ULTIMATELY_CONSOLIDATED_BY'
+              )
             ORDER BY g.legal_name
             """,
             [tree.parent.lei, entity.lei],
