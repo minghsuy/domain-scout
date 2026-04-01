@@ -2,7 +2,12 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING, Any
+
 import pytest
+
+if TYPE_CHECKING:
+    from pathlib import Path
 
 from domain_scout.config import ScoutConfig
 from domain_scout.scout import Scout, _DomainAccum, _filter_subsidiaries
@@ -31,9 +36,9 @@ CREATE INDEX idx_gleif_rel_parent ON gleif_relationship (parent_lei);
 """
 
 
-def _seed_berkshire(con: object) -> None:
+def _seed_berkshire(con: Any) -> None:
     """Insert a Berkshire Hathaway corporate tree for testing."""
-    con.execute(  # type: ignore[union-attr]
+    con.execute(
         "INSERT INTO gleif_entity VALUES "
         "('LEI_BRK', 'Berkshire Hathaway Inc.', ['BRK', 'Berkshire'], 'US'),"
         "('LEI_GEICO', 'Government Employees Insurance Company', ['GEICO'], 'US'),"
@@ -46,7 +51,7 @@ def _seed_berkshire(con: object) -> None:
         "('LEI_ALZ_SE', 'Allianz SE', [], 'DE'),"
         "('LEI_ALZ_SUB', 'Allianz Versicherungs-Aktiengesellschaft', [], 'DE')"
     )
-    con.execute(  # type: ignore[union-attr]
+    con.execute(
         "INSERT INTO gleif_relationship VALUES "
         "('LEI_GEICO', 'LEI_BRK', 'IS_DIRECTLY_CONSOLIDATED_BY', 'ACTIVE'),"
         "('LEI_GENRE', 'LEI_BRK', 'IS_DIRECTLY_CONSOLIDATED_BY', 'ACTIVE'),"
@@ -61,8 +66,8 @@ def _seed_berkshire(con: object) -> None:
 
 
 @pytest.fixture()
-def gleif_db(tmp_path):
-    """Create an in-memory DuckDB with GLEIF schema and Berkshire data."""
+def gleif_db(tmp_path: Path) -> str:
+    """Create a DuckDB with GLEIF schema and Berkshire data."""
     duckdb = pytest.importorskip("duckdb")
     db_path = str(tmp_path / "gleif_test.duckdb")
     con = duckdb.connect(db_path)
@@ -78,7 +83,7 @@ def gleif_db(tmp_path):
 
 
 @pytest.fixture()
-def gleif_con(gleif_db):
+def gleif_con(gleif_db: str) -> Any:
     """Open a read-only DuckDB connection to the GLEIF test database."""
     duckdb = pytest.importorskip("duckdb")
     con = duckdb.connect(gleif_db, read_only=True)
@@ -87,7 +92,7 @@ def gleif_con(gleif_db):
 
 
 class TestFindEntity:
-    def test_exact_match(self, gleif_con) -> None:
+    def test_exact_match(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import find_entity
 
         result = find_entity("Berkshire Hathaway Inc.", gleif_con)
@@ -95,27 +100,27 @@ class TestFindEntity:
         assert result.lei == "LEI_BRK"
         assert result.legal_name == "Berkshire Hathaway Inc."
 
-    def test_case_insensitive_match(self, gleif_con) -> None:
+    def test_case_insensitive_match(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import find_entity
 
         result = find_entity("berkshire hathaway inc.", gleif_con)
         assert result is not None
         assert result.lei == "LEI_BRK"
 
-    def test_prefix_match(self, gleif_con) -> None:
+    def test_prefix_match(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import find_entity
 
         result = find_entity("Berkshire Hathaway", gleif_con)
         assert result is not None
         assert result.lei == "LEI_BRK"
 
-    def test_no_match(self, gleif_con) -> None:
+    def test_no_match(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import find_entity
 
         result = find_entity("Totally Nonexistent Company ZZZZZ", gleif_con)
         assert result is None
 
-    def test_icase_prefers_entity_with_subs(self, gleif_con) -> None:
+    def test_icase_prefers_entity_with_subs(self, gleif_con: Any) -> None:
         """Case-insensitive match skips entities with 0 subsidiaries in favor
         of prefix match that finds the parent entity."""
         from domain_scout.resolve.gleif_lookup import find_entity
@@ -128,7 +133,7 @@ class TestFindEntity:
 
 
 class TestExpandCorporateTree:
-    def test_tree_expansion(self, gleif_con) -> None:
+    def test_tree_expansion(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import expand_corporate_tree, find_entity
 
         entity = find_entity("Berkshire Hathaway Inc.", gleif_con)
@@ -144,7 +149,7 @@ class TestExpandCorporateTree:
         assert "Berkshire Hathaway Specialty Insurance Company" in sub_names
         assert tree.siblings == []
 
-    def test_subsidiary_sees_parent_and_siblings(self, gleif_con) -> None:
+    def test_subsidiary_sees_parent_and_siblings(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import expand_corporate_tree, find_entity
 
         entity = find_entity("Government Employees Insurance Company", gleif_con)
@@ -159,16 +164,17 @@ class TestExpandCorporateTree:
         assert "LEI_BHSI" in sibling_leis
         assert "LEI_GEICO" not in sibling_leis
 
-    def test_all_names_deduped(self, gleif_con) -> None:
+    def test_all_names_deduped(self, gleif_con: Any) -> None:
         from domain_scout.resolve.gleif_lookup import expand_corporate_tree, find_entity
 
         entity = find_entity("Berkshire Hathaway Inc.", gleif_con)
+        assert entity is not None
         tree = expand_corporate_tree(entity, gleif_con)
         names = tree.all_names
         lower_names = [n.lower() for n in names]
         assert len(lower_names) == len(set(lower_names))
 
-    def test_ultimate_consolidation_includes_deep_subs(self, gleif_con) -> None:
+    def test_ultimate_consolidation_includes_deep_subs(self, gleif_con: Any) -> None:
         """Multi-hop subsidiaries appear via IS_ULTIMATELY_CONSOLIDATED_BY."""
         from domain_scout.resolve.gleif_lookup import expand_corporate_tree, find_entity
 
@@ -230,7 +236,7 @@ class TestScoutGleifExpansion:
         assert subs == []
         assert siblings == set()
 
-    def test_csv_fallback_when_no_gleif(self, tmp_path) -> None:
+    def test_csv_fallback_when_no_gleif(self, tmp_path: Path) -> None:
         """When gleif_db_path is None, CSV subsidiary expansion is used."""
         csv_path = tmp_path / "subs.csv"
         csv_path.write_text(
