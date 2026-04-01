@@ -770,7 +770,13 @@ class Scout:
                 continue
             accum = _DomainAccum()
             accum.sources.add(source_tag)
-            desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+            if source_tag in ("ct_subsidiary_match", "ct_gleif_subsidiary"):
+                desc = (
+                    f"Cert org '{cert_org}' matches subsidiary "
+                    f"'{org_name}' (score={similarity:.2f})"
+                )
+            else:
+                desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
             accum.evidence.append(
                 EvidenceRecord(
                     source_type=source_tag,
@@ -1147,8 +1153,19 @@ class Scout:
                 rdap_org = await self._rdap.get_registrant_org(domain)
                 if not rdap_org:
                     return
-                sim = org_name_similarity(rdap_org, company_name)
-                if sim < self.config.org_match_threshold:
+
+                # Check against query entity first, then any cert org names
+                # (covers GLEIF subsidiaries whose registrant matches the
+                # subsidiary name rather than the parent query entity).
+                best_sim = org_name_similarity(rdap_org, company_name)
+                matched_name = company_name
+                for cert_org in accum.cert_org_names:
+                    s = org_name_similarity(rdap_org, cert_org)
+                    if s > best_sim:
+                        best_sim = s
+                        matched_name = cert_org
+
+                if best_sim < self.config.org_match_threshold:
                     return
 
                 accum.sources.add("rdap_registrant_match")
@@ -1157,10 +1174,11 @@ class Scout:
                     EvidenceRecord(
                         source_type="rdap_registrant_match",
                         description=(
-                            f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
+                            f"RDAP registrant '{rdap_org}' matches "
+                            f"'{matched_name}' (score={best_sim:.2f})"
                         ),
                         rdap_org=rdap_org,
-                        similarity_score=round(sim, 4),
+                        similarity_score=round(best_sim, 4),
                     )
                 )
             except Exception as exc:
@@ -1324,14 +1342,27 @@ class Scout:
 
             contributing_seeds = sorted(_extract_contributing_seeds(accum.sources))
 
-            # Deduplicate evidence records
-            seen: set[tuple[str, str | None, int | None]] = set()
+            # Deduplicate evidence records: for cert-org evidence, group by
+            # (source_type, cert_org) and keep the best similarity score.
+            # For other evidence types, dedup by (source_type, seed_domain).
             deduped: list[EvidenceRecord] = []
+            seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
+            seen_other: set[tuple[str, str | None]] = set()
             for ev in accum.evidence:
-                key = (ev.source_type, ev.seed_domain, ev.cert_id)
-                if key not in seen:
-                    seen.add(key)
-                    deduped.append(ev)
+                if ev.cert_org is not None:
+                    key = (ev.source_type, ev.cert_org)
+                    existing = seen_org.get(key)
+                    if existing is None or (
+                        ev.similarity_score is not None
+                        and (existing.similarity_score or 0) < ev.similarity_score
+                    ):
+                        seen_org[key] = ev
+                else:
+                    key_other = (ev.source_type, ev.seed_domain)
+                    if key_other not in seen_other:
+                        seen_other.add(key_other)
+                        deduped.append(ev)
+            deduped.extend(seen_org.values())
 
             domains.append(
                 DiscoveredDomain(
