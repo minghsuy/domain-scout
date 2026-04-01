@@ -227,6 +227,7 @@ class TestSubsidiaryExpansion:
             s = Scout.__new__(Scout)
             s.config = ScoutConfig()
             s._subsidiaries = {}
+            s._gleif_con = None
             for k, v in kwargs.items():
                 setattr(s, k, v)
             return s
