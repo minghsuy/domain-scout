@@ -150,6 +150,39 @@ def scout(  # noqa: PLR0913
         _print_table(result)
 
 
+@app.command("gleif-ingest")
+def gleif_ingest(
+    output: Annotated[
+        str | None,
+        typer.Option("--output", "-o", help="Output DuckDB path"),
+    ] = None,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
+) -> None:
+    """Download GLEIF corporate hierarchy data and build a local DuckDB file.
+
+    Downloads ~450MB of entity and relationship data from gleif.org,
+    filters to active records, and creates an indexed DuckDB file.
+    The resulting file can be used with --gleif-db for subsidiary discovery.
+
+    Requires: pip install domain-scout[gleif]
+    """
+    configure_logging(level=logging.DEBUG if verbose else logging.INFO)
+
+    try:
+        import duckdb  # noqa: F401
+    except ImportError:
+        typer.echo("Error: duckdb not installed. Run: pip install domain-scout[gleif]", err=True)
+        raise typer.Exit(1) from None
+
+    from domain_scout.resolve.gleif_ingest import DEFAULT_GLEIF_DB, ingest
+
+    out_path = Path(output) if output else DEFAULT_GLEIF_DB
+    typer.echo("Downloading GLEIF golden copy from gleif.org...")
+    result = ingest(output=out_path)
+    typer.echo(f"\nDone. GLEIF database: {result}")
+    typer.echo(f"Use with: domain-scout scout --name 'Company' --gleif-db {result}")
+
+
 @app.command()
 def serve(  # noqa: PLR0913
     host: Annotated[str, typer.Option("--host", help="Bind address")] = "127.0.0.1",
