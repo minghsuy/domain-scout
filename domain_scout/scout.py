@@ -23,6 +23,8 @@ from domain_scout._metrics import (
 )
 
 if TYPE_CHECKING:
+    import duckdb
+
     from domain_scout.cache import CTSource, DuckDBCache, RDAPSource
 
 from domain_scout.config import ScoutConfig
@@ -238,6 +240,53 @@ class Scout:
             except Exception:
                 log.warning("scout.subsidiaries_load_failed", exc_info=True)
 
+        self._gleif_con: duckdb.DuckDBPyConnection | None = None
+        if self.config.gleif_db_path:
+            try:
+                import duckdb
+
+                self._gleif_con = duckdb.connect(self.config.gleif_db_path, read_only=True)
+                log.info("scout.gleif_loaded", path=self.config.gleif_db_path)
+            except ImportError:
+                log.warning("scout.gleif_unavailable", reason="duckdb not installed")
+            except Exception:
+                log.warning("scout.gleif_load_failed", exc_info=True)
+
+        # Set per-discover; holds sibling names for confidence penalty
+        self._current_sibling_names: set[str] = set()
+
+    def _expand_gleif_tree(self, company_name: str) -> tuple[list[str], set[str]]:
+        """Expand corporate tree via GLEIF. Returns (subsidiary_names, sibling_names)."""
+        if self._gleif_con is None:
+            return [], set()
+
+        from domain_scout.resolve.gleif_lookup import expand_corporate_tree, find_entity
+
+        entity = find_entity(company_name, self._gleif_con)
+        if entity is None:
+            return [], set()
+
+        tree = expand_corporate_tree(entity, self._gleif_con)
+
+        # Filter subsidiaries for brand distinctness
+        normalized_parent = normalize_org_name(company_name)
+        filtered = _filter_subsidiaries(
+            normalized_parent, [s.legal_name for s in tree.subsidiaries]
+        )
+
+        sibling_names = {normalize_org_name(s.legal_name) for s in tree.siblings}
+
+        log.info(
+            "scout.gleif_expansion",
+            query=company_name,
+            gleif_match=entity.legal_name,
+            raw_subsidiaries=len(tree.subsidiaries),
+            filtered_subsidiaries=len(filtered),
+            siblings=len(tree.siblings),
+            parent=tree.parent.legal_name if tree.parent else None,
+        )
+        return filtered, sibling_names
+
     def _match_subsidiaries(self, company_name: str) -> list[str]:
         """Find subsidiary names for a company using the loaded subsidiary map."""
         normalized = normalize_org_name(company_name)
@@ -337,8 +386,28 @@ class Scout:
             )
         )
 
-        # Strategy D: subsidiary expansion (if subsidiary data loaded)
-        if self._subsidiaries:
+        # Strategy D: subsidiary expansion
+        # D1: GLEIF corporate tree (if available)
+        gleif_sub_names: list[str] = []
+        self._current_sibling_names = set()
+        if self._gleif_con is not None:
+            gleif_sub_names, self._current_sibling_names = self._expand_gleif_tree(
+                entity.company_name
+            )
+            for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]:
+                independent_tasks.append(
+                    asyncio.create_task(
+                        self._strategy_org_search(
+                            sub_name,
+                            errors,
+                            source_tag="ct_gleif_subsidiary",
+                        ),
+                        name=f"gleif_sub:{sub_name[:30]}",
+                    )
+                )
+
+        # D2: CSV fallback (if CSV loaded and GLEIF didn't find anything)
+        if self._subsidiaries and not gleif_sub_names:
             sub_names = self._match_subsidiaries(entity.company_name)
             for sub_name in sub_names[: self.config.subsidiary_max_queries]:
                 independent_tasks.append(
@@ -967,7 +1036,7 @@ class Scout:
             score = max(score, 0.90)
         if "ct_org_match" in accum.sources:
             score = max(score, 0.85)
-        if "ct_subsidiary_match" in accum.sources:
+        if "ct_subsidiary_match" in accum.sources or "ct_gleif_subsidiary" in accum.sources:
             score = max(score, 0.80)
         if any(s.startswith("ct_san_expansion:") for s in accum.sources):
             score = max(score, 0.80)
@@ -1007,6 +1076,14 @@ class Scout:
             adjustment = -0.05  # Level 0: no resolution
 
         score = min(1.0, max(0.0, score + adjustment))
+
+        # Sibling penalty: reduce confidence for domains whose cert org
+        # matches a GLEIF sibling entity (belongs to a different subsidiary)
+        if self._current_sibling_names and accum.cert_org_names:
+            for cert_org in accum.cert_org_names:
+                if normalize_org_name(cert_org) in self._current_sibling_names:
+                    score = max(0.0, score - 0.15)
+                    break
 
         return round(score, 2)
 

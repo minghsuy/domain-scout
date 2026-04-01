@@ -65,6 +65,10 @@ def scout(  # noqa: PLR0913
         str | None,
         typer.Option("--subsidiaries-path", help="Path to subsidiaries CSV"),
     ] = None,
+    gleif_db: Annotated[
+        str | None,
+        typer.Option("--gleif-db", help="Path to GLEIF DuckDB file"),
+    ] = None,
     api_key: Annotated[
         str | None, typer.Option("--api-key", help="CTScout API key (or CTSCOUT_API_KEY)")
     ] = None,
@@ -103,9 +107,14 @@ def scout(  # noqa: PLR0913
     if subsidiaries_path:
         overrides["subsidiaries_path"] = subsidiaries_path
 
-    # CTScout remote API
+    # GLEIF corporate tree
     import os
 
+    resolved_gleif = gleif_db or os.environ.get("DOMAIN_SCOUT_GLEIF_DB")
+    if resolved_gleif:
+        overrides["gleif_db_path"] = resolved_gleif
+
+    # CTScout remote API
     resolved_key = api_key or os.environ.get("CTSCOUT_API_KEY")
     if resolved_key:
         overrides["ctscout_api_key"] = resolved_key
