@@ -1187,12 +1187,20 @@ class Scout:
                 if not rdap_org:
                     return
 
-                # Check against query entity first, then any cert org names
-                # (covers GLEIF subsidiaries whose registrant matches the
-                # subsidiary name rather than the parent query entity).
+                # Check against query entity first, then cert org names from
+                # org-match strategies only (not SAN expansion, which could
+                # introduce transitive attribution from shared certs).
                 best_sim = org_name_similarity(rdap_org, company_name)
                 matched_name = company_name
-                for cert_org in accum.cert_org_names:
+                _ORG_MATCH_TAGS = frozenset(
+                    {"ct_org_match", "ct_subsidiary_match", "ct_gleif_subsidiary"}
+                )
+                org_matched_orgs = {
+                    ev.cert_org
+                    for ev in accum.evidence
+                    if ev.source_type in _ORG_MATCH_TAGS and ev.cert_org
+                }
+                for cert_org in org_matched_orgs:
                     s = org_name_similarity(rdap_org, cert_org)
                     if s > best_sim:
                         best_sim = s
@@ -1398,6 +1406,7 @@ class Scout:
                         seen_other.add(key_other)
                         deduped.append(ev)
             deduped.extend(seen_org.values())
+            deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
 
             domains.append(
                 DiscoveredDomain(
