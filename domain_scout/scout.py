@@ -52,6 +52,60 @@ from domain_scout.sources.rdap import RDAPLookup
 log = structlog.get_logger()
 _TOOL_VERSION = _pkg_version("domain-scout-ct")
 
+# Signal classification for evidence transparency.
+# Maps source_type prefixes to (signal_type, weight).
+_SIGNAL_MAP: dict[str, tuple[str, float]] = {
+    "ct_org_match": ("cert_org_match", 0.80),
+    "ct_subsidiary_match": ("cert_org_subsidiary", 0.50),
+    "ct_gleif_subsidiary": ("cert_org_subsidiary", 0.50),
+    "ct_san_expansion": ("san_co_occurrence", 0.40),
+    "ct_seed_subdomain": ("seed_subdomain", 0.30),
+    "ct_seed_related": ("seed_related", 0.15),
+    "dns_guess": ("dns_guess", 0.20),
+    "cross_seed_verified": ("cross_seed", 0.90),
+    "rdap_registrant_match": ("rdap_registrant", 0.45),
+    "shared_infra": ("shared_infrastructure", 0.10),
+    "geodns": ("geodns_rescue", 0.10),
+}
+
+
+# Source tags that represent org-name-matched evidence (not SAN expansion).
+_ORG_MATCH_TAGS = frozenset({"ct_org_match", "ct_subsidiary_match", "ct_gleif_subsidiary"})
+
+
+def _signal_fields(source_tag: str) -> dict[str, Any]:
+    """Return signal_type and signal_weight for a source tag."""
+    sig = _SIGNAL_MAP.get(source_tag.split(":")[0])
+    if sig is None:
+        return {}
+    return {"signal_type": sig[0], "signal_weight": sig[1]}
+
+
+def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
+    """Deduplicate evidence: group cert-org records by (source_type, cert_org),
+    keep best similarity; dedup others by (source_type, seed_domain).
+    Returns stable sorted output for deterministic serialization."""
+    deduped: list[EvidenceRecord] = []
+    seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
+    seen_other: set[tuple[str, str | None]] = set()
+    for ev in evidence:
+        if ev.cert_org is not None:
+            key = (ev.source_type, ev.cert_org)
+            existing = seen_org.get(key)
+            if existing is None or (
+                ev.similarity_score is not None
+                and (existing.similarity_score or 0) < ev.similarity_score
+            ):
+                seen_org[key] = ev
+        else:
+            key_other = (ev.source_type, ev.seed_domain)
+            if key_other not in seen_other:
+                seen_other.add(key_other)
+                deduped.append(ev)
+    deduped.extend(seen_org.values())
+    deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
+    return deduped
+
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
     """Load parent→subsidiary mappings from a corporate subsidiaries CSV.
@@ -568,6 +622,7 @@ class Scout:
                             EvidenceRecord(
                                 source_type="geodns",
                                 description="Resolved via Shodan GeoDNS (global)",
+                                **_signal_fields("geodns"),
                             )
                         )
                         log.info("scout.geodns_rescued", domain=domain)
@@ -770,7 +825,13 @@ class Scout:
                 continue
             accum = _DomainAccum()
             accum.sources.add(source_tag)
-            desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
+            if source_tag in ("ct_subsidiary_match", "ct_gleif_subsidiary"):
+                desc = (
+                    f"Cert org '{cert_org}' matches subsidiary "
+                    f"'{org_name}' (score={similarity:.2f})"
+                )
+            else:
+                desc = f"Cert org '{cert_org}' matches target (score={similarity:.2f})"
             accum.evidence.append(
                 EvidenceRecord(
                     source_type=source_tag,
@@ -778,6 +839,7 @@ class Scout:
                     cert_id=_int_or_none(rec.get("cert_id")),
                     cert_org=cert_org,
                     similarity_score=round(similarity, 4),
+                    **_signal_fields(source_tag),
                 )
             )
             accum.cert_org_names.add(cert_org)
@@ -864,6 +926,7 @@ class Scout:
                             source_type="ct_seed_subdomain",
                             description=f"Subdomain of seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_seed_subdomain"),
                         )
                     )
                 elif has_seed_san:
@@ -876,6 +939,7 @@ class Scout:
                             source_type="ct_san_expansion",
                             description=f"Found on same cert as seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_san_expansion"),
                         )
                     )
                 else:
@@ -885,6 +949,7 @@ class Scout:
                             source_type="ct_seed_related",
                             description=f"Found in CT search for {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_seed_related"),
                         )
                     )
 
@@ -901,6 +966,7 @@ class Scout:
                                 cert_id=_int_or_none(rec.get("cert_id")),
                                 cert_org=cert_org,
                                 similarity_score=round(sim, 4),
+                                **_signal_fields("ct_org_match"),
                             )
                         )
 
@@ -947,6 +1013,7 @@ class Scout:
                 EvidenceRecord(
                     source_type="dns_guess",
                     description="Guessed from company name, resolves in DNS",
+                    **_signal_fields("dns_guess"),
                 )
             )
             accum.resolves = True
@@ -976,6 +1043,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="cross_seed_verified",
                         description=f"Cross-verified: found from seeds {seeds_str}",
+                        **_signal_fields("cross_seed_verified"),
                     )
                 )
 
@@ -1106,6 +1174,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="shared_infra",
                         description=f"Shares infrastructure with {reference}",
+                        **_signal_fields("shared_infra"),
                     )
                 )
                 # Cap so infra boost can't exceed the +0.10 total boost limit.
@@ -1147,8 +1216,24 @@ class Scout:
                 rdap_org = await self._rdap.get_registrant_org(domain)
                 if not rdap_org:
                     return
-                sim = org_name_similarity(rdap_org, company_name)
-                if sim < self.config.org_match_threshold:
+
+                # Check against query entity first, then cert org names from
+                # org-match strategies only (not SAN expansion, which could
+                # introduce transitive attribution from shared certs).
+                best_sim = org_name_similarity(rdap_org, company_name)
+                matched_name = company_name
+                org_matched_orgs = {
+                    ev.cert_org
+                    for ev in accum.evidence
+                    if ev.source_type in _ORG_MATCH_TAGS and ev.cert_org
+                }
+                for cert_org in org_matched_orgs:
+                    s = org_name_similarity(rdap_org, cert_org)
+                    if s > best_sim:
+                        best_sim = s
+                        matched_name = cert_org
+
+                if best_sim < self.config.org_match_threshold:
                     return
 
                 accum.sources.add("rdap_registrant_match")
@@ -1157,10 +1242,12 @@ class Scout:
                     EvidenceRecord(
                         source_type="rdap_registrant_match",
                         description=(
-                            f"RDAP registrant '{rdap_org}' matches target (score={sim:.2f})"
+                            f"RDAP registrant '{rdap_org}' matches "
+                            f"'{matched_name}' (score={best_sim:.2f})"
                         ),
                         rdap_org=rdap_org,
-                        similarity_score=round(sim, 4),
+                        similarity_score=round(best_sim, 4),
+                        **_signal_fields("rdap_registrant_match"),
                     )
                 )
             except Exception as exc:
@@ -1291,6 +1378,7 @@ class Scout:
                             source_type=source_tag,
                             description=sig_desc.get(sig.signal_type, _fallback)(sig),
                             seed_domain=best_match.seed_domain,
+                            **_signal_fields(source_tag),
                         )
                     )
 
@@ -1324,14 +1412,7 @@ class Scout:
 
             contributing_seeds = sorted(_extract_contributing_seeds(accum.sources))
 
-            # Deduplicate evidence records
-            seen: set[tuple[str, str | None, int | None]] = set()
-            deduped: list[EvidenceRecord] = []
-            for ev in accum.evidence:
-                key = (ev.source_type, ev.seed_domain, ev.cert_id)
-                if key not in seen:
-                    seen.add(key)
-                    deduped.append(ev)
+            deduped = _dedup_evidence(accum.evidence)
 
             domains.append(
                 DiscoveredDomain(

@@ -26,6 +26,8 @@ class EvidenceRecord(BaseModel):
     cert_org: str | None = None
     similarity_score: float | None = None
     rdap_org: str | None = None
+    signal_type: str | None = None
+    signal_weight: float | None = None
 
 
 class DiscoveredDomain(BaseModel):

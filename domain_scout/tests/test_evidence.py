@@ -127,6 +127,95 @@ class TestEvidenceRecord:
 # --- Config.to_dict ---
 
 
+# --- Signal metadata ---
+
+
+class TestSignalFields:
+    def test_known_source_tag_populates_fields(self) -> None:
+        from domain_scout.scout import _signal_fields
+
+        result = _signal_fields("ct_org_match")
+        assert result["signal_type"] == "cert_org_match"
+        assert result["signal_weight"] == 0.80
+
+    def test_subsidiary_source_tag(self) -> None:
+        from domain_scout.scout import _signal_fields
+
+        result = _signal_fields("ct_gleif_subsidiary")
+        assert result["signal_type"] == "cert_org_subsidiary"
+        assert result["signal_weight"] == 0.50
+
+    def test_unknown_source_tag_returns_empty(self) -> None:
+        from domain_scout.scout import _signal_fields
+
+        result = _signal_fields("fp:mx_tenant")
+        assert result == {}
+
+    def test_colon_prefixed_tag_splits_correctly(self) -> None:
+        from domain_scout.scout import _signal_fields
+
+        # "ct_san_expansion:seed.com" should match "ct_san_expansion"
+        result = _signal_fields("ct_san_expansion:example.com")
+        assert result["signal_type"] == "san_co_occurrence"
+
+    def test_evidence_record_accepts_signal_fields(self) -> None:
+        """Signal fields unpack into EvidenceRecord without error."""
+        from domain_scout.scout import _signal_fields
+
+        ev = EvidenceRecord(
+            source_type="ct_org_match",
+            description="test",
+            **_signal_fields("ct_org_match"),
+        )
+        assert ev.signal_type == "cert_org_match"
+        assert ev.signal_weight == 0.80
+
+    def test_evidence_record_without_signal_fields(self) -> None:
+        """Empty signal fields leave signal_type/weight as None."""
+        from domain_scout.scout import _signal_fields
+
+        ev = EvidenceRecord(
+            source_type="fp:mx_tenant",
+            description="test",
+            **_signal_fields("fp:mx_tenant"),
+        )
+        assert ev.signal_type is None
+        assert ev.signal_weight is None
+
+
+# --- Evidence dedup ---
+
+
+class TestEvidenceDedup:
+    def test_cert_org_evidence_deduped_by_org(self) -> None:
+        """Multiple certs with same org collapse to one evidence record."""
+        from domain_scout.scout import _dedup_evidence
+
+        evidence = [
+            EvidenceRecord(
+                source_type="ct_org_match",
+                description="Cert org 'Acme Inc' matches target (score=0.95)",
+                cert_id=i,
+                cert_org="Acme Inc",
+                similarity_score=0.95,
+            )
+            for i in range(10)
+        ]
+        evidence.append(
+            EvidenceRecord(
+                source_type="rdap_registrant_match",
+                description="RDAP registrant 'Acme' matches target",
+                rdap_org="Acme",
+                similarity_score=0.90,
+            )
+        )
+
+        # 10 cert records with same (source_type, cert_org) → 1
+        # 1 rdap record → 1
+        deduped = _dedup_evidence(evidence)
+        assert len(deduped) == 2
+
+
 class TestConfigToDict:
     def test_to_dict_has_all_fields(self) -> None:
         cfg = ScoutConfig()
