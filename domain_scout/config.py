@@ -99,6 +99,10 @@ class ScoutConfig:
     subsidiaries_path: str | None = None
     subsidiary_max_queries: int = 10
 
+    # --- GLEIF corporate tree ---
+    gleif_db_path: str | None = None
+    gleif_max_subsidiaries: int = 5
+
     # --- CTScout remote API ---
     ctscout_api_key: str | None = None
     ctscout_api_url: str = "https://ctscout.dev"

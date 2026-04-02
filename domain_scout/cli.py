@@ -65,6 +65,10 @@ def scout(  # noqa: PLR0913
         str | None,
         typer.Option("--subsidiaries-path", help="Path to subsidiaries CSV"),
     ] = None,
+    gleif_db: Annotated[
+        str | None,
+        typer.Option("--gleif-db", help="Path to GLEIF DuckDB file"),
+    ] = None,
     api_key: Annotated[
         str | None, typer.Option("--api-key", help="CTScout API key (or CTSCOUT_API_KEY)")
     ] = None,
@@ -103,9 +107,14 @@ def scout(  # noqa: PLR0913
     if subsidiaries_path:
         overrides["subsidiaries_path"] = subsidiaries_path
 
-    # CTScout remote API
+    # GLEIF corporate tree
     import os
 
+    resolved_gleif = gleif_db or os.environ.get("DOMAIN_SCOUT_GLEIF_DB")
+    if resolved_gleif:
+        overrides["gleif_db_path"] = resolved_gleif
+
+    # CTScout remote API
     resolved_key = api_key or os.environ.get("CTSCOUT_API_KEY")
     if resolved_key:
         overrides["ctscout_api_key"] = resolved_key
@@ -139,6 +148,39 @@ def scout(  # noqa: PLR0913
         typer.echo(result.model_dump_json(indent=2))
     else:
         _print_table(result)
+
+
+@app.command("gleif-ingest")
+def gleif_ingest(
+    output: Annotated[
+        str | None,
+        typer.Option("--output", "-o", help="Output DuckDB path"),
+    ] = None,
+    verbose: Annotated[bool, typer.Option("--verbose", "-v", help="Verbose logging")] = False,
+) -> None:
+    """Download GLEIF corporate hierarchy data and build a local DuckDB file.
+
+    Downloads ~450MB of entity and relationship data from gleif.org,
+    filters to active records, and creates an indexed DuckDB file.
+    The resulting file can be used with --gleif-db for subsidiary discovery.
+
+    Requires: pip install domain-scout[gleif]
+    """
+    configure_logging(level=logging.DEBUG if verbose else logging.INFO)
+
+    try:
+        import duckdb  # noqa: F401
+    except ImportError:
+        typer.echo("Error: duckdb not installed. Run: pip install domain-scout[gleif]", err=True)
+        raise typer.Exit(1) from None
+
+    from domain_scout.resolve.gleif_ingest import DEFAULT_GLEIF_DB, ingest
+
+    out_path = Path(output) if output else DEFAULT_GLEIF_DB
+    typer.echo("Downloading GLEIF golden copy from gleif.org...")
+    result = ingest(output=out_path)
+    typer.echo(f"\nDone. GLEIF database: {result}")
+    typer.echo(f"Use with: domain-scout scout --name 'Company' --gleif-db {result}")
 
 
 @app.command()
