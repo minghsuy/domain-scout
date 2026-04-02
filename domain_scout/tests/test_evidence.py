@@ -189,20 +189,19 @@ class TestSignalFields:
 class TestEvidenceDedup:
     def test_cert_org_evidence_deduped_by_org(self) -> None:
         """Multiple certs with same org collapse to one evidence record."""
-        from domain_scout.scout import _DomainAccum
+        from domain_scout.scout import _dedup_evidence
 
-        accum = _DomainAccum()
-        for i in range(10):
-            accum.evidence.append(
-                EvidenceRecord(
-                    source_type="ct_org_match",
-                    description="Cert org 'Acme Inc' matches target (score=0.95)",
-                    cert_id=i,
-                    cert_org="Acme Inc",
-                    similarity_score=0.95,
-                )
+        evidence = [
+            EvidenceRecord(
+                source_type="ct_org_match",
+                description="Cert org 'Acme Inc' matches target (score=0.95)",
+                cert_id=i,
+                cert_org="Acme Inc",
+                similarity_score=0.95,
             )
-        accum.evidence.append(
+            for i in range(10)
+        ]
+        evidence.append(
             EvidenceRecord(
                 source_type="rdap_registrant_match",
                 description="RDAP registrant 'Acme' matches target",
@@ -211,31 +210,10 @@ class TestEvidenceDedup:
             )
         )
 
-        # Can't call _build_output directly (needs full Scout), but the dedup
-        # logic is inline. Test by checking the evidence list structure.
         # 10 cert records with same (source_type, cert_org) → 1
         # 1 rdap record → 1
-        # Total should be 2
-        seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
-        deduped: list[EvidenceRecord] = []
-        seen_other: set[tuple[str, str | None]] = set()
-        for ev in accum.evidence:
-            if ev.cert_org is not None:
-                key = (ev.source_type, ev.cert_org)
-                existing = seen_org.get(key)
-                if existing is None or (
-                    ev.similarity_score is not None
-                    and (existing.similarity_score or 0) < ev.similarity_score
-                ):
-                    seen_org[key] = ev
-            else:
-                key_other = (ev.source_type, ev.seed_domain)
-                if key_other not in seen_other:
-                    seen_other.add(key_other)
-                    deduped.append(ev)
-        deduped.extend(seen_org.values())
-
-        assert len(deduped) == 2  # 1 cert-org + 1 rdap
+        deduped = _dedup_evidence(evidence)
+        assert len(deduped) == 2
 
 
 class TestConfigToDict:

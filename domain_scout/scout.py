@@ -69,12 +69,42 @@ _SIGNAL_MAP: dict[str, tuple[str, float]] = {
 }
 
 
+# Source tags that represent org-name-matched evidence (not SAN expansion).
+_ORG_MATCH_TAGS = frozenset({"ct_org_match", "ct_subsidiary_match", "ct_gleif_subsidiary"})
+
+
 def _signal_fields(source_tag: str) -> dict[str, Any]:
     """Return signal_type and signal_weight for a source tag."""
     sig = _SIGNAL_MAP.get(source_tag.split(":")[0])
     if sig is None:
         return {}
     return {"signal_type": sig[0], "signal_weight": sig[1]}
+
+
+def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
+    """Deduplicate evidence: group cert-org records by (source_type, cert_org),
+    keep best similarity; dedup others by (source_type, seed_domain).
+    Returns stable sorted output for deterministic serialization."""
+    deduped: list[EvidenceRecord] = []
+    seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
+    seen_other: set[tuple[str, str | None]] = set()
+    for ev in evidence:
+        if ev.cert_org is not None:
+            key = (ev.source_type, ev.cert_org)
+            existing = seen_org.get(key)
+            if existing is None or (
+                ev.similarity_score is not None
+                and (existing.similarity_score or 0) < ev.similarity_score
+            ):
+                seen_org[key] = ev
+        else:
+            key_other = (ev.source_type, ev.seed_domain)
+            if key_other not in seen_other:
+                seen_other.add(key_other)
+                deduped.append(ev)
+    deduped.extend(seen_org.values())
+    deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
+    return deduped
 
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
@@ -1192,9 +1222,6 @@ class Scout:
                 # introduce transitive attribution from shared certs).
                 best_sim = org_name_similarity(rdap_org, company_name)
                 matched_name = company_name
-                _ORG_MATCH_TAGS = frozenset(
-                    {"ct_org_match", "ct_subsidiary_match", "ct_gleif_subsidiary"}
-                )
                 org_matched_orgs = {
                     ev.cert_org
                     for ev in accum.evidence
@@ -1385,28 +1412,7 @@ class Scout:
 
             contributing_seeds = sorted(_extract_contributing_seeds(accum.sources))
 
-            # Deduplicate evidence records: for cert-org evidence, group by
-            # (source_type, cert_org) and keep the best similarity score.
-            # For other evidence types, dedup by (source_type, seed_domain).
-            deduped: list[EvidenceRecord] = []
-            seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
-            seen_other: set[tuple[str, str | None]] = set()
-            for ev in accum.evidence:
-                if ev.cert_org is not None:
-                    key = (ev.source_type, ev.cert_org)
-                    existing = seen_org.get(key)
-                    if existing is None or (
-                        ev.similarity_score is not None
-                        and (existing.similarity_score or 0) < ev.similarity_score
-                    ):
-                        seen_org[key] = ev
-                else:
-                    key_other = (ev.source_type, ev.seed_domain)
-                    if key_other not in seen_other:
-                        seen_other.add(key_other)
-                        deduped.append(ev)
-            deduped.extend(seen_org.values())
-            deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
+            deduped = _dedup_evidence(accum.evidence)
 
             domains.append(
                 DiscoveredDomain(
