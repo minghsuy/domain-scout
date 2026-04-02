@@ -144,8 +144,9 @@ class RDAPLookup:
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
-        if RDAPLookup._semaphore is None:
-            RDAPLookup._semaphore = asyncio.Semaphore(config.max_rdap_concurrent)
+        # Store concurrency for _ensure_semaphore (semaphore created lazily
+        # in the correct event loop, not here).
+        if RDAPLookup._init_concurrency is None:
             RDAPLookup._init_concurrency = config.max_rdap_concurrent
         elif RDAPLookup._init_concurrency != config.max_rdap_concurrent:
             log.warning(

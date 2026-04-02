@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import asyncio
 from typing import Any
 from unittest.mock import AsyncMock, MagicMock, patch
 
@@ -395,11 +396,15 @@ class TestRDAPRateLimiting:
         """Reset class-level state between tests."""
         RDAPLookup._breaker = None
         RDAPLookup._semaphore = None
+        RDAPLookup._semaphore_loop_id = None
+        RDAPLookup._init_concurrency = None
 
     def teardown_method(self) -> None:
         """Clean up class-level state after each test."""
         RDAPLookup._breaker = None
         RDAPLookup._semaphore = None
+        RDAPLookup._semaphore_loop_id = None
+        RDAPLookup._init_concurrency = None
 
     @pytest.mark.asyncio
     async def test_circuit_breaker_skips_when_open(self) -> None:
@@ -464,12 +469,26 @@ class TestRDAPRateLimiting:
             assert RDAPLookup._breaker is not None
             assert RDAPLookup._breaker.state == "open"
 
-    @pytest.mark.asyncio
-    async def test_semaphore_initialized(self) -> None:
-        """Semaphore is created with configured concurrency."""
+    def test_init_does_not_create_semaphore(self) -> None:
+        """Semaphore is created lazily in _ensure_semaphore, not __init__."""
         config = ScoutConfig(max_rdap_concurrent=2)
         RDAPLookup(config)
+        # Semaphore should NOT be created in __init__ — it must be created
+        # in the correct event loop by _ensure_semaphore.
+        assert RDAPLookup._semaphore is None
+        assert RDAPLookup._init_concurrency == 2
+
+    @pytest.mark.asyncio
+    async def test_semaphore_bound_to_current_loop(self) -> None:
+        """Regression: semaphore must belong to the running event loop."""
+        config = ScoutConfig(max_rdap_concurrent=2)
+        rdap = RDAPLookup(config)
+        mock_client = _make_httpx_mock(json_payload={"entities": []})
+        with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+            await rdap.get_registrant_org("example.com")
+        # Semaphore should now exist and be bound to current loop
         assert RDAPLookup._semaphore is not None
+        assert RDAPLookup._semaphore_loop_id == id(asyncio.get_running_loop())
 
 
 class TestExtractRegistrar:
