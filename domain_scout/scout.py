@@ -52,6 +52,30 @@ from domain_scout.sources.rdap import RDAPLookup
 log = structlog.get_logger()
 _TOOL_VERSION = _pkg_version("domain-scout-ct")
 
+# Signal classification for evidence transparency.
+# Maps source_type prefixes to (signal_type, weight).
+_SIGNAL_MAP: dict[str, tuple[str, float]] = {
+    "ct_org_match": ("cert_org_match", 0.80),
+    "ct_subsidiary_match": ("cert_org_subsidiary", 0.50),
+    "ct_gleif_subsidiary": ("cert_org_subsidiary", 0.50),
+    "ct_san_expansion": ("san_co_occurrence", 0.40),
+    "ct_seed_subdomain": ("seed_subdomain", 0.30),
+    "ct_seed_related": ("seed_related", 0.15),
+    "dns_guess": ("dns_guess", 0.20),
+    "cross_seed_verified": ("cross_seed", 0.90),
+    "rdap_registrant_match": ("rdap_registrant", 0.45),
+    "shared_infra": ("shared_infrastructure", 0.10),
+    "geodns": ("geodns_rescue", 0.10),
+}
+
+
+def _signal_fields(source_tag: str) -> dict[str, Any]:
+    """Return signal_type and signal_weight for a source tag."""
+    sig = _SIGNAL_MAP.get(source_tag.split(":")[0])
+    if sig is None:
+        return {}
+    return {"signal_type": sig[0], "signal_weight": sig[1]}
+
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
     """Load parent→subsidiary mappings from a corporate subsidiaries CSV.
@@ -568,6 +592,7 @@ class Scout:
                             EvidenceRecord(
                                 source_type="geodns",
                                 description="Resolved via Shodan GeoDNS (global)",
+                                **_signal_fields("geodns"),
                             )
                         )
                         log.info("scout.geodns_rescued", domain=domain)
@@ -784,6 +809,7 @@ class Scout:
                     cert_id=_int_or_none(rec.get("cert_id")),
                     cert_org=cert_org,
                     similarity_score=round(similarity, 4),
+                    **_signal_fields(source_tag),
                 )
             )
             accum.cert_org_names.add(cert_org)
@@ -870,6 +896,7 @@ class Scout:
                             source_type="ct_seed_subdomain",
                             description=f"Subdomain of seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_seed_subdomain"),
                         )
                     )
                 elif has_seed_san:
@@ -882,6 +909,7 @@ class Scout:
                             source_type="ct_san_expansion",
                             description=f"Found on same cert as seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_san_expansion"),
                         )
                     )
                 else:
@@ -891,6 +919,7 @@ class Scout:
                             source_type="ct_seed_related",
                             description=f"Found in CT search for {seed_domain}",
                             seed_domain=seed_domain,
+                            **_signal_fields("ct_seed_related"),
                         )
                     )
 
@@ -907,6 +936,7 @@ class Scout:
                                 cert_id=_int_or_none(rec.get("cert_id")),
                                 cert_org=cert_org,
                                 similarity_score=round(sim, 4),
+                                **_signal_fields("ct_org_match"),
                             )
                         )
 
@@ -953,6 +983,7 @@ class Scout:
                 EvidenceRecord(
                     source_type="dns_guess",
                     description="Guessed from company name, resolves in DNS",
+                    **_signal_fields("dns_guess"),
                 )
             )
             accum.resolves = True
@@ -982,6 +1013,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="cross_seed_verified",
                         description=f"Cross-verified: found from seeds {seeds_str}",
+                        **_signal_fields("cross_seed_verified"),
                     )
                 )
 
@@ -1112,6 +1144,7 @@ class Scout:
                     EvidenceRecord(
                         source_type="shared_infra",
                         description=f"Shares infrastructure with {reference}",
+                        **_signal_fields("shared_infra"),
                     )
                 )
                 # Cap so infra boost can't exceed the +0.10 total boost limit.
@@ -1179,6 +1212,7 @@ class Scout:
                         ),
                         rdap_org=rdap_org,
                         similarity_score=round(best_sim, 4),
+                        **_signal_fields("rdap_registrant_match"),
                     )
                 )
             except Exception as exc:
@@ -1309,6 +1343,7 @@ class Scout:
                             source_type=source_tag,
                             description=sig_desc.get(sig.signal_type, _fallback)(sig),
                             seed_domain=best_match.seed_domain,
+                            **_signal_fields(source_tag),
                         )
                     )
 
