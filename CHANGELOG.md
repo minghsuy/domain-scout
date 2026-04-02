@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.11.0] - 2026-04-01
+
+### Added
+
+- **GLEIF corporate hierarchy expansion** — `Scout.discover()` now expands queries to known subsidiaries via GLEIF corporate tree data (#122)
+  - `find_entity()`: 4-stage matching (exact → icase → prefix → fuzzy) with subsidiary-count tie-breaking
+  - `expand_corporate_tree()`: includes `IS_ULTIMATELY_CONSOLIDATED_BY` for multi-hop trees
+  - Sibling dedup penalty (-0.15) prevents cross-attribution between sister entities
+  - New `gleif` optional dependency: `pip install domain-scout-ct[gleif]`
+- **`gleif-ingest` CLI command** — downloads GLEIF golden copy from gleif.org and builds local DuckDB file
+- **`--gleif-db` CLI option** and `DOMAIN_SCOUT_GLEIF_DB` env var for specifying GLEIF database path
+- **Signal metadata on evidence** — `EvidenceRecord.signal_type` and `signal_weight` fields expose which signals contributed to confidence (#123)
+- **Subsidiary context in evidence** — descriptions for subsidiary domains now include the subsidiary name (e.g., "matches subsidiary 'PacifiCorp'") (#123)
+- **Public RDAP extract functions** — `extract_registrar()`, `extract_dates()`, `extract_nameservers()`, `get_full_info()` (#119)
+
+### Fixed
+
+- **RDAP semaphore event loop** — semaphore now created lazily in `_ensure_semaphore()` bound to the current event loop, fixing `RuntimeError` in batch/notebook contexts (#120)
+- **Evidence dedup** — cert-org evidence grouped by `(source_type, cert_org)` instead of per-cert, eliminating duplicate records (#123)
+- **RDAP for subsidiaries** — registrant checked against cert org names (not just query entity), so subsidiary domains get proper RDAP corroboration (#123)
+
 ## [0.10.0] - 2026-03-21
 
 ### Added
