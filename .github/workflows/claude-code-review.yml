@@ -2,7 +2,7 @@ name: Claude Code Review
 
 on:
   pull_request:
-    types: [opened, ready_for_review]
+    types: [opened, synchronize, ready_for_review, reopened]
   issue_comment:
     types: [created]
 
@@ -12,14 +12,17 @@ concurrency:
 
 jobs:
   claude-review:
-    if: >-
-      github.event_name == 'pull_request' ||
-      (github.event_name == 'issue_comment' &&
-       github.event.issue.pull_request &&
-       contains(github.event.comment.body, '@claude review') &&
-       github.event.comment.user.login != 'claude[bot]' &&
-       github.event.comment.user.login != 'claude' &&
-       github.event.comment.user.type != 'Bot')
+
+    # Draft handling:
+    # - pull_request events: skip while PR is in draft. Review fires
+    #   automatically once the PR transitions to ready_for_review.
+    # - issue_comment events (e.g. @claude review): always fire,
+    #   regardless of draft state. Explicit comment trigger overrides
+    #   the draft guard so users can request early feedback on WIP code.
+    # The condition below relies on GitHub Actions evaluating
+    # `!github.event.pull_request.draft` to true for issue_comment
+    # events (where `github.event.pull_request` is null).
+    if: ${{ !github.event.pull_request.draft && (github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '@claude review') && github.event.comment.user.login != 'claude[bot]' && github.event.comment.user.login != 'claude' && github.event.comment.user.type != 'Bot')) }}
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -72,3 +75,81 @@ jobs:
             If the PR looks good, say so briefly.
 
             Use `gh pr comment ${{ env.PR_NUMBER }}` with your Bash tool to leave your review as a comment on the PR.
+
+      - name: Fail loudly if review didn't run on this push
+        # Tracks issue #37. The original guard counted comments and missed
+        # the edit-in-place no-op re-run case: action exits cleanly, leaves
+        # the prior comment unchanged, count stays > 0, false-SUCCESS slips
+        # through.
+        #
+        # Stricter check: require that the latest claude[bot] review's
+        # timestamp is NEWER than the PR's HEAD commit. If the bot didn't
+        # update its comment after the latest push, the check fails loudly.
+        if: ${{ github.event_name == 'pull_request' }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          REPO: ${{ github.repository }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+
+          # Brief pause to let any pending comments from the prior step propagate.
+          sleep 5
+
+          # HEAD commit's committer timestamp — stable per-SHA. Note: amending
+          # without content changes shifts this date forward and may cause
+          # spurious "stale review" failures on rebased/amended PRs. Acceptable
+          # trade-off: rare; user can re-trigger by closing+reopening or pushing
+          # an empty commit. Alternative would be event-time tracking but the
+          # workflow doesn't have stable access to that.
+          HEAD_AT=$(gh api "/repos/$REPO/commits/$HEAD_SHA" --jq '.commit.committer.date' 2>/dev/null || echo "")
+
+          # Latest claude[bot] activity across all comment surfaces.
+          # `updated_at` for issue/PR comments captures edit-in-place re-runs;
+          # `submitted_at` for formal reviews. Take the max.
+          #
+          # Robustness:
+          # - `--paginate` so PRs with >30 prior comments don't miss the latest one.
+          # - `|| true` after each `gh api` so a transient API hiccup on one
+          #   surface doesn't abort the whole pipeline.
+          # - Stderr is intentionally NOT redirected so transient API errors
+          #   show up in CI logs (debuggable failures > silent ones).
+          # - Final `|| true` on the pipeline tolerates SIGPIPE: when there are
+          #   multiple timestamps, `head -1` closes early, `sort` exits 141,
+          #   and pipefail would otherwise abort.
+          LATEST_REVIEW=$(
+            {
+              gh api --paginate "/repos/$REPO/issues/$PR_NUMBER/comments" \
+                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .updated_at' || true
+              gh api --paginate "/repos/$REPO/pulls/$PR_NUMBER/comments" \
+                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .updated_at' || true
+              gh api --paginate "/repos/$REPO/pulls/$PR_NUMBER/reviews" \
+                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .submitted_at' || true
+            } | sort -r | head -1 || true
+          )
+
+          echo "HEAD commit ($HEAD_SHA) committed at: ${HEAD_AT:-UNKNOWN}"
+          echo "Latest claude[bot] activity:           ${LATEST_REVIEW:-NONE}"
+
+          if [[ -z "$HEAD_AT" ]]; then
+            echo "::error::Could not fetch HEAD commit timestamp from gh api. Network or auth issue."
+            exit 1
+          fi
+
+          if [[ -z "$LATEST_REVIEW" ]]; then
+            echo "::error::No claude[bot] review found on PR #$PR_NUMBER."
+            echo "::error::Action ran but produced no output (auth flake or silent skip — issue #37)."
+            exit 1
+          fi
+
+          # ISO-8601 timestamps sort lexicographically, so string comparison works.
+          if [[ "$LATEST_REVIEW" < "$HEAD_AT" ]]; then
+            echo "::error::Latest claude[bot] activity ($LATEST_REVIEW) is older than HEAD commit ($HEAD_AT)."
+            echo "::error::Action ran but did not update its review for the latest push."
+            echo "::error::Edit-in-place no-op re-run case (issue #37). Failing loudly."
+            echo "::error::To re-trigger the review: push an empty commit (git commit --allow-empty -m 'trigger review' && git push)."
+            exit 1
+          fi
+
+          echo "Guard passed: latest claude[bot] activity ($LATEST_REVIEW) >= HEAD commit ($HEAD_AT)"
