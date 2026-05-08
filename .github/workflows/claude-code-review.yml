@@ -1,155 +1,87 @@
 name: Claude Code Review
 
+# Bridge workflow: posts `@claude review` as a PR comment using a PAT.
+#
+# Why a bridge: invoking claude-code-action@v1 from a `pull_request` event
+# hits an upstream Bun internal-error bug ("directory mismatch ... fd 4")
+# consistently and produces no review. The same action+ref+runtime invoked
+# from `issue_comment` (claude.yml) works reliably. So we route the
+# automated PR-event path through a PR comment that triggers claude.yml.
+#
+# Why a PAT (not GITHUB_TOKEN): GitHub Actions explicitly suppresses
+# downstream workflow triggers from events authored by GITHUB_TOKEN — the
+# recursion guard. A PAT-authored issue_comment event IS treated as a real
+# user event and DOES trigger downstream workflows. So the bridge requires
+# `BRIDGE_PAT` (fine-grained PAT, scope: Pull requests Read+Write).
+#
+# When upstream anthropics/claude-code-action#1266 is fixed, this workflow
+# can revert to a direct `claude-code-action@v1` invocation; the PAT becomes
+# dead weight and can be removed.
+#
+# Setup (one-time, per repo with this workflow):
+# - Generate fine-grained PAT at https://github.com/settings/personal-access-tokens
+#   Permissions: Pull requests = Read and write. Scope to this repo only.
+# - Add as repo secret BRIDGE_PAT (Settings -> Secrets and variables -> Actions).
+
 on:
   pull_request:
     types: [opened, synchronize, ready_for_review, reopened]
-  issue_comment:
-    types: [created]
 
+# Cancel an older bridge run for this PR if a new push lands before it
+# finishes — prevents duplicate `@claude review` posts on rapid pushes.
 concurrency:
-  group: claude-review-${{ github.event.pull_request.number || github.event.issue.number }}
+  group: claude-review-pr-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
-  claude-review:
-
-    # Draft handling:
-    # - pull_request events: skip while PR is in draft. Review fires
-    #   automatically once the PR transitions to ready_for_review.
-    # - issue_comment events (e.g. @claude review): always fire,
-    #   regardless of draft state. Explicit comment trigger overrides
-    #   the draft guard so users can request early feedback on WIP code.
-    # The condition below relies on GitHub Actions evaluating
-    # `!github.event.pull_request.draft` to true for issue_comment
-    # events (where `github.event.pull_request` is null).
-    if: ${{ !github.event.pull_request.draft && (github.event_name == 'pull_request' || (github.event_name == 'issue_comment' && github.event.issue.pull_request && contains(github.event.comment.body, '@claude review') && github.event.comment.user.login != 'claude[bot]' && github.event.comment.user.login != 'claude' && github.event.comment.user.type != 'Bot')) }}
+  trigger-review:
+    # Skip on drafts. Skip on bot-authored PRs (Dependabot, Renovate) — those
+    # don't need automated AI review and would burn PAT API calls per push.
+    if: |
+      ${{ !github.event.pull_request.draft &&
+          github.event.pull_request.user.type != 'Bot' }}
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
-      issues: write
-      id-token: write
+    # Empty permissions block: gh pr comment uses BRIDGE_PAT (not GITHUB_TOKEN),
+    # so the job's GITHUB_TOKEN should have zero capability. Explicit `{}` is
+    # machine-readable and prevents capability inheritance from org defaults.
+    permissions: {}
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Run Claude Code Review
-        id: claude-review
-        uses: anthropics/claude-code-action@v1
+      - name: Post @claude review comment
         env:
-          PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number }}
-        with:
-          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          claude_args: '--allowed-tools "Bash(gh issue view:*),Bash(gh search:*),Bash(gh issue list:*),Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh pr list:*)"'
-          prompt: |
-            Review PR #${{ env.PR_NUMBER }} in ${{ github.repository }}.
-
-            First, read the CLAUDE.md file in the repo root for project conventions.
-            Then review the PR diff using `gh pr diff ${{ env.PR_NUMBER }}`.
-
-            **Project: domain-scout** — async Python library for discovering domains via CT logs, RDAP, DNS, and Shodan GeoDNS.
-
-            ## Critical Checks
-            1. **crt.sh query safety** — No raw string interpolation in SQL queries to crt.sh Postgres. Parameterized queries only.
-            2. **Async correctness** — Proper use of await, no blocking calls in async context, correct semaphore/timeout scoping (asyncio.timeout applies to both semaphore acquisition AND work).
-            3. **Org-name matching** — Changes to entity_match.py must not regress fuzzy matching (acronym detection, suffix anchoring, brand aliases). Check for unintended side effects.
-            4. **Circuit breaker logic** — Changes to CTLogSource must preserve failure counting, recovery timeout, and fallback to JSON API.
-            5. **mypy --strict compliance** — All function signatures must have type hints. No `Any` without justification.
-
-            ## Standard Review Areas
-            - Pydantic model changes: backward compatibility, field validation
-            - Test coverage for new/changed behavior
-            - No hardcoded credentials or personal info
-            - structlog usage (not print/logging)
-            - ruff/mypy compliance
-
-            ## Output Format
-            Categorize each finding:
-            - :red_circle: **BLOCKING** — Must fix before merge (bugs, security, data correctness)
-            - :yellow_circle: **SHOULD FIX** — Strong recommendation (code quality, edge cases)
-            - :green_circle: **SUGGESTION** — Nice to have (style, minor improvements)
-
-            If the PR looks good, say so briefly.
-
-            Use `gh pr comment ${{ env.PR_NUMBER }}` with your Bash tool to leave your review as a comment on the PR.
-
-      - name: Fail loudly if review didn't run on this push
-        # Tracks issue #37. The original guard counted comments and missed
-        # the edit-in-place no-op re-run case: action exits cleanly, leaves
-        # the prior comment unchanged, count stays > 0, false-SUCCESS slips
-        # through.
-        #
-        # Stricter check: require that the latest claude[bot] review's
-        # timestamp is NEWER than the PR's HEAD commit. If the bot didn't
-        # update its comment after the latest push, the check fails loudly.
-        if: ${{ github.event_name == 'pull_request' }}
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
+          GH_TOKEN: ${{ secrets.BRIDGE_PAT }}
+          PR: ${{ github.event.pull_request.number }}
           REPO: ${{ github.repository }}
-          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          # Marker embedded in the bridge's comment body so the cleanup
+          # filter only matches bridge-posted comments. A human typing
+          # `@claude review` won't have this marker and stays untouched.
+          MARKER: '<!-- managed by claude-code-review.yml bridge; do not edit -->'
         run: |
           set -euo pipefail
-
-          # Brief pause to let any pending comments from the prior step propagate.
-          sleep 5
-
-          # HEAD commit's committer timestamp — stable per-SHA. Note: amending
-          # without content changes shifts this date forward and may cause
-          # spurious "stale review" failures on rebased/amended PRs. Acceptable
-          # trade-off: rare; user can re-trigger by closing+reopening or pushing
-          # an empty commit. Alternative would be event-time tracking but the
-          # workflow doesn't have stable access to that.
-          HEAD_AT=$(gh api "/repos/$REPO/commits/$HEAD_SHA" --jq '.commit.committer.date' 2>/dev/null || echo "")
-
-          # Latest claude[bot] activity across all comment surfaces.
-          # `updated_at` for issue/PR comments captures edit-in-place re-runs;
-          # `submitted_at` for formal reviews. Take the max.
-          #
-          # Robustness:
-          # - `--paginate` so PRs with >30 prior comments don't miss the latest one.
-          # - `|| true` after each `gh api` so a transient API hiccup on one
-          #   surface doesn't abort the whole pipeline.
-          # - Stderr is intentionally NOT redirected so transient API errors
-          #   show up in CI logs (debuggable failures > silent ones).
-          # - Final `|| true` on the pipeline tolerates SIGPIPE: when there are
-          #   multiple timestamps, `head -1` closes early, `sort` exits 141,
-          #   and pipefail would otherwise abort.
-          LATEST_REVIEW=$(
-            {
-              gh api --paginate "/repos/$REPO/issues/$PR_NUMBER/comments" \
-                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .updated_at' || true
-              gh api --paginate "/repos/$REPO/pulls/$PR_NUMBER/comments" \
-                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .updated_at' || true
-              gh api --paginate "/repos/$REPO/pulls/$PR_NUMBER/reviews" \
-                --jq '.[] | select(.user.login == "claude[bot]" or .user.login == "claude") | .submitted_at' || true
-            } | sort -r | head -1 || true
-          )
-
-          echo "HEAD commit ($HEAD_SHA) committed at: ${HEAD_AT:-UNKNOWN}"
-          echo "Latest claude[bot] activity:           ${LATEST_REVIEW:-NONE}"
-
-          if [[ -z "$HEAD_AT" ]]; then
-            echo "::error::Could not fetch HEAD commit timestamp from gh api. Network or auth issue."
-            exit 1
+          if [[ -z "${GH_TOKEN:-}" ]]; then
+              echo "::error::BRIDGE_PAT secret is not set on this repo."
+              echo "::error::Setup: Settings -> Secrets and variables -> Actions ->"
+              echo "::error::  New repository secret. Name: BRIDGE_PAT,"
+              echo "::error::  Value: fine-grained PAT with Pull requests Read+Write"
+              echo "::error::Background: anthropics/claude-code-action#1266 - bridge"
+              echo "::error::routes auto-review through @claude mention path; PAT-authored"
+              echo "::error::events trigger downstream workflows, GITHUB_TOKEN ones don't."
+              exit 1
           fi
 
-          if [[ -z "$LATEST_REVIEW" ]]; then
-            echo "::error::No claude[bot] review found on PR #$PR_NUMBER."
-            echo "::error::Action ran but produced no output (auth flake or silent skip — issue #37)."
-            exit 1
-          fi
+          BRIDGE_BODY="@claude review ${MARKER}"
 
-          # ISO-8601 timestamps sort lexicographically, so string comparison works.
-          if [[ "$LATEST_REVIEW" < "$HEAD_AT" ]]; then
-            echo "::error::Latest claude[bot] activity ($LATEST_REVIEW) is older than HEAD commit ($HEAD_AT)."
-            echo "::error::Action ran but did not update its review for the latest push."
-            echo "::error::Edit-in-place no-op re-run case (issue #37). Failing loudly."
-            echo "::error::To re-trigger the review: push an empty commit (git commit --allow-empty -m 'trigger review' && git push)."
-            exit 1
-          fi
+          # Delete prior bridge comments before posting the new one. Filter
+          # by the marker so only bridge-authored comments match; human
+          # @claude review comments (without the marker) are untouched.
+          # Note: `gh api`'s built-in `--jq` doesn't accept jq's `--arg`
+          # flag, so we pipe through standalone `jq` (available on every
+          # GitHub-hosted runner) to inject $BRIDGE_BODY safely.
+          # `|| true` prevents a transient DELETE failure from aborting
+          # the step before the new comment posts.
+          gh api "repos/${REPO}/issues/${PR}/comments" --paginate \
+              | jq -r --arg body "$BRIDGE_BODY" '.[] | select(.body == $body) | .id' \
+              | xargs -r -I{} gh api -X DELETE "repos/${REPO}/issues/comments/{}" \
+              || true
 
-          echo "Guard passed: latest claude[bot] activity ($LATEST_REVIEW) >= HEAD commit ($HEAD_AT)"
+          gh pr comment "$PR" -R "$REPO" --body "$BRIDGE_BODY"
