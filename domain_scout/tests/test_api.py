@@ -451,3 +451,61 @@ class TestAPIKeyAuth:
         with patch("domain_scout.api.httpx.AsyncClient", return_value=_mock_httpx_client()):
             resp = auth_client.get("/ready")
         assert resp.status_code == 200
+
+    def test_valid_bearer_token_succeeds(
+        self, auth_client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """Authorization: Bearer fallback accepts the same key as X-API-Key.
+
+        Motivation: some MCP clients and corporate proxies route auth through
+        the standard Authorization header but don't forward custom X-API-Key.
+        Bearer provides a fallback that preserves the same key-validation path.
+        """
+        resp = auth_client.post(
+            "/scan",
+            json={"entity": {"company_name": "TestCorp"}},
+            headers={"Authorization": "Bearer secret-key"},
+        )
+        assert resp.status_code == 200
+
+    def test_invalid_bearer_token_unauthorized(self, auth_client: TestClient) -> None:
+        """Wrong Bearer token returns 401, same as wrong X-API-Key."""
+        resp = auth_client.post(
+            "/scan",
+            json={"entity": {"company_name": "TestCorp"}},
+            headers={"Authorization": "Bearer wrong-key"},
+        )
+        assert resp.status_code == 401
+        assert resp.json()["detail"] == "Invalid API Key"
+
+    def test_xapi_key_precedence_over_bearer(
+        self, auth_client: TestClient, mock_discover: AsyncMock
+    ) -> None:
+        """When both headers are sent, X-API-Key wins (existing primary path).
+
+        A valid X-API-Key paired with an invalid Bearer must succeed — proves
+        precedence order in verify_api_key: api_key_header is checked first.
+        """
+        resp = auth_client.post(
+            "/scan",
+            json={"entity": {"company_name": "TestCorp"}},
+            headers={
+                "X-API-Key": "secret-key",
+                "Authorization": "Bearer wrong-key",
+            },
+        )
+        assert resp.status_code == 200
+
+    def test_bearer_works_on_cache_stats_endpoint(self, auth_client: TestClient) -> None:
+        """Bearer fallback applies to all protected endpoints, not just /scan.
+
+        All four protected endpoints share Depends(verify_api_key), so the
+        auth path is identical. One explicit non-/scan coverage backs the
+        PR-description claim that Bearer works across the whole protected
+        surface.
+        """
+        resp = auth_client.get(
+            "/cache/stats",
+            headers={"Authorization": "Bearer secret-key"},
+        )
+        assert resp.status_code == 200
