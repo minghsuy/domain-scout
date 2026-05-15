@@ -440,8 +440,7 @@ class Scout:
             )
         )
 
-        # Strategy D: subsidiary expansion. Both GLEIF and CSV fallback need a real
-        # company name to look up — skip both on seed-only queries.
+        # Strategy D: subsidiary expansion. Both GLEIF and CSV need company_name; skip on seed-only.
         gleif_sub_names: list[str] = []
         gleif_sibling_names: set[str] = set()
         if self._gleif_con is not None and entity.company_name:

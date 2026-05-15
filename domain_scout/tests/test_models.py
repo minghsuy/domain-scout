@@ -32,12 +32,7 @@ def test_entity_input_company_name_only() -> None:
 
 
 def test_entity_input_seed_domain_only() -> None:
-    """Reverse lookup: seed_domain without company_name is valid.
-
-    Previously rejected by ``min_length=1`` on company_name. Now accepted
-    so that 'what org owns this domain?' queries don't need a brand-name
-    hint up front.
-    """
+    """seed_domain alone is valid (reverse-lookup flow)."""
     entity = EntityInput(seed_domain=["coalition.com"])
     assert entity.company_name == ""
     assert entity.seed_domain == ["coalition.com"]

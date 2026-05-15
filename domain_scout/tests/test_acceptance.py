@@ -217,13 +217,7 @@ class TestWalmartAcceptance:
 
 
 class TestSeedOnlyDiscovery:
-    """Reverse-lookup flow: seed_domain only, no company_name.
-
-    Guards the seed-only path against firing empty-name CT/GLEIF/subsidiary
-    queries that would either hit a real upstream with an empty search
-    term or return junk results. Each strategy that needs a company name
-    should be skipped via `if entity.company_name` in scout._discover.
-    """
+    """Reverse-lookup flow: seed_domain only, no company_name."""
 
     @pytest.mark.asyncio
     async def test_seed_only_skips_org_search(self) -> None:
