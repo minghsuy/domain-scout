@@ -3,17 +3,41 @@
 from __future__ import annotations
 
 from datetime import datetime  # noqa: TC003 — Pydantic needs runtime import
+from typing import Self
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class EntityInput(BaseModel):
-    """Describes the business entity to search for."""
+    """Describes the business entity to search for.
 
-    company_name: str = Field(min_length=1, max_length=200)
+    Either ``company_name`` or ``seed_domain`` (or both) must be provided.
+    A pure ``seed_domain`` query (reverse-lookup: "what org owns this
+    domain?") is valid — Scout will still run domain-side signals like
+    cert-subject org extraction, RDAP registrant lookup, and DNS
+    resolution, surfacing the attributed org without needing an org-name
+    hint up front. Conversely, a pure ``company_name`` query (forward
+    discovery: "what domains belong to this org?") is the original mode.
+    """
+
+    company_name: str = Field(default="", max_length=200)
     location: str | None = None
     seed_domain: list[str] = Field(default_factory=list, max_length=50)
     industry: str | None = None
+
+    @model_validator(mode="after")
+    def _require_at_least_one_input(self) -> Self:
+        """Reject the empty case where neither field is provided.
+
+        ``company_name=""`` and ``seed_domain=[]`` together is a request
+        with no search target — Scout has nothing to act on, so we
+        surface the misuse at validation time rather than running an
+        empty discovery.
+        """
+        if not self.company_name and not self.seed_domain:
+            msg = "either company_name or seed_domain is required"
+            raise ValueError(msg)
+        return self
 
 
 class EvidenceRecord(BaseModel):
