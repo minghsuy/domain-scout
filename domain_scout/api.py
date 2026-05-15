@@ -17,7 +17,7 @@ if TYPE_CHECKING:
 import httpx
 import structlog
 from fastapi import Depends, FastAPI, HTTPException, Response, Security
-from fastapi.security import APIKeyHeader
+from fastapi.security import APIKeyHeader, HTTPAuthorizationCredentials, HTTPBearer
 from pydantic import BaseModel, Field
 
 from domain_scout._metrics import CONTENT_TYPE_LATEST, generate_latest
@@ -94,15 +94,22 @@ def create_app(
     app.state.api_key = api_key
 
     api_key_header = APIKeyHeader(name="X-API-Key", auto_error=False)
+    bearer_scheme = HTTPBearer(auto_error=False)
 
     def verify_api_key(
         api_key_header: str | None = Security(api_key_header),
+        bearer: HTTPAuthorizationCredentials | None = Security(bearer_scheme),  # noqa: B008
     ) -> None:
+        # Auth precedence: X-API-Key header first (existing primary), then
+        # Authorization: Bearer as a fallback for clients / corporate proxies
+        # that strip custom headers but pass through standard auth headers.
+        # If no key is configured on the server, auth is disabled entirely.
         if app.state.api_key is None:
             return
-        if not api_key_header:
+        api_key = api_key_header or (bearer.credentials if bearer else None)
+        if not api_key:
             raise HTTPException(status_code=401, detail="API Key required")
-        if not secrets.compare_digest(api_key_header, app.state.api_key):
+        if not secrets.compare_digest(api_key, app.state.api_key):
             raise HTTPException(status_code=401, detail="Invalid API Key")
 
     @app.get("/health")
