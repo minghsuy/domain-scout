@@ -7,6 +7,7 @@ Scout level.
 
 from __future__ import annotations
 
+from typing import cast
 from unittest.mock import AsyncMock
 
 import pytest
@@ -233,14 +234,12 @@ class TestSeedOnlyDiscovery:
 
         # search_by_org should never have been called — Strategy A is gated
         # on `entity.company_name`. search_by_domain is still expected to fire.
-        org_calls = [
-            call
-            for call in scout._ct.search_by_org.mock_calls
-            if call.kwargs.get("verify_org") is not False  # type: ignore[attr-defined]
-        ]
-        assert len(org_calls) == 0, (
-            f"search_by_org was called {len(org_calls)} times on seed-only query "
-            f"with empty company_name. Calls: {scout._ct.search_by_org.mock_calls}"  # type: ignore[attr-defined]
+        # cast() tells mypy the source-level mock replacement made this an
+        # AsyncMock at runtime (not the original Coroutine method).
+        search_by_org = cast("AsyncMock", scout._ct.search_by_org)
+        assert search_by_org.mock_calls == [], (
+            f"search_by_org was called {len(search_by_org.mock_calls)} times on "
+            f"seed-only query with empty company_name. Calls: {search_by_org.mock_calls}"
         )
 
     @pytest.mark.asyncio
