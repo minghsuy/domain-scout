@@ -372,3 +372,17 @@ class TestAPIKeyAuth:
             },
         )
         assert resp.status_code == 200
+
+    def test_bearer_works_on_cache_stats_endpoint(self, auth_client: TestClient) -> None:
+        """Bearer fallback applies to all protected endpoints, not just /scan.
+
+        All four protected endpoints share Depends(verify_api_key), so the
+        auth path is identical. One explicit non-/scan coverage backs the
+        PR-description claim that Bearer works across the whole protected
+        surface.
+        """
+        resp = auth_client.get(
+            "/cache/stats",
+            headers={"Authorization": "Bearer secret-key"},
+        )
+        assert resp.status_code == 200

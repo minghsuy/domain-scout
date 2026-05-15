@@ -100,16 +100,21 @@ def create_app(
         api_key_header: str | None = Security(api_key_header),
         bearer: HTTPAuthorizationCredentials | None = Security(bearer_scheme),  # noqa: B008
     ) -> None:
-        # Auth precedence: X-API-Key header first (existing primary), then
-        # Authorization: Bearer as a fallback for clients / corporate proxies
-        # that strip custom headers but pass through standard auth headers.
-        # If no key is configured on the server, auth is disabled entirely.
+        # X-API-Key takes precedence (existing primary path); Bearer is the
+        # fallback for clients that forward Authorization but not custom headers.
         if app.state.api_key is None:
             return
-        api_key = api_key_header or (bearer.credentials if bearer else None)
-        if not api_key:
+        # `is not None` (not truthy `or`) is defensive: in practice FastAPI's
+        # APIKeyHeader returns None for empty/absent headers, but this makes
+        # the precedence explicit and future-proof if that ever changes.
+        resolved_key = (
+            api_key_header
+            if api_key_header is not None
+            else (bearer.credentials if bearer else None)
+        )
+        if not resolved_key:
             raise HTTPException(status_code=401, detail="API Key required")
-        if not secrets.compare_digest(api_key, app.state.api_key):
+        if not secrets.compare_digest(resolved_key, app.state.api_key):
             raise HTTPException(status_code=401, detail="Invalid API Key")
 
     @app.get("/health")
