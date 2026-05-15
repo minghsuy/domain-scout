@@ -420,8 +420,10 @@ class Scout:
         independent_tasks: list[asyncio.Task[list[tuple[str, _DomainAccum]]]] = []
 
         # Strategy A: org name search (independent of seed)
-        # Skip in fingerprint mode — DV certs have no org name, so CT org search is useless
-        if self.config.discovery_mode != "fingerprint":
+        # Skip in fingerprint mode — DV certs have no org name, so CT org search is useless.
+        # Skip on seed-only queries — empty company_name would query CT with an empty
+        # search term (massive result set or noise).
+        if self.config.discovery_mode != "fingerprint" and entity.company_name:
             independent_tasks.append(
                 asyncio.create_task(
                     self._strategy_org_search(entity.company_name, errors),
@@ -430,6 +432,7 @@ class Scout:
             )
 
         # Strategy C: domain guessing (independent of seed)
+        # Safe with empty company_name — domain_from_company_name("") returns [] early.
         independent_tasks.append(
             asyncio.create_task(
                 self._strategy_domain_guess(entity.company_name, entity.location, errors),
@@ -437,11 +440,11 @@ class Scout:
             )
         )
 
-        # Strategy D: subsidiary expansion
-        # D1: GLEIF corporate tree (if available)
+        # Strategy D: subsidiary expansion. Both GLEIF and CSV fallback need a real
+        # company name to look up — skip both on seed-only queries.
         gleif_sub_names: list[str] = []
         gleif_sibling_names: set[str] = set()
-        if self._gleif_con is not None:
+        if self._gleif_con is not None and entity.company_name:
             gleif_sub_names, gleif_sibling_names = self._expand_gleif_tree(entity.company_name)
             for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]:
                 independent_tasks.append(
@@ -456,7 +459,7 @@ class Scout:
                 )
 
         # D2: CSV fallback (if CSV loaded and GLEIF didn't find anything)
-        if self._subsidiaries and not gleif_sub_names:
+        if self._subsidiaries and not gleif_sub_names and entity.company_name:
             sub_names = self._match_subsidiaries(entity.company_name)
             for sub_name in sub_names[: self.config.subsidiary_max_queries]:
                 independent_tasks.append(

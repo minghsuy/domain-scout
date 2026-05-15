@@ -213,3 +213,52 @@ class TestWalmartAcceptance:
                 f"{key_domain} missing rdap_registrant_match, "
                 f"sources={domain_map[key_domain].sources}"
             )
+
+
+class TestSeedOnlyDiscovery:
+    """Reverse-lookup flow: seed_domain only, no company_name.
+
+    Guards the seed-only path against firing empty-name CT/GLEIF/subsidiary
+    queries that would either hit a real upstream with an empty search
+    term or return junk results. Each strategy that needs a company name
+    should be skipped via `if entity.company_name` in scout._discover.
+    """
+
+    @pytest.mark.asyncio
+    async def test_seed_only_skips_org_search(self) -> None:
+        """Strategy A (CT org search) must NOT fire when company_name is empty."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        await scout.discover_async(entity)
+
+        # search_by_org should never have been called — Strategy A is gated
+        # on `entity.company_name`. search_by_domain is still expected to fire.
+        org_calls = [
+            call
+            for call in scout._ct.search_by_org.mock_calls
+            if call.kwargs.get("verify_org") is not False  # type: ignore[attr-defined]
+        ]
+        assert len(org_calls) == 0, (
+            f"search_by_org was called {len(org_calls)} times on seed-only query "
+            f"with empty company_name. Calls: {scout._ct.search_by_org.mock_calls}"  # type: ignore[attr-defined]
+        )
+
+    @pytest.mark.asyncio
+    async def test_seed_only_returns_domains(self) -> None:
+        """Seed-only query still returns the seed domain itself, attributed via cert org."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        result = await scout.discover_async(entity)
+
+        found = {d.domain for d in result.domains}
+        assert "walmart.com" in found, f"Seed domain missing from results: {found}"
+
+    @pytest.mark.asyncio
+    async def test_seed_only_no_company_name_in_metadata(self) -> None:
+        """The empty company_name surfaces as-is in the result entity."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        result = await scout.discover_async(entity)
+
+        assert result.entity.company_name == ""
+        assert result.entity.seed_domain == ["walmart.com"]

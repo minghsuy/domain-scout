@@ -9,16 +9,7 @@ from pydantic import BaseModel, Field, model_validator
 
 
 class EntityInput(BaseModel):
-    """Describes the business entity to search for.
-
-    Either ``company_name`` or ``seed_domain`` (or both) must be provided.
-    A pure ``seed_domain`` query (reverse-lookup: "what org owns this
-    domain?") is valid — Scout will still run domain-side signals like
-    cert-subject org extraction, RDAP registrant lookup, and DNS
-    resolution, surfacing the attributed org without needing an org-name
-    hint up front. Conversely, a pure ``company_name`` query (forward
-    discovery: "what domains belong to this org?") is the original mode.
-    """
+    """Search target: company_name (forward) or seed_domain (reverse) or both."""
 
     company_name: str = Field(default="", max_length=200)
     location: str | None = None
@@ -27,13 +18,6 @@ class EntityInput(BaseModel):
 
     @model_validator(mode="after")
     def _require_at_least_one_input(self) -> Self:
-        """Reject the empty case where neither field is provided.
-
-        ``company_name=""`` and ``seed_domain=[]`` together is a request
-        with no search target — Scout has nothing to act on, so we
-        surface the misuse at validation time rather than running an
-        empty discovery.
-        """
         if not self.company_name and not self.seed_domain:
             msg = "either company_name or seed_domain is required"
             raise ValueError(msg)
