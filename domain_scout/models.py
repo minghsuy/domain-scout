@@ -3,17 +3,25 @@
 from __future__ import annotations
 
 from datetime import datetime  # noqa: TC003 — Pydantic needs runtime import
+from typing import Self
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 
 class EntityInput(BaseModel):
-    """Describes the business entity to search for."""
+    """Search target: company_name (forward) or seed_domain (reverse) or both."""
 
-    company_name: str = Field(min_length=1, max_length=200)
+    company_name: str = Field(default="", max_length=200)
     location: str | None = None
     seed_domain: list[str] = Field(default_factory=list, max_length=50)
     industry: str | None = None
+
+    @model_validator(mode="after")
+    def _require_at_least_one_input(self) -> Self:
+        if not self.company_name and not self.seed_domain:
+            msg = "either company_name or seed_domain is required"
+            raise ValueError(msg)
+        return self
 
 
 class EvidenceRecord(BaseModel):

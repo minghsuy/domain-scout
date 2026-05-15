@@ -22,3 +22,48 @@ def test_entity_input_seed_domain_max_length() -> None:
         )
 
     assert "List should have at most 50 items after validation" in str(exc_info.value)
+
+
+def test_entity_input_company_name_only() -> None:
+    """Forward discovery: company_name without seed_domain is valid."""
+    entity = EntityInput(company_name="Coalition Inc")
+    assert entity.company_name == "Coalition Inc"
+    assert entity.seed_domain == []
+
+
+def test_entity_input_seed_domain_only() -> None:
+    """seed_domain alone is valid (reverse-lookup flow)."""
+    entity = EntityInput(seed_domain=["coalition.com"])
+    assert entity.company_name == ""
+    assert entity.seed_domain == ["coalition.com"]
+
+
+def test_entity_input_both_fields_valid() -> None:
+    """Both fields provided is also valid — scout uses both signals."""
+    entity = EntityInput(
+        company_name="Coalition Inc",
+        seed_domain=["coalition.com", "coalitioninc.com"],
+    )
+    assert entity.company_name == "Coalition Inc"
+    assert len(entity.seed_domain) == 2
+
+
+def test_entity_input_neither_field_rejected() -> None:
+    """Empty company_name AND empty seed_domain is the misuse case."""
+    with pytest.raises(ValidationError) as exc_info:
+        EntityInput()
+    assert "either company_name or seed_domain is required" in str(exc_info.value)
+
+
+def test_entity_input_empty_string_and_empty_list_rejected() -> None:
+    """Explicit empty values for both fields hit the same validator."""
+    with pytest.raises(ValidationError) as exc_info:
+        EntityInput(company_name="", seed_domain=[])
+    assert "either company_name or seed_domain is required" in str(exc_info.value)
+
+
+def test_entity_input_company_name_max_length_still_enforced() -> None:
+    """The 200-char cap on company_name is still active."""
+    with pytest.raises(ValidationError) as exc_info:
+        EntityInput(company_name="x" * 201)
+    assert "at most 200" in str(exc_info.value)

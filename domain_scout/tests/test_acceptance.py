@@ -7,6 +7,7 @@ Scout level.
 
 from __future__ import annotations
 
+from typing import cast
 from unittest.mock import AsyncMock
 
 import pytest
@@ -213,3 +214,44 @@ class TestWalmartAcceptance:
                 f"{key_domain} missing rdap_registrant_match, "
                 f"sources={domain_map[key_domain].sources}"
             )
+
+
+class TestSeedOnlyDiscovery:
+    """Reverse-lookup flow: seed_domain only, no company_name."""
+
+    @pytest.mark.asyncio
+    async def test_seed_only_skips_org_search(self) -> None:
+        """Strategy A (CT org search) must NOT fire when company_name is empty."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        await scout.discover_async(entity)
+
+        # search_by_org should never have been called — Strategy A is gated
+        # on `entity.company_name`. search_by_domain is still expected to fire.
+        # cast() tells mypy the source-level mock replacement made this an
+        # AsyncMock at runtime (not the original Coroutine method).
+        search_by_org = cast("AsyncMock", scout._ct.search_by_org)
+        assert search_by_org.mock_calls == [], (
+            f"search_by_org was called {len(search_by_org.mock_calls)} times on "
+            f"seed-only query with empty company_name. Calls: {search_by_org.mock_calls}"
+        )
+
+    @pytest.mark.asyncio
+    async def test_seed_only_returns_domains(self) -> None:
+        """Seed-only query still returns the seed domain itself, attributed via cert org."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        result = await scout.discover_async(entity)
+
+        found = {d.domain for d in result.domains}
+        assert "walmart.com" in found, f"Seed domain missing from results: {found}"
+
+    @pytest.mark.asyncio
+    async def test_seed_only_no_company_name_in_metadata(self) -> None:
+        """The empty company_name surfaces as-is in the result entity."""
+        scout = _make_scout()
+        entity = EntityInput(seed_domain=["walmart.com"])
+        result = await scout.discover_async(entity)
+
+        assert result.entity.company_name == ""
+        assert result.entity.seed_domain == ["walmart.com"]
