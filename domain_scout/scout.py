@@ -1424,8 +1424,8 @@ class Scout:
                     sources=sorted(accum.sources),
                     evidence=deduped,
                     cert_org_names=sorted(accum.cert_org_names),
-                    first_seen=_parse_time(accum.first_seen),
-                    last_seen=_parse_time(accum.last_seen),
+                    first_seen=accum.earliest_cert,
+                    last_seen=accum.latest_cert,
                     resolves=accum.resolves,
                     rdap_org=accum.rdap_org,
                     is_seed=(domain in seed_bases),
@@ -1508,8 +1508,8 @@ class _DomainAccum:
         "sources",
         "evidence",
         "cert_org_names",
-        "first_seen",
-        "last_seen",
+        "earliest_cert",
+        "latest_cert",
         "resolves",
         "rdap_org",
         "confidence",
@@ -1519,8 +1519,8 @@ class _DomainAccum:
         self.sources: set[str] = set()
         self.evidence: list[EvidenceRecord] = []
         self.cert_org_names: set[str] = set()
-        self.first_seen: str | None = None
-        self.last_seen: str | None = None
+        self.earliest_cert: datetime | None = None
+        self.latest_cert: datetime | None = None
         self.resolves: bool = False
         self.rdap_org: str | None = None
         self.confidence: float = 0.0
@@ -1529,20 +1529,20 @@ class _DomainAccum:
         self.sources |= other.sources
         self.evidence.extend(other.evidence)
         self.cert_org_names |= other.cert_org_names
-        o_first = _normalize_time(other.first_seen)
-        if o_first and (self.first_seen is None or o_first < self.first_seen):
-            self.first_seen = o_first
-        o_last = _normalize_time(other.last_seen)
-        if o_last and (self.last_seen is None or o_last > self.last_seen):
-            self.last_seen = o_last
+        if other.earliest_cert and (
+            self.earliest_cert is None or other.earliest_cert < self.earliest_cert
+        ):
+            self.earliest_cert = other.earliest_cert
+        if other.latest_cert and (self.latest_cert is None or other.latest_cert > self.latest_cert):
+            self.latest_cert = other.latest_cert
         self.resolves = self.resolves or other.resolves
         if self.rdap_org is None and other.rdap_org is not None:
             self.rdap_org = other.rdap_org
 
     def update_times(self, not_before: object, not_after: object) -> None:
-        nb = _normalize_time(not_before)
-        na = _normalize_time(not_after)
-        if nb and (self.first_seen is None or nb < self.first_seen):
-            self.first_seen = nb
-        if na and (self.last_seen is None or na > self.last_seen):
-            self.last_seen = na
+        nb = _parse_time(_normalize_time(not_before))
+        na = _parse_time(_normalize_time(not_after))
+        if nb and (not self.earliest_cert or nb < self.earliest_cert):
+            self.earliest_cert = nb
+        if na and (not self.latest_cert or na > self.latest_cert):
+            self.latest_cert = na
