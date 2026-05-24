@@ -1,7 +1,5 @@
 """Main orchestrator: ties together CT log search, RDAP, DNS, and entity matching."""
 
-from __future__ import annotations
-
 import asyncio
 import csv
 import re
@@ -251,7 +249,7 @@ class Scout:
     def __init__(
         self,
         config: ScoutConfig | None = None,
-        cache: DuckDBCache | None = None,
+        cache: "DuckDBCache | None" = None,
     ) -> None:
         self.config = config or ScoutConfig()
         rdap_inner = RDAPLookup(self.config)
@@ -294,7 +292,7 @@ class Scout:
             except Exception:
                 log.warning("scout.subsidiaries_load_failed", exc_info=True)
 
-        self._gleif_con: duckdb.DuckDBPyConnection | None = None
+        self._gleif_con: "duckdb.DuckDBPyConnection | None" = None  # noqa: UP037
         if self.config.gleif_db_path:
             try:
                 import duckdb
@@ -394,7 +392,7 @@ class Scout:
         seeds = entity.seed_domain  # list[str]
 
         # Accumulator: domain -> evidence dict
-        domain_evidence: dict[str, _DomainAccum] = {}
+        domain_evidence: dict[str, "_DomainAccum"] = {}  # noqa: UP037
 
         def _remaining() -> float:
             return max(0.0, total_budget - (time.monotonic() - t0))
@@ -804,7 +802,7 @@ class Scout:
         rec: dict[str, Any],
         org_name: str,
         source_tag: str,
-    ) -> list[tuple[str, _DomainAccum]]:
+    ) -> list[tuple[str, "_DomainAccum"]]:
         results: list[tuple[str, _DomainAccum]] = []
         cert_org = rec.get("org_name")
         if not isinstance(cert_org, str) or not cert_org:
@@ -858,7 +856,7 @@ class Scout:
         org_name: str,
         errors: list[str],
         source_tag: str = "ct_org_match",
-    ) -> list[tuple[str, _DomainAccum]]:
+    ) -> list[tuple[str, "_DomainAccum"]]:
         results: list[tuple[str, _DomainAccum]] = []
         try:
             records = await self._ct.search_by_org(org_name)
@@ -880,7 +878,7 @@ class Scout:
         company_name: str,
         errors: list[str],
         ct_records: list[dict[str, Any]] | None = None,
-    ) -> list[tuple[str, _DomainAccum]]:
+    ) -> list[tuple[str, "_DomainAccum"]]:
         results: list[tuple[str, _DomainAccum]] = []
         if ct_records is not None:
             records = ct_records
@@ -984,7 +982,7 @@ class Scout:
 
     async def _strategy_domain_guess(
         self, company_name: str, location: str | None, errors: list[str]
-    ) -> list[tuple[str, _DomainAccum]]:
+    ) -> list[tuple[str, "_DomainAccum"]]:
         slugs = domain_from_company_name(company_name)
         # Also try with location keywords
         if location:
@@ -1026,7 +1024,9 @@ class Scout:
     # --- Cross-seed detection ---
 
     @staticmethod
-    def _apply_cross_seed_boost(domain_evidence: dict[str, _DomainAccum], seeds: list[str]) -> None:
+    def _apply_cross_seed_boost(
+        domain_evidence: dict[str, "_DomainAccum"], seeds: list[str]
+    ) -> None:
         """Add cross_seed_verified source to domains found from 2+ independent seeds.
 
         Requires at least one strong source (ct_san_expansion or ct_seed_subdomain).
@@ -1053,7 +1053,7 @@ class Scout:
 
     def _score_confidence(
         self,
-        accum: _DomainAccum,
+        accum: "_DomainAccum",
         company_name: str,
         seed_domains: list[str],
         sibling_names: set[str] | None = None,
@@ -1154,7 +1154,7 @@ class Scout:
 
         return round(score, 2)
 
-    async def _infra_boost(self, reference: str, evidence: dict[str, _DomainAccum]) -> None:
+    async def _infra_boost(self, reference: str, evidence: dict[str, "_DomainAccum"]) -> None:
         """Small confidence boost for domains sharing infra with a reference domain."""
         # Select top candidates by confidence, capped
         candidates = [
@@ -1165,7 +1165,7 @@ class Scout:
         candidates.sort(key=lambda x: x[1].confidence, reverse=True)
         candidates = candidates[: self.config.infra_check_max]
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
+        async def _check(domain: str, accum: "_DomainAccum") -> None:
             try:
                 shared = await self._dns.shares_infrastructure(reference, domain)
                 if not shared:
@@ -1197,7 +1197,7 @@ class Scout:
     # --- RDAP corroboration ---
 
     async def _rdap_corroborate(
-        self, domain_evidence: dict[str, _DomainAccum], company_name: str
+        self, domain_evidence: dict[str, "_DomainAccum"], company_name: str
     ) -> None:
         """Query RDAP on top resolving candidates and add corroborating evidence."""
         # Select resolving candidates without existing rdap_registrant_match
@@ -1213,7 +1213,7 @@ class Scout:
         if not candidates:
             return
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
+        async def _check(domain: str, accum: "_DomainAccum") -> None:
             try:
                 rdap_org = await self._rdap.get_registrant_org(domain)
                 if not rdap_org:
@@ -1267,7 +1267,7 @@ class Scout:
 
     async def _fingerprint_corroborate(
         self,
-        domain_evidence: dict[str, _DomainAccum],
+        domain_evidence: dict[str, "_DomainAccum"],
         seed_domains: list[str],
     ) -> None:
         """Extract DNS fingerprints from seeds and compare against candidates.
@@ -1330,7 +1330,7 @@ class Scout:
         # Step 3: Extract fingerprints and compare
         sem = asyncio.Semaphore(self.config.max_concurrent_queries)
 
-        async def _check(domain: str, accum: _DomainAccum) -> None:
+        async def _check(domain: str, accum: "_DomainAccum") -> None:
             async with sem:
                 try:
                     candidate_fp = await extract_fingerprint(domain, self._dns)
@@ -1397,7 +1397,7 @@ class Scout:
     # --- Step 4: Build output ---
 
     def _build_output(
-        self, evidence: dict[str, _DomainAccum], seed_domains: list[str]
+        self, evidence: dict[str, "_DomainAccum"], seed_domains: list[str]
     ) -> list[DiscoveredDomain]:
         domains: list[DiscoveredDomain] = []
         seed_bases = {extract_base_domain(sd) for sd in seed_domains} - {None}
@@ -1524,7 +1524,7 @@ class _DomainAccum:
         self.rdap_org: str | None = None
         self.confidence: float = 0.0
 
-    def merge(self, other: _DomainAccum) -> None:
+    def merge(self, other: "_DomainAccum") -> None:
         self.sources |= other.sources
         self.evidence.extend(other.evidence)
         self.cert_org_names |= other.cert_org_names
