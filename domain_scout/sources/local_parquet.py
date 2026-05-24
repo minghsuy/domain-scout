@@ -78,7 +78,7 @@ class LocalParquetSource:
         if not files:
             raise FileNotFoundError(f"No parquet files in: {wpath}")
 
-        parquet_glob = str(wpath / "**" / "*.parquet")
+        parquet_glob = str(wpath / "**" / "*.parquet").replace("'", "''")
         self._conn = duckdb.connect()
         self._from_clause = f"read_parquet('{parquet_glob}', union_by_name=true)"
         self._org_index = self._load_org_index()

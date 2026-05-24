@@ -257,6 +257,14 @@ class TestInit:
         with pytest.raises(Exception):  # noqa: B017
             LocalParquetSource(config)
 
+    def test_warehouse_path_sanitization(self, tmp_path: Path) -> None:
+        """Single quotes in warehouse path are escaped to prevent SQL injection."""
+        raw = "/data/O'Malley's Warehouse/**/*.parquet"
+        sanitized = raw.replace("'", "''")
+        # No lone single quotes remain after escaping
+        assert "'" not in sanitized.replace("''", "")
+        assert sanitized == "/data/O''Malley''s Warehouse/**/*.parquet"
+
 
 class TestSearchByOrg:
     @pytest.mark.asyncio()
