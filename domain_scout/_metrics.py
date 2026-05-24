@@ -1,8 +1,6 @@
 """Prometheus metrics for domain-scout. No-ops when prometheus-client is not installed."""
 
-from __future__ import annotations
-
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 __all__ = [
     "CONTENT_TYPE_LATEST",
@@ -20,6 +18,9 @@ __all__ = [
     "set_gauge",
 ]
 
+if TYPE_CHECKING:
+    from prometheus_client import Counter, Gauge, Histogram
+
 try:
     from prometheus_client import CONTENT_TYPE_LATEST as _CONTENT_TYPE_LATEST
     from prometheus_client import Counter, Gauge, Histogram
@@ -31,13 +32,13 @@ except ImportError:  # pragma: no cover
 
 CONTENT_TYPE_LATEST: str = _CONTENT_TYPE_LATEST if _ENABLED else ""
 
-SCANS_TOTAL: Counter | None = None
-SCAN_DURATION_SECONDS: Histogram | None = None
-DOMAINS_FOUND: Histogram | None = None
-CT_QUERIES_TOTAL: Counter | None = None
-CT_FALLBACKS_TOTAL: Counter | None = None
-CT_CIRCUIT_BREAKER_STATE: Gauge | None = None
-SOURCE_ERRORS_TOTAL: Counter | None = None
+SCANS_TOTAL: "Counter | None" = None
+SCAN_DURATION_SECONDS: "Histogram | None" = None
+DOMAINS_FOUND: "Histogram | None" = None
+CT_QUERIES_TOTAL: "Counter | None" = None
+CT_FALLBACKS_TOTAL: "Counter | None" = None
+CT_CIRCUIT_BREAKER_STATE: "Gauge | None" = None
+SOURCE_ERRORS_TOTAL: "Counter | None" = None
 
 if _ENABLED:
     SCANS_TOTAL = Counter(
@@ -81,7 +82,8 @@ def generate_latest() -> bytes:
     """Return Prometheus metrics in text exposition format. Empty bytes if disabled."""
     if not _ENABLED:
         return b""  # pragma: no cover
-    return _generate_latest()
+    res: bytes = _generate_latest()
+    return res
 
 
 def inc(counter: Any, amount: float = 1, **labels: str) -> None:
