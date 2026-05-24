@@ -1508,7 +1508,9 @@ class _DomainAccum:
         "evidence",
         "cert_org_names",
         "first_seen",
+        "earliest_cert",
         "last_seen",
+        "latest_cert",
         "resolves",
         "rdap_org",
         "confidence",
@@ -1520,6 +1522,8 @@ class _DomainAccum:
         self.cert_org_names: set[str] = set()
         self.first_seen: str | None = None
         self.last_seen: str | None = None
+        self.earliest_cert: datetime | None = None
+        self.latest_cert: datetime | None = None
         self.resolves: bool = False
         self.rdap_org: str | None = None
         self.confidence: float = 0.0
@@ -1539,9 +1543,9 @@ class _DomainAccum:
             self.rdap_org = other.rdap_org
 
     def update_times(self, not_before: object, not_after: object) -> None:
-        nb = _normalize_time(not_before)
-        na = _normalize_time(not_after)
-        if nb and (self.first_seen is None or nb < self.first_seen):
-            self.first_seen = nb
-        if na and (self.last_seen is None or na > self.last_seen):
-            self.last_seen = na
+        nb = _parse_time(_normalize_time(not_before))
+        na = _parse_time(_normalize_time(not_after))
+        if nb and (not self.earliest_cert or nb < self.earliest_cert):
+            self.earliest_cert = nb
+        if na and (not self.latest_cert or na > self.latest_cert):
+            self.latest_cert = na
