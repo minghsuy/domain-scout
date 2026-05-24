@@ -1,7 +1,5 @@
 """DuckDB-based query cache for CT and RDAP results."""
 
-from __future__ import annotations
-
 import asyncio
 import hashlib
 import json
@@ -64,7 +62,7 @@ class DuckDBCache:
         self._init_tables()
         log.debug("cache.opened", path=str(db_path))
 
-    def __enter__(self) -> DuckDBCache:
+    def __enter__(self) -> "DuckDBCache":
         return self
 
     def __exit__(self, *args: object) -> None:
@@ -220,7 +218,7 @@ class RDAPSource(Protocol):
 class CachedCTLogSource:
     """Transparent caching wrapper around CTLogSource."""
 
-    def __init__(self, inner: CTLogSource, cache: DuckDBCache) -> None:
+    def __init__(self, inner: "CTLogSource", cache: "DuckDBCache") -> None:
         self._inner = inner
         self._cache = cache
 
@@ -260,7 +258,7 @@ class CachedCTLogSource:
 class CachedRDAPLookup:
     """Transparent caching wrapper around RDAPLookup."""
 
-    def __init__(self, inner: RDAPLookup, cache: DuckDBCache) -> None:
+    def __init__(self, inner: "RDAPLookup", cache: "DuckDBCache") -> None:
         self._inner = inner
         self._cache = cache
 
