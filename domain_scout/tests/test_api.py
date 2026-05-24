@@ -515,8 +515,7 @@ class TestAppLifespan:
     def test_lifespan_closes_cache(self) -> None:
         """App lifespan closes cache on shutdown."""
         mock_cache = MagicMock()
-        app = create_app()
-        app.state.cache = mock_cache
+        app = create_app(cache=mock_cache)
         with TestClient(app):
             pass
         mock_cache.close.assert_called_once()
@@ -524,6 +523,5 @@ class TestAppLifespan:
     def test_lifespan_no_cache(self) -> None:
         """App lifespan handles absent cache smoothly."""
         app = create_app()
-        app.state.cache = None
         with TestClient(app):
             pass
