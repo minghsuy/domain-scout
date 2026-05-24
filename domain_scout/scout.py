@@ -75,7 +75,7 @@ _ORG_MATCH_TAGS = frozenset({"ct_org_match", "ct_subsidiary_match", "ct_gleif_su
 
 def _signal_fields(source_tag: str) -> dict[str, Any]:
     """Return signal_type and signal_weight for a source tag."""
-    sig = _SIGNAL_MAP.get(source_tag.split(":")[0])
+    sig = _SIGNAL_MAP.get(source_tag.split(":", 1)[0])
     if sig is None:
         return {}
     return {"signal_type": sig[0], "signal_weight": sig[1]}
@@ -777,7 +777,7 @@ class Scout:
         seed_slug = extract_base_domain(seed)
         if seed_slug:
             # e.g., "paloaltonetworks" from "paloaltonetworks.com" vs "Palo Alto Networks"
-            slug_part = seed_slug.split(".")[0]
+            slug_part = seed_slug.split(".", 1)[0]
             slug_score = org_name_similarity(slug_part, company_name)
             if slug_score > best_score:
                 best_score = slug_score
