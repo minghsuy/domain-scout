@@ -1,5 +1,7 @@
 """CLI interface for domain-scout."""
 
+from __future__ import annotations
+
 import logging
 from pathlib import Path  # noqa: TC003 — Typer needs runtime import
 from typing import TYPE_CHECKING, Annotated
@@ -252,7 +254,7 @@ def diff(
         _print_delta_table(report)
 
 
-def _get_cache_or_exit(cache_dir: str | Path | None = None) -> "DuckDBCache":
+def _get_cache_or_exit(cache_dir: str | Path | None = None) -> DuckDBCache:
     """Import and instantiate DuckDBCache, or exit with a friendly error."""
     try:
         from domain_scout.cache import DuckDBCache
@@ -266,7 +268,7 @@ def _get_cache_or_exit(cache_dir: str | Path | None = None) -> "DuckDBCache":
         raise typer.Exit(1) from None
 
 
-def _load_result(path: Path, label: str) -> "ScoutResult":
+def _load_result(path: Path, label: str) -> ScoutResult:
     """Load and validate a ScoutResult JSON file, or exit with an error."""
     from domain_scout.models import ScoutResult
 
@@ -285,7 +287,7 @@ def _load_result(path: Path, label: str) -> "ScoutResult":
         raise typer.Exit(1) from None
 
 
-def _print_delta_table(report: "DeltaReport") -> None:
+def _print_delta_table(report: DeltaReport) -> None:
     """Pretty-print a delta report as a table."""
     # Warnings to stderr
     for w in report.warnings:
@@ -378,7 +380,7 @@ def cache_clear(
     typer.echo("  Cache cleared.")
 
 
-def _print_table(result: "ScoutResult") -> None:
+def _print_table(result: ScoutResult) -> None:
     """Pretty-print results as a table to stderr/stdout."""
     typer.echo(f"\n  Entity: {result.entity.company_name}", err=True)
     if result.entity.location:

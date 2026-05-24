@@ -322,7 +322,7 @@ def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> Finger
     seed_ns = {ns for ns in seed.ns_zones if not _is_shared_ns(ns)}
     for nz in candidate.ns_zones:
         if nz in seed_ns:
-            signals.append(
+            signals.append(  # noqa: PERF401 — conditional append; not all iterations append
                 FingerprintSignal(
                     signal_type="ns_zone",
                     seed_value=nz,
@@ -338,7 +338,7 @@ def match_fingerprint(candidate: DNSFingerprint, seed: DNSFingerprint) -> Finger
     seed_spf = {s for s in seed.spf_includes if s not in _SHARED_SPF_INCLUDES}
     for spf in candidate.spf_includes:
         if spf in seed_spf:
-            signals.append(
+            signals.append(  # noqa: PERF401 — conditional append; not all iterations append
                 FingerprintSignal(
                     signal_type="spf_include",
                     seed_value=spf,

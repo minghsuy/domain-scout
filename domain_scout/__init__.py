@@ -1,5 +1,7 @@
 """domain-scout: Discover internet domains associated with a business entity."""
 
+from __future__ import annotations
+
 from importlib.metadata import version as _pkg_version
 
 from domain_scout._logging import configure_logging

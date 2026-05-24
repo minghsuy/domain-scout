@@ -62,7 +62,19 @@ target-version = "py312"
 line-length = 100
 
 [tool.ruff.lint]
-select = ["E", "F", "I", "N", "W", "UP", "B", "A", "SIM", "TCH"]
+select = ["E", "F", "I", "N", "W", "UP", "B", "A", "SIM", "TCH", "PERF"]
+extend-select = ["S608"]
+
+[tool.ruff.lint.isort]
+required-imports = ["from __future__ import annotations"]
+
+[tool.ruff.lint.per-file-ignores]
+"domain_scout/tests/**" = ["S101"]
+# S608 false positives: table names validated by allowlist or from internal Path objects
+"domain_scout/cache.py" = ["S608"]
+"domain_scout/resolve/gleif_ingest.py" = ["S608"]
+"domain_scout/resolve/gleif_lookup.py" = ["S608"]
+"domain_scout/sources/local_parquet.py" = ["S608"]
 
 [tool.mypy]
 strict = true
