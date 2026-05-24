@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import functools
 import re
 import unicodedata
 
@@ -76,6 +77,7 @@ _SUFFIX_PATTERN = re.compile("|".join(_LEGAL_SUFFIXES), re.IGNORECASE)
 _TRAILING_SUFFIX_PATTERN = re.compile(r"\s+(?:group|holdings?|co|ag|sa|se|nv|ab)$")
 
 
+@functools.lru_cache(maxsize=4096)
 def _extract_dba_name(name: str) -> str | None:
     """Extract the DBA (operating) name from a string like
     'ACME LLC DBA ACME CLOUD'. Returns None if no DBA clause found."""
@@ -86,6 +88,7 @@ def _extract_dba_name(name: str) -> str | None:
     return None
 
 
+@functools.lru_cache(maxsize=4096)
 def normalize_org_name(name: str) -> str:
     """Normalize a company/org name for comparison.
 
@@ -197,6 +200,7 @@ def _extract_initials_from_word(word: str) -> str:
     return "".join(initials)
 
 
+@functools.lru_cache(maxsize=4096)
 def _get_initials(name: str) -> str:
     """Compute acronym initials from a name.
 
@@ -251,6 +255,7 @@ def _fuzzy_best(a: str, b: str) -> float:
     return score
 
 
+@functools.lru_cache(maxsize=4096)
 def org_name_similarity(name_a: str, name_b: str) -> float:
     """Score how similar two org names are (0.0–1.0).
 
