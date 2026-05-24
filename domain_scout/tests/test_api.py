@@ -537,3 +537,42 @@ class TestAppLifespan:
         app = create_app()
         with TestClient(app):
             pass
+
+
+class TestDiffEndpoint:
+    @pytest.fixture
+    def diff_client(self) -> TestClient:
+        app = create_app(cache=None, api_key="secret-key")
+        return TestClient(app)
+
+    def test_diff_success(self, diff_client: TestClient) -> None:
+        import json
+
+        baseline = _mock_result()
+        current = _mock_result()
+
+        req_data = {
+            "baseline": json.loads(baseline.model_dump_json()),
+            "current": json.loads(current.model_dump_json()),
+        }
+
+        resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
+        assert resp.status_code == 200
+
+        data = resp.json()
+        assert "added" in data
+        assert "removed" in data
+        assert "changed" in data
+        assert "summary" in data
+
+    def test_diff_invalid_payload(self, diff_client: TestClient) -> None:
+        import json
+
+        baseline = _mock_result()
+
+        # Missing 'current' in the payload
+        req_data = {"baseline": json.loads(baseline.model_dump_json())}
+
+        resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
+        # Should be unprocessable entity because 'current' is required
+        assert resp.status_code == 422
