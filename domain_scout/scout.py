@@ -1532,9 +1532,7 @@ class _DomainAccum:
             self.earliest_cert is None or other.earliest_cert < self.earliest_cert
         ):
             self.earliest_cert = other.earliest_cert
-        if other.latest_cert and (
-            self.latest_cert is None or other.latest_cert > self.latest_cert
-        ):
+        if other.latest_cert and (self.latest_cert is None or other.latest_cert > self.latest_cert):
             self.latest_cert = other.latest_cert
         self.resolves = self.resolves or other.resolves
         if self.rdap_org is None and other.rdap_org is not None:
