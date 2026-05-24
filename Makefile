@@ -7,7 +7,7 @@ test:
 	uv run pytest domain_scout/tests -m "not integration" -v
 
 test-integration:
-	uv run pytest domain_scout/tests -m integration -v --timeout=120
+	uv run pytest domain_scout/tests -m integration -v --timeout=120 --no-cov
 
 lint:
 	uv run ruff check domain_scout/
