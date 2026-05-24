@@ -91,7 +91,7 @@ def _tld_is_country(domain: str) -> int:
 
 
 def _domain_has_company_token(domain: str, company_name: str) -> int:
-    base = domain.split(".", maxsplit=1)[0].lower()
+    base = domain.split(".")[0].lower()
     tokens = [t.lower().rstrip(".,") for t in company_name.split() if len(t) >= 3]
     tokens = [t for t in tokens if t not in _COMPANY_SUFFIX_SKIP]
     return 1 if any(t in base for t in tokens) else 0
@@ -171,7 +171,7 @@ def score_confidence(
         "org_matches_different_entity": 0.0,  # requires S&P 500 data, not available at inference
         "evidence_density": evidence_density,
         "resolves": float(resolves),
-        "domain_length": float(len(domain.split(".", maxsplit=1)[0])),
+        "domain_length": float(len(domain.split(".")[0])),
         "rdap_similarity": rdap_similarity,
         # ASN/NS features: not available at inference (would need separate DNS+ASN lookup)
         "same_asn_as_anchor": 0.0,

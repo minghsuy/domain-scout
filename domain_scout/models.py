@@ -1,5 +1,7 @@
 """Pydantic models for input, output, and intermediate data."""
 
+from __future__ import annotations
+
 from datetime import datetime  # noqa: TC003 — Pydantic needs runtime import
 from typing import Self
 

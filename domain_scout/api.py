@@ -1,14 +1,18 @@
 """FastAPI REST API for domain-scout."""
 
+from __future__ import annotations
+
 import asyncio
 import os
 import secrets
 import time
-from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from importlib.metadata import version as _pkg_version
 from pathlib import Path
-from typing import Any, cast, get_args
+from typing import TYPE_CHECKING, Any, cast, get_args
+
+if TYPE_CHECKING:
+    from collections.abc import AsyncIterator
 
 import httpx
 import structlog
