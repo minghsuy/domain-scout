@@ -2,19 +2,20 @@
 
 from __future__ import annotations
 
+import json
 import os
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+from fastapi.testclient import TestClient
 
 if TYPE_CHECKING:
     from collections.abc import Iterator
     from pathlib import Path
-from fastapi.testclient import TestClient
 
 from domain_scout.api import ScanRequest, create_app, get_app
-from domain_scout.models import EntityInput
+from domain_scout.models import DeltaReport, DiscoveredDomain, EntityInput
 from domain_scout.tests.conftest import mock_result as _mock_result
 
 
@@ -408,8 +409,6 @@ class TestAPIKeyAuth:
         resp = auth_client.post("/cache/clear")
         assert resp.status_code == 401
 
-        import json
-
         resp = auth_client.post(
             "/diff",
             json={
@@ -442,8 +441,6 @@ class TestAPIKeyAuth:
 
         resp = auth_client.get("/cache/stats", headers={"X-API-Key": "secret-key"})
         assert resp.status_code == 200
-
-        import json
 
         resp = auth_client.post(
             "/diff",
@@ -537,3 +534,64 @@ class TestAppLifespan:
         app = create_app()
         with TestClient(app):
             pass
+
+
+class TestDiffEndpoint:
+    @pytest.fixture
+    def diff_client(self) -> TestClient:
+        app = create_app(cache=None, max_concurrent=2, api_key="secret-key")
+        return TestClient(app)
+
+    def test_diff_success(self, diff_client: TestClient) -> None:
+        baseline = _mock_result()
+        current = _mock_result()
+
+        req_data = {
+            "baseline": json.loads(baseline.model_dump_json()),
+            "current": json.loads(current.model_dump_json()),
+        }
+
+        resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
+        assert resp.status_code == 200
+
+        report = DeltaReport.model_validate(resp.json())
+        assert report.added == []
+        assert report.removed == []
+        assert report.changed == []
+        assert report.warnings == []
+        assert report.summary.added == 0
+        assert report.summary.removed == 0
+        assert report.summary.unchanged == 0
+        assert report.summary.baseline_total == 0
+        assert report.summary.current_total == 0
+
+    def test_diff_detects_added_domain(self, diff_client: TestClient) -> None:
+        baseline = _mock_result()
+        current = _mock_result()
+        current.domains = [
+            DiscoveredDomain(domain="new.example.com", confidence=0.9, sources=["ct"])
+        ]
+
+        resp = diff_client.post(
+            "/diff",
+            json={
+                "baseline": json.loads(baseline.model_dump_json()),
+                "current": json.loads(current.model_dump_json()),
+            },
+            headers={"X-API-Key": "secret-key"},
+        )
+        assert resp.status_code == 200
+        report = DeltaReport.model_validate(resp.json())
+        assert len(report.added) == 1
+        assert report.added[0].domain == "new.example.com"
+        assert report.summary.added == 1
+
+    def test_diff_invalid_payload(self, diff_client: TestClient) -> None:
+        baseline = _mock_result()
+
+        # Missing 'current' in the payload
+        req_data = {"baseline": json.loads(baseline.model_dump_json())}
+
+        resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
+        # Should be unprocessable entity because 'current' is required
+        assert resp.status_code == 422
