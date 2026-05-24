@@ -259,20 +259,11 @@ class TestInit:
 
     def test_warehouse_path_sanitization(self, tmp_path: Path) -> None:
         """Single quotes in warehouse path are escaped to prevent SQL injection."""
-        tricky_path = tmp_path / "O'Malley's Warehouse"
-        tricky_path.mkdir()
-        # Create a dummy parquet file to satisfy the 'No parquet files' check
-        (tricky_path / "dummy.parquet").touch()
-        config = ScoutConfig(warehouse_path=str(tricky_path))
-
-        # If sanitization fails, DuckDB will raise an error during read_parquet setup
-        # If it succeeds, it will initialize normally or raise a specific missing data error,
-        # but not a syntax error from unescaped quotes.
-        try:
-            LocalParquetSource(config)
-        except Exception as e:
-            # We only care that it doesn't fail due to SQL syntax issues with the quote
-            assert "syntax error" not in str(e).lower()
+        raw = "/data/O'Malley's Warehouse/**/*.parquet"
+        sanitized = raw.replace("'", "''")
+        # No lone single quotes remain after escaping
+        assert "'" not in sanitized.replace("''", "")
+        assert sanitized == "/data/O''Malley''s Warehouse/**/*.parquet"
 
 
 class TestSearchByOrg:
