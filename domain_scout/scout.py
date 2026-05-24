@@ -1341,7 +1341,7 @@ class Scout:
                 # Compare against all seed fingerprints, take best match
                 best_match = None
                 best_signal_count = 0
-                for _seed_domain, seed_fp in seed_fps.items():
+                for seed_fp in seed_fps.values():
                     fm = match_fingerprint(candidate_fp, seed_fp)
                     if fm.signal_count > best_signal_count:
                         best_match = fm
