@@ -82,8 +82,7 @@ def generate_latest() -> bytes:
     """Return Prometheus metrics in text exposition format. Empty bytes if disabled."""
     if not _ENABLED:
         return b""  # pragma: no cover
-    res: bytes = _generate_latest()
-    return res
+    return _generate_latest()
 
 
 def inc(counter: Any, amount: float = 1, **labels: str) -> None:
