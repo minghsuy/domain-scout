@@ -81,6 +81,7 @@ strict = true
 python_version = "3.12"
 
 [tool.pytest.ini_options]
+addopts = "--cov=domain_scout --cov-fail-under=92"
 markers = [
     "integration: marks tests that hit real external services (deselect with '-m \"not integration\"')",
 ]
@@ -96,4 +97,5 @@ dev = [
     "pytest-timeout>=2.3.0",
     "ruff>=0.9.0",
     "pyarrow>=23.0.1",
+    "pytest-cov>=7.1.0",
 ]
