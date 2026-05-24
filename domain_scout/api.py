@@ -43,7 +43,7 @@ _READY_CACHE_TTL = 60.0
 
 def _reject_traversal(path: str, field: str) -> None:
     """Raise 400 if path contains '..' components."""
-    if ".." in Path(path).parts:
+    if ".." in Path(path).parts or Path(path).is_absolute():
         raise HTTPException(status_code=400, detail=f"Invalid {field}: path traversal detected")
 
 
@@ -174,16 +174,18 @@ def create_app(
         local_mode = req.local_mode if req.local_mode is not None else app.state.default_local_mode
         if local_mode != "disabled":
             overrides["local_mode"] = local_mode
-            warehouse = req.warehouse_path or app.state.default_warehouse_path
-            if warehouse:
-                _reject_traversal(warehouse, "warehouse_path")
-                overrides["warehouse_path"] = warehouse
+            if req.warehouse_path:
+                _reject_traversal(req.warehouse_path, "warehouse_path")
+                overrides["warehouse_path"] = req.warehouse_path
+            elif app.state.default_warehouse_path:
+                overrides["warehouse_path"] = app.state.default_warehouse_path
 
         # Resolve subsidiaries_path: request overrides server default
-        subs = req.subsidiaries_path or app.state.default_subsidiaries_path
-        if subs:
-            _reject_traversal(subs, "subsidiaries_path")
-            overrides["subsidiaries_path"] = subs
+        if req.subsidiaries_path:
+            _reject_traversal(req.subsidiaries_path, "subsidiaries_path")
+            overrides["subsidiaries_path"] = req.subsidiaries_path
+        elif app.state.default_subsidiaries_path:
+            overrides["subsidiaries_path"] = app.state.default_subsidiaries_path
 
         try:
             if req.profile:

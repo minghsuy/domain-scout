@@ -289,7 +289,7 @@ class TestScanRequest:
         assert resp.status_code == 400
         assert "Invalid warehouse_path" in resp.json()["detail"]
 
-        # Absolute paths must NOT be rejected as traversal
+        # Absolute paths must be rejected as traversal
         resp_absolute = client.post(
             "/scan",
             json={
@@ -298,7 +298,7 @@ class TestScanRequest:
                 "warehouse_path": "/opt/warehouse",
             },
         )
-        assert resp_absolute.status_code != 400
+        assert resp_absolute.status_code == 400
 
     def test_scan_subsidiaries_path_traversal(
         self, client: TestClient, mock_discover: AsyncMock
@@ -351,7 +351,7 @@ class TestServerDefaults:
                 json={
                     "entity": {"company_name": "TestCorp"},
                     "local_mode": "local_only",
-                    "warehouse_path": "/other/warehouse",
+                    "warehouse_path": "other/warehouse",
                 },
             )
         assert resp.status_code == 200
