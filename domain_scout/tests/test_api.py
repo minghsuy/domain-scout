@@ -2,19 +2,20 @@
 
 from __future__ import annotations
 
+import json
 import os
 from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
+from fastapi.testclient import TestClient
 
 if TYPE_CHECKING:
     from collections.abc import Iterator
     from pathlib import Path
-from fastapi.testclient import TestClient
 
 from domain_scout.api import ScanRequest, create_app, get_app
-from domain_scout.models import EntityInput
+from domain_scout.models import DeltaReport, EntityInput
 from domain_scout.tests.conftest import mock_result as _mock_result
 
 
@@ -408,8 +409,6 @@ class TestAPIKeyAuth:
         resp = auth_client.post("/cache/clear")
         assert resp.status_code == 401
 
-        import json
-
         resp = auth_client.post(
             "/diff",
             json={
@@ -442,8 +441,6 @@ class TestAPIKeyAuth:
 
         resp = auth_client.get("/cache/stats", headers={"X-API-Key": "secret-key"})
         assert resp.status_code == 200
-
-        import json
 
         resp = auth_client.post(
             "/diff",
@@ -546,8 +543,6 @@ class TestDiffEndpoint:
         return TestClient(app)
 
     def test_diff_success(self, diff_client: TestClient) -> None:
-        import json
-
         baseline = _mock_result()
         current = _mock_result()
 
@@ -559,20 +554,18 @@ class TestDiffEndpoint:
         resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
         assert resp.status_code == 200
 
-        data = resp.json()
-        assert data["added"] == []
-        assert data["removed"] == []
-        assert data["changed"] == []
-        assert data["warnings"] == []
-        assert data["summary"]["added"] == 0
-        assert data["summary"]["removed"] == 0
-        assert data["summary"]["unchanged"] == 0
-        assert data["summary"]["baseline_total"] == 0
-        assert data["summary"]["current_total"] == 0
+        report = DeltaReport.model_validate(resp.json())
+        assert report.added == []
+        assert report.removed == []
+        assert report.changed == []
+        assert report.warnings == []
+        assert report.summary.added == 0
+        assert report.summary.removed == 0
+        assert report.summary.unchanged == 0
+        assert report.summary.baseline_total == 0
+        assert report.summary.current_total == 0
 
     def test_diff_detects_added_domain(self, diff_client: TestClient) -> None:
-        import json
-
         from domain_scout.models import DiscoveredDomain
 
         baseline = _mock_result()
@@ -590,14 +583,12 @@ class TestDiffEndpoint:
             headers={"X-API-Key": "secret-key"},
         )
         assert resp.status_code == 200
-        data = resp.json()
-        assert len(data["added"]) == 1
-        assert data["added"][0]["domain"] == "new.example.com"
-        assert data["summary"]["added"] == 1
+        report = DeltaReport.model_validate(resp.json())
+        assert len(report.added) == 1
+        assert report.added[0].domain == "new.example.com"
+        assert report.summary.added == 1
 
     def test_diff_invalid_payload(self, diff_client: TestClient) -> None:
-        import json
-
         baseline = _mock_result()
 
         # Missing 'current' in the payload
