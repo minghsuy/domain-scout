@@ -1,7 +1,5 @@
 """Delta reporting: compute differences between two ScoutResult runs."""
 
-from __future__ import annotations
-
 from domain_scout.models import (
     ChangedDomain,
     DeltaReport,

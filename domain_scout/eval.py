@@ -9,8 +9,6 @@ Usage:
   python -m domain_scout.eval --mode live --output json
 """
 
-from __future__ import annotations
-
 import argparse
 import asyncio
 import math

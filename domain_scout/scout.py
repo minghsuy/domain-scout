@@ -75,7 +75,7 @@ _ORG_MATCH_TAGS = frozenset({"ct_org_match", "ct_subsidiary_match", "ct_gleif_su
 
 def _signal_fields(source_tag: str) -> dict[str, Any]:
     """Return signal_type and signal_weight for a source tag."""
-    sig = _SIGNAL_MAP.get(source_tag.split(":")[0])
+    sig = _SIGNAL_MAP.get(source_tag.split(":", 1)[0])
     if sig is None:
         return {}
     return {"signal_type": sig[0], "signal_weight": sig[1]}
@@ -445,8 +445,8 @@ class Scout:
         gleif_sibling_names: set[str] = set()
         if self._gleif_con is not None and entity.company_name:
             gleif_sub_names, gleif_sibling_names = self._expand_gleif_tree(entity.company_name)
-            for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]:
-                independent_tasks.append(
+            independent_tasks.extend(
+                [
                     asyncio.create_task(
                         self._strategy_org_search(
                             sub_name,
@@ -455,13 +455,15 @@ class Scout:
                         ),
                         name=f"gleif_sub:{sub_name[:30]}",
                     )
-                )
+                    for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]
+                ]
+            )
 
         # D2: CSV fallback (if CSV loaded and GLEIF didn't find anything)
         if self._subsidiaries and not gleif_sub_names and entity.company_name:
             sub_names = self._match_subsidiaries(entity.company_name)
-            for sub_name in sub_names[: self.config.subsidiary_max_queries]:
-                independent_tasks.append(
+            independent_tasks.extend(
+                [
                     asyncio.create_task(
                         self._strategy_org_search(
                             sub_name,
@@ -470,7 +472,9 @@ class Scout:
                         ),
                         name=f"subsidiary:{sub_name[:30]}",
                     )
-                )
+                    for sub_name in sub_names[: self.config.subsidiary_max_queries]
+                ]
+            )
 
         # Pre-calculate base domains for all seeds once
         seed_to_base = {s: extract_base_domain(s) for s in seeds}
@@ -549,8 +553,8 @@ class Scout:
                 )
 
         # Strategy B per seed (parallel) — reuses CT records from seed validation
-        for sd in seeds:
-            dependent_tasks.append(
+        dependent_tasks.extend(
+            [
                 asyncio.create_task(
                     self._strategy_seed_expansion(
                         sd,
@@ -560,7 +564,9 @@ class Scout:
                     ),
                     name=f"seed_expansion:{sd}",
                 )
-            )
+                for sd in seeds
+            ]
+        )
 
         # Gather all strategy results under the remaining time budget (minus 10s reserve)
         all_strategy_tasks = independent_tasks + dependent_tasks
@@ -777,7 +783,7 @@ class Scout:
         seed_slug = extract_base_domain(seed)
         if seed_slug:
             # e.g., "paloaltonetworks" from "paloaltonetworks.com" vs "Palo Alto Networks"
-            slug_part = seed_slug.split(".")[0]
+            slug_part = seed_slug.split(".", 1)[0]
             slug_score = org_name_similarity(slug_part, company_name)
             if slug_score > best_score:
                 best_score = slug_score
@@ -989,14 +995,9 @@ class Scout:
         # Also try with location keywords
         if location:
             loc_words = [w.lower().strip(",. ") for w in location.split() if len(w) > 2]
-            for slug in list(slugs):
-                for lw in loc_words[:2]:
-                    slugs.append(slug + lw)
+            slugs.extend([slug + lw for slug in slugs for lw in loc_words[:2]])
 
-        candidates: list[str] = []
-        for slug in slugs:
-            for tld in self.config.guess_tlds:
-                candidates.append(slug + tld)
+        candidates: list[str] = [slug + tld for slug in slugs for tld in self.config.guess_tlds]
 
         # DNS resolve all candidates
         resolve_map = await self._dns.bulk_resolve(candidates)
