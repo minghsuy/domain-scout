@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import functools
 import re
 import unicodedata
 
@@ -76,6 +77,7 @@ _SUFFIX_PATTERN = re.compile("|".join(_LEGAL_SUFFIXES), re.IGNORECASE)
 _TRAILING_SUFFIX_PATTERN = re.compile(r"\s+(?:group|holdings?|co|ag|sa|se|nv|ab)$")
 
 
+@functools.lru_cache(maxsize=4096)
 def _extract_dba_name(name: str) -> str | None:
     """Extract the DBA (operating) name from a string like
     'ACME LLC DBA ACME CLOUD'. Returns None if no DBA clause found."""
@@ -86,6 +88,7 @@ def _extract_dba_name(name: str) -> str | None:
     return None
 
 
+@functools.lru_cache(maxsize=4096)
 def normalize_org_name(name: str) -> str:
     """Normalize a company/org name for comparison.
 
@@ -196,6 +199,7 @@ def _extract_initials_from_word(word: str) -> str:
     return "".join(initials)
 
 
+@functools.lru_cache(maxsize=4096)
 def _get_initials(name: str) -> str:
     """Compute acronym initials from a name.
 
@@ -253,16 +257,18 @@ def _fuzzy_best(a: str, b: str) -> float:
 def org_name_similarity(name_a: str, name_b: str) -> float:
     """Score how similar two org names are (0.0–1.0).
 
-    Uses multiple strategies and takes the best score:
-    - Weighted rapidfuzz (ratio / token-sort / token-set / partial)
-    - Acronym detection with CamelCase splitting and stop-word removal
-    - Brand-alias lookup for names that differ completely
-    - DBA dual-match (compares both legal and operating names)
+    Truncates inputs before the cache lookup so the cache key is bounded and
+    two callers passing strings of different lengths above 500 chars share the
+    same cache entry.
     """
     # Guard against pathologically long inputs (e.g., adversarial cert org
-    # fields). rapidfuzz has O(n*m) complexity; cap at 500 chars.
-    name_a = name_a[:500]
-    name_b = name_b[:500]
+    # fields). Truncate BEFORE cache lookup so the key is bounded.
+    return _org_name_similarity_cached(name_a[:500], name_b[:500])
+
+
+@functools.lru_cache(maxsize=4096)
+def _org_name_similarity_cached(name_a: str, name_b: str) -> float:
+    """Cached implementation — callers must pre-truncate inputs."""
     norm_a = normalize_org_name(name_a)
     norm_b = normalize_org_name(name_b)
 
