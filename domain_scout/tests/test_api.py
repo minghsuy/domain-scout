@@ -15,7 +15,7 @@ if TYPE_CHECKING:
     from pathlib import Path
 
 from domain_scout.api import ScanRequest, create_app, get_app
-from domain_scout.models import DeltaReport, EntityInput
+from domain_scout.models import DeltaReport, DiscoveredDomain, EntityInput
 from domain_scout.tests.conftest import mock_result as _mock_result
 
 
@@ -566,8 +566,6 @@ class TestDiffEndpoint:
         assert report.summary.current_total == 0
 
     def test_diff_detects_added_domain(self, diff_client: TestClient) -> None:
-        from domain_scout.models import DiscoveredDomain
-
         baseline = _mock_result()
         current = _mock_result()
         current.domains = [
