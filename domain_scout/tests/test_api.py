@@ -314,6 +314,17 @@ class TestScanRequest:
         assert resp.status_code == 400
         assert "Invalid subsidiaries_path" in resp.json()["detail"]
 
+        # Absolute paths must also be rejected
+        resp_absolute = client.post(
+            "/scan",
+            json={
+                "entity": {"company_name": "TestCorp"},
+                "subsidiaries_path": "/etc/passwd",
+            },
+        )
+        assert resp_absolute.status_code == 400
+        assert "Invalid subsidiaries_path" in resp_absolute.json()["detail"]
+
 
 class TestServerDefaults:
     """Tests for server-default configuration via create_app params."""

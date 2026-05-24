@@ -42,9 +42,11 @@ _READY_CACHE_TTL = 60.0
 
 
 def _reject_traversal(path: str, field: str) -> None:
-    """Raise 400 if path contains '..' components."""
-    if ".." in Path(path).parts or Path(path).is_absolute():
+    """Raise 400 if path contains '..' components or is an absolute path."""
+    if ".." in Path(path).parts:
         raise HTTPException(status_code=400, detail=f"Invalid {field}: path traversal detected")
+    if Path(path).is_absolute():
+        raise HTTPException(status_code=400, detail=f"Invalid {field}: must be a relative path")
 
 
 class ScanRequest(BaseModel):
