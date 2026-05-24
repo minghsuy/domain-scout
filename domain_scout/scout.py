@@ -989,14 +989,9 @@ class Scout:
         # Also try with location keywords
         if location:
             loc_words = [w.lower().strip(",. ") for w in location.split() if len(w) > 2]
-            for slug in list(slugs):
-                for lw in loc_words[:2]:
-                    slugs.append(slug + lw)
+            slugs.extend([slug + lw for slug in slugs for lw in loc_words[:2]])
 
-        candidates: list[str] = []
-        for slug in slugs:
-            for tld in self.config.guess_tlds:
-                candidates.append(slug + tld)
+        candidates = [slug + tld for slug in slugs for tld in self.config.guess_tlds]
 
         # DNS resolve all candidates
         resolve_map = await self._dns.bulk_resolve(candidates)
