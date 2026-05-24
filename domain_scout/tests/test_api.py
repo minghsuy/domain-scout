@@ -299,6 +299,7 @@ class TestScanRequest:
             },
         )
         assert resp_absolute.status_code == 400
+        assert "Invalid warehouse_path" in resp_absolute.json()["detail"]
 
     def test_scan_subsidiaries_path_traversal(
         self, client: TestClient, mock_discover: AsyncMock
