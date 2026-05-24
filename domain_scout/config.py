@@ -1,7 +1,5 @@
 """Configuration constants and defaults."""
 
-from __future__ import annotations
-
 import dataclasses
 from dataclasses import dataclass, field
 from typing import Literal
@@ -122,7 +120,7 @@ class ScoutConfig:
         return dataclasses.asdict(self)
 
     @classmethod
-    def from_profile(cls, profile: ProfileName, **overrides: object) -> ScoutConfig:
+    def from_profile(cls, profile: ProfileName, **overrides: object) -> "ScoutConfig":
         """Create a config from a named profile with optional overrides."""
         if profile not in _PROFILES:
             raise ValueError(f"Unknown profile: {profile!r}. Choose from: {', '.join(_PROFILES)}")
