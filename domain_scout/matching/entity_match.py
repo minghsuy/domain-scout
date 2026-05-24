@@ -119,8 +119,7 @@ def normalize_org_name(name: str) -> str:
     name = re.sub(r"^the\s+", "", name)
     # Expand common abbreviations
     words = name.split()
-    name = " ".join(_ABBREVIATIONS.get(w, w) for w in words)
-    return name
+    return " ".join(_ABBREVIATIONS.get(w, w) for w in words)
 
 
 # Hard legal suffixes — stripped in one acronym-detection pass so that
