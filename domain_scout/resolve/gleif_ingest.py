@@ -38,7 +38,7 @@ def _get_download_urls() -> tuple[str, str]:
 
 def _download_and_extract(url: str, dest_dir: Path) -> Path:
     """Download a zip file and extract the CSV inside it."""
-    log.info("gleif.downloading", url=url.split("/")[-1])
+    log.info("gleif.downloading", url=url.rsplit("/", maxsplit=1)[-1])
     resp = httpx.get(url, timeout=300, follow_redirects=True)
     resp.raise_for_status()
 
