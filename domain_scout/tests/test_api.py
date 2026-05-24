@@ -509,3 +509,19 @@ class TestAPIKeyAuth:
             headers={"Authorization": "Bearer secret-key"},
         )
         assert resp.status_code == 200
+
+
+class TestAppLifespan:
+    def test_lifespan_closes_cache(self) -> None:
+        """App lifespan closes cache on shutdown."""
+        mock_cache = MagicMock()
+        app = create_app(cache=mock_cache)
+        with TestClient(app):
+            pass
+        mock_cache.close.assert_called_once()
+
+    def test_lifespan_no_cache(self) -> None:
+        """App lifespan handles absent cache smoothly."""
+        app = create_app()
+        with TestClient(app):
+            pass
