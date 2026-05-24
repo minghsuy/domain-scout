@@ -577,7 +577,9 @@ class TestDiffEndpoint:
 
         baseline = _mock_result()
         current = _mock_result()
-        current.domains = [DiscoveredDomain(domain="new.example.com", confidence=0.9, sources=["ct"])]
+        current.domains = [
+            DiscoveredDomain(domain="new.example.com", confidence=0.9, sources=["ct"])
+        ]
 
         resp = diff_client.post(
             "/diff",
