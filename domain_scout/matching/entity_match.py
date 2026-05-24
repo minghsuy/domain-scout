@@ -255,20 +255,21 @@ def _fuzzy_best(a: str, b: str) -> float:
     return score
 
 
-@functools.lru_cache(maxsize=4096)
 def org_name_similarity(name_a: str, name_b: str) -> float:
     """Score how similar two org names are (0.0–1.0).
 
-    Uses multiple strategies and takes the best score:
-    - Weighted rapidfuzz (ratio / token-sort / token-set / partial)
-    - Acronym detection with CamelCase splitting and stop-word removal
-    - Brand-alias lookup for names that differ completely
-    - DBA dual-match (compares both legal and operating names)
+    Truncates inputs before the cache lookup so the cache key is bounded and
+    two callers passing strings of different lengths above 500 chars share the
+    same cache entry.
     """
     # Guard against pathologically long inputs (e.g., adversarial cert org
-    # fields). rapidfuzz has O(n*m) complexity; cap at 500 chars.
-    name_a = name_a[:500]
-    name_b = name_b[:500]
+    # fields). Truncate BEFORE cache lookup so the key is bounded.
+    return _org_name_similarity_cached(name_a[:500], name_b[:500])
+
+
+@functools.lru_cache(maxsize=4096)
+def _org_name_similarity_cached(name_a: str, name_b: str) -> float:
+    """Cached implementation — callers must pre-truncate inputs."""
     norm_a = normalize_org_name(name_a)
     norm_b = normalize_org_name(name_b)
 
