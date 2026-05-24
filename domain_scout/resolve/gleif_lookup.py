@@ -251,8 +251,7 @@ def _normalize_for_gleif(name: str) -> str:
         n = stripped
     # Collapse whitespace, strip punctuation edges
     n = re.sub(r"[,.]", "", n)
-    n = " ".join(n.split()).strip()
-    return n
+    return " ".join(n.split()).strip()
 
 
 def _row_to_entity(row: tuple[Any, ...]) -> GleifEntity:
