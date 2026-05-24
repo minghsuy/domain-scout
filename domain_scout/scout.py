@@ -445,32 +445,32 @@ class Scout:
         gleif_sibling_names: set[str] = set()
         if self._gleif_con is not None and entity.company_name:
             gleif_sub_names, gleif_sibling_names = self._expand_gleif_tree(entity.company_name)
-            for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]:
-                independent_tasks.append(
-                    asyncio.create_task(
-                        self._strategy_org_search(
-                            sub_name,
-                            errors,
-                            source_tag="ct_gleif_subsidiary",
-                        ),
-                        name=f"gleif_sub:{sub_name[:30]}",
-                    )
+            independent_tasks.extend(
+                asyncio.create_task(
+                    self._strategy_org_search(
+                        sub_name,
+                        errors,
+                        source_tag="ct_gleif_subsidiary",
+                    ),
+                    name=f"gleif_sub:{sub_name[:30]}",
                 )
+                for sub_name in gleif_sub_names[: self.config.gleif_max_subsidiaries]
+            )
 
         # D2: CSV fallback (if CSV loaded and GLEIF didn't find anything)
         if self._subsidiaries and not gleif_sub_names and entity.company_name:
             sub_names = self._match_subsidiaries(entity.company_name)
-            for sub_name in sub_names[: self.config.subsidiary_max_queries]:
-                independent_tasks.append(
-                    asyncio.create_task(
-                        self._strategy_org_search(
-                            sub_name,
-                            errors,
-                            source_tag="ct_subsidiary_match",
-                        ),
-                        name=f"subsidiary:{sub_name[:30]}",
-                    )
+            independent_tasks.extend(
+                asyncio.create_task(
+                    self._strategy_org_search(
+                        sub_name,
+                        errors,
+                        source_tag="ct_subsidiary_match",
+                    ),
+                    name=f"subsidiary:{sub_name[:30]}",
                 )
+                for sub_name in sub_names[: self.config.subsidiary_max_queries]
+            )
 
         # Pre-calculate base domains for all seeds once
         seed_to_base = {s: extract_base_domain(s) for s in seeds}
