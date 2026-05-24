@@ -553,8 +553,8 @@ class Scout:
                 )
 
         # Strategy B per seed (parallel) — reuses CT records from seed validation
-        for sd in seeds:
-            dependent_tasks.append(
+        dependent_tasks.extend(
+            [
                 asyncio.create_task(
                     self._strategy_seed_expansion(
                         sd,
@@ -564,7 +564,9 @@ class Scout:
                     ),
                     name=f"seed_expansion:{sd}",
                 )
-            )
+                for sd in seeds
+            ]
+        )
 
         # Gather all strategy results under the remaining time budget (minus 10s reserve)
         all_strategy_tasks = independent_tasks + dependent_tasks
