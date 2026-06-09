@@ -16,6 +16,7 @@ from hypothesis import strategies as st
 from domain_scout.config import ScoutConfig
 from domain_scout.sources.ct_logs import (
     CTLogSource,
+    OrgSearchUnavailableError,
     _CircuitBreaker,
     _extract_org_from_subject,
     extract_base_domain,
@@ -453,3 +454,125 @@ class TestPropertyBased:
         """Any IPv4 address must return None from extract_base_domain."""
         ip = f"{a}.{b}.{c}.{d}"
         assert extract_base_domain(ip) is None
+
+
+class TestOrgSearchUnavailable:
+    """Org searches must not silently fall back to the JSON API (issue #163)."""
+
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = None
+
+    @pytest.mark.asyncio
+    async def test_pg_failure_raises_instead_of_json_fallback(self) -> None:
+        """verify_org=True + Postgres down → raise, never query JSON API."""
+        config = ScoutConfig(postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        json_query = AsyncMock()
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch.object(ct, "_json_query", json_query),
+            pytest.raises(OrgSearchUnavailableError),
+        ):
+            await ct.search_by_org("Acme Corp")
+        json_query.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_circuit_open_raises_instead_of_json_fallback(self) -> None:
+        """verify_org=True + breaker open → raise, never query JSON API."""
+        config = ScoutConfig(cb_failure_threshold=1, postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        json_query = AsyncMock()
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch.object(ct, "_json_query", json_query),
+        ):
+            with pytest.raises(OrgSearchUnavailableError):
+                await ct.search_by_org("Acme Corp")  # trips breaker (threshold=1)
+            assert CTLogSource._breaker is not None
+            assert CTLogSource._breaker.state == "open"
+            with pytest.raises(OrgSearchUnavailableError):
+                await ct.search_by_org("Acme Corp")  # breaker-skip path
+        json_query.assert_not_called()
+
+    @pytest.mark.asyncio
+    async def test_no_verify_still_falls_back_to_json(self) -> None:
+        """verify_org=False keeps the JSON fallback behavior."""
+        config = ScoutConfig(postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        mock_json = _make_httpx_mock(
+            [
+                {
+                    "id": 1,
+                    "common_name": "example.com",
+                    "name_value": "example.com",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            records = await ct.search_by_org("Acme Corp", verify_org=False)
+        assert len(records) == 1
+        assert records[0]["cert_id"] == 1
+
+    @pytest.mark.asyncio
+    async def test_domain_search_fallback_unchanged(self) -> None:
+        """search_by_domain still falls back to the JSON API."""
+        config = ScoutConfig(postgres_max_retries=1, burst_delay=0.0)
+        ct = CTLogSource(config)
+        mock_json = _make_httpx_mock(
+            [
+                {
+                    "id": 7,
+                    "common_name": "example.com",
+                    "name_value": "example.com",
+                    "not_before": "2024-01-01T00:00:00",
+                    "not_after": "2025-01-01T00:00:00",
+                }
+            ]
+        )
+
+        async def failing_pg(term: str) -> list[dict[str, object]]:
+            raise ConnectionError("pg down")
+
+        with (
+            patch.object(ct, "_pg_query", side_effect=failing_pg),
+            patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
+        ):
+            records = await ct.search_by_domain("example.com")
+        assert len(records) == 1
+
+
+class TestConnectTimeout:
+    """psycopg2.connect must always get a finite connect_timeout (issue #165)."""
+
+    @pytest.fixture(autouse=True)
+    def _reset_breaker(self) -> Iterator[None]:
+        CTLogSource._breaker = None
+        yield
+        CTLogSource._breaker = None
+
+    def test_connect_timeout_passed(self) -> None:
+        config = ScoutConfig(postgres_timeout=7)
+        ct = CTLogSource(config)
+        with patch("domain_scout.sources.ct_logs.psycopg2.connect") as mock_connect:
+            ct._connect_pg()
+        assert mock_connect.call_args.kwargs["connect_timeout"] == 7
