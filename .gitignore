@@ -21,3 +21,7 @@ tasks/
 *.duckdb.wal
 .playwright-mcp/
 site/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
