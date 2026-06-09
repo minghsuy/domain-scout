@@ -129,6 +129,7 @@ def scout(  # noqa: PLR0913
     if use_cache:
         cache = _get_cache_or_exit(cache_dir)
 
+    s: Scout | None = None
     try:
         s = Scout(config=config, cache=cache)
         result = s.discover(
@@ -141,6 +142,8 @@ def scout(  # noqa: PLR0913
         typer.echo("\nAborted.", err=True)
         raise typer.Exit(1) from None
     finally:
+        if s is not None:
+            s.close()
         if cache:
             cache.close()
 

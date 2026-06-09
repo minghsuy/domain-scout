@@ -105,3 +105,33 @@ def test_domain_accum_update_times_empty_string_input() -> None:
     accum.update_times("", "")
     assert accum.earliest_cert == _parse_time(_normalize_time("2023-06-01T00:00:00"))
     assert accum.latest_cert == _parse_time(_normalize_time("2023-06-01T00:00:00"))
+
+
+def test_scout_close_releases_local_source_and_gleif() -> None:
+    """Scout.close() closes the local CT source and GLEIF connection (issue #164)."""
+    from unittest.mock import MagicMock
+
+    from domain_scout.scout import Scout
+    from domain_scout.sources.local_parquet import LocalParquetSource
+
+    s = Scout()
+    s._ct = MagicMock(spec=LocalParquetSource)
+    gleif = MagicMock()
+    s._gleif_con = gleif
+
+    s.close()
+    s._ct.close.assert_called_once()
+    gleif.close.assert_called_once()
+
+    # Second close is safe and doesn't re-close GLEIF
+    s.close()
+    gleif.close.assert_called_once()
+
+
+def test_scout_close_noop_for_remote_only() -> None:
+    """Remote-only Scout holds no persistent resources; close() is a no-op."""
+    from domain_scout.scout import Scout
+
+    s = Scout()
+    s.close()
+    s.close()
