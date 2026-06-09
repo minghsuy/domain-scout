@@ -32,28 +32,28 @@ uv sync --all-groups --all-extras
 ```bash
 # Quickest start — use CTScout API (free key from https://ctscout.dev)
 export CTSCOUT_API_KEY=ds_free_...
-domain-scout --name "Goldman Sachs"
+domain-scout scout --name "Goldman Sachs"
 
 # Or pass the key directly
-domain-scout --name "Goldman Sachs" --api-key ds_free_...
+domain-scout scout --name "Goldman Sachs" --api-key ds_free_...
 
 # Basic usage (queries crt.sh directly, no API key needed)
-domain-scout --name "Cloudflare" --location "San Francisco, CA"
+domain-scout scout --name "Cloudflare" --location "San Francisco, CA"
 
 # With seed domain
-domain-scout --name "Palo Alto Networks" --location "Santa Clara, CA" --seed "paloaltonetworks.com"
+domain-scout scout --name "Palo Alto Networks" --location "Santa Clara, CA" --seed "paloaltonetworks.com"
 
 # Multiple seeds — cross-verification boosts confidence for domains found by both
-domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+domain-scout scout --name "Walmart" --seed walmart.com --seed samsclub.com
 
 # Deep mode — GeoDNS global resolution for non-resolving domains
-domain-scout --name "Walmart" --seed "walmart.com" --deep
+domain-scout scout --name "Walmart" --seed "walmart.com" --deep
 
 # JSON output
-domain-scout --name "Acme Corp" --output json > results.json
+domain-scout scout --name "Acme Corp" --output json > results.json
 
 # Verbose logging
-domain-scout --name "Cloudflare" --seed "cloudflare.com" -v
+domain-scout scout --name "Cloudflare" --seed "cloudflare.com" -v
 ```
 
 ### REST API

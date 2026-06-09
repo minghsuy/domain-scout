@@ -22,19 +22,19 @@ domain-scout handles all of these by cross-referencing multiple data sources and
 uv sync
 
 # Run
-domain-scout --name "Walmart" --seed "walmart.com"
+domain-scout scout --name "Walmart" --seed "walmart.com"
 
 # Multiple seeds for cross-verification
-domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+domain-scout scout --name "Walmart" --seed walmart.com --seed samsclub.com
 
 # Discovery profiles (broad/balanced/strict)
-domain-scout --name "Walmart" --seed walmart.com --profile strict
+domain-scout scout --name "Walmart" --seed walmart.com --profile strict
 
 # Deep mode for global resolution
-domain-scout --name "Walmart" --seed "walmart.com" --deep
+domain-scout scout --name "Walmart" --seed "walmart.com" --deep
 
 # Fingerprint mode for DV-cert companies (no org in certs)
-domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
+domain-scout scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
 ```
 
 ## Documentation
