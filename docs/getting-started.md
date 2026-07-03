@@ -28,13 +28,13 @@ The fastest way to get started — no local data pipeline needed:
 
 ```bash
 export CTSCOUT_API_KEY=ds_free_...
-domain-scout --name "Goldman Sachs"
+domain-scout scout --name "Goldman Sachs"
 ```
 
 Or pass the key directly:
 
 ```bash
-domain-scout --name "Goldman Sachs" --api-key ds_free_...
+domain-scout scout --name "Goldman Sachs" --api-key ds_free_...
 ```
 
 The free tier gives you 10 queries/day against 147K+ org-domain pairs. No local setup, no database, no crt.sh dependency.
@@ -44,7 +44,7 @@ The free tier gives you 10 queries/day against 147K+ org-domain pairs. No local 
 Without an API key, domain-scout queries crt.sh directly:
 
 ```bash
-domain-scout --name "Cloudflare" --seed "cloudflare.com"
+domain-scout scout --name "Cloudflare" --seed "cloudflare.com"
 ```
 
 Output:
@@ -66,7 +66,7 @@ Output:
 When an entity owns multiple domains that don't share certificates, a single seed only discovers part of the picture. Use `--seed` multiple times for cross-verification:
 
 ```bash
-domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+domain-scout scout --name "Walmart" --seed walmart.com --seed samsclub.com
 ```
 
 Domains independently discovered from 2+ seeds receive a `cross_seed_verified` confidence boost (0.90 base score), providing a strong convergence signal.
@@ -96,7 +96,7 @@ Domains independently discovered from 2+ seeds receive a `cross_seed_verified` c
 ## JSON output
 
 ```bash
-domain-scout --name "Acme Corp" --seed "acme.com" --output json > results.json
+domain-scout scout --name "Acme Corp" --seed "acme.com" --output json > results.json
 ```
 
 The JSON output is a self-contained audit artifact. Each domain includes structured `evidence` records (source type, cert ID, org name, similarity score) and the top-level `run_metadata` captures tool version, timestamp, and the full config snapshot used. See [API Reference](api.md) for the complete schema.

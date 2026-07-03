@@ -7,7 +7,7 @@ Real-world results demonstrating domain-scout's capabilities.
 A multinational retailer with subsidiaries across Mexico, South Africa, UK, India, and China.
 
 ```bash
-domain-scout --name "Walmart" --seed "walmart.com" --deep
+domain-scout scout --name "Walmart" --seed "walmart.com" --deep
 ```
 
 **17 domains found** including:
@@ -33,7 +33,7 @@ All discovered through Certificate Transparency SAN co-occurrence + organization
 An Italian multinational financial services company operating across Europe, Middle East, and Asia.
 
 ```bash
-domain-scout --name "Generali" --seed "generali.it"
+domain-scout scout --name "Generali" --seed "generali.it"
 ```
 
 **43 domains found** across multiple countries:
@@ -73,7 +73,7 @@ The `.com` seed finds 14 additional investment-related domains (e.g., `generali-
 **Takeaway:** For multinational organizations, use multiple seeds to get the full picture:
 
 ```bash
-domain-scout --name "Generali" --seed generali.it --seed generali.com
+domain-scout scout --name "Generali" --seed generali.it --seed generali.com
 ```
 
 This finds the union of both seed sets (73+ unique domains) with cross-verified overlap domains scored at 0.90+ confidence.
@@ -83,7 +83,7 @@ This finds the union of both seed sets (73+ unique domains) with cross-verified 
 When using multiple seeds, domains discovered independently from 2+ seeds receive a `cross_seed_verified` source with a 0.90 base score:
 
 ```bash
-domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+domain-scout scout --name "Walmart" --seed walmart.com --seed samsclub.com
 ```
 
 If both seeds independently discover `walmartlabs.com` through separate CT searches, that convergence is a strong ownership signal. The seeds themselves may also share certificates, proving common ownership.
@@ -93,7 +93,7 @@ If both seeds independently discover `walmartlabs.com` through separate CT searc
 Shelter Insurance uses DV certificates — CT org search finds nothing useful. Fingerprint mode discovers subsidiaries via shared Proofpoint MX tenant:
 
 ```bash
-domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
+domain-scout scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
 ```
 
 **Default mode:** 3 domains (shelterinsurance.com, sayinsurance.com, cloudflaressl.com)
