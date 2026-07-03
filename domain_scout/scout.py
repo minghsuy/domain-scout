@@ -40,7 +40,12 @@ from domain_scout.models import (
     RunMetadata,
     ScoutResult,
 )
-from domain_scout.sources.ct_logs import CTLogSource, extract_base_domain, is_valid_domain
+from domain_scout.sources.ct_logs import (
+    CTLogSource,
+    CTOrgSearchUnavailableError,
+    extract_base_domain,
+    is_valid_domain,
+)
 from domain_scout.sources.dns_fingerprint import (
     DNSFingerprint,
     extract_fingerprint,
@@ -868,6 +873,11 @@ class Scout:
         results: list[tuple[str, _DomainAccum]] = []
         try:
             records = await self._ct.search_by_org(org_name)
+        except CTOrgSearchUnavailableError as exc:
+            # Degraded, not just failed: org search was skipped entirely (#163).
+            inc(SOURCE_ERRORS_TOTAL, source="ct")
+            errors.append(f"CT org search unavailable for {org_name!r} (results partial): {exc}")
+            return results
         except Exception as exc:
             inc(SOURCE_ERRORS_TOTAL, source="ct")
             errors.append(f"CT org search failed: {exc}")
