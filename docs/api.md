@@ -70,7 +70,7 @@ config = ScoutConfig.from_profile("strict")    # higher thresholds
 config = ScoutConfig.from_profile("broad", total_timeout=200)
 ```
 
-Or via CLI: `domain-scout --name "Acme" --seed acme.com --profile strict`
+Or via CLI: `domain-scout scout --name "Acme" --seed acme.com --profile strict`
 
 ## Response models
 

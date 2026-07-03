@@ -28,13 +28,13 @@ Neither seed alone sees the full picture. The `.it` seed finds Czech/Italian/Slo
 
 ```bash
 # Single seed (backward compatible)
-domain-scout --name "Walmart" --seed walmart.com
+domain-scout scout --name "Walmart" --seed walmart.com
 
 # Multiple seeds
-domain-scout --name "Walmart" --seed walmart.com --seed samsclub.com
+domain-scout scout --name "Walmart" --seed walmart.com --seed samsclub.com
 
 # Three seeds with deep mode
-domain-scout --name "Generali" --seed generali.it --seed generali.com --seed generali.de --deep
+domain-scout scout --name "Generali" --seed generali.it --seed generali.com --seed generali.de --deep
 ```
 
 The `--seed` flag is repeatable. Using 3+ seeds auto-bumps timeout to 150s.

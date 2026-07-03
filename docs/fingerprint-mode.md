@@ -83,10 +83,10 @@ Fingerprint signals map to existing corroboration tiers:
 
 ```bash
 # Basic fingerprint mode
-domain-scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
+domain-scout scout --name "Shelter Insurance" --seed shelterinsurance.com --mode fingerprint
 
 # JSON output for programmatic use
-domain-scout --name "Company" --seed company.com --mode fingerprint -o json
+domain-scout scout --name "Company" --seed company.com --mode fingerprint -o json
 ```
 
 Fingerprint mode automatically implies `--deep` (GeoDNS) and sets the timeout to at least 180 seconds.
