@@ -328,6 +328,116 @@ def _org_name_similarity_cached(name_a: str, name_b: str) -> float:
     return best
 
 
+# ── Strict org-name gate for ct_org_match (issue #174) ─────────────────────
+# Ported from insurance-market-db#200 (scripts/shared/features.py::
+# entity_name_match). ``org_name_similarity`` is a fuzzy float scorer, so it
+# credits raw-substring hits ("Aon" in "kaonavi", "Generali" in "Generalist"),
+# near-duplicate tokens, and generic-word overlap ("… Insurance Group") — which
+# produce single-entity, wrong-owner attributions that no frequency filter can
+# catch (insurance-market-db#56: Munich Re → UniCredit/HVB banking domains,
+# Promutuel → Liberty Mutual). This boolean check is required IN ADDITION to the
+# fuzzy threshold for the ``ct_org_match`` source only: the target's distinctive
+# core must appear in the cert org as a word-bounded phrase, and multi-word
+# targets need ≥2 significant tokens bounded. Precision-first — a miss just drops
+# a low-signal cert; a false hit poisons downstream attribution DBs.
+
+_NONALNUM_SPACE_RE = re.compile(r"[^\w\s]", re.UNICODE)
+_MULTI_SPACE_RE = re.compile(r"\s+")
+
+# Generic/industry words that carry no distinctive identity. Stripped only as a
+# TRAILING suffix so middle tokens survive ("AXA Insurance UK" keeps "insurance").
+# Mirrors the extras in features.build_suffix_pattern (insurance-market-db#200).
+_GENERIC_CORE_WORDS = (
+    "group",
+    "holdings",
+    "holding",
+    "enterprises",
+    "international",
+    "reinsurance",
+    "assurance",
+    "insurance",
+    "versicherung",
+    "mutuelle",
+    "mutual",
+    "casualty",
+    "indemnity",
+    "underwriters",
+)
+_GENERIC_TRAILING_RE = re.compile(r"\s+(?:" + "|".join(_GENERIC_CORE_WORDS) + r")$")
+
+
+def _has_cjk(s: str) -> bool:
+    """True if the string contains East Asian (unspaced) characters."""
+    return any(
+        "　" <= c <= "鿿"  # CJK ideographs + kana
+        or "＀" <= c <= "￯"  # fullwidth forms
+        or "가" <= c <= "힣"  # Hangul syllables
+        for c in s
+    )
+
+
+def _fold_text(text: str) -> str:
+    """Fold to a bounded-match space: lowercase, strip accents (Latin only),
+    replace punctuation with spaces.
+
+    CJK is left un-decomposed — NFKD changes character identity for East Asian
+    text (katakana dakuten: ジ → シ) and there are no word boundaries to anchor.
+    """
+    lowered = text.lower()
+    folded = lowered if _has_cjk(lowered) else _strip_accents(lowered)
+    folded = _NONALNUM_SPACE_RE.sub(" ", folded).replace("_", " ")
+    return _MULTI_SPACE_RE.sub(" ", folded).strip()
+
+
+def _distinctive_core(name: str) -> str:
+    """Suffix-stripped distinctive core of an org name.
+
+    Latin names compose on ``normalize_org_name`` (strips legal forms and
+    trailing Group/AG/SE/… without the GLEIF ELF list) plus a trailing
+    generic/industry-word strip. CJK names are folded but never suffix-stripped
+    (the suffix lists are Latin).
+    """
+    if _has_cjk(name):
+        return _fold_text(name)
+    core = normalize_org_name(name)
+    while True:
+        stripped = _GENERIC_TRAILING_RE.sub("", core).strip()
+        if stripped == core or not stripped:
+            break
+        core = stripped
+    return core
+
+
+def _significant_words(name: str) -> list[str]:
+    """Folded tokens of length > 2 from the raw name (for the ≥2-token rule)."""
+    cleaned = _NONALNUM_SPACE_RE.sub(" ", name.lower())
+    return [_strip_accents(w) for w in {w for w in cleaned.split() if len(w) > 2}]
+
+
+def strict_org_name_match(entity: str, text: str) -> bool:
+    """Precision-first check that ``entity`` actually names the org in ``text``.
+
+    Ported from insurance-market-db#200. Rejects the wrong-owner classes the
+    fuzzy scorer credits — raw-substring hits, generic-word-only overlap, and
+    bare city / single-token collisions — while preserving exact and
+    legal-suffixed matches.
+    """
+    core = _distinctive_core(entity)
+    if not core or not text:
+        return False
+    text_norm = _fold_text(text)
+    if _has_cjk(core):
+        # Unspaced scripts have no word boundaries — containment is the match.
+        return core in text_norm
+    if not re.search(rf"\b{re.escape(core)}\b", text_norm):
+        return False
+    words = _significant_words(entity)
+    if len(words) >= 2:
+        hits = sum(1 for w in words if re.search(rf"\b{re.escape(w)}\b", text_norm))
+        return hits >= 2
+    return True
+
+
 def domain_from_company_name(company_name: str) -> list[str]:
     """Generate plausible domain slugs from a company name.
 

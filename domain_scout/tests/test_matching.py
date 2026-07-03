@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import pytest
 from hypothesis import given
 from hypothesis import strategies as st
 
@@ -11,6 +12,7 @@ from domain_scout.matching.entity_match import (
     domain_from_company_name,
     normalize_org_name,
     org_name_similarity,
+    strict_org_name_match,
 )
 
 
@@ -522,3 +524,81 @@ class TestPropertyBased:
             assert score == 1.0
         else:
             assert score == 0.0
+
+
+class TestStrictOrgNameMatch:
+    """Word-bounded precision gate for the ct_org_match source (issue #174).
+
+    Ported from insurance-market-db#200 (tests/test_shared_features.py::
+    test_entity_name_match). Signature is strict_org_name_match(entity, text)
+    where ``entity`` is the target company and ``text`` is the certificate org.
+    """
+
+    # The insurance-market-db#200 regression matrix, ported verbatim.
+    @pytest.mark.parametrize(
+        "entity,text,expected",
+        [
+            # single-brand entities: the bounded core must appear
+            ("Chubb", "© 2026 Chubb Limited. All rights reserved.", True),
+            ("Chubb", "© 2026 Acme Holdings", False),
+            ("Allianz SE", "© Allianz 2026. All Rights Reserved.", True),
+            # multi-word: bounded core AND >=2 significant words
+            ("Zurich Insurance Group", "Zurich Insurance Group Ltd", True),
+            # SUBSTRING false positives must never match (word boundaries):
+            ("AXA", "© 2026 MAXAIR Industries", False),
+            ("Generali", "© The Generalist", False),
+            ("Aviva", "© Avivagen Animal Health", False),
+            ("ERGO Group", "© Allergology Ergonomics Group", False),
+            # generic-suffix overlap alone must never match:
+            ("Zurich Insurance Group", "© 2026 Allianz Insurance Group", False),
+            # city/brand collisions: bare city word is not the entity
+            ("Zurich Insurance Group", "© 2026 Zurich Airport", False),
+            ("Munich Re", "© 2026 Munich Airport", False),
+            ("Munich Re", "UniCredit Bank GmbH", False),
+            ("Munich Re", "© 2026 Munich Re", True),
+            # bounded phrase: 'munich re' is not a prefix-match of 'reinsurance'
+            ("Munich Re", "Munich Reinsurance content page", False),
+            # sibling legal entities: core phrase must match exactly
+            ("AXA Insurance UK plc", "© AXA Insurance dac", False),
+            # accent folding must apply to BOTH sides
+            ("Länsförsäkringar AB", "© Länsförsäkringar AB 2026", True),
+            # CJK: no word boundaries in unspaced scripts — containment is match
+            ("東京海上ホールディングス", "© 東京海上ホールディングス株式会社 2026", True),
+            ("東京海上ホールディングス", "© 損保ジャパン株式会社 2026", False),
+            ("", "anything", False),
+            ("Chubb", "", False),
+        ],
+    )
+    def test_regression_matrix(self, entity: str, text: str, expected: bool) -> None:
+        assert strict_org_name_match(entity, text) is expected
+
+    # domain-scout's own documented wrong-owner attributions (#174 / #56):
+    # cert_org is the certificate subject org; entity is our search target.
+    @pytest.mark.parametrize(
+        "entity,cert_org",
+        [
+            ("Aon", "kaonavi Inc"),  # substring: 'aon' inside 'kaonavi'
+            ("Munich Re", "UniCredit Bank GmbH"),  # → 26 HVB/UniCredit domains
+            ("Munich Re", "Hypo Vereinsbank"),  # HVB, different industry
+            ("Promutuel Insurance", "Liberty Mutual Insurance"),  # → 13 Liberty
+            ("Everest", "Pinterest"),  # substring: 'everest' inside 'pinterest'
+        ],
+    )
+    def test_wrong_owner_pairs_rejected(self, entity: str, cert_org: str) -> None:
+        assert strict_org_name_match(entity, cert_org) is False
+
+    # Legitimate matches must survive (TP preservation — pulled from the
+    # existing acceptance/similarity fixtures so we don't over-tighten).
+    @pytest.mark.parametrize(
+        "entity,cert_org",
+        [
+            ("Walmart", "Walmart Inc."),  # test_acceptance fixture
+            ("Walmart", "Walmart Canada Corp."),  # test_acceptance fixture
+            ("Palo Alto Networks", "Palo Alto Networks, Inc."),  # test_real_world
+            ("Guidewire Software", "Guidewire Software, Inc."),  # test_real_world
+            ("Munich Re", "Munich Re Group"),  # generic-suffix positive
+            ("Zurich Insurance Group", "Zurich Insurance Company Ltd"),
+        ],
+    )
+    def test_legitimate_matches_preserved(self, entity: str, cert_org: str) -> None:
+        assert strict_org_name_match(entity, cert_org) is True

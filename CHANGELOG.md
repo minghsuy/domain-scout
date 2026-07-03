@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Changed
+- The `ct_org_match` source now requires a strict word-bounded org-name match in
+  addition to the fuzzy `org_match_threshold`. The fuzzy scorer credited
+  raw-substring hits (`Aon` in `kaonavi`, `Generali` in `Generalist`),
+  generic-word overlap (`… Insurance Group`), and bare single-token/city
+  collisions, producing single-entity wrong-owner attributions that no frequency
+  filter caught (e.g. Munich Re → UniCredit/HVB banking domains, Promutuel →
+  Liberty Mutual). The new gate (`strict_org_name_match`, ported from
+  insurance-market-db#200) rejects those classes while preserving exact and
+  legal-suffixed matches. This is precision-first, so some legitimate matches
+  are also dropped: acronym-only cert-org matches (cert org `IBM` for target
+  `International Business Machines`) and multi-word targets that share only one
+  distinctive token with the cert org (`Sompo Holdings` vs `Sompo Japan
+  Insurance`) are no longer promoted to `ct_org_match`. Other sources and
+  thresholds are unchanged. (#174)
 - `CTLogSource.search_by_org` now raises `CTOrgSearchUnavailableError` when the
   crt.sh Postgres backend is unavailable and org verification is required,
   instead of silently returning `[]` (the JSON fallback cannot verify subject
