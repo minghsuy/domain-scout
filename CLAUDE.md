@@ -79,6 +79,7 @@ domain_scout/
 ## Architecture Notes
 
 - **crt.sh Postgres is primary, JSON API is fallback** — dates must be normalized (JSON returns strings, Postgres returns datetime objects)
+- **The crt.sh JSON API does not expose the certificate subject organization** — org searches with `verify_org=True` skip the JSON fallback and raise `CTOrgSearchUnavailableError` when Postgres is down (surfaced in `RunMetadata.errors`; metric `ct_queries_total{backend="json", status="skipped_org"}`); `verify_org=False` callers still fall back (#163)
 - **RDAP uses rdap.org** (universal bootstrap), NOT ARIN — skips 35 ccTLDs not in IANA bootstrap (see `docs/rdap-cctld-support.md`)
 - `RDAP_SKIP_TLDS` frozenset in `rdap.py` prevents wasted lookups and noisy 404 logs; review quarterly against IANA bootstrap at `https://data.iana.org/rdap/dns.json`
 - psycopg2-binary runs via `run_in_executor` (sync driver in async code)

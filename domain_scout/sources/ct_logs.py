@@ -153,6 +153,12 @@ def is_valid_domain(name: str) -> bool:
     return "." in clean
 
 
+class CTOrgSearchUnavailableError(RuntimeError):
+    """Org search cannot be satisfied: crt.sh Postgres is unavailable and the
+    JSON API fallback does not expose the certificate subject organization,
+    so results cannot be verified (``verify_org=True``). See #163."""
+
+
 class _CircuitBreaker:
     """Simple circuit breaker for crt.sh Postgres connections.
 
@@ -250,8 +256,12 @@ class CTLogSource:
         """Search CT logs for certs where the subject Organization matches org_name.
 
         Uses FTS for initial candidate search, then filters by O= in subject.
+
+        Raises CTOrgSearchUnavailableError when ``verify_org=True`` and Postgres
+        is unavailable: the JSON API fallback lacks the subject organization, so
+        every record would be filtered out — a silent zero (#163).
         """
-        records = await self._pg_query_with_fallback(org_name)
+        records = await self._pg_query_with_fallback(org_name, can_use_json=not verify_org)
         if not verify_org:
             return records
         # Filter to only certs whose subject O= field roughly matches
@@ -384,13 +394,21 @@ class CTLogSource:
 
     # --- Combined with retry/fallback ---
 
-    async def _pg_query_with_fallback(self, search_term: str) -> list[dict[str, object]]:
-        """Try Postgres with retries, fall back to JSON API."""
+    async def _pg_query_with_fallback(
+        self, search_term: str, *, can_use_json: bool = True
+    ) -> list[dict[str, object]]:
+        """Try Postgres with retries, fall back to JSON API.
+
+        With ``can_use_json=False`` (org searches that must verify O=), a Postgres
+        failure raises CTOrgSearchUnavailableError instead of falling back.
+        """
         breaker = self._active_breaker
 
         if not breaker.should_allow():
             log.warning("ct.circuit_breaker_skip_pg", state=breaker.state)
-            return await self._json_fallback(search_term, last_pg_error=None)
+            return await self._json_fallback(
+                search_term, last_pg_error=None, can_use_json=can_use_json
+            )
 
         last_err: Exception | None = None
         for attempt in range(1, self._cfg.postgres_max_retries + 1):
@@ -411,15 +429,34 @@ class CTLogSource:
                     await asyncio.sleep(self._cfg.burst_delay * attempt)
 
         breaker.record_failure()
-        return await self._json_fallback(search_term, last_pg_error=last_err)
+        return await self._json_fallback(
+            search_term, last_pg_error=last_err, can_use_json=can_use_json
+        )
 
     async def _json_fallback(
         self,
         search_term: str,
         *,
         last_pg_error: Exception | None,
+        can_use_json: bool = True,
     ) -> list[dict[str, object]]:
-        """Fall back to JSON API after Postgres failure or circuit breaker skip."""
+        """Fall back to JSON API after Postgres failure or circuit breaker skip.
+
+        Raises CTOrgSearchUnavailableError when the fallback cannot be used
+        (org search with ``verify_org=True``) rather than wasting a JSON query
+        whose results would all be discarded (#163).
+        """
+        if not can_use_json:
+            inc(CT_QUERIES_TOTAL, backend="json", status="skipped_org")
+            log.warning(
+                "ct.org_search_unavailable",
+                reason="json_fallback_cannot_verify_org",
+                pg_error=str(last_pg_error) if last_pg_error else "circuit_breaker_skip",
+            )
+            raise CTOrgSearchUnavailableError(
+                "crt.sh Postgres is unavailable and the JSON API fallback cannot "
+                "verify certificate subject organization; org search skipped"
+            ) from last_pg_error
         inc(CT_FALLBACKS_TOTAL)
         if last_pg_error is not None:
             log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))

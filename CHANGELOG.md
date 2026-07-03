@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- `CTLogSource.search_by_org` now raises `CTOrgSearchUnavailableError` when the
+  crt.sh Postgres backend is unavailable and org verification is required,
+  instead of silently returning `[]` (the JSON fallback cannot verify subject
+  org, so it was discarding 100% of records and reporting a false empty). The
+  `Scout` pipeline catches this and records a "results partial" entry in
+  `RunMetadata.errors`. Direct callers of the unexported `CTLogSource` should
+  handle the new exception. New metric label: `ct_queries_total{status="skipped_org"}`.
+  (#163)
+
 ## [0.11.0] - 2026-04-01
 
 ### Added
