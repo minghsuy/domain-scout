@@ -427,7 +427,17 @@ def _distinctive_core(name: str) -> str:
 
 
 def _significant_words(name: str) -> list[str]:
-    """Folded tokens of length > 2 from the raw name (for the ≥2-token rule)."""
+    """Folded tokens of length > 2 from the raw name (for the ≥2-token rule).
+
+    Deliberately tokenizes the RAW name (not the suffix-stripped core). A
+    legal-suffix word ("Corp"/"Ltd") therefore counts toward the ≥2 rule, so
+    "Bayer Corp" needs "corp" in the cert text too — a known recall gap (#174
+    review finding 3). Stripping suffixes here to close it is unsafe: it
+    collapses "X Corp"/"X Group" to the lone token "X", which then matches any
+    unrelated "X …" org ("Sony Group"→"Sony Airport", "General Corp"→"General
+    Motors") — reintroducing the exact single-token collision this file exists
+    to kill. Left conservative on purpose.
+    """
     cleaned = _NONALNUM_SPACE_RE.sub(" ", name.lower())
     return [_strip_accents(w) for w in {w for w in cleaned.split() if len(w) > 2}]
 
@@ -439,7 +449,19 @@ def strict_org_name_match(entity: str, text: str) -> bool:
     fuzzy scorer credits — raw-substring hits, generic-word-only overlap, and
     bare city / single-token collisions — while preserving exact and
     legal-suffixed matches.
+
+    Truncate BEFORE the cached call: ``text`` is an untrusted crt.sh subject
+    O= field with no upstream length cap, and the key must stay bounded —
+    same 500-char guard ``org_name_similarity`` applies (#174 review).
     """
+    return _strict_org_name_match_cached(entity[:500], text[:500])
+
+
+@functools.lru_cache(maxsize=4096)
+def _strict_org_name_match_cached(entity: str, text: str) -> bool:
+    """Cached impl — callers pre-truncate. ``entity``/``company_name`` is
+    constant across a whole crt.sh result loop, so memoizing avoids
+    re-normalizing the same target per record."""
     core = _distinctive_core(entity)
     if not core or not text:
         return False
