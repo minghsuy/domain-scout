@@ -89,7 +89,7 @@ def _extract_dba_name(name: str) -> str | None:
 
 
 @functools.lru_cache(maxsize=4096)
-def normalize_org_name(name: str) -> str:
+def normalize_org_name(name: str, expand_abbreviations: bool = True) -> str:
     """Normalize a company/org name for comparison.
 
     - Normalizes unicode (strips accents)
@@ -98,6 +98,13 @@ def normalize_org_name(name: str) -> str:
     - Lowercases and collapses whitespace
     - Removes leading "The"
     - Expands abbreviations (intl→international, tech→technology, etc.)
+
+    ``expand_abbreviations`` defaults to True (fuzzy-scorer behaviour). The
+    strict ``ct_org_match`` core builder passes False: the cert text is never
+    abbreviation-expanded, so an expanded core ("…technology") could never
+    appear word-bounded in the raw text ("…tech") — see ``_distinctive_core``
+    / issue #174, which mirrors the reference ``features.normalize_name`` (no
+    abbrev map).
     """
     name = _strip_accents(name)
     # Strip DBA / subsidiary clauses before suffix removal
@@ -122,6 +129,8 @@ def normalize_org_name(name: str) -> str:
     name = re.sub(r"^the\s+", "", name)
     # Expand common abbreviations
     words = name.split()
+    if not expand_abbreviations:
+        return " ".join(words)
     return " ".join(_ABBREVIATIONS.get(w, w) for w in words)
 
 
@@ -396,10 +405,19 @@ def _distinctive_core(name: str) -> str:
     trailing Group/AG/SE/… without the GLEIF ELF list) plus a trailing
     generic/industry-word strip. CJK names are folded but never suffix-stripped
     (the suffix lists are Latin).
+
+    The core is built WITHOUT abbreviation expansion and then folded through the
+    same ``_fold_text`` transform used on the cert text, so hyphens become
+    spaces on BOTH sides. Without this a hyphenated core ("coca-cola") or an
+    expanded abbreviation could never appear word-bounded in the space-folded,
+    unexpanded text — issue #174 review (findings 1 & 2). This mirrors the
+    reference ``features.normalize_name`` (hyphen→space, no abbrev map).
     """
     if _has_cjk(name):
         return _fold_text(name)
-    core = normalize_org_name(name)
+    # Fold immediately after normalize (before the generic-trailing loop) so a
+    # hyphen-glued trailing generic word ("Foo-Group") is also strippable.
+    core = _fold_text(normalize_org_name(name, expand_abbreviations=False))
     while True:
         stripped = _GENERIC_TRAILING_RE.sub("", core).strip()
         if stripped == core or not stripped:

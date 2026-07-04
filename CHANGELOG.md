@@ -15,12 +15,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   collisions, producing single-entity wrong-owner attributions that no frequency
   filter caught (e.g. Munich Re → UniCredit/HVB banking domains, Promutuel →
   Liberty Mutual). The new gate (`strict_org_name_match`, ported from
-  insurance-market-db#200) rejects those classes while preserving exact and
-  legal-suffixed matches. This is precision-first, so some legitimate matches
-  are also dropped: acronym-only cert-org matches (cert org `IBM` for target
-  `International Business Machines`) and multi-word targets that share only one
-  distinctive token with the cert org (`Sompo Holdings` vs `Sompo Japan
-  Insurance`) are no longer promoted to `ct_org_match`. Other sources and
+  insurance-market-db#200) rejects those classes while preserving exact,
+  legal-suffixed, hyphenated (`Coca-Cola` → `Coca-Cola Company`), and
+  abbreviation-form (`Palo Alto Tech` → `Palo Alto Tech Inc`) matches. The
+  distinctive core and the certificate text now undergo identical normalization
+  — hyphens fold to spaces on both sides and abbreviations are never expanded —
+  so byte-identical names always match (an initial port drift folded the text
+  but not the core, dropping every hyphenated/abbreviated name). This is
+  precision-first, so some legitimate matches are still intentionally dropped:
+  acronym-only cert-org matches (cert org `IBM` for target `International
+  Business Machines`) and multi-word targets that share only one distinctive
+  token with the cert org (`Sony Group` vs `Sony Corporation`, `Sompo Holdings`
+  vs `Sompo Japan Insurance`) are not promoted to `ct_org_match` — the ≥2
+  significant-token rule that rejects generic-word/city collisions (`Zurich
+  Insurance Group` vs `Zurich Airport`) also requires the stripped generic word
+  to reappear. This recall limitation is shared verbatim with the reference and
+  left as-is: the reviewer-suggested relaxations all reintroduce the city-
+  collision false positives the rule defends against. Other sources and
   thresholds are unchanged. (#174)
 - `CTLogSource.search_by_org` now raises `CTOrgSearchUnavailableError` when the
   crt.sh Postgres backend is unavailable and org verification is required,
