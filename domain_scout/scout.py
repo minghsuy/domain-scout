@@ -32,6 +32,7 @@ from domain_scout.matching.entity_match import (
     domain_from_company_name,
     normalize_org_name,
     org_name_similarity,
+    strict_org_name_match,
 )
 from domain_scout.models import (
     DiscoveredDomain,
@@ -825,6 +826,12 @@ class Scout:
         similarity = org_name_similarity(cert_org, org_name)
         if similarity < self.config.org_match_threshold:
             return results
+        # Precision gate for ct_org_match: the fuzzy score credits substring,
+        # generic-word, and single-city-token matches that produce wrong-owner
+        # attributions no frequency filter catches (#174). Require a strict
+        # word-bounded name match too. Subsidiary tags keep their looser intent.
+        if source_tag == "ct_org_match" and not strict_org_name_match(org_name, cert_org):
+            return results
 
         sans = _extract_sans(rec)
         cn = rec.get("common_name", "")
@@ -974,7 +981,11 @@ class Scout:
                 if isinstance(cert_org, str) and cert_org:
                     accum.cert_org_names.add(cert_org)
                     sim = org_name_similarity(cert_org, company_name)
-                    if sim >= self.config.org_match_threshold:
+                    # Strict word-bounded gate on top of the fuzzy threshold —
+                    # see _process_org_record (#174).
+                    if sim >= self.config.org_match_threshold and strict_org_name_match(
+                        company_name, cert_org
+                    ):
                         accum.sources.add("ct_org_match")
                         desc = f"Cert org '{cert_org}' matches target (score={sim:.2f})"
                         accum.evidence.append(

@@ -2,8 +2,14 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
+import pytest
 from hypothesis import given
 from hypothesis import strategies as st
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
 
 from domain_scout.matching.entity_match import (
     _BRAND_ALIAS_PAIRS,
@@ -11,7 +17,32 @@ from domain_scout.matching.entity_match import (
     domain_from_company_name,
     normalize_org_name,
     org_name_similarity,
+    strict_org_name_match,
 )
+
+# Best-effort import of the insurance-market-db reference (features.entity_name_match)
+# for the differential-parity guard below. domain-scout is public/MIT and MUST NOT
+# hard-depend on that private repo — the import is optional and the differential
+# test skips cleanly when the reference is absent (CI, other machines). Set
+# DOMAIN_SCOUT_REF_FEATURES to the reference `scripts/` dir to override the default.
+_reference_entity_name_match: Callable[[str, str], bool] | None = None
+try:  # pragma: no cover - environment-dependent
+    import os as _os
+    import sys as _sys
+    from pathlib import Path as _Path
+
+    _ref_scripts = _Path(
+        _os.environ.get(
+            "DOMAIN_SCOUT_REF_FEATURES", _Path.home() / "insurance-market-db" / "scripts"
+        )
+    )
+    if _ref_scripts.is_dir():
+        _sys.path.insert(0, str(_ref_scripts))
+        from shared.features import entity_name_match as _entity_name_match
+
+        _reference_entity_name_match = _entity_name_match
+except Exception:  # pragma: no cover - reference optional
+    _reference_entity_name_match = None
 
 
 class TestNormalize:
@@ -522,3 +553,188 @@ class TestPropertyBased:
             assert score == 1.0
         else:
             assert score == 0.0
+
+
+class TestStrictOrgNameMatch:
+    """Word-bounded precision gate for the ct_org_match source (issue #174).
+
+    Ported from insurance-market-db#200 (tests/test_shared_features.py::
+    test_entity_name_match). Signature is strict_org_name_match(entity, text)
+    where ``entity`` is the target company and ``text`` is the certificate org.
+    """
+
+    # The insurance-market-db#200 regression matrix, ported verbatim.
+    @pytest.mark.parametrize(
+        "entity,text,expected",
+        [
+            # single-brand entities: the bounded core must appear
+            ("Chubb", "© 2026 Chubb Limited. All rights reserved.", True),
+            ("Chubb", "© 2026 Acme Holdings", False),
+            ("Allianz SE", "© Allianz 2026. All Rights Reserved.", True),
+            # multi-word: bounded core AND >=2 significant words
+            ("Zurich Insurance Group", "Zurich Insurance Group Ltd", True),
+            # SUBSTRING false positives must never match (word boundaries):
+            ("AXA", "© 2026 MAXAIR Industries", False),
+            ("Generali", "© The Generalist", False),
+            ("Aviva", "© Avivagen Animal Health", False),
+            ("ERGO Group", "© Allergology Ergonomics Group", False),
+            # generic-suffix overlap alone must never match:
+            ("Zurich Insurance Group", "© 2026 Allianz Insurance Group", False),
+            # city/brand collisions: bare city word is not the entity
+            ("Zurich Insurance Group", "© 2026 Zurich Airport", False),
+            ("Munich Re", "© 2026 Munich Airport", False),
+            ("Munich Re", "UniCredit Bank GmbH", False),
+            ("Munich Re", "© 2026 Munich Re", True),
+            # bounded phrase: 'munich re' is not a prefix-match of 'reinsurance'
+            ("Munich Re", "Munich Reinsurance content page", False),
+            # sibling legal entities: core phrase must match exactly
+            ("AXA Insurance UK plc", "© AXA Insurance dac", False),
+            # accent folding must apply to BOTH sides
+            ("Länsförsäkringar AB", "© Länsförsäkringar AB 2026", True),
+            # CJK: no word boundaries in unspaced scripts — containment is match
+            ("東京海上ホールディングス", "© 東京海上ホールディングス株式会社 2026", True),
+            ("東京海上ホールディングス", "© 損保ジャパン株式会社 2026", False),
+            ("", "anything", False),
+            ("Chubb", "", False),
+        ],
+    )
+    def test_regression_matrix(self, entity: str, text: str, expected: bool) -> None:
+        assert strict_org_name_match(entity, text) is expected
+
+    # domain-scout's own documented wrong-owner attributions (#174 / #56):
+    # cert_org is the certificate subject org; entity is our search target.
+    @pytest.mark.parametrize(
+        "entity,cert_org",
+        [
+            ("Aon", "kaonavi Inc"),  # substring: 'aon' inside 'kaonavi'
+            ("Munich Re", "UniCredit Bank GmbH"),  # → 26 HVB/UniCredit domains
+            ("Munich Re", "Hypo Vereinsbank"),  # HVB, different industry
+            ("Promutuel Insurance", "Liberty Mutual Insurance"),  # → 13 Liberty
+            ("Everest", "Pinterest"),  # substring: 'everest' inside 'pinterest'
+        ],
+    )
+    def test_wrong_owner_pairs_rejected(self, entity: str, cert_org: str) -> None:
+        assert strict_org_name_match(entity, cert_org) is False
+
+    # Legitimate matches must survive (TP preservation — pulled from the
+    # existing acceptance/similarity fixtures so we don't over-tighten).
+    @pytest.mark.parametrize(
+        "entity,cert_org",
+        [
+            ("Walmart", "Walmart Inc."),  # test_acceptance fixture
+            ("Walmart", "Walmart Canada Corp."),  # test_acceptance fixture
+            ("Palo Alto Networks", "Palo Alto Networks, Inc."),  # test_real_world
+            ("Guidewire Software", "Guidewire Software, Inc."),  # test_real_world
+            ("Munich Re", "Munich Re Group"),  # generic-suffix positive
+            ("Zurich Insurance Group", "Zurich Insurance Company Ltd"),
+        ],
+    )
+    def test_legitimate_matches_preserved(self, entity: str, cert_org: str) -> None:
+        assert strict_org_name_match(entity, cert_org) is True
+
+    # (a) Exact-name round-trip property: a name must always match itself. This
+    # is the guard that would have caught #174 finding 1 — the hyphen-preserving
+    # core vs hyphen-folding text made byte-identical names return False.
+    @pytest.mark.parametrize(
+        "name",
+        [
+            # hyphenated brands (finding 1)
+            "Coca-Cola",
+            "Hewlett-Packard",
+            "Mercedes-Benz",
+            "Anheuser-Busch",
+            "Rolls-Royce",
+            "Bristol-Myers",
+            # abbreviation forms (finding 2)
+            "Palo Alto Tech",
+            "Acme Intl",
+            # single-word brands
+            "Walmart",
+            "Chubb",
+            "Visa",
+            # multi-word
+            "Zurich Insurance Group",
+            "Munich Re",
+            "Berkshire Hathaway",
+            # accented + CJK (folding must apply on both sides)
+            "Länsförsäkringar",
+            "東京海上ホールディングス",
+        ],
+    )
+    def test_exact_name_roundtrip(self, name: str) -> None:
+        assert strict_org_name_match(name, name) is True
+
+    # (b) Hyphenated-brand and abbreviation-form true positives (findings 1 & 2):
+    # the distinctive core must match once hyphens fold to spaces and the core is
+    # built without abbreviation expansion.
+    @pytest.mark.parametrize(
+        "entity,cert_org",
+        [
+            ("Coca-Cola", "The Coca-Cola Company"),
+            ("Hewlett-Packard", "Hewlett-Packard Enterprise"),
+            ("Mercedes-Benz", "Mercedes-Benz Group AG"),
+            ("Rolls-Royce", "Rolls-Royce Holdings plc"),
+            ("Bristol-Myers", "Bristol-Myers Squibb"),
+            ("Palo Alto Tech", "Palo Alto Tech Inc"),
+            ("Acme Intl", "Acme Intl Ltd"),
+        ],
+    )
+    def test_hyphenated_and_abbrev_positives(self, entity: str, cert_org: str) -> None:
+        assert strict_org_name_match(entity, cert_org) is True
+
+    # (c) Differential parity against the insurance-market-db reference
+    # (features.entity_name_match). This is the guard that would have caught
+    # findings 1 & 2: every pair below MUST produce the same boolean in both the
+    # port and the reference. Skips cleanly when the private reference is absent.
+    #
+    # NOTE — intentional divergence NOT asserted here: on hyphen+multiword
+    # entities the reference under-matches (its significant-word tokenizer joins
+    # hyphens — "anheuserbusch" — then searches word-bounded, so it can never
+    # hit the space-folded text). The port's tokenizer splits hyphens, so e.g.
+    # strict_org_name_match("Anheuser-Busch InBev", "Anheuser-Busch InBev SA")
+    # is True (correct) while the reference returns False. The port is the more
+    # correct side; those cases are deliberately excluded from this parity set.
+    @pytest.mark.skipif(
+        _reference_entity_name_match is None,
+        reason="insurance-market-db reference (features.entity_name_match) not available",
+    )
+    @pytest.mark.parametrize(
+        "entity,text",
+        [
+            # finding-1 hyphenated positives
+            ("Coca-Cola", "Coca-Cola"),
+            ("Coca-Cola", "Coca-Cola Company"),
+            ("Hewlett-Packard", "Hewlett-Packard"),
+            ("Mercedes-Benz", "Mercedes-Benz Group"),
+            ("Rolls-Royce", "Rolls-Royce Holdings plc"),
+            ("Bristol-Myers", "Bristol-Myers Squibb"),
+            # finding-2 abbreviation positives
+            ("Palo Alto Tech", "Palo Alto Tech Inc"),
+            ("Acme Intl", "Acme Intl Ltd"),
+            # exact / legal-suffix true positives
+            ("Walmart", "Walmart Inc."),
+            ("Chubb", "© 2026 Chubb Limited"),
+            # substring / word-boundary false positives
+            ("AXA", "MAXAIR Industries"),
+            ("Aon", "kaonavi Inc"),
+            ("Generali", "The Generalist"),
+            ("Everest", "Pinterest"),
+            ("Munich Re", "UniCredit Bank GmbH"),
+            ("Promutuel Insurance", "Liberty Mutual Insurance"),
+            # generic-overlap + city-collision false positives (the ≥2 rule)
+            ("Zurich Insurance Group", "© 2026 Allianz Insurance Group"),
+            ("Zurich Insurance Group", "© 2026 Zurich Airport"),
+            # finding-3 shared recall limitation (both return False)
+            ("Sony Group", "Sony Corporation"),
+            ("AXA Group", "AXA S.A."),
+            ("The Hartford", "Hartford Insurance Company"),
+            # accent folding on both sides
+            ("Länsförsäkringar AB", "© Länsförsäkringar AB 2026"),
+            # CJK containment
+            ("東京海上ホールディングス", "© 東京海上ホールディングス株式会社"),
+            ("東京海上ホールディングス", "© 損保ジャパン株式会社"),
+        ],
+    )
+    def test_differential_parity_with_reference(self, entity: str, text: str) -> None:
+        assert _reference_entity_name_match is not None  # for type-checkers
+        assert strict_org_name_match(entity, text) is _reference_entity_name_match(entity, text)
