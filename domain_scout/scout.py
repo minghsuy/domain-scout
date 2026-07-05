@@ -75,6 +75,19 @@ _SIGNAL_MAP: dict[str, tuple[str, float]] = {
 }
 
 
+# Identity of the built-in heuristic ladder (Scout._score_confidence).
+# The version is the date of the last commit that changed heuristic scoring
+# semantics — ladder base values, corroboration adjustments, sibling penalty,
+# or the meaning of a source signal feeding the ladder (2026-07-03 = strict
+# word-bounded ct_org_match gate, #178). Bump this date whenever any of those
+# change, so delta reports can tell a rule change from real-world change.
+# Note: the post-scoring _infra_boost (+0.05) applies to BOTH scorer paths and
+# is versioned by neither this constant nor the model artifact — if its formula
+# changes, learned-scored domains will report it as a confidence change.
+HEURISTIC_SCORER_ID = "heuristic"
+HEURISTIC_SCORER_VERSION = "2026-07-03"
+
+
 # Source tags that represent org-name-matched evidence (not SAN expansion).
 _ORG_MATCH_TAGS = frozenset({"ct_org_match", "ct_subsidiary_match", "ct_gleif_subsidiary"})
 
@@ -1083,7 +1096,12 @@ class Scout:
     ) -> float:
         # Learned scorer path (opt-in via config)
         if self.config.use_learned_scorer and domain and accum.cert_org_names:
+            from domain_scout.scorer import SCORER_ID as _LEARNED_SCORER_ID
             from domain_scout.scorer import score_confidence as _learned_score
+            from domain_scout.scorer import scorer_version as _learned_scorer_version
+
+            accum.scorer_id = _LEARNED_SCORER_ID
+            accum.scorer_version = _learned_scorer_version()
 
             best_sim = max(
                 (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
@@ -1118,6 +1136,9 @@ class Scout:
             )
 
         # Heuristic scorer (default)
+        accum.scorer_id = HEURISTIC_SCORER_ID
+        accum.scorer_version = HEURISTIC_SCORER_VERSION
+
         # Phase 1: base score from source type
         score = 0.0
 
@@ -1442,6 +1463,8 @@ class Scout:
                 DiscoveredDomain(
                     domain=domain,
                     confidence=accum.confidence,
+                    scorer_id=accum.scorer_id,
+                    scorer_version=accum.scorer_version,
                     sources=sorted(accum.sources),
                     evidence=deduped,
                     cert_org_names=sorted(accum.cert_org_names),
@@ -1534,6 +1557,8 @@ class _DomainAccum:
         "resolves",
         "rdap_org",
         "confidence",
+        "scorer_id",
+        "scorer_version",
     )
 
     def __init__(self) -> None:
@@ -1545,6 +1570,9 @@ class _DomainAccum:
         self.resolves: bool = False
         self.rdap_org: str | None = None
         self.confidence: float = 0.0
+        # Stamped by Scout._score_confidence; "unknown" until scored.
+        self.scorer_id: str = "unknown"
+        self.scorer_version: str = "unknown"
 
     def merge(self, other: _DomainAccum) -> None:
         self.sources |= other.sources

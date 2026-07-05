@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- `DiscoveredDomain` now carries `scorer_id` and `scorer_version` (schema 1.1,
+  #184): the heuristic ladder stamps `heuristic/<rule-set date>` and the learned
+  scorer stamps `learned_lr/<artifact version>@<training date>`, so a persisted
+  confidence value is no longer ambiguous about which of the two incomparable
+  scorers produced it. Additive and defaulted to `unknown` — pre-1.1 result
+  JSON still validates, and downstream consumers that read `confidence` are
+  unaffected. `domain-scout diff` no longer reports confidence deltas between
+  differing scorer identities (a scorer switch used to surface as hundreds of
+  spurious "confidence changed" entries); it emits a single run-level
+  `scorer_changed` warning instead, while non-confidence changes (`resolves`,
+  `sources`, `rdap_org`) are still reported per domain.
+
 ### Changed
 - The `ct_org_match` source now requires a strict word-bounded org-name match in
   addition to the fuzzy `org_match_threshold`. The fuzzy scorer credited

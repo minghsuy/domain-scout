@@ -231,6 +231,70 @@ class TestScoringPriority:
 
 
 # ---------------------------------------------------------------------------
+# 3b. Scorer identity stamping (issue #184: confidence must carry provenance)
+# ---------------------------------------------------------------------------
+
+
+class TestScorerIdentityStamping:
+    """_score_confidence must stamp scorer_id/scorer_version on the accum."""
+
+    @staticmethod
+    def _make_accum(**kwargs: object) -> _DomainAccum:
+        accum = _DomainAccum()
+        for k, v in kwargs.items():
+            setattr(accum, k, v)
+        return accum
+
+    def test_heuristic_path_stamps_identity(self) -> None:
+        from domain_scout.config import ScoutConfig
+        from domain_scout.scout import HEURISTIC_SCORER_ID, HEURISTIC_SCORER_VERSION
+
+        accum = self._make_accum(
+            sources={"ct_org_match"},
+            cert_org_names={"TestCo"},
+            resolves=True,
+        )
+        scout = Scout(config=ScoutConfig())
+        scout._score_confidence(accum, "TestCo", ["test.com"], domain="example.com")
+        assert accum.scorer_id == HEURISTIC_SCORER_ID == "heuristic"
+        assert accum.scorer_version == HEURISTIC_SCORER_VERSION
+
+    def test_learned_path_stamps_identity(self) -> None:
+        from domain_scout.config import ScoutConfig
+        from domain_scout.scorer import SCORER_ID, scorer_version
+
+        accum = self._make_accum(
+            sources={"ct_org_match"},
+            cert_org_names={"TestCo"},
+            resolves=True,
+        )
+        scout = Scout(config=ScoutConfig(use_learned_scorer=True))
+        scout._score_confidence(accum, "TestCo", ["test.com"], domain="example.com")
+        assert accum.scorer_id == SCORER_ID == "learned_lr"
+        assert accum.scorer_version == scorer_version()
+
+    def test_learned_config_without_cert_orgs_falls_back_to_heuristic_identity(self) -> None:
+        """The learned path needs cert_org_names; the fallback must not mislabel."""
+        from domain_scout.config import ScoutConfig
+        from domain_scout.scout import HEURISTIC_SCORER_ID, HEURISTIC_SCORER_VERSION
+
+        accum = self._make_accum(
+            sources={"dns_guess"},
+            cert_org_names=set(),
+            resolves=True,
+        )
+        scout = Scout(config=ScoutConfig(use_learned_scorer=True))
+        scout._score_confidence(accum, "TestCo", ["test.com"], domain="example.com")
+        assert accum.scorer_id == HEURISTIC_SCORER_ID
+        assert accum.scorer_version == HEURISTIC_SCORER_VERSION
+
+    def test_accum_defaults_to_unknown_before_scoring(self) -> None:
+        accum = _DomainAccum()
+        assert accum.scorer_id == "unknown"
+        assert accum.scorer_version == "unknown"
+
+
+# ---------------------------------------------------------------------------
 # 4. Cross-seed boost invariants
 # ---------------------------------------------------------------------------
 

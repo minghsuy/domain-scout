@@ -43,6 +43,12 @@ class DiscoveredDomain(BaseModel):
 
     domain: str
     confidence: float = Field(ge=0.0, le=1.0)
+    # Identity of the scorer that produced `confidence`. Heuristic ladder scores and
+    # learned calibrated probabilities are NOT comparable — consumers must not diff
+    # confidence values across differing scorer identities (see delta._diff_domain).
+    # Defaults to "unknown" so results persisted before schema 1.1 still validate.
+    scorer_id: str = "unknown"
+    scorer_version: str = "unknown"
     sources: list[str] = Field(default_factory=list)
     evidence: list[EvidenceRecord] = Field(default_factory=list)
     cert_org_names: list[str] = Field(default_factory=list)
@@ -57,7 +63,8 @@ class DiscoveredDomain(BaseModel):
 class RunMetadata(BaseModel):
     """Metadata about a domain-scout run for audit and reproducibility."""
 
-    schema_version: str = "1.0"
+    # 1.1: added DiscoveredDomain.scorer_id / scorer_version (additive, issue #184)
+    schema_version: str = "1.1"
     tool_version: str
     timestamp: datetime
     elapsed_seconds: float
