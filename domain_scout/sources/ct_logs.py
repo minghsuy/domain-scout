@@ -283,6 +283,7 @@ class CTLogSource:
             port=self._cfg.crtsh_postgres_port,
             dbname=self._cfg.crtsh_postgres_db,
             user=self._cfg.crtsh_postgres_user,
+            connect_timeout=self._cfg.postgres_connect_timeout,
         )
         conn.set_session(autocommit=True)
         return conn

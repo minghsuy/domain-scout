@@ -34,6 +34,9 @@ class ScoutConfig:
 
     # --- Timeouts (seconds) ---
     postgres_timeout: int = 15
+    # Bounds the TCP connect to crt.sh Postgres; without it a black-holed host
+    # blocks for the OS TCP timeout (~2 min) while holding the CT semaphore (#165).
+    postgres_connect_timeout: int = 10
     http_timeout: int = 15
     dns_timeout: float = 5.0
     total_timeout: int = 90

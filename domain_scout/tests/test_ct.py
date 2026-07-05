@@ -559,6 +559,19 @@ class TestOrgSearchFallbackUnavailable:
         assert any("CT org search unavailable" in e for e in result.run_metadata.errors)
 
 
+class TestPgConnect:
+    """Connection-level behavior for the crt.sh Postgres backend."""
+
+    def test_connect_passes_connect_timeout(self) -> None:
+        """_connect_pg must bound the TCP connect via connect_timeout (#165)."""
+        config = ScoutConfig(postgres_connect_timeout=7)  # non-default proves config wiring
+        ct = CTLogSource(config)
+        with patch("domain_scout.sources.ct_logs.psycopg2.connect") as mock_connect:
+            ct._connect_pg()
+        mock_connect.assert_called_once()
+        assert mock_connect.call_args.kwargs["connect_timeout"] == 7
+
+
 class TestPropertyBased:
     """Property-based tests using hypothesis."""
 
