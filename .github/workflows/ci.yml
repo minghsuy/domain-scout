@@ -25,6 +25,11 @@ jobs:
       src: ${{ steps.filter.outputs.src }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # push events diff against the parent commit via local git history;
+          # a depth-1 clone has no parent and the filter would fail -> gated
+          # jobs skip -> counted green. fetch-depth 2 keeps the diff possible.
+          fetch-depth: 2
       - uses: dorny/paths-filter@v3
         id: filter
         with:
