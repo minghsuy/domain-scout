@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
@@ -66,7 +66,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
@@ -82,11 +82,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: uv sync --all-groups --all-extras
-      - run: uv run pytest domain_scout/tests -m "not integration" -v
+      - run: uv run pytest domain_scout/tests -m "not integration" -v --cov-report=term --cov-report=xml
+      - name: Coverage summary
+        if: always()
+        run: |
+          if [ -f coverage.xml ]; then
+            # best-effort: a malformed/truncated XML must never fail the job
+            python3 -c "import xml.etree.ElementTree as ET; r = float(ET.parse('coverage.xml').getroot().get('line-rate')); print(f'Total coverage: {r:.2%}')" >> "$GITHUB_STEP_SUMMARY" || true
+          fi
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-xml
+          path: coverage.xml
+          if-no-files-found: ignore
