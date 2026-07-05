@@ -94,7 +94,8 @@ jobs:
         if: always()
         run: |
           if [ -f coverage.xml ]; then
-            python3 -c "import xml.etree.ElementTree as ET; r = float(ET.parse('coverage.xml').getroot().get('line-rate')); print(f'Total coverage: {r:.2%}')" >> "$GITHUB_STEP_SUMMARY"
+            # best-effort: a malformed/truncated XML must never fail the job
+            python3 -c "import xml.etree.ElementTree as ET; r = float(ET.parse('coverage.xml').getroot().get('line-rate')); print(f'Total coverage: {r:.2%}')" >> "$GITHUB_STEP_SUMMARY" || true
           fi
       - name: Upload coverage report
         if: always()
