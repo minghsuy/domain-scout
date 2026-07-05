@@ -9,6 +9,10 @@ build/
 .ruff_cache/
 .pytest_cache/
 .mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
 SPEC.md
 *-threat-model.md
 *_report.md
