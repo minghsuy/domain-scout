@@ -170,6 +170,12 @@ Integration tests hit real crt.sh:
 make test-integration
 ```
 
+## CI notes
+
+Docs-only changes (`*.md`, `docs/**`, `LICENSE`, `.gitignore`) skip the heavy
+CI jobs via a `changes` gate job; the required check names still report, so
+docs-only PRs merge without running lint/typecheck/test.
+
 ## License
 
 MIT
