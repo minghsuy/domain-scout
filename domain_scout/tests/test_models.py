@@ -3,7 +3,7 @@ from __future__ import annotations
 import pytest
 from pydantic import ValidationError
 
-from domain_scout.models import EntityInput
+from domain_scout.models import DiscoveredDomain, EntityInput
 
 
 def test_entity_input_seed_domain_max_length() -> None:
@@ -69,3 +69,30 @@ def test_entity_input_company_name_max_length_still_enforced() -> None:
     with pytest.raises(ValidationError) as exc_info:
         EntityInput(company_name="x" * 201)
     assert "at most 200" in str(exc_info.value)
+
+
+# --- DiscoveredDomain scorer identity (issue #184, schema 1.1) ---
+
+
+def test_discovered_domain_scorer_fields_round_trip() -> None:
+    """scorer_id/scorer_version survive JSON serialization."""
+    d = DiscoveredDomain(
+        domain="example.com",
+        confidence=0.62,
+        scorer_id="learned_lr",
+        scorer_version="v1@2026-03-01",
+    )
+    payload = d.model_dump_json()
+    assert '"scorer_id":"learned_lr"' in payload
+    assert '"scorer_version":"v1@2026-03-01"' in payload
+    restored = DiscoveredDomain.model_validate_json(payload)
+    assert restored.scorer_id == "learned_lr"
+    assert restored.scorer_version == "v1@2026-03-01"
+
+
+def test_discovered_domain_legacy_payload_defaults_to_unknown() -> None:
+    """Pre-1.1 results (no scorer fields) must still validate, as 'unknown'."""
+    legacy = {"domain": "example.com", "confidence": 0.85}
+    d = DiscoveredDomain.model_validate(legacy)
+    assert d.scorer_id == "unknown"
+    assert d.scorer_version == "unknown"

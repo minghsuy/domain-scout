@@ -11,6 +11,8 @@ import math
 from importlib import resources
 from typing import Any
 
+SCORER_ID = "learned_lr"
+
 
 def _load_model() -> dict[str, Any]:
     """Load the default model artifact shipped with the package."""
@@ -130,6 +132,16 @@ def _isotonic_interpolate(x: float, x_vals: list[float], y_vals: list[float]) ->
 # ---------------------------------------------------------------------------
 # Public scoring API
 # ---------------------------------------------------------------------------
+
+
+def scorer_version() -> str:
+    """Identity of the loaded model artifact: "<version>@<training_date>".
+
+    The artifact version alone ("v1") is not enough — a retrain keeps the version
+    but shifts every probability, so the training date is the discriminator.
+    """
+    model = _get_model()
+    return f"{model['version']}@{model['training_date']}"
 
 
 def score_confidence(
