@@ -3,24 +3,43 @@ name: CI
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '*.md'
-      - 'docs/**'
-      - 'LICENSE'
-      - '.gitignore'
   pull_request:
-    paths-ignore:
-      - '*.md'
-      - 'docs/**'
-      - 'LICENSE'
-      - '.gitignore'
+
+permissions:
+  contents: read
+  pull-requests: read
 
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  # Always runs, so lint/typecheck/test always report a status to branch
+  # protection. On docs-only changes they are skipped via `if:`, which GitHub
+  # counts as success for required checks (unlike paths-ignore, which leaves
+  # them stuck at "Expected" — see #176).
+  changes:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          # src = any changed file NOT matching the old paths-ignore list
+          predicate-quantifier: 'every'
+          filters: |
+            src:
+              - '!*.md'
+              - '!docs/**'
+              - '!LICENSE'
+              - '!.gitignore'
+
   lint:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -36,6 +55,8 @@ jobs:
       - run: uv run ruff format --check domain_scout/
 
   typecheck:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -50,6 +71,8 @@ jobs:
       - run: uv run mypy domain_scout/ --ignore-missing-imports
 
   test:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
