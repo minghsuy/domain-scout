@@ -283,6 +283,10 @@ class CTLogSource:
             port=self._cfg.crtsh_postgres_port,
             dbname=self._cfg.crtsh_postgres_db,
             user=self._cfg.crtsh_postgres_user,
+            # Bound TCP connection establishment: without this, a black-holed
+            # host blocks for the OS TCP timeout (~2 min) inside an executor
+            # thread while holding the CT semaphore (#165).
+            connect_timeout=self._cfg.postgres_connect_timeout,
         )
         conn.set_session(autocommit=True)
         return conn

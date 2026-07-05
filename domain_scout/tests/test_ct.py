@@ -441,6 +441,29 @@ class TestCircuitBreakerWiring:
         assert not pg_called  # breaker prevented the call
 
 
+class TestPgConnectTimeout:
+    """#165: psycopg2.connect must always get a finite connect_timeout.
+
+    Without it, a black-holed host blocks the executor thread for the OS
+    TCP timeout while holding the CT semaphore, starving the whole scan.
+    """
+
+    def test_connect_passes_configured_connect_timeout(self) -> None:
+        config = ScoutConfig(postgres_connect_timeout=7)
+        ct = CTLogSource(config)
+        with patch("domain_scout.sources.ct_logs.psycopg2.connect") as mock_connect:
+            ct._connect_pg()
+        assert mock_connect.call_args.kwargs["connect_timeout"] == 7
+
+    def test_connect_timeout_defaults_finite(self) -> None:
+        ct = CTLogSource(ScoutConfig())
+        with patch("domain_scout.sources.ct_logs.psycopg2.connect") as mock_connect:
+            ct._connect_pg()
+        timeout = mock_connect.call_args.kwargs["connect_timeout"]
+        assert isinstance(timeout, int)
+        assert timeout > 0
+
+
 class TestOrgSearchFallbackUnavailable:
     """#163: org search must not silently return zero via the JSON fallback.
 

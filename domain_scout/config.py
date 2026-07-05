@@ -34,6 +34,7 @@ class ScoutConfig:
 
     # --- Timeouts (seconds) ---
     postgres_timeout: int = 15
+    postgres_connect_timeout: int = 10
     http_timeout: int = 15
     dns_timeout: float = 5.0
     total_timeout: int = 90
