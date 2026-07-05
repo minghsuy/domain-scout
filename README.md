@@ -172,4 +172,4 @@ make test-integration
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE).
