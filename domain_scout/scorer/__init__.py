@@ -1,7 +1,11 @@
 """Learned confidence scorer for domain-entity attribution.
 
 Loads a logistic regression model from a JSON artifact and produces
-calibrated probabilities from domain evidence features.
+probabilities from domain evidence features. The artifact's own persisted
+metrics are consumed at load time (issue #183): the isotonic calibration
+layer is only applied when the artifact's metadata says it improves ECE,
+and features the artifact uses but inference cannot supply are surfaced
+with their bias direction.
 """
 
 from __future__ import annotations
@@ -11,7 +15,39 @@ import math
 from importlib import resources
 from typing import Any
 
+import structlog
+
+log = structlog.get_logger()
+
 SCORER_ID = "learned_lr"
+
+# Features score_confidence derives from real inference-time evidence.
+_SUPPLIED_FEATURES = frozenset(
+    {
+        "best_similarity",
+        "source_count",
+        "domain_has_company_token",
+        "has_shared_infra",
+        "has_dns_guess",
+        "tld_is_country",
+        "entity_name_in_org",
+        "evidence_density",
+        "resolves",
+        "domain_length",
+        "rdap_similarity",
+    }
+)
+
+# Train-time-only features: score_confidence zero-fills these because the
+# underlying data is not available at inference (see the raw dict below).
+_ZERO_FILLED_FEATURES = frozenset(
+    {
+        "org_matches_different_entity",  # requires S&P 500 entity data
+        "same_asn_as_anchor",  # requires DNS+ASN lookup
+        "asn_is_cdn",  # requires DNS+ASN lookup
+        "shares_nameserver",  # requires NS lookup
+    }
+)
 
 
 def _load_model() -> dict[str, Any]:
@@ -21,13 +57,86 @@ def _load_model() -> dict[str, Any]:
     return result
 
 
+def _validate_artifact(model: dict[str, Any]) -> dict[str, Any]:
+    """Inference-time acceptance gate: consume the artifact's own metadata.
+
+    Called once at load (the result is cached in ``_MODEL``), so every
+    warning here fires once per process, not per scored domain.
+
+    Two contracts are enforced:
+
+    1. Feature availability — every feature the model uses must either be
+       genuinely computable at inference (``_SUPPLIED_FEATURES``) or a known
+       zero-filled placeholder (``_ZERO_FILLED_FEATURES``). Zero-filled
+       features should be declared by the artifact in
+       ``inference_unavailable_features``; declared or not, the constant
+       train/serve bias is logged with its direction.
+
+    2. Calibration acceptance — the calibration layer is applied only when
+       the artifact's own metrics say it helps (``lr_calibrated_ece <=
+       lr_ece``). A future artifact with good calibration automatically gets
+       the layer back; nothing is hardcoded to this artifact.
+    """
+    features: list[str] = model["features"]
+
+    # -- Feature-availability contract --------------------------------------
+    declared_unavailable = set(model.get("inference_unavailable_features", []))
+    for i, fname in enumerate(features):
+        if fname in _SUPPLIED_FEATURES:
+            continue
+        if fname not in _ZERO_FILLED_FEATURES:
+            raise ValueError(
+                f"model artifact uses feature {fname!r} which inference cannot"
+                " compute; add it to score_confidence or retrain without it"
+            )
+        coef = float(model["coefficients"][fname])
+        mean = float(model["scaler"]["mean"][i])
+        scale = float(model["scaler"]["scale"][i])
+        bias_direction = "low" if coef > 0 else "high"
+        event = (
+            "scorer_feature_zero_filled"
+            if fname in declared_unavailable
+            else "scorer_feature_availability_undeclared"
+        )
+        log.warning(
+            event,
+            feature=fname,
+            coefficient=round(coef, 4),
+            # Constant z-space offset every domain gets vs. the training mean.
+            zero_fill_z_offset=round(coef * (0.0 - mean) / scale, 4),
+            bias=f"confidence biased {bias_direction} for domains where {fname}=1",
+        )
+
+    # -- Calibration acceptance gate -----------------------------------------
+    metrics = model.get("metrics", {})
+    ece = metrics.get("lr_ece")
+    calibrated_ece = metrics.get("lr_calibrated_ece")
+    calibration_active = bool(model.get("calibration"))
+    if (
+        calibration_active
+        and ece is not None
+        and calibrated_ece is not None
+        and calibrated_ece > ece
+    ):
+        calibration_active = False
+        log.warning(
+            "scorer_calibration_gated_off",
+            artifact=f"{model['version']}@{model['training_date']}",
+            lr_ece=ece,
+            lr_calibrated_ece=calibrated_ece,
+            reason=("artifact metrics say calibration worsens ECE; using raw LR probabilities"),
+        )
+    model["_calibration_active"] = calibration_active
+    return model
+
+
 _MODEL: dict[str, Any] | None = None
 
 
 def _get_model() -> dict[str, Any]:
     global _MODEL  # noqa: PLW0603
     if _MODEL is None:
-        _MODEL = _load_model()
+        _MODEL = _validate_artifact(_load_model())
     return _MODEL
 
 
@@ -139,9 +248,18 @@ def scorer_version() -> str:
 
     The artifact version alone ("v1") is not enough — a retrain keeps the version
     but shifts every probability, so the training date is the discriminator.
+
+    When the artifact carries a calibration layer that the acceptance gate
+    disabled (see ``_validate_artifact``), a ``+uncal`` suffix is appended:
+    the same artifact produces different probabilities calibrated vs. raw, so
+    the two must not share an identity (delta reports diff confidences only
+    within one (scorer_id, scorer_version)).
     """
     model = _get_model()
-    return f"{model['version']}@{model['training_date']}"
+    base = f"{model['version']}@{model['training_date']}"
+    if model.get("calibration") and not model["_calibration_active"]:
+        return f"{base}+uncal"
+    return base
 
 
 def score_confidence(
@@ -158,7 +276,8 @@ def score_confidence(
 ) -> float:
     """Score domain-entity attribution using the learned logistic model.
 
-    Returns a calibrated probability in [0, 1].
+    Returns a probability in [0, 1] — calibrated only if the artifact's own
+    metrics show the calibration layer improves ECE, raw LR otherwise.
     """
     model = _get_model()
     features = model["features"]
@@ -198,9 +317,10 @@ def score_confidence(
 
     prob = 1.0 / (1.0 + math.exp(-z))
 
-    # Apply isotonic calibration if available
+    # Apply isotonic calibration only when the load-time acceptance gate
+    # accepted it (artifact's own metrics say it improves ECE).
     cal = model.get("calibration")
-    if cal:
+    if cal and model["_calibration_active"]:
         prob = _isotonic_interpolate(prob, cal["x"], cal["y"])
 
     return round(prob, 4)
