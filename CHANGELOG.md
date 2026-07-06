@@ -8,6 +8,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- The learned-scorer artifact's own persisted metrics are now consumed at load
+  time (#183). An acceptance gate skips the isotonic calibration layer when the
+  artifact reports `lr_calibrated_ece > lr_ece` — true for the shipped v1
+  artifact (0.2182 vs 0.0072), so raw LR probabilities are used and
+  `scorer_version()` stamps a `+uncal` suffix; a future artifact with good
+  calibration gets the layer back automatically. The artifact schema gains
+  `inference_unavailable_features` declaring features the model uses but
+  inference zero-fills (`org_matches_different_entity`, coefficient +0.204 —
+  confidence biased low where that signal would fire); the loader warns once at
+  load, and rejects features it can't compute at all. The eval harness now runs
+  both scorer paths: `make eval` reports a heuristic leg (recorded ranking) and
+  a learned leg (persisted evidence re-scored through the model — an
+  approximation of a live learned run, see `eval._learned_ranked_domains`), so
+  the learned scorer is exercised before `use_learned_scorer` ever flips on.
 - `DiscoveredDomain` now carries `scorer_id` and `scorer_version` (schema 1.1,
   #184): the heuristic ladder stamps `heuristic/<rule-set date>` and the learned
   scorer stamps `learned_lr/<artifact version>@<training date>`, so a persisted
