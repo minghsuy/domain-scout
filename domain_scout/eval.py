@@ -67,10 +67,20 @@ class EntityEvalResult(BaseModel):
 
 
 class EvalReport(BaseModel):
-    """Complete evaluation report across all entities."""
+    """Complete evaluation report across all entities.
+
+    ``entities`` carries the heuristic leg (ranking as recorded in the
+    ScoutResult). ``learned_entities`` carries the learned-scorer leg: the
+    same results re-scored and re-ranked through the learned model, so
+    ``make eval`` exercises both scorer paths pre-ship (issue #183).
+    """
 
     mode: str
     entities: list[EntityEvalResult]
+    learned_entities: list[EntityEvalResult] = Field(default_factory=list)
+    # Identity of the learned scorer that produced learned_entities,
+    # e.g. "learned_lr/v1@2026-03-01+uncal" (None if the leg didn't run).
+    learned_scorer: str | None = None
 
 
 # ---------------------------------------------------------------------------
@@ -175,6 +185,99 @@ def load_ground_truth(path: Path | None = None) -> list[GroundTruthEntry]:
 
 
 # ---------------------------------------------------------------------------
+# Per-entity evaluation (shared by both scorer legs)
+# ---------------------------------------------------------------------------
+
+
+def _entity_result(
+    gt: GroundTruthEntry,
+    ranked: list[str],
+    k_values: tuple[int, ...],
+) -> EntityEvalResult:
+    """Build an EntityEvalResult for one entity from a ranked domain list."""
+    owned = set(gt.owned_domains)
+    not_owned_set = set(gt.not_owned)
+
+    return EntityEvalResult(
+        label_id=gt.label_id,
+        company_name=gt.company_name,
+        seeds=gt.seeds,
+        discovered_count=len(ranked),
+        owned_count=len(owned),
+        not_owned_count=len(not_owned_set),
+        metrics=compute_metrics(ranked, owned, not_owned_set, k_values),
+        false_positive_domains=collect_false_positives(ranked, not_owned_set),
+    )
+
+
+def _learned_ranked_domains(scout_result: ScoutResult) -> list[str]:
+    """Re-rank a ScoutResult's domains with the learned scorer.
+
+    Mirrors the gating in ``Scout._score_confidence``: the learned path fires
+    only for domains with cert org evidence; every other domain keeps its
+    recorded (heuristic) confidence — the same mixed ranking production
+    produces with ``use_learned_scorer=True``.
+
+    This is an approximation, not a bit-exact replay of a live learned run.
+    Production scores from the pre-output ``_DomainAccum`` state; here only
+    the persisted ``DiscoveredDomain`` is available, which differs in three
+    ways: (1) the post-scoring ``_infra_boost`` +0.05 addend is not
+    re-applied; (2) ``sources`` may contain the ``shared_infra`` tag that
+    ``_infra_boost`` added *after* production scored (flipping the
+    ``has_shared_infra`` feature); (3) ``evidence`` has been through
+    ``_dedup_evidence``, so ``evidence_count``/``unique_cert_count`` can be
+    lower than what production saw. Good enough to exercise the learned path
+    and compare rankings pre-ship; not a substitute for a live
+    ``use_learned_scorer=True`` eval.
+    """
+    from domain_scout.matching.entity_match import org_name_similarity
+    from domain_scout.scorer import score_confidence
+
+    company = scout_result.entity.company_name
+    scored: list[tuple[float, str]] = []
+    for d in scout_result.domains:
+        if d.domain and d.cert_org_names:
+            best_sim = max(
+                (org_name_similarity(org, company) for org in d.cert_org_names),
+                default=0.0,
+            )
+            cert_ids = {ev.cert_id for ev in d.evidence if ev.cert_id is not None}
+            rdap_sim = max(
+                (
+                    ev.similarity_score
+                    for ev in d.evidence
+                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
+                ),
+                default=0.0,
+            )
+            confidence = score_confidence(
+                domain=d.domain,
+                company_name=company,
+                best_similarity=best_sim,
+                sources=set(d.sources),
+                cert_org_names=set(d.cert_org_names),
+                resolves=d.resolves,
+                evidence_count=len(d.evidence),
+                unique_cert_count=len(cert_ids),
+                rdap_similarity=rdap_sim,
+            )
+        else:
+            confidence = d.confidence
+        scored.append((confidence, d.domain))
+
+    # Stable sort: ties keep their recorded relative order.
+    scored.sort(key=lambda item: item[0], reverse=True)
+    return [domain for _, domain in scored]
+
+
+def _learned_scorer_identity() -> str:
+    """Identity string for the learned leg, e.g. "learned_lr/v1@2026-03-01+uncal"."""
+    from domain_scout.scorer import SCORER_ID, scorer_version
+
+    return f"{SCORER_ID}/{scorer_version()}"
+
+
+# ---------------------------------------------------------------------------
 # Baseline evaluation
 # ---------------------------------------------------------------------------
 
@@ -184,9 +287,14 @@ def evaluate_baseline(
     baselines_dir: Path | None = None,
     k_values: tuple[int, ...] = _DEFAULT_K_VALUES,
 ) -> EvalReport:
-    """Evaluate pre-recorded baseline JSON files against ground truth."""
+    """Evaluate pre-recorded baseline JSON files against ground truth.
+
+    Runs both scorer legs: the recorded (heuristic) ranking and a learned
+    re-scoring of the same evidence.
+    """
     bdir = baselines_dir or _BASELINES_DIR
     results: list[EntityEvalResult] = []
+    learned_results: list[EntityEvalResult] = []
 
     for gt in ground_truth:
         baseline_path = bdir / f"{gt.label_id}.json"
@@ -197,28 +305,17 @@ def evaluate_baseline(
         with open(baseline_path) as f:
             scout_result = ScoutResult.model_validate_json(f.read())
 
-        # Extract ranked domain list (already sorted by confidence desc in ScoutResult)
+        # Ranked domain list (already sorted by confidence desc in ScoutResult)
         ranked = [d.domain for d in scout_result.domains]
-        owned = set(gt.owned_domains)
-        not_owned_set = set(gt.not_owned)
+        results.append(_entity_result(gt, ranked, k_values))
+        learned_results.append(_entity_result(gt, _learned_ranked_domains(scout_result), k_values))
 
-        metrics = compute_metrics(ranked, owned, not_owned_set, k_values)
-        fps = collect_false_positives(ranked, not_owned_set)
-
-        results.append(
-            EntityEvalResult(
-                label_id=gt.label_id,
-                company_name=gt.company_name,
-                seeds=gt.seeds,
-                discovered_count=len(ranked),
-                owned_count=len(owned),
-                not_owned_count=len(not_owned_set),
-                metrics=metrics,
-                false_positive_domains=fps,
-            )
-        )
-
-    return EvalReport(mode="baseline", entities=results)
+    return EvalReport(
+        mode="baseline",
+        entities=results,
+        learned_entities=learned_results,
+        learned_scorer=_learned_scorer_identity() if learned_results else None,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -230,12 +327,17 @@ async def evaluate_live(
     ground_truth: list[GroundTruthEntry],
     k_values: tuple[int, ...] = _DEFAULT_K_VALUES,
 ) -> EvalReport:
-    """Run Scout.discover_async() for each entity and evaluate against ground truth."""
+    """Run Scout.discover_async() for each entity and evaluate against ground truth.
+
+    Discovery runs once per entity; both scorer legs are computed from the
+    same ScoutResult (the learned leg re-scores the collected evidence).
+    """
     from domain_scout.models import EntityInput
     from domain_scout.scout import Scout
 
     scout = Scout()
     results: list[EntityEvalResult] = []
+    learned_results: list[EntityEvalResult] = []
 
     for gt in ground_truth:
         entity = EntityInput(
@@ -245,31 +347,46 @@ async def evaluate_live(
         scout_result = await scout.discover_async(entity)
 
         ranked = [d.domain for d in scout_result.domains]
-        owned = set(gt.owned_domains)
-        not_owned_set = set(gt.not_owned)
+        results.append(_entity_result(gt, ranked, k_values))
+        learned_results.append(_entity_result(gt, _learned_ranked_domains(scout_result), k_values))
 
-        metrics = compute_metrics(ranked, owned, not_owned_set, k_values)
-        fps = collect_false_positives(ranked, not_owned_set)
-
-        results.append(
-            EntityEvalResult(
-                label_id=gt.label_id,
-                company_name=gt.company_name,
-                seeds=gt.seeds,
-                discovered_count=len(ranked),
-                owned_count=len(owned),
-                not_owned_count=len(not_owned_set),
-                metrics=metrics,
-                false_positive_domains=fps,
-            )
-        )
-
-    return EvalReport(mode="live", entities=results)
+    return EvalReport(
+        mode="live",
+        entities=results,
+        learned_entities=learned_results,
+        learned_scorer=_learned_scorer_identity() if learned_results else None,
+    )
 
 
 # ---------------------------------------------------------------------------
 # Output formatting
 # ---------------------------------------------------------------------------
+
+
+def _format_entity(entity: EntityEvalResult, lines: list[str]) -> None:
+    """Append one entity's metrics block to the output lines."""
+    seeds_str = ", ".join(entity.seeds)
+    lines.append("")
+    lines.append(f"{entity.label_id} ({entity.company_name}, seeds={seeds_str})")
+    lines.append(
+        f"  Discovered: {entity.discovered_count} | "
+        f"Ground truth: {entity.owned_count} owned, "
+        f"{entity.not_owned_count} not-owned"
+    )
+
+    # Table header
+    lines.append(f"  {'k':>5}  {'Precision':>9}  {'Found':>9}  {'FPs':>3}  {'NDCG':>5}")
+    lines.append(f"  {'─' * 5}  {'─' * 9}  {'─' * 9}  {'─' * 3}  {'─' * 5}")
+
+    for m in entity.metrics:
+        found_str = f"{m.hits}/{entity.owned_count}"
+        lines.append(
+            f"  {m.k:>5}  {m.precision:>9.3f}  {found_str:>9}  {m.false_positives:>3}  "
+            f"{m.ndcg:>5.3f}"
+        )
+
+    if entity.false_positive_domains:
+        lines.append(f"  FP domains (all ranks): {', '.join(entity.false_positive_domains)}")
 
 
 def format_table(report: EvalReport) -> str:
@@ -279,28 +396,14 @@ def format_table(report: EvalReport) -> str:
     lines.append("=" * 55)
 
     for entity in report.entities:
-        seeds_str = ", ".join(entity.seeds)
+        _format_entity(entity, lines)
+
+    if report.learned_entities:
         lines.append("")
-        lines.append(f"{entity.label_id} ({entity.company_name}, seeds={seeds_str})")
-        lines.append(
-            f"  Discovered: {entity.discovered_count} | "
-            f"Ground truth: {entity.owned_count} owned, "
-            f"{entity.not_owned_count} not-owned"
-        )
-
-        # Table header
-        lines.append(f"  {'k':>5}  {'Precision':>9}  {'Found':>9}  {'FPs':>3}  {'NDCG':>5}")
-        lines.append(f"  {'─' * 5}  {'─' * 9}  {'─' * 9}  {'─' * 3}  {'─' * 5}")
-
-        for m in entity.metrics:
-            found_str = f"{m.hits}/{entity.owned_count}"
-            lines.append(
-                f"  {m.k:>5}  {m.precision:>9.3f}  {found_str:>9}  {m.false_positives:>3}  "
-                f"{m.ndcg:>5.3f}"
-            )
-
-        if entity.false_positive_domains:
-            lines.append(f"  FP domains (all ranks): {', '.join(entity.false_positive_domains)}")
+        lines.append(f"Learned scorer leg ({report.learned_scorer})")
+        lines.append("=" * 55)
+        for entity in report.learned_entities:
+            _format_entity(entity, lines)
 
     lines.append("")
     return "\n".join(lines)
