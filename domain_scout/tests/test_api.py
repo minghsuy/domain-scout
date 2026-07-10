@@ -595,3 +595,26 @@ class TestDiffEndpoint:
         resp = diff_client.post("/diff", json=req_data, headers={"X-API-Key": "secret-key"})
         # Should be unprocessable entity because 'current' is required
         assert resp.status_code == 422
+
+
+class TestScanScoutLifecycle:
+    """The /scan handler must always close its Scout instance (issue #164)."""
+
+    def test_scan_closes_scout(self, client: TestClient, mock_discover: AsyncMock) -> None:
+        with patch("domain_scout.api.Scout.close") as mock_close:
+            resp = client.post("/scan", json={"entity": {"company_name": "Test Co"}})
+        assert resp.status_code == 200
+        mock_close.assert_called_once()
+
+    def test_scan_closes_scout_on_failure(self, client: TestClient) -> None:
+        with (
+            patch(
+                "domain_scout.api.Scout.discover_async",
+                new_callable=AsyncMock,
+                side_effect=RuntimeError("boom"),
+            ),
+            patch("domain_scout.api.Scout.close") as mock_close,
+        ):
+            resp = client.post("/scan", json={"entity": {"company_name": "Test Co"}})
+        assert resp.status_code == 500
+        mock_close.assert_called_once()

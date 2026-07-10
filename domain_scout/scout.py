@@ -325,6 +325,23 @@ class Scout:
             except Exception:
                 log.warning("scout.gleif_load_failed", exc_info=True)
 
+    def close(self) -> None:
+        """Release connections held by this Scout (local warehouse, GLEIF).
+
+        Safe to call multiple times, and on a partially constructed instance.
+        Remote-only configurations hold no persistent resources, so this is
+        a no-op for them.
+        """
+        from domain_scout.sources.local_parquet import HybridCTSource, LocalParquetSource
+
+        ct = getattr(self, "_ct", None)
+        if isinstance(ct, LocalParquetSource | HybridCTSource):
+            ct.close()
+        gleif: duckdb.DuckDBPyConnection | None = getattr(self, "_gleif_con", None)
+        if gleif is not None:
+            gleif.close()
+            self._gleif_con = None
+
     def _expand_gleif_tree(self, company_name: str) -> tuple[list[str], set[str]]:
         """Expand corporate tree via GLEIF. Returns (subsidiary_names, sibling_names)."""
         if self._gleif_con is None:

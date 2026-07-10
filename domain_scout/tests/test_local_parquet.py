@@ -408,3 +408,14 @@ class TestEdgeCases:
     def test_close(self, source: LocalParquetSource) -> None:
         """close() should not raise."""
         source.close()
+
+
+class TestHybridClose:
+    def test_hybrid_close_delegates_to_local(self) -> None:
+        """HybridCTSource.close() closes the local warehouse connection."""
+        from unittest.mock import MagicMock
+
+        local = MagicMock()
+        hybrid = HybridCTSource(local, MagicMock())
+        hybrid.close()
+        local.close.assert_called_once()

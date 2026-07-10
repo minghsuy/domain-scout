@@ -206,13 +206,22 @@ def create_app(
                 status_code=429, detail="Too many concurrent scans, try again later"
             ) from exc
 
+        # Scout construction can open DuckDB connections and scan a parquet
+        # warehouse (local mode) — run it in an executor so it can't block
+        # the event loop, and always close it to release those connections.
+        scout: Scout | None = None
+        loop = asyncio.get_running_loop()
         try:
-            scout = Scout(config=config, cache=app.state.cache)
+            scout = await loop.run_in_executor(
+                None, lambda: Scout(config=config, cache=app.state.cache)
+            )
             result = await scout.discover_async(req.entity)
         except Exception as exc:
             log.error("scan.failed", error=str(exc), entity=req.entity.company_name)
             raise HTTPException(status_code=500, detail="Internal scan error") from exc
         finally:
+            if scout is not None:
+                await loop.run_in_executor(None, scout.close)
             app.state.semaphore.release()
 
         return result

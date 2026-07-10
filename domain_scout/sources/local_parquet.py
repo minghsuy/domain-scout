@@ -187,3 +187,7 @@ class HybridCTSource:
 
     async def get_cert_org(self, cert_id: int) -> str | None:
         return await self._remote.get_cert_org(cert_id)
+
+    def close(self) -> None:
+        """Close the local warehouse connection (remote source holds none)."""
+        self._local.close()
