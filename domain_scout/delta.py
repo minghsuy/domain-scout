@@ -15,6 +15,10 @@ from domain_scout.models import (
 _CONFIDENCE_EPSILON = 0.02
 
 
+def _scorer_identity(d: DiscoveredDomain) -> tuple[str, str]:
+    return (d.scorer_id, d.scorer_version)
+
+
 def compute_delta(baseline: ScoutResult, current: ScoutResult) -> DeltaReport:
     """Compare two scan results and produce a delta report."""
     warnings = _check_warnings(baseline, current)
@@ -29,8 +33,14 @@ def compute_delta(baseline: ScoutResult, current: ScoutResult) -> DeltaReport:
     added = [current_map[k] for k in added_keys]
     removed = [baseline_map[k] for k in removed_keys]
 
+    scorer_transitions: dict[tuple[tuple[str, str], tuple[str, str]], int] = {}
     changed: list[ChangedDomain] = []
     for key in common_keys:
+        old_identity = _scorer_identity(baseline_map[key])
+        new_identity = _scorer_identity(current_map[key])
+        if old_identity != new_identity:
+            pair = (old_identity, new_identity)
+            scorer_transitions[pair] = scorer_transitions.get(pair, 0) + 1
         changes = _diff_domain(baseline_map[key], current_map[key])
         if changes:
             changed.append(
@@ -41,6 +51,23 @@ def compute_delta(baseline: ScoutResult, current: ScoutResult) -> DeltaReport:
                     current_confidence=current_map[key].confidence,
                 )
             )
+
+    if scorer_transitions:
+        total = sum(scorer_transitions.values())
+        detail = ", ".join(
+            f"{'/'.join(old_id)} -> {'/'.join(new_id)} ({count})"
+            for (old_id, new_id), count in sorted(scorer_transitions.items())
+        )
+        warnings.append(
+            DeltaWarning(
+                code="scorer_changed",
+                message=(
+                    f"Scorer identity differs on {total} of {len(common_keys)} common "
+                    f"domains ({detail}); confidence deltas on those domains are "
+                    f"suppressed as incomparable"
+                ),
+            )
+        )
 
     summary = DeltaSummary(
         added=len(added),
@@ -63,10 +90,20 @@ def compute_delta(baseline: ScoutResult, current: ScoutResult) -> DeltaReport:
 
 
 def _diff_domain(old: DiscoveredDomain, new: DiscoveredDomain) -> list[DomainChange]:
-    """Return field-level changes between two versions of the same domain."""
+    """Return field-level changes between two versions of the same domain.
+
+    Confidence is only compared when both values come from the same scorer
+    identity — a heuristic ladder score and a learned calibrated probability
+    (or two differently-versioned scorers) are incomparable, and diffing them
+    would report a scorer switch as hundreds of real-world changes (#184).
+    compute_delta emits a run-level "scorer_changed" warning instead.
+    """
     changes: list[DomainChange] = []
 
-    if abs(old.confidence - new.confidence) >= _CONFIDENCE_EPSILON:
+    if (
+        _scorer_identity(old) == _scorer_identity(new)
+        and abs(old.confidence - new.confidence) >= _CONFIDENCE_EPSILON
+    ):
         changes.append(DomainChange(field="confidence", old=old.confidence, new=new.confidence))
 
     if old.resolves != new.resolves:

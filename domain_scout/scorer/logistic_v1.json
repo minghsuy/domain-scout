@@ -59,6 +59,9 @@
   "threshold": 0.5,
   "regularization_C": 0.1,
   "training_date": "2026-03-01",
+  "inference_unavailable_features": [
+    "org_matches_different_entity"
+  ],
   "gray_zone": [
     0.8,
     0.95

@@ -24,6 +24,7 @@ from domain_scout.eval import (
 from domain_scout.models import (
     DiscoveredDomain,
     EntityInput,
+    EvidenceRecord,
     RunMetadata,
     ScoutResult,
 )
@@ -433,3 +434,169 @@ class TestEvalReportJson:
         assert restored.mode == "test"
         assert len(restored.entities) == 1
         assert restored.entities[0].label_id == "rt"
+        # Pre-#183 reports (no learned leg) still validate.
+        assert restored.learned_entities == []
+        assert restored.learned_scorer is None
+
+
+# ---------------------------------------------------------------------------
+# Learned-scorer leg (issue #183: eval must exercise both scorer paths)
+# ---------------------------------------------------------------------------
+
+
+def _make_learned_fixture() -> ScoutResult:
+    """ScoutResult where the learned scorer disagrees with the recorded ranking.
+
+    - filler.com: no cert evidence -> learned leg keeps recorded 0.6
+      (mirrors Scout's fallback when cert_org_names is empty).
+    - acme-cert.com: recorded 0.2, but cert org == company + resolves, so the
+      learned model scores it high (~0.98) and it should re-rank to the top.
+    """
+    return ScoutResult(
+        entity=EntityInput(company_name="Acme Corp", seed_domain=["acme.com"]),
+        domains=[
+            DiscoveredDomain(domain="filler.com", confidence=0.6),
+            DiscoveredDomain(
+                domain="acme-cert.com",
+                confidence=0.2,
+                sources=["ct_org_match"],
+                cert_org_names=["Acme Corp"],
+                resolves=True,
+                evidence=[
+                    EvidenceRecord(
+                        source_type="ct_org_match",
+                        description="cert org match",
+                        cert_id=1,
+                        cert_org="Acme Corp",
+                        similarity_score=0.98,
+                    )
+                ],
+            ),
+        ],
+        run_metadata=RunMetadata(
+            tool_version="0.4.0",
+            timestamp=datetime(2026, 1, 1, tzinfo=UTC),
+            elapsed_seconds=1.0,
+            domains_found=2,
+        ),
+    )
+
+
+class TestLearnedScorerLeg:
+    def test_learned_leg_reranks_by_learned_confidence(self) -> None:
+        from domain_scout.eval import _learned_ranked_domains
+
+        result = _make_learned_fixture()
+        # Recorded ranking: filler.com (0.6) ahead of acme-cert.com (0.2).
+        assert [d.domain for d in result.domains] == ["filler.com", "acme-cert.com"]
+        # Learned leg: acme-cert.com re-scored high, filler.com keeps 0.6.
+        assert _learned_ranked_domains(result) == ["acme-cert.com", "filler.com"]
+
+    def test_baseline_runs_both_scorer_legs(self, tmp_path: Path) -> None:
+        gt = [
+            GroundTruthEntry(
+                label_id="acme",
+                company_name="Acme Corp",
+                seeds=["acme.com"],
+                owned_domains=["acme-cert.com"],
+                not_owned=["filler.com"],
+            )
+        ]
+        baseline_path = tmp_path / "acme.json"
+        baseline_path.write_text(_make_learned_fixture().model_dump_json())
+
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
+
+        assert len(report.entities) == 1
+        assert len(report.learned_entities) == 1
+        # #185 identity of the path that actually ran: raw LR (calibration
+        # gated off by the artifact's own metrics), hence the +uncal suffix.
+        assert report.learned_scorer == "learned_lr/v1@2026-03-01+uncal"
+
+        # Heuristic leg: recorded ranking puts the labeled FP at rank 1.
+        heuristic = report.entities[0].metrics[0]
+        assert heuristic.precision == 0.0
+        assert heuristic.false_positives == 1
+
+        # Learned leg: re-ranked, the owned domain is at rank 1.
+        learned = report.learned_entities[0].metrics[0]
+        assert learned.precision == 1.0
+        assert learned.false_positives == 0
+
+    def test_learned_leg_without_cert_orgs_matches_recorded(self, tmp_path: Path) -> None:
+        """No cert evidence anywhere -> learned leg falls back to recorded ranking."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com", "test.net"],
+                not_owned=["evil.com"],
+            )
+        ]
+        result = _make_scout_result(
+            ["test.com", "evil.com", "test.net"],
+            company_name="TestCo",
+            seeds=["test.com"],
+        )
+        (tmp_path / "test-entity.json").write_text(result.model_dump_json())
+
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(3,))
+        assert report.learned_entities[0].metrics == report.entities[0].metrics
+        assert (
+            report.learned_entities[0].false_positive_domains
+            == report.entities[0].false_positive_domains
+        )
+
+    def test_no_baselines_no_learned_scorer_identity(self, tmp_path: Path) -> None:
+        gt = [
+            GroundTruthEntry(
+                label_id="missing",
+                company_name="Missing Corp",
+                seeds=["missing.com"],
+                owned_domains=["missing.com"],
+            )
+        ]
+        report = evaluate_baseline(gt, baselines_dir=tmp_path)
+        assert report.learned_entities == []
+        assert report.learned_scorer is None
+
+    def test_format_table_includes_learned_section(self, tmp_path: Path) -> None:
+        gt = [
+            GroundTruthEntry(
+                label_id="acme",
+                company_name="Acme Corp",
+                seeds=["acme.com"],
+                owned_domains=["acme-cert.com"],
+                not_owned=["filler.com"],
+            )
+        ]
+        (tmp_path / "acme.json").write_text(_make_learned_fixture().model_dump_json())
+
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
+        table = format_table(report)
+        assert "Learned scorer leg (learned_lr/v1@2026-03-01+uncal)" in table
+        # Both legs render the entity block.
+        assert table.count("acme (Acme Corp, seeds=acme.com)") == 2
+
+    @pytest.mark.asyncio
+    async def test_live_runs_both_scorer_legs(self) -> None:
+        gt = [
+            GroundTruthEntry(
+                label_id="acme",
+                company_name="Acme Corp",
+                seeds=["acme.com"],
+                owned_domains=["acme-cert.com"],
+                not_owned=["filler.com"],
+            )
+        ]
+        with patch("domain_scout.scout.Scout") as mock_scout_cls:
+            mock_scout = mock_scout_cls.return_value
+            mock_scout.discover_async = AsyncMock(return_value=_make_learned_fixture())
+
+            report = await evaluate_live(gt, k_values=(1,))
+
+        assert report.mode == "live"
+        assert report.entities[0].metrics[0].precision == 0.0
+        assert report.learned_entities[0].metrics[0].precision == 1.0
+        assert report.learned_scorer == "learned_lr/v1@2026-03-01+uncal"

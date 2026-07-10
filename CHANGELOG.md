@@ -7,6 +7,68 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- The learned-scorer artifact's own persisted metrics are now consumed at load
+  time (#183). An acceptance gate skips the isotonic calibration layer when the
+  artifact reports `lr_calibrated_ece > lr_ece` — true for the shipped v1
+  artifact (0.2182 vs 0.0072), so raw LR probabilities are used and
+  `scorer_version()` stamps a `+uncal` suffix; a future artifact with good
+  calibration gets the layer back automatically. The artifact schema gains
+  `inference_unavailable_features` declaring features the model uses but
+  inference zero-fills (`org_matches_different_entity`, coefficient +0.204 —
+  confidence biased low where that signal would fire); the loader warns once at
+  load, and rejects features it can't compute at all. The eval harness now runs
+  both scorer paths: `make eval` reports a heuristic leg (recorded ranking) and
+  a learned leg (persisted evidence re-scored through the model — an
+  approximation of a live learned run, see `eval._learned_ranked_domains`), so
+  the learned scorer is exercised before `use_learned_scorer` ever flips on.
+- `DiscoveredDomain` now carries `scorer_id` and `scorer_version` (schema 1.1,
+  #184): the heuristic ladder stamps `heuristic/<rule-set date>` and the learned
+  scorer stamps `learned_lr/<artifact version>@<training date>`, so a persisted
+  confidence value is no longer ambiguous about which of the two incomparable
+  scorers produced it. Additive and defaulted to `unknown` — pre-1.1 result
+  JSON still validates, and downstream consumers that read `confidence` are
+  unaffected. `domain-scout diff` no longer reports confidence deltas between
+  differing scorer identities (a scorer switch used to surface as hundreds of
+  spurious "confidence changed" entries); it emits a single run-level
+  `scorer_changed` warning instead, while non-confidence changes (`resolves`,
+  `sources`, `rdap_org`) are still reported per domain.
+
+### Changed
+- The `ct_org_match` source now requires a strict word-bounded org-name match in
+  addition to the fuzzy `org_match_threshold`. The fuzzy scorer credited
+  raw-substring hits (`Aon` in `kaonavi`, `Generali` in `Generalist`),
+  generic-word overlap (`… Insurance Group`), and bare single-token/city
+  collisions, producing single-entity wrong-owner attributions that no frequency
+  filter caught (e.g. Munich Re → UniCredit/HVB banking domains, Promutuel →
+  Liberty Mutual). The new gate (`strict_org_name_match`, ported from
+  insurance-market-db#200) rejects those classes while preserving exact,
+  legal-suffixed, hyphenated (`Coca-Cola` → `Coca-Cola Company`), and
+  abbreviation-form (`Palo Alto Tech` → `Palo Alto Tech Inc`) matches. The
+  distinctive core and the certificate text now undergo identical normalization
+  — hyphens fold to spaces on both sides and abbreviations are never expanded —
+  so byte-identical names always match (an initial port drift folded the text
+  but not the core, dropping every hyphenated/abbreviated name). This is
+  precision-first, so some legitimate matches are still intentionally dropped:
+  acronym-only cert-org matches (cert org `IBM` for target `International
+  Business Machines`) and multi-word targets that share only one distinctive
+  token with the cert org (`Sony Group` vs `Sony Corporation`, `Sompo Holdings`
+  vs `Sompo Japan Insurance`) are not promoted to `ct_org_match` — the ≥2
+  significant-token rule that rejects generic-word/city collisions (`Zurich
+  Insurance Group` vs `Zurich Airport`) also requires the stripped generic word
+  to reappear. This recall limitation is shared verbatim with the reference and
+  left as-is: the reviewer-suggested relaxations all reintroduce the city-
+  collision false positives the rule defends against. Other sources and
+  thresholds are unchanged. (#174)
+- `CTLogSource.search_by_org` now raises `CTOrgSearchUnavailableError` when the
+  crt.sh Postgres backend is unavailable and org verification is required,
+  instead of silently returning `[]` (the JSON fallback cannot verify subject
+  org, so it was discarding 100% of records and reporting a false empty). The
+  `Scout` pipeline catches this and records a "results partial" entry in
+  `RunMetadata.errors`. Direct callers of the unexported `CTLogSource` should
+  handle the new exception. New metric label: `ct_queries_total{status="skipped_org"}`.
+  (#163)
+
 ## [0.11.0] - 2026-04-01
 
 ### Added

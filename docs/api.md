@@ -91,6 +91,8 @@ class ScoutResult(BaseModel):
 class DiscoveredDomain(BaseModel):
     domain: str                          # e.g. "samsclub.com"
     confidence: float                    # 0.0 to 1.0
+    scorer_id: str                       # scorer that produced confidence: "heuristic" | "learned_lr"
+    scorer_version: str                  # rule-set date or model artifact version, e.g. "v1@2026-03-01"
     sources: list[str]                   # e.g. ["ct_org_match", "ct_san_expansion:walmart.com"]
     evidence: list[EvidenceRecord]       # structured attribution evidence
     cert_org_names: list[str]            # organization names from certificates
@@ -117,7 +119,7 @@ class EvidenceRecord(BaseModel):
 
 ```python
 class RunMetadata(BaseModel):
-    schema_version: str = "1.0"          # output schema version
+    schema_version: str = "1.1"          # output schema version (1.1: scorer_id/scorer_version)
     tool_version: str                    # domain-scout package version
     timestamp: datetime                  # UTC timestamp of the run
     elapsed_seconds: float               # wall-clock duration
@@ -214,9 +216,16 @@ class DeltaSummary(BaseModel):
 
 ```python
 class DeltaWarning(BaseModel):
-    code: str                            # e.g. "seeds_changed", "config_changed"
+    code: str                            # e.g. "seeds_changed", "config_changed", "scorer_changed"
     message: str                         # human-readable explanation
 ```
+
+Confidence deltas are only reported when both scans used the same scorer
+identity (`scorer_id` + `scorer_version`). When the scorer differs — e.g. a
+switch from the heuristic ladder to the learned model, or a retrained artifact
+— per-domain confidence changes are suppressed as incomparable and a single
+run-level `scorer_changed` warning is emitted instead. Non-confidence changes
+(`resolves`, `sources`, `rdap_org`) are still reported per domain.
 
 ## REST API
 

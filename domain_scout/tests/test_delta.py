@@ -34,6 +34,8 @@ def _make_domain(
     resolves: bool = True,
     sources: list[str] | None = None,
     rdap_org: str | None = None,
+    scorer_id: str = "unknown",
+    scorer_version: str = "unknown",
 ) -> DiscoveredDomain:
     return DiscoveredDomain(
         domain=domain,
@@ -41,6 +43,8 @@ def _make_domain(
         resolves=resolves,
         sources=sources or ["ct_san"],
         rdap_org=rdap_org,
+        scorer_id=scorer_id,
+        scorer_version=scorer_version,
     )
 
 
@@ -289,6 +293,80 @@ class TestDeltaWarnings:
         )
         codes = [w.code for w in result.warnings]
         assert "schema_version_mismatch" in codes
+
+
+# --- TestScorerIdentityDelta (issue #184) ---
+
+
+class TestScorerIdentityDelta:
+    """A scorer switch must not read as hundreds of real-world confidence changes."""
+
+    def test_scorer_switch_suppresses_confidence_delta(self) -> None:
+        old = _make_domain(confidence=0.85, scorer_id="heuristic", scorer_version="2026-07-03")
+        new = _make_domain(confidence=0.62, scorer_id="learned_lr", scorer_version="v1@2026-03-01")
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 0
+        assert report.summary.unchanged == 1
+
+    def test_scorer_version_only_change_also_suppresses(self) -> None:
+        """A retrain (same scorer_id, new version) is just as incomparable."""
+        old = _make_domain(confidence=0.62, scorer_id="learned_lr", scorer_version="v1@2026-03-01")
+        new = _make_domain(confidence=0.44, scorer_id="learned_lr", scorer_version="v2@2026-07-01")
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 0
+
+    def test_scorer_switch_emits_run_level_warning(self) -> None:
+        domains_old = [
+            _make_domain("a.com", 0.85, scorer_id="heuristic", scorer_version="2026-07-03"),
+            _make_domain("b.com", 0.90, scorer_id="heuristic", scorer_version="2026-07-03"),
+        ]
+        domains_new = [
+            _make_domain("a.com", 0.62, scorer_id="learned_lr", scorer_version="v1@2026-03-01"),
+            _make_domain("b.com", 0.71, scorer_id="learned_lr", scorer_version="v1@2026-03-01"),
+        ]
+        report = compute_delta(_make_result(domains_old), _make_result(domains_new))
+        warning = next(w for w in report.warnings if w.code == "scorer_changed")
+        assert "2 of 2 common domains" in warning.message
+        assert "heuristic/2026-07-03 -> learned_lr/v1@2026-03-01 (2)" in warning.message
+        assert "suppressed as incomparable" in warning.message
+
+    def test_same_scorer_still_reports_confidence_delta(self) -> None:
+        old = _make_domain(confidence=0.85, scorer_id="heuristic", scorer_version="2026-07-03")
+        new = _make_domain(confidence=0.62, scorer_id="heuristic", scorer_version="2026-07-03")
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 1
+        assert report.changed[0].changes[0].field == "confidence"
+        assert not any(w.code == "scorer_changed" for w in report.warnings)
+
+    def test_scorer_switch_still_reports_real_world_changes(self) -> None:
+        """Non-confidence changes (resolves, sources, rdap_org) survive the switch."""
+        old = _make_domain(
+            confidence=0.85, resolves=True, scorer_id="heuristic", scorer_version="2026-07-03"
+        )
+        new = _make_domain(
+            confidence=0.62, resolves=False, scorer_id="learned_lr", scorer_version="v1@2026-03-01"
+        )
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 1
+        fields = [c.field for c in report.changed[0].changes]
+        assert fields == ["resolves"]
+
+    def test_unknown_baseline_vs_stamped_current_suppresses(self) -> None:
+        """First diff after upgrading: pre-1.1 baseline vs freshly stamped current."""
+        old = _make_domain(confidence=0.85)  # legacy payload: defaults to unknown/unknown
+        new = _make_domain(confidence=0.62, scorer_id="heuristic", scorer_version="2026-07-03")
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 0
+        warning = next(w for w in report.warnings if w.code == "scorer_changed")
+        assert "unknown/unknown -> heuristic/2026-07-03 (1)" in warning.message
+
+    def test_legacy_unknown_identity_pairs_compare_normally(self) -> None:
+        """Two pre-1.1 results (both default 'unknown') keep the old behavior."""
+        old = _make_domain(confidence=0.85)
+        new = _make_domain(confidence=0.62)
+        report = compute_delta(_make_result([old]), _make_result([new]))
+        assert report.summary.changed == 1
+        assert not any(w.code == "scorer_changed" for w in report.warnings)
 
 
 # --- TestDeltaSerialization ---

@@ -3,29 +3,53 @@ name: CI
 on:
   push:
     branches: [main]
-    paths-ignore:
-      - '*.md'
-      - 'docs/**'
-      - 'LICENSE'
-      - '.gitignore'
   pull_request:
-    paths-ignore:
-      - '*.md'
-      - 'docs/**'
-      - 'LICENSE'
-      - '.gitignore'
+
+permissions:
+  contents: read
+  pull-requests: read
 
 concurrency:
   group: ci-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
+  # Always runs, so lint/typecheck/test always report a status to branch
+  # protection. On docs-only changes they are skipped via `if:`, which GitHub
+  # counts as success for required checks (unlike paths-ignore, which leaves
+  # them stuck at "Expected" — see #176).
+  changes:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    outputs:
+      src: ${{ steps.filter.outputs.src }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # push events diff against the parent commit via local git history;
+          # a depth-1 clone has no parent and the filter would fail -> gated
+          # jobs skip -> counted green. fetch-depth 2 keeps the diff possible.
+          fetch-depth: 2
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          # src = any changed file NOT matching the old paths-ignore list
+          predicate-quantifier: 'every'
+          filters: |
+            src:
+              - '!*.md'
+              - '!docs/**'
+              - '!LICENSE'
+              - '!.gitignore'
+
   lint:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
@@ -36,11 +60,13 @@ jobs:
       - run: uv run ruff format --check domain_scout/
 
   typecheck:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
@@ -50,15 +76,31 @@ jobs:
       - run: uv run mypy domain_scout/ --ignore-missing-imports
 
   test:
+    needs: changes
+    if: needs.changes.outputs.src == 'true'
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v6
         with:
           enable-cache: true
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - run: uv sync --all-groups --all-extras
-      - run: uv run pytest domain_scout/tests -m "not integration" -v
+      - run: uv run pytest domain_scout/tests -m "not integration" -v --cov-report=term --cov-report=xml
+      - name: Coverage summary
+        if: always()
+        run: |
+          if [ -f coverage.xml ]; then
+            # best-effort: a malformed/truncated XML must never fail the job
+            python3 -c "import xml.etree.ElementTree as ET; r = float(ET.parse('coverage.xml').getroot().get('line-rate')); print(f'Total coverage: {r:.2%}')" >> "$GITHUB_STEP_SUMMARY" || true
+          fi
+      - name: Upload coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-xml
+          path: coverage.xml
+          if-no-files-found: ignore
