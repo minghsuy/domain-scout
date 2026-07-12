@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, patch
 
 import pytest
@@ -9,6 +10,9 @@ import pytest
 from domain_scout.config import ScoutConfig
 from domain_scout.models import EntityInput
 from domain_scout.scout import Scout
+
+if TYPE_CHECKING:
+    import httpx
 from domain_scout.sources.dns_fingerprint import (
     DNSFingerprint,
     MXTenant,
@@ -402,11 +406,13 @@ def _make_shelter_scout() -> Scout:
     scout = Scout(config=config)
 
     # Mock CT — DV certs, no org search results
-    async def ct_search_by_domain(domain: str) -> list[dict[str, object]]:
+    async def ct_search_by_domain(
+        domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
         return _SHELTER_CT_DOMAIN.get(domain, [])
 
     async def ct_search_by_org(
-        org_name: str, *, verify_org: bool = True
+        org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
         return []  # DV certs — org search finds nothing
 

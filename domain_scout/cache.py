@@ -13,6 +13,8 @@ from typing import TYPE_CHECKING, Protocol, runtime_checkable
 import structlog
 
 if TYPE_CHECKING:
+    import httpx
+
     from domain_scout.sources.ct_logs import CTLogSource
     from domain_scout.sources.rdap import RDAPLookup
 
@@ -202,9 +204,11 @@ class DuckDBCache:
 class CTSource(Protocol):
     """Protocol for CT log source (real or cached)."""
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]: ...
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]: ...
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]: ...
     async def get_cert_org(self, cert_id: int) -> str | None: ...
 
@@ -213,8 +217,12 @@ class CTSource(Protocol):
 class RDAPSource(Protocol):
     """Protocol for RDAP lookup (real or cached)."""
 
-    async def get_registrant_org(self, domain: str) -> str | None: ...
-    async def get_registrant_info(self, domain: str) -> dict[str, str | None]: ...
+    async def get_registrant_org(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> str | None: ...
+    async def get_registrant_info(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> dict[str, str | None]: ...
 
 
 class CachedCTLogSource:
@@ -224,13 +232,15 @@ class CachedCTLogSource:
         self._inner = inner
         self._cache = cache
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
         loop = asyncio.get_running_loop()
         cached = await loop.run_in_executor(None, self._cache.get_ct, f"domain:{domain}")
         if cached is not None:
             log.debug("cache.ct_hit", query=f"domain:{domain}")
             return cached
-        result = await self._inner.search_by_domain(domain)
+        result = await self._inner.search_by_domain(domain, client=client)
         try:
             await loop.run_in_executor(None, self._cache.put_ct, f"domain:{domain}", result)
         except Exception as exc:
@@ -238,7 +248,7 @@ class CachedCTLogSource:
         return result
 
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
         key = f"org:{org_name}:verify={verify_org}"
         loop = asyncio.get_running_loop()
@@ -246,7 +256,7 @@ class CachedCTLogSource:
         if cached is not None:
             log.debug("cache.ct_hit", query=key)
             return cached
-        result = await self._inner.search_by_org(org_name, verify_org=verify_org)
+        result = await self._inner.search_by_org(org_name, verify_org=verify_org, client=client)
         try:
             await loop.run_in_executor(None, self._cache.put_ct, key, result)
         except Exception as exc:
@@ -264,26 +274,30 @@ class CachedRDAPLookup:
         self._inner = inner
         self._cache = cache
 
-    async def get_registrant_org(self, domain: str) -> str | None:
+    async def get_registrant_org(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> str | None:
         loop = asyncio.get_running_loop()
         cached = await loop.run_in_executor(None, self._cache.get_rdap, f"org:{domain}")
         if cached is not None:
             log.debug("cache.rdap_hit", query=f"org:{domain}")
             return cached.get("org")
-        result = await self._inner.get_registrant_org(domain)
+        result = await self._inner.get_registrant_org(domain, client=client)
         try:
             await loop.run_in_executor(None, self._cache.put_rdap, f"org:{domain}", {"org": result})
         except Exception as exc:
             log.warning("cache.write_failed", query=f"org:{domain}", error=str(exc))
         return result
 
-    async def get_registrant_info(self, domain: str) -> dict[str, str | None]:
+    async def get_registrant_info(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> dict[str, str | None]:
         loop = asyncio.get_running_loop()
         cached = await loop.run_in_executor(None, self._cache.get_rdap, f"info:{domain}")
         if cached is not None:
             log.debug("cache.rdap_hit", query=f"info:{domain}")
             return cached
-        result = await self._inner.get_registrant_info(domain)
+        result = await self._inner.get_registrant_info(domain, client=client)
         try:
             await loop.run_in_executor(None, self._cache.put_rdap, f"info:{domain}", result)
         except Exception as exc:

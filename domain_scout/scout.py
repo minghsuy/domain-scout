@@ -5,11 +5,13 @@ from __future__ import annotations
 import asyncio
 import csv
 import re
+import ssl
 import time
 from datetime import UTC, datetime
 from importlib.metadata import version as _pkg_version
 from typing import TYPE_CHECKING, Any
 
+import certifi
 import httpx
 import structlog
 
@@ -57,6 +59,31 @@ from domain_scout.sources.rdap import RDAPLookup
 
 log = structlog.get_logger()
 _TOOL_VERSION = _pkg_version("domain-scout-ct")
+
+# Module-level SSL context for the per-scan shared HTTP client (#166).
+# A bare httpx.AsyncClient() builds a fresh SSL context per instance
+# (measurable synchronous CPU); building it once and passing it as verify=
+# keeps per-scan client construction cheap. Mirrors ds-api PR #72.
+# Built from certifi's CA bundle to match httpx's own default trust anchors
+# (httpx uses certifi.where()); a bare ssl.create_default_context() would
+# silently switch to the system OpenSSL store.
+_SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
+
+
+def _record_check_error(phase: str, domain: str, exc: Exception, errors: list[str]) -> None:
+    """Record a swallowed corroboration/boost check exception consistently (#167).
+
+    The corroboration phases (infra, rdap, fingerprint) run per-domain checks
+    whose failures were previously dropped silently. Surface each one to the
+    debug log, the SOURCE_ERRORS_TOTAL metric, and the scan's error channel
+    (``RunMetadata.errors``) so a systematic fault is visible rather than
+    masked as "no signal found". The scan still continues; the check is a
+    best-effort boost, not a hard dependency.
+    """
+    log.debug("scout.corroborate_check_error", phase=phase, domain=domain, error=str(exc))
+    inc(SOURCE_ERRORS_TOTAL, source=phase)
+    errors.append(f"{phase} check failed for {domain}: {exc}")
+
 
 # Signal classification for evidence transparency.
 # Maps source_type prefixes to (signal_type, weight).
@@ -422,6 +449,22 @@ class Scout:
         return await self._discover(entity)
 
     async def _discover(self, entity: EntityInput) -> ScoutResult:
+        # One pooled HTTP client per scan (#166), scoped to this call via
+        # async with so it never outlives the event loop that created it
+        # (the CLI runs asyncio.run per invocation). The default timeout
+        # matches http_timeout; RDAP overrides follow_redirects per-request,
+        # RDAP/CT-JSON pin their timeout per-request, and GeoDNS uses the
+        # client default. Deliberately scan-scoped rather than stored on the
+        # instance + closed in Scout.close(): a persistent client would risk
+        # cross-event-loop reuse (the hazard called out in #166).
+        async with httpx.AsyncClient(
+            verify=_SSL_CONTEXT, timeout=self.config.http_timeout
+        ) as scan_client:
+            return await self._run_pipeline(entity, scan_client)
+
+    async def _run_pipeline(
+        self, entity: EntityInput, scan_client: httpx.AsyncClient
+    ) -> ScoutResult:
         self._dns.reset()
         t0 = time.monotonic()
         total_budget = self.config.total_timeout
@@ -462,7 +505,7 @@ class Scout:
         if self.config.discovery_mode != "fingerprint" and entity.company_name:
             independent_tasks.append(
                 asyncio.create_task(
-                    self._strategy_org_search(entity.company_name, errors),
+                    self._strategy_org_search(entity.company_name, errors, client=scan_client),
                     name="org_search",
                 )
             )
@@ -488,6 +531,7 @@ class Scout:
                             sub_name,
                             errors,
                             source_tag="ct_gleif_subsidiary",
+                            client=scan_client,
                         ),
                         name=f"gleif_sub:{sub_name[:30]}",
                     )
@@ -505,6 +549,7 @@ class Scout:
                             sub_name,
                             errors,
                             source_tag="ct_subsidiary_match",
+                            client=scan_client,
                         ),
                         name=f"subsidiary:{sub_name[:30]}",
                     )
@@ -519,7 +564,9 @@ class Scout:
         seed_tasks: dict[str, asyncio.Task[dict[str, Any]]] = {}
         for sd in seeds:
             seed_tasks[sd] = asyncio.create_task(
-                self._validate_seed(sd, entity.company_name, seeds, errors, seed_to_base),
+                self._validate_seed(
+                    sd, entity.company_name, seeds, errors, seed_to_base, client=scan_client
+                ),
                 name=f"seed_validation:{sd}",
             )
 
@@ -583,7 +630,7 @@ class Scout:
                 seen_org_searches.add(org_name)
                 dependent_tasks.append(
                     asyncio.create_task(
-                        self._strategy_org_search(org_name, errors),
+                        self._strategy_org_search(org_name, errors, client=scan_client),
                         name=f"org_search_seed:{sd}",
                     )
                 )
@@ -597,6 +644,7 @@ class Scout:
                         entity.company_name,
                         errors,
                         ct_records=seed_ct_records.get(sd),
+                        client=scan_client,
                     ),
                     name=f"seed_expansion:{sd}",
                 )
@@ -651,11 +699,13 @@ class Scout:
             if failed_domains:
                 log.info("scout.geodns_rescue", count=len(failed_domains))
                 try:
-                    async with httpx.AsyncClient(timeout=15.0) as client:
-                        geodns_map = await asyncio.wait_for(
-                            self._dns.bulk_geodns_resolve(failed_domains, client),
-                            timeout=max(1.0, _remaining() - 3.0),
-                        )
+                    # Reuse the per-scan pooled client (#166). GeoDNS keeps the
+                    # scan client's default timeout (http_timeout, 15s by default —
+                    # identical to the former dedicated 15s client).
+                    geodns_map = await asyncio.wait_for(
+                        self._dns.bulk_geodns_resolve(failed_domains, scan_client),
+                        timeout=max(1.0, _remaining() - 3.0),
+                    )
                     for domain, did_resolve in geodns_map.items():
                         if not did_resolve:
                             continue
@@ -674,11 +724,15 @@ class Scout:
                     timed_out = True
                     errors.append("GeoDNS resolution timed out")
 
-        # Step 3c: RDAP corroboration on top resolving candidates
+        # Step 3c: RDAP corroboration on top resolving candidates.
+        # Caller owns the budget-derived timeout (one idiom across all three
+        # corroboration phases, #167); the phase itself has no inner timeout.
         if _remaining() > 5.0:
             try:
                 await asyncio.wait_for(
-                    self._rdap_corroborate(domain_evidence, entity.company_name),
+                    self._rdap_corroborate(
+                        domain_evidence, entity.company_name, errors, client=scan_client
+                    ),
                     timeout=min(15.0, _remaining() - 3.0),
                 )
             except TimeoutError:
@@ -688,7 +742,7 @@ class Scout:
         if self.config.discovery_mode == "fingerprint" and seeds and _remaining() > 3.0:
             try:
                 await asyncio.wait_for(
-                    self._fingerprint_corroborate(domain_evidence, seeds),
+                    self._fingerprint_corroborate(domain_evidence, seeds, errors),
                     timeout=min(30.0, _remaining() - 2.0),
                 )
             except TimeoutError:
@@ -724,7 +778,16 @@ class Scout:
         if not reference and confirmed_domains:
             reference = confirmed_domains[0]
         if reference and len(domain_evidence) <= 50 and _remaining() > 1.0:
-            await self._infra_boost(reference, domain_evidence)
+            # Budget-derived timeout, caller-owned (#167): same idiom as the
+            # RDAP/fingerprint phases. Previously infra_boost hardcoded 10s
+            # internally and swallowed its timeout without recording it.
+            try:
+                await asyncio.wait_for(
+                    self._infra_boost(reference, domain_evidence, errors),
+                    timeout=min(10.0, max(1.0, _remaining() - 1.0)),
+                )
+            except TimeoutError:
+                errors.append("Infrastructure boost timed out")
 
         # Build output
         domains = self._build_output(domain_evidence, seeds)
@@ -764,18 +827,19 @@ class Scout:
         all_seeds: list[str],
         errors: list[str],
         seed_to_base: dict[str, str | None] | None = None,
+        client: httpx.AsyncClient | None = None,
     ) -> dict[str, Any]:
         """Returns dict with assessment, org_name, co_hosted_seeds, and ct_records."""
         resolves = await self._dns.resolves(seed)
 
         rdap_org: str | None = None
         try:
-            rdap_org = await self._rdap.get_registrant_org(seed)
+            rdap_org = await self._rdap.get_registrant_org(seed, client=client)
         except Exception as exc:
             errors.append(f"RDAP lookup failed for {seed}: {exc}")
 
         # Also check CT for the org name on certs (shared with seed expansion)
-        ct_records = await self._ct.search_by_domain(seed)
+        ct_records = await self._ct.search_by_domain(seed, client=client)
         cert_orgs: set[str] = set()
 
         # Build reverse lookup: base domain -> original seed domain (excluding current seed)
@@ -906,10 +970,11 @@ class Scout:
         org_name: str,
         errors: list[str],
         source_tag: str = "ct_org_match",
+        client: httpx.AsyncClient | None = None,
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
         try:
-            records = await self._ct.search_by_org(org_name)
+            records = await self._ct.search_by_org(org_name, client=client)
         except CTOrgSearchUnavailableError as exc:
             # Degraded, not just failed: org search was skipped entirely (#163).
             inc(SOURCE_ERRORS_TOTAL, source="ct")
@@ -933,13 +998,14 @@ class Scout:
         company_name: str,
         errors: list[str],
         ct_records: list[dict[str, Any]] | None = None,
+        client: httpx.AsyncClient | None = None,
     ) -> list[tuple[str, _DomainAccum]]:
         results: list[tuple[str, _DomainAccum]] = []
         if ct_records is not None:
             records = ct_records
         else:
             try:
-                records = await self._ct.search_by_domain(seed_domain)
+                records = await self._ct.search_by_domain(seed_domain, client=client)
             except Exception as exc:
                 inc(SOURCE_ERRORS_TOTAL, source="ct")
                 errors.append(f"CT seed expansion failed: {exc}")
@@ -1214,8 +1280,15 @@ class Scout:
 
         return round(score, 2)
 
-    async def _infra_boost(self, reference: str, evidence: dict[str, _DomainAccum]) -> None:
-        """Small confidence boost for domains sharing infra with a reference domain."""
+    async def _infra_boost(
+        self, reference: str, evidence: dict[str, _DomainAccum], errors: list[str]
+    ) -> None:
+        """Small confidence boost for domains sharing infra with a reference domain.
+
+        Per-domain check failures are recorded (#167) rather than swallowed. The
+        caller wraps this call with a budget-derived timeout (the same idiom as
+        the RDAP/fingerprint phases), so there is no inner timeout here.
+        """
         # Select top candidates by confidence, capped
         candidates = [
             (domain, accum)
@@ -1243,23 +1316,27 @@ class Scout:
                 # Only cross_seed_verified (0.90 base) should reach 1.00.
                 max_conf = 1.0 if "cross_seed_verified" in accum.sources else 0.95
                 accum.confidence = round(min(max_conf, accum.confidence + 0.05), 2)
-            except Exception:
-                pass
+            except Exception as exc:
+                _record_check_error("infra", domain, exc, errors)
 
-        try:
-            await asyncio.wait_for(
-                asyncio.gather(*[_check(d, a) for d, a in candidates]),
-                timeout=10.0,
-            )
-        except TimeoutError:
-            log.warning("scout.infra_boost_timeout", checked=len(candidates))
+        await asyncio.gather(*[_check(d, a) for d, a in candidates])
 
     # --- RDAP corroboration ---
 
     async def _rdap_corroborate(
-        self, domain_evidence: dict[str, _DomainAccum], company_name: str
+        self,
+        domain_evidence: dict[str, _DomainAccum],
+        company_name: str,
+        errors: list[str],
+        client: httpx.AsyncClient | None = None,
     ) -> None:
-        """Query RDAP on top resolving candidates and add corroborating evidence."""
+        """Query RDAP on top resolving candidates and add corroborating evidence.
+
+        ``client`` is the per-scan pooled HTTP client (#166); ``errors`` is the
+        scan error channel — per-domain check failures are recorded there (#167)
+        rather than logged-and-dropped. The caller wraps this with a
+        budget-derived timeout, so there is no inner timeout here.
+        """
         # Select resolving candidates without existing rdap_registrant_match
         candidates = [
             (domain, accum)
@@ -1275,7 +1352,7 @@ class Scout:
 
         async def _check(domain: str, accum: _DomainAccum) -> None:
             try:
-                rdap_org = await self._rdap.get_registrant_org(domain)
+                rdap_org = await self._rdap.get_registrant_org(domain, client=client)
                 if not rdap_org:
                     return
 
@@ -1313,15 +1390,9 @@ class Scout:
                     )
                 )
             except Exception as exc:
-                log.debug("scout.rdap_corroborate_error", domain=domain, error=str(exc))
+                _record_check_error("rdap", domain, exc, errors)
 
-        try:
-            await asyncio.wait_for(
-                asyncio.gather(*[_check(d, a) for d, a in candidates]),
-                timeout=15.0,
-            )
-        except TimeoutError:
-            log.warning("scout.rdap_corroborate_timeout", checked=len(candidates))
+        await asyncio.gather(*[_check(d, a) for d, a in candidates])
 
     # --- Fingerprint corroboration ---
 
@@ -1329,6 +1400,7 @@ class Scout:
         self,
         domain_evidence: dict[str, _DomainAccum],
         seed_domains: list[str],
+        errors: list[str],
     ) -> None:
         """Extract DNS fingerprints from seeds and compare against candidates.
 
@@ -1352,7 +1424,13 @@ class Scout:
         seed_fps: dict[str, DNSFingerprint] = {}
         for sd_base, result in zip(bases, fp_results, strict=True):
             if isinstance(result, BaseException):
-                log.debug("scout.fingerprint_extract_error", seed=sd_base, error=str(result))
+                # Record genuine seed-extraction faults on the error channel
+                # (#167) — the same treatment as the candidate side, so a
+                # systematic failure isn't masked as "no seed signals". Leave
+                # non-Exception BaseExceptions (cancellation) to the caller's
+                # timeout handling.
+                if isinstance(result, Exception):
+                    _record_check_error("fingerprint", sd_base, result, errors)
                 continue
             if not result.has_signals:
                 continue
@@ -1394,7 +1472,8 @@ class Scout:
             async with sem:
                 try:
                     candidate_fp = await extract_fingerprint(domain, self._dns)
-                except Exception:
+                except Exception as exc:
+                    _record_check_error("fingerprint", domain, exc, errors)
                     return
 
                 # Compare against all seed fingerprints, take best match

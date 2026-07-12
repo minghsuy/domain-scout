@@ -9,9 +9,13 @@ from __future__ import annotations
 import hashlib
 import math
 from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock
 
 import pytest
+
+if TYPE_CHECKING:
+    import httpx
 
 from domain_scout.eval import compute_metrics
 from domain_scout.scout import (
@@ -361,7 +365,10 @@ class TestPhaseOrdering:
             return {d: True for d in domains}
 
         async def mock_rdap_corroborate(
-            domain_evidence: dict[str, _DomainAccum], company_name: str
+            domain_evidence: dict[str, _DomainAccum],
+            company_name: str,
+            errors: list[str] | None = None,
+            client: httpx.AsyncClient | None = None,
         ) -> None:
             call_order.append("rdap_corroborate")
 

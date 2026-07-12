@@ -19,6 +19,7 @@ classifiers = [
     "Typing :: Typed",
 ]
 dependencies = [
+    "certifi>=2024.7.4",
     "dnspython>=2.7.0",
     "httpx>=0.28.0",
     "psycopg2-binary>=2.9.11",

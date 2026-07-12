@@ -246,12 +246,18 @@ class CTLogSource:
 
     # --- Public API ---
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
-        """Search CT logs for certs matching a domain (FTS). Returns raw cert records."""
-        return await self._pg_query_with_fallback(domain)
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        """Search CT logs for certs matching a domain (FTS). Returns raw cert records.
+
+        ``client``: optional caller-owned pool (#166) reused for the JSON API
+        fallback; the Postgres path uses psycopg2 and ignores it.
+        """
+        return await self._pg_query_with_fallback(domain, client=client)
 
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
         """Search CT logs for certs where the subject Organization matches org_name.
 
@@ -260,8 +266,12 @@ class CTLogSource:
         Raises CTOrgSearchUnavailableError when ``verify_org=True`` and Postgres
         is unavailable: the JSON API fallback lacks the subject organization, so
         every record would be filtered out — a silent zero (#163).
+
+        ``client``: optional caller-owned pool (#166) reused for the JSON fallback.
         """
-        records = await self._pg_query_with_fallback(org_name, can_use_json=not verify_org)
+        records = await self._pg_query_with_fallback(
+            org_name, can_use_json=not verify_org, client=client
+        )
         if not verify_org:
             return records
         # Filter to only certs whose subject O= field roughly matches
@@ -353,17 +363,29 @@ class CTLogSource:
 
     # --- JSON API fallback ---
 
-    async def _json_query(self, search_term: str) -> list[dict[str, object]]:
-        """Fall back to the crt.sh JSON API."""
+    async def _json_query(
+        self, search_term: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        """Fall back to the crt.sh JSON API.
+
+        ``client``: when provided, reuse this caller-owned pooled client (#166)
+        with the timeout applied per-request; otherwise construct and close a
+        per-call client (standalone/test path, unchanged).
+        """
         async with self._semaphore:
             # Try domain search
             url = f"{self._cfg.crtsh_json_base_url}/"
             params: dict[str, str] = {"q": search_term, "output": "json"}
             log.info("ct.json_query", url=url, params=params)
-            async with httpx.AsyncClient(timeout=self._cfg.http_timeout) as client:
-                resp = await client.get(url, params=params)
+            if client is not None:
+                resp = await client.get(url, params=params, timeout=self._cfg.http_timeout)
                 resp.raise_for_status()
                 data = resp.json()
+            else:
+                async with httpx.AsyncClient(timeout=self._cfg.http_timeout) as own_client:
+                    resp = await own_client.get(url, params=params)
+                    resp.raise_for_status()
+                    data = resp.json()
 
         certs: dict[int, dict[str, object]] = {}
         san_sets: dict[int, set[str]] = {}
@@ -396,19 +418,25 @@ class CTLogSource:
     # --- Combined with retry/fallback ---
 
     async def _pg_query_with_fallback(
-        self, search_term: str, *, can_use_json: bool = True
+        self,
+        search_term: str,
+        *,
+        can_use_json: bool = True,
+        client: httpx.AsyncClient | None = None,
     ) -> list[dict[str, object]]:
         """Try Postgres with retries, fall back to JSON API.
 
         With ``can_use_json=False`` (org searches that must verify O=), a Postgres
         failure raises CTOrgSearchUnavailableError instead of falling back.
+
+        ``client``: optional caller-owned pool (#166) threaded to the JSON fallback.
         """
         breaker = self._active_breaker
 
         if not breaker.should_allow():
             log.warning("ct.circuit_breaker_skip_pg", state=breaker.state)
             return await self._json_fallback(
-                search_term, last_pg_error=None, can_use_json=can_use_json
+                search_term, last_pg_error=None, can_use_json=can_use_json, client=client
             )
 
         last_err: Exception | None = None
@@ -431,7 +459,7 @@ class CTLogSource:
 
         breaker.record_failure()
         return await self._json_fallback(
-            search_term, last_pg_error=last_err, can_use_json=can_use_json
+            search_term, last_pg_error=last_err, can_use_json=can_use_json, client=client
         )
 
     async def _json_fallback(
@@ -440,6 +468,7 @@ class CTLogSource:
         *,
         last_pg_error: Exception | None,
         can_use_json: bool = True,
+        client: httpx.AsyncClient | None = None,
     ) -> list[dict[str, object]]:
         """Fall back to JSON API after Postgres failure or circuit breaker skip.
 
@@ -462,7 +491,7 @@ class CTLogSource:
         if last_pg_error is not None:
             log.warning("ct.pg_failed_falling_back_to_json", error=str(last_pg_error))
         try:
-            return await self._json_query(search_term)
+            return await self._json_query(search_term, client=client)
         except Exception as exc:
             inc(CT_QUERIES_TOTAL, backend="json", status="error")
             log.error(

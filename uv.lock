@@ -218,6 +218,7 @@ name = "domain-scout-ct"
 version = "0.11.0"
 source = { editable = "." }
 dependencies = [
+    { name = "certifi" },
     { name = "dnspython" },
     { name = "httpx" },
     { name = "psycopg2-binary" },
@@ -269,6 +270,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "certifi", specifier = ">=2024.7.4" },
     { name = "dnspython", specifier = ">=2.7.0" },
     { name = "domain-scout-ct", extras = ["api", "cache", "gleif", "metrics", "eval"], marker = "extra == 'all'" },
     { name = "duckdb", marker = "extra == 'cache'", specifier = ">=1.0.0" },
