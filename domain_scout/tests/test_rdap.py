@@ -11,6 +11,7 @@ import pytest
 
 from domain_scout.config import ScoutConfig
 from domain_scout.sources.rdap import (
+    RDAP_MAX_CONCURRENT,
     RDAP_SKIP_TLDS,
     RDAPLookup,
     _RDAPCircuitBreaker,
@@ -458,8 +459,9 @@ class TestRDAPRateLimiting:
         """Semaphore is created lazily in _ensure_semaphore, not __init__."""
         config = ScoutConfig(max_rdap_concurrent=2)
         rdap = RDAPLookup(config)
-        # Semaphore should NOT be created in __init__ — it must be created
-        # in the correct event loop by _ensure_semaphore, sized from this config.
+        # Semaphore should NOT be created in __init__ — it must be created in the
+        # correct event loop by _ensure_semaphore (sized to the process-wide
+        # RDAP_MAX_CONCURRENT, #172). The config field is retained for compat.
         assert RDAPLookup._semaphore is None
         assert rdap._cfg.max_rdap_concurrent == 2
 
@@ -474,6 +476,63 @@ class TestRDAPRateLimiting:
         # Semaphore should now exist and be bound to current loop
         assert RDAPLookup._semaphore is not None
         assert RDAPLookup._semaphore_loop_id == id(asyncio.get_running_loop())
+
+    @pytest.mark.asyncio
+    async def test_semaphore_size_order_independent_on_shared_loop(self) -> None:
+        """Regression (#172): the shared rdap.org cap is process-wide, not frozen
+        from whichever config touches the loop first.
+
+        Before the fix, on a long-lived shared loop (the API's uvicorn loop) the
+        semaphore was sized from the first instance's ``max_rdap_concurrent``: a
+        strict scan (cap 1) constructed first would throttle a concurrent broad
+        scan to 1, or a broad scan (cap 99) would let a strict scan run 99-wide —
+        order-dependent and unreproducible. Now both instances share one
+        semaphore sized to ``RDAP_MAX_CONCURRENT`` regardless of order.
+        """
+        mock_client = _make_httpx_mock(json_payload={"entities": []})
+
+        async def _capacity(sem: asyncio.Semaphore) -> int:
+            # Count permits without touching private attrs: acquire returns
+            # immediately while permits remain, so drain then restore.
+            acquired = 0
+            while not sem.locked():
+                await sem.acquire()
+                acquired += 1
+            for _ in range(acquired):
+                sem.release()
+            return acquired
+
+        async def _shared_cap(first: RDAPLookup, second: RDAPLookup) -> int:
+            # Fresh shared state; both instances then query on this one loop.
+            RDAPLookup._semaphore = None
+            RDAPLookup._semaphore_loop_id = None
+            with patch("domain_scout.sources.rdap.httpx.AsyncClient", return_value=mock_client):
+                await first.get_registrant_org("first.com")
+                await second.get_registrant_org("second.com")
+            # Both resolved to the one shared per-loop semaphore.
+            assert first._ensure_semaphore() is second._ensure_semaphore()
+            return await _capacity(first._ensure_semaphore())
+
+        strict = RDAPLookup(ScoutConfig(max_rdap_concurrent=1))
+        broad = RDAPLookup(ScoutConfig(max_rdap_concurrent=99))
+
+        cap_strict_first = await _shared_cap(strict, broad)
+        cap_broad_first = await _shared_cap(broad, strict)
+
+        # Deterministic and order-independent: neither config's value wins.
+        assert cap_strict_first == RDAP_MAX_CONCURRENT
+        assert cap_broad_first == RDAP_MAX_CONCURRENT
+
+    def test_constant_matches_config_default(self) -> None:
+        """Tripwire (#172): RDAP_MAX_CONCURRENT must equal the ScoutConfig default.
+
+        config.py cannot import the constant from sources/rdap.py (circular
+        import), so the two ``3``s are coupled only by comment. Their equality
+        is what guarantees a default-constructed config never logs the
+        ``rdap.max_rdap_concurrent_deprecated`` warning — this test turns that
+        comment coupling into a CI failure if either side drifts.
+        """
+        assert ScoutConfig().max_rdap_concurrent == RDAP_MAX_CONCURRENT
 
 
 class TestExtractRegistrar:

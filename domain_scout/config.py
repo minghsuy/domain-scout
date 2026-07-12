@@ -88,6 +88,10 @@ class ScoutConfig:
     cb_recovery_timeout: float = 30.0
 
     # --- RDAP rate limiting ---
+    # DEPRECATED (#172): rdap.org is a shared external resource, so the
+    # concurrency cap is process-wide (RDAP_MAX_CONCURRENT in sources/rdap.py),
+    # not per-scan. This field no longer sizes the shared semaphore; it is kept
+    # for constructor compatibility and a non-default value logs a warning.
     max_rdap_concurrent: int = 3
     rdap_cb_failure_threshold: int = 3
     rdap_cb_recovery_timeout: float = 30.0
