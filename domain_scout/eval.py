@@ -376,17 +376,30 @@ def _resolve_manifest_substrate(
     baselines_dir: Path,
     gt_by_id: dict[str, GroundTruthEntry],
 ) -> list[tuple[GroundTruthEntry, ScoutResult]]:
-    """Validate every manifest-referenced file, then load the ones in ground truth.
+    """Validate the manifest-referenced files in scope, then load them.
 
-    Fails loudly (``EvalSubstrateError``) if any referenced file is absent or its
-    on-disk digest no longer matches the manifest — a vanished or tampered
-    substrate must not read as a passing eval (issue #188, gate 3).
+    Validation (existence + sha256) covers exactly the manifest entries whose
+    ``label_id`` is in the requested ground truth. An unscoped run passes the
+    full ground truth, so the whole substrate is still checked; a ``--label``
+    debug run is not blocked by an unrelated entry's missing/corrupt file.
+
+    Fails loudly (``EvalSubstrateError``) if any in-scope referenced file is
+    absent or its on-disk digest no longer matches the manifest — a vanished or
+    tampered substrate must not read as a passing eval (issue #188, gate 3).
     """
+    relevant = [entry for entry in manifest.entries if entry.label_id in gt_by_id]
+    if not relevant:
+        raise EvalSubstrateError(
+            f"Baseline manifest at {baselines_dir / _MANIFEST_NAME} has no entries matching "
+            f"the ground truth ({len(manifest.entries)} manifest entries, "
+            f"{len(gt_by_id)} ground-truth label(s)). Nothing to evaluate."
+        )
+
     pairs: list[tuple[GroundTruthEntry, ScoutResult]] = []
     missing: list[str] = []
     corrupt: list[str] = []
 
-    for entry in manifest.entries:
+    for entry in relevant:
         fpath = baselines_dir / entry.file
         if not fpath.exists():
             missing.append(entry.file)
@@ -395,9 +408,7 @@ def _resolve_manifest_substrate(
         if actual != entry.sha256:
             corrupt.append(f"{entry.file} (manifest {entry.sha256[:12]}, on-disk {actual[:12]})")
             continue
-        gt = gt_by_id.get(entry.label_id)
-        if gt is not None:
-            pairs.append((gt, ScoutResult.model_validate_json(fpath.read_text())))
+        pairs.append((gt_by_id[entry.label_id], ScoutResult.model_validate_json(fpath.read_text())))
 
     if missing or corrupt:
         details: list[str] = []
@@ -411,12 +422,6 @@ def _resolve_manifest_substrate(
             f"Regenerate with `make eval-baselines`. — " + " | ".join(details)
         )
 
-    if not pairs:
-        raise EvalSubstrateError(
-            f"Baseline manifest at {baselines_dir / _MANIFEST_NAME} has no entries matching "
-            f"the ground truth ({len(manifest.entries)} manifest entries, "
-            f"{len(gt_by_id)} ground-truth label(s)). Nothing to evaluate."
-        )
     return pairs
 
 

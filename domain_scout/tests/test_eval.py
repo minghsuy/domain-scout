@@ -385,6 +385,42 @@ class TestEvaluateBaseline:
         with pytest.raises(EvalSubstrateError, match="corrupt"):
             evaluate_baseline(gt, baselines_dir=tmp_path)
 
+    def test_label_scoped_run_ignores_out_of_scope_corruption(self, tmp_path: Path) -> None:
+        """--label debugging isn't blocked by an unrelated entry's absent/corrupt file.
+
+        Validation is scoped to the requested ground truth: a single-label run
+        over a substrate with unrelated damage succeeds, while the unscoped run
+        over the same substrate still fails loudly.
+        """
+
+        def _gt(label_id: str) -> GroundTruthEntry:
+            return GroundTruthEntry(
+                label_id=label_id,
+                company_name=label_id.title(),
+                seeds=[f"{label_id}.com"],
+                owned_domains=[f"{label_id}.com"],
+            )
+
+        _write_baseline_with_manifest(
+            tmp_path,
+            {
+                "alpha": _make_scout_result(["alpha.com"], company_name="Alpha"),
+                "beta": _make_scout_result(["beta.com"], company_name="Beta"),
+                "gamma": _make_scout_result(["gamma.com"], company_name="Gamma"),
+            },
+        )
+        # Damage the two entries that are NOT in scope: one absent, one tampered.
+        (tmp_path / "beta.json").unlink()
+        (tmp_path / "gamma.json").write_text('{"tampered": true}')
+
+        # Scoped run (mirrors main()'s --label filtering): succeeds on alpha alone.
+        report = evaluate_baseline([_gt("alpha")], baselines_dir=tmp_path, k_values=(1,))
+        assert [e.label_id for e in report.entities] == ["alpha"]
+
+        # Unscoped run over the same substrate: the damage is in scope -> loud.
+        with pytest.raises(EvalSubstrateError, match="1 absent and 1 corrupt"):
+            evaluate_baseline([_gt("alpha"), _gt("beta"), _gt("gamma")], baselines_dir=tmp_path)
+
     def test_manifest_no_matching_ground_truth_fails_loudly(self, tmp_path: Path) -> None:
         """A manifest with no entry matching the ground truth is a loud error."""
         gt = [
