@@ -69,6 +69,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   handle the new exception. New metric label: `ct_queries_total{status="skipped_org"}`.
   (#163)
 
+### Fixed
+
+- **First-instance-wins breakers** — CT/RDAP circuit breakers moved to
+  class-level registries keyed by `(failure_threshold, recovery_timeout)`, so
+  effective thresholds no longer depend on instance construction order; an
+  autouse conftest fixture resets the shared state between tests (#172, #190)
+- **RDAP semaphore sizing** — the shared per-loop semaphore is now sized from
+  the process-wide `RDAP_MAX_CONCURRENT` constant instead of the first
+  instance's config; `ScoutConfig.max_rdap_concurrent` is deprecated (kept for
+  compatibility, non-default values log a warning) (#172)
+
 ## [0.11.0] - 2026-04-01
 
 ### Added

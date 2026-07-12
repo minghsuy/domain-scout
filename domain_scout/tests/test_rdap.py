@@ -523,6 +523,17 @@ class TestRDAPRateLimiting:
         assert cap_strict_first == RDAP_MAX_CONCURRENT
         assert cap_broad_first == RDAP_MAX_CONCURRENT
 
+    def test_constant_matches_config_default(self) -> None:
+        """Tripwire (#172): RDAP_MAX_CONCURRENT must equal the ScoutConfig default.
+
+        config.py cannot import the constant from sources/rdap.py (circular
+        import), so the two ``3``s are coupled only by comment. Their equality
+        is what guarantees a default-constructed config never logs the
+        ``rdap.max_rdap_concurrent_deprecated`` warning — this test turns that
+        comment coupling into a CI failure if either side drifts.
+        """
+        assert ScoutConfig().max_rdap_concurrent == RDAP_MAX_CONCURRENT
+
 
 class TestExtractRegistrar:
     """Tests for extract_registrar()."""
