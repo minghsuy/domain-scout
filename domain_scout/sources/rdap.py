@@ -160,20 +160,27 @@ class RDAPLookup:
                 recovery_timeout=config.rdap_cb_recovery_timeout,
             )
 
-    async def get_registrant_org(self, domain: str) -> str | None:
-        """Return the registrant organization name for a domain, or None."""
+    async def get_registrant_org(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> str | None:
+        """Return the registrant organization name for a domain, or None.
+
+        ``client``: optional caller-owned shared pool (#166); see ``_query``.
+        """
         try:
-            data = await self._query(domain)
+            data = await self._query(domain, client=client)
             return self._extract_org(data)
         except Exception as exc:
             inc(SOURCE_ERRORS_TOTAL, source="rdap")
             log.warning("rdap.lookup_failed", domain=domain, error=str(exc))
             return None
 
-    async def get_registrant_info(self, domain: str) -> dict[str, str | None]:
+    async def get_registrant_info(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> dict[str, str | None]:
         """Return a dict with org, name, country from RDAP."""
         try:
-            data = await self._query(domain)
+            data = await self._query(domain, client=client)
         except Exception as exc:
             inc(SOURCE_ERRORS_TOTAL, source="rdap")
             log.warning("rdap.lookup_failed", domain=domain, error=str(exc))
@@ -200,7 +207,18 @@ class RDAPLookup:
             cls._semaphore_loop_id = loop_id
         return cls._semaphore
 
-    async def _query(self, domain: str) -> dict[str, object]:
+    async def _query(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> dict[str, object]:
+        """Fetch RDAP data for ``domain``.
+
+        ``client``: when provided, this caller-owned pooled client (one per
+        scan, #166) is reused with ``follow_redirects``/``timeout`` applied
+        per-request; when ``None``, a per-call client is constructed and
+        closed here (standalone/test path, unchanged). rdap.org 302-redirects
+        to the registry server, so ``follow_redirects=True`` is mandatory on
+        both paths.
+        """
         tld = domain.rsplit(".", 1)[-1].lower()
         if tld in RDAP_SKIP_TLDS:
             log.debug("rdap.skip_unsupported_tld", domain=domain, tld=tld)
@@ -217,13 +235,21 @@ class RDAPLookup:
         async with semaphore:
             try:
                 url = f"{_RDAP_BOOTSTRAP}{domain}"
-                async with httpx.AsyncClient(
-                    timeout=self._cfg.http_timeout,
-                    follow_redirects=True,
-                ) as client:
-                    resp = await client.get(url)
+                data: dict[str, object]
+                if client is not None:
+                    resp = await client.get(
+                        url, follow_redirects=True, timeout=self._cfg.http_timeout
+                    )
                     resp.raise_for_status()
-                    data: dict[str, object] = resp.json()
+                    data = resp.json()
+                else:
+                    async with httpx.AsyncClient(
+                        timeout=self._cfg.http_timeout,
+                        follow_redirects=True,
+                    ) as own_client:
+                        resp = await own_client.get(url)
+                        resp.raise_for_status()
+                        data = resp.json()
                 log.debug("rdap.query_ok", domain=domain)
                 breaker.record_success()
                 return data
@@ -307,7 +333,9 @@ class RDAPLookup:
                     return country
         return None
 
-    async def get_full_info(self, domain: str) -> dict[str, object]:
+    async def get_full_info(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> dict[str, object]:
         """Return a full RDAP info dict for a domain.
 
         Keys: org, name, country, registrar, created_date, expiry_date,
@@ -315,7 +343,7 @@ class RDAPLookup:
         None values with an empty nameservers list and raw as {}.
         """
         try:
-            data = await self._query(domain)
+            data = await self._query(domain, client=client)
         except Exception as exc:
             inc(SOURCE_ERRORS_TOTAL, source="rdap")
             log.warning("rdap.lookup_failed", domain=domain, error=str(exc))

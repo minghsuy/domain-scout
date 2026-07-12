@@ -7,7 +7,7 @@ Scout level.
 
 from __future__ import annotations
 
-from typing import cast
+from typing import TYPE_CHECKING, cast
 from unittest.mock import AsyncMock
 
 import pytest
@@ -15,6 +15,9 @@ import pytest
 from domain_scout.config import ScoutConfig
 from domain_scout.models import EntityInput
 from domain_scout.scout import Scout
+
+if TYPE_CHECKING:
+    import httpx
 
 # --- Walmart fixture data ---
 # Simulates CT records from crt.sh for walmart.com seed expansion
@@ -96,17 +99,18 @@ _WALMART_DNS: dict[str, bool] = {
 }
 
 
-def _make_scout() -> Scout:
+def _make_scout(config: ScoutConfig | None = None) -> Scout:
     """Create a Scout with mocked sources."""
-    config = ScoutConfig()
-    scout = Scout(config=config)
+    scout = Scout(config=config or ScoutConfig())
 
     # Mock CT source
-    async def ct_search_by_domain(domain: str) -> list[dict[str, object]]:
+    async def ct_search_by_domain(
+        domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
         return _WALMART_CT_DOMAIN.get(domain, [])
 
     async def ct_search_by_org(
-        org_name: str, *, verify_org: bool = True
+        org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
         return list(_WALMART_CT_ORG)
 
@@ -255,3 +259,43 @@ class TestSeedOnlyDiscovery:
 
         assert result.entity.company_name == ""
         assert result.entity.seed_domain == ["walmart.com"]
+
+
+class TestPhaseErrorsSurfaceInMetadata:
+    """#167: a corroboration-phase fault is recorded in RunMetadata.errors and
+    the scan still returns results (no silent swallow)."""
+
+    @pytest.mark.asyncio
+    async def test_infra_check_failure_recorded_and_scan_continues(self) -> None:
+        scout = _make_scout()
+        scout._dns.shares_infrastructure = AsyncMock(  # type: ignore[method-assign]
+            side_effect=RuntimeError("infra boom")
+        )
+        result = await scout.discover_async(
+            EntityInput(company_name="Walmart", seed_domain=["walmart.com"])
+        )
+
+        # Scan still produced domains despite the boost fault.
+        assert result.domains
+        # The swallowed exception is now visible in the run metadata.
+        assert any("infra check failed" in e for e in result.run_metadata.errors)
+
+    @pytest.mark.asyncio
+    async def test_infra_boost_timeout_recorded_in_metadata(self) -> None:
+        import asyncio
+
+        # Tight budget so the infra phase's caller-owned, budget-derived timeout
+        # (~1s) fires; RDAP corroboration is skipped at this budget.
+        scout = _make_scout(ScoutConfig(total_timeout=2))
+
+        async def hang(_a: str, _b: str) -> bool:
+            await asyncio.sleep(30.0)
+            return False
+
+        scout._dns.shares_infrastructure = AsyncMock(side_effect=hang)  # type: ignore[method-assign]
+        result = await scout.discover_async(
+            EntityInput(company_name="Walmart", seed_domain=["walmart.com"])
+        )
+
+        assert result.domains
+        assert any("Infrastructure boost timed out" in e for e in result.run_metadata.errors)

@@ -183,7 +183,7 @@ class TestCachedCTLogSource:
         wrapper = CachedCTLogSource(inner, cache)
         result = await wrapper.search_by_domain("miss.com")
         assert result == fresh_data
-        inner.search_by_domain.assert_called_once_with("miss.com")
+        inner.search_by_domain.assert_called_once_with("miss.com", client=None)
         # Should be cached now
         assert cache.get_ct("domain:miss.com") == fresh_data
 
@@ -243,7 +243,7 @@ class TestCachedRDAPLookup:
         wrapper = CachedRDAPLookup(inner, cache)
         result = await wrapper.get_registrant_org("miss.com")
         assert result == "Fresh Corp"
-        inner.get_registrant_org.assert_called_once_with("miss.com")
+        inner.get_registrant_org.assert_called_once_with("miss.com", client=None)
 
     @pytest.mark.asyncio
     async def test_registrant_info_hit(self, cache: DuckDBCache) -> None:
@@ -266,7 +266,7 @@ class TestCachedRDAPLookup:
         wrapper = CachedRDAPLookup(inner, cache)
         result = await wrapper.get_registrant_info("miss.com")
         assert result == info
-        inner.get_registrant_info.assert_called_once_with("miss.com")
+        inner.get_registrant_info.assert_called_once_with("miss.com", client=None)
 
     @pytest.mark.asyncio
     async def test_cache_write_failure_returns_result(self, cache: DuckDBCache) -> None:

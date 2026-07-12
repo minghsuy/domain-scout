@@ -10,6 +10,8 @@ from typing import TYPE_CHECKING
 import structlog
 
 if TYPE_CHECKING:
+    import httpx
+
     from domain_scout.config import ScoutConfig
     from domain_scout.sources.ct_logs import CTLogSource
 
@@ -97,9 +99,13 @@ class LocalParquetSource:
         return [r[0] for r in result if r[0]]
 
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
-        """Search warehouse by org name using fuzzy matching."""
+        """Search warehouse by org name using fuzzy matching.
+
+        ``client`` is accepted for CTSource protocol compatibility (#166) but
+        unused — the local warehouse reads DuckDB, not HTTP.
+        """
         from rapidfuzz import process as rfprocess
         from rapidfuzz.utils import default_process
 
@@ -135,8 +141,14 @@ class LocalParquetSource:
         rows = result.fetchall()
         return [_row_to_record(r, columns) for r in rows]
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
-        """Search warehouse by exact domain or suffix match."""
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        """Search warehouse by exact domain or suffix match.
+
+        ``client`` is accepted for CTSource protocol compatibility (#166) but
+        unused — the local warehouse reads DuckDB, not HTTP.
+        """
         sql = (
             "SELECT fingerprint, org_raw, "
             "MIN(not_before) AS not_before, MAX(not_after) AS not_after, "
@@ -170,20 +182,22 @@ class HybridCTSource:
         self._remote = remote
 
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
         results = await self._local.search_by_org(org_name, verify_org=verify_org)
         if results:
             return results
         log.debug("hybrid.fallback_to_remote", method="search_by_org", query=org_name)
-        return await self._remote.search_by_org(org_name, verify_org=verify_org)
+        return await self._remote.search_by_org(org_name, verify_org=verify_org, client=client)
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
         results = await self._local.search_by_domain(domain)
         if results:
             return results
         log.debug("hybrid.fallback_to_remote", method="search_by_domain", query=domain)
-        return await self._remote.search_by_domain(domain)
+        return await self._remote.search_by_domain(domain, client=client)
 
     async def get_cert_org(self, cert_id: int) -> str | None:
         return await self._remote.get_cert_org(cert_id)

@@ -829,7 +829,7 @@ class TestRDAPCorroboration:
         a.resolves = True
         evidence["walmart.com"] = a
 
-        await self.scout._rdap_corroborate(evidence, "Walmart")
+        await self.scout._rdap_corroborate(evidence, "Walmart", [])
         assert "rdap_registrant_match" in a.sources
         assert a.rdap_org == "Walmart Inc."
         assert any(e.source_type == "rdap_registrant_match" for e in a.evidence)
@@ -843,7 +843,7 @@ class TestRDAPCorroboration:
         a.resolves = False
         evidence["dead.com"] = a
 
-        await self.scout._rdap_corroborate(evidence, "Walmart")
+        await self.scout._rdap_corroborate(evidence, "Walmart", [])
         assert "rdap_registrant_match" not in a.sources
 
     @pytest.mark.asyncio
@@ -856,7 +856,7 @@ class TestRDAPCorroboration:
         a.resolves = True
         evidence["unrelated.com"] = a
 
-        await self.scout._rdap_corroborate(evidence, "Walmart")
+        await self.scout._rdap_corroborate(evidence, "Walmart", [])
         assert "rdap_registrant_match" not in a.sources
 
     @pytest.mark.asyncio
@@ -872,7 +872,7 @@ class TestRDAPCorroboration:
         evidence["walmart.com"] = a
 
         # Should not raise
-        await self.scout._rdap_corroborate(evidence, "Walmart")
+        await self.scout._rdap_corroborate(evidence, "Walmart", [])
         # Source should NOT be added when RDAP fails
         assert "rdap_registrant_match" not in a.sources
 
@@ -890,5 +890,5 @@ class TestRDAPCorroboration:
             a.resolves = True
             evidence[f"domain{i}.com"] = a
 
-        await self.scout._rdap_corroborate(evidence, "Walmart")
+        await self.scout._rdap_corroborate(evidence, "Walmart", [])
         assert self.scout._rdap.get_registrant_org.call_count == 3

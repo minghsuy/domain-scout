@@ -30,13 +30,24 @@ class CTScoutRemoteSource:
         self._timeout = config.http_timeout
 
     async def search_by_org(
-        self, org_name: str, *, verify_org: bool = True
+        self, org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
     ) -> list[dict[str, object]]:
-        """Search CTScout warehouse by organization name."""
+        """Search CTScout warehouse by organization name.
+
+        ``client`` is accepted for CTSource protocol compatibility (#166) but
+        unused — this source POSTs to a different host (ctscout.dev) with its
+        own per-call client and API-key header.
+        """
         return await self._query(company_name=org_name)
 
-    async def search_by_domain(self, domain: str) -> list[dict[str, object]]:
-        """Search CTScout warehouse by apex domain."""
+    async def search_by_domain(
+        self, domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        """Search CTScout warehouse by apex domain.
+
+        ``client`` is accepted for CTSource protocol compatibility (#166) but
+        unused — see ``search_by_org``.
+        """
         return await self._query(seed_domain=[domain])
 
     async def get_cert_org(self, cert_id: int) -> str | None:
