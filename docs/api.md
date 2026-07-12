@@ -250,6 +250,24 @@ Configure server-wide defaults so clients don't need to pass paths per request:
 | `DOMAIN_SCOUT_CACHE_DIR` | DuckDB cache directory | System default |
 | `DOMAIN_SCOUT_MAX_CONCURRENT` | Max concurrent scans | `3` |
 
+A non-numeric `DOMAIN_SCOUT_MAX_CONCURRENT` logs a warning and falls back to the
+default (`3`) rather than failing startup.
+
+### Multiple workers and the cache (single-writer)
+
+DuckDB is single-writer: only one process may open `cache.db` for writing.
+`domain-scout serve --workers N` (N > 1) disables the cache automatically. If you
+instead run the uvicorn factory directly with multiple workers:
+
+```bash
+uvicorn domain_scout.api:get_app --workers 4
+```
+
+each worker calls the factory and tries to open `cache.db`. The first wins; the
+others detect the lock conflict, log `api.cache_disabled_lock_conflict`, and
+start cache-less instead of crash-looping or corrupting the file. To disable the
+cache explicitly (and silence the warning), set `DOMAIN_SCOUT_CACHE=false`.
+
 Example deployment with warehouse:
 
 ```bash

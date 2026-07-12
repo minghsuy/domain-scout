@@ -67,9 +67,21 @@ if _ENABLED:
         "domain_scout_ct_fallbacks_total",
         "Total CT JSON API fallbacks",
     )
+    # Dilution note (#191): this is a single unlabeled gauge, but the CT source
+    # keeps a registry of breakers keyed by (failure_threshold, recovery_timeout)
+    # — instances with different configs get independent breakers. Every breaker
+    # writes this one gauge, so with multiple concurrent breakers it reflects
+    # whichever transitioned *last*, not any specific breaker. In practice a
+    # process runs a single breaker config (the default), so the dilution is
+    # inert; it only surfaces under mixed configs (mostly tests). Labeling by
+    # config key is deliberately deferred: it would change this metric's series
+    # contract (breaking existing unlabeled dashboards) for a scenario that does
+    # not occur in normal deployments.
     CT_CIRCUIT_BREAKER_STATE = Gauge(
         "domain_scout_ct_circuit_breaker_state",
-        "Circuit breaker state (0=closed, 1=open, 2=half_open)",
+        "Circuit breaker state (0=closed, 1=open, 2=half_open). "
+        "Single gauge shared by all breakers; reflects the last transition "
+        "if multiple breaker configs are active in one process (see #191).",
     )
     SOURCE_ERRORS_TOTAL = Counter(
         "domain_scout_source_errors_total",
@@ -110,5 +122,11 @@ def set_gauge(gauge: Any, value: float) -> None:
 
 
 def set_cb_state(state: str) -> None:
-    """Update the circuit breaker state gauge."""
+    """Update the circuit breaker state gauge.
+
+    Note: ``CT_CIRCUIT_BREAKER_STATE`` is a single unlabeled gauge. When more
+    than one breaker config is active in a process, each breaker's transition
+    overwrites it, so the exported value tracks the most recent transition
+    across all breakers rather than any one breaker (#191).
+    """
     set_gauge(CT_CIRCUIT_BREAKER_STATE, _CB_STATE_MAP.get(state, -1))

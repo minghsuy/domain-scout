@@ -422,6 +422,40 @@ class TestCircuitBreakerWiring:
 
         assert not pg_called  # breaker prevented the call
 
+    @pytest.mark.parametrize("reverse", [False, True])
+    def test_different_config_breakers_independent_both_orders(self, reverse: bool) -> None:
+        """Instances with DIFFERENT breaker configs get independent breakers,
+        regardless of construction order (#172, regression #191).
+
+        The pre-#172 first-wins code shared one breaker keyed to whichever
+        instance was built first, so a second instance with different thresholds
+        silently inherited the wrong config. The registry keys by
+        ``(failure_threshold, recovery_timeout)``, so each config trips on its
+        own. Parametrized over both orders because order is exactly what the old
+        bug was sensitive to.
+        """
+        low = ScoutConfig(cb_failure_threshold=1, cb_recovery_timeout=30.0)
+        high = ScoutConfig(cb_failure_threshold=99, cb_recovery_timeout=30.0)
+        order = [high, low] if reverse else [low, high]
+        built = {src._cfg.cb_failure_threshold: src for src in (CTLogSource(c) for c in order)}
+        ct_low, ct_high = built[1], built[99]
+
+        # The defining assertion: distinct breaker objects in EITHER order.
+        # (Old first-wins code would share one object → this fails.)
+        assert ct_low._breaker is not ct_high._breaker
+        assert ct_low._breaker.state == "closed"
+        assert ct_high._breaker.state == "closed"
+
+        # A sub-threshold failure on the high breaker leaks into neither breaker.
+        ct_high._breaker.record_failure()
+        assert ct_high._breaker.state == "closed"
+        assert ct_low._breaker.state == "closed"
+
+        # The low breaker trips on its first failure without perturbing the high one.
+        ct_low._breaker.record_failure()
+        assert ct_low._breaker.state == "open"
+        assert ct_high._breaker.state == "closed"
+
 
 class TestOrgSearchFallbackUnavailable:
     """#163: org search must not silently return zero via the JSON fallback.
