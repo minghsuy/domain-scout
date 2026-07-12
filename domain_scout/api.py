@@ -27,6 +27,16 @@ from domain_scout.delta import compute_delta
 from domain_scout.models import DeltaReport, EntityInput, ScoutResult
 from domain_scout.scout import Scout
 
+try:
+    import duckdb
+
+    # DuckDB raises IOException when another process already holds the write
+    # lock on cache.db (e.g. a second uvicorn worker). Catch it to enforce the
+    # single-writer constraint gracefully instead of crash-looping (#169).
+    _CACHE_LOCK_ERRORS: tuple[type[Exception], ...] = (duckdb.IOException,)
+except ImportError:  # pragma: no cover - duckdb is an optional [cache] extra
+    _CACHE_LOCK_ERRORS = ()
+
 log = structlog.get_logger()
 
 _VERSION = _pkg_version("domain-scout-ct")
@@ -263,18 +273,41 @@ def create_app(
 def get_app() -> FastAPI:
     """Factory for default app (used by uvicorn import string).
 
-    Note: DuckDB is single-writer. The CLI ``serve`` command disables cache
-    when ``--workers > 1``.  If you call ``uvicorn domain_scout.api:get_app``
-    directly with multiple workers, set ``DOMAIN_SCOUT_CACHE=false``.
+    DuckDB is single-writer, so only one process may open ``cache.db`` for
+    writing. This factory hardens the two documented foot-guns (#169):
+
+    * **Multi-worker cache.** The CLI ``serve`` command disables the cache when
+      ``--workers > 1``. If you instead run ``uvicorn domain_scout.api:get_app``
+      directly with multiple workers, each worker calls this factory; the first
+      opens ``cache.db`` and the rest hit a DuckDB lock conflict. Rather than
+      crash-loop, a worker that loses the race logs
+      ``api.cache_disabled_lock_conflict`` and starts cache-less. Set
+      ``DOMAIN_SCOUT_CACHE=false`` to disable the cache explicitly and silence
+      the warning.
+    * **Bad env values.** A non-numeric ``DOMAIN_SCOUT_MAX_CONCURRENT`` logs a
+      warning and falls back to the default (3) instead of crashing at startup.
     """
-    max_concurrent = int(os.environ.get("DOMAIN_SCOUT_MAX_CONCURRENT", "3"))
+    raw_max_concurrent = os.environ.get("DOMAIN_SCOUT_MAX_CONCURRENT", "3")
+    try:
+        max_concurrent = int(raw_max_concurrent)
+    except ValueError:
+        log.warning("get_app.invalid_max_concurrent_env", value=raw_max_concurrent)
+        max_concurrent = 3
     if max_concurrent < 1:
         log.warning("get_app.invalid_max_concurrent", value=max_concurrent)
         max_concurrent = 1
     cache_enabled = os.environ.get("DOMAIN_SCOUT_CACHE", "true").lower() != "false"
 
     cache_dir = os.environ.get("DOMAIN_SCOUT_CACHE_DIR")
-    cache = DuckDBCache(cache_dir=cache_dir) if cache_enabled else None
+    cache: DuckDBCache | None = None
+    if cache_enabled:
+        try:
+            cache = DuckDBCache(cache_dir=cache_dir)
+        except _CACHE_LOCK_ERRORS as exc:
+            # Another writer already holds cache.db (single-writer constraint).
+            # Degrade to cache-less rather than corrupt the file or crash-loop.
+            log.warning("api.cache_disabled_lock_conflict", error=str(exc))
+            cache = None
 
     api_key = os.environ.get("DOMAIN_SCOUT_API_KEY")
     warehouse_path = os.environ.get("DOMAIN_SCOUT_WAREHOUSE_PATH")

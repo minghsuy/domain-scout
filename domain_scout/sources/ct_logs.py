@@ -163,9 +163,10 @@ class _CircuitBreaker:
     """Simple circuit breaker for crt.sh Postgres connections.
 
     States: closed (normal) → open (skip Postgres) → half_open (probe).
-    Shared across CTLogSource instances via class variable.  The breaker
-    is initialized once from the first CTLogSource instance's config;
-    subsequent instances reuse the same breaker (and its thresholds).
+    Breakers are shared process-wide via the ``CTLogSource._breakers``
+    registry, keyed by ``(failure_threshold, recovery_timeout)``: instances
+    built from the same config share one breaker; instances with different
+    configs get their own, independent of construction order (#172).
     """
 
     def __init__(self, failure_threshold: int, recovery_timeout: float) -> None:

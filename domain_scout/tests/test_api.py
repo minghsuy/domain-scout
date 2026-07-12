@@ -250,6 +250,40 @@ class TestGetApp:
             app = get_app()
         assert app.state.default_local_mode == "disabled"
 
+    def test_get_app_invalid_max_concurrent_env_uses_default(self) -> None:
+        """Non-numeric DOMAIN_SCOUT_MAX_CONCURRENT falls back to the default,
+        not an opaque startup crash (#169)."""
+        env = {"DOMAIN_SCOUT_CACHE": "false", "DOMAIN_SCOUT_MAX_CONCURRENT": "abc"}
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.semaphore._value == 3  # default, startup not prevented
+        assert TestClient(app).get("/health").status_code == 200
+
+    def test_get_app_valid_max_concurrent_env_honored(self) -> None:
+        """A valid DOMAIN_SCOUT_MAX_CONCURRENT is still parsed and applied (#169)."""
+        env = {"DOMAIN_SCOUT_CACHE": "false", "DOMAIN_SCOUT_MAX_CONCURRENT": "7"}
+        with patch.dict(os.environ, env, clear=False):
+            app = get_app()
+        assert app.state.semaphore._value == 7
+
+    def test_get_app_cache_lock_conflict_falls_back_to_cacheless(self) -> None:
+        """A DuckDB write-lock conflict (another worker holds cache.db) degrades
+        to cache=None instead of crashing, enforcing the single-writer
+        constraint for the direct multi-worker uvicorn path (#169)."""
+        duckdb = pytest.importorskip("duckdb")
+
+        def _raise_lock(*args: object, **kwargs: object) -> None:
+            raise duckdb.IOException("Could not set lock on file cache.db")
+
+        env = {"DOMAIN_SCOUT_CACHE": "true"}
+        with (
+            patch.dict(os.environ, env, clear=False),
+            patch("domain_scout.api.DuckDBCache", _raise_lock),
+        ):
+            app = get_app()
+        assert app.state.cache is None
+        assert TestClient(app).get("/health").status_code == 200
+
 
 class TestScanRequest:
     def test_minimal(self) -> None:
