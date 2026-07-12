@@ -33,8 +33,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   spurious "confidence changed" entries); it emits a single run-level
   `scorer_changed` warning instead, while non-confidence changes (`resolves`,
   `sources`, `rdap_org`) are still reported per domain.
+- Eval substrate generator (`python -m domain_scout.eval --mode record`, wired as
+  `make eval-baselines`): runs live discovery for the ground-truth entities and
+  (re)writes the git-ignored `baselines/` substrate plus a provenance
+  `baselines/manifest.json` referencing exactly the files that run produced
+  (#188). Each manifest entry carries a `sha256`; the header stamps
+  `generated_at`, `tool_version`, `scorer` identity, and `git_commit`, so the
+  point-in-time snapshot's decay is detectable rather than silent. `--limit N`
+  records a smoke-scale subset. Re-running is safe and overwrites the manifest to
+  reference only the current run's outputs.
 
 ### Changed
+- `make eval` now fails loudly (`EvalSubstrateError`, non-zero exit) instead of
+  printing a warning and rendering an empty — and misleadingly "passing" —
+  report when the baseline substrate is missing (#188). The `manifest.json` is
+  now required and authoritative: no manifest, an unparseable manifest, or a
+  referenced file that is absent or whose sha256 no longer matches is a hard
+  error, and only manifest-listed files are evaluated. Loose `{label_id}.json`
+  files without a manifest are not trusted (an interrupted `record` run can leave
+  a partial set), so `record` writes the manifest atomically and last. `make
+  eval` therefore requires a prior `make eval-baselines`. A substrate recorded
+  under a different scorer than the current one emits a stderr warning. (The
+  learned leg's post-pipeline re-scoring approximation, #187, is unchanged and
+  orthogonal.)
 - The `ct_org_match` source now requires a strict word-bounded org-name match in
   addition to the fuzzy `org_match_threshold`. The fuzzy scorer credited
   raw-substring hits (`Aon` in `kaonavi`, `Generali` in `Generalist`),
