@@ -1,30 +1,52 @@
 """Evaluation harness for domain-scout: precision/recall against labeled ground truth.
 
-Supports two modes:
+Supports three modes:
   - baseline: load pre-recorded ScoutResult JSON files and compute metrics
   - live: run Scout.discover_async() against real services and compute metrics
+  - record: run live discovery and persist the results as the baseline substrate
+    (baselines/{label_id}.json) plus a provenance manifest (baselines/manifest.json)
 
 Usage:
   python -m domain_scout.eval --mode baseline
   python -m domain_scout.eval --mode live --output json
+  python -m domain_scout.eval --mode record --limit 3   # regenerate the substrate
+
+The ``baseline`` substrate (``baselines/`` + its manifest) is git-ignored and
+generated locally by ``--mode record`` (``make eval-baselines``). It is a
+point-in-time snapshot of live CT data: re-running the generator is safe and the
+manifest stamps provenance (generated_at, tool_version, scorer identity, git
+commit) so decay is *detectable*. It is not byte-identical across runs.
 """
 
 from __future__ import annotations
 
 import argparse
 import asyncio
+import hashlib
 import math
+import subprocess
 import sys
+from datetime import UTC, datetime
 from pathlib import Path
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 
 from domain_scout.models import ScoutResult
 
 _GROUND_TRUTH_PATH = Path(__file__).parent / "eval_ground_truth.yaml"
 _BASELINES_DIR = Path(__file__).parent.parent / "baselines"
+_MANIFEST_NAME = "manifest.json"
 
 _DEFAULT_K_VALUES = (5, 10, 20)
+
+
+class EvalSubstrateError(RuntimeError):
+    """The baseline substrate (``baselines/`` + manifest) is missing or corrupt.
+
+    Raised instead of silently producing an empty report so that a vanished or
+    tampered substrate fails the eval loudly rather than reading as a passing /
+    neutral run (issue #188, gate 3).
+    """
 
 
 # ---------------------------------------------------------------------------
@@ -81,6 +103,34 @@ class EvalReport(BaseModel):
     # Identity of the learned scorer that produced learned_entities,
     # e.g. "learned_lr/v1@2026-03-01+uncal" (None if the leg didn't run).
     learned_scorer: str | None = None
+
+
+class BaselineManifestEntry(BaseModel):
+    """One recorded baseline file, keyed to its ground-truth label."""
+
+    label_id: str
+    file: str  # filename relative to the baselines dir, e.g. "panw-20260217.json"
+    sha256: str  # digest of the file bytes at record time (corruption / drift check)
+    domains: int  # number of domains in the recorded ScoutResult
+
+
+class BaselineManifest(BaseModel):
+    """Provenance for a generated baseline substrate.
+
+    Written by ``--mode record`` and read by ``--mode baseline``. It lists
+    exactly the files the generator wrote this run, so the eval can fail loudly
+    when a referenced file goes absent or is tampered with, and so substrate
+    decay is detectable (``generated_at`` / ``scorer`` / ``git_commit``).
+    """
+
+    generator: str = "domain_scout.eval --mode record"
+    generated_at: str  # ISO-8601 UTC timestamp
+    tool_version: str
+    scorer: str  # learned-scorer identity at generation time (e.g. learned_lr/v1@...)
+    source: str  # provenance of the underlying data, e.g. "live crt.sh discovery"
+    mode: str = "live"
+    git_commit: str | None = None
+    entries: list[BaselineManifestEntry]
 
 
 # ---------------------------------------------------------------------------
@@ -278,6 +328,104 @@ def _learned_scorer_identity() -> str:
 
 
 # ---------------------------------------------------------------------------
+# Substrate provenance (manifest) helpers
+# ---------------------------------------------------------------------------
+
+
+def _sha256_file(path: Path) -> str:
+    """SHA-256 of a file's bytes."""
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def _git_commit() -> str | None:
+    """Best-effort short-circuiting lookup of the current git commit (or None)."""
+    try:
+        proc = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            capture_output=True,
+            text=True,
+            cwd=Path(__file__).parent,
+            timeout=5,
+            check=False,
+        )
+    except (OSError, subprocess.SubprocessError):
+        return None
+    return proc.stdout.strip() if proc.returncode == 0 else None
+
+
+def _load_manifest(baselines_dir: Path) -> BaselineManifest | None:
+    """Load the baseline manifest if present, else None.
+
+    A present-but-unparseable manifest (e.g. truncated by an interrupted write)
+    is a loud error, not a fall-through to "no manifest".
+    """
+    manifest_path = baselines_dir / _MANIFEST_NAME
+    if not manifest_path.exists():
+        return None
+    try:
+        return BaselineManifest.model_validate_json(manifest_path.read_text())
+    except ValidationError as exc:
+        raise EvalSubstrateError(
+            f"Baseline manifest at {manifest_path} is present but unparseable "
+            f"(truncated or malformed?). Regenerate with `make eval-baselines`. — {exc}"
+        ) from exc
+
+
+def _resolve_manifest_substrate(
+    manifest: BaselineManifest,
+    baselines_dir: Path,
+    gt_by_id: dict[str, GroundTruthEntry],
+) -> list[tuple[GroundTruthEntry, ScoutResult]]:
+    """Validate the manifest-referenced files in scope, then load them.
+
+    Validation (existence + sha256) covers exactly the manifest entries whose
+    ``label_id`` is in the requested ground truth. An unscoped run passes the
+    full ground truth, so the whole substrate is still checked; a ``--label``
+    debug run is not blocked by an unrelated entry's missing/corrupt file.
+
+    Fails loudly (``EvalSubstrateError``) if any in-scope referenced file is
+    absent or its on-disk digest no longer matches the manifest — a vanished or
+    tampered substrate must not read as a passing eval (issue #188, gate 3).
+    """
+    relevant = [entry for entry in manifest.entries if entry.label_id in gt_by_id]
+    if not relevant:
+        raise EvalSubstrateError(
+            f"Baseline manifest at {baselines_dir / _MANIFEST_NAME} has no entries matching "
+            f"the ground truth ({len(manifest.entries)} manifest entries, "
+            f"{len(gt_by_id)} ground-truth label(s)). Nothing to evaluate."
+        )
+
+    pairs: list[tuple[GroundTruthEntry, ScoutResult]] = []
+    missing: list[str] = []
+    corrupt: list[str] = []
+
+    for entry in relevant:
+        fpath = baselines_dir / entry.file
+        if not fpath.exists():
+            missing.append(entry.file)
+            continue
+        actual = _sha256_file(fpath)
+        if actual != entry.sha256:
+            corrupt.append(f"{entry.file} (manifest {entry.sha256[:12]}, on-disk {actual[:12]})")
+            continue
+        pairs.append((gt_by_id[entry.label_id], ScoutResult.model_validate_json(fpath.read_text())))
+
+    if missing or corrupt:
+        details: list[str] = []
+        if missing:
+            details.append(f"absent: {', '.join(missing)}")
+        if corrupt:
+            details.append(f"corrupt (sha256 mismatch): {'; '.join(corrupt)}")
+        raise EvalSubstrateError(
+            f"Baseline manifest at {baselines_dir / _MANIFEST_NAME} references "
+            f"{len(missing)} absent and {len(corrupt)} corrupt file(s). "
+            f"Regenerate with `make eval-baselines`. — " + " | ".join(details)
+        )
+
+    return pairs
+
+
+# ---------------------------------------------------------------------------
 # Baseline evaluation
 # ---------------------------------------------------------------------------
 
@@ -287,24 +435,44 @@ def evaluate_baseline(
     baselines_dir: Path | None = None,
     k_values: tuple[int, ...] = _DEFAULT_K_VALUES,
 ) -> EvalReport:
-    """Evaluate pre-recorded baseline JSON files against ground truth.
+    """Evaluate the recorded baseline substrate against ground truth.
 
     Runs both scorer legs: the recorded (heuristic) ranking and a learned
     re-scoring of the same evidence.
+
+    The ``manifest.json`` written by ``--mode record`` is the substrate's single
+    source of truth and is *required*: every file it lists must exist and match
+    its recorded digest, and exactly those files (that also have a ground-truth
+    label) are evaluated. A missing manifest (e.g. a fresh checkout, or a
+    ``record`` run interrupted before the manifest was written), a
+    missing/corrupt referenced file, or an empty substrate raises
+    :class:`EvalSubstrateError` rather than yielding a silent, empty (and
+    misleadingly "passing") report — the #188 gate-3 defect.
     """
     bdir = baselines_dir or _BASELINES_DIR
+    manifest = _load_manifest(bdir)
+    if manifest is None:
+        raise EvalSubstrateError(
+            f"No baseline manifest ({_MANIFEST_NAME}) in {bdir}. The eval substrate is "
+            f"generated locally and git-ignored; run `make eval-baselines` to create it. "
+            f"(Loose {{label_id}}.json files without a manifest are not trusted — an "
+            f"interrupted `record` run can leave a partial set.)"
+        )
+
+    gt_by_id = {gt.label_id: gt for gt in ground_truth}
+    pairs = _resolve_manifest_substrate(manifest, bdir, gt_by_id)
+    current_scorer = _learned_scorer_identity()
+    if manifest.scorer != current_scorer:
+        print(
+            f"WARNING: baseline substrate was scored under {manifest.scorer} but the "
+            f"current scorer is {current_scorer}; learned-leg deltas may not reflect the "
+            f"shipping scorer. Regenerate with `make eval-baselines`.",
+            file=sys.stderr,
+        )
+
     results: list[EntityEvalResult] = []
     learned_results: list[EntityEvalResult] = []
-
-    for gt in ground_truth:
-        baseline_path = bdir / f"{gt.label_id}.json"
-        if not baseline_path.exists():
-            print(f"WARNING: baseline not found: {baseline_path}", file=sys.stderr)
-            continue
-
-        with open(baseline_path) as f:
-            scout_result = ScoutResult.model_validate_json(f.read())
-
+    for gt, scout_result in pairs:
         # Ranked domain list (already sorted by confidence desc in ScoutResult)
         ranked = [d.domain for d in scout_result.domains]
         results.append(_entity_result(gt, ranked, k_values))
@@ -316,6 +484,76 @@ def evaluate_baseline(
         learned_entities=learned_results,
         learned_scorer=_learned_scorer_identity() if learned_results else None,
     )
+
+
+# ---------------------------------------------------------------------------
+# Baseline substrate generation (record mode)
+# ---------------------------------------------------------------------------
+
+
+async def record_baselines(
+    ground_truth: list[GroundTruthEntry],
+    baselines_dir: Path | None = None,
+    *,
+    limit: int | None = None,
+    source: str = "live crt.sh discovery",
+) -> BaselineManifest:
+    """Run live discovery for each entity and persist the substrate + manifest.
+
+    Deterministic in *process* (re-runnable, same inputs -> same file layout),
+    not in *bytes*: the underlying CT data is point-in-time, so successive runs
+    can differ. The manifest stamps provenance so that drift is detectable.
+
+    ``limit`` records only the first N ground-truth entries (a smoke-scale
+    substrate); the manifest then references only the files this run wrote.
+    Uses the default :class:`ScoutConfig` (``use_learned_scorer=False``), so the
+    recorded ranking is the heuristic leg production emits by default.
+    """
+    from domain_scout import __version__
+    from domain_scout.models import EntityInput
+    from domain_scout.scout import Scout
+
+    bdir = baselines_dir or _BASELINES_DIR
+    bdir.mkdir(parents=True, exist_ok=True)
+    targets = ground_truth[:limit] if limit is not None else ground_truth
+
+    scout = Scout()
+    entries: list[BaselineManifestEntry] = []
+    for gt in targets:
+        entity = EntityInput(company_name=gt.company_name, seed_domain=gt.seeds)
+        scout_result = await scout.discover_async(entity)
+
+        fname = f"{gt.label_id}.json"
+        fpath = bdir / fname
+        fpath.write_text(scout_result.model_dump_json(indent=2))
+        entries.append(
+            BaselineManifestEntry(
+                label_id=gt.label_id,
+                file=fname,
+                sha256=_sha256_file(fpath),
+                domains=len(scout_result.domains),
+            )
+        )
+        print(f"recorded {gt.label_id}: {len(scout_result.domains)} domains", file=sys.stderr)
+
+    entries.sort(key=lambda e: e.label_id)
+    manifest = BaselineManifest(
+        generated_at=datetime.now(UTC).isoformat(),
+        tool_version=__version__,
+        scorer=_learned_scorer_identity(),
+        source=source,
+        mode="live",
+        git_commit=_git_commit(),
+        entries=entries,
+    )
+    # Write the manifest atomically (tmp + rename) and last: readers treat the
+    # manifest as proof of a completed run, so it must never appear truncated or
+    # ahead of the files it references (matches the repo's atomic-write pattern).
+    manifest_path = bdir / _MANIFEST_NAME
+    tmp_path = manifest_path.with_suffix(".json.tmp")
+    tmp_path.write_text(manifest.model_dump_json(indent=2) + "\n")
+    tmp_path.replace(manifest_path)
+    return manifest
 
 
 # ---------------------------------------------------------------------------
@@ -422,9 +660,12 @@ def main(argv: list[str] | None = None) -> None:
     )
     parser.add_argument(
         "--mode",
-        choices=["baseline", "live"],
+        choices=["baseline", "live", "record"],
         default="baseline",
-        help="Evaluation mode: baseline (pre-recorded JSON) or live (real queries)",
+        help=(
+            "baseline (pre-recorded JSON), live (real queries), or record "
+            "(run live discovery and (re)generate the baselines/ substrate + manifest)"
+        ),
     )
     parser.add_argument(
         "--output",
@@ -450,6 +691,12 @@ def main(argv: list[str] | None = None) -> None:
         default=None,
         help="Evaluate only this label_id (default: all)",
     )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=None,
+        help="record mode: record only the first N ground-truth entries (smoke-scale substrate)",
+    )
 
     args = parser.parse_args(argv)
 
@@ -461,10 +708,23 @@ def main(argv: list[str] | None = None) -> None:
             print(f"ERROR: label_id '{args.label}' not found in ground truth", file=sys.stderr)
             sys.exit(1)
 
-    if args.mode == "baseline":
-        report = evaluate_baseline(ground_truth, args.baselines_dir)
-    else:
-        report = asyncio.run(evaluate_live(ground_truth))
+    if args.mode == "record":
+        manifest = asyncio.run(record_baselines(ground_truth, args.baselines_dir, limit=args.limit))
+        bdir = args.baselines_dir or _BASELINES_DIR
+        print(
+            f"Wrote {len(manifest.entries)} baseline(s) + {_MANIFEST_NAME} to {bdir}",
+            file=sys.stderr,
+        )
+        return
+
+    try:
+        if args.mode == "baseline":
+            report = evaluate_baseline(ground_truth, args.baselines_dir)
+        else:
+            report = asyncio.run(evaluate_live(ground_truth))
+    except EvalSubstrateError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
+        sys.exit(1)
 
     if args.output == "json":
         print(report.model_dump_json(indent=2))

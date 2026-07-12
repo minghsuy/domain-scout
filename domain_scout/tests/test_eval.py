@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import textwrap
 from datetime import UTC, datetime
 from pathlib import Path
@@ -10,8 +11,11 @@ from unittest.mock import AsyncMock, patch
 import pytest
 
 from domain_scout.eval import (
+    BaselineManifest,
+    BaselineManifestEntry,
     EntityEvalResult,
     EvalReport,
+    EvalSubstrateError,
     GroundTruthEntry,
     MetricsAtK,
     collect_false_positives,
@@ -20,6 +24,7 @@ from domain_scout.eval import (
     evaluate_live,
     format_table,
     load_ground_truth,
+    record_baselines,
 )
 from domain_scout.models import (
     DiscoveredDomain,
@@ -247,8 +252,7 @@ class TestEvaluateBaseline:
             company_name="TestCo",
             seeds=["test.com"],
         )
-        baseline_path = tmp_path / "test-entity.json"
-        baseline_path.write_text(result.model_dump_json(indent=2))
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
 
         report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(3, 5))
         assert report.mode == "baseline"
@@ -273,8 +277,8 @@ class TestEvaluateBaseline:
 
         assert "evil.com" in entity.false_positive_domains
 
-    def test_missing_baseline_skipped(self, tmp_path: Path) -> None:
-        """Missing baseline file is skipped with warning."""
+    def test_empty_substrate_no_manifest_fails_loudly(self, tmp_path: Path) -> None:
+        """A directory with no manifest and no baseline files is a loud error (#188)."""
         gt = [
             GroundTruthEntry(
                 label_id="nonexistent",
@@ -283,35 +287,239 @@ class TestEvaluateBaseline:
                 owned_domains=["ghost.com"],
             )
         ]
-        report = evaluate_baseline(gt, baselines_dir=tmp_path)
-        assert len(report.entities) == 0
+        with pytest.raises(EvalSubstrateError, match="No baseline manifest"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_loose_files_without_manifest_fail_loudly(self, tmp_path: Path) -> None:
+        """Baseline files present but no manifest is a loud error (interrupted record).
+
+        The manifest is proof of a completed `record` run; without it a partial
+        set of {label_id}.json files must not read as a passing partial report.
+        """
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        # A loose baseline file, but no manifest.json alongside it.
+        (tmp_path / "test-entity.json").write_text(
+            _make_scout_result(["test.com"], company_name="TestCo").model_dump_json()
+        )
+        with pytest.raises(EvalSubstrateError, match="No baseline manifest"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_unparseable_manifest_fails_loudly(self, tmp_path: Path) -> None:
+        """A present-but-truncated manifest is a loud error, not a fall-through."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        (tmp_path / "manifest.json").write_text('{"entries": [')  # truncated JSON
+        with pytest.raises(EvalSubstrateError, match="unparseable"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_manifest_evaluates_only_listed_files(self, tmp_path: Path) -> None:
+        """With a manifest present, exactly the listed (and ground-truthed) files run."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com", "test.net"],
+            ),
+            GroundTruthEntry(
+                label_id="unrecorded",
+                company_name="Other",
+                seeds=["other.com"],
+                owned_domains=["other.com"],
+            ),
+        ]
+        result = _make_scout_result(["test.com", "test.net"], company_name="TestCo")
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
+
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(2,))
+        # Only the manifest-listed label is evaluated; "unrecorded" is not in the
+        # substrate and is silently absent (not an error — it just wasn't recorded).
+        assert [e.label_id for e in report.entities] == ["test-entity"]
+
+    def test_manifest_missing_file_fails_loudly(self, tmp_path: Path) -> None:
+        """A manifest that references an absent file is a loud error (#188, gate 3)."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        result = _make_scout_result(["test.com"], company_name="TestCo")
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
+        # Delete the file the manifest still references.
+        (tmp_path / "test-entity.json").unlink()
+
+        with pytest.raises(EvalSubstrateError, match="absent"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_manifest_corrupt_file_fails_loudly(self, tmp_path: Path) -> None:
+        """A manifest whose file digest no longer matches is a loud error (#188, gate 3)."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        result = _make_scout_result(["test.com"], company_name="TestCo")
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
+        # Mutate the file so its sha256 diverges from the manifest.
+        (tmp_path / "test-entity.json").write_text('{"tampered": true}')
+
+        with pytest.raises(EvalSubstrateError, match="corrupt"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_label_scoped_run_ignores_out_of_scope_corruption(self, tmp_path: Path) -> None:
+        """--label debugging isn't blocked by an unrelated entry's absent/corrupt file.
+
+        Validation is scoped to the requested ground truth: a single-label run
+        over a substrate with unrelated damage succeeds, while the unscoped run
+        over the same substrate still fails loudly.
+        """
+
+        def _gt(label_id: str) -> GroundTruthEntry:
+            return GroundTruthEntry(
+                label_id=label_id,
+                company_name=label_id.title(),
+                seeds=[f"{label_id}.com"],
+                owned_domains=[f"{label_id}.com"],
+            )
+
+        _write_baseline_with_manifest(
+            tmp_path,
+            {
+                "alpha": _make_scout_result(["alpha.com"], company_name="Alpha"),
+                "beta": _make_scout_result(["beta.com"], company_name="Beta"),
+                "gamma": _make_scout_result(["gamma.com"], company_name="Gamma"),
+            },
+        )
+        # Damage the two entries that are NOT in scope: one absent, one tampered.
+        (tmp_path / "beta.json").unlink()
+        (tmp_path / "gamma.json").write_text('{"tampered": true}')
+
+        # Scoped run (mirrors main()'s --label filtering): succeeds on alpha alone.
+        report = evaluate_baseline([_gt("alpha")], baselines_dir=tmp_path, k_values=(1,))
+        assert [e.label_id for e in report.entities] == ["alpha"]
+
+        # Unscoped run over the same substrate: the damage is in scope -> loud.
+        with pytest.raises(EvalSubstrateError, match="1 absent and 1 corrupt"):
+            evaluate_baseline([_gt("alpha"), _gt("beta"), _gt("gamma")], baselines_dir=tmp_path)
+
+    def test_manifest_no_matching_ground_truth_fails_loudly(self, tmp_path: Path) -> None:
+        """A manifest with no entry matching the ground truth is a loud error."""
+        gt = [
+            GroundTruthEntry(
+                label_id="other",
+                company_name="Other",
+                seeds=["other.com"],
+                owned_domains=["other.com"],
+            )
+        ]
+        result = _make_scout_result(["test.com"], company_name="TestCo")
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
+
+        with pytest.raises(EvalSubstrateError, match="no entries matching"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_manifest_scorer_drift_warns(
+        self, tmp_path: Path, capsys: pytest.CaptureFixture[str]
+    ) -> None:
+        """A substrate recorded under a different scorer emits a visible warning."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        result = _make_scout_result(["test.com"], company_name="TestCo")
+        _write_baseline_with_manifest(
+            tmp_path, {"test-entity": result}, scorer="stale/v0@2000-01-01"
+        )
+
+        evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
+        assert "current scorer is" in capsys.readouterr().err
 
     @pytest.mark.integration
     def test_real_baselines(self) -> None:
-        """Evaluate against real baselines if they exist."""
-        if not _make_baselines_dir().exists():
-            pytest.skip("baselines/ directory not found")
+        """Evaluate against the real locally-generated substrate if it exists.
+
+        The concrete baselines/ substrate is git-ignored and regenerated by
+        ``make eval-baselines`` (issue #188), so this asserts the manifest
+        contract holds rather than hardcoding domains from a since-decayed
+        2026-02-24 snapshot.
+        """
+        bdir = _make_baselines_dir()
+        if not (bdir / "manifest.json").exists():
+            pytest.skip("baselines/manifest.json not found (run `make eval-baselines`)")
 
         gt = load_ground_truth()
         report = evaluate_baseline(gt)
-        assert len(report.entities) >= 3  # at least the original 3
-
-        # walmart-seed1: all 17 are TPs, no FPs
-        ws1 = next(e for e in report.entities if e.label_id == "walmart-seed1")
-        assert ws1.false_positive_domains == []
-
-        # walmart-seed2: hubspot.com and exacttarget.com are FPs
-        ws2 = next(e for e in report.entities if e.label_id == "walmart-seed2")
-        assert set(ws2.false_positive_domains) == {"hubspot.com", "exacttarget.com"}
-
-        # panw: all 26 are TPs
-        panw = next(e for e in report.entities if e.label_id == "panw-20260217")
-        assert panw.false_positive_domains == []
+        # Every evaluated entity corresponds to a ground-truth label.
+        gt_ids = {g.label_id for g in gt}
+        assert report.entities  # non-empty: a missing substrate would have raised
+        assert all(e.label_id in gt_ids for e in report.entities)
 
 
 def _make_baselines_dir() -> Path:
     """Return the real baselines directory path."""
     return Path(__file__).parent.parent.parent / "baselines"
+
+
+def _write_baseline_with_manifest(
+    baselines_dir: Path,
+    results: dict[str, ScoutResult],
+    scorer: str | None = None,
+) -> BaselineManifest:
+    """Write baseline JSON files plus a matching manifest into ``baselines_dir``.
+
+    Defaults the manifest scorer to the current identity so metric tests don't
+    emit spurious scorer-drift warnings; the drift test passes an explicit stale
+    value.
+    """
+    if scorer is None:
+        from domain_scout.eval import _learned_scorer_identity
+
+        scorer = _learned_scorer_identity()
+    entries: list[BaselineManifestEntry] = []
+    for label_id, result in results.items():
+        fname = f"{label_id}.json"
+        fpath = baselines_dir / fname
+        fpath.write_text(result.model_dump_json(indent=2))
+        entries.append(
+            BaselineManifestEntry(
+                label_id=label_id,
+                file=fname,
+                sha256=hashlib.sha256(fpath.read_bytes()).hexdigest(),
+                domains=len(result.domains),
+            )
+        )
+    manifest = BaselineManifest(
+        generated_at="2026-02-24T00:00:00+00:00",
+        tool_version="0.0.0-test",
+        scorer=scorer,
+        source="test fixture",
+        entries=entries,
+    )
+    (baselines_dir / "manifest.json").write_text(manifest.model_dump_json(indent=2))
+    return manifest
 
 
 # ---------------------------------------------------------------------------
@@ -353,6 +561,109 @@ class TestEvaluateLive:
         assert entity.metrics[0].precision == pytest.approx(0.667, abs=0.001)
         assert entity.metrics[0].false_positives == 1
         assert "evil.com" in entity.false_positive_domains
+
+
+# ---------------------------------------------------------------------------
+# record_baselines (substrate generation) tests
+# ---------------------------------------------------------------------------
+
+
+class TestRecordBaselines:
+    @pytest.mark.asyncio
+    async def test_writes_files_and_manifest(self, tmp_path: Path) -> None:
+        """record_baselines persists one file per entity and a matching manifest."""
+        gt = [
+            GroundTruthEntry(
+                label_id="alpha",
+                company_name="Alpha",
+                seeds=["alpha.com"],
+                owned_domains=["alpha.com"],
+            ),
+            GroundTruthEntry(
+                label_id="beta",
+                company_name="Beta",
+                seeds=["beta.com"],
+                owned_domains=["beta.com"],
+            ),
+        ]
+        results = {
+            "Alpha": _make_scout_result(["alpha.com", "alpha.net"], company_name="Alpha"),
+            "Beta": _make_scout_result(["beta.com"], company_name="Beta"),
+        }
+
+        with patch("domain_scout.scout.Scout") as mock_scout_cls:
+            mock_scout = mock_scout_cls.return_value
+            mock_scout.discover_async = AsyncMock(
+                side_effect=lambda entity: results[entity.company_name]
+            )
+            manifest = await record_baselines(gt, baselines_dir=tmp_path)
+
+        # Files written per entity.
+        assert (tmp_path / "alpha.json").exists()
+        assert (tmp_path / "beta.json").exists()
+        # Manifest references exactly those files, sorted by label_id, with digests
+        # that match the bytes on disk.
+        assert [e.label_id for e in manifest.entries] == ["alpha", "beta"]
+        assert manifest.scorer  # scorer identity stamped
+        assert manifest.git_commit is None or isinstance(manifest.git_commit, str)
+        assert (
+            manifest.model_dump()
+            == BaselineManifest.model_validate_json(
+                (tmp_path / "manifest.json").read_text()
+            ).model_dump()
+        )
+
+        # The written substrate round-trips through evaluate_baseline (loud path).
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
+        assert {e.label_id for e in report.entities} == {"alpha", "beta"}
+
+    @pytest.mark.asyncio
+    async def test_limit_records_smoke_subset(self, tmp_path: Path) -> None:
+        """--limit records only the first N entities; the manifest lists only those."""
+        gt = [
+            GroundTruthEntry(
+                label_id=f"e{i}",
+                company_name=f"Co{i}",
+                seeds=[f"co{i}.com"],
+                owned_domains=[f"co{i}.com"],
+            )
+            for i in range(5)
+        ]
+        with patch("domain_scout.scout.Scout") as mock_scout_cls:
+            mock_scout = mock_scout_cls.return_value
+            mock_scout.discover_async = AsyncMock(
+                side_effect=lambda entity: _make_scout_result(
+                    [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                )
+            )
+            manifest = await record_baselines(gt, baselines_dir=tmp_path, limit=2)
+
+        assert [e.label_id for e in manifest.entries] == ["e0", "e1"]
+        assert not (tmp_path / "e2.json").exists()
+
+    @pytest.mark.asyncio
+    async def test_rerun_manifest_references_only_current_run(self, tmp_path: Path) -> None:
+        """A narrower re-run overwrites the manifest to reference only its outputs."""
+        gt = [
+            GroundTruthEntry(
+                label_id=f"e{i}",
+                company_name=f"Co{i}",
+                seeds=[f"co{i}.com"],
+                owned_domains=[f"co{i}.com"],
+            )
+            for i in range(3)
+        ]
+        with patch("domain_scout.scout.Scout") as mock_scout_cls:
+            mock_scout = mock_scout_cls.return_value
+            mock_scout.discover_async = AsyncMock(
+                side_effect=lambda entity: _make_scout_result(
+                    [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                )
+            )
+            await record_baselines(gt, baselines_dir=tmp_path)  # records e0,e1,e2
+            manifest = await record_baselines(gt, baselines_dir=tmp_path, limit=1)  # e0 only
+
+        assert [e.label_id for e in manifest.entries] == ["e0"]
 
 
 # ---------------------------------------------------------------------------
@@ -502,8 +813,7 @@ class TestLearnedScorerLeg:
                 not_owned=["filler.com"],
             )
         ]
-        baseline_path = tmp_path / "acme.json"
-        baseline_path.write_text(_make_learned_fixture().model_dump_json())
+        _write_baseline_with_manifest(tmp_path, {"acme": _make_learned_fixture()})
 
         report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
 
@@ -539,7 +849,7 @@ class TestLearnedScorerLeg:
             company_name="TestCo",
             seeds=["test.com"],
         )
-        (tmp_path / "test-entity.json").write_text(result.model_dump_json())
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result})
 
         report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(3,))
         assert report.learned_entities[0].metrics == report.entities[0].metrics
@@ -548,16 +858,12 @@ class TestLearnedScorerLeg:
             == report.entities[0].false_positive_domains
         )
 
-    def test_no_baselines_no_learned_scorer_identity(self, tmp_path: Path) -> None:
-        gt = [
-            GroundTruthEntry(
-                label_id="missing",
-                company_name="Missing Corp",
-                seeds=["missing.com"],
-                owned_domains=["missing.com"],
-            )
-        ]
-        report = evaluate_baseline(gt, baselines_dir=tmp_path)
+    def test_no_learned_scorer_identity_on_empty_report(self) -> None:
+        """An empty EvalReport carries no learned-scorer identity."""
+        # Constructed directly: evaluate_baseline now raises on an empty substrate
+        # rather than returning an empty report (see
+        # TestEvaluateBaseline.test_empty_substrate_no_manifest_fails_loudly).
+        report = EvalReport(mode="baseline", entities=[])
         assert report.learned_entities == []
         assert report.learned_scorer is None
 
@@ -571,7 +877,7 @@ class TestLearnedScorerLeg:
                 not_owned=["filler.com"],
             )
         ]
-        (tmp_path / "acme.json").write_text(_make_learned_fixture().model_dump_json())
+        _write_baseline_with_manifest(tmp_path, {"acme": _make_learned_fixture()})
 
         report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(1,))
         table = format_table(report)
