@@ -1,7 +1,8 @@
 """Evaluation harness for domain-scout: precision/recall against labeled ground truth.
 
 Supports three modes:
-  - baseline: load pre-recorded ScoutResult JSON files and compute metrics
+  - baseline: load pre-recorded BaselineRecord JSON files (ScoutResult + the
+    score-time ScoringInputs production scoring consumed, #187) and compute metrics
   - live: run Scout.discover_async() against real services and compute metrics
   - record: run live discovery and persist the results as the baseline substrate
     (baselines/{label_id}.json) plus a provenance manifest (baselines/manifest.json)
@@ -31,11 +32,23 @@ from pathlib import Path
 
 from pydantic import BaseModel, Field, ValidationError
 
-from domain_scout.models import ScoutResult
+from domain_scout.models import (  # noqa: TC001 — Pydantic needs runtime imports
+    ScoringInputs,
+    ScoutResult,
+)
 
 _GROUND_TRUTH_PATH = Path(__file__).parent / "eval_ground_truth.yaml"
 _BASELINES_DIR = Path(__file__).parent.parent / "baselines"
 _MANIFEST_NAME = "manifest.json"
+
+# Substrate schema version, stamped in the manifest by --mode record.
+#   1: baseline files were plain ScoutResult JSON (pre-#187). The learned leg
+#      could only approximate production scoring from post-pipeline state.
+#   2: baseline files are BaselineRecord JSON — the ScoutResult plus per-domain
+#      score-time ScoringInputs, so the learned leg replays production exactly.
+# evaluate_baseline refuses (loudly) any other version: an old substrate must
+# be re-recorded, never silently scored the approximated way.
+_SUBSTRATE_SCHEMA = 2
 
 _DEFAULT_K_VALUES = (5, 10, 20)
 
@@ -92,9 +105,10 @@ class EvalReport(BaseModel):
     """Complete evaluation report across all entities.
 
     ``entities`` carries the heuristic leg (ranking as recorded in the
-    ScoutResult). ``learned_entities`` carries the learned-scorer leg: the
-    same results re-scored and re-ranked through the learned model, so
-    ``make eval`` exercises both scorer paths pre-ship (issue #183).
+    ScoutResult). ``learned_entities`` carries the learned-scorer leg: the same
+    results re-scored through the learned model from the captured score-time
+    inputs (an exact replay of production scoring, #187), so ``make eval``
+    exercises both scorer paths pre-ship (issue #183).
     """
 
     mode: str
@@ -130,7 +144,25 @@ class BaselineManifest(BaseModel):
     source: str  # provenance of the underlying data, e.g. "live crt.sh discovery"
     mode: str = "live"
     git_commit: str | None = None
+    # Defaults to 1 so pre-#187 manifests (which lack the field) validate and
+    # are then refused with an explicit re-record message (see _SUBSTRATE_SCHEMA).
+    substrate_schema: int = 1
     entries: list[BaselineManifestEntry]
+
+
+class BaselineRecord(BaseModel):
+    """One substrate file (schema 2): the persisted result plus score-time inputs.
+
+    ``scoring_inputs`` maps every scored candidate domain (a superset of
+    ``scout_result.domains`` — sub-threshold candidates are captured too) to the
+    exact inputs production scoring consumed, captured by ``--mode record``
+    before ``_infra_boost``/dedup mutated them (issue #187). The learned eval
+    leg replays production scoring from these instead of approximating it from
+    the post-pipeline ``DiscoveredDomain`` state.
+    """
+
+    scout_result: ScoutResult
+    scoring_inputs: dict[str, ScoringInputs] = Field(default_factory=dict)
 
 
 # ---------------------------------------------------------------------------
@@ -260,61 +292,67 @@ def _entity_result(
     )
 
 
-def _learned_ranked_domains(scout_result: ScoutResult) -> list[str]:
-    """Re-rank a ScoutResult's domains with the learned scorer.
+def _learned_scored_domains(record: BaselineRecord) -> list[tuple[float, str]]:
+    """Score each recorded domain exactly as production's learned path would.
 
-    Mirrors the gating in ``Scout._score_confidence``: the learned path fires
-    only for domains with cert org evidence; every other domain keeps its
-    recorded (heuristic) confidence — the same mixed ranking production
-    produces with ``use_learned_scorer=True``.
+    Replays ``Scout._score_confidence`` (learned path) plus the post-scoring
+    ``_infra_boost`` addend from the score-time :class:`ScoringInputs` captured
+    at record time — the same gating (learned fires only when score-time cert
+    org evidence exists; every other domain keeps its recorded confidence), the
+    same pre-boost sources, the same pre-dedup evidence aggregates, and the same
+    boost formula/cap/rounding. This closes the #187 approximation: the eval leg
+    now scores the SAME inputs production scores.
 
-    This is an approximation, not a bit-exact replay of a live learned run.
-    Production scores from the pre-output ``_DomainAccum`` state; here only
-    the persisted ``DiscoveredDomain`` is available, which differs in three
-    ways: (1) the post-scoring ``_infra_boost`` +0.05 addend is not
-    re-applied; (2) ``sources`` may contain the ``shared_infra`` tag that
-    ``_infra_boost`` added *after* production scored (flipping the
-    ``has_shared_infra`` feature); (3) ``evidence`` has been through
-    ``_dedup_evidence``, so ``evidence_count``/``unique_cert_count`` can be
-    lower than what production saw. Good enough to exercise the learned path
-    and compare rankings pre-ship; not a substitute for a live
-    ``use_learned_scorer=True`` eval.
+    Residual, disclosed differences from a live ``use_learned_scorer=True`` run
+    (all downstream of scoring itself, not of the scoring inputs): which
+    candidates ``_infra_boost`` *checked* and which domains cleared
+    ``inclusion_threshold`` were decided by the recorded run's (heuristic)
+    confidences; under a live learned run those selection sets could differ.
+    Tracked in issue #197.
     """
     from domain_scout.matching.entity_match import org_name_similarity
     from domain_scout.scorer import score_confidence
 
-    company = scout_result.entity.company_name
+    result = record.scout_result
+    company = result.entity.company_name
     scored: list[tuple[float, str]] = []
-    for d in scout_result.domains:
-        if d.domain and d.cert_org_names:
-            best_sim = max(
-                (org_name_similarity(org, company) for org in d.cert_org_names),
-                default=0.0,
+    for d in result.domains:
+        inputs = record.scoring_inputs.get(d.domain)
+        if inputs is None:
+            raise EvalSubstrateError(
+                f"Substrate record for {company!r} has no score-time scoring inputs for "
+                f"domain {d.domain!r} — the record is incomplete and the learned leg "
+                f"cannot replay production scoring. Re-record with `make eval-baselines`."
             )
-            cert_ids = {ev.cert_id for ev in d.evidence if ev.cert_id is not None}
-            rdap_sim = max(
-                (
-                    ev.similarity_score
-                    for ev in d.evidence
-                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
-                ),
+        if d.domain and inputs.cert_org_names:
+            best_sim = max(
+                (org_name_similarity(org, company) for org in inputs.cert_org_names),
                 default=0.0,
             )
             confidence = score_confidence(
                 domain=d.domain,
                 company_name=company,
                 best_similarity=best_sim,
-                sources=set(d.sources),
-                cert_org_names=set(d.cert_org_names),
-                resolves=d.resolves,
-                evidence_count=len(d.evidence),
-                unique_cert_count=len(cert_ids),
-                rdap_similarity=rdap_sim,
+                sources=set(inputs.sources),
+                cert_org_names=set(inputs.cert_org_names),
+                resolves=inputs.resolves,
+                evidence_count=inputs.evidence_count,
+                unique_cert_count=inputs.unique_cert_count,
+                rdap_similarity=inputs.rdap_similarity,
             )
+            if inputs.infra_boosted:
+                # Same formula, cap, and rounding as Scout._infra_boost.
+                max_conf = 1.0 if "cross_seed_verified" in inputs.sources else 0.95
+                confidence = round(min(max_conf, confidence + 0.05), 2)
         else:
             confidence = d.confidence
         scored.append((confidence, d.domain))
+    return scored
 
+
+def _learned_ranked_domains(record: BaselineRecord) -> list[str]:
+    """Rank a substrate record's domains by exact-replayed learned confidence."""
+    scored = _learned_scored_domains(record)
     # Stable sort: ties keep their recorded relative order.
     scored.sort(key=lambda item: item[0], reverse=True)
     return [domain for _, domain in scored]
@@ -375,7 +413,7 @@ def _resolve_manifest_substrate(
     manifest: BaselineManifest,
     baselines_dir: Path,
     gt_by_id: dict[str, GroundTruthEntry],
-) -> list[tuple[GroundTruthEntry, ScoutResult]]:
+) -> list[tuple[GroundTruthEntry, BaselineRecord]]:
     """Validate the manifest-referenced files in scope, then load them.
 
     Validation (existence + sha256) covers exactly the manifest entries whose
@@ -395,7 +433,7 @@ def _resolve_manifest_substrate(
             f"{len(gt_by_id)} ground-truth label(s)). Nothing to evaluate."
         )
 
-    pairs: list[tuple[GroundTruthEntry, ScoutResult]] = []
+    pairs: list[tuple[GroundTruthEntry, BaselineRecord]] = []
     missing: list[str] = []
     corrupt: list[str] = []
 
@@ -408,7 +446,9 @@ def _resolve_manifest_substrate(
         if actual != entry.sha256:
             corrupt.append(f"{entry.file} (manifest {entry.sha256[:12]}, on-disk {actual[:12]})")
             continue
-        pairs.append((gt_by_id[entry.label_id], ScoutResult.model_validate_json(fpath.read_text())))
+        pairs.append(
+            (gt_by_id[entry.label_id], BaselineRecord.model_validate_json(fpath.read_text()))
+        )
 
     if missing or corrupt:
         details: list[str] = []
@@ -437,8 +477,11 @@ def evaluate_baseline(
 ) -> EvalReport:
     """Evaluate the recorded baseline substrate against ground truth.
 
-    Runs both scorer legs: the recorded (heuristic) ranking and a learned
-    re-scoring of the same evidence.
+    Runs both scorer legs: the recorded (heuristic) ranking and an exact
+    learned-path replay from the score-time inputs captured at record time
+    (issue #187). Substrates recorded under an older schema (no captured
+    scoring inputs) are refused loudly — re-record rather than silently
+    falling back to approximating from post-pipeline state.
 
     The ``manifest.json`` written by ``--mode record`` is the substrate's single
     source of truth and is *required*: every file it lists must exist and match
@@ -459,6 +502,15 @@ def evaluate_baseline(
             f"interrupted `record` run can leave a partial set.)"
         )
 
+    if manifest.substrate_schema != _SUBSTRATE_SCHEMA:
+        raise EvalSubstrateError(
+            f"Baseline substrate at {bdir} was recorded under substrate schema "
+            f"{manifest.substrate_schema}; this eval requires schema {_SUBSTRATE_SCHEMA}, "
+            f"which captures score-time scoring inputs at record time so the learned leg "
+            f"replays production scoring exactly instead of approximating it from "
+            f"post-pipeline state (issue #187). Re-record with `make eval-baselines`."
+        )
+
     gt_by_id = {gt.label_id: gt for gt in ground_truth}
     pairs = _resolve_manifest_substrate(manifest, bdir, gt_by_id)
     current_scorer = _learned_scorer_identity()
@@ -472,11 +524,11 @@ def evaluate_baseline(
 
     results: list[EntityEvalResult] = []
     learned_results: list[EntityEvalResult] = []
-    for gt, scout_result in pairs:
+    for gt, record in pairs:
         # Ranked domain list (already sorted by confidence desc in ScoutResult)
-        ranked = [d.domain for d in scout_result.domains]
+        ranked = [d.domain for d in record.scout_result.domains]
         results.append(_entity_result(gt, ranked, k_values))
-        learned_results.append(_entity_result(gt, _learned_ranked_domains(scout_result), k_values))
+        learned_results.append(_entity_result(gt, _learned_ranked_domains(record), k_values))
 
     return EvalReport(
         mode="baseline",
@@ -521,11 +573,16 @@ async def record_baselines(
     entries: list[BaselineManifestEntry] = []
     for gt in targets:
         entity = EntityInput(company_name=gt.company_name, seed_domain=gt.seeds)
-        scout_result = await scout.discover_async(entity)
+        # Capture score-time scoring inputs alongside the result (issue #187):
+        # the learned eval leg replays production scoring from these instead of
+        # approximating it from the post-pipeline DiscoveredDomain state.
+        scoring_capture: dict[str, ScoringInputs] = {}
+        scout_result = await scout.discover_async(entity, scoring_capture=scoring_capture)
+        record = BaselineRecord(scout_result=scout_result, scoring_inputs=scoring_capture)
 
         fname = f"{gt.label_id}.json"
         fpath = bdir / fname
-        fpath.write_text(scout_result.model_dump_json(indent=2))
+        fpath.write_text(record.model_dump_json(indent=2))
         entries.append(
             BaselineManifestEntry(
                 label_id=gt.label_id,
@@ -544,6 +601,7 @@ async def record_baselines(
         source=source,
         mode="live",
         git_commit=_git_commit(),
+        substrate_schema=_SUBSTRATE_SCHEMA,
         entries=entries,
     )
     # Write the manifest atomically (tmp + rename) and last: readers treat the
@@ -567,8 +625,9 @@ async def evaluate_live(
 ) -> EvalReport:
     """Run Scout.discover_async() for each entity and evaluate against ground truth.
 
-    Discovery runs once per entity; both scorer legs are computed from the
-    same ScoutResult (the learned leg re-scores the collected evidence).
+    Discovery runs once per entity; both scorer legs are computed from the same
+    run (the learned leg replays production scoring from the score-time inputs
+    captured during that discovery, #187).
     """
     from domain_scout.models import EntityInput
     from domain_scout.scout import Scout
@@ -582,11 +641,13 @@ async def evaluate_live(
             company_name=gt.company_name,
             seed_domain=gt.seeds,
         )
-        scout_result = await scout.discover_async(entity)
+        scoring_capture: dict[str, ScoringInputs] = {}
+        scout_result = await scout.discover_async(entity, scoring_capture=scoring_capture)
+        record = BaselineRecord(scout_result=scout_result, scoring_inputs=scoring_capture)
 
         ranked = [d.domain for d in scout_result.domains]
         results.append(_entity_result(gt, ranked, k_values))
-        learned_results.append(_entity_result(gt, _learned_ranked_domains(scout_result), k_values))
+        learned_results.append(_entity_result(gt, _learned_ranked_domains(record), k_values))
 
     return EvalReport(
         mode="live",

@@ -6,13 +6,16 @@ import hashlib
 import textwrap
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 from unittest.mock import AsyncMock, patch
 
 import pytest
 
+from domain_scout.config import ScoutConfig
 from domain_scout.eval import (
     BaselineManifest,
     BaselineManifestEntry,
+    BaselineRecord,
     EntityEvalResult,
     EvalReport,
     EvalSubstrateError,
@@ -31,8 +34,15 @@ from domain_scout.models import (
     EntityInput,
     EvidenceRecord,
     RunMetadata,
+    ScoringInputs,
     ScoutResult,
 )
+from domain_scout.scout import Scout, _evidence_aggregates
+
+if TYPE_CHECKING:
+    from collections.abc import Callable
+
+    import httpx
 
 # ---------------------------------------------------------------------------
 # compute_metrics tests
@@ -232,6 +242,51 @@ def _make_scout_result(
     )
 
 
+def _capture_for(result: ScoutResult) -> dict[str, ScoringInputs]:
+    """Score-time inputs equal to the post-pipeline state.
+
+    Valid for synthetic fixtures where nothing was infra-boosted or deduped, so
+    score-time state and persisted state coincide by construction. Aggregates
+    come from the production `_evidence_aggregates` helper so this can't drift
+    from how the pipeline actually aggregates evidence.
+    """
+    capture: dict[str, ScoringInputs] = {}
+    for d in result.domains:
+        evidence_count, unique_cert_count, rdap_similarity = _evidence_aggregates(d.evidence)
+        capture[d.domain] = ScoringInputs(
+            sources=list(d.sources),
+            cert_org_names=list(d.cert_org_names),
+            resolves=d.resolves,
+            evidence_count=evidence_count,
+            unique_cert_count=unique_cert_count,
+            rdap_similarity=rdap_similarity,
+        )
+    return capture
+
+
+def _record_for(result: ScoutResult) -> BaselineRecord:
+    """Wrap a fixture ScoutResult into a schema-2 BaselineRecord."""
+    return BaselineRecord(scout_result=result, scoring_inputs=_capture_for(result))
+
+
+def _mock_discover(results_fn: Callable[[EntityInput], ScoutResult]) -> Callable[..., Any]:
+    """Side effect for a mocked discover_async that fills scoring_capture.
+
+    Mirrors the real pipeline contract: when the caller passes a capture dict,
+    every returned domain gets a score-time ScoringInputs entry.
+    """
+
+    async def _side_effect(
+        entity: EntityInput, *, scoring_capture: dict[str, ScoringInputs] | None = None
+    ) -> ScoutResult:
+        result = results_fn(entity)
+        if scoring_capture is not None:
+            scoring_capture.update(_capture_for(result))
+        return result
+
+    return _side_effect
+
+
 class TestEvaluateBaseline:
     def test_with_temp_fixtures(self, tmp_path: Path) -> None:
         """Evaluate baseline from temp directory with synthetic data."""
@@ -421,6 +476,45 @@ class TestEvaluateBaseline:
         with pytest.raises(EvalSubstrateError, match="1 absent and 1 corrupt"):
             evaluate_baseline([_gt("alpha"), _gt("beta"), _gt("gamma")], baselines_dir=tmp_path)
 
+    def test_old_schema_substrate_fails_loudly(self, tmp_path: Path) -> None:
+        """A pre-#187 substrate (schema 1, no score-time inputs) is refused loudly.
+
+        The learned leg must never silently fall back to approximating from
+        post-pipeline state — an old substrate gets an explicit re-record
+        message instead.
+        """
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com"],
+            )
+        ]
+        result = _make_scout_result(["test.com"], company_name="TestCo")
+        _write_baseline_with_manifest(tmp_path, {"test-entity": result}, substrate_schema=1)
+
+        with pytest.raises(EvalSubstrateError, match="substrate schema 1.*Re-record"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
+    def test_missing_scoring_inputs_fails_loudly(self, tmp_path: Path) -> None:
+        """A schema-2 record lacking a domain's score-time inputs is a loud error."""
+        gt = [
+            GroundTruthEntry(
+                label_id="test-entity",
+                company_name="TestCo",
+                seeds=["test.com"],
+                owned_domains=["test.com", "test.net"],
+            )
+        ]
+        result = _make_scout_result(["test.com", "test.net"], company_name="TestCo")
+        record = _record_for(result)
+        del record.scoring_inputs["test.net"]
+        _write_baseline_with_manifest(tmp_path, {"test-entity": record})
+
+        with pytest.raises(EvalSubstrateError, match="no score-time scoring inputs"):
+            evaluate_baseline(gt, baselines_dir=tmp_path)
+
     def test_manifest_no_matching_ground_truth_fails_loudly(self, tmp_path: Path) -> None:
         """A manifest with no entry matching the ground truth is a loud error."""
         gt = [
@@ -485,14 +579,18 @@ def _make_baselines_dir() -> Path:
 
 def _write_baseline_with_manifest(
     baselines_dir: Path,
-    results: dict[str, ScoutResult],
+    results: dict[str, ScoutResult | BaselineRecord],
     scorer: str | None = None,
+    substrate_schema: int = 2,
 ) -> BaselineManifest:
     """Write baseline JSON files plus a matching manifest into ``baselines_dir``.
 
-    Defaults the manifest scorer to the current identity so metric tests don't
-    emit spurious scorer-drift warnings; the drift test passes an explicit stale
-    value.
+    Plain ScoutResult fixtures are wrapped into schema-2 BaselineRecords with
+    score-time inputs equal to their post-pipeline state (valid for synthetic
+    fixtures — nothing was boosted or deduped). Defaults the manifest scorer to
+    the current identity so metric tests don't emit spurious scorer-drift
+    warnings; the drift test passes an explicit stale value. The schema-gate
+    test passes an explicit old ``substrate_schema``.
     """
     if scorer is None:
         from domain_scout.eval import _learned_scorer_identity
@@ -500,15 +598,16 @@ def _write_baseline_with_manifest(
         scorer = _learned_scorer_identity()
     entries: list[BaselineManifestEntry] = []
     for label_id, result in results.items():
+        record = result if isinstance(result, BaselineRecord) else _record_for(result)
         fname = f"{label_id}.json"
         fpath = baselines_dir / fname
-        fpath.write_text(result.model_dump_json(indent=2))
+        fpath.write_text(record.model_dump_json(indent=2))
         entries.append(
             BaselineManifestEntry(
                 label_id=label_id,
                 file=fname,
                 sha256=hashlib.sha256(fpath.read_bytes()).hexdigest(),
-                domains=len(result.domains),
+                domains=len(record.scout_result.domains),
             )
         )
     manifest = BaselineManifest(
@@ -516,6 +615,7 @@ def _write_baseline_with_manifest(
         tool_version="0.0.0-test",
         scorer=scorer,
         source="test fixture",
+        substrate_schema=substrate_schema,
         entries=entries,
     )
     (baselines_dir / "manifest.json").write_text(manifest.model_dump_json(indent=2))
@@ -549,7 +649,7 @@ class TestEvaluateLive:
 
         with patch("domain_scout.scout.Scout") as mock_scout_cls:
             mock_scout = mock_scout_cls.return_value
-            mock_scout.discover_async = AsyncMock(return_value=mock_result)
+            mock_scout.discover_async = AsyncMock(side_effect=_mock_discover(lambda _: mock_result))
 
             report = await evaluate_live(gt, k_values=(3,))
 
@@ -594,7 +694,7 @@ class TestRecordBaselines:
         with patch("domain_scout.scout.Scout") as mock_scout_cls:
             mock_scout = mock_scout_cls.return_value
             mock_scout.discover_async = AsyncMock(
-                side_effect=lambda entity: results[entity.company_name]
+                side_effect=_mock_discover(lambda entity: results[entity.company_name])
             )
             manifest = await record_baselines(gt, baselines_dir=tmp_path)
 
@@ -632,8 +732,10 @@ class TestRecordBaselines:
         with patch("domain_scout.scout.Scout") as mock_scout_cls:
             mock_scout = mock_scout_cls.return_value
             mock_scout.discover_async = AsyncMock(
-                side_effect=lambda entity: _make_scout_result(
-                    [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                side_effect=_mock_discover(
+                    lambda entity: _make_scout_result(
+                        [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                    )
                 )
             )
             manifest = await record_baselines(gt, baselines_dir=tmp_path, limit=2)
@@ -656,8 +758,10 @@ class TestRecordBaselines:
         with patch("domain_scout.scout.Scout") as mock_scout_cls:
             mock_scout = mock_scout_cls.return_value
             mock_scout.discover_async = AsyncMock(
-                side_effect=lambda entity: _make_scout_result(
-                    [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                side_effect=_mock_discover(
+                    lambda entity: _make_scout_result(
+                        [f"{entity.company_name.lower()}.com"], company_name=entity.company_name
+                    )
                 )
             )
             await record_baselines(gt, baselines_dir=tmp_path)  # records e0,e1,e2
@@ -797,11 +901,11 @@ class TestLearnedScorerLeg:
     def test_learned_leg_reranks_by_learned_confidence(self) -> None:
         from domain_scout.eval import _learned_ranked_domains
 
-        result = _make_learned_fixture()
+        record = _record_for(_make_learned_fixture())
         # Recorded ranking: filler.com (0.6) ahead of acme-cert.com (0.2).
-        assert [d.domain for d in result.domains] == ["filler.com", "acme-cert.com"]
+        assert [d.domain for d in record.scout_result.domains] == ["filler.com", "acme-cert.com"]
         # Learned leg: acme-cert.com re-scored high, filler.com keeps 0.6.
-        assert _learned_ranked_domains(result) == ["acme-cert.com", "filler.com"]
+        assert _learned_ranked_domains(record) == ["acme-cert.com", "filler.com"]
 
     def test_baseline_runs_both_scorer_legs(self, tmp_path: Path) -> None:
         gt = [
@@ -898,7 +1002,9 @@ class TestLearnedScorerLeg:
         ]
         with patch("domain_scout.scout.Scout") as mock_scout_cls:
             mock_scout = mock_scout_cls.return_value
-            mock_scout.discover_async = AsyncMock(return_value=_make_learned_fixture())
+            mock_scout.discover_async = AsyncMock(
+                side_effect=_mock_discover(lambda _: _make_learned_fixture())
+            )
 
             report = await evaluate_live(gt, k_values=(1,))
 
@@ -906,3 +1012,191 @@ class TestLearnedScorerLeg:
         assert report.entities[0].metrics[0].precision == 0.0
         assert report.learned_entities[0].metrics[0].precision == 1.0
         assert report.learned_scorer == "learned_lr/v1@2026-03-01+uncal"
+
+
+# ---------------------------------------------------------------------------
+# Learned-leg parity: exact replay of the production learned path (issue #187)
+# ---------------------------------------------------------------------------
+
+# Fixture designed so the pipeline mutates post-scoring state in every way #187
+# names: acme-cloud.com appears in three certs with the same org (dedup will
+# collapse its evidence), and shares infrastructure with the seed (_infra_boost
+# will add the shared_infra tag + 0.05 after scoring).
+_PARITY_CT_DOMAIN: dict[str, list[dict[str, object]]] = {
+    "acme.com": [
+        {
+            "cert_id": 11,
+            "common_name": "acme.com",
+            "subject": "O=Acme Corp",
+            "org_name": "Acme Corp",
+            "not_before": "2024-01-01T00:00:00",
+            "not_after": "2025-01-01T00:00:00",
+            "san_dns_names": ["acme.com", "www.acme.com", "acme-cloud.com"],
+        },
+        {
+            "cert_id": 12,
+            "common_name": "acme.com",
+            "subject": "O=Acme Corp",
+            "org_name": "Acme Corp",
+            "not_before": "2024-06-01T00:00:00",
+            "not_after": "2025-06-01T00:00:00",
+            "san_dns_names": ["acme.com", "acme-cloud.com"],
+        },
+    ],
+}
+
+_PARITY_CT_ORG: list[dict[str, object]] = [
+    {
+        "cert_id": 13,
+        "common_name": "acme.net",
+        "subject": "O=Acme Corp",
+        "org_name": "Acme Corp",
+        "not_before": "2024-02-01T00:00:00",
+        "not_after": "2025-02-01T00:00:00",
+        "san_dns_names": ["acme.net", "acme-cloud.com"],
+    },
+]
+
+_PARITY_DNS: dict[str, bool] = {
+    "acme.com": True,
+    "www.acme.com": True,
+    "acme-cloud.com": True,
+    "acme.net": True,
+}
+
+
+def _make_parity_scout(*, use_learned_scorer: bool) -> Scout:
+    """Full pipeline Scout with deterministic mocked sources (no network)."""
+    config = ScoutConfig(
+        use_learned_scorer=use_learned_scorer,
+        # Include every scored domain so the two runs' output sets match by
+        # construction (learned probabilities need not clear the default 0.6).
+        inclusion_threshold=0.0,
+    )
+    scout = Scout(config=config)
+
+    async def ct_search_by_domain(
+        domain: str, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        return _PARITY_CT_DOMAIN.get(domain, [])
+
+    async def ct_search_by_org(
+        org_name: str, *, verify_org: bool = True, client: httpx.AsyncClient | None = None
+    ) -> list[dict[str, object]]:
+        return list(_PARITY_CT_ORG)
+
+    scout._ct.search_by_domain = AsyncMock(side_effect=ct_search_by_domain)  # type: ignore[method-assign]
+    scout._ct.search_by_org = AsyncMock(side_effect=ct_search_by_org)  # type: ignore[method-assign]
+    scout._ct.get_cert_org = AsyncMock(return_value="Acme Corp")  # type: ignore[method-assign]
+
+    scout._rdap.get_registrant_org = AsyncMock(return_value="Acme Corp")  # type: ignore[method-assign]
+    scout._rdap.get_registrant_info = AsyncMock(  # type: ignore[method-assign]
+        return_value={"org": "Acme Corp", "name": None, "country": "US"}
+    )
+
+    async def dns_resolves(domain: str) -> bool:
+        return _PARITY_DNS.get(domain, False)
+
+    async def dns_bulk_resolve(domains: list[str]) -> dict[str, bool]:
+        return {d: _PARITY_DNS.get(d, False) for d in domains}
+
+    async def dns_shares_infrastructure(ref: str, other: str) -> bool:
+        # Deterministic and scorer-independent: only acme-cloud.com shares
+        # infrastructure with the reference, in both pipeline runs.
+        return other == "acme-cloud.com"
+
+    scout._dns.resolves = AsyncMock(side_effect=dns_resolves)  # type: ignore[method-assign]
+    scout._dns.bulk_resolve = AsyncMock(side_effect=dns_bulk_resolve)  # type: ignore[method-assign]
+    scout._dns.shares_infrastructure = AsyncMock(side_effect=dns_shares_infrastructure)  # type: ignore[method-assign]
+
+    return scout
+
+
+class TestLearnedLegParity:
+    """The eval learned leg scores the SAME inputs production scores (#187)."""
+
+    @pytest.mark.asyncio
+    async def test_replay_matches_production_learned_run(self) -> None:
+        """Exact parity: replayed confidences == a use_learned_scorer=True run.
+
+        Run A is production with the learned scorer on. Run B is the recorded
+        (heuristic) run with score-time capture — what --mode record persists.
+        The eval's learned leg replayed from Run B must reproduce Run A's
+        confidences exactly, including for the infra-boosted domain, while the
+        pre-#187 approximation (re-scoring Run B's post-pipeline state)
+        provably cannot.
+        """
+        from domain_scout.eval import _learned_scored_domains
+
+        entity = EntityInput(company_name="Acme Corp", seed_domain=["acme.com"])
+
+        # Run A: production learned run.
+        result_prod = await _make_parity_scout(use_learned_scorer=True).discover_async(entity)
+        prod_conf = {d.domain: d.confidence for d in result_prod.domains}
+
+        # Run B: recorded heuristic run with score-time capture (--mode record).
+        capture: dict[str, ScoringInputs] = {}
+        result_rec = await _make_parity_scout(use_learned_scorer=False).discover_async(
+            entity, scoring_capture=capture
+        )
+        record = BaselineRecord(scout_result=result_rec, scoring_inputs=capture)
+
+        # Same domains came out of both runs (inclusion_threshold=0.0).
+        assert {d.domain for d in result_rec.domains} == set(prod_conf)
+
+        # The fixture actually exercises the #187 mutations: the boost fired...
+        boosted = next(d for d in result_rec.domains if d.domain == "acme-cloud.com")
+        assert "shared_infra" in boosted.sources
+        snapshot = capture["acme-cloud.com"]
+        assert snapshot.infra_boosted is True
+        assert "shared_infra" not in snapshot.sources  # score-time sources are pre-boost
+        # ...and dedup shrank the persisted evidence below the score-time count
+        # (the +1 post-scoring shared_infra evidence record notwithstanding).
+        assert snapshot.evidence_count > len(boosted.evidence)
+
+        # Exact parity, every domain, including the boosted one.
+        replayed = {domain: conf for conf, domain in _learned_scored_domains(record)}
+        assert replayed == prod_conf
+
+        # The pre-#187 approximation (post-pipeline state, no boost re-applied)
+        # does NOT reproduce production for the boosted domain — the defect this
+        # substrate schema exists to close.
+        approx_record = BaselineRecord(
+            scout_result=result_rec, scoring_inputs=_capture_for(result_rec)
+        )
+        approx = {domain: conf for conf, domain in _learned_scored_domains(approx_record)}
+        assert approx["acme-cloud.com"] != prod_conf["acme-cloud.com"]
+
+    @pytest.mark.asyncio
+    async def test_record_replay_roundtrip_through_files(self, tmp_path: Path) -> None:
+        """record_baselines -> evaluate_baseline replays exactly through disk."""
+        from domain_scout.eval import _learned_scored_domains
+
+        gt = [
+            GroundTruthEntry(
+                label_id="acme",
+                company_name="Acme Corp",
+                seeds=["acme.com"],
+                owned_domains=["acme.com", "acme.net", "acme-cloud.com"],
+            )
+        ]
+        scout = _make_parity_scout(use_learned_scorer=False)
+        with patch("domain_scout.scout.Scout", return_value=scout):
+            manifest = await record_baselines(gt, baselines_dir=tmp_path)
+
+        assert manifest.substrate_schema == 2
+        # The persisted record round-trips: score-time inputs survive disk, and
+        # the boosted domain's snapshot still replays the boost.
+        loaded = BaselineRecord.model_validate_json((tmp_path / "acme.json").read_text())
+        assert loaded.scoring_inputs["acme-cloud.com"].infra_boosted is True
+
+        report = evaluate_baseline(gt, baselines_dir=tmp_path, k_values=(3,))
+        assert report.learned_entities  # learned leg ran from the loaded record
+
+        # Parity holds through the disk roundtrip: replaying the loaded record
+        # reproduces a live use_learned_scorer=True run exactly.
+        entity = EntityInput(company_name="Acme Corp", seed_domain=["acme.com"])
+        result_prod = await _make_parity_scout(use_learned_scorer=True).discover_async(entity)
+        prod_conf = {d.domain: d.confidence for d in result_prod.domains}
+        replayed = {domain: conf for conf, domain in _learned_scored_domains(loaded)}
+        assert replayed == prod_conf

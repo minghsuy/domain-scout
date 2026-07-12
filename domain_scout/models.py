@@ -38,6 +38,33 @@ class EvidenceRecord(BaseModel):
     signal_weight: float | None = None
 
 
+class ScoringInputs(BaseModel):
+    """Score-time inputs for one domain, captured before the pipeline mutates them.
+
+    ``Scout._score_confidence`` runs *before* ``_infra_boost`` (which adds the
+    ``shared_infra`` source tag, an evidence record, and a +0.05 confidence
+    addend) and before ``_build_output`` (which deduplicates evidence). A
+    persisted :class:`DiscoveredDomain` therefore records *post-pipeline* state
+    that differs from what the scorer saw. This model snapshots the exact
+    evidence-level inputs at scoring time (issue #187) so the eval harness can
+    replay production scoring instead of approximating it.
+
+    Captured: evidence-level state (sources, org names, aggregates) exactly as
+    ``_score_confidence`` consumed it. Recomputed at replay time: derived
+    features such as name similarity — the substrate freezes *evidence*, while
+    feature derivation and the scorer itself are the code under test.
+    """
+
+    sources: list[str]  # score-time sources (pre-_infra_boost), sorted
+    cert_org_names: list[str]  # sorted
+    resolves: bool
+    evidence_count: int  # len(evidence) at score time (pre-dedup)
+    unique_cert_count: int  # distinct cert_ids at score time (pre-dedup)
+    rdap_similarity: float  # max rdap_registrant_match similarity at score time
+    # True when _infra_boost later added its +0.05 to this domain's confidence.
+    infra_boosted: bool = False
+
+
 class DiscoveredDomain(BaseModel):
     """A single domain discovered during the search."""
 
