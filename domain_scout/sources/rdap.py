@@ -18,6 +18,17 @@ log = structlog.get_logger()
 
 _RDAP_BOOTSTRAP = "https://rdap.org/domain/"
 
+# Process-wide cap on concurrent rdap.org requests. rdap.org is a single shared
+# external resource, so its concurrency limit is a property of the *process*, not
+# of any individual scan. A per-``ScoutConfig`` value cannot size a single shared
+# semaphore deterministically: on a long-lived shared loop (the API's uvicorn
+# loop) the first instance to touch it froze the cap for every later scan (#172),
+# and giving each config its own semaphore would sum caps against rdap.org
+# (N1 + N2). The shared semaphore is therefore always sized to this constant.
+# ``ScoutConfig.max_rdap_concurrent`` is retained for backward compatibility but
+# no longer sizes the shared semaphore (see its deprecation note).
+RDAP_MAX_CONCURRENT = 3
+
 # TLDs not in the IANA RDAP bootstrap registry (https://data.iana.org/rdap/dns.json).
 # Requests to rdap.org for these TLDs return 404.  Skip them to avoid
 # unnecessary HTTP round-trips and noisy warning logs.
@@ -139,12 +150,16 @@ class RDAPLookup:
       the same config share one breaker; differing thresholds get their own
       (each still trips independently on rdap.org failures).
     - The semaphore is a single per-event-loop rate limiter — one global cap on
-      concurrent rdap.org requests, never the sum of per-scan caps. It is sized
-      from the config of whichever instance first uses it on a given loop and is
-      recreated when the loop changes (``Scout.discover`` runs ``asyncio.run``
-      per call, so the CLI gets a fresh, correctly-sized semaphore per scan;
-      concurrent scans on the API's shared loop share one cap). Profiles do not
-      vary ``max_rdap_concurrent``, so this is deterministic in practice.
+      concurrent rdap.org requests, never the sum of per-scan caps. Its size is
+      the process-wide ``RDAP_MAX_CONCURRENT`` constant, not a per-config value,
+      so the effective cap no longer depends on which instance touches the loop
+      first (#172). It is still recreated when the loop changes because a
+      Semaphore is bound to the loop it was created in (``Scout.discover`` runs
+      ``asyncio.run`` per call, so the CLI gets a fresh semaphore per scan;
+      concurrent scans on the API's shared loop share the one cap).
+
+    ``ScoutConfig.max_rdap_concurrent`` is deprecated (#172) and no longer sizes
+    this semaphore; constructing with a non-default value logs a warning.
     """
 
     # Shared breakers keyed by (failure_threshold, recovery_timeout).
@@ -155,6 +170,14 @@ class RDAPLookup:
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
+        if config.max_rdap_concurrent != RDAP_MAX_CONCURRENT:
+            # Honest deprecation: the shared semaphore is process-wide, so a
+            # per-config override is ignored rather than silently obeyed (#172).
+            log.warning(
+                "rdap.max_rdap_concurrent_deprecated",
+                configured=config.max_rdap_concurrent,
+                effective=RDAP_MAX_CONCURRENT,
+            )
         self._breaker = self._get_breaker(
             config.rdap_cb_failure_threshold,
             config.rdap_cb_recovery_timeout,
@@ -210,17 +233,21 @@ class RDAPLookup:
         }
 
     def _ensure_semaphore(self) -> asyncio.Semaphore:
-        """Return the shared per-loop rdap.org semaphore, sized from this config.
+        """Return the shared per-loop rdap.org semaphore, sized to RDAP_MAX_CONCURRENT.
+
+        The size is the process-wide ``RDAP_MAX_CONCURRENT`` constant, so the
+        effective cap is deterministic and independent of which instance touches
+        the loop first (#172) — unlike the prior behaviour, which froze the cap
+        from the first instance's ``max_rdap_concurrent`` on a shared loop.
 
         When Scout.discover() calls asyncio.run() per invocation, each call
         creates a new event loop. A Semaphore from a previous loop raises
         "bound to a different event loop", so it is recreated when the loop
-        changes — sized from the current instance's ``max_rdap_concurrent``
-        rather than a value frozen from the first-ever instance (#172).
+        changes.
         """
         loop_id = id(asyncio.get_running_loop())
         if RDAPLookup._semaphore is None or RDAPLookup._semaphore_loop_id != loop_id:
-            RDAPLookup._semaphore = asyncio.Semaphore(self._cfg.max_rdap_concurrent)
+            RDAPLookup._semaphore = asyncio.Semaphore(RDAP_MAX_CONCURRENT)
             RDAPLookup._semaphore_loop_id = loop_id
         return RDAPLookup._semaphore
 
