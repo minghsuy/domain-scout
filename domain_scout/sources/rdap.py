@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import asyncio
 import time
-from typing import TYPE_CHECKING, Literal
+from typing import TYPE_CHECKING, ClassVar, Literal
 
 import httpx
 import structlog
@@ -130,35 +130,52 @@ class _RDAPCircuitBreaker:
 class RDAPLookup:
     """Look up domain registration data via RDAP.
 
-    The circuit breaker and semaphore are class-level singletons, initialized
-    from the first instance's config. Subsequent instances reuse the same state.
+    rdap.org is a single shared external resource, so both the circuit breaker
+    and the concurrency semaphore are shared process-wide rather than per-scan.
+    To keep behaviour deterministic and independent of construction order (#172):
+
+    - Breakers live in a class-level registry keyed by their
+      ``(failure_threshold, recovery_timeout)`` parameters. Instances built from
+      the same config share one breaker; differing thresholds get their own
+      (each still trips independently on rdap.org failures).
+    - The semaphore is a single per-event-loop rate limiter — one global cap on
+      concurrent rdap.org requests, never the sum of per-scan caps. It is sized
+      from the config of whichever instance first uses it on a given loop and is
+      recreated when the loop changes (``Scout.discover`` runs ``asyncio.run``
+      per call, so the CLI gets a fresh, correctly-sized semaphore per scan;
+      concurrent scans on the API's shared loop share one cap). Profiles do not
+      vary ``max_rdap_concurrent``, so this is deterministic in practice.
     """
 
-    # Shared across all instances to protect rdap.org as a single resource.
-    # Initialized once from the first instance's config; subsequent instances
-    # log a warning if their config differs.
-    _breaker: _RDAPCircuitBreaker | None = None
-    _semaphore: asyncio.Semaphore | None = None
-    _semaphore_loop_id: int | None = None
-    _init_concurrency: int | None = None
+    # Shared breakers keyed by (failure_threshold, recovery_timeout).
+    _breakers: ClassVar[dict[tuple[int, float], _RDAPCircuitBreaker]] = {}
+    # Single per-loop shared semaphore (created lazily in the running loop).
+    _semaphore: ClassVar[asyncio.Semaphore | None] = None
+    _semaphore_loop_id: ClassVar[int | None] = None
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
-        # Store concurrency for _ensure_semaphore (semaphore created lazily
-        # in the correct event loop, not here).
-        if RDAPLookup._init_concurrency is None:
-            RDAPLookup._init_concurrency = config.max_rdap_concurrent
-        elif RDAPLookup._init_concurrency != config.max_rdap_concurrent:
-            log.warning(
-                "rdap.config_mismatch_ignored",
-                existing=RDAPLookup._init_concurrency,
-                requested=config.max_rdap_concurrent,
+        self._breaker = self._get_breaker(
+            config.rdap_cb_failure_threshold,
+            config.rdap_cb_recovery_timeout,
+        )
+
+    @classmethod
+    def _get_breaker(cls, failure_threshold: int, recovery_timeout: float) -> _RDAPCircuitBreaker:
+        """Return the process-wide breaker for these parameters, creating it once."""
+        key = (failure_threshold, recovery_timeout)
+        breaker = cls._breakers.get(key)
+        if breaker is None:
+            # setdefault so a concurrent constructor (the API builds Scout in a
+            # thread pool) still converges on one shared breaker per key.
+            breaker = cls._breakers.setdefault(
+                key,
+                _RDAPCircuitBreaker(
+                    failure_threshold=failure_threshold,
+                    recovery_timeout=recovery_timeout,
+                ),
             )
-        if RDAPLookup._breaker is None:
-            RDAPLookup._breaker = _RDAPCircuitBreaker(
-                failure_threshold=config.rdap_cb_failure_threshold,
-                recovery_timeout=config.rdap_cb_recovery_timeout,
-            )
+        return breaker
 
     async def get_registrant_org(
         self, domain: str, client: httpx.AsyncClient | None = None
@@ -192,20 +209,20 @@ class RDAPLookup:
             "country": self._extract_country(data),
         }
 
-    @classmethod
-    def _ensure_semaphore(cls) -> asyncio.Semaphore:
-        """Ensure semaphore belongs to the current event loop.
+    def _ensure_semaphore(self) -> asyncio.Semaphore:
+        """Return the shared per-loop rdap.org semaphore, sized from this config.
 
-        When Scout.discover() calls asyncio.run() in a loop, each call
+        When Scout.discover() calls asyncio.run() per invocation, each call
         creates a new event loop. A Semaphore from a previous loop raises
-        "bound to a different event loop". Detect this and recreate.
+        "bound to a different event loop", so it is recreated when the loop
+        changes — sized from the current instance's ``max_rdap_concurrent``
+        rather than a value frozen from the first-ever instance (#172).
         """
         loop_id = id(asyncio.get_running_loop())
-        if cls._semaphore is None or cls._semaphore_loop_id != loop_id:
-            concurrency = cls._init_concurrency or 5
-            cls._semaphore = asyncio.Semaphore(concurrency)
-            cls._semaphore_loop_id = loop_id
-        return cls._semaphore
+        if RDAPLookup._semaphore is None or RDAPLookup._semaphore_loop_id != loop_id:
+            RDAPLookup._semaphore = asyncio.Semaphore(self._cfg.max_rdap_concurrent)
+            RDAPLookup._semaphore_loop_id = loop_id
+        return RDAPLookup._semaphore
 
     async def _query(
         self, domain: str, client: httpx.AsyncClient | None = None
@@ -224,9 +241,8 @@ class RDAPLookup:
             log.debug("rdap.skip_unsupported_tld", domain=domain, tld=tld)
             return {}
 
-        breaker = RDAPLookup._breaker
+        breaker = self._breaker
         semaphore = self._ensure_semaphore()
-        assert breaker is not None
 
         if not breaker.should_allow():
             log.warning("rdap.circuit_open_skip", domain=domain)

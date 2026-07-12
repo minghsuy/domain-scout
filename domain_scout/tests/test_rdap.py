@@ -392,20 +392,6 @@ class TestRDAPCircuitBreaker:
 class TestRDAPRateLimiting:
     """Tests for RDAP semaphore and circuit breaker integration."""
 
-    def setup_method(self) -> None:
-        """Reset class-level state between tests."""
-        RDAPLookup._breaker = None
-        RDAPLookup._semaphore = None
-        RDAPLookup._semaphore_loop_id = None
-        RDAPLookup._init_concurrency = None
-
-    def teardown_method(self) -> None:
-        """Clean up class-level state after each test."""
-        RDAPLookup._breaker = None
-        RDAPLookup._semaphore = None
-        RDAPLookup._semaphore_loop_id = None
-        RDAPLookup._init_concurrency = None
-
     @pytest.mark.asyncio
     async def test_circuit_breaker_skips_when_open(self) -> None:
         """When breaker is open, _query returns empty dict without HTTP call."""
@@ -436,8 +422,7 @@ class TestRDAPRateLimiting:
             for _ in range(3):
                 await rdap.get_registrant_org("missing.com")
 
-            assert RDAPLookup._breaker is not None
-            assert RDAPLookup._breaker.state == "closed"
+            assert rdap._breaker.state == "closed"
 
     @pytest.mark.asyncio
     async def test_5xx_trips_circuit_breaker(self) -> None:
@@ -450,8 +435,7 @@ class TestRDAPRateLimiting:
             await rdap.get_registrant_org("fail1.com")
             await rdap.get_registrant_org("fail2.com")
 
-            assert RDAPLookup._breaker is not None
-            assert RDAPLookup._breaker.state == "open"
+            assert rdap._breaker.state == "open"
 
     @pytest.mark.asyncio
     async def test_class_level_breaker_shared(self) -> None:
@@ -465,18 +449,19 @@ class TestRDAPRateLimiting:
             await rdap1.get_registrant_org("fail1.com")
             await rdap2.get_registrant_org("fail2.com")
 
-            # Two failures across different instances should trip the shared breaker
-            assert RDAPLookup._breaker is not None
-            assert RDAPLookup._breaker.state == "open"
+            # Same config → both instances resolve to the one registry breaker,
+            # so two failures across instances trip the shared breaker.
+            assert rdap1._breaker is rdap2._breaker
+            assert rdap1._breaker.state == "open"
 
     def test_init_does_not_create_semaphore(self) -> None:
         """Semaphore is created lazily in _ensure_semaphore, not __init__."""
         config = ScoutConfig(max_rdap_concurrent=2)
-        RDAPLookup(config)
+        rdap = RDAPLookup(config)
         # Semaphore should NOT be created in __init__ — it must be created
-        # in the correct event loop by _ensure_semaphore.
+        # in the correct event loop by _ensure_semaphore, sized from this config.
         assert RDAPLookup._semaphore is None
-        assert RDAPLookup._init_concurrency == 2
+        assert rdap._cfg.max_rdap_concurrent == 2
 
     @pytest.mark.asyncio
     async def test_semaphore_bound_to_current_loop(self) -> None:
@@ -601,14 +586,6 @@ class TestExtractNameservers:
 
 class TestGetFullInfo:
     """Tests for RDAPLookup.get_full_info()."""
-
-    def setup_method(self) -> None:
-        RDAPLookup._breaker = None
-        RDAPLookup._semaphore = None
-
-    def teardown_method(self) -> None:
-        RDAPLookup._breaker = None
-        RDAPLookup._semaphore = None
 
     @pytest.mark.asyncio
     async def test_success_all_fields(self) -> None:

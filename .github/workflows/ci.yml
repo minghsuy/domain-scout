@@ -73,7 +73,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --all-groups --all-extras
-      - run: uv run mypy domain_scout/ --ignore-missing-imports
+      - run: uv run mypy domain_scout/
 
   test:
     needs: changes

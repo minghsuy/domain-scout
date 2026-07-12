@@ -68,7 +68,6 @@ _RDAP_DATA = {
 class TestRDAPInjectedClient:
     @pytest.mark.asyncio
     async def test_reuses_injected_client_without_constructing_one(self) -> None:
-        RDAPLookup._breaker = None  # fresh, closed breaker
         rdap = RDAPLookup(ScoutConfig())
         injected = _injected_client(_RDAP_DATA)
 
@@ -87,7 +86,6 @@ class TestRDAPInjectedClient:
 
     @pytest.mark.asyncio
     async def test_falls_back_to_own_client_when_none_injected(self) -> None:
-        RDAPLookup._breaker = None
         rdap = RDAPLookup(ScoutConfig())
         own = _ctx_client(_RDAP_DATA)
 
@@ -112,7 +110,6 @@ class TestCTJSONInjectedClient:
 
     @pytest.mark.asyncio
     async def test_json_query_reuses_injected_client(self) -> None:
-        CTLogSource._breaker = None
         ct = CTLogSource(ScoutConfig())
         injected = _injected_client(self._PAYLOAD)
 
@@ -125,7 +122,6 @@ class TestCTJSONInjectedClient:
 
     @pytest.mark.asyncio
     async def test_json_query_falls_back_to_own_client(self) -> None:
-        CTLogSource._breaker = None
         ct = CTLogSource(ScoutConfig())
         own = _ctx_client(self._PAYLOAD)
 

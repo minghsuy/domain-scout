@@ -11,7 +11,7 @@ test-integration:
 
 lint:
 	uv run ruff check domain_scout/
-	uv run mypy domain_scout/ --ignore-missing-imports
+	uv run mypy domain_scout/
 
 format:
 	uv run ruff check --fix domain_scout/

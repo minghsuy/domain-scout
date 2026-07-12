@@ -5,9 +5,11 @@ WORKDIR /app
 COPY pyproject.toml uv.lock README.md LICENSE ./
 # Install dependencies only (cached layer — invalidated only when deps change)
 RUN uv sync --no-dev --frozen --all-extras --no-editable --no-install-project
-# Copy source and build the project
+# Copy source and install ONLY the project into the cached dependency venv (#173).
+# Deps are already satisfied by the layer above and are unchanged on source-only
+# edits, so this step never re-resolves or reinstalls third-party packages.
 COPY domain_scout/ domain_scout/
-RUN uv sync --no-dev --frozen --all-extras --no-editable
+RUN uv pip install --python /app/.venv --no-deps .
 
 # Runtime stage
 FROM python:3.12-slim
