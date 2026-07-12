@@ -41,6 +41,7 @@ from domain_scout.models import (
     EntityInput,
     EvidenceRecord,
     RunMetadata,
+    ScoringInputs,
     ScoutResult,
 )
 from domain_scout.sources.ct_logs import (
@@ -151,6 +152,26 @@ def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
     deduped.extend(seen_org.values())
     deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
     return deduped
+
+
+def _evidence_aggregates(evidence: list[EvidenceRecord]) -> tuple[int, int, float]:
+    """Evidence aggregates exactly as the learned scorer consumes them.
+
+    Returns ``(evidence_count, unique_cert_count, rdap_similarity)``. Shared by
+    the learned path of ``Scout._score_confidence`` and the score-time capture
+    (issue #187), so a captured snapshot equals what production scored by
+    construction, not by parallel re-implementation.
+    """
+    cert_ids = {ev.cert_id for ev in evidence if ev.cert_id is not None}
+    rdap_similarity = max(
+        (
+            ev.similarity_score
+            for ev in evidence
+            if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
+        ),
+        default=0.0,
+    )
+    return len(evidence), len(cert_ids), rdap_similarity
 
 
 def load_subsidiary_map(csv_path: str) -> dict[str, list[str]]:
@@ -444,11 +465,28 @@ class Scout:
         )
         return asyncio.run(self._discover(entity))
 
-    async def discover_async(self, entity: EntityInput) -> ScoutResult:
-        """Async entry point."""
-        return await self._discover(entity)
+    async def discover_async(
+        self,
+        entity: EntityInput,
+        *,
+        scoring_capture: dict[str, ScoringInputs] | None = None,
+    ) -> ScoutResult:
+        """Async entry point.
 
-    async def _discover(self, entity: EntityInput) -> ScoutResult:
+        ``scoring_capture``, when provided, is filled with one
+        :class:`ScoringInputs` snapshot per scored candidate domain — the exact
+        score-time (pre-``_infra_boost``, pre-dedup) inputs production scoring
+        consumed, plus whether the infra boost later fired. Used by the eval
+        substrate generator (issue #187); production callers omit it.
+        """
+        return await self._discover(entity, scoring_capture=scoring_capture)
+
+    async def _discover(
+        self,
+        entity: EntityInput,
+        *,
+        scoring_capture: dict[str, ScoringInputs] | None = None,
+    ) -> ScoutResult:
         # One pooled HTTP client per scan (#166), scoped to this call via
         # async with so it never outlives the event loop that created it
         # (the CLI runs asyncio.run per invocation). The default timeout
@@ -460,10 +498,14 @@ class Scout:
         async with httpx.AsyncClient(
             verify=_SSL_CONTEXT, timeout=self.config.http_timeout
         ) as scan_client:
-            return await self._run_pipeline(entity, scan_client)
+            return await self._run_pipeline(entity, scan_client, scoring_capture=scoring_capture)
 
     async def _run_pipeline(
-        self, entity: EntityInput, scan_client: httpx.AsyncClient
+        self,
+        entity: EntityInput,
+        scan_client: httpx.AsyncClient,
+        *,
+        scoring_capture: dict[str, ScoringInputs] | None = None,
     ) -> ScoutResult:
         self._dns.reset()
         t0 = time.monotonic()
@@ -758,6 +800,21 @@ class Scout:
                 domain=domain,
                 sibling_names=gleif_sibling_names,
             )
+            if scoring_capture is not None:
+                # Snapshot the exact score-time inputs (issue #187): _infra_boost
+                # and _build_output's dedup mutate this state after scoring, so
+                # the persisted DiscoveredDomain alone cannot reproduce it.
+                evidence_count, unique_cert_count, rdap_similarity = _evidence_aggregates(
+                    accum.evidence
+                )
+                scoring_capture[domain] = ScoringInputs(
+                    sources=sorted(accum.sources),
+                    cert_org_names=sorted(accum.cert_org_names),
+                    resolves=accum.resolves,
+                    evidence_count=evidence_count,
+                    unique_cert_count=unique_cert_count,
+                    rdap_similarity=rdap_similarity,
+                )
             if accum.confidence >= self.config.seed_confirm_threshold:
                 confirmed_domains.append(domain)
 
@@ -788,6 +845,19 @@ class Scout:
                 )
             except TimeoutError:
                 errors.append("Infrastructure boost timed out")
+
+        if scoring_capture is not None:
+            # Stamp which domains _infra_boost actually boosted, by comparing the
+            # captured score-time sources against the post-boost accum state —
+            # both states are in hand here, so this is capture, not inference.
+            for domain, snapshot in scoring_capture.items():
+                boosted = domain_evidence.get(domain)
+                if (
+                    boosted is not None
+                    and "shared_infra" in boosted.sources
+                    and "shared_infra" not in snapshot.sources
+                ):
+                    snapshot.infra_boosted = True
 
         # Build output
         domains = self._build_output(domain_evidence, seeds)
@@ -1190,21 +1260,7 @@ class Scout:
                 (org_name_similarity(cert_org, company_name) for cert_org in accum.cert_org_names),
                 default=0.0,
             )
-            # Count unique cert IDs for evidence_density
-            cert_ids: set[int] = set()
-            for ev in accum.evidence:
-                if ev.cert_id is not None:
-                    cert_ids.add(ev.cert_id)
-
-            # Extract max RDAP registrant similarity from evidence
-            rdap_sim = max(
-                (
-                    ev.similarity_score
-                    for ev in accum.evidence
-                    if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
-                ),
-                default=0.0,
-            )
+            evidence_count, unique_cert_count, rdap_sim = _evidence_aggregates(accum.evidence)
 
             return _learned_score(
                 domain=domain,
@@ -1213,8 +1269,8 @@ class Scout:
                 sources=accum.sources,
                 cert_org_names=accum.cert_org_names,
                 resolves=accum.resolves,
-                evidence_count=len(accum.evidence),
-                unique_cert_count=len(cert_ids),
+                evidence_count=evidence_count,
+                unique_cert_count=unique_cert_count,
                 rdap_similarity=rdap_sim,
             )
 

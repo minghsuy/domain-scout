@@ -19,9 +19,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   confidence biased low where that signal would fire); the loader warns once at
   load, and rejects features it can't compute at all. The eval harness now runs
   both scorer paths: `make eval` reports a heuristic leg (recorded ranking) and
-  a learned leg (persisted evidence re-scored through the model — an
-  approximation of a live learned run, see `eval._learned_ranked_domains`), so
-  the learned scorer is exercised before `use_learned_scorer` ever flips on.
+  a learned leg (initially an approximation re-scoring persisted evidence;
+  made an exact replay by #187 — see Changed), so the learned scorer is
+  exercised before `use_learned_scorer` ever flips on.
 - `DiscoveredDomain` now carries `scorer_id` and `scorer_version` (schema 1.1,
   #184): the heuristic ladder stamps `heuristic/<rule-set date>` and the learned
   scorer stamps `learned_lr/<artifact version>@<training date>`, so a persisted
@@ -44,6 +44,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   reference only the current run's outputs.
 
 ### Changed
+- The eval's learned leg now replays production scoring **exactly** instead of
+  approximating it (#187, substrate schema 2). `--mode record` captures each
+  candidate domain's score-time inputs (`ScoringInputs`: pre-`_infra_boost`
+  sources, pre-dedup `evidence_count`/`unique_cert_count`/`rdap_similarity`,
+  and whether the boost later fired) into the baseline record
+  (`BaselineRecord = ScoutResult + scoring_inputs`), and the learned leg scores
+  from those — same gating, same feature inputs, same boost formula/cap/rounding
+  as a live `use_learned_scorer=True` run (parity is asserted test-for-test
+  against the real pipeline). Previously it re-scored persisted post-pipeline
+  state, understating boosted domains' confidence (measured −0.0084 on the
+  parity fixture; up to ~0.19 at mid-range operating points for the v1
+  artifact). The manifest stamps `substrate_schema`; a substrate recorded under
+  the old schema is refused loudly with a re-record message rather than
+  silently scored the approximated way — regenerate with `make eval-baselines`.
+  Remaining (disclosed) gap vs a live learned run: which candidates
+  `_infra_boost` checked and which domains cleared `inclusion_threshold` were
+  decided by the recorded run's heuristic confidences; a live learned run could
+  select slightly different sets. That is a property of pipeline selection, not
+  of scoring — the scoring inputs themselves are now exact.
 - `make eval` now fails loudly (`EvalSubstrateError`, non-zero exit) instead of
   printing a warning and rendering an empty — and misleadingly "passing" —
   report when the baseline substrate is missing (#188). The `manifest.json` is
@@ -54,8 +73,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   a partial set), so `record` writes the manifest atomically and last. `make
   eval` therefore requires a prior `make eval-baselines`. A substrate recorded
   under a different scorer than the current one emits a stderr warning. (The
-  learned leg's post-pipeline re-scoring approximation, #187, is unchanged and
-  orthogonal.)
+  learned leg's post-pipeline re-scoring approximation, #187, was untouched
+  there and is fixed by the substrate-schema-2 entry above.)
 - The `ct_org_match` source now requires a strict word-bounded org-name match in
   addition to the fuzzy `org_match_threshold`. The fuzzy scorer credited
   raw-substring hits (`Aon` in `kaonavi`, `Generali` in `Generalist`),
