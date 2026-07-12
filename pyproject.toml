@@ -81,6 +81,21 @@ required-imports = ["from __future__ import annotations"]
 strict = true
 python_version = "3.12"
 
+# Per-module import suppression replaces the global --ignore-missing-imports
+# flag (#168), which silently treated *every* unresolved import as Any and
+# undermined strict mode. Only modules that genuinely ship no type stubs are
+# listed here, so a new untyped dependency (or a typo'd import) is still caught.
+# duckdb and tldextract are deliberately NOT listed: they ship types now and
+# are really type-checked once the global flag is gone.
+[[tool.mypy.overrides]]
+module = [
+    "psycopg2.*",     # crt.sh Postgres driver — no bundled stubs / py.typed marker
+    "pyarrow.*",      # Arrow/Parquet (test_local_parquet) — no py.typed marker
+    "shared",         # optional monorepo reference lib, imported only when present (test_matching)
+    "shared.*",       # (both the package and its submodules — it is absent, not merely untyped)
+]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 addopts = "--cov=domain_scout --cov-fail-under=92"
 markers = [

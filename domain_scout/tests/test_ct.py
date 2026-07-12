@@ -3,11 +3,7 @@
 from __future__ import annotations
 
 import time
-from typing import TYPE_CHECKING
 from unittest.mock import AsyncMock, MagicMock, patch
-
-if TYPE_CHECKING:
-    from collections.abc import Iterator
 
 import pytest
 from hypothesis import given
@@ -144,13 +140,6 @@ class TestIsValidDomain:
 
 class TestJsonQueryFields:
     """Verify JSON fallback sets correct field values."""
-
-    @pytest.fixture(autouse=True)
-    def _reset_breaker(self) -> Iterator[None]:
-        """Reset the shared breaker to avoid test-ordering issues."""
-        CTLogSource._breaker = None
-        yield
-        CTLogSource._breaker = None
 
     @pytest.mark.asyncio
     async def test_json_org_name_is_none(self) -> None:
@@ -289,13 +278,6 @@ class TestCircuitBreaker:
 class TestCircuitBreakerWiring:
     """Test circuit breaker wired into CTLogSource._pg_query_with_fallback."""
 
-    @pytest.fixture(autouse=True)
-    def _reset_breaker(self) -> Iterator[None]:
-        """Reset the shared class-variable breaker before each test."""
-        CTLogSource._breaker = None
-        yield
-        CTLogSource._breaker = None
-
     @pytest.mark.asyncio
     async def test_breaker_trips_after_threshold_skips_pg(self) -> None:
         """After cb_failure_threshold PG failures, subsequent calls skip PG entirely."""
@@ -376,8 +358,7 @@ class TestCircuitBreakerWiring:
         ):
             # Trip the breaker
             await ct._pg_query_with_fallback("test")
-            assert CTLogSource._breaker is not None
-            assert CTLogSource._breaker.state == "open"
+            assert ct._breaker.state == "open"
 
             # Advance past recovery timeout
             with patch.object(
@@ -387,7 +368,7 @@ class TestCircuitBreakerWiring:
             ):
                 result = await ct._pg_query_with_fallback("test")
 
-            assert CTLogSource._breaker.state == "closed"
+            assert ct._breaker.state == "closed"
             assert result[0]["cert_id"] == 42
 
     @pytest.mark.asyncio
@@ -421,8 +402,9 @@ class TestCircuitBreakerWiring:
             patch("domain_scout.sources.ct_logs.httpx.AsyncClient", return_value=mock_json),
         ):
             await ct1._pg_query_with_fallback("test")
-            assert CTLogSource._breaker is not None
-            assert CTLogSource._breaker.state == "open"
+            # Same config → both instances resolve to the one registry breaker.
+            assert ct1._breaker is ct2._breaker
+            assert ct1._breaker.state == "open"
 
         # ct2 should also see the open breaker (shared class variable)
         pg_called = False
@@ -459,13 +441,6 @@ class TestOrgSearchFallbackUnavailable:
         }
     ]
 
-    @pytest.fixture(autouse=True)
-    def _reset_breaker(self) -> Iterator[None]:
-        """Reset the shared breaker to avoid test-ordering issues."""
-        CTLogSource._breaker = None
-        yield
-        CTLogSource._breaker = None
-
     @pytest.mark.asyncio
     async def test_pg_failure_verify_org_raises_without_json_query(self) -> None:
         """Postgres failure + verify_org=True raises and never queries the JSON API."""
@@ -485,9 +460,8 @@ class TestOrgSearchFallbackUnavailable:
         """Circuit-breaker skip + verify_org=True raises; neither backend is queried."""
         config = ScoutConfig(cb_failure_threshold=1, postgres_max_retries=1, burst_delay=0.0)
         ct = CTLogSource(config)
-        assert CTLogSource._breaker is not None
-        CTLogSource._breaker.record_failure()  # threshold=1 → trips open
-        assert CTLogSource._breaker.state == "open"
+        ct._breaker.record_failure()  # threshold=1 → trips open
+        assert ct._breaker.state == "open"
 
         with (
             patch.object(ct, "_pg_query", new_callable=AsyncMock) as pg_query,

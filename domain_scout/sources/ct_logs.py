@@ -6,7 +6,7 @@ import asyncio
 import re
 import time
 from datetime import datetime
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, ClassVar
 
 import httpx
 import psycopg2
@@ -224,25 +224,40 @@ class _CircuitBreaker:
 
 
 class CTLogSource:
-    """Query crt.sh for certificate transparency data."""
+    """Query crt.sh for certificate transparency data.
 
-    _breaker: _CircuitBreaker | None = None
+    The Postgres circuit breaker protects crt.sh as a shared external resource,
+    so it is shared process-wide across instances. To keep behaviour deterministic
+    and independent of construction order (#172), breakers live in a class-level
+    registry keyed by their ``(failure_threshold, recovery_timeout)`` parameters:
+    instances built from the same config share one breaker; instances with
+    different thresholds get their own (each still trips independently on
+    crt.sh failures).
+    """
+
+    # Shared breakers keyed by (failure_threshold, recovery_timeout).
+    _breakers: ClassVar[dict[tuple[int, float], _CircuitBreaker]] = {}
 
     def __init__(self, config: ScoutConfig) -> None:
         self._cfg = config
         self._semaphore = asyncio.Semaphore(config.max_concurrent_queries)
-        # Lazily init shared breaker with first instance's config
-        if CTLogSource._breaker is None:
-            CTLogSource._breaker = _CircuitBreaker(
-                config.cb_failure_threshold,
-                config.cb_recovery_timeout,
-            )
+        self._breaker = self._get_breaker(
+            config.cb_failure_threshold,
+            config.cb_recovery_timeout,
+        )
 
-    @property
-    def _active_breaker(self) -> _CircuitBreaker:
-        if self._breaker is None:
-            raise RuntimeError("CTLogSource used before breaker initialization")
-        return self._breaker
+    @classmethod
+    def _get_breaker(cls, failure_threshold: int, recovery_timeout: float) -> _CircuitBreaker:
+        """Return the process-wide breaker for these parameters, creating it once."""
+        key = (failure_threshold, recovery_timeout)
+        breaker = cls._breakers.get(key)
+        if breaker is None:
+            # setdefault so a concurrent constructor (the API builds Scout in a
+            # thread pool) still converges on one shared breaker per key.
+            breaker = cls._breakers.setdefault(
+                key, _CircuitBreaker(failure_threshold, recovery_timeout)
+            )
+        return breaker
 
     # --- Public API ---
 
@@ -431,7 +446,7 @@ class CTLogSource:
 
         ``client``: optional caller-owned pool (#166) threaded to the JSON fallback.
         """
-        breaker = self._active_breaker
+        breaker = self._breaker
 
         if not breaker.should_allow():
             log.warning("ct.circuit_breaker_skip_pg", state=breaker.state)
