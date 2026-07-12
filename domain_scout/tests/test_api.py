@@ -9,6 +9,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 from fastapi.testclient import TestClient
+from structlog.testing import capture_logs
 
 if TYPE_CHECKING:
     from collections.abc import Iterator
@@ -283,6 +284,26 @@ class TestGetApp:
             app = get_app()
         assert app.state.cache is None
         assert TestClient(app).get("/health").status_code == 200
+
+    def test_get_app_missing_cache_extra_falls_back_to_cacheless(self) -> None:
+        """A base install without the [cache] extra (duckdb absent) with
+        DOMAIN_SCOUT_CACHE unset degrades to cache=None instead of crash-looping
+        with ImportError at startup — the path 'serve' and 'uvicorn ...:get_app'
+        take by default (#193)."""
+        # Simulate the base install: duckdb is None, so DuckDBCache.__init__
+        # raises its real ImportError from the single `duckdb is None` guard.
+        env = dict(os.environ)
+        env.pop("DOMAIN_SCOUT_CACHE", None)  # unset -> cache defaults to enabled
+        with (
+            patch.dict(os.environ, env, clear=True),
+            patch("domain_scout.cache.duckdb", None),
+            capture_logs() as logs,
+        ):
+            app = get_app()
+        assert app.state.cache is None
+        assert TestClient(app).get("/health").status_code == 200
+        events = [e["event"] for e in logs]
+        assert events.count("api.cache_disabled_missing_extra") == 1
 
 
 class TestScanRequest:

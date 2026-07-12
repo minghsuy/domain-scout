@@ -286,6 +286,11 @@ def get_app() -> FastAPI:
       the warning.
     * **Bad env values.** A non-numeric ``DOMAIN_SCOUT_MAX_CONCURRENT`` logs a
       warning and falls back to the default (3) instead of crashing at startup.
+    * **Missing [cache] extra.** A base install lacks ``duckdb``, yet
+      ``DOMAIN_SCOUT_CACHE`` still defaults to enabled. Rather than crash-loop
+      with ``ImportError`` at startup, the factory logs
+      ``api.cache_disabled_missing_extra`` and starts cache-less. Install
+      ``domain-scout-ct[cache]`` to enable caching (#193).
     """
     raw_max_concurrent = os.environ.get("DOMAIN_SCOUT_MAX_CONCURRENT", "3")
     try:
@@ -303,6 +308,15 @@ def get_app() -> FastAPI:
     if cache_enabled:
         try:
             cache = DuckDBCache(cache_dir=cache_dir)
+        except ImportError as exc:
+            # Base install without the [cache] extra: DuckDBCache.__init__ raises
+            # ImportError (duckdb absent) from a single guard. With the cache
+            # extra uninstalled DOMAIN_SCOUT_CACHE still defaults to "true", so
+            # `serve` (workers=1) and `uvicorn ...:get_app` would crash-loop.
+            # Degrade to cache-less rather than crash; the message names the
+            # extra to install (#193).
+            log.warning("api.cache_disabled_missing_extra", error=str(exc))
+            cache = None
         except _CACHE_LOCK_ERRORS as exc:
             # Another writer already holds cache.db (single-writer constraint).
             # Degrade to cache-less rather than corrupt the file or crash-loop.
