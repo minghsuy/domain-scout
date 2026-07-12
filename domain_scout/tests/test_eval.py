@@ -37,7 +37,7 @@ from domain_scout.models import (
     ScoringInputs,
     ScoutResult,
 )
-from domain_scout.scout import Scout
+from domain_scout.scout import Scout, _evidence_aggregates
 
 if TYPE_CHECKING:
     from collections.abc import Callable
@@ -246,25 +246,19 @@ def _capture_for(result: ScoutResult) -> dict[str, ScoringInputs]:
     """Score-time inputs equal to the post-pipeline state.
 
     Valid for synthetic fixtures where nothing was infra-boosted or deduped, so
-    score-time state and persisted state coincide by construction.
+    score-time state and persisted state coincide by construction. Aggregates
+    come from the production `_evidence_aggregates` helper so this can't drift
+    from how the pipeline actually aggregates evidence.
     """
     capture: dict[str, ScoringInputs] = {}
     for d in result.domains:
-        cert_ids = {ev.cert_id for ev in d.evidence if ev.cert_id is not None}
-        rdap_similarity = max(
-            (
-                ev.similarity_score
-                for ev in d.evidence
-                if ev.source_type == "rdap_registrant_match" and ev.similarity_score is not None
-            ),
-            default=0.0,
-        )
+        evidence_count, unique_cert_count, rdap_similarity = _evidence_aggregates(d.evidence)
         capture[d.domain] = ScoringInputs(
             sources=list(d.sources),
             cert_org_names=list(d.cert_org_names),
             resolves=d.resolves,
-            evidence_count=len(d.evidence),
-            unique_cert_count=len(cert_ids),
+            evidence_count=evidence_count,
+            unique_cert_count=unique_cert_count,
             rdap_similarity=rdap_similarity,
         )
     return capture

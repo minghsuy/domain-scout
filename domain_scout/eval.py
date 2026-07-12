@@ -308,6 +308,7 @@ def _learned_scored_domains(record: BaselineRecord) -> list[tuple[float, str]]:
     candidates ``_infra_boost`` *checked* and which domains cleared
     ``inclusion_threshold`` were decided by the recorded run's (heuristic)
     confidences; under a live learned run those selection sets could differ.
+    Tracked in issue #197.
     """
     from domain_scout.matching.entity_match import org_name_similarity
     from domain_scout.scorer import score_confidence
@@ -624,8 +625,9 @@ async def evaluate_live(
 ) -> EvalReport:
     """Run Scout.discover_async() for each entity and evaluate against ground truth.
 
-    Discovery runs once per entity; both scorer legs are computed from the
-    same ScoutResult (the learned leg re-scores the collected evidence).
+    Discovery runs once per entity; both scorer legs are computed from the same
+    run (the learned leg replays production scoring from the score-time inputs
+    captured during that discovery, #187).
     """
     from domain_scout.models import EntityInput
     from domain_scout.scout import Scout

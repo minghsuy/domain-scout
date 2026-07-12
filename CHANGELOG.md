@@ -53,16 +53,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   from those — same gating, same feature inputs, same boost formula/cap/rounding
   as a live `use_learned_scorer=True` run (parity is asserted test-for-test
   against the real pipeline). Previously it re-scored persisted post-pipeline
-  state, understating boosted domains' confidence (measured −0.0084 on the
-  parity fixture; up to ~0.19 at mid-range operating points for the v1
-  artifact). The manifest stamps `substrate_schema`; a substrate recorded under
+  state, understating boosted domains' confidence: measured −0.0084 on the
+  parity fixture (compressed by the 0.95 boost cap), and analytically up to
+  ~0.19 at mid-range operating points from the v1 artifact's own coefficients
+  (the has_shared_infra flip plus source_count shift contribute a −0.5581
+  z-delta, on top of the un-replayed +0.05 boost — which alone exceeds issue
+  #187's original ~0.04 estimate). The manifest stamps `substrate_schema`; a
+  substrate recorded under
   the old schema is refused loudly with a re-record message rather than
   silently scored the approximated way — regenerate with `make eval-baselines`.
   Remaining (disclosed) gap vs a live learned run: which candidates
   `_infra_boost` checked and which domains cleared `inclusion_threshold` were
   decided by the recorded run's heuristic confidences; a live learned run could
   select slightly different sets. That is a property of pipeline selection, not
-  of scoring — the scoring inputs themselves are now exact.
+  of scoring — the scoring inputs themselves are now exact. Tracked in #197.
 - `make eval` now fails loudly (`EvalSubstrateError`, non-zero exit) instead of
   printing a warning and rendering an empty — and misleadingly "passing" —
   report when the baseline substrate is missing (#188). The `manifest.json` is
