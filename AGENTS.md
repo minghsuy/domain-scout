@@ -4,15 +4,18 @@
 
 Before starting any task:
 
-1. Run `gh pr list --repo minghsuy/domain-scout --state open`. For
-   implementation work, inspect each potentially overlapping PR with
-   `gh pr view <number> --repo minghsuy/domain-scout --json files`; stop if a
-   different PR already touches the target files. When reviewing or addressing
-   the current PR, do not treat that PR itself as a collision.
+1. List open PRs with `gh` when available; otherwise use the connected GitHub
+   tool/API. For implementation work, inspect each potentially overlapping
+   PR's changed files and stop if a different PR already touches the target
+   files. When reviewing or addressing the current PR, do not treat that PR
+   itself as a collision. If neither GitHub path is available, stop before
+   writing target files and report that collision checking is unavailable.
 2. Read `CLAUDE.md` for the current architecture and evaluation constraints.
 3. Run `git status --short --branch`. If the tree is dirty, do not stash,
    clean, reset, or overwrite local/generated data; work from an isolated
-   worktree based on the current upstream branch.
+   worktree based on the configured upstream branch. If there is no upstream
+   or remote, use the current `HEAD` or a known local base branch and note that
+   choice.
 
 ## Verification
 
