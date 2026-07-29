@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import textwrap
 from typing import TYPE_CHECKING
-from unittest.mock import AsyncMock, patch
+from unittest.mock import AsyncMock, MagicMock, patch
 
 if TYPE_CHECKING:
     from pathlib import Path
@@ -262,11 +262,12 @@ class TestSubsidiaryExpansion:
         from domain_scout.models import EntityInput
 
         ct_mock = AsyncMock(search_by_org=AsyncMock(return_value=[]))
+        dns_mock = MagicMock(bulk_resolve=AsyncMock(return_value={}))
         s = self._make_scout(
             _subsidiaries={"walmart": ["Jet.com Inc.", "Bonobos Inc."]},
             _ct=ct_mock,
             _rdap=AsyncMock(),
-            _dns=AsyncMock(bulk_resolve=AsyncMock(return_value={})),
+            _dns=dns_mock,
         )
 
         entity = EntityInput(company_name="Walmart Inc.", seed_domain=[])
@@ -277,6 +278,7 @@ class TestSubsidiaryExpansion:
         assert "Walmart Inc." in org_calls
         assert "Jet.com Inc." in org_calls
         assert "Bonobos Inc." in org_calls
+        dns_mock.reset.assert_called_once_with()
 
     def test_max_queries_cap(self) -> None:
         """subsidiary_max_queries caps the number of subsidiary searches."""
@@ -292,13 +294,14 @@ class TestSubsidiaryExpansion:
 
         subs = [f"Brand{i} Inc." for i in range(20)]
         ct_mock = AsyncMock(search_by_org=AsyncMock(return_value=[]))
+        dns_mock = MagicMock(bulk_resolve=AsyncMock(return_value={}))
         config = ScoutConfig(subsidiary_max_queries=3)
         s = self._make_scout(
             config=config,
             _subsidiaries={"test": subs},
             _ct=ct_mock,
             _rdap=AsyncMock(),
-            _dns=AsyncMock(bulk_resolve=AsyncMock(return_value={})),
+            _dns=dns_mock,
         )
 
         entity = EntityInput(company_name="Test Corp", seed_domain=[])
@@ -308,3 +311,4 @@ class TestSubsidiaryExpansion:
         org_calls = [call.args[0] for call in ct_mock.search_by_org.call_args_list]
         sub_calls = [c for c in org_calls if c.startswith("Brand")]
         assert len(sub_calls) == 3
+        dns_mock.reset.assert_called_once_with()
