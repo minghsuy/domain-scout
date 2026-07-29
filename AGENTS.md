@@ -4,10 +4,14 @@
 
 Before starting any task:
 
-1. Run `gh pr list --repo minghsuy/domain-scout --state open` and stop if an
-   open PR already touches the target files.
+1. Run `gh pr list --repo minghsuy/domain-scout --state open`. For each
+   potentially overlapping PR, inspect its changed paths with
+   `gh pr view <number> --repo minghsuy/domain-scout --json files`; stop if it
+   already touches the target files.
 2. Read `CLAUDE.md` for the current architecture and evaluation constraints.
-3. Run `git status --short --branch`; preserve all local and generated data.
+3. Run `git status --short --branch`. If the tree is dirty, do not stash,
+   clean, reset, or overwrite local/generated data; work from an isolated
+   worktree based on the current upstream branch.
 
 ## Verification
 
@@ -28,6 +32,9 @@ covers formatting, Ruff, strict mypy, and the mocked unit suite.
 - Never commit `SPEC.md`, security reports, secrets, caches, or the git-ignored
   `baselines/` evaluation substrate.
 - Use `uv`, not `pip`, for dependency management.
+- Overlap with `CLAUDE.md` is intentional so non-Claude agents receive the
+  same safety rules. Keep duplicated constraints aligned when either file
+  changes.
 
 ## Code Review Rules
 
