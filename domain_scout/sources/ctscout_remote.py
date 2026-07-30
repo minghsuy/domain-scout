@@ -105,6 +105,10 @@ def _validate_response(
             "CTScout returned semantic candidates, but the Domain Scout CT source only "
             "accepts authoritative warehouse rows; corroborate the candidates separately"
         )
+    if domains and (match_type != "exact" or org_match_strategy == "semantic"):
+        raise CTScoutSchemaError(
+            "CTScout returned domains outside the authoritative exact-match path"
+        )
 
     validated_domains: list[Mapping[str, object]] = []
     for index, row in enumerate(domains):

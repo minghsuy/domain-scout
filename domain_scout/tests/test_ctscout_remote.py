@@ -296,3 +296,21 @@ class TestCTScoutRemoteSource:
             ),
         ):
             await source.search_by_org("Goldman")
+
+    @pytest.mark.asyncio
+    async def test_nonempty_none_match_fails_closed(self) -> None:
+        """Contradictory no-match rows must never become attribution evidence."""
+        source = CTScoutRemoteSource(ScoutConfig(ctscout_api_key="ds_free_test"))
+        payload = _body([_domain()])
+        payload["match_type"] = "none"
+        payload["org_match_strategy"] = "none"
+        mock_client = _make_httpx_mock(payload)
+
+        with (
+            patch(
+                "domain_scout.sources.ctscout_remote.httpx.AsyncClient",
+                return_value=mock_client,
+            ),
+            pytest.raises(CTScoutSchemaError, match="authoritative exact-match"),
+        ):
+            await source.search_by_org("Goldman")
