@@ -7,7 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.12.0] - 2026-07-30
+
 ### Added
+- Protected API endpoints now accept `Authorization: Bearer` as a fallback to
+  `X-API-Key`, with the existing header retaining precedence when both are
+  present. (#129)
+- `EntityInput` now supports seed-domain-only discovery without a company-name
+  hint. Organization, GLEIF, and subsidiary-name searches are skipped when the
+  name is absent, while domain-side evidence remains available. (#130)
 - CTScout remote evidence now preserves the Worker contract version, match
   strategy, certificate counts, and all four attribution-safety annotations
   (`is_top_org_for_apex`, `apex_contested`, `apex_bulk_infra`, and
@@ -55,6 +63,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   reference only the current run's outputs.
 
 ### Changed
+- One `httpx.AsyncClient` is now shared for the duration of each scan across
+  CT JSON, RDAP, and GeoDNS calls. Corroboration failures and phase timeouts are
+  surfaced in `RunMetadata.errors` and metrics instead of being silently
+  discarded. (#166, #167, #189)
+- API scans now close local warehouse and GLEIF connections reliably and keep
+  synchronous construction work off the event loop. Cache initialization
+  degrades safely when the optional dependency is absent or a DuckDB writer
+  lock is held, and invalid concurrency environment values fall back to the
+  documented default. (#164, #169, #193)
 - The eval's learned leg now replays production scoring **exactly** instead of
   approximating it (#187, substrate schema 2). `--mode record` captures each
   candidate domain's score-time inputs (`ScoringInputs`: pre-`_infra_boost`
@@ -126,6 +143,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- **Local source query hardening** — reject absolute-path traversal and validate
+  dynamic DuckDB identifiers before query construction. (#150, #153)
+- **crt.sh availability** — add a bounded Postgres connection timeout and
+  expose organization-search unavailability rather than silently returning an
+  empty result when the JSON API cannot provide certificate subject
+  organizations. (#163, #165)
+- **CLI documentation** — all command examples now include the required
+  `scout` subcommand. (#162)
 - **First-instance-wins breakers** — CT/RDAP circuit breakers moved to
   class-level registries keyed by `(failure_threshold, recovery_timeout)`, so
   effective thresholds no longer depend on instance construction order; an
