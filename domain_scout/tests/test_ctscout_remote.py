@@ -126,6 +126,7 @@ class TestCTScoutRemoteSource:
         source = CTScoutRemoteSource(config)
 
         mock_data = _body([_domain()])
+        mock_data["org_match_strategy"] = "not_applicable"
         mock_client = _make_httpx_mock(mock_data)
 
         with patch(
@@ -314,3 +315,34 @@ class TestCTScoutRemoteSource:
             pytest.raises(CTScoutSchemaError, match="authoritative exact-match"),
         ):
             await source.search_by_org("Goldman")
+
+    @pytest.mark.asyncio
+    @pytest.mark.parametrize("strategy", ["none", "not_applicable"])
+    async def test_org_query_rejects_nonmatching_strategy(self, strategy: str) -> None:
+        source = CTScoutRemoteSource(ScoutConfig(ctscout_api_key="ds_free_test"))
+        payload = _body([_domain()])
+        payload["org_match_strategy"] = strategy
+        mock_client = _make_httpx_mock(payload)
+
+        with (
+            patch(
+                "domain_scout.sources.ctscout_remote.httpx.AsyncClient",
+                return_value=mock_client,
+            ),
+            pytest.raises(CTScoutSchemaError, match="organization query"),
+        ):
+            await source.search_by_org("Goldman")
+
+    @pytest.mark.asyncio
+    async def test_seed_query_rejects_org_match_strategy(self) -> None:
+        source = CTScoutRemoteSource(ScoutConfig(ctscout_api_key="ds_free_test"))
+        mock_client = _make_httpx_mock(_body([_domain()]))
+
+        with (
+            patch(
+                "domain_scout.sources.ctscout_remote.httpx.AsyncClient",
+                return_value=mock_client,
+            ),
+            pytest.raises(CTScoutSchemaError, match="seed-domain query"),
+        ):
+            await source.search_by_domain("gs.com")

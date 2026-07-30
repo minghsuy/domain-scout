@@ -73,6 +73,8 @@ def _require_count(row: Mapping[str, object], field: str) -> int:
 def _validate_response(
     api_version: str | None,
     data: Any,
+    *,
+    organization_query: bool,
 ) -> tuple[list[Mapping[str, object]], str, str]:
     if api_version != CTSCOUT_API_VERSION:
         shown = api_version if api_version is not None else "missing"
@@ -105,10 +107,19 @@ def _validate_response(
             "CTScout returned semantic candidates, but the Domain Scout CT source only "
             "accepts authoritative warehouse rows; corroborate the candidates separately"
         )
-    if domains and (match_type != "exact" or org_match_strategy == "semantic"):
-        raise CTScoutSchemaError(
-            "CTScout returned domains outside the authoritative exact-match path"
+    if domains:
+        if match_type != "exact":
+            raise CTScoutSchemaError(
+                "CTScout returned domains outside the authoritative exact-match path"
+            )
+        authoritative_strategies = (
+            {"substring", "word", "normalized"} if organization_query else {"not_applicable"}
         )
+        if org_match_strategy not in authoritative_strategies:
+            query_kind = "organization" if organization_query else "seed-domain"
+            raise CTScoutSchemaError(
+                f"CTScout returned a nonmatching strategy for a {query_kind} query"
+            )
 
     validated_domains: list[Mapping[str, object]] = []
     for index, row in enumerate(domains):
@@ -193,7 +204,11 @@ class CTScoutRemoteSource:
             log.warning("ctscout_remote.query_failed", error=str(exc))
             raise
 
-        rows, match_type, org_match_strategy = _validate_response(api_version, data)
+        rows, match_type, org_match_strategy = _validate_response(
+            api_version,
+            data,
+            organization_query=company_name is not None,
+        )
 
         # Convert warehouse rows to CT-compatible records
         records: list[dict[str, object]] = []
