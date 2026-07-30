@@ -37,6 +37,7 @@ from domain_scout.matching.entity_match import (
     strict_org_name_match,
 )
 from domain_scout.models import (
+    CTScoutAttributionProvenance,
     DiscoveredDomain,
     EntityInput,
     EvidenceRecord,
@@ -126,6 +127,16 @@ def _signal_fields(source_tag: str) -> dict[str, Any]:
     if sig is None:
         return {}
     return {"signal_type": sig[0], "signal_weight": sig[1]}
+
+
+def _ctscout_attribution(
+    rec: dict[str, Any],
+) -> CTScoutAttributionProvenance | None:
+    """Validate optional remote CTScout trust metadata before publishing it."""
+    raw = rec.get("ctscout_attribution")
+    if raw is None:
+        return None
+    return CTScoutAttributionProvenance.model_validate(raw)
 
 
 def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
@@ -996,6 +1007,7 @@ class Scout:
         # word-bounded name match too. Subsidiary tags keep their looser intent.
         if source_tag == "ct_org_match" and not strict_org_name_match(org_name, cert_org):
             return results
+        ctscout_attribution = _ctscout_attribution(rec)
 
         sans = _extract_sans(rec)
         cn = rec.get("common_name", "")
@@ -1023,6 +1035,7 @@ class Scout:
                     cert_id=_int_or_none(rec.get("cert_id")),
                     cert_org=cert_org,
                     similarity_score=round(similarity, 4),
+                    ctscout_attribution=ctscout_attribution,
                     **_signal_fields(source_tag),
                 )
             )
@@ -1084,6 +1097,7 @@ class Scout:
         seed_base = extract_base_domain(seed_domain)
 
         for rec in records:
+            ctscout_attribution = _ctscout_attribution(rec)
             sans = _extract_sans(rec)
             cn = rec.get("common_name", "")
             cert_org = rec.get("org_name")
@@ -1117,6 +1131,7 @@ class Scout:
                             source_type="ct_seed_subdomain",
                             description=f"Subdomain of seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            ctscout_attribution=ctscout_attribution,
                             **_signal_fields("ct_seed_subdomain"),
                         )
                     )
@@ -1130,6 +1145,7 @@ class Scout:
                             source_type="ct_san_expansion",
                             description=f"Found on same cert as seed domain {seed_domain}",
                             seed_domain=seed_domain,
+                            ctscout_attribution=ctscout_attribution,
                             **_signal_fields("ct_san_expansion"),
                         )
                     )
@@ -1140,6 +1156,7 @@ class Scout:
                             source_type="ct_seed_related",
                             description=f"Found in CT search for {seed_domain}",
                             seed_domain=seed_domain,
+                            ctscout_attribution=ctscout_attribution,
                             **_signal_fields("ct_seed_related"),
                         )
                     )
@@ -1161,6 +1178,7 @@ class Scout:
                                 cert_id=_int_or_none(rec.get("cert_id")),
                                 cert_org=cert_org,
                                 similarity_score=round(sim, 4),
+                                ctscout_attribution=ctscout_attribution,
                                 **_signal_fields("ct_org_match"),
                             )
                         )

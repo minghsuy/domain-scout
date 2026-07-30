@@ -63,8 +63,8 @@ class TestRunMetadata:
             elapsed_seconds=1.0,
             domains_found=5,
         )
-        # 1.1: DiscoveredDomain gained scorer_id/scorer_version (#184)
-        assert meta.schema_version == "1.1"
+        # 1.2: EvidenceRecord gained CTScout attribution provenance (#204)
+        assert meta.schema_version == "1.2"
 
     def test_config_snapshot(self) -> None:
         cfg = ScoutConfig(total_timeout=120)
