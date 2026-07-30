@@ -10,12 +10,12 @@ test-integration:
 	uv run pytest domain_scout/tests -m integration -v --timeout=120 --no-cov
 
 lint:
-	uv run ruff check domain_scout/
-	uv run mypy domain_scout/
+	uv run ruff check domain_scout/ .github/release_preflight.py
+	uv run mypy domain_scout/ .github/release_preflight.py
 
 format:
-	uv run ruff check --fix domain_scout/
-	uv run ruff format domain_scout/
+	uv run ruff check --fix domain_scout/ .github/release_preflight.py
+	uv run ruff format domain_scout/ .github/release_preflight.py
 
 eval:
 	uv run python -m domain_scout.eval --mode baseline

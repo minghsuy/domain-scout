@@ -5,8 +5,31 @@ on:
     tags:
       - "v*"
 
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
+  preflight:
+    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Fetch main branch
+        run: git fetch --no-tags origin main:refs/remotes/origin/main
+      - name: Validate release metadata and ancestry
+        run: >-
+          python3 .github/release_preflight.py
+          --tag "$GITHUB_REF_NAME"
+          --main-ref origin/main
+
   lint:
+    needs: preflight
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -16,10 +39,11 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --all-groups --all-extras
-      - run: uv run ruff check domain_scout/
-      - run: uv run ruff format --check domain_scout/
+      - run: uv run ruff check domain_scout/ .github/release_preflight.py
+      - run: uv run ruff format --check domain_scout/ .github/release_preflight.py
 
   typecheck:
+    needs: preflight
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -29,9 +53,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --all-groups --all-extras
-      - run: uv run mypy domain_scout/ --ignore-missing-imports
+      - run: uv run mypy domain_scout/ .github/release_preflight.py
 
   test:
+    needs: preflight
     timeout-minutes: 15
     runs-on: ubuntu-latest
     steps:
@@ -54,6 +79,15 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv build
+      - run: uvx twine check dist/*
+      - name: Smoke-test built wheel
+        run: |
+          uv venv /tmp/domain-scout-release-smoke
+          uv pip install --python /tmp/domain-scout-release-smoke/bin/python dist/*.whl
+          EXPECTED_VERSION="${GITHUB_REF_NAME#v}"
+          /tmp/domain-scout-release-smoke/bin/python -c \
+            "from importlib.metadata import version; assert version('domain-scout-ct') == '$EXPECTED_VERSION'"
+          /tmp/domain-scout-release-smoke/bin/domain-scout --help
       - uses: actions/upload-artifact@v4
         with:
           name: dist
@@ -77,8 +111,19 @@ jobs:
           TAG="${GITHUB_REF_NAME}"
           VERSION="${TAG#v}"
           awk "/^## \[${VERSION//./\\.}\]/{found=1; next} found && /^## \[/{exit} found{print}" CHANGELOG.md > /tmp/release-notes.md
-      - name: Create GitHub Release
-        run: gh release create "$GITHUB_REF_NAME" dist/* --title "$GITHUB_REF_NAME" --notes-file /tmp/release-notes.md
+      - name: Create or repair GitHub Release
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            gh release edit "$GITHUB_REF_NAME" \
+              --title "$GITHUB_REF_NAME" \
+              --notes-file /tmp/release-notes.md
+            gh release upload "$GITHUB_REF_NAME" dist/* --clobber
+          else
+            gh release create "$GITHUB_REF_NAME" dist/* \
+              --verify-tag \
+              --title "$GITHUB_REF_NAME" \
+              --notes-file /tmp/release-notes.md
+          fi
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
