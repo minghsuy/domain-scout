@@ -8,6 +8,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- CTScout remote evidence now preserves the Worker contract version, match
+  strategy, certificate counts, and all four attribution-safety annotations
+  (`is_top_org_for_apex`, `apex_contested`, `apex_bulk_infra`, and
+  `dns_verified`) plus the source org/apex row identity in typed
+  `EvidenceRecord.ctscout_attribution` provenance
+  (result schema 1.2). The derived `cert_volume_attribution_safe` flag is false
+  for non-dominant, contested, bulk-infrastructure, or DNS-unverified rows, so
+  raw issuance volume cannot silently masquerade as ownership evidence. The
+  adapter now fails closed on missing/incompatible `X-API-Version`, unreviewed
+  response fields, and semantic-only fallback suggestions instead of
+  collapsing them into an unexplained empty result. (#204)
 - The learned-scorer artifact's own persisted metrics are now consumed at load
   time (#183). An acceptance gate skips the isotonic calibration layer when the
   artifact reports `lr_calibrated_ece > lr_ece` — true for the shipped v1

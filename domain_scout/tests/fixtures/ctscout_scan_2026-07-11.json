@@ -1,0 +1,27 @@
+{
+  "headers": {
+    "X-API-Version": "2026-07-11",
+    "X-Tier": "pro"
+  },
+  "body": {
+    "domains": [
+      {
+        "org": "Dominator Inc",
+        "apex_domain": "pollution.example",
+        "cert_count": 50000,
+        "subdomain_count": 12,
+        "first_seen": "2026-01-01",
+        "last_seen": "2026-07-10",
+        "is_top_org_for_apex": true,
+        "apex_contested": true,
+        "apex_bulk_infra": false,
+        "dns_verified": true
+      }
+    ],
+    "total": 1,
+    "truncated": false,
+    "source": "warehouse",
+    "match_type": "exact",
+    "org_match_strategy": "substring"
+  }
+}

@@ -8,6 +8,7 @@ from domain_scout._logging import configure_logging
 from domain_scout.delta import compute_delta
 from domain_scout.models import (
     ChangedDomain,
+    CTScoutAttributionProvenance,
     DeltaReport,
     DeltaSummary,
     DeltaWarning,
@@ -29,6 +30,7 @@ __all__ = [
     "EntityInput",
     "DiscoveredDomain",
     "EvidenceRecord",
+    "CTScoutAttributionProvenance",
     "RunMetadata",
     "ScoutResult",
     "DomainChange",

@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime  # noqa: TC003 — Pydantic needs runtime import
-from typing import Self
+from typing import Literal, Self
 
 from pydantic import BaseModel, Field, model_validator
 
@@ -24,6 +24,30 @@ class EntityInput(BaseModel):
         return self
 
 
+class CTScoutAttributionProvenance(BaseModel):
+    """Trust metadata carried by one CTScout warehouse row.
+
+    CTScout's certificate counts are discovery signals, not ownership facts.
+    ``cert_volume_attribution_safe`` is therefore false whenever the row is
+    non-dominant, contested, bulk infrastructure, or DNS-unverified.
+    """
+
+    api_version: str
+    org: str
+    apex_domain: str
+    match_type: Literal["exact", "semantic", "none"]
+    org_match_strategy: Literal[
+        "substring", "word", "normalized", "semantic", "none", "not_applicable"
+    ]
+    cert_count: int = Field(ge=0)
+    subdomain_count: int = Field(ge=0)
+    is_top_org_for_apex: bool
+    apex_contested: bool
+    apex_bulk_infra: bool
+    dns_verified: bool
+    cert_volume_attribution_safe: bool
+
+
 class EvidenceRecord(BaseModel):
     """A single piece of attribution evidence for a discovered domain."""
 
@@ -36,6 +60,7 @@ class EvidenceRecord(BaseModel):
     rdap_org: str | None = None
     signal_type: str | None = None
     signal_weight: float | None = None
+    ctscout_attribution: CTScoutAttributionProvenance | None = None
 
 
 class ScoringInputs(BaseModel):
@@ -90,8 +115,8 @@ class DiscoveredDomain(BaseModel):
 class RunMetadata(BaseModel):
     """Metadata about a domain-scout run for audit and reproducibility."""
 
-    # 1.1: added DiscoveredDomain.scorer_id / scorer_version (additive, issue #184)
-    schema_version: str = "1.1"
+    # 1.2: added EvidenceRecord.ctscout_attribution (additive, issue #204)
+    schema_version: str = "1.2"
     tool_version: str
     timestamp: datetime
     elapsed_seconds: float
