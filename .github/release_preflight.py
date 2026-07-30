@@ -11,35 +11,40 @@ import tomllib
 from pathlib import Path
 from typing import NoReturn
 
-PROJECT_NAME = "domain-scout-ct"
+
+class ReleasePreflightError(ValueError):
+    """Release metadata or ancestry is inconsistent."""
 
 
 def _fail(message: str) -> NoReturn:
-    raise ValueError(message)
+    raise ReleasePreflightError(message)
 
 
-def _project_version(root: Path) -> str:
+def _project_metadata(root: Path) -> tuple[str, str]:
     with (root / "pyproject.toml").open("rb") as handle:
         project = tomllib.load(handle).get("project", {})
+    name = project.get("name")
+    if not isinstance(name, str) or not name:
+        _fail("pyproject.toml has no non-empty project.name")
     version = project.get("version")
     if not isinstance(version, str) or not version:
         _fail("pyproject.toml has no non-empty project.version")
-    return version
+    return name, version
 
 
-def _locked_project_version(root: Path) -> str:
+def _locked_project_version(root: Path, project_name: str) -> str:
     with (root / "uv.lock").open("rb") as handle:
         packages = tomllib.load(handle).get("package", [])
     matches = [
         package
         for package in packages
-        if package.get("name") == PROJECT_NAME and package.get("source", {}).get("editable") == "."
+        if package.get("name") == project_name and package.get("source", {}).get("editable") == "."
     ]
     if len(matches) != 1:
-        _fail(f"uv.lock must contain exactly one editable {PROJECT_NAME!r} package")
+        _fail(f"uv.lock must contain exactly one editable {project_name!r} package")
     version = matches[0].get("version")
     if not isinstance(version, str) or not version:
-        _fail(f"uv.lock has no version for editable {PROJECT_NAME!r}")
+        _fail(f"uv.lock has no version for editable {project_name!r}")
     return version
 
 
@@ -75,13 +80,13 @@ def _validate_main_ancestry(root: Path, main_ref: str) -> None:
     _fail(f"could not verify release ancestry against {main_ref}: {detail}")
 
 
-def validate_release(root: Path, tag: str, main_ref: str) -> str:
-    version = _project_version(root)
+def validate_release(root: Path, tag: str, main_ref: str) -> tuple[str, str]:
+    project_name, version = _project_metadata(root)
     expected_tag = f"v{version}"
     if tag != expected_tag:
         _fail(f"release tag {tag!r} does not match project version {expected_tag!r}")
 
-    locked_version = _locked_project_version(root)
+    locked_version = _locked_project_version(root, project_name)
     if locked_version != version:
         _fail(
             f"uv.lock project version {locked_version!r} does not match pyproject.toml {version!r}"
@@ -89,7 +94,7 @@ def validate_release(root: Path, tag: str, main_ref: str) -> str:
 
     _validate_changelog(root, version)
     _validate_main_ancestry(root, main_ref)
-    return version
+    return project_name, version
 
 
 def main() -> int:
@@ -100,12 +105,12 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        version = validate_release(args.root.resolve(), args.tag, args.main_ref)
-    except (OSError, tomllib.TOMLDecodeError, ValueError) as error:
+        project_name, version = validate_release(args.root.resolve(), args.tag, args.main_ref)
+    except (OSError, tomllib.TOMLDecodeError, ReleasePreflightError) as error:
         print(f"release preflight failed: {error}", file=sys.stderr)
         return 1
 
-    print(f"release preflight passed for {PROJECT_NAME} {version}")
+    print(f"release preflight passed for {project_name} {version}")
     return 0
 
 

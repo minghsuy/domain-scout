@@ -80,6 +80,21 @@ def test_release_preflight_rejects_lock_version_mismatch(release_tree: Path) -> 
     assert "uv.lock project version" in result.stderr
 
 
+def test_release_preflight_uses_project_name_from_manifest(release_tree: Path) -> None:
+    (release_tree / "pyproject.toml").write_text(
+        '[project]\nname = "renamed-package"\nversion = "0.12.0"\n',
+        encoding="utf-8",
+    )
+    (release_tree / "uv.lock").write_text(
+        'version = 1\n\n[[package]]\nname = "renamed-package"\n'
+        'version = "0.12.0"\nsource = { editable = "." }\n',
+        encoding="utf-8",
+    )
+    result = _run(release_tree)
+    assert result.returncode == 0
+    assert "release preflight passed for renamed-package 0.12.0" in result.stdout
+
+
 @pytest.mark.parametrize(
     "release_section",
     [
