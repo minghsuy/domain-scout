@@ -33,6 +33,8 @@ class CTScoutAttributionProvenance(BaseModel):
     """
 
     api_version: str
+    org: str
+    apex_domain: str
     match_type: Literal["exact", "semantic", "none"]
     org_match_strategy: Literal[
         "substring", "word", "normalized", "semantic", "none", "not_applicable"

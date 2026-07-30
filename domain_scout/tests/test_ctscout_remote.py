@@ -95,6 +95,8 @@ class TestCTScoutRemoteSource:
         assert records[0]["cert_count"] == 200
         assert records[0]["ctscout_attribution"] == {
             "api_version": CTSCOUT_API_VERSION,
+            "org": "Goldman Sachs & Co. LLC",
+            "apex_domain": "gs.com",
             "match_type": "exact",
             "org_match_strategy": "substring",
             "cert_count": 200,

@@ -106,6 +106,22 @@ class DiscoveredDomain(BaseModel):
 ### EvidenceRecord
 
 ```python
+class CTScoutAttributionProvenance(BaseModel):
+    api_version: str                     # reviewed CTScout X-API-Version
+    org: str                             # legal organization on the warehouse row
+    apex_domain: str                     # apex attributed by that row
+    match_type: Literal["exact", "semantic", "none"]
+    org_match_strategy: Literal[
+        "substring", "word", "normalized", "semantic", "none", "not_applicable"
+    ]
+    cert_count: int                      # issuance volume; not ownership proof
+    subdomain_count: int
+    is_top_org_for_apex: bool
+    apex_contested: bool
+    apex_bulk_infra: bool
+    dns_verified: bool
+    cert_volume_attribution_safe: bool   # false if any volume-safety guard fails
+
 class EvidenceRecord(BaseModel):
     source_type: str                     # e.g. "ct_org_match", "ct_san_expansion", "dns_guess"
     description: str                     # human-readable explanation
@@ -113,13 +129,17 @@ class EvidenceRecord(BaseModel):
     cert_id: int | None = None           # crt.sh certificate ID (links to https://crt.sh/?id=N)
     cert_org: str | None = None          # O= field from the certificate
     similarity_score: float | None = None  # org-name similarity 0.0-1.0
+    rdap_org: str | None = None
+    signal_type: str | None = None
+    signal_weight: float | None = None
+    ctscout_attribution: CTScoutAttributionProvenance | None = None
 ```
 
 ### RunMetadata
 
 ```python
 class RunMetadata(BaseModel):
-    schema_version: str = "1.1"          # output schema version (1.1: scorer_id/scorer_version)
+    schema_version: str = "1.2"          # 1.2: typed CTScout attribution provenance
     tool_version: str                    # domain-scout package version
     timestamp: datetime                  # UTC timestamp of the run
     elapsed_seconds: float               # wall-clock duration

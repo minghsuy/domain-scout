@@ -11,7 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - CTScout remote evidence now preserves the Worker contract version, match
   strategy, certificate counts, and all four attribution-safety annotations
   (`is_top_org_for_apex`, `apex_contested`, `apex_bulk_infra`, and
-  `dns_verified`) in typed `EvidenceRecord.ctscout_attribution` provenance
+  `dns_verified`) plus the source org/apex row identity in typed
+  `EvidenceRecord.ctscout_attribution` provenance
   (result schema 1.2). The derived `cert_volume_attribution_safe` flag is false
   for non-dominant, contested, bulk-infrastructure, or DNS-unverified rows, so
   raw issuance volume cannot silently masquerade as ownership evidence. The

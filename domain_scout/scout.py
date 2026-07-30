@@ -145,7 +145,7 @@ def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
     Returns stable sorted output for deterministic serialization."""
     deduped: list[EvidenceRecord] = []
     seen_org: dict[tuple[str, str | None], EvidenceRecord] = {}
-    seen_other: set[tuple[str, str | None]] = set()
+    seen_other: set[tuple[str, str | None, str | None, str | None]] = set()
     for ev in evidence:
         if ev.cert_org is not None:
             key = (ev.source_type, ev.cert_org)
@@ -156,12 +156,26 @@ def _dedup_evidence(evidence: list[EvidenceRecord]) -> list[EvidenceRecord]:
             ):
                 seen_org[key] = ev
         else:
-            key_other = (ev.source_type, ev.seed_domain)
+            provenance = ev.ctscout_attribution
+            key_other = (
+                ev.source_type,
+                ev.seed_domain,
+                provenance.org if provenance is not None else None,
+                provenance.apex_domain if provenance is not None else None,
+            )
             if key_other not in seen_other:
                 seen_other.add(key_other)
                 deduped.append(ev)
     deduped.extend(seen_org.values())
-    deduped.sort(key=lambda e: (e.source_type, e.cert_org or ""))
+    deduped.sort(
+        key=lambda e: (
+            e.source_type,
+            e.cert_org or "",
+            e.seed_domain or "",
+            e.ctscout_attribution.org if e.ctscout_attribution is not None else "",
+            e.ctscout_attribution.apex_domain if e.ctscout_attribution is not None else "",
+        )
+    )
     return deduped
 
 

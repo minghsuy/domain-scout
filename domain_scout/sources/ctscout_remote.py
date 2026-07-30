@@ -197,6 +197,9 @@ class CTScoutRemoteSource:
             apex = row.get("apex_domain")
             if not isinstance(apex, str) or not apex:
                 continue
+            org = row.get("org")
+            if not isinstance(org, str) or not org:
+                raise CTScoutSchemaError("CTScout domain field 'org' must be a non-empty string")
             cert_count = _require_count(row, "cert_count")
             subdomain_count = _require_count(row, "subdomain_count")
             is_top_org_for_apex = _require_bool(row, "is_top_org_for_apex")
@@ -206,7 +209,7 @@ class CTScoutRemoteSource:
             records.append(
                 {
                     "cert_id": None,
-                    "org_name": row.get("org"),
+                    "org_name": org,
                     "common_name": apex,
                     "san_dns_names": [apex],
                     "not_before": row.get("first_seen"),
@@ -216,6 +219,8 @@ class CTScoutRemoteSource:
                     "subdomain_count": subdomain_count,
                     "ctscout_attribution": {
                         "api_version": api_version,
+                        "org": org,
+                        "apex_domain": apex,
                         "match_type": match_type,
                         "org_match_strategy": org_match_strategy,
                         "cert_count": cert_count,

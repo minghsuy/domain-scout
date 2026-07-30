@@ -7,7 +7,7 @@ from datetime import UTC, datetime
 import pytest
 
 from domain_scout.config import ScoutConfig
-from domain_scout.models import EvidenceRecord, RunMetadata
+from domain_scout.models import CTScoutAttributionProvenance, EvidenceRecord, RunMetadata
 
 # --- Discovery Profiles ---
 
@@ -215,6 +215,42 @@ class TestEvidenceDedup:
         # 1 rdap record → 1
         deduped = _dedup_evidence(evidence)
         assert len(deduped) == 2
+
+    def test_distinct_ctscout_rows_survive_seed_evidence_dedup(self) -> None:
+        """A contested apex keeps provenance for every warehouse organization."""
+        from domain_scout.scout import _dedup_evidence
+
+        def provenance(org: str, cert_count: int) -> CTScoutAttributionProvenance:
+            return CTScoutAttributionProvenance(
+                api_version="2026-07-11",
+                org=org,
+                apex_domain="shared.example",
+                match_type="exact",
+                org_match_strategy="not_applicable",
+                cert_count=cert_count,
+                subdomain_count=1,
+                is_top_org_for_apex=cert_count == 20,
+                apex_contested=True,
+                apex_bulk_infra=False,
+                dns_verified=True,
+                cert_volume_attribution_safe=False,
+            )
+
+        evidence = [
+            EvidenceRecord(
+                source_type="ct_seed_subdomain",
+                description=f"Warehouse row for {org}",
+                seed_domain="shared.example",
+                ctscout_attribution=provenance(org, cert_count),
+            )
+            for org, cert_count in (("Alpha Inc", 20), ("Beta LLC", 3))
+        ]
+
+        deduped = _dedup_evidence(evidence)
+        assert len(deduped) == 2
+        assert {
+            item.ctscout_attribution.org for item in deduped if item.ctscout_attribution is not None
+        } == {"Alpha Inc", "Beta LLC"}
 
 
 class TestConfigToDict:
