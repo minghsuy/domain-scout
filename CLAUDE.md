@@ -9,12 +9,12 @@ domain-scout — Discover internet domains associated with a business entity via
 ```bash
 make install       # uv sync --all-groups --all-extras
 make test          # unit tests only (excludes integration)
-make test-integration  # hits real external services (crt.sh, RDAP, DNS)
+make test-integration  # live crt.sh/RDAP/DNS; requires explicit permission
 make lint          # ruff check + mypy --strict
 make format        # ruff fix + ruff format
 make check         # format + lint + test
 make eval          # run evaluation harness against the baseline substrate
-make eval-baselines  # (re)generate the git-ignored baseline substrate + manifest
+make eval-baselines  # live, long, replaces local manifest; explicit permission required
 ```
 
 ## Tech Stack
@@ -106,6 +106,8 @@ domain_scout/
 - **The manifest is mandatory.** `make eval` fails loudly (`EvalSubstrateError`, non-zero exit) when there is no manifest, when the manifest is unparseable, or when it references an absent or sha-mismatched file. Loose `{label_id}.json` files without a manifest are **not** trusted (an interrupted `record` run can leave a partial set) — the manifest is proof of a completed run, so `record` writes it atomically and last. So `make eval` requires a prior `make eval-baselines`; a missing/partial substrate must never read as a passing/neutral eval. It also warns (stderr) when the substrate's recorded scorer differs from the current one.
 - **Substrate schema is versioned** (`manifest.substrate_schema`, currently 2). Since #187, `record` captures each domain's score-time inputs (pre-`_infra_boost` sources, pre-dedup evidence aggregates, boost outcome) so the eval's learned leg replays production scoring exactly instead of approximating it from post-pipeline state. A substrate recorded under an older schema is refused loudly with a re-record message — never silently scored the approximated way.
 - Full-sweep cost: 399 ground-truth entities × one live discovery each, serialized, bounded by `total_timeout=90s` and the crt.sh rate limits/circuit breaker. Budget a long single-threaded run; use `LIMIT` for quick refreshes.
+- Do not run `make eval-baselines` without explicit permission: it makes live
+  external calls and replaces the local git-ignored baseline manifest.
 
 ## Conventions
 
@@ -118,5 +120,6 @@ domain_scout/
 ## Testing
 
 - **565 unit tests** + 4 integration tests (deselected by default)
-- Integration tests hit real crt.sh, RDAP, and DNS — use `make test-integration`
+- Integration tests hit real crt.sh, RDAP, and DNS. Do not run
+  `make test-integration` without explicit permission.
 - Seed domain choice significantly affects live results — different seeds find different SANs
