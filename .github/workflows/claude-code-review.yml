@@ -25,7 +25,10 @@ name: Claude Code Review
 
 on:
   pull_request:
-    types: [opened, synchronize, ready_for_review, reopened]
+    # No synchronize: reviews are once-per-lifecycle-transition (bounded cost,
+    # dgx-infra#188), not per-push. opened covers PRs created ready; drafts
+    # are skipped below and review on the draft->ready transition instead.
+    types: [opened, ready_for_review, reopened]
 
 # Cancel an older bridge run for this PR if a new push lands before it
 # finishes — prevents duplicate `@claude review` posts on rapid pushes.
