@@ -30,8 +30,8 @@ on:
     # are skipped below and review on the draft->ready transition instead.
     types: [opened, ready_for_review, reopened]
 
-# Cancel an older bridge run for this PR if a new push lands before it
-# finishes — prevents duplicate `@claude review` posts on rapid pushes.
+# Cancel an older bridge run for this PR if lifecycle events land in quick
+# succession — prevents duplicate `@claude review` posts.
 concurrency:
   group: claude-review-pr-${{ github.event.pull_request.number }}
   cancel-in-progress: true
@@ -39,7 +39,7 @@ concurrency:
 jobs:
   trigger-review:
     # Skip on drafts. Skip on bot-authored PRs (Dependabot, Renovate) — those
-    # don't need automated AI review and would burn PAT API calls per push.
+    # don't need automated AI review.
     if: ${{ !github.event.pull_request.draft && github.event.pull_request.user.type != 'Bot' }}
     runs-on: ubuntu-latest
     # Empty permissions block: gh pr comment uses BRIDGE_PAT (not GITHUB_TOKEN),
