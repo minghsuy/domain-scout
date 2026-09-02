@@ -64,13 +64,25 @@ line-length = 100
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "W", "UP", "B", "A", "SIM", "TCH", "PERF"]
-extend-select = ["S608"]
+extend-select = ["S608", "C901", "PLR0912", "PLR0913", "PLR0915"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint.pylint]
+max-args = 10
+max-branches = 15
+max-statements = 75
 
 [tool.ruff.lint.isort]
 required-imports = ["from __future__ import annotations"]
 
 [tool.ruff.lint.per-file-ignores]
 "domain_scout/tests/**" = ["S101"]
+# 2026-09-02 baseline: 2 existing findings; remove or reduce when substantive edits touch this file.
+"domain_scout/api.py" = ["C901", "PLR0915"]
+# 2026-09-02 baseline: 6 existing findings; remove or reduce when substantive edits touch this file.
+"domain_scout/scout.py" = ["C901", "PLR0912", "PLR0915"]
 # S608 false positives: table names validated by allowlist or from internal Path objects
 "domain_scout/cache.py" = ["S608"]
 "domain_scout/resolve/gleif_ingest.py" = ["S608"]
