@@ -34,13 +34,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
         with:
           enable-cache: true
           prune-cache: true
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.15"
       - run: uv sync --all-groups --all-extras
       - run: uv run ruff check domain_scout/ .github/release_preflight.py
       - run: uv run ruff format --check domain_scout/ .github/release_preflight.py
@@ -51,13 +51,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
         with:
           enable-cache: true
           prune-cache: true
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.15"
       - run: uv sync --all-groups --all-extras
       - run: uv run mypy domain_scout/ .github/release_preflight.py
 
@@ -67,13 +67,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
         with:
           enable-cache: true
           prune-cache: true
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.15"
       - run: uv sync --all-groups --all-extras
       - run: uv run pytest domain_scout/tests -m "not integration" -v
 
@@ -83,13 +83,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@20cfd1bf945f4377ade1205e4dbc17946fc9a30d # v10.0.1
+      - uses: astral-sh/setup-uv@1c37ad07a6a961277cf70c0d37d6f313000f5884 # v10.3.0
         with:
           enable-cache: true
           prune-cache: true
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.12"
+          python-version: "3.15"
       - run: uv build
       - run: uvx twine check dist/*
       - name: Smoke-test built wheel
