@@ -32,8 +32,10 @@ dependencies = [
 
 [project.optional-dependencies]
 api = ["fastapi>=0.115.0", "uvicorn[standard]>=0.32.0"]
-cache = ["duckdb>=1.0.0"]
-gleif = ["duckdb>=1.0.0"]
+# <2: DuckDB 1.x cannot read files written by 2.0; the move is staged fleet-wide
+# (minghsuy/dgx-infra#1048), not taken by a lock refresh.
+cache = ["duckdb>=1.0.0,<2"]
+gleif = ["duckdb>=1.0.0,<2"]
 metrics = ["prometheus-client>=0.21.0"]
 eval = ["pyyaml>=6.0"]
 all = ["domain-scout-ct[api,cache,gleif,metrics,eval]"]
