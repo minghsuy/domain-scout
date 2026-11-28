@@ -70,16 +70,14 @@ jobs:
               exit 1
           fi
 
-          BRIDGE_BODY="@claude review ${MARKER}"
+          # dgx-infra's pr-watch-reviews.py reads exactly one line-start REVIEW-VERDICT
+          # from Claude's comment; the text matches dgx-infra's own bridge.
+          BRIDGE_BODY="@claude review this PR. End your review with exactly one line containing the verdict: REVIEW-VERDICT: PASS if there are no blocking issues, or REVIEW-VERDICT: FAIL if there are blocking issues. If you have non-blocking observations (nits), wrap ONLY those observations between a line \`<!-- REVIEW-NITS:START -->\` and a line \`<!-- REVIEW-NITS:END -->\` (omit the block entirely when there are none). ${MARKER}"
 
-          # Delete prior bridge comments before posting the new one. Filter
-          # by the marker so only bridge-authored comments match; human
-          # @claude review comments (without the marker) are untouched.
-          # Note: `gh api`'s built-in `--jq` doesn't accept jq's `--arg`
-          # flag, so we pipe through standalone `jq` (available on every
-          # GitHub-hosted runner) to inject $BRIDGE_BODY safely.
-          # `|| true` prevents a transient DELETE failure from aborting
-          # the step before the new comment posts.
+          # Delete prior bridge comments: exact-body match only, so a human comment
+          # that merely quotes the marker is never deleted. `gh api --jq` has no
+          # --arg, hence the standalone jq. `|| true` keeps a transient DELETE
+          # failure from aborting the post.
           gh api "repos/${REPO}/issues/${PR}/comments" --paginate \
               | jq -r --arg body "$BRIDGE_BODY" '.[] | select(.body == $body) | .id' \
               | xargs -r -I{} gh api -X DELETE "repos/${REPO}/issues/comments/{}" \
